@@ -1,0 +1,5 @@
+MAPS IRMA LYON LF R 45 S6.2 MACONNAIS SUD-EST N046.42.50.000 E005.52.41.000 N046.33.41.000 E005.21.16.000 COLOR_LyonRestricted
+                                              N046.33.41.000 E005.21.16.000 N046.24.32.000 E005.27.35.000 COLOR_LyonRestricted
+                                              N046.24.32.000 E005.27.35.000 N046.27.50.000 E005.44.50.000 COLOR_LyonRestricted
+                                              N046.27.50.000 E005.44.50.000 N046.37.31.000 E006.00.25.000 COLOR_LyonRestricted
+                                              N046.37.31.000 E006.00.25.000 N046.42.50.000 E005.52.41.000 COLOR_LyonRestricted
