@@ -1,13 +1,13 @@
-ARTCC [Solid]
+ARTCC -> Style Solid
 - TMA Airspace
 
-ARTCC [Dot]
+ARTCC -> Style Dot
 - SIV Airspace
 - CTR Airspace
 - Danger, Prohibited, and Restricted Airspace
 
-GEO
-- Extended Centerline RWY 18
+GEO -> Style NIL
+- Extended Centerlines
 
 Freetext
 - MRVA Airspace
