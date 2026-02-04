@@ -1,0 +1,99 @@
+DisplayTypeName:Standard ES radar screen
+DisplayTypeNeedRadarContent:1
+DisplayTypeGeoReferenced:1
+SECTORFILE:
+SECTORTITLE:
+ARTCC boundary:MAPS IRMA NICE TMA NICE:
+ARTCC low boundary:MAPS IRMA NICE MISC AUTOROUTE:
+ARTCC low boundary:MAPS IRMA NICE PROCEDURES GENERAL:
+ARTCC low boundary:MAPS IRMA NICE RWY 17:
+ARTCC low boundary:MAPS IRMA NICE TMA NICE:
+Fixes:ABDIL:symbol
+Fixes:ABLAK:symbol
+Fixes:AMFOU:symbol
+Fixes:AMGEL:symbol
+Fixes:AMIRO:symbol
+Fixes:BADOD:symbol
+Fixes:BARSO:symbol
+Fixes:BASIP:symbol
+Fixes:BODRU:symbol
+Fixes:BORDI:symbol
+Fixes:CUERS:symbol
+Fixes:EPOLO:symbol
+Fixes:GAPDO:symbol
+Fixes:GEMFU:symbol
+Fixes:GILON:symbol
+Fixes:INLOV:symbol
+Fixes:IRMAR:symbol
+Fixes:JULEE:symbol
+Fixes:KERIT:symbol
+Fixes:KESAK:symbol
+Fixes:KOKIN:symbol
+Fixes:LERMA:symbol
+Fixes:LONSU:symbol
+Fixes:MERLU:symbol
+Fixes:MIKRU:symbol
+Fixes:MN22D:symbol
+Fixes:NEKIP:symbol
+Fixes:NERAS:symbol
+Fixes:NISAR:symbol
+Fixes:OKTET:symbol
+Fixes:OMARD:symbol
+Fixes:OTOKE:symbol
+Fixes:OZMIC:symbol
+Fixes:PALME:symbol
+Fixes:PERUS:symbol
+Fixes:PIGOS:symbol
+Fixes:RESBO:symbol
+Fixes:RUBAS:symbol
+Fixes:RUBIT:symbol
+Fixes:SODRI:symbol
+Fixes:SOTOX:symbol
+Fixes:TIPIK:symbol
+Fixes:TUPOX:symbol
+Fixes:USANO:symbol
+Fixes:VAREK:symbol
+Fixes:VEVAR:symbol
+Fixes:XIRBI:symbol
+Geo:LFXX Coastline:
+Geo:MAPS IRMA NICE VECTORING LOC RWY 17:
+NDBs:MUS:symbol
+NDBs:TLN:symbol
+Regions:MAPS IRMA NICE AoR CTR HYERES:polygon
+Regions:MAPS IRMA NICE AoR CTR MANDELIEU:polygon
+Regions:MAPS IRMA NICE AoR CTR NICE:polygon
+Regions:MAPS IRMA NICE AoR TMA:polygon
+Runways:LFMD 04-22:centerline
+Runways:LFMD 17-35:centerline
+Runways:LFML 13L-31R:centerline
+Runways:LFML 13R-31L:centerline
+Runways:LFMN 04L-22R:centerline
+Runways:LFMN 04R-22L:centerline
+Runways:LFTH 05-23:centerline
+Runways:LFTH 13-31:centerline
+Runways:LFTZ 06-24:centerline
+VORs:CNM:symbol
+VORs:LUC:symbol
+VORs:NIZ:symbol
+VORs:STP:symbol
+SHOWC:1
+SHOWSB:0
+BELOW:50
+ABOVE:5500
+LEADER:-2
+SHOWLEADER:0
+TURNLEADER:0
+HISTORY_DOTS:0
+SIMULATION_MODE:1
+DISABLEPANNING:0
+DISABLEZOOMING:0
+DisplayRotation:0.00000
+TAGFAMILY:CoFrance Approach
+WINDOWAREA:43.187161:5.931198:43.905617:7.977136
+PLUGIN:CoFrance:APP:1
+PLUGIN:CoFrance:FILT:1
+PLUGIN:CoFrance:FILTABOVE:5500
+PLUGIN:CoFrance:FILTBELOW:0
+PLUGIN:CoFrance:RAD:1
+PLUGIN:CoFrance:VV:0
+PLUGIN:CoFrance:VVTIME:2
