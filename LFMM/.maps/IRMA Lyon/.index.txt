@@ -1,4 +1,0 @@
-GEO: Transition on the RNP/ILS + Extended Centerlines
-REGIONS: Active AoR + Inactive AoR + Filled FIX
-ARTCC: CTR + TMA Solid
-ARTCC LOW: LF D/P/R Areas + SIV Dashed
