@@ -1,0 +1,4 @@
+MAPS IRMA NICE VECTORING LOC RWY 17      N043.22.18.093 E006.58.53.856 N043.22.00.531 E006.58.56.916 COLOR_NCE-Vectoring
+                                         N043.22.00.531 E006.58.56.916 N043.21.14.539 E007.00.18.524 COLOR_NCE-Vectoring
+                                         N043.22.18.093 E006.58.53.856 N043.22.00.531 E006.58.56.916 COLOR_NCE-Vectoring
+                                         N043.22.00.531 E006.58.56.916 N043.20.57.350 E006.57.49.559 COLOR_NCE-Vectoring

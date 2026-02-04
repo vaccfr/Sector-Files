@@ -1,0 +1,4 @@
+MAPS IRMA NICE VECTORING VOR RWY 24      N043.12.26.861 E006.41.24.472 N043.12.34.488 E006.40.15.060 COLOR_NCE-Vectoring
+                                         N043.12.34.488 E006.40.15.060 N043.13.30.303 E006.41.58.842 COLOR_NCE-Vectoring
+                                         N043.12.26.861 E006.41.24.472 N043.12.34.488 E006.40.15.060 COLOR_NCE-Vectoring
+                                         N043.12.34.488 E006.40.15.060 N043.11.23.403 E006.41.34.278 COLOR_NCE-Vectoring
