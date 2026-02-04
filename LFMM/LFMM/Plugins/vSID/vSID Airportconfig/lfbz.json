@@ -1,0 +1,153 @@
+{
+  "LFBZ": {
+    "elevation": 245,
+    "runways": "09,27",
+    "transAlt": 5000,
+    "maxInitialClimb": 8000,
+    "appSI": "BB,BZA",
+    "sids": {
+      "SOSTO": {
+        "D": {
+          "1": {
+            "rwy": "09",
+            "initial": 7000,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        }
+      },
+      "SOVOS": {
+        "D": {
+          "1": {
+            "rwy": "09",
+            "initial": 7000,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "F": {
+          "1": {
+            "rwy": "27",
+            "initial": 7000,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        }
+      },
+      "VAVIX": {
+        "D": {
+          "1": {
+            "rwy": "09",
+            "initial": 7000,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "F": {
+          "1": {
+            "rwy": "27",
+            "initial": 7000,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "E": {
+          "1": {
+            "rwy": "09",
+            "initial": 7000,
+            "prio": 2
+          }
+        },
+        "W": {
+          "1": {
+            "rwy": "09",
+            "initial": 7000,
+            "prio": 2
+          }
+        }
+      },
+      "DONOS": {
+        "D": {
+          "1": {
+            "rwy": "09",
+            "initial": 8000,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "F": {
+          "1": {
+            "rwy": "27",
+            "initial": 8000,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "E": {
+          "1": {
+            "rwy": "09",
+            "initial": 0,
+            "prio": 2
+          }
+        },
+        "W": {
+          "1": {
+            "rwy": "27",
+            "initial": 0,
+            "prio": 2
+          }
+        }
+      },
+      "SSN": {
+        "D": {
+          "1": {
+            "rwy": "09",
+            "initial": 8000,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "F": {
+          "1": {
+            "rwy": "27",
+            "initial": 8000,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "E": {
+          "1": {
+            "rwy": "09",
+            "initial": 0,
+            "prio": 2
+          }
+        },
+        "W": {
+          "1": {
+            "rwy": "27",
+            "initial": 0,
+            "prio": 2
+          }
+        }
+      }
+    }
+  }
+}

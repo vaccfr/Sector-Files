@@ -1,0 +1,55 @@
+{
+  "LFSL": {
+    "elevation": 1016,
+    "runways": "11,29",
+    "transAlt": 5000,
+    "maxInitialClimb": 7000,
+    "appSI": "BB,BLA",
+    "sids": {
+      "LAVRA": {
+        "B": {
+          "1": {
+            "rwy": "11",
+            "initial": 7000,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "C": {
+          "1": {
+            "rwy": "29",
+            "initial": 7000,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        }
+      },
+      "MAKOX": {
+        "B": {
+          "1": {
+            "rwy": "11",
+            "initial": 7000,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "C": {
+          "1": {
+            "rwy": "29",
+            "initial": 7000,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        }
+      }
+    }
+  }
+}

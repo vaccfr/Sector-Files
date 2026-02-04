@@ -1,0 +1,35 @@
+{
+  "LFBA": {
+    "elevation": 204,
+    "runways": "11,29",
+    "transAlt": 5000,
+    "maxInitialClimb": 0,
+    "appSI": "BB,BOA",
+    "sids": {
+      "AGN": {
+        "W": {
+          "1": {
+            "rwy": "29",
+            "initial": 0,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        }
+      },
+      "PERIG": {
+        "W": {
+          "1": {
+            "rwy": "29",
+            "initial": 0,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        }
+      }
+    }
+  }
+}

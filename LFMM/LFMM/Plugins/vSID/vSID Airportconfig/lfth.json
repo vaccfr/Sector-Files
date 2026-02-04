@@ -1,0 +1,192 @@
+{
+  "LFTH": {
+    "elevation": 13,
+    "runways": "0523,13,31",
+    "transAlt": 5000,
+    "maxInitialClimb": 0,
+    "appSI": "MM,THA",
+    "sids": {
+      "LERMA": {
+        "E": {
+          "1": {
+            "rwy": "05",
+            "initial": 0,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "W": {
+          "1": {
+            "rwy": "23",
+            "initial": 0,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        }
+      },
+      "OMARD": {
+        "E": {
+          "1": {
+            "rwy": "05",
+            "initial": 0,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "W": {
+          "1": {
+            "rwy": "23",
+            "initial": 0,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        }
+      },
+      "BIRGO": {
+        "E": {
+          "1": {
+            "rwy": "05",
+            "initial": 0,
+            "prio": 1,
+            "dest": {
+              "LFMN": true,
+              "LFMD": true
+            }
+          }
+        },
+        "W": {
+          "1": {
+            "rwy": "23",
+            "initial": 0,
+            "prio": 1,
+            "dest": {
+              "LFMN": true,
+              "LFMD": true
+            }
+          }
+        },
+        "N": {
+          "1": {
+            "rwy": "31",
+            "initial": 0,
+            "prio": 1,
+            "dest": {
+              "LFMN": true,
+              "LFMD": true
+            }
+          }
+        },
+        "S": {
+          "1": {
+            "rwy": "13",
+            "initial": 0,
+            "prio": 1,
+            "dest": {
+              "LFMN": true,
+              "LFMD": true
+            }
+          }
+        }
+      },
+      "JULEE": {
+        "E": {
+          "1": {
+            "rwy": "05",
+            "initial": 0,
+            "prio": 1
+          }
+        },
+        "W": {
+          "1": {
+            "rwy": "23",
+            "initial": 0,
+            "prio": 1
+          }
+        },
+        "N": {
+          "1": {
+            "rwy": "31",
+            "initial": 0,
+            "prio": 1
+          }
+        },
+        "S": {
+          "1": {
+            "rwy": "13",
+            "initial": 0,
+            "prio": 1
+          }
+        }
+      },
+      "STP": {
+        "E": {
+          "1": {
+            "rwy": "05",
+            "initial": 0,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "W": {
+          "1": {
+            "rwy": "23",
+            "initial": 0,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "N": {
+          "1": {
+            "rwy": "31",
+            "initial": 0,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "S": {
+          "1": {
+            "rwy": "13",
+            "initial": 0,
+            "prio": 1
+          }
+        }
+      },
+      "VAREK": {
+        "E": {
+          "1": {
+            "rwy": "05",
+            "initial": 0,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "W": {
+          "1": {
+            "rwy": "23",
+            "initial": 0,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        }
+      }
+    }
+  }
+}

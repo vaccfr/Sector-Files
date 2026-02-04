@@ -1,0 +1,119 @@
+{
+  "LFTZ": {
+    "elevation": 14,
+    "runways": "06,24",
+    "transAlt": 5000,
+    "maxInitialClimb": 4000,
+    "appSI": "MM,MNA",
+    "sids": {
+      "BADOD": {
+        "G": {
+          "1": {
+            "rwy": "06",
+            "initial": 4000,
+            "prio": 1
+          }
+        }
+      },
+      "BODRU": {
+        "G": {
+          "1": {
+            "rwy": "06",
+            "initial": 4000,
+            "prio": 1
+          }
+        }
+      },
+      "IRMAR": {
+        "G": {
+          "1": {
+            "rwy": "06",
+            "initial": 4000,
+            "prio": 1
+          }
+        }
+      },
+      "OKTET": {
+        "G": {
+          "1": {
+            "rwy": "06",
+            "initial": 4000,
+            "prio": 1
+          }
+        }
+      },
+      "PERUS": {
+        "G": {
+          "1": {
+            "rwy": "06",
+            "initial": 4000,
+            "prio": 1
+          }
+        }
+      },
+      "LANKO": {
+        "G": {
+          "1": {
+            "rwy": "06",
+            "initial": 4000,
+            "prio": 1
+          }
+        }
+      },
+      "LONSU": {
+        "G": {
+          "1": {
+            "rwy": "06",
+            "initial": 4000,
+            "prio": 1
+          }
+        }
+      },
+      "NOSTA": {
+        "G": {
+          "1": {
+            "rwy": "06",
+            "initial": 4000,
+            "prio": 1
+          }
+        }
+      },
+      "SODRI": {
+        "G": {
+          "1": {
+            "rwy": "06",
+            "initial": 4000,
+            "prio": 1
+          }
+        }
+      },
+      "TURIL": {
+        "G": {
+          "1": {
+            "rwy": "06",
+            "initial": 4000,
+            "prio": 1
+          }
+        }
+      },
+      "VAREK": {
+        "G": {
+          "1": {
+            "rwy": "06",
+            "initial": 4000,
+            "prio": 1
+          }
+        }
+      },
+      "USANO": {
+        "G": {
+          "1": {
+            "rwy": "06",
+            "initial": 4000,
+            "prio": 1
+          }
+        }
+      }
+    }
+  }
+}

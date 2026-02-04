@@ -1,0 +1,109 @@
+{
+  "LFMV": {
+    "elevation": 124,
+    "runways": "17,35,17R,35L",
+    "transAlt": 5000,
+    "maxInitialClimb": 0,
+    "appSI": "MM,MLA",
+    "sids": {
+      "LACAZ": {
+        "M": {
+          "1": {
+            "rwy": "17",
+            "initial": 0,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "P": {
+          "1": {
+            "rwy": "35",
+            "initial": 0,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        }
+      },
+      "TRETS": {
+        "M": {
+          "1": {
+            "rwy": "17",
+            "initial": 0,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "P": {
+          "1": {
+            "rwy": "35",
+            "initial": 0,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        }
+      },
+      "MTL": {
+        "M": {
+          "1": {
+            "rwy": "17",
+            "initial": 0,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "P": {
+          "1": {
+            "rwy": "35",
+            "initial": 0,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "W": {
+          "1": {
+            "rwy": "35",
+            "initial": 0,
+            "prio": 2,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        }
+      },
+      "NG": {
+        "M": {
+          "1": {
+            "rwy": "17",
+            "initial": 0,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "P": {
+          "1": {
+            "rwy": "35",
+            "initial": 0,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        }
+      }
+    }
+  }
+}

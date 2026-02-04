@@ -1,0 +1,83 @@
+{
+  "LFDN": {
+    "elevation": 60,
+    "runways": "12,30",
+    "transAlt": 5000,
+    "maxInitialClimb": 0,
+    "appSI": "BB,BHA",
+    "sids": {
+      "MAREN": {
+        "J": {
+          "1": {
+            "rwy": "12",
+            "initial": 0,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "V": {
+          "1": {
+            "rwy": "30",
+            "initial": 0,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "N": {
+          "1": {
+            "rwy": "30",
+            "initial": 0,
+            "prio": 2
+          }
+        },
+        "S": {
+          "1": {
+            "rwy": "12",
+            "initial": 0,
+            "prio": 2
+          }
+        }
+      },
+      "OLERO": {
+        "J": {
+          "1": {
+            "rwy": "12",
+            "initial": 0,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "V": {
+          "1": {
+            "rwy": "30",
+            "initial": 0,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "N": {
+          "1": {
+            "rwy": "30",
+            "initial": 0,
+            "prio": 2
+          }
+        },
+        "S": {
+          "1": {
+            "rwy": "12",
+            "initial": 0,
+            "prio": 2
+          }
+        }
+      }
+    }
+  }
+}

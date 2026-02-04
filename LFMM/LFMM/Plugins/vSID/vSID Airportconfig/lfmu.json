@@ -1,0 +1,47 @@
+{
+  "LFMU": {
+    "elevation": 56,
+    "runways": "09,27",
+    "transAlt": 5000,
+    "maxInitialClimb": 0,
+    "appSI": "MM,MTA",
+    "sids": {
+      "FJR": {
+        "L": {
+          "1": {
+            "rwy": "09",
+            "initial": 0,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "R": {
+          "1": {
+            "rwy": "27",
+            "initial": 0,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "E": {
+          "1": {
+            "rwy": "09",
+            "initial": 0,
+            "prio": 1
+          }
+        },
+        "W": {
+          "1": {
+            "rwy": "27",
+            "initial": 0,
+            "prio": 1
+          }
+        }
+      }
+    }
+  }
+}

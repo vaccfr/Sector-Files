@@ -1,0 +1,43 @@
+{
+  "LFOJ": {
+    "elevation": 412,
+    "runways": "07,25",
+    "transAlt": 5000,
+    "maxInitialClimb": 0,
+    "appSI": "FF,OJA",
+    "sids": {
+      "DOMOD": {
+        "E": {
+          "1": {
+            "rwy": "07",
+            "initial": 0,
+            "prio": 1
+          }
+        },
+        "W": {
+          "1": {
+            "rwy": "25",
+            "initial": 0,
+            "prio": 1
+          }
+        }
+      },
+      "MOTAL": {
+        "E": {
+          "1": {
+            "rwy": "07",
+            "initial": 0,
+            "prio": 1
+          }
+        },
+        "W": {
+          "1": {
+            "rwy": "25",
+            "initial": 0,
+            "prio": 1
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "LFOT": {
+    "elevation": 357,
+    "runways": "02,20",
+    "transAlt": 5000,
+    "maxInitialClimb": 7000,
+    "appSI": "FF",
+    "sids": {
+      "VANAD": {
+        "N": {
+          "1": {
+            "rwy": "02",
+            "initial": 7000,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "S": {
+          "1": {
+            "rwy": "20",
+            "initial": 5000,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        }
+      },
+      "OMARI": {
+        "N": {
+          "1": {
+            "rwy": "02",
+            "initial": 7000,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "S": {
+          "1": {
+            "rwy": "20",
+            "initial": 5000,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        }
+      },
+      "SOPIL": {
+        "N": {
+          "1": {
+            "rwy": "02",
+            "initial": 7000,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "S": {
+          "1": {
+            "rwy": "20",
+            "initial": 5000,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        }
+      }
+    }
+  }
+}

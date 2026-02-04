@@ -1,0 +1,55 @@
+{
+  "LFAQ": {
+    "elevation": 363,
+    "runways": "08,26",
+    "transAlt": 5000,
+    "maxInitialClimb": 5000,
+    "appSI": "FF,QQA",
+    "sids": {
+      "CMB": {
+        "E": {
+          "1": {
+            "rwy": "08",
+            "initial": 5000,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "W": {
+          "1": {
+            "rwy": "26",
+            "initial": 5000,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        }
+      },
+      "BANTI": {
+        "E": {
+          "1": {
+            "rwy": "08",
+            "initial": 5000,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "W": {
+          "1": {
+            "rwy": "26",
+            "initial": 5000,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,2 @@
+public	3.2.10.0	3.2.10	https://www.euroscope.hu/wp/installation/
+plug-in	1.0	OCC View	X

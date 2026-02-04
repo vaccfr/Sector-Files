@@ -1,0 +1,139 @@
+{
+  "LFOP": {
+    "elevation": 512,
+    "runways": "04,22,05,23",
+    "transAlt": 5000,
+    "maxInitialClimb": 5000,
+    "appSI": "FF,QQA",
+    "sids": {
+      "BANTI": {
+        "N": {
+          "1": {
+            "rwy": "04",
+            "initial": 5000,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "R": {
+          "1": {
+            "rwy": "22",
+            "initial": 5000,
+            "prio": 2,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "S": {
+          "1": {
+            "rwy": "22",
+            "initial": 5000,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        }
+      },
+      "MATID": {
+        "N": {
+          "1": {
+            "rwy": "04",
+            "initial": 5000,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "R": {
+          "1": {
+            "rwy": "22",
+            "initial": 5000,
+            "prio": 2,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "S": {
+          "1": {
+            "rwy": "22",
+            "initial": 5000,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        }
+      },
+      "CAN": {
+        "L": {
+          "1": {
+            "rwy": "04",
+            "initial": 5000,
+            "prio": 2,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "N": {
+          "1": {
+            "rwy": "04",
+            "initial": 5000,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "S": {
+          "1": {
+            "rwy": "22",
+            "initial": 5000,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        }
+      },
+      "LGL": {
+        "L": {
+          "1": {
+            "rwy": "04",
+            "initial": 5000,
+            "prio": 2,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "N": {
+          "1": {
+            "rwy": "04",
+            "initial": 5000,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "S": {
+          "1": {
+            "rwy": "22",
+            "initial": 5000,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,115 @@
+{
+  "LFPT": {
+    "elevation": 325,
+    "runways": "12,30,05,23",
+    "transAlt": 5000,
+    "maxInitialClimb": 4000,
+    "appSI": "FF,PGA",
+    "customRules": {
+      "wlpg": false,
+      "wipg": false,
+      "elpg": false,
+      "eipg": false
+    },
+    "sids": {
+      "PN": {
+        "N": {
+          "1": {
+            "rwy": "05,23",
+            "initial": 4000,
+            "prio": 1,
+            "dest": {
+              "LFPN": true
+            },
+            "customRule": "wlpg"
+          }
+        },
+        "R": {
+          "1": {
+            "rwy": "05,23",
+            "initial": 3000,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            },
+            "dest": {
+              "LFPN": true
+            },
+            "customRule": "eipg"
+          }
+        },
+        "U": {
+          "1": {
+            "rwy": "05,23",
+            "initial": 3000,
+            "prio": 1,
+            "dest": {
+              "LFPN": true
+            },
+            "customRule": "elpg"
+          }
+        },
+        "W": {
+          "1": {
+            "rwy": "05,23",
+            "initial": 3000,
+            "prio": 1,
+            "dest": {
+              "LFPN": true
+            },
+            "customRule": "wipg"
+          }
+        }
+      },
+      "PV": {
+        "N": {
+          "1": {
+            "rwy": "05,23",
+            "initial": 4000,
+            "prio": 1,
+            "dest": {
+              "LFPV": true
+            },
+            "customRule": "wlpg"
+          }
+        },
+        "R": {
+          "1": {
+            "rwy": "05,23",
+            "initial": 3000,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            },
+            "dest": {
+              "LFPV": true
+            },
+            "customRule": "eipg"
+          }
+        },
+        "U": {
+          "1": {
+            "rwy": "05,23",
+            "initial": 3000,
+            "prio": 1,
+            "dest": {
+              "LFPV": true
+            },
+            "customRule": "elpg"
+          }
+        },
+        "W": {
+          "1": {
+            "rwy": "05,23",
+            "initial": 3000,
+            "prio": 1,
+            "dest": {
+              "LFPV": true
+            },
+            "customRule": "wipg"
+          }
+        }
+      }
+    }
+  }
+}

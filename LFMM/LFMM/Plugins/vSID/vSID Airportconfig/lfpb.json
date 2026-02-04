@@ -1,0 +1,1197 @@
+{
+  "LFPB": {
+    "elevation": 220,
+    "runways": "07,25,09,27,03,21",
+    "transAlt": 5000,
+    "maxInitialClimb": 7000,
+    "appSI": "FF,PGA",
+    "customRules": {
+      "opposing": false
+    },
+    "sids": {
+      "ATREX": {
+        "Q": {
+          "1": {
+            "rwy": "07,21",
+            "initial": 3000,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "J": {
+          "1": {
+            "rwy": "09",
+            "initial": 3000,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "M": {
+          "1": {
+            "rwy": "09",
+            "initial": 3000,
+            "customRule": "opposing",
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "C": {
+          "1": {
+            "rwy": "25",
+            "initial": 3000,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "F": {
+          "1": {
+            "rwy": "25",
+            "initial": 3000,
+            "customRule": "opposing",
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "P": {
+          "1": {
+            "rwy": "21",
+            "initial": 3000,
+            "customRule": "opposing",
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        }
+      },
+      "NURMO": {
+        "Q": {
+          "1": {
+            "rwy": "07,21",
+            "initial": 3000,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "J": {
+          "1": {
+            "rwy": "09",
+            "initial": 3000,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "M": {
+          "1": {
+            "rwy": "09",
+            "initial": 3000,
+            "customRule": "opposing",
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "C": {
+          "1": {
+            "rwy": "25",
+            "initial": 3000,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "F": {
+          "1": {
+            "rwy": "25",
+            "initial": 3000,
+            "customRule": "opposing",
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "P": {
+          "1": {
+            "rwy": "21",
+            "initial": 3000,
+            "customRule": "opposing",
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        }
+      },
+      "OPALE": {
+        "Q": {
+          "1": {
+            "rwy": "07,21",
+            "initial": 3000,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "J": {
+          "1": {
+            "rwy": "09",
+            "initial": 3000,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "M": {
+          "1": {
+            "rwy": "09",
+            "initial": 3000,
+            "customRule": "opposing",
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "C": {
+          "1": {
+            "rwy": "25",
+            "initial": 3000,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "F": {
+          "1": {
+            "rwy": "25",
+            "initial": 3000,
+            "customRule": "opposing",
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "P": {
+          "1": {
+            "rwy": "21",
+            "initial": 3000,
+            "customRule": "opposing",
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        }
+      },
+      "BAXIR": {
+        "Q": {
+          "1": {
+            "rwy": "07,21",
+            "initial": 4000,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "J": {
+          "1": {
+            "rwy": "09",
+            "initial": 4000,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "M": {
+          "1": {
+            "rwy": "09",
+            "initial": 4000,
+            "customRule": "opposing",
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "C": {
+          "1": {
+            "rwy": "25",
+            "initial": 7000,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "F": {
+          "1": {
+            "rwy": "25",
+            "initial": 7000,
+            "customRule": "opposing",
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "P": {
+          "1": {
+            "rwy": "21",
+            "initial": 7000,
+            "customRule": "opposing",
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        }
+      },
+      "BUBLI": {
+        "Q": {
+          "1": {
+            "rwy": "07,21",
+            "initial": 4000,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "J": {
+          "1": {
+            "rwy": "09",
+            "initial": 4000,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "M": {
+          "1": {
+            "rwy": "09",
+            "initial": 4000,
+            "customRule": "opposing",
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "C": {
+          "1": {
+            "rwy": "25",
+            "initial": 7000,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "F": {
+          "1": {
+            "rwy": "25",
+            "initial": 7000,
+            "customRule": "opposing",
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "P": {
+          "1": {
+            "rwy": "21",
+            "initial": 7000,
+            "customRule": "opposing",
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        }
+      },
+      "DIKOL": {
+        "Q": {
+          "1": {
+            "rwy": "07,21",
+            "initial": 4000,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "J": {
+          "1": {
+            "rwy": "09",
+            "initial": 4000,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "M": {
+          "1": {
+            "rwy": "09",
+            "initial": 4000,
+            "customRule": "opposing",
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "C": {
+          "1": {
+            "rwy": "25",
+            "initial": 7000,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "F": {
+          "1": {
+            "rwy": "25",
+            "initial": 7000,
+            "customRule": "opposing",
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "P": {
+          "1": {
+            "rwy": "21",
+            "initial": 7000,
+            "customRule": "opposing",
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        }
+      },
+      "LANVI": {
+        "Q": {
+          "1": {
+            "rwy": "07,21",
+            "initial": 4000,
+            "engineType": "J",
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "J": {
+          "1": {
+            "rwy": "09",
+            "initial": 4000,
+            "engineType": "J",
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "M": {
+          "1": {
+            "rwy": "09",
+            "initial": 4000,
+            "engineType": "J",
+            "customRule": "opposing",
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "C": {
+          "1": {
+            "rwy": "25",
+            "initial": 7000,
+            "engineType": "J",
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "F": {
+          "1": {
+            "rwy": "25",
+            "initial": 7000,
+            "engineType": "J",
+            "customRule": "opposing",
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "P": {
+          "1": {
+            "rwy": "21",
+            "initial": 7000,
+            "engineType": "J",
+            "customRule": "opposing",
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        }
+      },
+      "RANUX": {
+        "Q": {
+          "1": {
+            "rwy": "07,21",
+            "initial": 4000,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "J": {
+          "1": {
+            "rwy": "09",
+            "initial": 4000,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "M": {
+          "1": {
+            "rwy": "09",
+            "initial": 4000,
+            "customRule": "opposing",
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "C": {
+          "1": {
+            "rwy": "25",
+            "initial": 7000,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "F": {
+          "1": {
+            "rwy": "25",
+            "initial": 7000,
+            "customRule": "opposing",
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "P": {
+          "1": {
+            "rwy": "21",
+            "initial": 7000,
+            "customRule": "opposing",
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        }
+      },
+      "AGOPA": {
+        "Q": {
+          "1": {
+            "rwy": "07,21",
+            "initial": 7000,
+            "engineType": "J",
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "J": {
+          "1": {
+            "rwy": "09",
+            "initial": 7000,
+            "engineType": "J",
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "M": {
+          "1": {
+            "rwy": "09",
+            "initial": 7000,
+            "engineType": "J",
+            "customRule": "opposing",
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "C": {
+          "1": {
+            "rwy": "25",
+            "initial": 7000,
+            "engineType": "J",
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "F": {
+          "1": {
+            "rwy": "25",
+            "initial": 7000,
+            "engineType": "J",
+            "customRule": "opposing",
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "P": {
+          "1": {
+            "rwy": "21",
+            "initial": 7000,
+            "engineType": "J",
+            "customRule": "opposing",
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        }
+      },
+      "ERIXU": {
+        "Q": {
+          "1": {
+            "rwy": "07,21",
+            "initial": 7000,
+            "engineType": "J",
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "J": {
+          "1": {
+            "rwy": "09",
+            "initial": 7000,
+            "engineType": "J",
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "M": {
+          "1": {
+            "rwy": "09",
+            "initial": 7000,
+            "engineType": "J",
+            "customRule": "opposing",
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "C": {
+          "1": {
+            "rwy": "25",
+            "initial": 7000,
+            "engineType": "J",
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "F": {
+          "1": {
+            "rwy": "25",
+            "initial": 7000,
+            "engineType": "J",
+            "customRule": "opposing",
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "P": {
+          "1": {
+            "rwy": "21",
+            "initial": 7000,
+            "engineType": "J",
+            "customRule": "opposing",
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        }
+      },
+      "LATRA": {
+        "Q": {
+          "1": {
+            "rwy": "07,21",
+            "initial": 7000,
+            "engineType": "J",
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "J": {
+          "1": {
+            "rwy": "09",
+            "initial": 7000,
+            "engineType": "J",
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "M": {
+          "1": {
+            "rwy": "09",
+            "initial": 7000,
+            "engineType": "J",
+            "customRule": "opposing",
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "C": {
+          "1": {
+            "rwy": "25",
+            "initial": 7000,
+            "engineType": "J",
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "F": {
+          "1": {
+            "rwy": "25",
+            "initial": 7000,
+            "engineType": "J",
+            "customRule": "opposing",
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "P": {
+          "1": {
+            "rwy": "21",
+            "initial": 7000,
+            "engineType": "J",
+            "customRule": "opposing",
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        }
+      },
+      "OKASI": {
+        "Q": {
+          "1": {
+            "rwy": "07,21",
+            "initial": 7000,
+            "engineType": "J",
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "J": {
+          "1": {
+            "rwy": "09",
+            "initial": 7000,
+            "engineType": "J",
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "M": {
+          "1": {
+            "rwy": "09",
+            "initial": 7000,
+            "engineType": "J",
+            "customRule": "opposing",
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "C": {
+          "1": {
+            "rwy": "25",
+            "initial": 7000,
+            "engineType": "J",
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "F": {
+          "1": {
+            "rwy": "25",
+            "initial": 7000,
+            "engineType": "J",
+            "customRule": "opposing",
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "P": {
+          "1": {
+            "rwy": "21",
+            "initial": 7000,
+            "engineType": "J",
+            "customRule": "opposing",
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        }
+      },
+      "PILUL": {
+        "Q": {
+          "1": {
+            "rwy": "07,21",
+            "initial": 7000,
+            "engineType": "J",
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "J": {
+          "1": {
+            "rwy": "09",
+            "initial": 7000,
+            "engineType": "J",
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "M": {
+          "1": {
+            "rwy": "09",
+            "initial": 7000,
+            "engineType": "J",
+            "customRule": "opposing",
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "C": {
+          "1": {
+            "rwy": "25",
+            "initial": 7000,
+            "engineType": "J",
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "F": {
+          "1": {
+            "rwy": "25",
+            "initial": 7000,
+            "engineType": "J",
+            "customRule": "opposing",
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "P": {
+          "1": {
+            "rwy": "21",
+            "initial": 7000,
+            "engineType": "J",
+            "customRule": "opposing",
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        }
+      },
+      "DORDI": {
+        "J": {
+          "1": {
+            "rwy": "09",
+            "initial": 3000,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "M": {
+          "1": {
+            "rwy": "09",
+            "initial": 7000,
+            "customRule": "opposing",
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "C": {
+          "1": {
+            "rwy": "25",
+            "initial": 4000,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "F": {
+          "1": {
+            "rwy": "25",
+            "initial": 4000,
+            "customRule": "opposing",
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        }
+      },
+      "MONOT": {
+        "J": {
+          "1": {
+            "rwy": "09",
+            "initial": 3000,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "M": {
+          "1": {
+            "rwy": "09",
+            "initial": 7000,
+            "customRule": "opposing",
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "C": {
+          "1": {
+            "rwy": "25",
+            "initial": 4000,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "F": {
+          "1": {
+            "rwy": "25",
+            "initial": 4000,
+            "customRule": "opposing",
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        }
+      },
+      "OLZOM": {
+        "J": {
+          "1": {
+            "rwy": "09",
+            "initial": 3000,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "M": {
+          "1": {
+            "rwy": "09",
+            "initial": 7000,
+            "customRule": "opposing",
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "C": {
+          "1": {
+            "rwy": "25",
+            "initial": 4000,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "F": {
+          "1": {
+            "rwy": "25",
+            "initial": 4000,
+            "customRule": "opposing",
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        }
+      },
+      "ELCOB": {
+        "Q": {
+          "1": {
+            "rwy": "07,21",
+            "initial": 7000,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "J": {
+          "1": {
+            "rwy": "09",
+            "initial": 7000,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "M": {
+          "1": {
+            "rwy": "09",
+            "initial": 7000,
+            "customRule": "opposing",
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "C": {
+          "1": {
+            "rwy": "25",
+            "initial": 4000,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "F": {
+          "1": {
+            "rwy": "25",
+            "initial": 4000,
+            "customRule": "opposing",
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "P": {
+          "1": {
+            "rwy": "21",
+            "initial": 4000,
+            "customRule": "opposing",
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        }
+      },
+      "LGL": {
+        "Q": {
+          "1": {
+            "rwy": "07,21",
+            "initial": 7000,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "J": {
+          "1": {
+            "rwy": "09",
+            "initial": 7000,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "M": {
+          "1": {
+            "rwy": "09",
+            "initial": 7000,
+            "customRule": "opposing",
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "C": {
+          "1": {
+            "rwy": "25",
+            "initial": 4000,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "F": {
+          "1": {
+            "rwy": "25",
+            "initial": 4000,
+            "customRule": "opposing",
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "P": {
+          "1": {
+            "rwy": "21",
+            "initial": 4000,
+            "customRule": "opposing",
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        }
+      },
+      "PN": {
+        "J": {
+          "1": {
+            "rwy": "07,09",
+            "initial": 3000,
+            "prio": 1
+          }
+        },
+        "M": {
+          "1": {
+            "rwy": "07,09",
+            "initial": 3000,
+            "customRule": "opposing",
+            "prio": 1
+          }
+        },
+        "C": {
+          "1": {
+            "rwy": "25",
+            "initial": 4000,
+            "prio": 1
+          }
+        }
+      },
+      "PV": {
+        "J": {
+          "1": {
+            "rwy": "07,09",
+            "initial": 4000,
+            "prio": 1
+          }
+        },
+        "C": {
+          "1": {
+            "rwy": "25",
+            "initial": 4000,
+            "prio": 1
+          }
+        }
+      }
+    }
+  }
+}

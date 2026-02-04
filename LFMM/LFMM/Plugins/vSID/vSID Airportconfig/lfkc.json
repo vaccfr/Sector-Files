@@ -1,0 +1,130 @@
+{
+  "LFKC": {
+    "elevation": 210,
+    "runways": "18,36",
+    "transAlt": 5000,
+    "maxInitialClimb": 0,
+    "appSI": "MM,KBA",
+    "sids": {
+      "AJO": {
+        "R": {
+          "1": {
+            "rwy": "36",
+            "initial": 0,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "C": {
+          "1": {
+            "rwy": "36",
+            "initial": 0,
+            "prio": 2
+          }
+        }
+      },
+      "CAPCO": {
+        "R": {
+          "1": {
+            "rwy": "36",
+            "initial": 0,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "C": {
+          "1": {
+            "rwy": "36",
+            "initial": 0,
+            "prio": 2
+          }
+        }
+      },
+      "MEGER": {
+        "R": {
+          "1": {
+            "rwy": "36",
+            "initial": 0,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "C": {
+          "1": {
+            "rwy": "36",
+            "initial": 0,
+            "prio": 2
+          }
+        }
+      },
+      "MERLU": {
+        "R": {
+          "1": {
+            "rwy": "36",
+            "initial": 0,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "C": {
+          "1": {
+            "rwy": "36",
+            "initial": 0,
+            "prio": 2
+          }
+        }
+      },
+      "NORKA": {
+        "R": {
+          "1": {
+            "rwy": "36",
+            "initial": 0,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "C": {
+          "1": {
+            "rwy": "36",
+            "initial": 0,
+            "prio": 2
+          }
+        }
+      },
+      "SODRI": {
+        "R": {
+          "1": {
+            "rwy": "36",
+            "initial": 0,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        }
+      },
+      "TORTU": {
+        "R": {
+          "1": {
+            "rwy": "36",
+            "initial": 0,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        }
+      }
+    }
+  }
+}

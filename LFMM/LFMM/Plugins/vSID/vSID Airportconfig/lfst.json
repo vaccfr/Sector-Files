@@ -1,0 +1,122 @@
+{
+  "LFST": {
+    "elevation": 505,
+    "runways": "05,23",
+    "transAlt": 7000,
+    "maxInitialClimb": 9000,
+    "appSI": "EE,STA",
+    "sids": {
+      "POGOL": {
+        "Y": {
+          "1": {
+            "rwy": "05",
+            "initial": 9000,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "Z": {
+          "1": {
+            "rwy": "23",
+            "initial": 9000,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "H": {
+          "1": {
+            "rwy": "23",
+            "initial": 9000,
+            "prio": 1
+          }
+        }
+      },
+      "BERUG": {
+        "M": {
+          "1": {
+            "rwy": "05",
+            "initial": 7000,
+            "prio": 1
+          }
+        }
+      },
+      "EPIKO": {
+        "M": {
+          "1": {
+            "rwy": "05",
+            "initial": 7000,
+            "prio": 1
+          }
+        }
+      },
+      "GTQ": {
+        "M": {
+          "1": {
+            "rwy": "05",
+            "initial": 7000,
+            "prio": 1
+          }
+        },
+        "H": {
+          "1": {
+            "rwy": "23",
+            "initial": 7000,
+            "prio": 2
+          }
+        },
+        "L": {
+          "1": {
+            "rwy": "23",
+            "initial": 7000,
+            "prio": 1
+          }
+        }
+      },
+      "LUPEN": {
+        "M": {
+          "1": {
+            "rwy": "05",
+            "initial": 7000,
+            "prio": 1
+          }
+        },
+        "H": {
+          "1": {
+            "rwy": "23",
+            "initial": 7000,
+            "prio": 1
+          }
+        }
+      },
+      "MIRGU": {
+        "H": {
+          "1": {
+            "rwy": "23",
+            "initial": 7000,
+            "prio": 1
+          }
+        }
+      },
+      "SUL": {
+        "N": {
+          "1": {
+            "rwy": "05",
+            "initial": 7000,
+            "prio": 1
+          }
+        },
+        "S": {
+          "1": {
+            "rwy": "23",
+            "initial": 7000,
+            "prio": 1
+          }
+        }
+      }
+    }
+  }
+}

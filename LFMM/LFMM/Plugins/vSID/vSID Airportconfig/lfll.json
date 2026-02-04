@@ -1,0 +1,431 @@
+{
+  "LFLL": {
+    "elevation": 821,
+    "runways": "17L,17R,35L,35R",
+    "transAlt": 5000,
+    "maxInitialClimb": 7000,
+    "appSI": "MM,LLA",
+    "sids": {
+      "ALURA": {
+        "S": {
+          "1": {
+            "rwy": "17L,17R",
+            "initial": 7000,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "N": {
+          "1": {
+            "rwy": "35L,35R",
+            "initial": 7000,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        }
+      },
+      "ASLEG": {
+        "S": {
+          "1": {
+            "rwy": "17L,17R",
+            "initial": 5000,
+            "climbvia": true,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            },
+            "engineType": "PT",
+            "timeFrom": 22,
+            "timeTo": 6
+          }
+        },
+        "N": {
+          "1": {
+            "rwy": "35L,35R",
+            "initial": 5000,
+            "climbvia": true,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            },
+            "engineType": "PT",
+            "timeFrom": 22,
+            "timeTo": 6
+          }
+        }
+      },
+      "BELEP": {
+        "S": {
+          "1": {
+            "rwy": "17L,17R",
+            "initial": 7000,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "N": {
+          "1": {
+            "rwy": "35L,35R",
+            "initial": 7000,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        }
+      },
+      "BELUS": {
+        "S": {
+          "1": {
+            "rwy": "17L,17R",
+            "initial": 7000,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "N": {
+          "1": {
+            "rwy": "35L,35R",
+            "initial": 7000,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        }
+      },
+      "BUSIL": {
+        "S": {
+          "1": {
+            "rwy": "17L,17R",
+            "initial": 7000,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "N": {
+          "1": {
+            "rwy": "35L,35R",
+            "initial": 7000,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        }
+      },
+      "GEMLA": {
+        "S": {
+          "1": {
+            "rwy": "17L,17R",
+            "initial": 5000,
+            "climbvia": true,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            },
+            "engineType": "PT",
+            "timeFrom": 22,
+            "timeTo": 6
+          }
+        },
+        "N": {
+          "1": {
+            "rwy": "35L,35R",
+            "initial": 5000,
+            "climbvia": true,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            },
+            "engineType": "PT",
+            "timeFrom": 22,
+            "timeTo": 6
+          }
+        }
+      },
+      "LUKUM": {
+        "S": {
+          "1": {
+            "rwy": "17L,17R",
+            "initial": 5000,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            },
+            "engineType": "PT",
+            "timeFrom": 22,
+            "timeTo": 6
+          }
+        },
+        "N": {
+          "1": {
+            "rwy": "35L,35R",
+            "initial": 5000,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            },
+            "engineType": "PT",
+            "timeFrom": 22,
+            "timeTo": 6
+          }
+        }
+      },
+      "MABES": {
+        "S": {
+          "1": {
+            "rwy": "17L,17R",
+            "initial": 7000,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "N": {
+          "1": {
+            "rwy": "35L,35R",
+            "initial": 7000,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        }
+      },
+      "MADOT": {
+        "S": {
+          "1": {
+            "rwy": "17L,17R",
+            "initial": 5000,
+            "climbvia": true,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            },
+            "engineType": "PT",
+            "timeFrom": 22,
+            "timeTo": 6
+          }
+        },
+        "N": {
+          "1": {
+            "rwy": "35L,35R",
+            "initial": 5000,
+            "climbvia": true,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            },
+            "engineType": "PT",
+            "timeFrom": 22,
+            "timeTo": 6
+          }
+        }
+      },
+      "MURRO": {
+        "S": {
+          "1": {
+            "rwy": "17L,17R",
+            "initial": 7000,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "N": {
+          "1": {
+            "rwy": "35L,35R",
+            "initial": 7000,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        }
+      },
+      "MOKIP": {
+        "S": {
+          "1": {
+            "rwy": "17L,17R",
+            "initial": 7000,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "N": {
+          "1": {
+            "rwy": "35L,35R",
+            "initial": 7000,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        }
+      },
+      "MTL": {
+        "S": {
+          "1": {
+            "rwy": "17L,14R",
+            "initial": 5000,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "N": {
+          "1": {
+            "rwy": "35L,35R",
+            "initial": 5000,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        }
+      },
+      "PIMAK": {
+        "S": {
+          "1": {
+            "rwy": "17L,17R",
+            "initial": 5000,
+            "climbvia": true,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            },
+            "engineType": "PT",
+            "timeFrom": 22,
+            "timeTo": 6
+          }
+        },
+        "N": {
+          "1": {
+            "rwy": "35L,35R",
+            "initial": 5000,
+            "climbvia": true,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            },
+            "engineType": "PT",
+            "timeFrom": 22,
+            "timeTo": 6
+          }
+        }
+      },
+      "REPSI": {
+        "S": {
+          "1": {
+            "rwy": "17L,17R",
+            "initial": 7000,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "N": {
+          "1": {
+            "rwy": "35L,35R",
+            "initial": 7000,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        }
+      },
+      "RISOR": {
+        "S": {
+          "1": {
+            "rwy": "17L,17R",
+            "initial": 7000,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "N": {
+          "1": {
+            "rwy": "35L,35R",
+            "initial": 7000,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        }
+      },
+      "ROMAM": {
+        "S": {
+          "1": {
+            "rwy": "17L,17R",
+            "initial": 7000,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "N": {
+          "1": {
+            "rwy": "35L,35R",
+            "initial": 7000,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        }
+      },
+      "VEROT": {
+        "S": {
+          "1": {
+            "rwy": "17L,17R",
+            "initial": 5000,
+            "climbvia": true,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            },
+            "engineType": "PT",
+            "timeFrom": 22,
+            "timeTo": 6
+          }
+        },
+        "N": {
+          "1": {
+            "rwy": "35L,35R",
+            "initial": 5000,
+            "climbvia": true,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            },
+            "engineType": "PT",
+            "timeFrom": 22,
+            "timeTo": 6
+          }
+        }
+      }
+    }
+  }
+}
