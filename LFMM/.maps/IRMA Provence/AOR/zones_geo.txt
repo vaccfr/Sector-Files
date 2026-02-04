@@ -1,6 +1,0 @@
-MAPS IRMA PROVENCE ZONES ACTIVE          N044.19.58.959 E004.46.02.621 N044.33.42.761 E004.43.27.610 COLOR_ProvenceZones2
-                                         N044.33.42.761 E004.43.27.610 N044.33.50.772 E004.50.26.831 COLOR_ProvenceZones2
-                                         N044.33.50.772 E004.50.26.831 N044.17.55.895 E004.53.05.345 COLOR_ProvenceZones2
-                                         N044.17.55.895 E004.53.05.345 N044.17.59.596 E004.52.00.000 COLOR_ProvenceZones2
-                                         N044.17.59.596 E004.52.00.000 N044.17.52.000 E004.49.48.000 COLOR_ProvenceZones2
-                                         N044.17.52.000 E004.49.48.000 N044.19.58.959 E004.46.02.621 COLOR_ProvenceZones2

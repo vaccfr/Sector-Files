@@ -1,4 +1,0 @@
-MAPS IRMA LYON LF R 326 TOULAUD-JUVENTIN N044.55.20.000 E004.48.07.000 N044.55.20.000 E004.44.30.000 COLOR_LyonRestricted
-                                         N044.55.20.000 E004.44.30.000 N044.53.30.000 E004.44.20.000 COLOR_LyonRestricted
-                                         N044.53.30.000 E004.44.20.000 N044.53.30.000 E004.48.07.000 COLOR_LyonRestricted
-                                         N044.53.30.000 E004.48.07.000 N044.55.20.000 E004.48.07.000 COLOR_LyonRestricted

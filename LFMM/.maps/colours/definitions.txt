@@ -1,154 +1,63 @@
 ; AJACCIO
-#define COLOR_AjaccioCTR 6122595
-#define COLOR_AjaccioTMA 6122595
-#define COLOR_AjaccioSIV 6122595
-#define COLOR_AjaccioRMZ 6122595
-#define COLOR_AjaccioDanger 6122595
-#define COLOR_AjaccioProhibited 6122595
-#define COLOR_AjaccioRestricted 6122595
-#define COLOR_AjaccioFIX 6122595
-#define COLOR_AjaccioECL 6122595
-#define COLOR_AjaccioRings 5395026
-#define COLOR_AjaccioRingsDark 3158064
-#define COLOR_AjaccioAAoR 3356723
-#define COLOR_AjaccioIAoR 3684408
+
 
 ; BASTIA
-#define COLOR_BastiaCTR 6122595
-#define COLOR_BastiaTMA 6122595
-#define COLOR_BastiaSIV 6122595
-#define COLOR_BastiaRMZ 6122595
-#define COLOR_BastiaDanger 6122595
-#define COLOR_BastiaProhibited 6122595
-#define COLOR_BastiaRestricted 6122595
-#define COLOR_BastiaFIX 6122595
-#define COLOR_BastiaECL 6122595
-#define COLOR_BastiaRings 5395026
-#define COLOR_BastiaRingsDark 3158064
-#define COLOR_BastiaAAoR 3356723
-#define COLOR_BastiaIAoR 3684408
+
 
 ; CHAMBERY
 #define COLOR_CMF-CTR 11579568
-#define COLOR_CMF-TMA 11579568
-#define COLOR_CMF-SIV 11579568
 #define COLOR_CMF-ECL 15132390
-#define COLOR_CMF-MRVA 11579568
 #define COLOR_CMF-LFD 11579568
 #define COLOR_CMF-LFP 11579568
 #define COLOR_CMF-LFR 11579568
+#define COLOR_CMF-MRVA 11579568
+#define COLOR_CMF-SIV 11579568
+#define COLOR_CMF-TMA 11579568
 
 ; CLERMONT
-#define COLOR_ClermontCTR 6122595
-#define COLOR_ClermontTMA 6122595
-#define COLOR_ClermontSIV 6122595
-#define COLOR_ClermontRMZ 6122595
-#define COLOR_ClermontDanger 6122595
-#define COLOR_ClermontProhibited 6122595
-#define COLOR_ClermontRestricted 6122595
-#define COLOR_ClermontFIX 6122595
-#define COLOR_ClermontECL 6122595
-#define COLOR_ClermontRings 5395026
-#define COLOR_ClermontRingsDark 3158064
-#define COLOR_ClermontAAoR 3356723
-#define COLOR_ClermontIAoR 3684408
+
 
 ; LYON
-#define COLOR_LyonCTR 6122595
-#define COLOR_LyonTMA 6122595
-#define COLOR_LyonSIV 6122595
-#define COLOR_LyonRMZ 6122595
-#define COLOR_LyonDanger 6122595
-#define COLOR_LyonProhibited 6122595
-#define COLOR_LyonRestricted 6122595
-#define COLOR_LyonFIX 6122595
-#define COLOR_LyonECL 6122595
-#define COLOR_LyonRings 5395026
-#define COLOR_LyonRingsDark 3158064
-#define COLOR_LyonAAoR 3356723
-#define COLOR_LyonIAoR 3684408
+#define COLOR_LYS-AAoR 3356723
+#define COLOR_LYS-CTR 6122595
+#define COLOR_LYS-ECL 6122595
+#define COLOR_LYS-FIX 6122595
+#define COLOR_LYS-IAoR 3684408
+#define COLOR_LYS-LFP 6122595
+#define COLOR_LYS-LFR 6122595
+#define COLOR_LYS-RMZ 6122595
+#define COLOR_LYS-Rings 5395026
+#define COLOR_LYS-RingsDark 3158064
+#define COLOR_LYS-SIV 6122595
+#define COLOR_LYS-TMA 6122595
 
 ; MONTPELLIER
-#define COLOR_MontpellierCTR 6122595
-#define COLOR_MontpellierTMA 6122595
-#define COLOR_MontpellierSIV 6122595
-#define COLOR_MontpellierRMZ 6122595
-#define COLOR_MontpellierDanger 6122595
-#define COLOR_MontpellierProhibited 6122595
-#define COLOR_MontpellierRestricted 6122595
-#define COLOR_MontpellierFIX 6122595
-#define COLOR_MontpellierECL 6122595
-#define COLOR_MontpellierRings 5395026
-#define COLOR_MontpellierRingsDark 3158064
-#define COLOR_MontpellierAAoR 3356723
-#define COLOR_MontpellierIAoR 3684408
+
 
 ; NICE
-#define COLOR_NiceCTR 6122595
-#define COLOR_NiceTMA 6122595
-#define COLOR_NiceSIV 6122595
-#define COLOR_NiceRMZ 6122595
-#define COLOR_NiceDanger 6122595
-#define COLOR_NiceProhibited 6122595
-#define COLOR_NiceRestricted 6122595
-#define COLOR_NiceFIX 6122595
-#define COLOR_NiceECL 6122595
-#define COLOR_NiceRings 5395026
-#define COLOR_NiceRingsDark 3158064
-#define COLOR_NiceAAoR 3356723
-#define COLOR_NiceIAoR 3684408
+
 
 ; PROVENCE
-#define COLOR_ProvenceCTR 9475787
-#define COLOR_ProvenceTMA 0
-#define COLOR_ProvenceSIV 0
-#define COLOR_ProvenceCTA 13290192
-#define COLOR_ProvenceRMZ 6122595
-#define COLOR_ProvenceDanger 35766
-#define COLOR_ProvenceProhibited 35766
-#define COLOR_ProvenceRestricted 35766
-#define COLOR_ProvenceECL 13435391
-#define COLOR_ProvenceAAoR 3815994
-#define COLOR_ProvenceAirway 7237230
-#define COLOR_ProvenceAirwayOrange 1355478
-#define COLOR_ProvenceSID 5917242
-#define COLOR_ProvenceSTAR 8585379
-#define COLOR_ProvenceZones1 3552832
-#define COLOR_ProvenceZones2 0
-#define COLOR_ProvenceGrey 11183022
-#define COLOR_ProvencePink 7237230
-#define COLOR_ProvenceGreen 5006937
-#define COLOR_ProvenceMilYellow 5346493
-#define COLOR_ProvenceRings 4672604
-#define COLOR_ProvenceRingsDark 9150902
-#define COLOR_ProvenceMetering 10930924
+#define COLOR_MRS-AAoR 3815994
+#define COLOR_MRS-Airway 7237230
+#define COLOR_MRS-Black 0
+#define COLOR_MRS-CTA 13290192
+#define COLOR_MRS-CTR 9475787
+#define COLOR_MRS-ECL 13435391
+#define COLOR_MRS-Grey 11183022
+#define COLOR_MRS-LFP 35766
+#define COLOR_MRS-Military 5346493
+#define COLOR_MRS-Orange 1355478
+#define COLOR_MRS-Pink 7237230
+#define COLOR_MRS-Rings 4672604
+#define COLOR_MRS-RingsDark 9150902
+#define COLOR_MRS-SID 5917242
+#define COLOR_MRS-STAR 8585379
+#define COLOR_MRS-Sequencing 10930924
+#define COLOR_MRS-Zone1 3552832
+#define COLOR_MRS-Zone2 0
 
 ; SAINT YAN
-#define COLOR_SaintYanCTR 6122595
-#define COLOR_SaintYanTMA 6122595
-#define COLOR_SaintYanSIV 6122595
-#define COLOR_SaintYanRMZ 6122595
-#define COLOR_SaintYanDanger 6122595
-#define COLOR_SaintYanProhibited 6122595
-#define COLOR_SaintYanRestricted 6122595
-#define COLOR_SaintYanFIX 6122595
-#define COLOR_SaintYanECL 6122595
-#define COLOR_SaintYanRings 5395026
-#define COLOR_SaintYanRingsDark 3158064
-#define COLOR_SaintYanAAoR 3356723
-#define COLOR_SaintYanIAoR 3684408
+
 
 ; Marseille
-#define COLOR_MarseilleCTR 6122595
-#define COLOR_MarseilleTMA 6122595
-#define COLOR_MarseilleSIV 6122595
-#define COLOR_MarseilleRMZ 6122595
-#define COLOR_MarseilleDanger 6122595
-#define COLOR_MarseilleProhibited 6122595
-#define COLOR_MarseilleRestricted 6122595
-#define COLOR_MarseilleFIX 6122595
-#define COLOR_MarseilleECL 6122595
-#define COLOR_MarseilleRings 5395026
-#define COLOR_MarseilleRingsDark 3158064
-#define COLOR_MarseilleAAoR 3356723
-#define COLOR_MarseilleIAoR 3684408
