@@ -66,8 +66,6 @@ Regions:MAPS IRMA NICE AoR CTR NICE:polygon
 Regions:MAPS IRMA NICE AoR TMA:polygon
 Runways:LFMD 04-22:centerline
 Runways:LFMD 17-35:centerline
-Runways:LFML 13L-31R:centerline
-Runways:LFML 13R-31L:centerline
 Runways:LFMN 04L-22R:centerline
 Runways:LFMN 04R-22L:centerline
 Runways:LFTH 05-23:centerline

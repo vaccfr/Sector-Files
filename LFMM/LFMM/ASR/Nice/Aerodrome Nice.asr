@@ -3,12 +3,6 @@ DisplayTypeNeedRadarContent:1
 DisplayTypeGeoReferenced:1
 SECTORFILE:
 SECTORTITLE:
-ARTCC boundary:MAPS IRMA NICE TMA NICE:
-ARTCC low boundary:MAPS IRMA NICE MISC AUTOROUTE:
-ARTCC low boundary:MAPS IRMA NICE PROCEDURES GENERAL:
-ARTCC low boundary:MAPS IRMA NICE PROCEDURES RNP A 04:
-ARTCC low boundary:MAPS IRMA NICE PROCEDURES RNP D 22:
-ARTCC low boundary:MAPS IRMA NICE TMA NICE:
 Fixes:ABDIL:symbol
 Fixes:ABLAK:symbol
 Fixes:AMFOU:symbol
@@ -57,8 +51,7 @@ Fixes:VAREK:symbol
 Fixes:VEVAR:symbol
 Fixes:XIRBI:symbol
 Geo:LFXX Coastline:
-Geo:MAPS IRMA NICE VECTORING RNP RWY 04:
-Geo:MAPS IRMA NICE VECTORING RNP RWY 22:
+Geo:MAPS IRMA NICE RINGS:
 NDBs:MUS:symbol
 NDBs:TLN:symbol
 Regions:MAPS IRMA NICE AoR CTR HYERES:polygon
@@ -67,9 +60,9 @@ Regions:MAPS IRMA NICE AoR CTR NICE:polygon
 Regions:MAPS IRMA NICE AoR TMA:polygon
 Runways:LFMD 04-22:centerline
 Runways:LFMD 17-35:centerline
-Runways:LFML 13L-31R:centerline
-Runways:LFML 13R-31L:centerline
 Runways:LFMN 04L-22R:centerline
+Runways:LFMN 04L-22R:extended centerline 1
+Runways:LFMN 04L-22R:extended centerline 2
 Runways:LFMN 04R-22L:centerline
 Runways:LFTH 05-23:centerline
 Runways:LFTH 13-31:centerline

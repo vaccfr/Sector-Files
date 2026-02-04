@@ -55,7 +55,7 @@ m_Resizable:1
 m_OrderingColumn:-18
 m_HeaderOnly:0
 m_Column:TOBT:5:1:1:6:0:1:vACDM:vACDM::1:0.0
-m_Column:REQ:4:1:444:544:544:1:VCH:VCH:VCH:1:0.0
+m_Column:REQ:4:1:540:548:346:1:VCH:VCH:VCH:1:0.0
 m_Column:C/S:9:1:9:8:0:1::::0:0.0
 m_Column:COM:3:0:11:32:0:1::::1:0.0
 m_Column:ATYP:5:1:16:0:0:1::::1:0.0
@@ -156,7 +156,7 @@ m_LineNumber:0
 m_Resizable:1
 m_OrderingColumn:7
 m_HeaderOnly:0
-m_Column:REQ:3:1:444:544:0:1:VCH:VCH::0:0.0
+m_Column:REQ:3:1:540:548:346:1:VCH:VCH:VCH:0:0.0
 m_Column:C/S:9:1:9:8:0:1::::0:0.0
 m_Column:ATYP:5:1:16:0:0:1::::1:0.0
 m_Column:FR:2:1:63:0:0:1::::0:0.0
