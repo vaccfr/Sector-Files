@@ -1,0 +1,70 @@
+DisplayTypeName:Standard ES radar screen
+DisplayTypeNeedRadarContent:1
+DisplayTypeGeoReferenced:1
+SECTORFILE:
+SECTORTITLE:
+ARTCC boundary:MAPS IRMA BASTIA CTR BASTIA:
+ARTCC boundary:MAPS IRMA BASTIA CTR CALVI:
+ARTCC boundary:MAPS IRMA BASTIA RWY 18:
+ARTCC boundary:MAPS IRMA BASTIA RWY 34:
+ARTCC low boundary:MAPS IRMA BASTIA AMSR BASTIA:
+ARTCC low boundary:MAPS IRMA BASTIA RMZ SOLENZARA:
+ARTCC low boundary:MAPS IRMA BASTIA RWY 18:
+ARTCC low boundary:MAPS IRMA BASTIA SIV BASTIA:
+ARTCC low boundary:MAPS IRMA BASTIA TMA BASTIA:
+Fixes:AKUTI:symbol
+Fixes:ALISO:symbol
+Fixes:BREMO:symbol
+Fixes:BUNAX:symbol
+Fixes:CALNO:symbol
+Fixes:CAPCO:symbol
+Fixes:DOBIM:symbol
+Fixes:EVIRI:symbol
+Fixes:GIRAG:symbol
+Fixes:GORIT:symbol
+Fixes:GUNPI:symbol
+Fixes:GURPA:symbol
+Fixes:ILROU:symbol
+Fixes:KERIT:symbol
+Fixes:LIBLO:symbol
+Fixes:MEGER:symbol
+Fixes:MILNO:symbol
+Fixes:MIRSA:symbol
+Fixes:MOULE:symbol
+Fixes:NIRDO:symbol
+Fixes:NORKA:symbol
+Fixes:RATAP:symbol
+Fixes:RECIF:symbol
+Fixes:SODRI:symbol
+Fixes:SOUKA:symbol
+Fixes:SUDAS:symbol
+Fixes:TORTU:symbol
+Geo:LFXX Coastline:
+Geo:MAPS IRMA BASTIA Rings:
+NDBs:CV:symbol
+Regions:MAPS IRMA BASTIA AoR TMA BASTIA:polygon
+Runways:LFKB 16-34:centerline
+Runways:LFKC 18-36:centerline
+Runways:LFKS 18-36:centerline
+VORs:BTA:symbol
+SHOWC:1
+SHOWSB:0
+BELOW:0
+ABOVE:24500
+LEADER:5
+SHOWLEADER:0
+TURNLEADER:0
+HISTORY_DOTS:0
+SIMULATION_MODE:1
+DISABLEPANNING:0
+DISABLEZOOMING:0
+DisplayRotation:0.00000
+TAGFAMILY:CoFrance Approach
+WINDOWAREA:41.449577:5.752664:43.993888:12.203808
+PLUGIN:CoFrance:APP:1
+PLUGIN:CoFrance:FILT:1
+PLUGIN:CoFrance:FILTABOVE:24500
+PLUGIN:CoFrance:FILTBELOW:0
+PLUGIN:CoFrance:RAD:1
+PLUGIN:CoFrance:VV:0
+PLUGIN:CoFrance:VVTIME:2
