@@ -3,6 +3,8 @@ DisplayTypeNeedRadarContent:1
 DisplayTypeGeoReferenced:1
 SECTORFILE:
 SECTORTITLE:
+ARTCC low boundary:MAPS IRMA NICE CTR MANDELIEU:
+ARTCC low boundary:MAPS IRMA NICE CTR NICE:
 Fixes:ABDIL:symbol
 Fixes:ABLAK:symbol
 Fixes:AMFOU:symbol

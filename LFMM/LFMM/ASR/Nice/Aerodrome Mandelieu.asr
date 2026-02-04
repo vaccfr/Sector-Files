@@ -3,11 +3,10 @@ DisplayTypeNeedRadarContent:1
 DisplayTypeGeoReferenced:1
 SECTORFILE:
 SECTORTITLE:
-ARTCC boundary:MAPS IRMA NICE TMA NICE:
+ARTCC low boundary:MAPS IRMA NICE CTR MANDELIEU:
+ARTCC low boundary:MAPS IRMA NICE CTR NICE:
 ARTCC low boundary:MAPS IRMA NICE MISC AUTOROUTE:
-ARTCC low boundary:MAPS IRMA NICE PROCEDURES GENERAL:
 ARTCC low boundary:MAPS IRMA NICE RWY 17:
-ARTCC low boundary:MAPS IRMA NICE TMA NICE:
 Fixes:ABDIL:symbol
 Fixes:ABLAK:symbol
 Fixes:AMFOU:symbol
