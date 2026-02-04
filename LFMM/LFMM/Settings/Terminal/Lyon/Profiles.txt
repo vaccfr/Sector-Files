@@ -1,0 +1,58 @@
+PROFILE
+PROFILE:<INITIALS>_OBS:275:0
+ATIS2:French vACC Observer
+ATIS3:Welcome to France! -> vatsim.fr
+ATIS4:We <3 Feedback - vatsim.fr/fb/<CID>
+PROFILE:LFLL_APP:150:5
+ATIS2:"Lyon Approach" - EN/FR
+ATIS3:Services for LFLG/LFLL/LFLS/LFLY/LFMH. Information & AFIS Services Workload Permitting
+ATIS4:We <3 Feedback - vatsim.fr/fb/<CID>
+PROFILE:LFLL_S_APP:150:5
+ATIS2:"Lyon Approach" - EN/FR
+ATIS3:Services for LFLG/LFLL/LFLS/LFLY/LFMH. Information & AFIS Services Workload Permitting
+ATIS4:We <3 Feedback - vatsim.fr/fb/<CID>
+PROFILE:LFLL_DEP:150:5
+ATIS2:"Lyon Departure" - EN/FR
+ATIS3:Services for LFLG/LFLL/LFLS/LFLY/LFMH. Information & AFIS Services Workload Permitting
+ATIS4:We <3 Feedback - vatsim.fr/fb/<CID>
+PROFILE:LFLG_TWR:50:4
+ATIS2:"Le Versoud Tower" - EN/FR
+ATIS3:Check your Charts! - chartfox.org/LFLG
+ATIS4:We <3 Feedback - vatsim.fr/fb/<CID>
+PROFILE:LFLL_TWR:50:4
+ATIS2:"Saint-Exupery Tower" - EN/FR
+ATIS3:Check your Charts! - chartfox.org/LFLL
+ATIS4:We <3 Feedback - vatsim.fr/fb/<CID>
+PROFILE:LFLS_TWR:50:4
+ATIS2:"Grenoble Tower" - EN/FR
+ATIS3:Check your Charts! - chartfox.org/LFLS
+ATIS4:We <3 Feedback - vatsim.fr/fb/<CID>
+PROFILE:LFLU_I_TWR:50:4
+ATIS2:"Valence Information" - EN/FR
+ATIS3:Check your Charts! - chartfox.org/LFLU
+ATIS4:We <3 Feedback - vatsim.fr/fb/<CID>
+PROFILE:LFLY_TWR:50:4
+ATIS2:"Bron Tower" - EN/FR
+ATIS3:Check your Charts! - chartfox.org/LFLY
+ATIS4:We <3 Feedback - vatsim.fr/fb/<CID>
+PROFILE:LFXA_TWR:50:4
+ATIS2:"Amberieu Tower" - EN/FR
+ATIS3:Check your Charts! - chartfox.org/LFXA
+ATIS4:We <3 Feedback - vatsim.fr/fb/<CID>
+PROFILE:LFLG_GND:20:3
+ATIS2:"Le Versoud Ground" - EN/FR
+ATIS3:Check your Charts! - chartfox.org/LFLG
+ATIS4:We <3 Feedback - vatsim.fr/fb/<CID>
+PROFILE:LFLL_GND:20:3
+ATIS2:"Saint-Exupery Ground" - EN/FR
+ATIS3:Check your Charts! - chartfox.org/LFLL
+ATIS4:We <3 Feedback - vatsim.fr/fb/<CID>
+PROFILE:LFLS_GND:20:3
+ATIS2:"Grenoble Ground" - EN/FR
+ATIS3:Check your Charts! - chartfox.org/LFLS
+ATIS4:We <3 Feedback - vatsim.fr/fb/<CID>
+PROFILE:LFLL_DEL:20:2
+ATIS2:"Saint-Exupery Delivery" - EN/FR
+ATIS3:CDM Operations Active - cdm.vatsim.fr
+ATIS4:We <3 Feedback - vatsim.fr/fb/<CID>
+END

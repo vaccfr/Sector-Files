@@ -1,0 +1,46 @@
+PROFILE
+PROFILE:<INITIALS>_OBS:275:0
+ATIS2:French vACC Observer
+ATIS3:Welcome to France! -> vatsim.fr
+ATIS4:We <3 Feedback - vatsim.fr/fb/<CID>
+PROFILE:LFLC_APP:150:5
+ATIS2:"Clermont Approach" - EN/FR
+ATIS3:Services for LFCR & LFLC. Information & AFIS Services Workload Permitting
+ATIS4:We <3 Feedback - vatsim.fr/fb/<CID>
+PROFILE:LFLC_S_APP:150:5
+ATIS2:"Clermont Approach" - EN/FR
+ATIS3:Services for LFCR & LFLC. Information & AFIS Services Workload Permitting
+ATIS4:We <3 Feedback - vatsim.fr/fb/<CID>
+PROFILE:LFCC_I_TWR:50:4
+ATIS2:"Cahors Information" - EN/FR
+ATIS3:Check your Charts! - chartfox.org/LFCC
+ATIS4:We <3 Feedback - vatsim.fr/fb/<CID>
+PROFILE:LFHP_I_TWR:50:4
+ATIS2:"Le Puy Information" - EN/FR
+ATIS3:Check your Charts! - chartfox.org/LFHP
+ATIS4:We <3 Feedback - vatsim.fr/fb/<CID>
+PROFILE:LFCR_TWR:50:4
+ATIS2:"Rodez Tower" - EN/FR
+ATIS3:Check your Charts! - chartfox.org/LFCR
+ATIS4:We <3 Feedback - vatsim.fr/fb/<CID>
+PROFILE:LFLC_TWR:50:4
+ATIS2:"Clermont Tower" - EN/FR
+ATIS3:Check your Charts! - chartfox.org/LFLC
+ATIS4:We <3 Feedback - vatsim.fr/fb/<CID>
+PROFILE:LFMH_TWR:50:4
+ATIS2:"Saint-Etienne Tower" - EN/FR
+ATIS3:Check your Charts! - chartfox.org/LFMH
+ATIS4:We <3 Feedback - vatsim.fr/fb/<CID>
+PROFILE:LFLV_I_TWR:50:4
+ATIS2:"Vichy Information" - EN/FR
+ATIS3:Check your Charts! - chartfox.org/LFLV
+ATIS4:We <3 Feedback - vatsim.fr/fb/<CID>
+PROFILE:LFLW_I_TWR:50:4
+ATIS2:"Aurrilac Information" - EN/FR
+ATIS3:Check your Charts! - chartfox.org/LFLW
+ATIS4:We <3 Feedback - vatsim.fr/fb/<CID>
+PROFILE:LFLC_GND:20:3
+ATIS2:"Clermont Ground" - EN/FR
+ATIS3:Check your Charts! - chartfox.org/LFLC
+ATIS4:We <3 Feedback - vatsim.fr/fb/<CID>
+END

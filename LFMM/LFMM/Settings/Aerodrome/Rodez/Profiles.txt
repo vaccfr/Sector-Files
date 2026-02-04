@@ -1,0 +1,10 @@
+PROFILE
+PROFILE:<INITIALS>_OBS:275:0
+ATIS2:French vACC Observer
+ATIS3:Welcome to France! -> vatsim.fr
+ATIS4:We <3 Feedback - vatsim.fr/fb/<CID>
+PROFILE:LFCR_TWR:50:4
+ATIS2:"Rodez Tower" - EN/FR
+ATIS3:Check your Charts! - chartfox.org/LFCR
+ATIS4:We <3 Feedback - vatsim.fr/fb/<CID>
+END

@@ -1,0 +1,14 @@
+PROFILE
+PROFILE:<INITIALS>_OBS:275:0
+ATIS2:French vACC Observer
+ATIS3:Welcome to France! -> vatsim.fr
+ATIS4:We <3 Feedback - vatsim.fr/fb/<CID>
+PROFILE:LFMP_TWR:50:4
+ATIS2:"Perpignan Tower" - EN/FR
+ATIS3:Check your Charts! - chartfox.org/LFMP
+ATIS4:We <3 Feedback - vatsim.fr/fb/<CID>
+PROFILE:LFMP_GND:20:3
+ATIS2:"Perpignan Ground" - EN/FR
+ATIS3:Check your Charts! - chartfox.org/LFMP
+ATIS4:We <3 Feedback - vatsim.fr/fb/<CID>
+END

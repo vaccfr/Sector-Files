@@ -1,0 +1,10 @@
+PROFILE
+PROFILE:<INITIALS>_OBS:275:0
+ATIS2:French vACC Observer
+ATIS3:Welcome to France! -> vatsim.fr
+ATIS4:We <3 Feedback - vatsim.fr/fb/<CID>
+PROFILE:LFHY_I_TWR:50:4
+ATIS2:"Moulins Information" - EN/FR
+ATIS3:Check your Charts! - chartfox.org/LFHY
+ATIS4:We <3 Feedback - vatsim.fr/fb/<CID>
+END
