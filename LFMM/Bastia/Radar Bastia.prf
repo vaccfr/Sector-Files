@@ -26,16 +26,16 @@ Settings	airports	\..\LFMM\ICAO\ICAO_Airports.txt
 Settings	aircraft	\..\LFMM\ICAO\ICAO_Aircraft.txt
 Settings	airportcoords	\..\LFMM\NavData\icao.txt
 Settings	airways	\..\LFMM\NavData\airway.txt
-ASRFastKeys	1	\..\LFMM\ASR\Bastia\Radar Bastia.asr
-ASRFastKeys	2	\..\LFMM\ASR\Bastia\Information Bastia.asr
-ASRFastKeys	3	\..\LFMM\ASR\Bastia\SMR Bastia.asr
-ASRFastKeys	4	\..\LFMM\ASR\Bastia\SMR Calvi.asr
-ASRFastKeys	5	\..\LFMM\ASR\Route Checker.asr
-RecentFiles	Recent1	\..\LFMM\ASR\Bastia\Radar Bastia.asr
-RecentFiles	Recent2	\..\LFMM\ASR\Bastia\SMR Bastia.asr
-RecentFiles	Recent3	\..\LFMM\ASR\Bastia\Information Bastia.asr
-RecentFiles	Recent4	\..\LFMM\ASR\Bastia\SMR Calvi.asr
-RecentFiles	Recent5	\..\LFMM\ASR\Route Checker.asr
+ASRFastKeys	1	\..\LFMM\ASR\Bastia\KB - RDR.asr
+ASRFastKeys	2	\..\LFMM\ASR\Bastia\KB - FIS.asr
+ASRFastKeys	3	\..\LFMM\ASR\Bastia\KB - A-SMGCS.asr
+ASRFastKeys	4	\..\LFMM\ASR\Bastia\KC - A-SMGCS.asr
+ASRFastKeys	5	\..\LFMM\ASR\LFMM - Overview.asr
+RecentFiles	Recent1	\..\LFMM\ASR\Bastia\KB - RDR.asr
+RecentFiles	Recent2	\..\LFMM\ASR\Bastia\KB - FIS.asr
+RecentFiles	Recent3	\..\LFMM\ASR\Bastia\KB - A-SMGCS.asr
+RecentFiles	Recent4	\..\LFMM\ASR\Bastia\KC - A-SMGCS.asr
+RecentFiles	Recent5	\..\LFMM\ASR\LFMM - Overview.asr
 TeamSpeakVccs	TsVccsMiniControlX	2375
 TeamSpeakVccs	TsVccsMiniControlY	44
 TeamSpeakVccs	Ts3DialogLeft	0
@@ -92,8 +92,8 @@ LastSession	simdatapublish	0
 LastSession	atis_freq4	118000
 Settings	AselKey	5111808
 Settings	FreqKey	3604480
-RecentFiles	Recent6	\..\LFMM\ASR\Route Checker.asr
-RecentFiles	Recent7	\..\LFMM\ASR\Route Checker.asr
-RecentFiles	Recent8	\..\LFMM\ASR\Route Checker.asr
-RecentFiles	Recent9	\..\LFMM\ASR\Route Checker.asr
-RecentFiles	Recent10	\..\LFMM\ASR\Route Checker.asr
+RecentFiles	Recent6	\..\LFMM\ASR\LFMM - Overview.asr
+RecentFiles	Recent7	\..\LFMM\ASR\LFMM - Overview.asr
+RecentFiles	Recent8	\..\LFMM\ASR\LFMM - Overview.asr
+RecentFiles	Recent9	\..\LFMM\ASR\LFMM - Overview.asr
+RecentFiles	Recent10	\..\LFMM\ASR\LFMM - Overview.asr
