@@ -26,16 +26,16 @@ Settings	airports	\..\LFMM\ICAO\ICAO_Airports.txt
 Settings	aircraft	\..\LFMM\ICAO\ICAO_Aircraft.txt
 Settings	airportcoords	\..\LFMM\NavData\icao.txt
 Settings	airways	\..\LFMM\NavData\airway.txt
-ASRFastKeys	1	\..\LFMM\ASR\Chambery\Radar Chambery.asr
-ASRFastKeys	2	\..\LFMM\ASR\Chambery\Information Chambery.asr
-ASRFastKeys	3	\..\LFMM\ASR\Chambery\SMR Chambery.asr
-ASRFastKeys	4	\..\LFMM\ASR\Chambery\SMR Annecy.asr
-ASRFastKeys	5	\..\LFMM\ASR\Route Checker.asr
-RecentFiles	Recent1	\..\LFMM\ASR\Chambery\Radar Chambery.asr
-RecentFiles	Recent2	\..\LFMM\ASR\Chambery\SMR Annecy.asr
-RecentFiles	Recent3	\..\LFMM\ASR\Chambery\SMR Chambery.asr
-RecentFiles	Recent4	\..\LFMM\ASR\Chambery\Information Chambery.asr
-RecentFiles	Recent5	\..\LFMM\ASR\Route Checker.asr
+ASRFastKeys	1	\..\LFMM\ASR\Chambery\LB - RDR.asr
+ASRFastKeys	2	\..\LFMM\ASR\Chambery\LB - FIS.asr
+ASRFastKeys	3	\..\LFMM\ASR\Chambery\LB - A-SMGCS.asr
+ASRFastKeys	4	\..\LFMM\ASR\Chambery\LP - A-SMGCS.asr
+ASRFastKeys	5	\..\LFMM\ASR\LFMM - Overview.asr
+RecentFiles	Recent1	\..\LFMM\ASR\Chambery\LB - RDR.asr
+RecentFiles	Recent2	\..\LFMM\ASR\Chambery\LB - FIS.asr
+RecentFiles	Recent3	\..\LFMM\ASR\Chambery\LP - A-SMGCS.asr
+RecentFiles	Recent4	\..\LFMM\ASR\Chambery\LB - A-SMGCS.asr
+RecentFiles	Recent5	\..\LFMM\ASR\LFMM - Overview.asr
 TeamSpeakVccs	TsVccsMiniControlX	2375
 TeamSpeakVccs	TsVccsMiniControlY	44
 TeamSpeakVccs	Ts3DialogLeft	0

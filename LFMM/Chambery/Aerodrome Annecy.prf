@@ -26,12 +26,12 @@ Settings	airports	\..\LFMM\ICAO\ICAO_Airports.txt
 Settings	aircraft	\..\LFMM\ICAO\ICAO_Aircraft.txt
 Settings	airportcoords	\..\LFMM\NavData\icao.txt
 Settings	airways	\..\LFMM\NavData\airway.txt
-ASRFastKeys	1	\..\LFMM\ASR\Chambery\Aerodrome Annecy.asr
-ASRFastKeys	2	\..\LFMM\ASR\Chambery\SMR Annecy.asr
-ASRFastKeys	3	\..\LFMM\ASR\Route Checker.asr
-RecentFiles	Recent1	\..\LFMM\ASR\Chambery\Aerodrome Annecy.asr
-RecentFiles	Recent2	\..\LFMM\ASR\Chambery\SMR Annecy.asr
-RecentFiles	Recent3	\..\LFMM\ASR\Route Checker.asr
+ASRFastKeys	1	\..\LFMM\ASR\Chambery\LP - AD.asr
+ASRFastKeys	2	\..\LFMM\ASR\Chambery\LP - A-SMGCS.asr
+ASRFastKeys	3	\..\LFMM\ASR\LFMM - Overview.asr
+RecentFiles	Recent1	\..\LFMM\ASR\Chambery\LP - AD.asr
+RecentFiles	Recent2	\..\LFMM\ASR\Chambery\LP - A-SMGCS.asr
+RecentFiles	Recent3	\..\LFMM\ASR\LFMM - Overview.asr
 TeamSpeakVccs	TsVccsMiniControlX	2066
 TeamSpeakVccs	TsVccsMiniControlY	51
 TeamSpeakVccs	Ts3DialogLeft	0
