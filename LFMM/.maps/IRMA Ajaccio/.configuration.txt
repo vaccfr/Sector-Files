@@ -1,0 +1,25 @@
+ARTCC -> Style Solid
+- AMSR
+- CTA
+- CTR
+- TMA
+
+ARTCC Low -> Style Dash Dot Dash
+- VFR Routes Clearance Requires
+
+GEO -> Style Solid
+- Centerlines
+- Coastline
+- VFR Routes
+- VRP
+
+REGIONS -> Style NIL
+- Active AoR CTR
+- Active AoR TMA
+- Vectoring Guides
+
+Freetext
+- Airspace Classes
+- Airspace Information
+- AMSR
+- VFR Reporting Points
