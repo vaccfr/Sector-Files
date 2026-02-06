@@ -1,0 +1,93 @@
+DisplayTypeName:SMR radar display
+DisplayTypeNeedRadarContent:0
+DisplayTypeGeoReferenced:1
+SECTORFILE:
+SECTORTITLE:
+Free Text:LFKJ Gates\1:freetext
+Free Text:LFKJ Gates\1:freetext
+Free Text:LFKJ Gates\10:freetext
+Free Text:LFKJ Gates\11:freetext
+Free Text:LFKJ Gates\2:freetext
+Free Text:LFKJ Gates\2:freetext
+Free Text:LFKJ Gates\3:freetext
+Free Text:LFKJ Gates\4:freetext
+Free Text:LFKJ Gates\5:freetext
+Free Text:LFKJ Gates\6:freetext
+Free Text:LFKJ Gates\7:freetext
+Free Text:LFKJ Gates\8:freetext
+Free Text:LFKJ Gates\9:freetext
+Free Text:LFKJ Gates\ACB:freetext
+Free Text:LFKJ Gates\AEROPOSTALE:freetext
+Free Text:LFKJ Gates\CCM:freetext
+Free Text:LFKJ Gates\CIVILE:freetext
+Free Text:LFKJ Gates\H:freetext
+Free Text:LFKJ Gates\J1:freetext
+Free Text:LFKJ Gates\J2:freetext
+Free Text:LFKJ Gates\J3:freetext
+Free Text:LFKJ Gates\J4:freetext
+Free Text:LFKJ Gates\J5:freetext
+Free Text:LFKJ Gates\J6:freetext
+Free Text:LFKJ Gates\K1:freetext
+Free Text:LFKJ Gates\L:freetext
+Free Text:LFKJ Gates\L:freetext
+Free Text:LFKJ Gates\SECURITE:freetext
+Free Text:LFKJ Taxiways\A:freetext
+Free Text:LFKJ Taxiways\B:freetext
+Free Text:LFKJ Taxiways\C:freetext
+Free Text:LFKJ Taxiways\D:freetext
+Free Text:LFKJ Taxiways\D1:freetext
+Free Text:LFKJ Taxiways\D2:freetext
+Free Text:LFKJ Taxiways\E:freetext
+Free Text:LFKJ Taxiways\F:freetext
+Free Text:LFKJ Taxiways\G1:freetext
+Free Text:LFKJ Taxiways\G2:freetext
+Free Text:LFKJ Taxiways\H:freetext
+Free Text:LFKJ Taxiways\T:freetext
+Free Text:LFKJ Taxiways\T:freetext
+Free Text:LFKJ Taxiways\T:freetext
+Free Text:LFKJ Taxiways\X:freetext
+Free Text:LFKJ Taxiways\X:freetext
+Free Text:LFKJ Taxiways\X:freetext
+Geo:LFKJ Groundlayout AVISO:
+Regions:LFKJ AVISO:polygon
+SHOWC:1
+SHOWSB:0
+BELOW:0
+ABOVE:0
+LEADER:5
+SHOWLEADER:1
+TURNLEADER:0
+HISTORY_DOTS:5
+SIMULATION_MODE:1
+DISABLEPANNING:0
+DISABLEZOOMING:0
+DisplayRotation:0.00000
+TAGFAMILY:Matias (built in)
+WINDOWAREA:41.905179:8.749221:41.942598:8.855779
+PLUGIN:vSMR:ActiveProfile:Default
+PLUGIN:vSMR:Afterglow:1
+PLUGIN:vSMR:Airport:LFKJ
+PLUGIN:vSMR:AppTrailsDots:4
+PLUGIN:vSMR:FontSize:1
+PLUGIN:vSMR:GndTrailsDots:4
+PLUGIN:vSMR:PredictedLine:0
+PLUGIN:vSMR:SRW1BottomRightX:1202
+PLUGIN:vSMR:SRW1BottomRightY:576
+PLUGIN:vSMR:SRW1Display:1
+PLUGIN:vSMR:SRW1Filter:5500
+PLUGIN:vSMR:SRW1OffsetX:8
+PLUGIN:vSMR:SRW1OffsetY:-8
+PLUGIN:vSMR:SRW1Rotation:0
+PLUGIN:vSMR:SRW1Scale:15
+PLUGIN:vSMR:SRW1TopLeftX:795
+PLUGIN:vSMR:SRW1TopLeftY:234
+PLUGIN:vSMR:SRW2BottomRightX:600
+PLUGIN:vSMR:SRW2BottomRightY:500
+PLUGIN:vSMR:SRW2Display:0
+PLUGIN:vSMR:SRW2Filter:5500
+PLUGIN:vSMR:SRW2OffsetX:0
+PLUGIN:vSMR:SRW2OffsetY:0
+PLUGIN:vSMR:SRW2Rotation:0
+PLUGIN:vSMR:SRW2Scale:15
+PLUGIN:vSMR:SRW2TopLeftX:200
+PLUGIN:vSMR:SRW2TopLeftY:200
