@@ -1,0 +1,104 @@
+DisplayTypeName:Standard ES radar screen
+DisplayTypeNeedRadarContent:1
+DisplayTypeGeoReferenced:1
+SECTORFILE:
+SECTORTITLE:
+ARTCC boundary:MAPS LYON CTR ANNECY:
+ARTCC boundary:MAPS LYON CTR BRON:
+ARTCC boundary:MAPS LYON CTR CHAMBERY:
+ARTCC boundary:MAPS LYON CTR GRENOBLE:
+ARTCC boundary:MAPS LYON CTR SAINT-EXUPERY:
+ARTCC boundary:MAPS LYON TMA LYON:
+ARTCC low boundary:MAPS LYON LF P 11 CREYS-MALVILLE:
+ARTCC low boundary:MAPS LYON LF P 12 CRUAS-MEYSSE:
+ARTCC low boundary:MAPS LYON LF P 14 GRENOBLE:
+ARTCC low boundary:MAPS LYON LF P 15 LYON FEYZIN:
+ARTCC low boundary:MAPS LYON LF P 18 SAINT ALBAN:
+ARTCC low boundary:MAPS LYON LF P 79 MONT VERDUN:
+ARTCC low boundary:MAPS LYON LF P LYON:
+ARTCC low boundary:MAPS LYON LF P P9 BUGEY:
+ARTCC low boundary:MAPS LYON RMZ VALENCE:
+ARTCC low boundary:MAPS LYON SIV CHAMBERY:
+Free Text:MAPS LYON RADIO LIMITATIONS\CAUSE RELIEF, LE CONTACT RADIO N'EST:freetext
+Free Text:MAPS LYON RADIO LIMITATIONS\DANS LES SECTEURS CHARTREUSE, BELLEDONNE, ET VERCORS:freetext
+Free Text:MAPS LYON RADIO LIMITATIONS\PAS GARANTI SOUS 8000 FT AMSL AU SUD-EST:freetext
+Free Text:MAPS LYON VRP GRENOBLE\MO:freetext
+Free Text:MAPS LYON VRP GRENOBLE\N:freetext
+Free Text:MAPS LYON VRP GRENOBLE\NE:freetext
+Free Text:MAPS LYON VRP GRENOBLE\NW:freetext
+Free Text:MAPS LYON VRP GRENOBLE\PU:freetext
+Free Text:MAPS LYON VRP GRENOBLE\S:freetext
+Free Text:MAPS LYON VRP GRENOBLE\VN:freetext
+Free Text:MAPS LYON VRP GRENOBLE\W:freetext
+Free Text:MAPS LYON VRP LYON AREA\EA:freetext
+Free Text:MAPS LYON VRP LYON AREA\MC:freetext
+Free Text:MAPS LYON VRP LYON AREA\MS:freetext
+Free Text:MAPS LYON VRP LYON AREA\N:freetext
+Free Text:MAPS LYON VRP LYON AREA\NA:freetext
+Free Text:MAPS LYON VRP LYON AREA\NW:freetext
+Free Text:MAPS LYON VRP LYON AREA\S:freetext
+Free Text:MAPS LYON VRP LYON AREA\SA:freetext
+Free Text:MAPS LYON VRP LYON AREA\TE:freetext
+Free Text:MAPS LYON VRP LYON AREA\TW:freetext
+Free Text:MAPS LYON VRP VALENCE\NE:freetext
+Free Text:MAPS LYON VRP VALENCE\NW:freetext
+Free Text:MAPS LYON VRP VALENCE\S:freetext
+Free Text:MAPS LYON VRP VALENCE\SA:freetext
+Geo:LFMM Landmark Frontiere:
+Geo:LFXX Political Boundaries:
+Geo:MAPS LYON VFR AREA LYON:
+Geo:MAPS LYON VFR LYON AREA:
+Geo:MAPS LYON VRP GRENOBLE:
+Geo:MAPS LYON VRP VALENCE:
+NDBs:CH:symbol
+Regions:MAPS LYON TMA ACTIVE:polygon
+Regions:MAPS LYON TMA INACTIVE:polygon
+Runways:LFFX 01-19:centerline
+Runways:LFGM 09-27:centerline
+Runways:LFHH 01-19:centerline
+Runways:LFHN 18-36:centerline
+Runways:LFHS 18-36:centerline
+Runways:LFHT 02-20:centerline
+Runways:LFKA 05-23:centerline
+Runways:LFKH 02-20:centerline
+Runways:LFLB 18-36:centerline
+Runways:LFLH 17-35:centerline
+Runways:LFLI 12-30:centerline
+Runways:LFLL 17L-35R:centerline
+Runways:LFLL 17R-35L:centerline
+Runways:LFLM 17-35:centerline
+Runways:LFLN 15-33:centerline
+Runways:LFLO 01-19:centerline
+Runways:LFLP 04-22:centerline
+Runways:LFLS 09-27:centerline
+Runways:LFLU 01-19:centerline
+Runways:LFLY 16-34:centerline
+Runways:LFMH 17-35:centerline
+Runways:LFXA 01L-19R:centerline
+Runways:LSGG 04-22:centerline
+VORs:CBY:symbol
+VORs:LSE:symbol
+VORs:MTL:symbol
+VORs:PAS:symbol
+VORs:ROA:symbol
+SHOWC:1
+SHOWSB:0
+BELOW:100
+ABOVE:24500
+LEADER:5
+SHOWLEADER:0
+TURNLEADER:0
+HISTORY_DOTS:0
+SIMULATION_MODE:1
+DISABLEPANNING:0
+DISABLEZOOMING:0
+DisplayRotation:0.00000
+TAGFAMILY:CoFrance Approach
+WINDOWAREA:44.717027:2.209135:46.734085:7.953087
+PLUGIN:CoFrance:APP:1
+PLUGIN:CoFrance:FILT:1
+PLUGIN:CoFrance:FILTABOVE:24500
+PLUGIN:CoFrance:FILTBELOW:0
+PLUGIN:CoFrance:RAD:1
+PLUGIN:CoFrance:VV:0
+PLUGIN:CoFrance:VVTIME:2

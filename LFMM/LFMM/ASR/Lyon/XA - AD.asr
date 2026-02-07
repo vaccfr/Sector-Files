@@ -3,22 +3,22 @@ DisplayTypeNeedRadarContent:1
 DisplayTypeGeoReferenced:1
 SECTORFILE:
 SECTORTITLE:
-ARTCC boundary:MAPS IRMA LYON CTR ANNECY:
-ARTCC boundary:MAPS IRMA LYON CTR BRON:
-ARTCC boundary:MAPS IRMA LYON CTR CHAMBERY:
-ARTCC boundary:MAPS IRMA LYON CTR GRENOBLE:
-ARTCC boundary:MAPS IRMA LYON CTR SAINT-EXUPERY:
-ARTCC boundary:MAPS IRMA LYON TMA LYON:
-ARTCC low boundary:MAPS IRMA LYON LF P 11 CREYS-MALVILLE:
-ARTCC low boundary:MAPS IRMA LYON LF P 12 CRUAS-MEYSSE:
-ARTCC low boundary:MAPS IRMA LYON LF P 14 GRENOBLE:
-ARTCC low boundary:MAPS IRMA LYON LF P 15 LYON FEYZIN:
-ARTCC low boundary:MAPS IRMA LYON LF P 18 SAINT ALBAN:
-ARTCC low boundary:MAPS IRMA LYON LF P 79 MONT VERDUN:
-ARTCC low boundary:MAPS IRMA LYON LF P LYON:
-ARTCC low boundary:MAPS IRMA LYON LF P P9 BUGEY:
-ARTCC low boundary:MAPS IRMA LYON RMZ VALENCE:
-ARTCC low boundary:MAPS IRMA LYON SIV CHAMBERY:
+ARTCC boundary:MAPS LYON CTR ANNECY:
+ARTCC boundary:MAPS LYON CTR BRON:
+ARTCC boundary:MAPS LYON CTR CHAMBERY:
+ARTCC boundary:MAPS LYON CTR GRENOBLE:
+ARTCC boundary:MAPS LYON CTR SAINT-EXUPERY:
+ARTCC boundary:MAPS LYON TMA LYON:
+ARTCC low boundary:MAPS LYON LF P 11 CREYS-MALVILLE:
+ARTCC low boundary:MAPS LYON LF P 12 CRUAS-MEYSSE:
+ARTCC low boundary:MAPS LYON LF P 14 GRENOBLE:
+ARTCC low boundary:MAPS LYON LF P 15 LYON FEYZIN:
+ARTCC low boundary:MAPS LYON LF P 18 SAINT ALBAN:
+ARTCC low boundary:MAPS LYON LF P 79 MONT VERDUN:
+ARTCC low boundary:MAPS LYON LF P LYON:
+ARTCC low boundary:MAPS LYON LF P P9 BUGEY:
+ARTCC low boundary:MAPS LYON RMZ VALENCE:
+ARTCC low boundary:MAPS LYON SIV CHAMBERY:
 Fixes:ABRET:symbol
 Fixes:AGREV:symbol
 Fixes:AMORO:symbol
@@ -79,13 +79,9 @@ Fixes:VARUX:symbol
 Fixes:VEROT:symbol
 Geo:LFMM Landmark Frontiere:
 Geo:LFXX Political Boundaries:
-Geo:MAPS IRMA LYON RWY 16 ECL:
-Geo:MAPS IRMA LYON RWY 17 ECL:
-Geo:MAPS IRMA LYON RWY 34 ECL:
-Geo:MAPS IRMA LYON RWY 35 ECL:
 NDBs:CH:symbol
-Regions:MAPS IRMA LYON TMA ACTIVE:polygon
-Regions:MAPS IRMA LYON TMA INACTIVE:polygon
+Regions:MAPS LYON TMA ACTIVE:polygon
+Regions:MAPS LYON TMA INACTIVE:polygon
 Runways:LFFX 01-19:centerline
 Runways:LFGM 09-27:centerline
 Runways:LFHH 01-19:centerline
@@ -95,6 +91,7 @@ Runways:LFHT 02-20:centerline
 Runways:LFKA 05-23:centerline
 Runways:LFKH 02-20:centerline
 Runways:LFLB 18-36:centerline
+Runways:LFLG 04-22:centerline
 Runways:LFLH 17-35:centerline
 Runways:LFLI 12-30:centerline
 Runways:LFLL 17L-35R:centerline
@@ -108,6 +105,9 @@ Runways:LFLU 01-19:centerline
 Runways:LFLY 16-34:centerline
 Runways:LFMH 17-35:centerline
 Runways:LFXA 01L-19R:centerline
+Runways:LFXA 01L-19R:extended centerline 1
+Runways:LFXA 01L-19R:extended centerline 2
+Runways:LFXA 01R-19L:centerline
 Runways:LSGG 04-22:centerline
 VORs:CBY:symbol
 VORs:LSE:symbol
@@ -127,7 +127,7 @@ DISABLEPANNING:0
 DISABLEZOOMING:0
 DisplayRotation:0.00000
 TAGFAMILY:CoFrance Approach
-WINDOWAREA:45.398969:3.997799:46.059919:5.879979
+WINDOWAREA:45.715342:4.584906:46.244102:6.090650
 PLUGIN:CoFrance:APP:1
 PLUGIN:CoFrance:FILT:1
 PLUGIN:CoFrance:FILTABOVE:5500
