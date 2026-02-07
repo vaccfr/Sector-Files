@@ -1,0 +1,65 @@
+DisplayTypeName:SMR radar display
+DisplayTypeNeedRadarContent:0
+DisplayTypeGeoReferenced:1
+SECTORFILE:
+SECTORTITLE:
+Free Text:LFCR Gates\1:freetext
+Free Text:LFCR Gates\2:freetext
+Free Text:LFCR Gates\3:freetext
+Free Text:LFCR Gates\4:freetext
+Free Text:LFCR Gates\5:freetext
+Free Text:LFCR Gates\7:freetext
+Free Text:LFCR Gates\8:freetext
+Free Text:LFCR Gates\9:freetext
+Free Text:LFCR Gates\AVT:freetext
+Free Text:LFCR Gates\Hangar:freetext
+Free Text:LFCR Gates\Hangar:freetext
+Free Text:LFCR Gates\Terminal:freetext
+Free Text:LFCR Gates\TWR:freetext
+Free Text:LFCR Taxiway\A1:freetext
+Free Text:LFCR Taxiway\A2:freetext
+Free Text:LFCR Taxiway\A3:freetext
+Free Text:LFCR Taxiway\C:freetext
+Geo:LFCR Groundlayout Rodez Marcillac:
+Regions:LFCR AVISO:polygon
+SHOWC:1
+SHOWSB:0
+BELOW:0
+ABOVE:0
+LEADER:5
+SHOWLEADER:1
+TURNLEADER:0
+HISTORY_DOTS:5
+SIMULATION_MODE:1
+DISABLEPANNING:0
+DISABLEZOOMING:0
+DisplayRotation:0.00000
+TAGFAMILY:Matias (built in)
+WINDOWAREA:44.396434:2.445944:44.420382:2.514141
+PLUGIN:vSMR:ActiveProfile:Default
+PLUGIN:vSMR:Afterglow:1
+PLUGIN:vSMR:Airport:LFCR
+PLUGIN:vSMR:AppTrailsDots:4
+PLUGIN:vSMR:FontSize:1
+PLUGIN:vSMR:GndTrailsDots:4
+PLUGIN:vSMR:PredictedLine:0
+PLUGIN:vSMR:SRW1BottomRightX:869
+PLUGIN:vSMR:SRW1BottomRightY:783
+PLUGIN:vSMR:SRW1Display:1
+PLUGIN:vSMR:SRW1Filter:5500
+PLUGIN:vSMR:SRW1OffsetX:4
+PLUGIN:vSMR:SRW1OffsetY:5
+PLUGIN:vSMR:SRW1Rotation:0
+PLUGIN:vSMR:SRW1Scale:15
+PLUGIN:vSMR:SRW1TopLeftX:416
+PLUGIN:vSMR:SRW1TopLeftY:415
+PLUGIN:vSMR:SRW2BottomRightX:600
+PLUGIN:vSMR:SRW2BottomRightY:500
+PLUGIN:vSMR:SRW2Display:0
+PLUGIN:vSMR:SRW2Filter:5500
+PLUGIN:vSMR:SRW2OffsetX:0
+PLUGIN:vSMR:SRW2OffsetY:0
+PLUGIN:vSMR:SRW2Rotation:0
+PLUGIN:vSMR:SRW2Scale:15
+PLUGIN:vSMR:SRW2TopLeftX:200
+PLUGIN:vSMR:SRW2TopLeftY:200

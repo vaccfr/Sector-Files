@@ -1,0 +1,112 @@
+DisplayTypeName:Standard ES radar screen
+DisplayTypeNeedRadarContent:1
+DisplayTypeGeoReferenced:1
+SECTORFILE:
+SECTORTITLE:
+ARTCC boundary:MAPS CLERMONT SIV CLERMONT:
+ARTCC boundary:MAPS CLERMONT TMA SAINT-YAN:
+ARTCC low boundary:MAPS CLERMONT AMSR:
+ARTCC low boundary:MAPS CLERMONT CTR SAINT-ETIENNE:
+ARTCC low boundary:MAPS CLERMONT CTR SAINT-YAN:
+Fixes:AGREV:symbol
+Fixes:AMIKO:symbol
+Fixes:AMORO:symbol
+Fixes:ARSOM:symbol
+Fixes:BAKNO:symbol
+Fixes:BELEP:symbol
+Fixes:BELVU:symbol
+Fixes:DIRBA:symbol
+Fixes:ENESO:symbol
+Fixes:ESPAL:symbol
+Fixes:GERVA:symbol
+Fixes:KUKOR:symbol
+Fixes:LATAM:symbol
+Fixes:LEMIN:symbol
+Fixes:LERGA:symbol
+Fixes:LESPI:symbol
+Fixes:MADOT:symbol
+Fixes:MEBAK:symbol
+Fixes:MENOX:symbol
+Fixes:MEZIN:symbol
+Fixes:MINPA:symbol
+Fixes:MOKDI:symbol
+Fixes:MURRO:symbol
+Fixes:NEKEM:symbol
+Fixes:OLIRI:symbol
+Fixes:OMANI:symbol
+Fixes:ONZON:symbol
+Fixes:PESAN:symbol
+Fixes:PIMAK:symbol
+Fixes:RISUN:symbol
+Fixes:RIVEK:symbol
+Fixes:ROMGI:symbol
+Fixes:SINPO:symbol
+Fixes:SOMTI:symbol
+Fixes:SOPAD:symbol
+Fixes:TAKAT:symbol
+Fixes:TITOX:symbol
+Fixes:UXANA:symbol
+Fixes:VELIR:symbol
+Fixes:VEROT:symbol
+Fixes:XUPAL:symbol
+Free Text:MAPS CLERMONT VRP SAINT-ETIENNE\N:freetext
+Free Text:MAPS CLERMONT VRP SAINT-ETIENNE\NA:freetext
+Free Text:MAPS CLERMONT VRP SAINT-ETIENNE\NE:freetext
+Free Text:MAPS CLERMONT VRP SAINT-ETIENNE\S:freetext
+Free Text:MAPS CLERMONT VRP SAINT-ETIENNE\SE:freetext
+Free Text:MAPS CLERMONT VRP SAINT-ETIENNE\W:freetext
+Geo:MAPS CLERMONT ECL RWY 17:
+Geo:MAPS CLERMONT ECL RWY 35:
+Geo:MAPS CLERMONT RANGE RINGS SAINT-ETIENNE:
+Geo:MAPS CLERMONT VRP SAINT-ETIENNE:
+Regions:MAPS CLERMONT AoR CTA:polygon
+Regions:MAPS CLERMONT AoR SIV:polygon
+Regions:MAPS CLERMONT AoR TMA:polygon
+Runways:LFCC 13-31:centerline
+Runways:LFCF 11-29:centerline
+Runways:LFCR 13-31:centerline
+Runways:LFCV 13-31:centerline
+Runways:LFHP 15-33:centerline
+Runways:LFHQ 01-19:centerline
+Runways:LFHT 02-20:centerline
+Runways:LFHX 05-23:centerline
+Runways:LFHY 08-26:centerline
+Runways:LFIG 09-27:centerline
+Runways:LFKM 16-34:centerline
+Runways:LFLC 01-19:centerline
+Runways:LFLN 15-33:centerline
+Runways:LFLO 01-19:centerline
+Runways:LFLV 01-19:centerline
+Runways:LFLW 15-33:centerline
+Runways:LFMH 17-35:centerline
+VORs:CFA:name
+VORs:CFA:symbol
+VORs:GAI:name
+VORs:GAI:symbol
+VORs:MOU:name
+VORs:MOU:symbol
+VORs:ROA:name
+VORs:ROA:symbol
+VORs:TIS:name
+VORs:TIS:symbol
+SHOWC:1
+SHOWSB:0
+BELOW:0
+ABOVE:5500
+LEADER:5
+SHOWLEADER:0
+TURNLEADER:0
+HISTORY_DOTS:0
+SIMULATION_MODE:1
+DISABLEPANNING:0
+DISABLEZOOMING:0
+DisplayRotation:0.00000
+TAGFAMILY:CoFrance Approach
+WINDOWAREA:45.121074:3.120861:45.947260:5.473583
+PLUGIN:CoFrance:APP:1
+PLUGIN:CoFrance:FILT:1
+PLUGIN:CoFrance:FILTABOVE:5500
+PLUGIN:CoFrance:FILTBELOW:0
+PLUGIN:CoFrance:RAD:1
+PLUGIN:CoFrance:VV:0
+PLUGIN:CoFrance:VVTIME:2

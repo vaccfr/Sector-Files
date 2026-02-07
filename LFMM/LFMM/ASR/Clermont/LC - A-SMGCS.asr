@@ -1,0 +1,125 @@
+DisplayTypeName:SMR radar display
+DisplayTypeNeedRadarContent:0
+DisplayTypeGeoReferenced:1
+SECTORFILE:
+SECTORTITLE:
+Free Text:LFLC Gates\10:freetext
+Free Text:LFLC Gates\11:freetext
+Free Text:LFLC Gates\12:freetext
+Free Text:LFLC Gates\13:freetext
+Free Text:LFLC Gates\14:freetext
+Free Text:LFLC Gates\15:freetext
+Free Text:LFLC Gates\16:freetext
+Free Text:LFLC Gates\17:freetext
+Free Text:LFLC Gates\18:freetext
+Free Text:LFLC Gates\19:freetext
+Free Text:LFLC Gates\2:freetext
+Free Text:LFLC Gates\3:freetext
+Free Text:LFLC Gates\4:freetext
+Free Text:LFLC Gates\5:freetext
+Free Text:LFLC Gates\6:freetext
+Free Text:LFLC Gates\7:freetext
+Free Text:LFLC Gates\8:freetext
+Free Text:LFLC Gates\9:freetext
+Free Text:LFLC Gates\ACB:freetext
+Free Text:LFLC Gates\AIA:freetext
+Free Text:LFLC Gates\Aire essai moteur:freetext
+Free Text:LFLC Gates\AVT:freetext
+Free Text:LFLC Gates\Hangar Fret:freetext
+Free Text:LFLC Gates\Hangars:freetext
+Free Text:LFLC Gates\Hangars:freetext
+Free Text:LFLC Gates\Hangars ACB:freetext
+Free Text:LFLC Gates\P Alpha:freetext
+Free Text:LFLC Gates\P Echo:freetext
+Free Text:LFLC Gates\P India:freetext
+Free Text:LFLC Gates\P Sierra:freetext
+Free Text:LFLC Gates\P Victor:freetext
+Free Text:LFLC Gates\P1:freetext
+Free Text:LFLC Gates\P2:freetext
+Free Text:LFLC Gates\P3:freetext
+Free Text:LFLC Gates\P4:freetext
+Free Text:LFLC Gates\P5:freetext
+Free Text:LFLC Gates\P50:freetext
+Free Text:LFLC Gates\P51:freetext
+Free Text:LFLC Gates\P52:freetext
+Free Text:LFLC Gates\P53:freetext
+Free Text:LFLC Gates\P55:freetext
+Free Text:LFLC Gates\P6:freetext
+Free Text:LFLC Gates\RFFS Met:freetext
+Free Text:LFLC Gates\Terminal:freetext
+Free Text:LFLC Gates\Terminal Affaires:freetext
+Free Text:LFLC Gates\TWR:freetext
+Free Text:LFLC Taxiways\B:freetext
+Free Text:LFLC Taxiways\C1:freetext
+Free Text:LFLC Taxiways\C1:freetext
+Free Text:LFLC Taxiways\C3:freetext
+Free Text:LFLC Taxiways\C3:freetext
+Free Text:LFLC Taxiways\C4:freetext
+Free Text:LFLC Taxiways\C5:freetext
+Free Text:LFLC Taxiways\D2:freetext
+Free Text:LFLC Taxiways\D3:freetext
+Free Text:LFLC Taxiways\D4:freetext
+Free Text:LFLC Taxiways\K1:freetext
+Free Text:LFLC Taxiways\K2:freetext
+Free Text:LFLC Taxiways\K3:freetext
+Free Text:LFLC Taxiways\K4:freetext
+Free Text:LFLC Taxiways\K5:freetext
+Free Text:LFLC Taxiways\K6:freetext
+Free Text:LFLC Taxiways\K7:freetext
+Free Text:LFLC Taxiways\L:freetext
+Free Text:LFLC Taxiways\L:freetext
+Free Text:LFLC Taxiways\L:freetext
+Free Text:LFLC Taxiways\Q:freetext
+Free Text:LFLC Taxiways\T2:freetext
+Free Text:LFLC Taxiways\T3:freetext
+Free Text:LFLC Taxiways\X:freetext
+Free Text:LFLC Taxiways\X:freetext
+Free Text:LFLC Taxiways\X:freetext
+Free Text:LFLC Taxiways\X:freetext
+Free Text:LFLC Taxiways\X:freetext
+Free Text:LFLC Taxiways\X:freetext
+Free Text:LFLC Taxiways\X:freetext
+Free Text:LFLC Taxiways\X:freetext
+Geo:LFLC Groundlayout AVISO:
+Regions:LFLC AVISO:polygon
+SHOWC:1
+SHOWSB:0
+BELOW:0
+ABOVE:0
+LEADER:5
+SHOWLEADER:1
+TURNLEADER:0
+HISTORY_DOTS:5
+SIMULATION_MODE:1
+DISABLEPANNING:0
+DISABLEZOOMING:0
+DisplayRotation:0.00000
+TAGFAMILY:Matias (built in)
+WINDOWAREA:45.771416:3.120964:45.801352:3.206210
+PLUGIN:vSMR:ActiveProfile:Default
+PLUGIN:vSMR:Afterglow:1
+PLUGIN:vSMR:Airport:LFLC
+PLUGIN:vSMR:AppTrailsDots:4
+PLUGIN:vSMR:FontSize:1
+PLUGIN:vSMR:GndTrailsDots:4
+PLUGIN:vSMR:PredictedLine:0
+PLUGIN:vSMR:SRW1BottomRightX:716
+PLUGIN:vSMR:SRW1BottomRightY:728
+PLUGIN:vSMR:SRW1Display:1
+PLUGIN:vSMR:SRW1Filter:5500
+PLUGIN:vSMR:SRW1OffsetX:-6
+PLUGIN:vSMR:SRW1OffsetY:4
+PLUGIN:vSMR:SRW1Rotation:0
+PLUGIN:vSMR:SRW1Scale:15
+PLUGIN:vSMR:SRW1TopLeftX:292
+PLUGIN:vSMR:SRW1TopLeftY:351
+PLUGIN:vSMR:SRW2BottomRightX:600
+PLUGIN:vSMR:SRW2BottomRightY:500
+PLUGIN:vSMR:SRW2Display:0
+PLUGIN:vSMR:SRW2Filter:5500
+PLUGIN:vSMR:SRW2OffsetX:0
+PLUGIN:vSMR:SRW2OffsetY:0
+PLUGIN:vSMR:SRW2Rotation:0
+PLUGIN:vSMR:SRW2Scale:15
+PLUGIN:vSMR:SRW2TopLeftX:200
+PLUGIN:vSMR:SRW2TopLeftY:200
