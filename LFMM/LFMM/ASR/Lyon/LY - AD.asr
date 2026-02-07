@@ -77,12 +77,24 @@ Fixes:TUFTA:symbol
 Fixes:UBEXU:symbol
 Fixes:VARUX:symbol
 Fixes:VEROT:symbol
+Free Text:MAPS LYON VRP LYON AREA\EA:freetext
+Free Text:MAPS LYON VRP LYON AREA\MC:freetext
+Free Text:MAPS LYON VRP LYON AREA\MS:freetext
+Free Text:MAPS LYON VRP LYON AREA\N:freetext
+Free Text:MAPS LYON VRP LYON AREA\NA:freetext
+Free Text:MAPS LYON VRP LYON AREA\NW:freetext
+Free Text:MAPS LYON VRP LYON AREA\S:freetext
+Free Text:MAPS LYON VRP LYON AREA\SA:freetext
+Free Text:MAPS LYON VRP LYON AREA\TE:freetext
+Free Text:MAPS LYON VRP LYON AREA\TW:freetext
 Geo:LFMM Landmark Frontiere:
 Geo:LFXX Political Boundaries:
 Geo:MAPS LYON ECL RWY 16:
 Geo:MAPS LYON ECL RWY 17L:
 Geo:MAPS LYON ECL RWY 34:
 Geo:MAPS LYON ECL RWY 35R:
+Geo:MAPS LYON VFR LYON AREA:
+Geo:MAPS LYON VRP LYON AREA:
 NDBs:CH:symbol
 Regions:MAPS LYON TMA ACTIVE:polygon
 Regions:MAPS LYON TMA INACTIVE:polygon
