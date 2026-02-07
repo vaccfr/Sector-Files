@@ -21,11 +21,11 @@ NDBs:symbol:6122595:1.0:0:0:7
 NDBs:name:6122595:3.5:0:0:12
 NDBs:frequency:6122595:3.5:0:0:0
 Runways:centerline:6122595:3.5:0:2:7
-Runways:extended centerline:6122595:3.5:4:0:7
+Runways:extended centerline:6122595:3.5:0:0:7
 Runways:name:6122595:4.0:0:0:7
 Datablock:non concerned:12305239:3.5:2:0:7
 Datablock:notified:14674167:3.5:2:0:7
-Datablock:assumed:13104255:3.5:2:0:7
+Datablock:assumed:16439410:3.5:2:0:7
 Datablock:transfer to me initiated:7850665:3.5:2:0:7
 Datablock:redundant:15585660:3.5:2:0:7
 Datablock:information:65535:3.5:2:0:7
