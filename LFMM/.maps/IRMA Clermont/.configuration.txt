@@ -1,0 +1,25 @@
+ARTCC -> Style Solid
+- TMA
+- CTA
+- SIV
+
+ARTCC Low -> Style Dash Dot Dash
+- AMSR
+- CTR
+
+GEO -> Style Solid
+- Centerlines
+- VFR
+- VRP
+- RANGE RINGS
+
+REGIONS -> Style NIL
+- Active AoR SIV
+- Active AoR CTA
+- Active AoR TMA
+
+Freetext
+- Airspace Classes
+- Airspace Information
+- AMSR
+- VFR Reporting Points
