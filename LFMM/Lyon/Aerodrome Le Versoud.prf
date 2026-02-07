@@ -26,12 +26,12 @@ Settings	airports	\..\LFMM\ICAO\ICAO_Airports.txt
 Settings	aircraft	\..\LFMM\ICAO\ICAO_Aircraft.txt
 Settings	airportcoords	\..\LFMM\NavData\icao.txt
 Settings	airways	\..\LFMM\NavData\airway.txt
-ASRFastKeys	1	\..\LFMM\ASR\Lyon\Aerodrome Le Versoud.asr
-ASRFastKeys	2	\..\LFMM\ASR\Lyon\SMR Le Versoud.asr
-ASRFastKeys	3	\..\LFMM\ASR\Route Checker.asr
-RecentFiles	Recent1	\..\LFMM\ASR\Lyon\Aerodrome Le Versoud.asr
-RecentFiles	Recent2	\..\LFMM\ASR\Route Checker.asr
-RecentFiles	Recent3	\..\LFMM\ASR\Lyon\SMR Le Versoud.asr
+ASRFastKeys	1	\..\LFMM\ASR\Lyon\LG - AD.asr
+ASRFastKeys	2	\..\LFMM\ASR\Lyon\LG - A-SMGCS.asr
+ASRFastKeys	3	\..\LFMM\ASR\LFMM - Overview.asr
+RecentFiles	Recent1	\..\LFMM\ASR\Lyon\LG - AD.asr
+RecentFiles	Recent2	\..\LFMM\ASR\LFMM - Overview.asr
+RecentFiles	Recent3	\..\LFMM\ASR\Lyon\LG - A-SMGCS.asr
 TeamSpeakVccs	TsVccsMiniControlX	2375
 TeamSpeakVccs	TsVccsMiniControlY	44
 TeamSpeakVccs	Ts3DialogLeft	0

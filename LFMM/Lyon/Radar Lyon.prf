@@ -26,22 +26,22 @@ Settings	airports	\..\LFMM\ICAO\ICAO_Airports.txt
 Settings	aircraft	\..\LFMM\ICAO\ICAO_Aircraft.txt
 Settings	airportcoords	\..\LFMM\NavData\icao.txt
 Settings	airways	\..\LFMM\NavData\airway.txt
-ASRFastKeys	1	\..\LFMM\ASR\Lyon\Radar Lyon Config 17.asr
-ASRFastKeys	2	\..\LFMM\ASR\Lyon\Radar Lyon Config 35.asr
-ASRFastKeys	3	\..\LFMM\ASR\Lyon\Information Lyon.asr
-ASRFastKeys	4	\..\LFMM\ASR\Lyon\SMR Saint-Exupery.asr
-ASRFastKeys	5	\..\LFMM\ASR\Lyon\SMR Bron.asr
-ASRFastKeys	6	\..\LFMM\ASR\Lyon\SMR Grenoble.asr
-ASRFastKeys	7	\..\LFMM\ASR\Lyon\SMR Valence.asr
-ASRFastKeys	8	\..\LFMM\ASR\Route Checker.asr
-RecentFiles	Recent1	\..\LFMM\ASR\Lyon\Radar Lyon Config 17.asr
-RecentFiles	Recent2	\..\LFMM\ASR\Route Checker.asr
-RecentFiles	Recent3	\..\LFMM\ASR\Lyon\SMR Valence.asr
-RecentFiles	Recent4	\..\LFMM\ASR\Lyon\SMR Grenoble.asr
-RecentFiles	Recent5	\..\LFMM\ASR\Lyon\SMR Bron.asr
-RecentFiles	Recent6	\..\LFMM\ASR\Lyon\SMR Saint-Exupery.asr
-RecentFiles	Recent7	\..\LFMM\ASR\Lyon\Information Lyon.asr
-RecentFiles	Recent8	\..\LFMM\ASR\Lyon\Radar Lyon Config 35.asr
+ASRFastKeys	1	\..\LFMM\ASR\Lyon\LL - RDR 17.asr
+ASRFastKeys	2	\..\LFMM\ASR\Lyon\LL - RDR 35.asr
+ASRFastKeys	3	\..\LFMM\ASR\Lyon\LL - FIS.asr
+ASRFastKeys	4	\..\LFMM\ASR\Lyon\LL - A-SMGCS.asr
+ASRFastKeys	5	\..\LFMM\ASR\Lyon\LY - A-SMGCS.asr
+ASRFastKeys	6	\..\LFMM\ASR\Lyon\LS - A-SMGCS.asr
+ASRFastKeys	7	\..\LFMM\ASR\Lyon\LU - A-SMGCS.asr
+ASRFastKeys	8	\..\LFMM\ASR\LFMM - Overview.asr
+RecentFiles	Recent1	\..\LFMM\ASR\Lyon\LL - RDR 17.asr
+RecentFiles	Recent2	\..\LFMM\ASR\Lyon\LL - FIS.asr
+RecentFiles	Recent3	\..\LFMM\ASR\Lyon\LL - RDR 35.asr
+RecentFiles	Recent4	\..\LFMM\ASR\LFMM - Overview.asr
+RecentFiles	Recent5	\..\LFMM\ASR\Lyon\LU - A-SMGCS.asr
+RecentFiles	Recent6	\..\LFMM\ASR\Lyon\LS - A-SMGCS.asr
+RecentFiles	Recent7	\..\LFMM\ASR\Lyon\LY - A-SMGCS.asr
+RecentFiles	Recent8	\..\LFMM\ASR\Lyon\LL - A-SMGCS.asr
 TeamSpeakVccs	TsVccsMiniControlX	2375
 TeamSpeakVccs	TsVccsMiniControlY	44
 TeamSpeakVccs	Ts3DialogLeft	0
