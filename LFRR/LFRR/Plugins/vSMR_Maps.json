@@ -1,0 +1,60 @@
+[
+	{
+		"zoomLevel": 7,
+		"element": "FREETEXT/LFPG Taxiways"
+	},
+	{
+		"zoomLevel": 8,
+		"element": "FREETEXT/LFPO Taxiways"
+	},
+	{
+		"zoomLevel": 8,
+		"element": "FREETEXT/LFMN Taxiways"
+	},
+	{
+		"zoomLevel": 6,
+		"element": "FREETEXT/LFLL Taxiways"
+	},
+	{
+		"zoomLevel": 8,
+		"element": "FREETEXT/LFML Taxiways"
+	},
+	{
+		"zoomLevel": 6,
+		"element": "FREETEXT/LFBO Taxiways"
+	},
+	{
+		"zoomLevel": 12,
+		"element": "FREETEXT/LFPG Gates"
+	},
+	{
+		"zoomLevel": 12,
+		"element": "FREETEXT/LFPO Gates"
+	},
+	{
+		"zoomLevel": 12,
+		"element": "FREETEXT/LFMN Gates"
+	},
+	{
+		"zoomLevel": 12,
+		"element": "FREETEXT/LFLL Gates"
+	},
+	{
+		"zoomLevel": 12,
+		"element": "FREETEXT/LFML Gates"
+	},
+	{
+		"zoomLevel": 12,
+		"element": "FREETEXT/LFBO Gates"
+	},
+	{
+		"zoomLevel": 8,
+		"element": "GEO/LFPG Groundlayout East Arrows",
+		"active": "LFPG:DEP:08L:ARR:08R"
+	},
+	{
+		"zoomLevel": 8,
+		"element": "GEO/LFPG Groundlayout West Arrows",
+		"active": "LFPG:DEP:26R:ARR:26L"
+	}
+]

@@ -1,6 +1,0 @@
-MAPS IRMA NICE VECTORING ILS RWY 04      N043.26.30.770 E006.57.04.814 N043.28.12.278 E006.57.05.351 COLOR_NCE-Vectoring
-                                         N043.28.12.278 E006.57.05.351 N043.28.12.659 E006.54.34.881 COLOR_NCE-Vectoring
-                                         N043.31.11.165 E007.01.13.671 N043.31.29.409 E007.01.39.008 COLOR_NCE-Vectoring
-                                         N043.31.29.409 E007.01.39.008 N043.31.29.552 E007.00.42.803 COLOR_NCE-Vectoring
-                                         N043.31.11.165 E007.01.13.671 N043.31.29.473 E007.01.38.920 COLOR_NCE-Vectoring
-                                         N043.31.29.473 E007.01.38.920 N043.30.43.100 E007.01.38.920 COLOR_NCE-Vectoring

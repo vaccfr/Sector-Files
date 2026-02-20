@@ -1,0 +1,241 @@
+DisplayTypeName:SMR radar display
+DisplayTypeNeedRadarContent:0
+DisplayTypeGeoReferenced:1
+SECTORFILE:
+SECTORTITLE:
+Free Text:LFBO Gates\A10:freetext
+Free Text:LFBO Gates\A12:freetext
+Free Text:LFBO Gates\A13:freetext
+Free Text:LFBO Gates\A14:freetext
+Free Text:LFBO Gates\A15:freetext
+Free Text:LFBO Gates\A16:freetext
+Free Text:LFBO Gates\A20:freetext
+Free Text:LFBO Gates\A22:freetext
+Free Text:LFBO Gates\A23:freetext
+Free Text:LFBO Gates\A24:freetext
+Free Text:LFBO Gates\A25:freetext
+Free Text:LFBO Gates\AEROSPATIALE:freetext
+Free Text:LFBO Gates\Aire:freetext
+Free Text:LFBO Gates\ATE:freetext
+Free Text:LFBO Gates\B10:freetext
+Free Text:LFBO Gates\B11:freetext
+Free Text:LFBO Gates\B12:freetext
+Free Text:LFBO Gates\B13:freetext
+Free Text:LFBO Gates\B14:freetext
+Free Text:LFBO Gates\B20:freetext
+Free Text:LFBO Gates\B21:freetext
+Free Text:LFBO Gates\B22:freetext
+Free Text:LFBO Gates\B24:freetext
+Free Text:LFBO Gates\B25:freetext
+Free Text:LFBO Gates\B31:freetext
+Free Text:LFBO Gates\B41:freetext
+Free Text:LFBO Gates\BIKINI:freetext
+Free Text:LFBO Gates\C1:freetext
+Free Text:LFBO Gates\C2:freetext
+Free Text:LFBO Gates\C3:freetext
+Free Text:LFBO Gates\C4:freetext
+Free Text:LFBO Gates\CEV:freetext
+Free Text:LFBO Gates\D10:freetext
+Free Text:LFBO Gates\D12:freetext
+Free Text:LFBO Gates\D20:freetext
+Free Text:LFBO Gates\D21:freetext
+Free Text:LFBO Gates\D22:freetext
+Free Text:LFBO Gates\D23:freetext
+Free Text:LFBO Gates\D31:freetext
+Free Text:LFBO Gates\D41:freetext
+Free Text:LFBO Gates\D51:freetext
+Free Text:LFBO Gates\DSNA:freetext
+Free Text:LFBO Gates\E10:freetext
+Free Text:LFBO Gates\E20:freetext
+Free Text:LFBO Gates\E30:freetext
+Free Text:LFBO Gates\E40:freetext
+Free Text:LFBO Gates\E42:freetext
+Free Text:LFBO Gates\E50:freetext
+Free Text:LFBO Gates\E52:freetext
+Free Text:LFBO Gates\E54:freetext
+Free Text:LFBO Gates\E60:freetext
+Free Text:LFBO Gates\E62:freetext
+Free Text:LFBO Gates\F10:freetext
+Free Text:LFBO Gates\F20:freetext
+Free Text:LFBO Gates\F30:freetext
+Free Text:LFBO Gates\F40:freetext
+Free Text:LFBO Gates\F50:freetext
+Free Text:LFBO Gates\G10:freetext
+Free Text:LFBO Gates\G12:freetext
+Free Text:LFBO Gates\G20:freetext
+Free Text:LFBO Gates\G21:freetext
+Free Text:LFBO Gates\G22:freetext
+Free Text:LFBO Gates\G23:freetext
+Free Text:LFBO Gates\G24:freetext
+Free Text:LFBO Gates\G25:freetext
+Free Text:LFBO Gates\G26:freetext
+Free Text:LFBO Gates\G27:freetext
+Free Text:LFBO Gates\G30:freetext
+Free Text:LFBO Gates\G31:freetext
+Free Text:LFBO Gates\G32:freetext
+Free Text:LFBO Gates\G40:freetext
+Free Text:LFBO Gates\H.ZIEGLER:freetext
+Free Text:LFBO Gates\J.L.LAGARDERE:freetext
+Free Text:LFBO Gates\K11:freetext
+Free Text:LFBO Gates\K12:freetext
+Free Text:LFBO Gates\K22:freetext
+Free Text:LFBO Gates\K32:freetext
+Free Text:LFBO Gates\LANDES:freetext
+Free Text:LFBO Gates\MORVAN:freetext
+Free Text:LFBO Gates\Parking C.ADER:freetext
+Free Text:LFBO Gates\PYRENEES:freetext
+Free Text:LFBO Gates\QUERCY:freetext
+Free Text:LFBO Gates\ROMEO:freetext
+Free Text:LFBO Gates\ST MARTIN:freetext
+Free Text:LFBO Gates\ST MARTIN:freetext
+Free Text:LFBO Gates\TARN:freetext
+Free Text:LFBO Gates\U10:freetext
+Free Text:LFBO Gates\U11:freetext
+Free Text:LFBO Gates\U12:freetext
+Free Text:LFBO Gates\U20:freetext
+Free Text:LFBO Gates\U21:freetext
+Free Text:LFBO Gates\U22:freetext
+Free Text:LFBO Gates\U30:freetext
+Free Text:LFBO Gates\U31:freetext
+Free Text:LFBO Gates\U32:freetext
+Free Text:LFBO Gates\U40:freetext
+Free Text:LFBO Gates\U41:freetext
+Free Text:LFBO Gates\U42:freetext
+Free Text:LFBO Gates\V10:freetext
+Free Text:LFBO Gates\V12:freetext
+Free Text:LFBO Gates\VENDEE:freetext
+Free Text:LFBO Points VFR\EA:freetext
+Free Text:LFBO Points VFR\EB:freetext
+Free Text:LFBO Points VFR\EN:freetext
+Free Text:LFBO Points VFR\N:freetext
+Free Text:LFBO Points VFR\NA:freetext
+Free Text:LFBO Points VFR\SA:freetext
+Free Text:LFBO Points VFR\SB:freetext
+Free Text:LFBO Points VFR\SL:freetext
+Free Text:LFBO Points VFR\SN:freetext
+Free Text:LFBO Points VFR\WD:freetext
+Free Text:LFBO Points VFR\WF:freetext
+Free Text:LFBO Points VFR\WH:freetext
+Free Text:LFBO Taxiways\14:freetext
+Free Text:LFBO Taxiways\32:freetext
+Free Text:LFBO Taxiways\J1:freetext
+Free Text:LFBO Taxiways\J2:freetext
+Free Text:LFBO Taxiways\J3:freetext
+Free Text:LFBO Taxiways\J4:freetext
+Free Text:LFBO Taxiways\L1:freetext
+Free Text:LFBO Taxiways\L2:freetext
+Free Text:LFBO Taxiways\M10:freetext
+Free Text:LFBO Taxiways\M11:freetext
+Free Text:LFBO Taxiways\M2:freetext
+Free Text:LFBO Taxiways\M4:freetext
+Free Text:LFBO Taxiways\M8:freetext
+Free Text:LFBO Taxiways\N1:freetext
+Free Text:LFBO Taxiways\N2:freetext
+Free Text:LFBO Taxiways\N4:freetext
+Free Text:LFBO Taxiways\N6:freetext
+Free Text:LFBO Taxiways\N8:freetext
+Free Text:LFBO Taxiways\P10:freetext
+Free Text:LFBO Taxiways\P100:freetext
+Free Text:LFBO Taxiways\P101:freetext
+Free Text:LFBO Taxiways\P20:freetext
+Free Text:LFBO Taxiways\P40:freetext
+Free Text:LFBO Taxiways\P50:freetext
+Free Text:LFBO Taxiways\P55:freetext
+Free Text:LFBO Taxiways\P60:freetext
+Free Text:LFBO Taxiways\P65:freetext
+Free Text:LFBO Taxiways\P70:freetext
+Free Text:LFBO Taxiways\P90:freetext
+Free Text:LFBO Taxiways\S10:freetext
+Free Text:LFBO Taxiways\S11:freetext
+Free Text:LFBO Taxiways\S2:freetext
+Free Text:LFBO Taxiways\S20:freetext
+Free Text:LFBO Taxiways\S3:freetext
+Free Text:LFBO Taxiways\S30:freetext
+Free Text:LFBO Taxiways\S32:freetext
+Free Text:LFBO Taxiways\S35:freetext
+Free Text:LFBO Taxiways\S4:freetext
+Free Text:LFBO Taxiways\S40:freetext
+Free Text:LFBO Taxiways\S50:freetext
+Free Text:LFBO Taxiways\S6:freetext
+Free Text:LFBO Taxiways\S60:freetext
+Free Text:LFBO Taxiways\S8:freetext
+Free Text:LFBO Taxiways\S90:freetext
+Free Text:LFBO Taxiways\T10:freetext
+Free Text:LFBO Taxiways\T101:freetext
+Free Text:LFBO Taxiways\T11:freetext
+Free Text:LFBO Taxiways\T12:freetext
+Free Text:LFBO Taxiways\T20:freetext
+Free Text:LFBO Taxiways\T21:freetext
+Free Text:LFBO Taxiways\T22:freetext
+Free Text:LFBO Taxiways\T40:freetext
+Free Text:LFBO Taxiways\T41:freetext
+Free Text:LFBO Taxiways\T42:freetext
+Free Text:LFBO Taxiways\T43:freetext
+Free Text:LFBO Taxiways\T44:freetext
+Free Text:LFBO Taxiways\T50:freetext
+Free Text:LFBO Taxiways\T51:freetext
+Free Text:LFBO Taxiways\T55:freetext
+Free Text:LFBO Taxiways\T60:freetext
+Free Text:LFBO Taxiways\T61:freetext
+Free Text:LFBO Taxiways\T65:freetext
+Free Text:LFBO Taxiways\T70:freetext
+Free Text:LFBO Taxiways\T71:freetext
+Free Text:LFBO Taxiways\T81:freetext
+Free Text:LFBO Taxiways\W100:freetext
+Free Text:LFBO Taxiways\W20:freetext
+Free Text:LFBO Taxiways\W30:freetext
+Free Text:LFBO Taxiways\W35:freetext
+Free Text:LFBO Taxiways\W40:freetext
+Free Text:LFBO Taxiways\W50:freetext
+Free Text:LFBO Taxiways\W60:freetext
+Free Text:LFBO Taxiways\W80:freetext
+Free Text:LFBO Taxiways\W90:freetext
+Free Text:LFBO Taxiways\X:freetext
+Free Text:LFBO Taxiways\Y50:freetext
+Free Text:LFBO Taxiways\Z1:freetext
+Free Text:LFBO Taxiways\Z2:freetext
+Free Text:LFBO Taxiways\Z3:freetext
+Free Text:LFBO Taxiways\Z4:freetext
+Free Text:LFBO Taxiways\Z5:freetext
+Regions:LFBO AVISO:polygon
+SHOWC:1
+SHOWSB:0
+BELOW:0
+ABOVE:0
+LEADER:5
+SHOWLEADER:1
+TURNLEADER:0
+HISTORY_DOTS:5
+SIMULATION_MODE:1
+DISABLEPANNING:0
+DISABLEZOOMING:0
+DisplayRotation:0.00000
+TAGFAMILY:Matias (built in)
+WINDOWAREA:43.605894:1.287017:43.664362:1.448695
+PLUGIN:vSMR:ActiveProfile:Default
+PLUGIN:vSMR:Afterglow:1
+PLUGIN:vSMR:Airport:LFBO
+PLUGIN:vSMR:AppTrailsDots:4
+PLUGIN:vSMR:FontSize:1
+PLUGIN:vSMR:GndTrailsDots:4
+PLUGIN:vSMR:PredictedLine:0
+PLUGIN:vSMR:SRW1BottomRightX:972
+PLUGIN:vSMR:SRW1BottomRightY:266
+PLUGIN:vSMR:SRW1Display:1
+PLUGIN:vSMR:SRW1Filter:5500
+PLUGIN:vSMR:SRW1OffsetX:50
+PLUGIN:vSMR:SRW1OffsetY:-33
+PLUGIN:vSMR:SRW1Rotation:0
+PLUGIN:vSMR:SRW1Scale:15
+PLUGIN:vSMR:SRW1TopLeftX:580
+PLUGIN:vSMR:SRW1TopLeftY:139
+PLUGIN:vSMR:SRW2BottomRightX:600
+PLUGIN:vSMR:SRW2BottomRightY:500
+PLUGIN:vSMR:SRW2Display:0
+PLUGIN:vSMR:SRW2Filter:5500
+PLUGIN:vSMR:SRW2OffsetX:0
+PLUGIN:vSMR:SRW2OffsetY:0
+PLUGIN:vSMR:SRW2Rotation:0
+PLUGIN:vSMR:SRW2Scale:15
+PLUGIN:vSMR:SRW2TopLeftX:200
+PLUGIN:vSMR:SRW2TopLeftY:200

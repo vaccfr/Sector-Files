@@ -1,6 +1,0 @@
-PLUGINS
-Euroscope timers plugin:x:1306
-Euroscope timers plugin:y:44
-vSMR:cpdlc_logon:LFLL
-vSMR:cpdlc_sound:1
-END
