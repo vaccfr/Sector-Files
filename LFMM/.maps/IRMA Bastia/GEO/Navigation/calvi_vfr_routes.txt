@@ -1,7 +1,0 @@
-MAPS BASTIA VFR CALVI                    N042.38.40.000 E008.55.54.000 N042.36.44.000 E008.51.08.000 COLOR_BIA-TransitVFR
-                                         N042.36.44.000 E008.51.08.000 N042.32.28.000 E008.47.57.000 COLOR_BIA-TransitVFR
-                                         N042.36.44.000 E008.51.08.000 N042.34.59.000 E008.43.28.000 COLOR_BIA-TransitVFR
-                                         N042.34.59.000 E008.43.28.000 N042.34.31.000 E008.41.27.000 COLOR_BIA-TransitVFR
-                                         N042.34.31.000 E008.41.27.000 N042.34.10.000 E008.39.54.000 COLOR_BIA-TransitVFR
-                                         N042.34.10.000 E008.39.54.000 N042.30.45.000 E008.39.54.000 COLOR_BIA-TransitVFR
-                                         N042.34.10.000 E008.39.54.000 N042.37.09.000 E008.36.49.000 COLOR_BIA-TransitVFR

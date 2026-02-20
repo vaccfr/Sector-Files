@@ -1,6 +1,0 @@
-MAPS IRMA NICE TMA Military              N043.11.36.581 E006.43.39.000 N043.07.17.000 E006.43.39.000 COLOR_NCE-ContourMil
-                                         N043.07.17.000 E006.43.39.000 N043.08.30.000 E006.32.30.000 COLOR_NCE-ContourMil
-                                         N043.08.30.000 E006.32.30.000 N043.08.53.520 E006.29.16.000 COLOR_NCE-ContourMil
-                                         N043.14.57.406 E006.25.58.178 N043.18.50.000 E006.30.09.000 COLOR_NCE-ContourMil
-                                         N043.18.50.000 E006.30.09.000 N043.17.23.000 E006.43.39.000 COLOR_NCE-ContourMil
-                                         N043.17.23.000 E006.43.39.000 N043.11.36.581 E006.43.39.000 COLOR_NCE-ContourMil
