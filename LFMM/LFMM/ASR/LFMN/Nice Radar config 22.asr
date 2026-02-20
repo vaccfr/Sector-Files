@@ -1,0 +1,93 @@
+DisplayTypeName:Standard ES radar screen
+DisplayTypeNeedRadarContent:1
+DisplayTypeGeoReferenced:1
+SECTORFILE:
+SECTORTITLE:
+ARTCC boundary:TMA LFMN Delimitations TMA:
+ARTCC boundary:TMA LFMN Monaco R106:
+Fixes:ABDIL:symbol
+Fixes:ABLAK:symbol
+Fixes:AMFOU:symbol
+Fixes:AMGEL:symbol
+Fixes:AMIRO:symbol
+Fixes:BADOD:symbol
+Fixes:BARSO:symbol
+Fixes:BASIP:symbol
+Fixes:BODRU:symbol
+Fixes:BORDI:symbol
+Fixes:CUERS:symbol
+Fixes:EPOLO:symbol
+Fixes:GAPDO:symbol
+Fixes:GEMFU:symbol
+Fixes:GILON:symbol
+Fixes:INLOV:symbol
+Fixes:IRMAR:symbol
+Fixes:KERIT:symbol
+Fixes:KESAK:symbol
+Fixes:KOKIN:symbol
+Fixes:LERMA:symbol
+Fixes:LONSU:symbol
+Fixes:MERLU:symbol
+Fixes:MIKRU:symbol
+Fixes:MN22D:symbol
+Fixes:NEKIP:symbol
+Fixes:NERAS:symbol
+Fixes:NISAR:symbol
+Fixes:OKTET:symbol
+Fixes:OMARD:symbol
+Fixes:OTOKE:symbol
+Fixes:OZMIC:symbol
+Fixes:PERUS:symbol
+Fixes:PIGOS:symbol
+Fixes:RESBO:symbol
+Fixes:RUBAS:symbol
+Fixes:RUBIT:symbol
+Fixes:SODRI:symbol
+Fixes:SOTOX:symbol
+Fixes:TIPIK:symbol
+Fixes:TUPOX:symbol
+Fixes:USANO:symbol
+Fixes:VEVAR:symbol
+Fixes:XIRBI:symbol
+Geo:LFMD Vectors Finale OBOTA:
+Geo:LFMD Vectors Repere Departs:
+Geo:LFMN Vectors Finale RNP D (22L/R):
+Geo:LFMN Vectors Repere Departs 22L/R:
+Geo:LFMN Vectors Trajectoires VFR:
+Geo:LFTZ Vectors Finale VOR A (06/24):
+Geo:LFXX Coastline:
+NDBs:MUS:symbol
+Regions:LFMN Zone Guidage NANAX:polygon
+Runways:LFMC 09-27:centerline
+Runways:LFMC 13-31:centerline
+Runways:LFMD 04-22:centerline
+Runways:LFMD 17-35:centerline
+Runways:LFMN 04L-22R:centerline
+Runways:LFMN 04R-22L:centerline
+Runways:LFTF 11-29:centerline
+Runways:LFTZ 06-24:centerline
+VORs:CNM:symbol
+VORs:LUC:symbol
+VORs:NIZ:symbol
+VORs:STP:symbol
+SHOWC:1
+SHOWSB:0
+BELOW:1
+ABOVE:24000
+LEADER:-2
+SHOWLEADER:0
+TURNLEADER:0
+HISTORY_DOTS:0
+SIMULATION_MODE:1
+DISABLEPANNING:0
+DISABLEZOOMING:0
+DisplayRotation:0.00000
+TAGFAMILY:CoFrance Approach
+WINDOWAREA:42.567209:5.675066:44.369916:8.830836
+PLUGIN:CoFrance:APP:1
+PLUGIN:CoFrance:FILT:1
+PLUGIN:CoFrance:FILTABOVE:24500
+PLUGIN:CoFrance:FILTBELOW:0
+PLUGIN:CoFrance:RAD:1
+PLUGIN:CoFrance:VV:0
+PLUGIN:CoFrance:VVTIME:2

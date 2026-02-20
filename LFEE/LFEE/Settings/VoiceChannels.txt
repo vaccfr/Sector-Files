@@ -1,0 +1,377 @@
+VOICE
+AG:LFAQ_TWR Albert Tower:119.655
+AG:LFAT_ATIS:123.130
+AG:LFAT_TWR Le Touquet Tower:118.450
+AG:LFBA_ATIS:129.605
+AG:LFBA_TWR Agen Tower:121.300
+AG:LFBB_CTR Bordeaux Control:125.105
+AG:LFBB_H2_CTR Bordeaux Control:132.910
+AG:LFBB_H3_CTR Bordeaux Control:120.935
+AG:LFBB_H4_CTR Bordeaux Control:134.610
+AG:LFBB_H5_CTR Bordeaux Control:124.080
+AG:LFBB_H_CTR Bordeaux Control:124.830
+AG:LFBB_L2_CTR Bordeaux Control:136.040
+AG:LFBB_L3_CTR Bordeaux Control:134.225
+AG:LFBB_L4_CTR Bordeaux Control:122.630
+AG:LFBB_L5_CTR Bordeaux Control:127.435
+AG:LFBB_L_CTR Bordeaux Control:132.990
+AG:LFBB_N2_CTR Bordeaux Control:134.765
+AG:LFBB_N3_CTR Bordeaux Control:120.935
+AG:LFBB_N4_CTR Bordeaux Control:133.460
+AG:LFBB_N5_CTR Bordeaux Control:124.080
+AG:LFBB_N_CTR Bordeaux Control:135.665
+AG:LFBB_P2_CTR Bordeaux Control:133.960
+AG:LFBB_P3_CTR Bordeaux Control:132.180
+AG:LFBB_P4_CTR Bordeaux Control:130.230
+AG:LFBB_P_CTR Bordeaux Control:133.960
+AG:LFBB_R2_CTR Bordeaux Control:132.990
+AG:LFBB_R3_CTR Bordeaux Control:135.240
+AG:LFBB_R4_CTR Bordeaux Control:133.010
+AG:LFBB_R5_CTR Bordeaux Control:124.635
+AG:LFBB_R_CTR Bordeaux Control:132.430
+AG:LFBB_T2_CTR Bordeaux Control:123.630
+AG:LFBB_T3_CTR Bordeaux Control:133.465
+AG:LFBB_T4_CTR Bordeaux Control:134.730
+AG:LFBB_T_CTR Bordeaux Control:123.630
+AG:LFBB_UN_CTR Bordeaux Control:118.430
+AG:LFBB_US_CTR Bordeaux Control:136.040
+AG:LFBB_X2_CTR Bordeaux Control:126.130
+AG:LFBB_X3_CTR Bordeaux Control:122.415
+AG:LFBB_X4_CTR Bordeaux Control:135.115
+AG:LFBB_X5_CTR Bordeaux Control:120.785
+AG:LFBB_X_CTR Bordeaux Control:126.130
+AG:LFBB_Z2_CTR Bordeaux Control:121.340
+AG:LFBB_Z3_CTR Bordeaux Control:136.180
+AG:LFBB_Z4_CTR Bordeaux Control:133.680
+AG:LFBB_Z5_CTR Bordeaux Control:120.785
+AG:LFBB_Z_CTR Bordeaux Control:128.765
+AG:LFBD_APP Aquitaine Approach:126.730
+AG:LFBD_ATIS:131.155
+AG:LFBD_E_APP Aquitaine East Approach:129.875
+AG:LFBD_GND Merignac Ground:121.900
+AG:LFBD_TWR Merignac Tower:118.300
+AG:LFBE_ATIS:127.480
+AG:LFBE_TWR Bergerac Tower:119.800
+AG:LFBG_TWR Cognac Tower:120.075
+AG:LFBH_APP La Rochelle Approach:124.200
+AG:LFBH_ATIS:126.880
+AG:LFBH_TWR La Rochelle Tower:118.000
+AG:LFBI_APP Poitiers Approach:134.100
+AG:LFBI_ATIS:121.780
+AG:LFBI_TWR Poitiers Biard Tower:118.500
+AG:LFBL_APP Limoge Approach:118.080
+AG:LFBL_ATIS:128.080
+AG:LFBL_TWR Limoges Tower:119.550
+AG:LFBO_APP Toulouse Approach:129.305
+AG:LFBO_ATIS:121.130
+AG:LFBO_DEL Blagnac Delivery:121.705
+AG:LFBO_E_APP Toulouse East Approach:125.180
+AG:LFBO_GND Blagnac Ground:121.900
+AG:LFBO_TWR Blagnac Tower:118.100
+AG:LFBO_W_APP Toulouse West Approach:121.105
+AG:LFBP_APP Pyrennees Approach:128.800
+AG:LFBP_ATIS:128.480
+AG:LFBP_GND Pau Ground:121.755
+AG:LFBP_TWR Pau Tower:124.150
+AG:LFBT_ATIS:125.955
+AG:LFBT_GND Lourdes Ground:121.800
+AG:LFBT_TWR Lourdes Tower:120.305
+AG:LFBZ_APP Biarritz Approach:125.600
+AG:LFBZ_ATIS:128.230
+AG:LFBZ_GND Biarritz Ground:121.950
+AG:LFBZ_TWR Biarritz Tower:118.700
+AG:LFCL_TWR Lasbordes Tower:122.700
+AG:LFCR_ATIS:129.780
+AG:LFCR_TWR Rodez Tower:118.125
+AG:LFEE_CTR Reims Control:133.005
+AG:LFEE_HE_CTR Reims Control:131.085
+AG:LFEE_HH_CTR Reims Control:128.835
+AG:LFEE_HN_CTR Reims Control:132.505
+AG:LFEE_HR_CTR Reims Control:125.975
+AG:LFEE_KD_CTR Reims Control:135.035
+AG:LFEE_KE_CTR Reims Control:132.390
+AG:LFEE_KF_CTR Reims Control:132.280
+AG:LFEE_KH_CTR Reims Control:133.830
+AG:LFEE_KN_CTR Reims Control:127.855
+AG:LFEE_KR_CTR Reims Control:126.285
+AG:LFEE_N_CTR Reims Control:127.555
+AG:LFEE_S_CTR Reims Control:135.105
+AG:LFEE_UB_CTR Reims Control:133.010
+AG:LFEE_UE_CTR Reims Control:127.570
+AG:LFEE_UF_CTR Reims Control:134.960
+AG:LFEE_UH_CTR Reims Control:134.405
+AG:LFEE_UN_CTR Reims Control:133.255
+AG:LFEE_UR_CTR Reims Control:135.505
+AG:LFEE_XE_CTR Reims Control:127.785
+AG:LFEE_XH_CTR Reims Control:133.415
+AG:LFEE_XR_CTR Reims Control:132.785
+AG:LFEE_YB_CTR Reims Control:135.305
+AG:LFFM_CTR France Military Control:128.375
+AG:LFGA_ATIS:126.135
+AG:LFGA_TWR Houssen Tower:119.000
+AG:LFGJ_ATIS:121.605
+AG:LFGJ_TWR Dole Tower:130.775
+AG:LFJL_APP Lorraine Approach:119.125
+AG:LFJL_ATIS:136.580
+AG:LFJL_GND Lorraine Ground:121.705
+AG:LFJL_TWR Lorraine Tower:122.075
+AG:LFKB_APP Bastia Approach:123.825
+AG:LFKB_ATIS:125.930
+AG:LFKB_GND Bastia Ground:121.830
+AG:LFKB_TWR Bastia Tower:118.000
+AG:LFKC_ATIS:131.180
+AG:LFKC_GND Calvi Ground:121.705
+AG:LFKC_TWR Calvi Tower:123.200
+AG:LFKF_ATIS:118.730
+AG:LFKF_GND Figari Ground:121.805
+AG:LFKF_TWR Figari Tower:120.300
+AG:LFKJ_APP Ajaccio Approach:121.050
+AG:LFKJ_ATIS:126.930
+AG:LFKJ_GND Ajaccio Ground:121.705
+AG:LFKJ_TWR Ajaccio Tower:118.075
+AG:LFLB_APP Chambéry Approach:121.205
+AG:LFLB_ATIS:127.100
+AG:LFLB_TWR Chambéry Tower:118.300
+AG:LFLC_APP Clermont Approach:119.375
+AG:LFLC_ATIS:136.405
+AG:LFLC_GND Clermont Ground:121.950
+AG:LFLC_S_APP Clermont South Approach:122.225
+AG:LFLC_TWR Clermont Tower:118.625
+AG:LFLD_I_TWR Bourges AFIS:119.600
+AG:LFLG_GND Le Versoux ground:121.655
+AG:LFLG_TWR Le Versoux Tower:121.000
+AG:LFLL_APP Lyon Approach:131.315
+AG:LFLL_ATIS:126.180
+AG:LFLL_DEL Saint Exupéry Delivery:121.655
+AG:LFLL_DEP Lyon Departure:120.430
+AG:LFLL_E_APP Lyon East Approach:136.075
+AG:LFLL_GND Saint Exupéry Ground:121.830
+AG:LFLL_TWR Saint-Exupéry Tower:120.450
+AG:LFLP_TWR Annecy Tower:118.200
+AG:LFLS_ATIS:133.855
+AG:LFLS_GND Grenoble Ground:121.930
+AG:LFLS_TWR Grenoble Tower:119.300
+AG:LFLV_I_TWR Vichy AFIS:121.405
+AG:LFLX_TWR Chateauroux Tower:125.875
+AG:LFLY_GND Bron Ground:121.705
+AG:LFLY_TWR Bron Tower:118.100
+AG:LFMA_TWR Aix Tower:118.750
+AG:LFMD_ATIS:130.480
+AG:LFMD_GND Mandelieu Ground:121.805
+AG:LFMD_TWR Mandelieu Tower:118.625
+AG:LFMH_ATIS:132.805
+AG:LFMH_TWR Saint Etienne Tower:119.250
+AG:LFMI_TWR Le Tube Tower:123.600
+AG:LFMK_ATIS:120.030
+AG:LFMK_TWR Carcassonne Tower:134.500
+AG:LFML_APP Provence Approach:124.350
+AG:LFML_ATIS:125.355
+AG:LFML_DEL Provence Delivery:121.730
+AG:LFML_GND Provence Ground:121.905
+AG:LFML_S_APP Provence South Approach:132.300
+AG:LFML_TWR Provence Tower:133.100
+AG:LFMM_CTR Marseille Control:123.900
+AG:LFMM_EU_CTR Marseille Control:132.385
+AG:LFMM_E_CTR Marseille Control:133.760
+AG:LFMM_RAE_CTR Marseille Control:132.490
+AG:LFMM_RAW_CTR Marseille Control:133.430
+AG:LFMM_U_CTR Marseille Control:125.465
+AG:LFMM_WU_CTR Marseille Control:133.585
+AG:LFMM_W_CTR Marseille Control:132.365
+AG:LFMN_APP Nice Approach:134.475
+AG:LFMN_ATIS:129.605
+AG:LFMN_DEL Nice Delivery:121.780
+AG:LFMN_DEP Nice Departure:130.830
+AG:LFMN_E_APP Nice Approach:124.180
+AG:LFMN_F_APP Nice Arrival:128.205
+AG:LFMN_GND Nice Ground:121.705
+AG:LFMN_I_APP Nice Information:122.925
+AG:LFMN_TWR Nice Tower:118.700
+AG:LFMO_TWR Orange Tower:128.950
+AG:LFMP_ATIS:127.880
+AG:LFMP_TWR Perpignan Tower:118.300
+AG:LFMT_APP Montpellier Approach:120.375
+AG:LFMT_ATIS:124.130
+AG:LFMT_GND Montpellier Ground:121.955
+AG:LFMT_S_APP Montpellier Sud Approach:130.855
+AG:LFMT_TWR Montpellier Tower:118.200
+AG:LFMU_ATIS:127.530
+AG:LFMU_TWR Beziers Tower:120.175
+AG:LFMV_ATIS:120.830
+AG:LFMV_TWR Avignon Tower:122.600
+AG:LFOA_APP Avord Approach:119.700
+AG:LFOA_TWR Avord Tower:122.100
+AG:LFOB_APP Beauvais Approach:123.985
+AG:LFOB_ATIS:118.380
+AG:LFOB_TWR Beauvais Tower:121.400
+AG:LFOC_TWR Chateaudun Tower:125.625
+AG:LFOH_I_TWR Le Havre AFIS:135.205
+AG:LFOJ_APP Orléans Approach:122.700
+AG:LFOJ_TWR Orléans Tower:124.800
+AG:LFOP_APP Rouen Approach:118.575
+AG:LFOP_ATIS:120.730
+AG:LFOP_TWR Rouen Tower:120.200
+AG:LFOT_APP Tours Approach:121.000
+AG:LFOT_TWR Tours Tower:124.400
+AG:LFOU_I_TWR Cholet AFIS:120.405
+AG:LFPB_ATIS:120.000
+AG:LFPB_DEL Le Bourget Delivery:121.950
+AG:LFPB_GND Le Bourget Ground:121.900
+AG:LFPB_TWR Le Bourget Tower:118.925
+AG:LFPG_ACE_RMP De Gaulle Ground:121.930
+AG:LFPG_APP De Gaulle Approach:121.155
+AG:LFPG_ATIS:127.130
+AG:LFPG_BD_RMP De Gaulle Ground:121.610
+AG:LFPG_DEL De Gaulle Delivery:121.840
+AG:LFPG_DEP De Gaulle Departure:124.355
+AG:LFPG_FDX_RMP De Gaulle Ground:131.605
+AG:LFPG_FS_APP De Gaulle Arrival:118.150
+AG:LFPG_F_APP De Gaulle Arrival:126.430
+AG:LFPG_F_RMP De Gaulle Ground:121.580
+AG:LFPG_GND De Gaulle Ground:121.610
+AG:LFPG_J_RMP De Gaulle Ground:121.880
+AG:LFPG_KL_RMP De Gaulle Ground:121.680
+AG:LFPG_RMP De Gaulle Ground:121.940
+AG:LFPG_S_APP De Gaulle Approach:125.830
+AG:LFPG_S_DEP De Gaulle Departure:133.380
+AG:LFPG_S_GND De Gaulle Ground:121.810
+AG:LFPG_S_TWR De Gaulle Tower:120.900
+AG:LFPG_TWR De Gaulle Tower:119.250
+AG:LFPL_ATIS:125.025
+AG:LFPL_TWR Lognes Tower:118.600
+AG:LFPN_ATIS:127.480
+AG:LFPN_TWR Toussus Tower:120.750
+AG:LFPO_APP Orly Approach:123.875
+AG:LFPO_ATIS:126.505
+AG:LFPO_DEL Orly Delivery:121.555
+AG:LFPO_DEP Orly Departure:127.750
+AG:LFPO_F_APP Orly Arrival:124.450
+AG:LFPO_GND Orly Ground:121.705
+AG:LFPO_TWR Orly Tower:118.700
+AG:LFPV_APP Villacoublay Approach:119.425
+AG:LFPV_TWR Villacoublay Tower:121.750
+AG:LFPZ_ATIS:131.025
+AG:LFPZ_TWR Saint Cyr Tower:118.000
+AG:LFQQ_APP Lille Approach:126.480
+AG:LFQQ_ATIS:119.330
+AG:LFQQ_GND Lille Ground:121.855
+AG:LFQQ_TWR Lille Tower:118.550
+AG:LFQT_ATIS:127.905
+AG:LFQT_TWR Merville Tower:119.075
+AG:LFRB_APP Iroise Approach:125.860
+AG:LFRB_ATIS:129.355
+AG:LFRB_I_APP Brest Info:119.575
+AG:LFRB_TWR Bretagne Tower:120.100
+AG:LFRC_I_TWR Cherbourg AFIS:119.625
+AG:LFRD_ATIS:124.580
+AG:LFRD_TWR Dinard Tower:120.150
+AG:LFRG_APP Deauville Approach:120.350
+AG:LFRG_ATIS:119.180
+AG:LFRG_TWR Deauville Tower:118.300
+AG:LFRH_APP Lorient Approach:123.000
+AG:LFRH_ATIS:129.125
+AG:LFRH_TWR Lorient Tower:119.700
+AG:LFRJ_APP Landivisiau Approach:122.400
+AG:LFRJ_TWR Landivisiau Tower:119.200
+AG:LFRK_ATIS:123.080
+AG:LFRK_TWR Caen Tower:134.525
+AG:LFRN_APP Rennes Approach:134.000
+AG:LFRN_ATIS:136.405
+AG:LFRN_C_APP Cotentin Info:134.200
+AG:LFRN_GND Rennes Ground:121.725
+AG:LFRN_N_APP Rennes North Approach:126.950
+AG:LFRN_TWR Rennes Tower:120.500
+AG:LFRQ_TWR Quimper Tower:118.625
+AG:LFRR_AI_CTR Brest Control:132.025
+AG:LFRR_AU_CTR Brest Control:126.265
+AG:LFRR_A_CTR Brest Control:124.675
+AG:LFRR_CTR Brest Control:125.500
+AG:LFRR_E_CTR Brest Control:136.000
+AG:LFRR_GI_CTR Brest Control:132.240
+AG:LFRR_GU_CTR Brest Control:131.280
+AG:LFRR_G_CTR Brest Control:124.065
+AG:LFRR_J_CTR Brest Control:127.385
+AG:LFRR_K_CTR Brest Control:119.825
+AG:LFRR_M_CTR Brest Control:135.965
+AG:LFRR_N_CTR Brest Control:118.030
+AG:LFRR_Q_CTR Brest Control:132.185
+AG:LFRR_S_CTR Brest Control:133.550
+AG:LFRR_UE_CTR Brest Control:130.235
+AG:LFRR_US_CTR Brest Control:131.280
+AG:LFRR_VK_CTR Brest Control:124.775
+AG:LFRR_V_CTR Brest Control:118.865
+AG:LFRR_WI_CTR Brest Control:135.260
+AG:LFRR_WU_CTR Brest Control:133.615
+AG:LFRR_W_CTR Brest Control:129.505
+AG:LFRR_X_CTR Brest Control:125.965
+AG:LFRR_Z_CTR Brest Control:134.335
+AG:LFRS_APP Nantes Approach:124.430
+AG:LFRS_ATIS:126.930
+AG:LFRS_GND Nantes Ground:121.655
+AG:LFRS_N_APP Nantes Information:124.250
+AG:LFRS_TWR Nantes Tower:118.650
+AG:LFRZ_TWR Saint Nazaire Tower:118.950
+AG:LFSB_APP Bale Approach:133.510
+AG:LFSB_ATIS:127.880
+AG:LFSB_C_APP Bale Control:125.415
+AG:LFSB_DEL Bale Delivery:121.955
+AG:LFSB_GND Bale Ground:121.605
+AG:LFSB_TWR Bale Tower:118.300
+AG:LFSI_TWR Saint Dizier Tower:134.775
+AG:LFSO_TWR Ochey Tower:122.100
+AG:LFST_APP Strasbourg Approach:120.410
+AG:LFST_ATIS:126.930
+AG:LFST_GND Strasbourg Ground:121.805
+AG:LFST_TWR Strasbourg Tower:119.250
+AG:LFSX_TWR Luxeuil Tower:122.100
+AG:LFTH_APP Toulon Approach:126.325
+AG:LFTH_ATIS:129.650
+AG:LFTH_GND Palyvestre Ground:121.800
+AG:LFTH_TWR Palyvestre Tower:121.000
+AG:LFTW_ATIS:129.355
+AG:LFTW_GND Garons Ground:121.800
+AG:LFTW_TWR Garons Tower:123.200
+AG:LFYR_TWR Romorantin Tower:119.075
+AG:LNMC_TWR Monaco Monte Carlo:124.000
+AG:PAR_AENB_CTR Paris Control:135.580
+AG:PAR_AOML_CTR Paris Control:129.625
+AG:PAR_AOUS_CTR Paris Control:132.675
+AG:PAR_AO_CTR Paris Control:125.080
+AG:PAR_APTE_CTR Paris Control:131.055
+AG:PAR_AP_CTR Paris Control:131.065
+AG:PAR_ARML_CTR Paris Control:125.700
+AG:PAR_AR_CTR Paris Control:132.100
+AG:PAR_CTR Paris Control:128.275
+AG:PAR_DGTJ_CTR Paris Control:126.100
+AG:PAR_DG_CTR Paris Control:124.630
+AG:PAR_DODG_CTR Paris Control:127.080
+AG:PAR_DOGS_CTR Paris Control:135.405
+AG:PAR_FPAE_CTR Paris Control:125.060
+AG:PAR_HPKZ_CTR Paris Control:129.005
+AG:PAR_HP_CTR Paris Control:122.615
+AG:PAR_LMHJ_CTR Paris Control:132.730
+AG:PAR_LMH_CTR Paris Control:132.740
+AG:PAR_LOW_CTR Paris Control:135.410
+AG:PAR_OPKZ_CTR Paris Control:127.305
+AG:PAR_ORGY_CTR Paris Control:127.310
+AG:PAR_OT_CTR Paris Control:118.725
+AG:PAR_PU_CTR Paris Control:132.755
+AG:PAR_RPAE_CTR Paris Control:133.560
+AG:PAR_RPAW_CTR Paris Control:133.925
+AG:PAR_RT_CTR Paris Control:122.575
+AG:PAR_TB_CTR Paris Control:128.275
+AG:PAR_TE_CTR Paris Control:128.105
+AG:PAR_THUZ_CTR Paris Control:129.150
+AG:PAR_TH_CTR Paris Control:124.850
+AG:PAR_TL_CTR Paris Control:120.955
+AG:PAR_TML_CTR Paris Control:133.920
+AG:PAR_TM_CTR Paris Control:131.180
+AG:PAR_TNTB_CTR Paris Conrol:135.660
+AG:PAR_TN_CTR Paris Control:135.550
+AG:PAR_TP_CTR Paris Control:128.875
+AG:PAR_UJ_CTR Paris Control:132.380
+AG:PAR_UP_CTR Paris Control:118.230
+AG:PAR_US_CTR Paris Control:128.140
+AG:PAR_UT_CTR Paris Control:133.505
+AG:PAR_UZ_CTR Paris Control:131.255
+END

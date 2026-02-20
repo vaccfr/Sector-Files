@@ -1,0 +1,119 @@
+DisplayTypeName:Standard ES radar screen
+DisplayTypeNeedRadarContent:1
+DisplayTypeGeoReferenced:1
+SECTORFILE:
+SECTORTITLE:
+ARTCC boundary:TMA LFPG Paris (Toutes Config):
+ARTCC boundary:TMA LFPG Zone Beauvais:
+Fixes:ADADA:symbol
+Fixes:AGOPA:symbol
+Fixes:ALIMO:symbol
+Fixes:ATREX:symbol
+Fixes:BANOX:symbol
+Fixes:BATAG:symbol
+Fixes:BAVOL:symbol
+Fixes:BAXIR:symbol
+Fixes:BEKOS:symbol
+Fixes:BUBLI:symbol
+Fixes:CREIL:symbol
+Fixes:DEVIM:symbol
+Fixes:DIKOL:symbol
+Fixes:EBOMA:symbol
+Fixes:EDOXA:symbol
+Fixes:EPURI:symbol
+Fixes:ERIXU:symbol
+Fixes:GILTO:symbol
+Fixes:INKUD:symbol
+Fixes:IPNOB:symbol
+Fixes:KOLIV:symbol
+Fixes:LALUX:symbol
+Fixes:LANVI:symbol
+Fixes:NERKI:symbol
+Fixes:NIPOR:symbol
+Fixes:NURMO:symbol
+Fixes:OBOBI:symbol
+Fixes:ODEBU:symbol
+Fixes:ODILO:symbol
+Fixes:OKABO:symbol
+Fixes:OKASI:symbol
+Fixes:OKIPA:symbol
+Fixes:OPALE:symbol
+Fixes:PEKIM:symbol
+Fixes:PILUL:symbol
+Fixes:PIVER:symbol
+Fixes:PN619:symbol
+Fixes:PO183:symbol
+Fixes:RANUX:symbol
+Fixes:SOTIP:symbol
+Fixes:URELO:symbol
+Fixes:VALPO:symbol
+Fixes:VASOL:symbol
+Fixes:VEBEK:symbol
+Fixes:VEMIL:symbol
+Geo:LFPB Vectors Finale ILS 27:
+Geo:LFPG AoR CTR Delimitations WL/WI:
+Geo:LFPG Landmark Points VFR:
+Geo:LFPG Tower CTR Point Merge KOLIV:
+Geo:LFPG Tower CTR Restriction Survol Villepinte:
+Geo:LFPG Tower CTR Zone Paris P 23:
+Geo:LFPG Vectors (+PO) Trajectoires WL:
+Geo:LFPG Vectors Finale ILS 26L:
+Geo:LFPG Vectors Finale ILS 27R:
+Geo:LFPN Vectors Finale ILS 25R:
+Geo:LFPO Vectors Finale ILS 25:
+Geo:LFPV Vectors Finale ILS 27:
+NDBs:CVT:symbol
+NDBs:HOL:symbol
+NDBs:VAT:symbol
+Regions:LFPG VPE Departs 26:polygon
+Regions:LFPG VPE Departs 27:polygon
+Regions:LFPG VPE ILS 26L:polygon
+Regions:LFPG VPE ILS 27R:polygon
+Regions:LFPO VPE Departs 24:polygon
+Regions:LFPO VPE ILS 25:polygon
+Runways:LFPB 03-21:centerline
+Runways:LFPB 07-25:centerline
+Runways:LFPB 09-27:centerline
+Runways:LFPG 08L-26R:centerline
+Runways:LFPG 08R-26L:centerline
+Runways:LFPG 09L-27R:centerline
+Runways:LFPG 09R-27L:centerline
+Runways:LFPO 02-20:centerline
+Runways:LFPO 06-24:centerline
+Runways:LFPO 07-25:centerline
+Runways:LFPV 09-27:centerline
+VORs:BOV:symbol
+VORs:BRY:symbol
+VORs:CAD:symbol
+VORs:CAV:symbol
+VORs:CLM:symbol
+VORs:CTL:symbol
+VORs:EPR:symbol
+VORs:EVX:symbol
+VORs:LGL:symbol
+VORs:MLN:symbol
+VORs:PON:symbol
+VORs:RBT:symbol
+VORs:TRO:symbol
+VORs:TSU:symbol
+SHOWC:1
+SHOWSB:0
+BELOW:100
+ABOVE:28000
+LEADER:5
+SHOWLEADER:0
+TURNLEADER:0
+HISTORY_DOTS:0
+SIMULATION_MODE:1
+DISABLEPANNING:0
+DISABLEZOOMING:0
+DisplayRotation:0.00000
+TAGFAMILY:CoFrance Approach
+WINDOWAREA:47.825034:-0.422461:49.908369:5.564811
+PLUGIN:CoFrance:APP:1
+PLUGIN:CoFrance:FILT:1
+PLUGIN:CoFrance:FILTABOVE:24500
+PLUGIN:CoFrance:FILTBELOW:0
+PLUGIN:CoFrance:RAD:1
+PLUGIN:CoFrance:VV:0
+PLUGIN:CoFrance:VVTIME:2

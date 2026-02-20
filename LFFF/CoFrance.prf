@@ -1,0 +1,71 @@
+Plugins	Plugin0	\LFFF\Plugins\CoFrance.dll
+Plugins	Plugin1	\LFFF\Plugins\RDFPlugin.dll
+Plugins	Plugin2	\LFFF\Plugins\CCAMS.dll
+Plugins	Plugin3	\LFFF\Plugins\VCH.dll
+Plugins	Plugin4	\LFFF\Plugins\vSMR.dll
+Plugins	Plugin5	\LFFF\Plugins\ESTimers.dll
+Plugins	Plugin6	\LFFF\Plugins\vACDM.dll
+Plugins	Plugin7	\LFFF\Plugins\RampAgent.dll
+Plugins	Plugin0Display0	Standard ES radar screen
+Plugins	Plugin1Display0	Standard ES radar screen
+Plugins	Plugin1Display1	SMR radar display
+Plugins	Plugin2Display0	SMR radar display
+Plugins	Plugin2Display1	Standard ES radar screen
+Plugins	Plugin3Display0	SMR radar display
+Plugins	Plugin3Display1	Standard ES radar screen
+Plugins	Plugin4Display0	SMR radar display
+Plugins	Plugin4Display1	Standard ES radar screen
+Plugins	Plugin5Display0	SMR radar display
+Plugins	Plugin5Display1	Standard ES radar screen
+RecentFiles	Recent1	\LFFF\ASR\1_CTR.asr
+RecentFiles	Recent2	\LFFF\ASR\2_APP.asr
+RecentFiles	Recent3	\LFFF\ASR\3_GND.asr
+Settings	AselKey	5111808
+Settings	FreqKey	3604480
+Settings	Settingsfile	\LFFF\Settings\AllSettings.txt
+Settings	SettingsfileADCS	\LFFF\Settings\AllSettings.txt
+Settings	SettingsfileARR	\LFFF\Settings\AllSettings.txt
+Settings	SettingsfileCONFLICT	\LFFF\Settings\AllSettings.txt
+Settings	SettingsfileDEP	\LFFF\Settings\AllSettings.txt
+Settings	SettingsfileFP	\LFFF\Settings\AllSettings.txt
+Settings	SettingsfileORIGPLANE	\LFFF\Settings\AllSettings.txt
+Settings	SettingsfilePILOTING	\LFFF\Settings\AllSettings.txt
+Settings	SettingsfilePLUGINS	\LFFF\Settings\AllSettings.txt
+Settings	SettingsfilePROFILE	\LFFF\Settings\LoginProfiles.txt
+Settings	SettingsfileSCREEN	\LFFF\Settings\AllSettings.txt
+Settings	SettingsfileSEL	\LFFF\Settings\AllSettings.txt
+Settings	SettingsfileSIL	\LFFF\Settings\AllSettings.txt
+Settings	SettingsfileSTUP	\LFFF\Settings\AllSettings.txt
+Settings	SettingsfileSYMBOLOGY	\LFFF\Settings\AllSettings.txt
+Settings	SettingsfileTAGS	\LFFF\Settings\AllSettings.txt
+Settings	SettingsfileTAKEOFF	\LFFF\Settings\AllSettings.txt
+Settings	SettingsfileTAXIIN	\LFFF\Settings\AllSettings.txt
+Settings	SettingsfileTAXIOUT	\LFFF\Settings\AllSettings.txt
+Settings	SettingsfileVCCS	\LFFF\Settings\AllSettings.txt
+Settings	SettingsfileVOICE	\LFFF\Settings\VoiceChannels.txt
+Settings	aircraft	\LFFF\ICAO\ICAO_Aircraft.txt
+Settings	airlines	\LFFF\ICAO\ICAO_Airlines.txt
+Settings	airportcoords	\LFFF\NavData\icao.txt
+Settings	airports	\LFFF\ICAO\ICAO_Airports.txt
+Settings	airways	\LFFF\NavData\airway.txt
+Settings	alias	\LFFF\Alias\alias.txt
+Settings	sector	\LFFF-LFFF_20260219210448-260201-0001.sct
+Sounds	Sound0	\LFFF\Sounds\handoff_request.wav
+Sounds	Sound1	\LFFF\Sounds\handoff_accept.wav
+Sounds	Sound10	\LFFF\Sounds\disconnected.wav
+Sounds	Sound11	\LFFF\Sounds\ongoing_request.wav
+Sounds	Sound12	\LFFF\Sounds\ongoing_accepted.wav
+Sounds	Sound13	\LFFF\Sounds\ongoing_refused.wav
+Sounds	Sound14	\LFFF\Sounds\ongoing_manual.wav
+Sounds	Sound15	\LFFF\Sounds\new_atis.wav
+Sounds	Sound16	\LFFF\Sounds\handoff_refused.wav
+Sounds	Sound17	\LFFF\Sounds\pointout.wav
+Sounds	Sound18	\LFFF\Sounds\startup.wav
+Sounds	Sound2	\LFFF\Sounds\conflict_alert.wav
+Sounds	Sound3	\LFFF\Sounds\radio_message.wav
+Sounds	Sound4	\LFFF\Sounds\private_message.wav
+Sounds	Sound5	\LFFF\Sounds\atc_message.wav
+Sounds	Sound6	\LFFF\Sounds\broadcast_message.wav
+Sounds	Sound7	\LFFF\Sounds\landline_request.wav
+Sounds	Sound8	\LFFF\Sounds\supervisor_message.wav
+Sounds	Sound9	\LFFF\Sounds\connected.wav
