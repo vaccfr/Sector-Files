@@ -1,0 +1,23 @@
+PLUGINS
+CCAMS:ACList/Mode S EHS/m_Visible:0
+CCAMS:ACList/Mode S EHS/m_X:860
+CCAMS:ACList/Mode S EHS/m_Y:44
+CCAMS:ACList/Mode S EHS/m_LineNumber:1
+CCAMS:ACList/Mode S EHS/m_Resizable:1
+CCAMS:ACList/Mode S EHS/m_OrderingColumn:1
+CCAMS:ACList/Mode S EHS/m_Column_0:C/S:8:0:9:7:0:1:::
+CCAMS:ACList/Mode S EHS/m_Column_1:HDG:5:1:502:0:0:1:CCAMS::
+CCAMS:ACList/Mode S EHS/m_Column_2:Roll:5:1:503:0:0:1:CCAMS::
+CCAMS:ACList/Mode S EHS/m_Column_3:GS:4:1:504:0:0:1:CCAMS::
+Euroscope timers plugin:x:28
+Euroscope timers plugin:y:436
+vSMR:cpdlc_sound:1
+PINEDE:ACList/Active CPDLC aircraft/m_Visible:1
+PINEDE:ACList/Active CPDLC aircraft/m_X:20
+PINEDE:ACList/Active CPDLC aircraft/m_Y:762
+PINEDE:ACList/Active CPDLC aircraft/m_LineNumber:0
+PINEDE:ACList/Active CPDLC aircraft/m_Resizable:1
+PINEDE:ACList/Active CPDLC aircraft/m_OrderingColumn:1
+PINEDE:ACList/Active CPDLC aircraft/m_Column_0:C/S:20:0:9:0:0:1:::
+vSMR:cpdlc_logon:LFFF
+END
