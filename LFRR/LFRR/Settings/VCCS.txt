@@ -1,0 +1,4 @@
+VCCS
+Ts3Server:cherryx.de
+Ts3Port:9988
+END
