@@ -783,7 +783,7 @@ PROFILE:LFPG_N_DEP:120:5
 ATIS2:De Gaulle Approach - EN/FR
 ATIS3:CDM in use, more info cdm.vatsim.fr
 ATIS4:Leave me some feedback! vatsim.fr/fb/VOTRE_CID_ICI
-PROFILE:LFPG__S_APP:120:5
+PROFILE:LFPG_S_APP:120:5
 ATIS2:De Gaulle Approach - EN/FR
 ATIS3:CDM in use, more info cdm.vatsim.fr
 ATIS4:Leave me some feedback! vatsim.fr/fb/VOTRE_CID_ICI
