@@ -528,7 +528,7 @@ ATIS2:Lyon Approach - EN/FR
 ATIS3:CDM in use, more info cdm.vatsim.fr
 ATIS4:Leave me some feedback! vatsim.fr/fb/VOTRE_CID_ICI
 PROFILE:LFLL_DEL:10:2
-ATIS2:Saint-Exupéry Delivery - EN/FR
+ATIS2:Saint-ExupÃ©ry Delivery - EN/FR
 ATIS3:CDM in use, more info cdm.vatsim.fr
 ATIS4:Leave me some feedback! vatsim.fr/fb/VOTRE_CID_ICI
 PROFILE:LFLL_DEP:120:5
@@ -540,11 +540,11 @@ ATIS2:Lyon East Approach - EN/FR
 ATIS3:CDM in use, more info cdm.vatsim.fr
 ATIS4:Leave me some feedback! vatsim.fr/fb/VOTRE_CID_ICI
 PROFILE:LFLL_GND:10:3
-ATIS2:Saint-Exupéry Ground - EN/FR
+ATIS2:Saint-ExupÃ©ry Ground - EN/FR
 ATIS3:CDM in use, more info cdm.vatsim.fr
 ATIS4:Leave me some feedback! vatsim.fr/fb/VOTRE_CID_ICI
 PROFILE:LFLL_TWR:30:4
-ATIS2:Saint-Exupéry Tower - EN/FR
+ATIS2:Saint-ExupÃ©ry Tower - EN/FR
 ATIS3:CDM in use, more info cdm.vatsim.fr
 ATIS4:Leave me some feedback! vatsim.fr/fb/VOTRE_CID_ICI
 PROFILE:LFLP_TWR:30:4
@@ -775,7 +775,19 @@ PROFILE:LFPB_TWR:30:4
 ATIS2:Le Bourget Tower - EN/FR
 ATIS3:Check the charts! chartfox.org/LFPB
 ATIS4:Leave me some feedback! vatsim.fr/fb/VOTRE_CID_ICI
-PROFILE:LFPG_APP:120:5
+PROFILE:LFPG_N_APP:120:5
+ATIS2:De Gaulle Approach - EN/FR
+ATIS3:CDM in use, more info cdm.vatsim.fr
+ATIS4:Leave me some feedback! vatsim.fr/fb/VOTRE_CID_ICI
+PROFILE:LFPG_N_DEP:120:5
+ATIS2:De Gaulle Approach - EN/FR
+ATIS3:CDM in use, more info cdm.vatsim.fr
+ATIS4:Leave me some feedback! vatsim.fr/fb/VOTRE_CID_ICI
+PROFILE:LFPG__S_APP:120:5
+ATIS2:De Gaulle Approach - EN/FR
+ATIS3:CDM in use, more info cdm.vatsim.fr
+ATIS4:Leave me some feedback! vatsim.fr/fb/VOTRE_CID_ICI
+PROFILE:LFPG_S_DEP:120:5
 ATIS2:De Gaulle Approach - EN/FR
 ATIS3:CDM in use, more info cdm.vatsim.fr
 ATIS4:Leave me some feedback! vatsim.fr/fb/VOTRE_CID_ICI
