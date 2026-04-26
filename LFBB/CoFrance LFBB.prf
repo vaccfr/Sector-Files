@@ -1,0 +1,101 @@
+Plugins	Plugin0	\LFBB\Plugins\CoFrance\CoFranceLoader.dll
+Plugins	Plugin1	\LFBB\Plugins\RDF Plugin\RDFPlugin.dll
+Plugins	Plugin2	\LFBB\Plugins\CCAMS\CCAMS.dll
+Plugins	Plugin3	\LFBB\Plugins\VCH\VCH.dll
+Plugins	Plugin4	\LFBB\Plugins\vSMR\vSMR.dll
+Plugins	Plugin5	\LFBB\Plugins\ESTimers\ESTimers.dll
+Plugins	Plugin6	\LFBB\Plugins\vACDM\vACDM.dll
+Plugins	Plugin7	\LFBB\Plugins\RampAgent\RampAgent.dll
+Plugins	Plugin8	\LFBB\Plugins\EuroscopeRPC\EuroscopeRPC.dll
+Plugins	Plugin0Display0	CoFrance radar display
+Plugins	Plugin0Display1	Standard ES radar screen
+Plugins	Plugin0Display2	SMR radar display
+Plugins	Plugin1Display0	Standard ES radar screen
+Plugins	Plugin1Display1	SMR radar display
+Plugins	Plugin1Display2	CoFrance radar display
+Plugins	Plugin2Display0	SMR radar display
+Plugins	Plugin2Display1	Standard ES radar screen
+Plugins	Plugin3Display0	SMR radar display
+Plugins	Plugin3Display1	Standard ES radar screen
+Plugins	Plugin4Display0	SMR radar display
+Plugins	Plugin4Display1	Standard ES radar screen
+Plugins	Plugin5Display0	SMR radar display
+Plugins	Plugin5Display1	Standard ES radar screen
+ASRFastKeys	1	\LFBB\ASR\Bordeaux UIR.asr
+ASRFastKeys	2	\LFBB\ASR\Bordeaux - Legacy APP.asr
+ASRFastKeys	3	\LFBB\ASR\AVISOs\Blagnac AVISO.asr
+ASRFastKeys	4	\LFBB\ASR\AVISOs\Merignac AVISO.asr
+ASRFastKeys	5	\LFBB\ASR\AVISOs\Biarritz AVISO.asr
+ASRFastKeys	6	\LFBB\ASR\AVISOs\Carcassonne AVISO.asr
+ASRFastKeys	7	\LFBB\ASR\AVISOs\La Rochelle AVISO.asr
+ASRFastKeys	8	\LFBB\ASR\AVISOs\Bergerac AVISO.asr
+ASRFastKeys	9	\LFBB\ASR\AVISOs\Tarbes AVISO.asr
+RecentFiles	Recent1	\LFBB\ASR\Bordeaux UIR.asr
+RecentFiles	Recent2	\LFBB\ASR\Bordeaux - Legacy APP.asr
+RecentFiles	Recent3	\LFBB\ASR\AVISOs\Blagnac AVISO.asr
+RecentFiles	Recent4	\LFBB\ASR\AVISOs\Merignac AVISO.asr
+RecentFiles	Recent5	\LFBB\ASR\AVISOs\Biarritz AVISO.asr
+RecentFiles	Recent6	\LFBB\ASR\AVISOs\Carcassonne AVISO.asr
+RecentFiles	Recent7	\LFBB\ASR\AVISOs\La Rochelle AVISO.asr
+RecentFiles	Recent8	\LFBB\ASR\AVISOs\Bergerac AVISO.asr
+RecentFiles	Recent9	\LFBB\ASR\AVISOs\Tarbes AVISO.asr
+Settings	AselKey	5111808
+Settings	FreqKey	3604480
+Settings	Settingsfile	\LFBB\Settings\General.txt
+Settings	SettingsfileADCS	\LFBB\Settings\Lists.txt
+Settings	SettingsfileARR	\LFBB\Settings\Lists.txt
+Settings	SettingsfileCONFLICT	\LFBB\Settings\Lists.txt
+Settings	SettingsfileDEP	\LFBB\Settings\Lists.txt
+Settings	SettingsfileFP	\LFBB\Settings\Lists.txt
+Settings	SettingsfileORIGPLANE	\LFBB\Settings\Lists.txt
+Settings	SettingsfilePILOTING	\LFBB\Settings\Lists.txt
+Settings	SettingsfilePLUGINS	\LFBB\Settings\Plugins.txt
+Settings	SettingsfilePROFILE	\LFBB\Settings\LoginProfiles.txt
+Settings	SettingsfileSCREEN	\LFBB\Settings\Screen.txt
+Settings	SettingsfileSEL	\LFBB\Settings\Lists.txt
+Settings	SettingsfileSIL	\LFBB\Settings\Lists.txt
+Settings	SettingsfileSTUP	\LFBB\Settings\Lists.txt
+Settings	SettingsfileSYMBOLOGY	\LFBB\Settings\Symbology.txt
+Settings	SettingsfileTAGS	\LFBB\Settings\Tags.txt
+Settings	SettingsfileTAKEOFF	\LFBB\Settings\Lists.txt
+Settings	SettingsfileTAXIIN	\LFBB\Settings\Lists.txt
+Settings	SettingsfileTAXIOUT	\LFBB\Settings\Lists.txt
+Settings	SettingsfileVCCS	\LFBB\Settings\VCCS.txt
+Settings	SettingsfileVOICE	\LFBB\Settings\VoiceChannels.txt
+Settings	aircraft	\LFBB\ICAO\ICAO_Aircraft.txt
+Settings	airlines	\LFBB\ICAO\ICAO_Airlines.txt
+Settings	airportcoords	\LFBB\NavData\icao.txt
+Settings	airports	\LFBB\ICAO\ICAO_Airports.txt
+Settings	airways	\LFBB\NavData\airway.txt
+Settings	alias	\LFBB\Alias\alias.txt
+Settings	sector	\LFBB-Bordeaux_20260426070104-260401-0002.sct
+Sounds	Sound0	\LFBB\Sounds\handoff_request.wav
+Sounds	Sound1	\LFBB\Sounds\handoff_accept.wav
+Sounds	Sound10	\LFBB\Sounds\disconnected.wav
+Sounds	Sound11	\LFBB\Sounds\ongoing_request.wav
+Sounds	Sound12	\LFBB\Sounds\ongoing_accepted.wav
+Sounds	Sound13	\LFBB\Sounds\ongoing_refused.wav
+Sounds	Sound14	\LFBB\Sounds\ongoing_manual.wav
+Sounds	Sound15	\LFBB\Sounds\new_atis.wav
+Sounds	Sound16	\LFBB\Sounds\handoff_refused.wav
+Sounds	Sound17	\LFBB\Sounds\pointout.wav
+Sounds	Sound18	\LFBB\Sounds\startup.wav
+Sounds	Sound2	\LFBB\Sounds\conflict_alert.wav
+Sounds	Sound3	\LFBB\Sounds\radio_message.wav
+Sounds	Sound4	\LFBB\Sounds\private_message.wav
+Sounds	Sound5	\LFBB\Sounds\atc_message.wav
+Sounds	Sound6	\LFBB\Sounds\broadcast_message.wav
+Sounds	Sound7	\LFBB\Sounds\landline_request.wav
+Sounds	Sound8	\LFBB\Sounds\supervisor_message.wav
+Sounds	Sound9	\LFBB\Sounds\connected.wav
+LastSession	connecttype	0
+LastSession	callsign	<INITIALS>_OBS
+LastSession	facility	0
+LastSession	rating	0
+LastSession	tovatsim	1
+LastSession	atis2	French vACC Observer
+LastSession	atis3	Welcome to France! -> vatsim.fr
+LastSession	range	275
+LastSession	proxyserver	localhost
+LastSession	simdatapublish	0
+LastSession	atis_freq4	118000
