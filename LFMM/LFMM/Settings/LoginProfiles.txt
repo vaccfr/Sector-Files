@@ -39,8 +39,20 @@ PROFILE:LFMM_W_CTR:300:6
 ATIS2:Marseille Control - EN/FR
 ATIS3:Sector Coverage - map.vatsim.net | CPDLC [LFXX]
 ATIS4:Leave us some feedback! vatsim.fr/fb/VOTRE_CID_ICI
-PROFILE:LFKB_APP:120:5
+PROFILE:LFKB_KB_APP:120:5
 ATIS2:Bastia Approach - EN/FR
+ATIS3:Sector Coverage - map.vatsim.net
+ATIS4:Leave us some feedback! vatsim.fr/fb/VOTRE_CID_ICI
+PROFILE:LFKB_KC_APP:120:5
+ATIS2:Bastia Approach - EN/FR
+ATIS3:Sector Coverage - map.vatsim.net
+ATIS4:Leave us some feedback! vatsim.fr/fb/VOTRE_CID_ICI
+PROFILE:LFKB_IN_APP:120:5
+ATIS2:Bastia Information - EN/FR
+ATIS3:Sector Coverage - map.vatsim.net
+ATIS4:Leave us some feedback! vatsim.fr/fb/VOTRE_CID_ICI
+PROFILE:LFKB_IS_APP:120:5
+ATIS2:Bastia Information - EN/FR
 ATIS3:Sector Coverage - map.vatsim.net
 ATIS4:Leave us some feedback! vatsim.fr/fb/VOTRE_CID_ICI
 PROFILE:LFKJ_APP:120:5
