@@ -21,17 +21,14 @@ Plugins	Plugin4Display0	SMR radar display
 Plugins	Plugin4Display1	Standard ES radar screen
 Plugins	Plugin5Display0	SMR radar display
 Plugins	Plugin5Display1	Standard ES radar screen
-ASRFastKeys	1	\LFMM\ASR\CCA Nice\CCA Nice - RNP 04.asr
-ASRFastKeys	2	\LFMM\ASR\CCA Nice\CCA Nice - RNP 22.asr
-ASRFastKeys	3	\LFMM\ASR\AVISOs\Nice AVISO.asr
-ASRFastKeys	4	\LFMM\ASR\AVISOs\Mandelieu AVISO.asr
-ASRFastKeys	5	\LFMM\ASR\AVISOs\Saint Tropez AVISO.asr
-RecentFiles	Recent1	\LFMM\ASR\CCA Nice\CCA Nice - RNP 04.asr
-RecentFiles	Recent2	\LFMM\ASR\CCA Nice\CCA Nice - RNP 22.asr
-RecentFiles	Recent3	\LFMM\ASR\AVISOs\Nice AVISO.asr
-RecentFiles	Recent4	\LFMM\ASR\AVISOs\Mandelieu AVISO.asr
-RecentFiles	Recent5	\LFMM\ASR\AVISOs\Saint Tropez AVISO.asr
-RecentFiles	Recent6	\LFMM\ASR\CCR Nice\CCA Nice - ILS 04.asr
+ASRFastKeys	1	\LFMM\ASR\CCA Nice\CCA Nice - Dynamic.asr
+ASRFastKeys	2	\LFMM\ASR\AVISOs\Nice AVISO.asr
+ASRFastKeys	3	\LFMM\ASR\AVISOs\Mandelieu AVISO.asr
+ASRFastKeys	4	\LFMM\ASR\AVISOs\Saint Tropez AVISO.asr
+RecentFiles	Recent1	\LFMM\ASR\CCA Nice\CCA Nice - Dynamic.asr
+RecentFiles	Recent2	\LFMM\ASR\AVISOs\Nice AVISO.asr
+RecentFiles	Recent3	\LFMM\ASR\AVISOs\Mandelieu AVISO.asr
+RecentFiles	Recent4	\LFMM\ASR\AVISOs\Saint Tropez AVISO.asr
 Settings	AselKey	5111808
 Settings	FreqKey	3604480
 Settings	Settingsfile	\LFMM\Settings\General.txt
