@@ -1,0 +1,101 @@
+Plugins	Plugin0	\LFMM\Plugins\CoFrance\CoFranceLoader.dll
+Plugins	Plugin1	\LFMM\Plugins\RDF Plugin\RDFPlugin.dll
+Plugins	Plugin2	\LFMM\Plugins\CCAMS\CCAMS.dll
+Plugins	Plugin3	\LFMM\Plugins\VCH\VCH.dll
+Plugins	Plugin4	\LFMM\Plugins\vSMR\vSMR.dll
+Plugins	Plugin5	\LFMM\Plugins\ESTimers\ESTimers.dll
+Plugins	Plugin6	\LFMM\Plugins\vACDM\vACDM.dll
+Plugins	Plugin7	\LFMM\Plugins\RampAgent\RampAgent.dll
+Plugins	Plugin8	\LFMM\Plugins\EuroscopeRPC\EuroscopeRPC.dll
+Plugins	Plugin0Display0	CoFrance radar display
+Plugins	Plugin0Display1	Standard ES radar screen
+Plugins	Plugin0Display2	SMR radar display
+Plugins	Plugin1Display0	Standard ES radar screen
+Plugins	Plugin1Display1	SMR radar display
+Plugins	Plugin1Display2	CoFrance radar display
+Plugins	Plugin2Display0	SMR radar display
+Plugins	Plugin2Display1	Standard ES radar screen
+Plugins	Plugin3Display0	SMR radar display
+Plugins	Plugin3Display1	Standard ES radar screen
+Plugins	Plugin4Display0	SMR radar display
+Plugins	Plugin4Display1	Standard ES radar screen
+Plugins	Plugin5Display0	SMR radar display
+Plugins	Plugin5Display1	Standard ES radar screen
+ASRFastKeys	1	\LFMM\ASR\Marseille UIR.asr
+ASRFastKeys	2	\LFMM\ASR\Marseille - Legacy APP.asr
+ASRFastKeys	3	\LFMM\ASR\AVISOs\Nice AVISO.asr
+ASRFastKeys	4	\LFMM\ASR\AVISOs\Saint Exupery AVISO.asr
+ASRFastKeys	5	\LFMM\ASR\AVISOs\Provence AVISO.asr
+ASRFastKeys	6	\LFMM\ASR\AVISOs\Ajaccio AVISO.asr
+ASRFastKeys	7	\LFMM\ASR\AVISOs\Montpellier AVISO.asr
+ASRFastKeys	8	\LFMM\ASR\AVISOs\Clermont AVISO.asr
+ASRFastKeys	9	\LFMM\ASR\AVISOs\Perpignan AVISO.asr
+RecentFiles	Recent1	\LFMM\ASR\Marseille UIR.asr
+RecentFiles	Recent2	\LFMM\ASR\Marseille - Legacy APP.asr
+RecentFiles	Recent3	\LFMM\ASR\AVISOs\Nice AVISO.asr
+RecentFiles	Recent4	\LFMM\ASR\AVISOs\Saint Exupery AVISO.asr
+RecentFiles	Recent5	\LFMM\ASR\AVISOs\Provence AVISO.asr
+RecentFiles	Recent6	\LFMM\ASR\AVISOs\Ajaccio AVISO.asr
+RecentFiles	Recent7	\LFMM\ASR\AVISOs\Montpellier AVISO.asr
+RecentFiles	Recent8	\LFMM\ASR\AVISOs\Clermont AVISO.asr
+RecentFiles	Recent9	\LFMM\ASR\AVISOs\Perpignan AVISO.asr
+Settings	AselKey	5111808
+Settings	FreqKey	3604480
+Settings	Settingsfile	\LFMM\Settings\General.txt
+Settings	SettingsfileADCS	\LFMM\Settings\Lists.txt
+Settings	SettingsfileARR	\LFMM\Settings\Lists.txt
+Settings	SettingsfileCONFLICT	\LFMM\Settings\Lists.txt
+Settings	SettingsfileDEP	\LFMM\Settings\Lists.txt
+Settings	SettingsfileFP	\LFMM\Settings\Lists.txt
+Settings	SettingsfileORIGPLANE	\LFMM\Settings\Lists.txt
+Settings	SettingsfilePILOTING	\LFMM\Settings\Lists.txt
+Settings	SettingsfilePLUGINS	\LFMM\Settings\Plugins.txt
+Settings	SettingsfilePROFILE	\LFMM\Settings\LoginProfiles.txt
+Settings	SettingsfileSCREEN	\LFMM\Settings\Screen.txt
+Settings	SettingsfileSEL	\LFMM\Settings\Lists.txt
+Settings	SettingsfileSIL	\LFMM\Settings\Lists.txt
+Settings	SettingsfileSTUP	\LFMM\Settings\Lists.txt
+Settings	SettingsfileSYMBOLOGY	\LFMM\Settings\Symbology.txt
+Settings	SettingsfileTAGS	\LFMM\Settings\Tags.txt
+Settings	SettingsfileTAKEOFF	\LFMM\Settings\Lists.txt
+Settings	SettingsfileTAXIIN	\LFMM\Settings\Lists.txt
+Settings	SettingsfileTAXIOUT	\LFMM\Settings\Lists.txt
+Settings	SettingsfileVCCS	\LFMM\Settings\VCCS.txt
+Settings	SettingsfileVOICE	\LFMM\Settings\VoiceChannels.txt
+Settings	aircraft	\LFMM\ICAO\ICAO_Aircraft.txt
+Settings	airlines	\LFMM\ICAO\ICAO_Airlines.txt
+Settings	airportcoords	\LFMM\NavData\icao.txt
+Settings	airports	\LFMM\ICAO\ICAO_Airports.txt
+Settings	airways	\LFMM\NavData\airway.txt
+Settings	alias	\LFMM\Alias\alias.txt
+Settings	sector	\LFMM-Marseille_20260426074233-260401-0002.sct
+Sounds	Sound0	\LFMM\Sounds\handoff_request.wav
+Sounds	Sound1	\LFMM\Sounds\handoff_accept.wav
+Sounds	Sound10	\LFMM\Sounds\disconnected.wav
+Sounds	Sound11	\LFMM\Sounds\ongoing_request.wav
+Sounds	Sound12	\LFMM\Sounds\ongoing_accepted.wav
+Sounds	Sound13	\LFMM\Sounds\ongoing_refused.wav
+Sounds	Sound14	\LFMM\Sounds\ongoing_manual.wav
+Sounds	Sound15	\LFMM\Sounds\new_atis.wav
+Sounds	Sound16	\LFMM\Sounds\handoff_refused.wav
+Sounds	Sound17	\LFMM\Sounds\pointout.wav
+Sounds	Sound18	\LFMM\Sounds\startup.wav
+Sounds	Sound2	\LFMM\Sounds\conflict_alert.wav
+Sounds	Sound3	\LFMM\Sounds\radio_message.wav
+Sounds	Sound4	\LFMM\Sounds\private_message.wav
+Sounds	Sound5	\LFMM\Sounds\atc_message.wav
+Sounds	Sound6	\LFMM\Sounds\broadcast_message.wav
+Sounds	Sound7	\LFMM\Sounds\landline_request.wav
+Sounds	Sound8	\LFMM\Sounds\supervisor_message.wav
+Sounds	Sound9	\LFMM\Sounds\connected.wav
+LastSession	connecttype	0
+LastSession	callsign	<INITIALS>_OBS
+LastSession	facility	0
+LastSession	rating	0
+LastSession	tovatsim	1
+LastSession	atis2	French vACC Observer
+LastSession	atis3	Welcome to France! -> vatsim.fr
+LastSession	range	275
+LastSession	proxyserver	localhost
+LastSession	simdatapublish	0
+LastSession	atis_freq4	118000

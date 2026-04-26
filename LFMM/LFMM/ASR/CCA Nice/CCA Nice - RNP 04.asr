@@ -1,0 +1,119 @@
+DisplayTypeName:CoFrance radar display
+DisplayTypeNeedRadarContent:0
+DisplayTypeGeoReferenced:1
+SECTORFILE:
+SECTORTITLE:
+ARTCC boundary:LFMD Final OBOTA:
+ARTCC boundary:LFMN Delimitations TMA:
+ARTCC boundary:LFMN Final RNP A (04L/R):
+ARTCC boundary:LFMN LF R 106 - Monaco:
+ARTCC boundary:LFMN Repere Departs 04L/R:
+ARTCC boundary:LFMN Trajectoires VFR:
+ARTCC boundary:LFTZ Final VOR A (06/24):
+ARTCC low boundary:LFMD Cannes CTR:
+ARTCC low boundary:LFMN Nice CTR:
+ARTCC low boundary:LFTH Hyeres CTR:
+Fixes:ABDIL:symbol
+Fixes:ABLAK:symbol
+Fixes:AMFOU:symbol
+Fixes:AMGEL:symbol
+Fixes:AMIRO:symbol
+Fixes:BADOD:symbol
+Fixes:BARSO:symbol
+Fixes:BASIP:symbol
+Fixes:BODRU:symbol
+Fixes:BORDI:symbol
+Fixes:CUERS:symbol
+Fixes:EPOLO:symbol
+Fixes:GAPDO:symbol
+Fixes:GEMFU:symbol
+Fixes:GILON:symbol
+Fixes:INLOV:symbol
+Fixes:IRMAR:symbol
+Fixes:KERIT:symbol
+Fixes:KESAK:symbol
+Fixes:KOKIN:symbol
+Fixes:LERMA:symbol
+Fixes:LONSU:symbol
+Fixes:MERLU:symbol
+Fixes:MIKRU:symbol
+Fixes:NEKIP:symbol
+Fixes:NERAS:symbol
+Fixes:NISAR:symbol
+Fixes:OKTET:symbol
+Fixes:OMARD:symbol
+Fixes:OTOKE:symbol
+Fixes:OZMIC:symbol
+Fixes:PERUS:symbol
+Fixes:PIGOS:symbol
+Fixes:RESBO:symbol
+Fixes:RUBAS:symbol
+Fixes:RUBIT:symbol
+Fixes:SODRI:symbol
+Fixes:TIPIK:symbol
+Fixes:TUPOX:symbol
+Fixes:USANO:symbol
+Fixes:VEVAR:symbol
+Fixes:XIRBI:symbol
+Geo:LF P 10 - Cadarache:
+Geo:LF P 11 - Creys-Malville:
+Geo:LF P 12 - Cruas-Meysse:
+Geo:LF P 13 - Fos Sur Mer:
+Geo:LF P 14 - Grenoble:
+Geo:LF P 15 - Lyon Feyzin:
+Geo:LF P 16 - Marcoule:
+Geo:LF P 18 - Saint Alban:
+Geo:LF P 19 - Tricastin:
+Geo:LF P 227 L - Bec De lAigle:
+Geo:LF P 229 L - Fontvielle:
+Geo:LF P 230 L - La Couronne:
+Geo:LF P 231 L - Le Luc:
+Geo:LF P 234 L - Mont-Agel:
+Geo:LF P 235 L - Moulins:
+Geo:LF P 236 L - Orange:
+Geo:LF P 237 L - Pradere:
+Geo:LF P 238 L - Sainte-Baume:
+Geo:LF P 239 L - Serra Di Pigno:
+Geo:LF P 240 L - Solenzara:
+Geo:LF P 241 L - Hyeres:
+Geo:LF P 41 - Istres:
+Geo:LF P 48 - Fort de Bregancon:
+Geo:LF P 62 - Toulon:
+Geo:LF P 63 - Ile du Levant:
+Geo:LF P 73 - Miramas:
+Geo:LF P 74 - Chateaudouble:
+Geo:LF P 9 - Bugey:
+Geo:LFMM Landmark Coastlines:
+NDBs:MUS:symbol
+Regions:LFMN Guidage BISBO:polygon
+Runways:LFMC 09-27:centerline
+Runways:LFMC 13-31:centerline
+Runways:LFMD 04-22:centerline
+Runways:LFMD 17-35:centerline
+Runways:LFMN 04L-22R:centerline
+Runways:LFMN 04R-22L:centerline
+Runways:LFTF 11-29:centerline
+Runways:LFTZ 06-24:centerline
+VORs:CNM:symbol
+VORs:LUC:symbol
+VORs:NIZ:symbol
+VORs:STP:symbol
+SHOWC:1
+SHOWSB:0
+BELOW:0
+ABOVE:24500
+LEADER:5
+SHOWLEADER:0
+TURNLEADER:1
+HISTORY_DOTS:5
+SIMULATION_MODE:1
+DISABLEPANNING:0
+DISABLEZOOMING:0
+DisplayRotation:0.00000
+TAGFAMILY:CoFrance
+WINDOWAREA:42.567209:4.934897:44.369916:9.571005
+PLUGIN:CoFrance:LowerAlt:0
+PLUGIN:CoFrance:LowerAltEnabled:1
+PLUGIN:CoFrance:TagFormat:IRMA
+PLUGIN:CoFrance:UpperAlt:245
+PLUGIN:CoFrance:UpperAltEnabled:1
