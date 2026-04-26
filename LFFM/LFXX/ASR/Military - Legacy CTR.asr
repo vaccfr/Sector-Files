@@ -1,0 +1,790 @@
+DisplayTypeName:CoFrance radar display
+DisplayTypeNeedRadarContent:0
+DisplayTypeGeoReferenced:1
+SECTORFILE:
+SECTORTITLE:
+ARTCC high boundary:LFBB Bordeaux UIR:
+ARTCC high boundary:LFFF Paris UIR:
+ARTCC high boundary:LFFF Reims UIR:
+ARTCC high boundary:LFMM Marseille UIR:
+ARTCC high boundary:LFRR Brest UIR:
+ARTCC low boundary:LFBC Cazaux CTR:
+ARTCC low boundary:LFBC Cazaux TMA:
+ARTCC low boundary:LFBD Aquitaine CTA:
+ARTCC low boundary:LFBG Cognac CTA:
+ARTCC low boundary:LFBG Cognac CTR:
+ARTCC low boundary:LFBH La Rochelle CTA:
+ARTCC low boundary:LFBI Poitiers CTA:
+ARTCC low boundary:LFBL Limoges CTA:
+ARTCC low boundary:LFBM Marsan CTR:
+ARTCC low boundary:LFBM Marsan TMA:
+ARTCC low boundary:LFBO Toulouse CTA:
+ARTCC low boundary:LFBP Pau-Pyrenees CTA:
+ARTCC low boundary:LFBZ Biarritz CTA:
+ARTCC low boundary:LFKB Bastia CTA:
+ARTCC low boundary:LFKJ Ajaccio CTA:
+ARTCC low boundary:LFLC Clermont-Ferrand CTA:
+ARTCC low boundary:LFLL Lyon CTA:
+ARTCC low boundary:LFMI Istres CTR:
+ARTCC low boundary:LFMI Rhone CTA:
+ARTCC low boundary:LFML Provence CTA:
+ARTCC low boundary:LFMM Marseille CTA:
+ARTCC low boundary:LFMN Nice CTA:
+ARTCC low boundary:LFMO Orange CTR:
+ARTCC low boundary:LFMT Montpellier CTA:
+ARTCC low boundary:LFMV Avignon CTR:
+ARTCC low boundary:LFMY Salon CTA:
+ARTCC low boundary:LFOA Avord CTR:
+ARTCC low boundary:LFOA Avord TMA:
+ARTCC low boundary:LFOB Beauvais SIV:
+ARTCC low boundary:LFOE Evreux CTR:
+ARTCC low boundary:LFOE Evreux TMA:
+ARTCC low boundary:LFOJ Orleans CTR:
+ARTCC low boundary:LFOJ Orleans TMA:
+ARTCC low boundary:LFOT Tours CTR:
+ARTCC low boundary:LFPG Paris CTR:
+ARTCC low boundary:LFPM Seine SIV:
+ARTCC low boundary:LFPV Villacoublay CTR:
+ARTCC low boundary:LFPV Villacoublay TMA:
+ARTCC low boundary:LFQE Etain CTR:
+ARTCC low boundary:LFQE Etain TMA:
+ARTCC low boundary:LFQQ Lille SIV:
+ARTCC low boundary:LFRB Iroise CTA:
+ARTCC low boundary:LFRH Lorient CTR:
+ARTCC low boundary:LFRH Lorient TMA:
+ARTCC low boundary:LFRJ Landivisiau CTR:
+ARTCC low boundary:LFRL Lanveoc CTR:
+ARTCC low boundary:LFRL Lanveoc TMA:
+ARTCC low boundary:LFRN Rennes CTA:
+ARTCC low boundary:LFRS Nantes CTA:
+ARTCC low boundary:LFSB Bale CTA:
+ARTCC low boundary:LFSI Saint Dizier CTR:
+ARTCC low boundary:LFSI Saint Dizier TMA:
+ARTCC low boundary:LFSO Ochey CTR:
+ARTCC low boundary:LFST Strasbourg CTA:
+ARTCC low boundary:LFSX Luxeuil CTR:
+ARTCC low boundary:LFSX Luxeuil TMA:
+ARTCC low boundary:LFTH Hyeres CTR:
+ARTCC low boundary:LFTH Toulon CTA:
+Fixes:ABDIL:symbol
+Fixes:ABDUX:symbol
+Fixes:ABLAK:symbol
+Fixes:ADSET:symbol
+Fixes:AGOPA:symbol
+Fixes:ARDOL:symbol
+Fixes:ASKAN:symbol
+Fixes:ATREX:symbol
+Fixes:BAGAD:symbol
+Fixes:BAXIR:symbol
+Fixes:BG421:symbol
+Fixes:BG422:symbol
+Fixes:BM424:symbol
+Fixes:BOBSA:symbol
+Fixes:BOLEC:symbol
+Fixes:BREMO:symbol
+Fixes:BUBLI:symbol
+Fixes:CORMA:symbol
+Fixes:CUERS:symbol
+Fixes:DIBER:symbol
+Fixes:DIKOL:symbol
+Fixes:DIVOK:symbol
+Fixes:DOMOD:symbol
+Fixes:DORDI:symbol
+Fixes:ELCOB:symbol
+Fixes:ENSAC:symbol
+Fixes:ERCOZ:symbol
+Fixes:ERIXU:symbol
+Fixes:ETPAR:symbol
+Fixes:FBG05:symbol
+Fixes:FBG08:symbol
+Fixes:FC06Z:symbol
+Fixes:FC24Z:symbol
+Fixes:FMI15:symbol
+Fixes:FMI33:symbol
+Fixes:FOA06:symbol
+Fixes:GILON:symbol
+Fixes:IBG05:symbol
+Fixes:IBG08:symbol
+Fixes:IBG23:symbol
+Fixes:IBG26:symbol
+Fixes:IC06Z:symbol
+Fixes:IC24Z:symbol
+Fixes:IE19Z:symbol
+Fixes:IKS18:symbol
+Fixes:IKS36:symbol
+Fixes:IMC09:symbol
+Fixes:IMC27:symbol
+Fixes:IMI15:symbol
+Fixes:IMI33:symbol
+Fixes:IMO14:symbol
+Fixes:IMO32:symbol
+Fixes:IMY16:symbol
+Fixes:IOA06:symbol
+Fixes:IOA24:symbol
+Fixes:IOE04:symbol
+Fixes:IOE22:symbol
+Fixes:IOJ07:symbol
+Fixes:IOJ25:symbol
+Fixes:IPV09:symbol
+Fixes:IPV27:symbol
+Fixes:IQP06:symbol
+Fixes:IQP24:symbol
+Fixes:IRH07:symbol
+Fixes:IRH20:symbol
+Fixes:IRJ07:symbol
+Fixes:IRL05:symbol
+Fixes:IRL23:symbol
+Fixes:ISI11:symbol
+Fixes:ISI29:symbol
+Fixes:ISO02:symbol
+Fixes:ISO20:symbol
+Fixes:ISX11:symbol
+Fixes:ISX29:symbol
+Fixes:JULEE:symbol
+Fixes:KERAK:symbol
+Fixes:KUTAN:symbol
+Fixes:LAPOS:symbol
+Fixes:LATRA:symbol
+Fixes:LENSU:symbol
+Fixes:LERMA:symbol
+Fixes:LODKO:symbol
+Fixes:LOUPY:symbol
+Fixes:LUMAN:symbol
+Fixes:MATIX:symbol
+Fixes:MC400:symbol
+Fixes:MC401:symbol
+Fixes:MC402:symbol
+Fixes:MC420:symbol
+Fixes:MC421:symbol
+Fixes:MOLBA:symbol
+Fixes:MONCE:symbol
+Fixes:MONOT:symbol
+Fixes:MOPIL:symbol
+Fixes:MOTAL:symbol
+Fixes:MOTIK:symbol
+Fixes:MY402:symbol
+Fixes:NEOUL:symbol
+Fixes:NIMER:symbol
+Fixes:NIMPA:symbol
+Fixes:NURMO:symbol
+Fixes:OA401:symbol
+Fixes:OA402:symbol
+Fixes:OA404:symbol
+Fixes:OA405:symbol
+Fixes:OA406:symbol
+Fixes:ODILO:symbol
+Fixes:OKASI:symbol
+Fixes:OLZOM:symbol
+Fixes:OMARD:symbol
+Fixes:OPALE:symbol
+Fixes:PALME:symbol
+Fixes:PERUS:symbol
+Fixes:PIBAT:symbol
+Fixes:PILUL:symbol
+Fixes:QE400:symbol
+Fixes:QP402:symbol
+Fixes:QP413:symbol
+Fixes:RANUX:symbol
+Fixes:RENSA:symbol
+Fixes:RH401:symbol
+Fixes:RH402:symbol
+Fixes:RH415:symbol
+Fixes:RH425:symbol
+Fixes:RL411:symbol
+Fixes:RL412:symbol
+Fixes:RL413:symbol
+Fixes:ROSPO:symbol
+Fixes:ROYAN:symbol
+Fixes:RUBIT:symbol
+Fixes:SO420:symbol
+Fixes:SO431:symbol
+Fixes:SOSUR:symbol
+Fixes:SX412:symbol
+Fixes:SX413:symbol
+Fixes:SX414:symbol
+Fixes:SX434:symbol
+Fixes:TH420:symbol
+Fixes:TH421:symbol
+Fixes:TINOT:symbol
+Fixes:TUPOX:symbol
+Fixes:TUTAX:symbol
+Fixes:VAGNA:symbol
+Fixes:VAREK:symbol
+Fixes:VAVIX:symbol
+Fixes:VEBEK:symbol
+Fixes:VELIN:symbol
+Fixes:XATEL:symbol
+Geo:LF P 1 - Blayais-Braud et Saint Louis:
+Geo:LF P 10 - Cadarache:
+Geo:LF P 11 - Creys-Malville:
+Geo:LF P 112 - Brest:
+Geo:LF P 12 - Cruas-Meysse:
+Geo:LF P 13 - Fos Sur Mer:
+Geo:LF P 14 - Grenoble:
+Geo:LF P 15 - Lyon Feyzin:
+Geo:LF P 16 - Marcoule:
+Geo:LF P 18 - Saint Alban:
+Geo:LF P 19 - Tricastin:
+Geo:LF P 2 - Civaux:
+Geo:LF P 20 - Belleville Sur Loire:
+Geo:LF P 200 L - Cazaux:
+Geo:LF P 202 L - Sauvagnac:
+Geo:LF P 204 L - Pau:
+Geo:LF P 205 L - Sedzere:
+Geo:LF P 208 L - La Horie:
+Geo:LF P 209 L - Estienne:
+Geo:LF P 21 - Bruyeres Le Chatel:
+Geo:LF P 210 L - Mantoux:
+Geo:LF P 212 L - Ochey:
+Geo:LF P 215 L - dAboville:
+Geo:LF P 216 L - Moussy:
+Geo:LF P 217 L - Servance:
+Geo:LF P 218 L - Loperhet:
+Geo:LF P 22 - Bruyeres Le Chatel:
+Geo:LF P 22 - Chinon Avoine:
+Geo:LF P 22 Chinon Avoine:
+Geo:LF P 220 L - La Becelliere:
+Geo:LF P 221 L - Fontevraud:
+Geo:LF P 225 L - Orleans:
+Geo:LF P 226 L - Villacoublay:
+Geo:LF P 227 L - Bec De lAigle:
+Geo:LF P 229 L - Fontvielle:
+Geo:LF P 23 - Paris:
+Geo:LF P 230 L - La Couronne:
+Geo:LF P 231 L - Le Luc:
+Geo:LF P 234 L - Mont-Agel:
+Geo:LF P 235 L - Moulins:
+Geo:LF P 236 L - Orange:
+Geo:LF P 237 L - Pradere:
+Geo:LF P 238 L - Sainte-Baume:
+Geo:LF P 239 L - Serra Di Pigno:
+Geo:LF P 24 - Dampierre En Burly:
+Geo:LF P 240 L - Solenzara:
+Geo:LF P 241 L - Hyeres:
+Geo:LF P 25 - Fontenay Aux Roses:
+Geo:LF P 26 - Gravelines:
+Geo:LF P 27 - Gravenchon:
+Geo:LF P 28 - Le Havre:
+Geo:LF P 29 - Le Ripault:
+Geo:LF P 3 - Golfech:
+Geo:LF P 31 - Nogent Sur Seine:
+Geo:LF P 32 - Paluel:
+Geo:LF P 32 Paluel:
+Geo:LF P 33 - Penly:
+Geo:LF P 33 Penly:
+Geo:LF P 34 - Saint Laurent Des Eaux:
+Geo:LF P 35 - Mont de Marsan:
+Geo:LF P 36 - Fessenheim:
+Geo:LF P 37 - Valduc:
+Geo:LF P 37 Valduc:
+Geo:LF P 38 - Chooz:
+Geo:LF P 38 Chooz:
+Geo:LF P 39 - Cattenom:
+Geo:LF P 39 Cattenom:
+Geo:LF P 4 - Lacq:
+Geo:LF P 40 - Avord:
+Geo:LF P 41 - Istres:
+Geo:LF P 42 - Kerlouan:
+Geo:LF P 44 - La Regine:
+Geo:LF P 45 - La Lauzette:
+Geo:LF P 46 - Saint-Assise:
+Geo:LF P 47 - Balard:
+Geo:LF P 48 - Fort de Bregancon:
+Geo:LF P 5 - Le Barp:
+Geo:LF P 50 - Gramat:
+Geo:LF P 51 - Mutzig:
+Geo:LF P 52 - Le Bouchet:
+Geo:LF P 6-1 - Flamanville:
+Geo:LF P 6-2 - Flamanville:
+Geo:LF P 62 - Toulon:
+Geo:LF P 63 - Ile du Levant:
+Geo:LF P 64 - Domme:
+Geo:LF P 65 - Taverny:
+Geo:LF P 66 - Creil:
+Geo:LF P 67 - Luxeuil:
+Geo:LF P 68-1 - Le Rozelier:
+Geo:LF P 68-2 - Le Rozelier:
+Geo:LF P 69 - Les Alluets:
+Geo:LF P 7 - Le Hague:
+Geo:LF P 70 - Landivisiau:
+Geo:LF P 71 - Lorient:
+Geo:LF P 72 - Saint Dizier:
+Geo:LF P 73 - Miramas:
+Geo:LF P 74 - Chateaudouble:
+Geo:LF P 75 - Evreux:
+Geo:LF P 76 - Neubourg:
+Geo:LF P 77 - Brienne-Le-Chateau:
+Geo:LF P 8 - Saint Nazaire Montoir:
+Geo:LF P 81 - Cherbourg:
+Geo:LF P 82 - Bretigny:
+Geo:LF P 83 - Cranou:
+Geo:LF P 84 - Saint Nicolas:
+Geo:LF P 9 - Bugey:
+Geo:LFEE Landmark Coastlines:
+Geo:LFFF Landmark Coastlines:
+Geo:LFMM Landmark Coastlines:
+Geo:LFRR Landmark Coastlines:
+Runways:LFBC 06-24:centerline
+Runways:LFBC 06-24:extended centerline 1
+Runways:LFBC 06-24:extended centerline 1 left vectoring
+Runways:LFBC 06-24:extended centerline 1 right vectoring
+Runways:LFBC 06-24:extended centerline 2
+Runways:LFBC 06-24:extended centerline 2 left vectoring
+Runways:LFBC 06-24:extended centerline 2 right vectoring
+Runways:LFBG 05-23:centerline
+Runways:LFBG 05-23:extended centerline 1
+Runways:LFBG 05-23:extended centerline 1 left vectoring
+Runways:LFBG 05-23:extended centerline 1 right vectoring
+Runways:LFBG 05-23:extended centerline 2
+Runways:LFBG 05-23:extended centerline 2 left vectoring
+Runways:LFBG 05-23:extended centerline 2 right vectoring
+Runways:LFBG 08-26:centerline
+Runways:LFBG 08-26:extended centerline 1
+Runways:LFBG 08-26:extended centerline 1 left vectoring
+Runways:LFBG 08-26:extended centerline 1 right vectoring
+Runways:LFBG 08-26:extended centerline 2
+Runways:LFBG 08-26:extended centerline 2 left vectoring
+Runways:LFBG 08-26:extended centerline 2 right vectoring
+Runways:LFBM 09-27:centerline
+Runways:LFBM 09-27:extended centerline 1
+Runways:LFBM 09-27:extended centerline 1 left vectoring
+Runways:LFBM 09-27:extended centerline 1 right vectoring
+Runways:LFBM 09-27:extended centerline 2
+Runways:LFBM 09-27:extended centerline 2 left vectoring
+Runways:LFBM 09-27:extended centerline 2 right vectoring
+Runways:LFBY 07-25:centerline
+Runways:LFBY 07-25:extended centerline 1
+Runways:LFBY 07-25:extended centerline 1 left vectoring
+Runways:LFBY 07-25:extended centerline 1 right vectoring
+Runways:LFBY 07-25:extended centerline 2
+Runways:LFBY 07-25:extended centerline 2 left vectoring
+Runways:LFBY 07-25:extended centerline 2 right vectoring
+Runways:LFKS 18-36:centerline
+Runways:LFKS 18-36:extended centerline 1
+Runways:LFKS 18-36:extended centerline 1 left vectoring
+Runways:LFKS 18-36:extended centerline 1 right vectoring
+Runways:LFKS 18-36:extended centerline 2
+Runways:LFKS 18-36:extended centerline 2 left vectoring
+Runways:LFKS 18-36:extended centerline 2 right vectoring
+Runways:LFMC 09-27:centerline
+Runways:LFMC 09-27:extended centerline 1
+Runways:LFMC 09-27:extended centerline 1 left vectoring
+Runways:LFMC 09-27:extended centerline 1 right vectoring
+Runways:LFMC 09-27:extended centerline 2
+Runways:LFMC 09-27:extended centerline 2 left vectoring
+Runways:LFMC 09-27:extended centerline 2 right vectoring
+Runways:LFMI 15-33:centerline
+Runways:LFMI 15-33:extended centerline 1
+Runways:LFMI 15-33:extended centerline 1 left vectoring
+Runways:LFMI 15-33:extended centerline 1 right vectoring
+Runways:LFMI 15-33:extended centerline 2
+Runways:LFMI 15-33:extended centerline 2 left vectoring
+Runways:LFMI 15-33:extended centerline 2 right vectoring
+Runways:LFMO 14-32:centerline
+Runways:LFMO 14-32:extended centerline 1
+Runways:LFMO 14-32:extended centerline 1 left vectoring
+Runways:LFMO 14-32:extended centerline 1 right vectoring
+Runways:LFMO 14-32:extended centerline 2
+Runways:LFMO 14-32:extended centerline 2 left vectoring
+Runways:LFMO 14-32:extended centerline 2 right vectoring
+Runways:LFMY 16-34:centerline
+Runways:LFMY 16-34:extended centerline 1
+Runways:LFMY 16-34:extended centerline 1 left vectoring
+Runways:LFMY 16-34:extended centerline 1 right vectoring
+Runways:LFOA 06-24:centerline
+Runways:LFOA 06-24:extended centerline 1
+Runways:LFOA 06-24:extended centerline 1 left vectoring
+Runways:LFOA 06-24:extended centerline 1 right vectoring
+Runways:LFOA 06-24:extended centerline 2
+Runways:LFOA 06-24:extended centerline 2 left vectoring
+Runways:LFOA 06-24:extended centerline 2 right vectoring
+Runways:LFOE 04-22:centerline
+Runways:LFOE 04-22:extended centerline 1
+Runways:LFOE 04-22:extended centerline 1 left vectoring
+Runways:LFOE 04-22:extended centerline 1 right vectoring
+Runways:LFOE 04-22:extended centerline 2
+Runways:LFOE 04-22:extended centerline 2 left vectoring
+Runways:LFOE 04-22:extended centerline 2 right vectoring
+Runways:LFOJ 07-25:centerline
+Runways:LFOJ 07-25:extended centerline 1
+Runways:LFOJ 07-25:extended centerline 1 left vectoring
+Runways:LFOJ 07-25:extended centerline 1 right vectoring
+Runways:LFOJ 07-25:extended centerline 2
+Runways:LFOJ 07-25:extended centerline 2 left vectoring
+Runways:LFOJ 07-25:extended centerline 2 right vectoring
+Runways:LFPV 09-27:centerline
+Runways:LFPV 09-27:extended centerline 1
+Runways:LFPV 09-27:extended centerline 1 left vectoring
+Runways:LFPV 09-27:extended centerline 1 right vectoring
+Runways:LFPV 09-27:extended centerline 2
+Runways:LFPV 09-27:extended centerline 2 left vectoring
+Runways:LFPV 09-27:extended centerline 2 right vectoring
+Runways:LFQE 01-19:centerline
+Runways:LFQE 01-19:extended centerline 1
+Runways:LFQE 01-19:extended centerline 1 left vectoring
+Runways:LFQE 01-19:extended centerline 1 right vectoring
+Runways:LFQE 01-19:extended centerline 2
+Runways:LFQE 01-19:extended centerline 2 left vectoring
+Runways:LFQE 01-19:extended centerline 2 right vectoring
+Runways:LFQP 06-24:centerline
+Runways:LFQP 06-24:extended centerline 1
+Runways:LFQP 06-24:extended centerline 1 left vectoring
+Runways:LFQP 06-24:extended centerline 1 right vectoring
+Runways:LFQP 06-24:extended centerline 2
+Runways:LFQP 06-24:extended centerline 2 left vectoring
+Runways:LFQP 06-24:extended centerline 2 right vectoring
+Runways:LFRH 02-20:centerline
+Runways:LFRH 02-20:extended centerline 2
+Runways:LFRH 02-20:extended centerline 2 left vectoring
+Runways:LFRH 02-20:extended centerline 2 right vectoring
+Runways:LFRH 07-25:centerline
+Runways:LFRH 07-25:extended centerline 1
+Runways:LFRH 07-25:extended centerline 1 left vectoring
+Runways:LFRH 07-25:extended centerline 1 right vectoring
+Runways:LFRH 07-25:extended centerline 2
+Runways:LFRH 07-25:extended centerline 2 left vectoring
+Runways:LFRH 07-25:extended centerline 2 right vectoring
+Runways:LFRJ 07-25:centerline
+Runways:LFRJ 07-25:extended centerline 1
+Runways:LFRJ 07-25:extended centerline 1 left vectoring
+Runways:LFRJ 07-25:extended centerline 1 right vectoring
+Runways:LFRJ 07-25:extended centerline 2
+Runways:LFRJ 07-25:extended centerline 2 left vectoring
+Runways:LFRJ 07-25:extended centerline 2 right vectoring
+Runways:LFRL 05-23:centerline
+Runways:LFRL 05-23:extended centerline 1
+Runways:LFRL 05-23:extended centerline 1 left vectoring
+Runways:LFRL 05-23:extended centerline 1 right vectoring
+Runways:LFRL 05-23:extended centerline 2
+Runways:LFRL 05-23:extended centerline 2 left vectoring
+Runways:LFRL 05-23:extended centerline 2 right vectoring
+Runways:LFSI 11-29:centerline
+Runways:LFSI 11-29:extended centerline 1
+Runways:LFSI 11-29:extended centerline 1 left vectoring
+Runways:LFSI 11-29:extended centerline 1 right vectoring
+Runways:LFSI 11-29:extended centerline 2
+Runways:LFSI 11-29:extended centerline 2 left vectoring
+Runways:LFSI 11-29:extended centerline 2 right vectoring
+Runways:LFSO 02-20:centerline
+Runways:LFSO 02-20:extended centerline 1
+Runways:LFSO 02-20:extended centerline 1 left vectoring
+Runways:LFSO 02-20:extended centerline 1 right vectoring
+Runways:LFSO 02-20:extended centerline 2
+Runways:LFSO 02-20:extended centerline 2 left vectoring
+Runways:LFSO 02-20:extended centerline 2 right vectoring
+Runways:LFSX 11-29:centerline
+Runways:LFSX 11-29:extended centerline 1
+Runways:LFSX 11-29:extended centerline 1 left vectoring
+Runways:LFSX 11-29:extended centerline 1 right vectoring
+Runways:LFSX 11-29:extended centerline 2
+Runways:LFSX 11-29:extended centerline 2 left vectoring
+Runways:LFSX 11-29:extended centerline 2 right vectoring
+Runways:LFTH 05-23:centerline
+Runways:LFTH 05-23:extended centerline 1
+Runways:LFTH 05-23:extended centerline 1 left vectoring
+Runways:LFTH 05-23:extended centerline 1 right vectoring
+VORs:ABB:symbol
+VORs:AEA:symbol
+VORs:AFI:symbol
+VORs:AGN:symbol
+VORs:AHO:symbol
+VORs:AJO:symbol
+VORs:ALB:symbol
+VORs:ALD:symbol
+VORs:ALG:symbol
+VORs:AMB:symbol
+VORs:ANG:symbol
+VORs:AVD:symbol
+VORs:AVN:symbol
+VORs:AZR:symbol
+VORs:BAN:symbol
+VORs:BBE:symbol
+VORs:BBI:symbol
+VORs:BCN:symbol
+VORs:BCY:symbol
+VORs:BFS:symbol
+VORs:BGR:symbol
+VORs:BHD:symbol
+VORs:BLM:symbol
+VORs:BLV:symbol
+VORs:BMC:symbol
+VORs:BNE:symbol
+VORs:BOV:symbol
+VORs:BRA:symbol
+VORs:BRL:symbol
+VORs:BRY:symbol
+VORs:BSM:symbol
+VORs:BSN:symbol
+VORs:BST:symbol
+VORs:BT:symbol
+VORs:BTA:symbol
+VORs:BTZ:symbol
+VORs:BUB:symbol
+VORs:BUE:symbol
+VORs:BUR:symbol
+VORs:BZH:symbol
+VORs:CAA:symbol
+VORs:CAD:symbol
+VORs:CAG:symbol
+VORs:CAM:symbol
+VORs:CAN:symbol
+VORs:CAR:symbol
+VORs:CAV:symbol
+VORs:CBY:symbol
+VORs:CCS:symbol
+VORs:CDP:symbol
+VORs:CFA:symbol
+VORs:CGC:symbol
+VORs:CGN:symbol
+VORs:CHA:symbol
+VORs:CHW:symbol
+VORs:CHX:symbol
+VORs:CIV:symbol
+VORs:CJN:symbol
+VORs:CLE:symbol
+VORs:CLL:symbol
+VORs:CLM:symbol
+VORs:CLS:symbol
+VORs:CMA:symbol
+VORs:CMB:symbol
+VORs:CNA:symbol
+VORs:CNM:symbol
+VORs:CNR:symbol
+VORs:COL:symbol
+VORs:CSL:symbol
+VORs:CTL:symbol
+VORs:CTN:symbol
+VORs:CVA:symbol
+VORs:DAR:symbol
+VORs:DEC:symbol
+VORs:DFO:symbol
+VORs:DGO:symbol
+VORs:DIK:symbol
+VORs:DIN:symbol
+VORs:DJL:symbol
+VORs:DKB:symbol
+VORs:DMR:symbol
+VORs:DMT:symbol
+VORs:DMU:symbol
+VORs:DSA:symbol
+VORs:DVL:symbol
+VORs:ELB:symbol
+VORs:EON:symbol
+VORs:EPL:symbol
+VORs:EPR:symbol
+VORs:EVX:symbol
+VORs:FFM:symbol
+VORs:FGI:symbol
+VORs:FHD:symbol
+VORs:FHH:symbol
+VORs:FJR:symbol
+VORs:FKS:symbol
+VORs:FLO:symbol
+VORs:FRD:symbol
+VORs:FTM:symbol
+VORs:FUL:symbol
+VORs:GAI:symbol
+VORs:GED:symbol
+VORs:GEN:symbol
+VORs:GHE:symbol
+VORs:GIR:symbol
+VORs:GIX:symbol
+VORs:GOS:symbol
+VORs:GTQ:symbol
+VORs:GUR:symbol
+VORs:GWC:symbol
+VORs:HIG:symbol
+VORs:HIJ:symbol
+VORs:HOC:symbol
+VORs:HUE:symbol
+VORs:HUL:symbol
+VORs:HYE:symbol
+VORs:IBA:symbol
+VORs:ITR:symbol
+VORs:JOA:symbol
+VORs:JSY:symbol
+VORs:KBD:symbol
+VORs:KBO:symbol
+VORs:KLO:symbol
+VORs:KOK:symbol
+VORs:KPT:symbol
+VORs:KRH:symbol
+VORs:KRO:symbol
+VORs:LAP:symbol
+VORs:LBU:symbol
+VORs:LC:symbol
+VORs:LDL:symbol
+VORs:LDV:symbol
+VORs:LEQ:symbol
+VORs:LGH:symbol
+VORs:LGL:symbol
+VORs:LIE:symbol
+VORs:LIN:symbol
+VORs:LLE:symbol
+VORs:LMB:symbol
+VORs:LMG:symbol
+VORs:LND:symbol
+VORs:LNO:symbol
+VORs:LOL:symbol
+VORs:LOR:symbol
+VORs:LPA:symbol
+VORs:LRA:symbol
+VORs:LRD:symbol
+VORs:LSE:symbol
+VORs:LTP:symbol
+VORs:LUC:symbol
+VORs:LUL:symbol
+VORs:LUX:symbol
+VORs:LXI:symbol
+VORs:LYD:symbol
+VORs:MAS:symbol
+VORs:MAY:symbol
+VORs:MDM:symbol
+VORs:MEN:symbol
+VORs:MHN:symbol
+VORs:MID:symbol
+VORs:MJV:symbol
+VORs:MLA:symbol
+VORs:MLN:symbol
+VORs:MMD:symbol
+VORs:MMP:symbol
+VORs:MND:symbol
+VORs:MOJ:symbol
+VORs:MOU:symbol
+VORs:MRM:symbol
+VORs:MTG:symbol
+VORs:MTL:symbol
+VORs:MTR:symbol
+VORs:NAY:symbol
+VORs:NDD:symbol
+VORs:NEA:symbol
+VORs:NG:symbol
+VORs:NIZ:symbol
+VORs:NOV:symbol
+VORs:NSA:symbol
+VORs:NTS:symbol
+VORs:NUB:symbol
+VORs:NVO:symbol
+VORs:NVS:symbol
+VORs:ORG:symbol
+VORs:OVR:symbol
+VORs:PAP:symbol
+VORs:PAS:symbol
+VORs:PDT:symbol
+VORs:PEL:symbol
+VORs:PGS:symbol
+VORs:PIA:symbol
+VORs:PIN:symbol
+VORs:PIS:symbol
+VORs:POI:symbol
+VORs:PON:symbol
+VORs:POS:symbol
+VORs:PPG:symbol
+VORs:PPN:symbol
+VORs:PRA:symbol
+VORs:PRT:symbol
+VORs:PT:symbol
+VORs:QPR:symbol
+VORs:RBO:symbol
+VORs:RBT:symbol
+VORs:REM:symbol
+VORs:REN:symbol
+VORs:RES:symbol
+VORs:RID:symbol
+VORs:RLP:symbol
+VORs:RMS:symbol
+VORs:ROA:symbol
+VORs:ROU:symbol
+VORs:SAD:symbol
+VORs:SAL:symbol
+VORs:SAM:symbol
+VORs:SAV:symbol
+VORs:SAZ:symbol
+VORs:SCS:symbol
+VORs:SDI:symbol
+VORs:SES:symbol
+VORs:SFD:symbol
+VORs:SGD:symbol
+VORs:SHD:symbol
+VORs:SIE:symbol
+VORs:SIO:symbol
+VORs:SLD:symbol
+VORs:SLL:symbol
+VORs:SME:symbol
+VORs:SNR:symbol
+VORs:SPA:symbol
+VORs:SPI:symbol
+VORs:SRH:symbol
+VORs:SRN:symbol
+VORs:SSJ:symbol
+VORs:SSN:symbol
+VORs:SSY:symbol
+VORs:STG:symbol
+VORs:STH:symbol
+VORs:STP:symbol
+VORs:STR:symbol
+VORs:SUL:symbol
+VORs:SZA:symbol
+VORs:TAB:symbol
+VORs:TAU:symbol
+VORs:TBC:symbol
+VORs:TBO:symbol
+VORs:TBR:symbol
+VORs:TGO:symbol
+VORs:TIS:symbol
+VORs:TJZ:symbol
+VORs:TLD:symbol
+VORs:TOP:symbol
+VORs:TOU:symbol
+VORs:TRA:symbol
+VORs:TRO:symbol
+VORs:TSC:symbol
+VORs:TSU:symbol
+VORs:TZO:symbol
+VORs:TZZ:symbol
+VORs:VAB:symbol
+VORs:VBZ:symbol
+VORs:VES:symbol
+VORs:VFD:symbol
+VORs:VFM:symbol
+VORs:VGE:symbol
+VORs:VGO:symbol
+VORs:VIS:symbol
+VORs:VLA:symbol
+VORs:VLC:symbol
+VORs:VLN:symbol
+VORs:VNR:symbol
+VORs:VOG:symbol
+VORs:VRA:symbol
+VORs:VTB:symbol
+VORs:VTZ:symbol
+VORs:WFJ:symbol
+VORs:WIB:symbol
+VORs:WIL:symbol
+VORs:WNN:symbol
+VORs:WYP:symbol
+VORs:YVL:symbol
+VORs:ZAR:symbol
+VORs:ZMR:symbol
+VORs:ZR:symbol
+VORs:ZUE:symbol
+VORs:ZWN:symbol
+SHOWC:1
+SHOWSB:0
+BELOW:0
+ABOVE:0
+LEADER:5
+SHOWLEADER:0
+TURNLEADER:1
+HISTORY_DOTS:5
+SIMULATION_MODE:1
+DISABLEPANNING:0
+DISABLEZOOMING:0
+DisplayRotation:0.00000
+TAGFAMILY:CoFrance
+WINDOWAREA:41.237223:-12.875343:52.291085:18.591935
+PLUGIN:CoFrance:LowerAlt:0
+PLUGIN:CoFrance:LowerAltEnabled:1
+PLUGIN:CoFrance:TagFormat:default
+PLUGIN:CoFrance:UpperAlt:660
+PLUGIN:CoFrance:UpperAltEnabled:1

@@ -1,0 +1,101 @@
+Plugins	Plugin0	\LFXX\Plugins\CoFrance\CoFranceLoader.dll
+Plugins	Plugin1	\LFXX\Plugins\RDF Plugin\RDFPlugin.dll
+Plugins	Plugin2	\LFXX\Plugins\CCAMS\CCAMS.dll
+Plugins	Plugin3	\LFXX\Plugins\VCH\VCH.dll
+Plugins	Plugin4	\LFXX\Plugins\vSMR\vSMR.dll
+Plugins	Plugin5	\LFXX\Plugins\ESTimers\ESTimers.dll
+Plugins	Plugin6	\LFXX\Plugins\vACDM\vACDM.dll
+Plugins	Plugin7	\LFXX\Plugins\RampAgent\RampAgent.dll
+Plugins	Plugin8	\LFXX\Plugins\EuroscopeRPC\EuroscopeRPC.dll
+Plugins	Plugin0Display0	CoFrance radar display
+Plugins	Plugin0Display1	Standard ES radar screen
+Plugins	Plugin0Display2	SMR radar display
+Plugins	Plugin1Display0	Standard ES radar screen
+Plugins	Plugin1Display1	SMR radar display
+Plugins	Plugin1Display2	CoFrance radar display
+Plugins	Plugin2Display0	SMR radar display
+Plugins	Plugin2Display1	Standard ES radar screen
+Plugins	Plugin3Display0	SMR radar display
+Plugins	Plugin3Display1	Standard ES radar screen
+Plugins	Plugin4Display0	SMR radar display
+Plugins	Plugin4Display1	Standard ES radar screen
+Plugins	Plugin5Display0	SMR radar display
+Plugins	Plugin5Display1	Standard ES radar screen
+ASRFastKeys	1	\LFXX\ASR\Military - Legacy CTR.asr
+ASRFastKeys	2	\LFXX\ASR\AVISOs\Marsan AVISO.asr
+ASRFastKeys	3	\LFXX\ASR\AVISOs\Istres AVISO.asr
+ASRFastKeys	4	\LFXX\ASR\AVISOs\Salon de Provence AVISO.asr
+ASRFastKeys	5	\LFXX\ASR\AVISOs\Solenzara AVISO.asr
+ASRFastKeys	6	\LFXX\ASR\AVISOs\Saint Dizier AVISO.asr
+ASRFastKeys	7	\LFXX\ASR\AVISOs\Cognac AVISO.asr
+ASRFastKeys	8	\LFXX\ASR\AVISOs\Cazaux AVISO.asr
+ASRFastKeys	9	\LFXX\ASR\AVISOs\Lanveoc AVISO.asr
+RecentFiles	Recent1	\LFXX\ASR\Military - Legacy CTR.asr
+RecentFiles	Recent2	\LFXX\ASR\AVISOs\Marsan AVISO.asr
+RecentFiles	Recent3	\LFXX\ASR\AVISOs\Istres AVISO.asr
+RecentFiles	Recent4	\LFXX\ASR\AVISOs\Salon de Provence AVISO.asr
+RecentFiles	Recent5	\LFXX\ASR\AVISOs\Solenzara AVISO.asr
+RecentFiles	Recent6	\LFXX\ASR\AVISOs\Saint Dizier AVISO.asr
+RecentFiles	Recent7	\LFXX\ASR\AVISOs\Cognac AVISO.asr
+RecentFiles	Recent8	\LFXX\ASR\AVISOs\Cazaux AVISO.asr
+RecentFiles	Recent9	\LFXX\ASR\AVISOs\Lanveoc AVISO.asr
+Settings	AselKey	5111808
+Settings	FreqKey	3604480
+Settings	Settingsfile	\LFXX\Settings\General.txt
+Settings	SettingsfileADCS	\LFXX\Settings\Lists.txt
+Settings	SettingsfileARR	\LFXX\Settings\Lists.txt
+Settings	SettingsfileCONFLICT	\LFXX\Settings\Lists.txt
+Settings	SettingsfileDEP	\LFXX\Settings\Lists.txt
+Settings	SettingsfileFP	\LFXX\Settings\Lists.txt
+Settings	SettingsfileORIGPLANE	\LFXX\Settings\Lists.txt
+Settings	SettingsfilePILOTING	\LFXX\Settings\Lists.txt
+Settings	SettingsfilePLUGINS	\LFXX\Settings\Plugins.txt
+Settings	SettingsfilePROFILE	\LFXX\Settings\LoginProfiles.txt
+Settings	SettingsfileSCREEN	\LFXX\Settings\Screen.txt
+Settings	SettingsfileSEL	\LFXX\Settings\Lists.txt
+Settings	SettingsfileSIL	\LFXX\Settings\Lists.txt
+Settings	SettingsfileSTUP	\LFXX\Settings\Lists.txt
+Settings	SettingsfileSYMBOLOGY	\LFXX\Settings\Symbology.txt
+Settings	SettingsfileTAGS	\LFXX\Settings\Tags.txt
+Settings	SettingsfileTAKEOFF	\LFXX\Settings\Lists.txt
+Settings	SettingsfileTAXIIN	\LFXX\Settings\Lists.txt
+Settings	SettingsfileTAXIOUT	\LFXX\Settings\Lists.txt
+Settings	SettingsfileVCCS	\LFXX\Settings\VCCS.txt
+Settings	SettingsfileVOICE	\LFXX\Settings\Voice.txt
+Settings	aircraft	\LFXX\ICAO\ICAO_Aircraft.txt
+Settings	airlines	\LFXX\ICAO\ICAO_Airlines.txt
+Settings	airportcoords	\LFXX\NavData\icao.txt
+Settings	airports	\LFXX\ICAO\ICAO_Airports.txt
+Settings	airways	\LFXX\NavData\airway.txt
+Settings	alias	\LFXX\Alias\alias.txt
+Settings	sector	\LFXX-Military_20260411184806-260301-0002.sct
+Sounds	Sound0	\LFXX\Sounds\handoff_request.wav
+Sounds	Sound1	\LFXX\Sounds\handoff_accept.wav
+Sounds	Sound10	\LFXX\Sounds\disconnected.wav
+Sounds	Sound11	\LFXX\Sounds\ongoing_request.wav
+Sounds	Sound12	\LFXX\Sounds\ongoing_accepted.wav
+Sounds	Sound13	\LFXX\Sounds\ongoing_refused.wav
+Sounds	Sound14	\LFXX\Sounds\ongoing_manual.wav
+Sounds	Sound15	\LFXX\Sounds\new_atis.wav
+Sounds	Sound16	\LFXX\Sounds\handoff_refused.wav
+Sounds	Sound17	\LFXX\Sounds\pointout.wav
+Sounds	Sound18	\LFXX\Sounds\startup.wav
+Sounds	Sound2	\LFXX\Sounds\conflict_alert.wav
+Sounds	Sound3	\LFXX\Sounds\radio_message.wav
+Sounds	Sound4	\LFXX\Sounds\private_message.wav
+Sounds	Sound5	\LFXX\Sounds\atc_message.wav
+Sounds	Sound6	\LFXX\Sounds\broadcast_message.wav
+Sounds	Sound7	\LFXX\Sounds\landline_request.wav
+Sounds	Sound8	\LFXX\Sounds\supervisor_message.wav
+Sounds	Sound9	\LFXX\Sounds\connected.wav
+LastSession	connecttype	0
+LastSession	callsign	<INITIALS>_OBS
+LastSession	facility	0
+LastSession	rating	0
+LastSession	tovatsim	1
+LastSession	atis2	French vACC Observer
+LastSession	atis3	Welcome to France! -> vatsim.fr
+LastSession	range	275
+LastSession	proxyserver	localhost
+LastSession	simdatapublish	0
+LastSession	atis_freq4	118000

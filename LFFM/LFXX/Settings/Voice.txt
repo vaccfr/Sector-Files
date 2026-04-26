@@ -1,0 +1,64 @@
+VOICE
+AG:LFOA_APP Avord Approach:119.700:novoice:LFOA_APP
+AG:LFOA_TWR Avord Tower:122.100:novoice:LFOA_TWR
+AG:LFBC_APP Cazaux Approach:119.600:novoice:LFBC_APP
+AG:LFBC_TWR Cazaux Tower:118.400:novoice:LFBC_TWR
+AG:LFBG_APP Cognac Approach:132.450:novoice:LFBG_APP
+AG:LFBG_GND Cognac Ground:121.100:novoice:LFBG_GND
+AG:LFBG_TWR Cognac Tower:120.075:novoice:LFBG_TWR
+AG:LFBY_APP Dax Approach:122.050:novoice:LFBY_APP
+AG:LFBY_GND Dax Ground:121.775:novoice:LFBY_GND
+AG:LFBY_TWR Dax Tower:118.325:novoice:LFBY_TWR
+AG:LFQE_APP Etain Approach:120.125:novoice:LFQE_APP
+AG:LFQE_TWR Etain Tower:118.950:novoice:LFQE_TWR
+AG:LFOE_APP Evreux Approach:118.125:novoice:LFOE_APP
+AG:LFOE_TWR Evreux Tower:122.100:novoice:LFOE_TWR
+AG:LFTH_APP Toulon Approach:126.325:novoice:LFTH_APP
+AG:LFTH_ATIS:129.650:novoice:LFTH_ATIS
+AG:LFTH_GND Hyeres Ground:121.800:novoice:LFTH_GND
+AG:LFTH_TWR Hyeres Tower:121.000:novoice:LFTH_TWR
+AG:LFMI_APP Istres Approach:131.000:novoice:LFMI_APP
+AG:LFMI_C_APP Camargue Control:127.925:novoice:LFMI_C_APP
+AG:LFMI_GND Istres Ground:121.850:novoice:LFMI_GND
+AG:LFMI_TWR Istres Tower:123.600:novoice:LFMI_TWR
+AG:LFRJ_APP Landivisiau Approach:122.400:novoice:LFRJ_APP
+AG:LFRJ_TWR Landivisiau Tower:119.200:novoice:LFRJ_TWR
+AG:LFRL_APP Lanveoc Approach:120.600:novoice:LFRL_APP
+AG:LFRL_ATIS:118.840:novoice:LFRL_ATIS
+AG:LFRL_GND Lanveoc Ground:121.900:novoice:LFRL_GND
+AG:LFRL_TWR Lanveoc Tower:121.500:novoice:LFRL_TWR
+AG:LFMC_APP Le Luc Approach:122.200:novoice:LFMC_APP
+AG:LFMC_ATIS:128.650:novoice:LFMC_ATIS
+AG:LFMC_GND Le Luc Ground:121.850:novoice:LFMC_GND
+AG:LFMC_TWR Le Luc Tower:123.000:novoice:LFMC_TWR
+AG:LFRH_APP Lorient Approach:123.000:novoice:LFRH_APP
+AG:LFRH_ATIS:129.125:novoice:LFRH_ATIS
+AG:LFRH_GND Lorient Ground:119.700:novoice:LFRH_GND
+AG:LFRH_TWR Lorient Tower:119.700:novoice:LFRH_TWR
+AG:LFSX_APP Luxeuil Approach:129.925:novoice:LFSX_APP
+AG:LFSX_TWR Luxeuil Tower:122.100:novoice:LFSX_TWR
+AG:LFBM_APP Marsan Approach:119.700:novoice:LFBM_APP
+AG:LFBM_TWR Marsan Tower:122.100:novoice:LFBM_TWR
+AG:LFSO_APP Ochey Approach:123.300:novoice:LFSO_APP
+AG:LFSO_GND Ochey Ground:122.100:novoice:LFSO_GND
+AG:LFSO_TWR Ochey Tower:122.100:novoice:LFSO_TWR
+AG:LFMO_APP Orange Approach:118.925:novoice:LFMO_APP
+AG:LFMO_GND Orange Ground:121.100:novoice:LFMO_GND
+AG:LFMO_TWR Orange Tower:128.950:novoice:LFMO_TWR
+AG:LFOJ_APP Bricy Approach:122.700:novoice:LFOJ_APP
+AG:LFOJ_TWR Bricy Tower:124.800:novoice:LFOJ_TWR
+AG:LFQP_APP Phalsbourg Approach:118.450:novoice:LFQP_APP
+AG:LFQP_TWR Phalsbourg Tower:129.800:novoice:LFQP_TWR
+AG:LFSI_APP Saint Dizier Approach:134.775:novoice:LFSI_APP
+AG:LFSI_TWR Saint Dizier Tower:122.100:novoice:LFSI_TWR
+AG:LFMY_APP Salon Approach:135.150:novoice:LFMY_APP
+AG:LFMY_GND Salon Ground:130.300:novoice:LFMY_GND
+AG:LFMY_TWR Salon Tower:122.100:novoice:LFMY_TWR
+AG:LFKS_APP Zara Approach:119.900:novoice:LFKS_APP
+AG:LFKS_GND Zara Ground:121.100:novoice:LFKS_GND
+AG:LFKS_TWR Zara Tower:118.350:novoice:LFKS_TWR
+AG:LFPV_APP Villa Approach:119.425:novoice:LFPV_APP
+AG:LFPV_GND Villa Ground:121.750:novoice:LFPV_GND
+AG:LFPV_TWR Villa Tower:128.950:novoice:LFPV_TWR
+AG:LFFM_CTR France Military Control:128.375:novoice:LFFM_CTR
+END
