@@ -1,0 +1,101 @@
+Plugins	Plugin0	\LFEE\Plugins\CoFrance\CoFranceLoader.dll
+Plugins	Plugin1	\LFEE\Plugins\RDF Plugin\RDFPlugin.dll
+Plugins	Plugin2	\LFEE\Plugins\CCAMS\CCAMS.dll
+Plugins	Plugin3	\LFEE\Plugins\VCH\VCH.dll
+Plugins	Plugin4	\LFEE\Plugins\vSMR\vSMR.dll
+Plugins	Plugin5	\LFEE\Plugins\ESTimers\ESTimers.dll
+Plugins	Plugin6	\LFEE\Plugins\vACDM\vACDM.dll
+Plugins	Plugin7	\LFEE\Plugins\RampAgent\RampAgent.dll
+Plugins	Plugin8	\LFEE\Plugins\EuroscopeRPC\EuroscopeRPC.dll
+Plugins	Plugin0Display0	CoFrance radar display
+Plugins	Plugin0Display1	Standard ES radar screen
+Plugins	Plugin0Display2	SMR radar display
+Plugins	Plugin1Display0	Standard ES radar screen
+Plugins	Plugin1Display1	SMR radar display
+Plugins	Plugin1Display2	CoFrance radar display
+Plugins	Plugin2Display0	SMR radar display
+Plugins	Plugin2Display1	Standard ES radar screen
+Plugins	Plugin3Display0	SMR radar display
+Plugins	Plugin3Display1	Standard ES radar screen
+Plugins	Plugin4Display0	SMR radar display
+Plugins	Plugin4Display1	Standard ES radar screen
+Plugins	Plugin5Display0	SMR radar display
+Plugins	Plugin5Display1	Standard ES radar screen
+ASRFastKeys	1	\LFEE\ASR\Reims UIR.asr
+ASRFastKeys	2	\LFEE\ASR\Reims - Legacy APP.asr
+ASRFastKeys	3	\LFEE\ASR\AVISOs\Bale AVISO.asr
+ASRFastKeys	4	\LFEE\ASR\AVISOs\Strasbourg AVISO.asr
+ASRFastKeys	5	\LFEE\ASR\AVISOs\Colmar AVISO.asr
+ASRFastKeys	6	\LFEE\ASR\AVISOs\Dole AVISO.asr
+ASRFastKeys	7	\LFEE\ASR\AVISOs\Lorraine AVISO.asr
+ASRFastKeys	8	\LFEE\ASR\AVISOs\Nancy AVISO.asr
+ASRFastKeys	9	\LFEE\ASR\AVISOs\Epinal AVISO.asr
+RecentFiles	Recent1	\LFEE\ASR\Reims UIR.asr
+RecentFiles	Recent2	\LFEE\ASR\Reims - Legacy APP.asr
+RecentFiles	Recent3	\LFEE\ASR\AVISOs\Bale AVISO.asr
+RecentFiles	Recent4	\LFEE\ASR\AVISOs\Strasbourg AVISO.asr
+RecentFiles	Recent5	\LFEE\ASR\AVISOs\Colmar AVISO.asr
+RecentFiles	Recent6	\LFEE\ASR\AVISOs\Dole AVISO.asr
+RecentFiles	Recent7	\LFEE\ASR\AVISOs\Lorraine AVISO.asr
+RecentFiles	Recent8	\LFEE\ASR\AVISOs\Nancy AVISO.asr
+RecentFiles	Recent9	\LFEE\ASR\AVISOs\Epinal AVISO.asr
+Settings	AselKey	5111808
+Settings	FreqKey	3604480
+Settings	Settingsfile	\LFEE\Settings\General.txt
+Settings	SettingsfileADCS	\LFEE\Settings\Lists.txt
+Settings	SettingsfileARR	\LFEE\Settings\Lists.txt
+Settings	SettingsfileCONFLICT	\LFEE\Settings\Lists.txt
+Settings	SettingsfileDEP	\LFEE\Settings\Lists.txt
+Settings	SettingsfileFP	\LFEE\Settings\Lists.txt
+Settings	SettingsfileORIGPLANE	\LFEE\Settings\Lists.txt
+Settings	SettingsfilePILOTING	\LFEE\Settings\Lists.txt
+Settings	SettingsfilePLUGINS	\LFEE\Settings\Plugins.txt
+Settings	SettingsfilePROFILE	\LFEE\Settings\LoginProfiles.txt
+Settings	SettingsfileSCREEN	\LFEE\Settings\Screen.txt
+Settings	SettingsfileSEL	\LFEE\Settings\Lists.txt
+Settings	SettingsfileSIL	\LFEE\Settings\Lists.txt
+Settings	SettingsfileSTUP	\LFEE\Settings\Lists.txt
+Settings	SettingsfileSYMBOLOGY	\LFEE\Settings\Symbology.txt
+Settings	SettingsfileTAGS	\LFEE\Settings\Tags.txt
+Settings	SettingsfileTAKEOFF	\LFEE\Settings\Lists.txt
+Settings	SettingsfileTAXIIN	\LFEE\Settings\Lists.txt
+Settings	SettingsfileTAXIOUT	\LFEE\Settings\Lists.txt
+Settings	SettingsfileVCCS	\LFEE\Settings\VCCS.txt
+Settings	SettingsfileVOICE	\LFEE\Settings\VoiceChannels.txt
+Settings	aircraft	\LFEE\ICAO\ICAO_Aircraft.txt
+Settings	airlines	\LFEE\ICAO\ICAO_Airlines.txt
+Settings	airportcoords	\LFEE\NavData\icao.txt
+Settings	airports	\LFEE\ICAO\ICAO_Airports.txt
+Settings	airways	\LFEE\NavData\airway.txt
+Settings	alias	\LFEE\Alias\alias.txt
+Settings	sector	\LFEE-Reims_20260426072045-260401-0002.sct
+Sounds	Sound0	\LFEE\Sounds\handoff_request.wav
+Sounds	Sound1	\LFEE\Sounds\handoff_accept.wav
+Sounds	Sound10	\LFEE\Sounds\disconnected.wav
+Sounds	Sound11	\LFEE\Sounds\ongoing_request.wav
+Sounds	Sound12	\LFEE\Sounds\ongoing_accepted.wav
+Sounds	Sound13	\LFEE\Sounds\ongoing_refused.wav
+Sounds	Sound14	\LFEE\Sounds\ongoing_manual.wav
+Sounds	Sound15	\LFEE\Sounds\new_atis.wav
+Sounds	Sound16	\LFEE\Sounds\handoff_refused.wav
+Sounds	Sound17	\LFEE\Sounds\pointout.wav
+Sounds	Sound18	\LFEE\Sounds\startup.wav
+Sounds	Sound2	\LFEE\Sounds\conflict_alert.wav
+Sounds	Sound3	\LFEE\Sounds\radio_message.wav
+Sounds	Sound4	\LFEE\Sounds\private_message.wav
+Sounds	Sound5	\LFEE\Sounds\atc_message.wav
+Sounds	Sound6	\LFEE\Sounds\broadcast_message.wav
+Sounds	Sound7	\LFEE\Sounds\landline_request.wav
+Sounds	Sound8	\LFEE\Sounds\supervisor_message.wav
+Sounds	Sound9	\LFEE\Sounds\connected.wav
+LastSession	connecttype	0
+LastSession	callsign	<INITIALS>_OBS
+LastSession	facility	0
+LastSession	rating	0
+LastSession	tovatsim	1
+LastSession	atis2	French vACC Observer
+LastSession	atis3	Welcome to France! -> vatsim.fr
+LastSession	range	275
+LastSession	proxyserver	localhost
+LastSession	simdatapublish	0
+LastSession	atis_freq4	118000

@@ -1,0 +1,174 @@
+PROFILE
+PROFILE:<INITIALS>_OBS:275:0
+ATIS2:French vACC Observer
+ATIS3:Welcome to France! -> vatsim.fr
+ATIS4:
+PROFILE:LFEE_CTR:300:6
+ATIS2:Reims Control - EN/FR
+ATIS3:Sector Coverage - map.vatsim.net | CPDLC [LFXX]
+ATIS4:Leave us some feedback! vatsim.fr/fb/VOTRE_CID_ICI
+PROFILE:LFEE_HE_CTR:300:6
+ATIS2:Reims Control - EN/FR
+ATIS3:Sector Coverage - map.vatsim.net | CPDLC [LFXX]
+ATIS4:Leave us some feedback! vatsim.fr/fb/VOTRE_CID_ICI
+PROFILE:LFEE_HH_CTR:300:6
+ATIS2:Reims Control - EN/FR
+ATIS3:Sector Coverage - map.vatsim.net | CPDLC [LFXX]
+ATIS4:Leave us some feedback! vatsim.fr/fb/VOTRE_CID_ICI
+PROFILE:LFEE_HN_CTR:300:6
+ATIS2:Reims Control - EN/FR
+ATIS3:Sector Coverage - map.vatsim.net | CPDLC [LFXX]
+ATIS4:Leave us some feedback! vatsim.fr/fb/VOTRE_CID_ICI
+PROFILE:LFEE_HR_CTR:300:6
+ATIS2:Reims Control - EN/FR
+ATIS3:Sector Coverage - map.vatsim.net | CPDLC [LFXX]
+ATIS4:Leave us some feedback! vatsim.fr/fb/VOTRE_CID_ICI
+PROFILE:LFEE_KD_CTR:300:6
+ATIS2:Reims Control - EN/FR
+ATIS3:Sector Coverage - map.vatsim.net | CPDLC [LFXX]
+ATIS4:Leave us some feedback! vatsim.fr/fb/VOTRE_CID_ICI
+PROFILE:LFEE_KE_CTR:300:6
+ATIS2:Reims Control - EN/FR
+ATIS3:Sector Coverage - map.vatsim.net | CPDLC [LFXX]
+ATIS4:Leave us some feedback! vatsim.fr/fb/VOTRE_CID_ICI
+PROFILE:LFEE_KF_CTR:300:6
+ATIS2:Reims Control - EN/FR
+ATIS3:Sector Coverage - map.vatsim.net | CPDLC [LFXX]
+ATIS4:Leave us some feedback! vatsim.fr/fb/VOTRE_CID_ICI
+PROFILE:LFEE_KH_CTR:300:6
+ATIS2:Reims Control - EN/FR
+ATIS3:Sector Coverage - map.vatsim.net | CPDLC [LFXX]
+ATIS4:Leave us some feedback! vatsim.fr/fb/VOTRE_CID_ICI
+PROFILE:LFEE_KN_CTR:300:6
+ATIS2:Reims Control - EN/FR
+ATIS3:Sector Coverage - map.vatsim.net | CPDLC [LFXX]
+ATIS4:Leave us some feedback! vatsim.fr/fb/VOTRE_CID_ICI
+PROFILE:LFEE_KR_CTR:300:6
+ATIS2:Reims Control - EN/FR
+ATIS3:Sector Coverage - map.vatsim.net | CPDLC [LFXX]
+ATIS4:Leave us some feedback! vatsim.fr/fb/VOTRE_CID_ICI
+PROFILE:LFEE_N_CTR:300:6
+ATIS2:Reims Control - EN/FR
+ATIS3:Sector Coverage - map.vatsim.net | CPDLC [LFXX]
+ATIS4:Leave us some feedback! vatsim.fr/fb/VOTRE_CID_ICI
+PROFILE:LFEE_S_CTR:300:6
+ATIS2:Reims Control - EN/FR
+ATIS3:Sector Coverage - map.vatsim.net | CPDLC [LFXX]
+ATIS4:Leave us some feedback! vatsim.fr/fb/VOTRE_CID_ICI
+PROFILE:LFEE_UB_CTR:300:6
+ATIS2:Reims Control - EN/FR
+ATIS3:Sector Coverage - map.vatsim.net | CPDLC [LFXX]
+ATIS4:Leave us some feedback! vatsim.fr/fb/VOTRE_CID_ICI
+PROFILE:LFEE_UE_CTR:300:6
+ATIS2:Reims Control - EN/FR
+ATIS3:Sector Coverage - map.vatsim.net | CPDLC [LFXX]
+ATIS4:Leave us some feedback! vatsim.fr/fb/VOTRE_CID_ICI
+PROFILE:LFEE_UF_CTR:300:6
+ATIS2:Reims Control - EN/FR
+ATIS3:Sector Coverage - map.vatsim.net | CPDLC [LFXX]
+ATIS4:Leave us some feedback! vatsim.fr/fb/VOTRE_CID_ICI
+PROFILE:LFEE_UH_CTR:300:6
+ATIS2:Reims Control - EN/FR
+ATIS3:Sector Coverage - map.vatsim.net | CPDLC [LFXX]
+ATIS4:Leave us some feedback! vatsim.fr/fb/VOTRE_CID_ICI
+PROFILE:LFEE_UN_CTR:300:6
+ATIS2:Reims Control - EN/FR
+ATIS3:Sector Coverage - map.vatsim.net | CPDLC [LFXX]
+ATIS4:Leave us some feedback! vatsim.fr/fb/VOTRE_CID_ICI
+PROFILE:LFEE_UR_CTR:300:6
+ATIS2:Reims Control - EN/FR
+ATIS3:Sector Coverage - map.vatsim.net | CPDLC [LFXX]
+ATIS4:Leave us some feedback! vatsim.fr/fb/VOTRE_CID_ICI
+PROFILE:LFEE_XE_CTR:300:6
+ATIS2:Reims Control - EN/FR
+ATIS3:Sector Coverage - map.vatsim.net | CPDLC [LFXX]
+ATIS4:Leave us some feedback! vatsim.fr/fb/VOTRE_CID_ICI
+PROFILE:LFEE_XH_CTR:300:6
+ATIS2:Reims Control - EN/FR
+ATIS3:Sector Coverage - map.vatsim.net | CPDLC [LFXX]
+ATIS4:Leave us some feedback! vatsim.fr/fb/VOTRE_CID_ICI
+PROFILE:LFEE_XR_CTR:300:6
+ATIS2:Reims Control - EN/FR
+ATIS3:Sector Coverage - map.vatsim.net | CPDLC [LFXX]
+ATIS4:Leave us some feedback! vatsim.fr/fb/VOTRE_CID_ICI
+PROFILE:LFEE_YB_CTR:300:6
+ATIS2:Reims Control - EN/FR
+ATIS3:Sector Coverage - map.vatsim.net | CPDLC [LFXX]
+ATIS4:Leave us some feedback! vatsim.fr/fb/VOTRE_CID_ICI
+PROFILE:LFJL_APP:120:5
+ATIS2:Lorraine Approach - EN/FR
+ATIS3:Sector Coverage - map.vatsim.net
+ATIS4:Leave us some feedback! vatsim.fr/fb/VOTRE_CID_ICI
+PROFILE:LFSB_APP:120:5
+ATIS2:Bale Approach - EN/FR
+ATIS3:Sector Coverage - map.vatsim.net
+ATIS4:Leave us some feedback! vatsim.fr/fb/VOTRE_CID_ICI
+PROFILE:LFSB_C_APP:120:5
+ATIS2:Bale Control - EN/FR
+ATIS3:Sector Coverage - map.vatsim.net
+ATIS4:Leave us some feedback! vatsim.fr/fb/VOTRE_CID_ICI
+PROFILE:LFST_APP:120:5
+ATIS2:Strasbourg Approach - EN/FR
+ATIS3:Sector Coverage - map.vatsim.net
+ATIS4:Leave us some feedback! vatsim.fr/fb/VOTRE_CID_ICI
+PROFILE:LFGA_TWR:30:4
+ATIS2:Colmar Tower - EN/FR
+ATIS3:Check your charts! chartfox.org/LFGA
+ATIS4:Leave us some feedback! vatsim.fr/fb/VOTRE_CID_ICI
+PROFILE:LFGJ_TWR:30:4
+ATIS2:Dole Tower - EN/FR
+ATIS3:Check your charts! chartfox.org/LFGJ
+ATIS4:Leave us some feedback! vatsim.fr/fb/VOTRE_CID_ICI
+PROFILE:LFJL_TWR:30:4
+ATIS2:Lorraine Tower - EN/FR
+ATIS3:Check your charts! chartfox.org/LFJL
+ATIS4:Leave us some feedback! vatsim.fr/fb/VOTRE_CID_ICI
+PROFILE:LFLH_I_TWR:30:4
+ATIS2:Chalon Information - EN/FR
+ATIS3:Check your charts! chartfox.org/LFLH
+ATIS4:Leave us some feedback! vatsim.fr/fb/VOTRE_CID_ICI
+PROFILE:LFQM_I_TWR:30:4
+ATIS2:La Veze Information - EN/FR
+ATIS3:Check your charts! chartfox.org/LFQM
+ATIS4:Leave us some feedback! vatsim.fr/fb/VOTRE_CID_ICI
+PROFILE:LFSB_TWR:30:4
+ATIS2:Bale Tower - EN/FR
+ATIS3:Check your charts! chartfox.org/LFSB
+ATIS4:Leave us some feedback! vatsim.fr/fb/VOTRE_CID_ICI
+PROFILE:LFSD_I_TWR:30:4
+ATIS2:Dijon Information - EN/FR
+ATIS3:Check your charts! chartfox.org/LFSD
+ATIS4:Leave us some feedback! vatsim.fr/fb/VOTRE_CID_ICI
+PROFILE:LFSG_I_TWR:30:4
+ATIS2:Epinal Information - EN/FR
+ATIS3:Check your charts! chartfox.org/LFSG
+ATIS4:Leave us some feedback! vatsim.fr/fb/VOTRE_CID_ICI
+PROFILE:LFSN_I_TWR:30:4
+ATIS2:Nancy Information - EN/FR
+ATIS3:Check your charts! chartfox.org/LFSN
+ATIS4:Leave us some feedback! vatsim.fr/fb/VOTRE_CID_ICI
+PROFILE:LFST_TWR:30:4
+ATIS2:Strasbourg Tower - EN/FR
+ATIS3:Check your charts! chartfox.org/LFST
+ATIS4:Leave us some feedback! vatsim.fr/fb/VOTRE_CID_ICI
+PROFILE:LFGA_GND:10:3
+ATIS2:Colmar Ground - EN/FR
+ATIS3:Check your charts! chartfox.org/LFGA
+ATIS4:Leave us some feedback! vatsim.fr/fb/VOTRE_CID_ICI
+PROFILE:LFJL_GND:10:3
+ATIS2:Lorraine Ground - EN/FR
+ATIS3:Check your charts! chartfox.org/LFJL
+ATIS4:Leave us some feedback! vatsim.fr/fb/VOTRE_CID_ICI
+PROFILE:LFSB_GND:10:3
+ATIS2:Bale Ground - EN/FR
+ATIS3:Check your charts! chartfox.org/LFSB
+ATIS4:Leave us some feedback! vatsim.fr/fb/VOTRE_CID_ICI
+PROFILE:LFST_GND:10:3
+ATIS2:Strasbourg Ground - EN/FR
+ATIS3:Check your charts! chartfox.org/LFST
+ATIS4:Leave us some feedback! vatsim.fr/fb/VOTRE_CID_ICI
+PROFILE:LFSB_DEL:10:2
+ATIS2:Bale Delivery - EN/FR
+ATIS3:Check your charts! chartfox.org/LFSB
+ATIS4:Leave us some feedback! vatsim.fr/fb/VOTRE_CID_ICI
+END
