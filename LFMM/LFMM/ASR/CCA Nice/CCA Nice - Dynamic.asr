@@ -1,0 +1,26 @@
+DisplayTypeName:CoFrance radar display
+DisplayTypeNeedRadarContent:0
+DisplayTypeGeoReferenced:1
+SECTORFILE:
+SECTORTITLE:
+SHOWC:1
+SHOWSB:0
+BELOW:0
+ABOVE:0
+LEADER:5
+SHOWLEADER:0
+TURNLEADER:1
+HISTORY_DOTS:5
+SIMULATION_MODE:1
+DISABLEPANNING:0
+DISABLEZOOMING:0
+DisplayRotation:0.00000
+TAGFAMILY:
+WINDOWAREA:42.567209:4.934897:44.369916:9.571005
+PLUGIN:CoFrance:EnabledMaps:LFMN/0_CCA_Nice_Basemap,LFMN/1_CCA_Nice_RNP04,1_CCA_Nice_RNP22,LFMN/2_CCA_Nice_Commons
+PLUGIN:CoFrance:LowerAlt:0
+PLUGIN:CoFrance:LowerAltEnabled:1
+PLUGIN:CoFrance:SettingProfile:Approach
+PLUGIN:CoFrance:TagFormat:Nice
+PLUGIN:CoFrance:UpperAlt:240
+PLUGIN:CoFrance:UpperAltEnabled:1
