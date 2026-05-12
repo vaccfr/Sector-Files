@@ -4,6 +4,8 @@ import re
 ROOT_DIR = Path.cwd()
 DRY_RUN = False
 
+FIR_FOLDER_RE = re.compile(r"^LF[A-Z0-9]{2}$", re.IGNORECASE)
+
 
 def read_lines(path: Path) -> list[str]:
     return path.read_text(encoding="utf-8", errors="ignore").splitlines()
@@ -21,6 +23,10 @@ def normalize_asr_path(value: str) -> str:
         value = value[idx:]
     return value
 
+
+# =========================================================
+# ASR cleanup
+# =========================================================
 
 def cleanup_sector_lines(asr_file: Path) -> None:
     lines = read_lines(asr_file)
@@ -41,6 +47,10 @@ def cleanup_sector_lines(asr_file: Path) -> None:
         print(f"[ASR] Cleaned sector lines: {asr_file}")
         write_lines(asr_file, output)
 
+
+# =========================================================
+# AVISO cleanup
+# =========================================================
 
 def get_icao_from_filename(path: Path) -> str | None:
     match = re.match(r"^([A-Z]{4})\b", path.stem.upper())
@@ -82,6 +92,17 @@ def filter_aviso(asr_file: Path) -> None:
         write_lines(asr_file, output)
 
 
+# =========================================================
+# PRF sync
+#
+# Handles tab-separated format:
+#   ASRFastKeys    2         \ASR\CCA Iroise\CCA Iroise - VFR.asr
+#   RecentFiles    Recent2   \ASR\AVISOs\LFBO Lannion AVISO.asr
+#
+# Result:
+#   RecentFiles    Recent2   \ASR\CCA Iroise\CCA Iroise - VFR.asr
+# =========================================================
+
 def sync_prf(prf_file: Path) -> None:
     lines = read_lines(prf_file)
 
@@ -90,6 +111,7 @@ def sync_prf(prf_file: Path) -> None:
 
     for index, line in enumerate(lines):
         parts = line.split("\t")
+
         if len(parts) < 3:
             continue
 
@@ -108,6 +130,9 @@ def sync_prf(prf_file: Path) -> None:
                 number = int(match.group(1))
                 if 1 <= number <= 9:
                     recent_indexes[number] = index
+
+    if not fastkeys:
+        return
 
     changed = False
 
@@ -135,26 +160,57 @@ def sync_prf(prf_file: Path) -> None:
         write_lines(prf_file, lines)
 
 
-def find_package_roots() -> list[Path]:
-    return sorted({asr_dir.parent for asr_dir in ROOT_DIR.rglob("ASR") if asr_dir.is_dir()})
+# =========================================================
+# Discovery
+# =========================================================
+
+def find_asr_dirs() -> list[Path]:
+    return sorted({p for p in ROOT_DIR.rglob("ASR") if p.is_dir()})
+
+
+def find_prf_files() -> list[Path]:
+    """
+    Finds .prf files anywhere under FIR folders like:
+      LFRR/CCA Iroise.prf
+      LFEE/CCA Bale.prf
+      LFBB/LFBB/Settings/example.prf
+
+    This intentionally does NOT require the .prf to be inside Settings.
+    """
+    prf_files = []
+
+    for top_level in ROOT_DIR.iterdir():
+        if not top_level.is_dir():
+            continue
+
+        if top_level.name.startswith("."):
+            continue
+
+        # FIR folders: LFBB, LFEE, LFFF, LFFM, LFMM, LFRR, etc.
+        # Also allows base pack folders if they contain PRFs.
+        if FIR_FOLDER_RE.match(top_level.name) or top_level.name.startswith("LFXX"):
+            prf_files.extend(top_level.rglob("*.prf"))
+
+    return sorted(set(prf_files))
 
 
 def main() -> None:
-    for package_root in find_package_roots():
-        print(f"===== Processing {package_root} =====")
+    asr_count = 0
+    prf_count = 0
 
-        asr_dir = package_root / "ASR"
-        settings_dir = package_root / "Settings"
-
+    for asr_dir in find_asr_dirs():
+        print(f"===== Processing ASR folder: {asr_dir} =====")
         for asr_file in asr_dir.rglob("*.asr"):
+            asr_count += 1
             cleanup_sector_lines(asr_file)
             filter_aviso(asr_file)
 
-        if settings_dir.exists():
-            for prf_file in settings_dir.rglob("*.prf"):
-                sync_prf(prf_file)
+    print("===== Processing PRF files =====")
+    for prf_file in find_prf_files():
+        prf_count += 1
+        sync_prf(prf_file)
 
-    print("Done.")
+    print(f"Done. Checked {asr_count} ASR files and {prf_count} PRF files.")
 
 
 if __name__ == "__main__":
