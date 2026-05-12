@@ -29,12 +29,12 @@ ASRFastKeys	5	\ASR\AVISOs\LFRQ Quimper AVISO.asr
 ASRFastKeys	6	\ASR\AVISOs\LFRU Morlaix AVISO.asr
 ASRFastKeys	7	\ASR\AVISOs\LFRO Lannion AVISO.asr
 RecentFiles	Recent1	\ASR\CCA Iroise\CCA Iroise - Dynamic.asr
-RecentFiles	Recent2	\ASR\AVISOs\LFBO Lannion AVISO.asr
-RecentFiles	Recent3	\ASR\AVISOs\LFRU Morlaix AVISO.asr
-RecentFiles	Recent4	\ASR\AVISOs\LFRQ Quimper AVISO.asr
-RecentFiles	Recent5	\ASR\AVISOs\LFRB Bretagne AVISO.asr
-RecentFiles	Recent6	\ASR\CCA Iroise\CCA Iroise - MVA.asr
-RecentFiles	Recent7	\ASR\CCA Iroise\CCA Iroise - VFR.asr
+RecentFiles	Recent2	\ASR\CCA Iroise\CCA Iroise - VFR.asr
+RecentFiles	Recent3	\ASR\CCA Iroise\CCA Iroise - MVA.asr
+RecentFiles	Recent4	\ASR\AVISOs\LFRB Bretagne AVISO.asr
+RecentFiles	Recent5	\ASR\AVISOs\LFRQ Quimper AVISO.asr
+RecentFiles	Recent6	\ASR\AVISOs\LFRU Morlaix AVISO.asr
+RecentFiles	Recent7	\ASR\AVISOs\LFRO Lannion AVISO.asr
 Settings	AselKey	5111808
 Settings	FreqKey	3604480
 Settings	Settingsfile	\..\LFXX\Settings\General.txt
