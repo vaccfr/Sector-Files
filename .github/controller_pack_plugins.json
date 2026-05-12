@@ -1,0 +1,58 @@
+{
+  "plugins": [
+    {
+      "name": "CCAMS",
+      "current": "2.5.3",
+      "github": "kusterjs/CCAMS",
+      "include_prereleases": false
+    },
+    {
+      "name": "AMAN",
+      "current": "3.2.0",
+      "github": "EvenAR/euroscope-aman",
+      "include_prereleases": false
+    },
+    {
+      "name": "EuroscopeRPC",
+      "current": "1.0.0",
+      "github": "AlexisBalzano/EuroscopeRPC",
+      "include_prereleases": false
+    },
+    {
+      "name": "RDF Plugin",
+      "current": "1.4.3",
+      "github": "KingfuChan/RDF",
+      "include_prereleases": false
+    },
+    {
+      "name": "RampAgent",
+      "current": "1.07",
+      "github": "AlexisBalzano/EuroscopeRampAgent",
+      "include_prereleases": false
+    },
+    {
+      "name": "VATCAN Booking Plugin",
+      "current": "1.1.11",
+      "github": "VATSIMCanada/Slots-Plugin",
+      "include_prereleases": false
+    },
+    {
+      "name": "VCH",
+      "current": "0.8.6",
+      "github": "DrFreas/VCH",
+      "include_prereleases": false
+    },
+    {
+      "name": "vACDM",
+      "current": "1.4.1",
+      "github": "herver/vacdm-plugin",
+      "include_prereleases": false
+    },
+    {
+      "name": "vSMR",
+      "current": "1.0.7",
+      "github": "AlexisBalzano/vSMR",
+      "include_prereleases": false
+    }
+  ]
+}

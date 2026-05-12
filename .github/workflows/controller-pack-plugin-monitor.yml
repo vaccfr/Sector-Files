@@ -1,0 +1,165 @@
+name: Controller Pack plugin release monitor
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "37 4 * * *"
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  scan:
+    name: Scan upstream plugin repositories
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Controller Pack repository
+        uses: actions/checkout@v4
+
+      - name: Check plugin versions
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require("fs");
+
+            const configPath = ".github/controller_pack_plugins.json";
+            const issueLabel = "controller-pack-plugin-update";
+
+            if (!fs.existsSync(configPath)) {
+              core.setFailed(`Missing ${configPath}`);
+              return;
+            }
+
+            const config = JSON.parse(fs.readFileSync(configPath, "utf8"));
+
+            function cleanVersion(value) {
+              return String(value || "")
+                .trim()
+                .replace(/^v/i, "")
+                .replace(/^release[-_/]/i, "");
+            }
+
+            async function ensureLabel() {
+              try {
+                await github.rest.issues.getLabel({
+                  owner: context.repo.owner,
+                  repo: context.repo.repo,
+                  name: issueLabel,
+                });
+              } catch (error) {
+                if (error.status !== 404) throw error;
+
+                await github.rest.issues.createLabel({
+                  owner: context.repo.owner,
+                  repo: context.repo.repo,
+                  name: issueLabel,
+                  color: "0055A4",
+                  description: "Detected Controller Pack plugin update",
+                });
+              }
+            }
+
+            async function getLatestRelease(plugin) {
+              const [owner, repo] = plugin.github.split("/");
+
+              if (plugin.include_prereleases) {
+                const releases = await github.paginate(github.rest.repos.listReleases, {
+                  owner,
+                  repo,
+                  per_page: 50,
+                });
+
+                const release = releases.find((item) => !item.draft);
+                return release?.tag_name || "";
+              }
+
+              try {
+                const release = await github.rest.repos.getLatestRelease({
+                  owner,
+                  repo,
+                });
+
+                return release.data.tag_name || "";
+              } catch {}
+
+              const tags = await github.rest.repos.listTags({
+                owner,
+                repo,
+                per_page: 1,
+              });
+
+              return tags.data[0]?.name || "";
+            }
+
+            async function issueExists(plugin, latest) {
+              const result = await github.rest.search.issuesAndPullRequests({
+                q: [
+                  `repo:${context.repo.owner}/${context.repo.repo}`,
+                  "is:issue",
+                  "is:open",
+                  `label:${issueLabel}`,
+                  `"${plugin.github}"`,
+                  `"${latest}"`
+                ].join(" "),
+                per_page: 1,
+              });
+
+              return result.data.total_count > 0;
+            }
+
+            async function createIssue(plugin, latest) {
+              const body = [
+                `A new upstream release was detected for **${plugin.name}**.`,
+                "",
+                "| Field | Value |",
+                "| --- | --- |",
+                `| Plugin | ${plugin.name} |`,
+                `| Current packaged version | ${plugin.current} |`,
+                `| Latest upstream version | ${latest} |`,
+                `| Repository | ${plugin.github} |`,
+                "",
+                "Recommended actions:",
+                "",
+                "- Validate the release in EuroScope.",
+                "- Verify compatibility with the Controller Pack.",
+                "- Update packaged binaries/configuration if approved.",
+                `- Update \`.github/controller_pack_plugins.json\` after deployment.`,
+                "",
+                `Repository: https://github.com/${plugin.github}`,
+                `Release: https://github.com/${plugin.github}/releases/tag/${latest}`,
+              ].join("\\n");
+
+              await github.rest.issues.create({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                title: `[Controller Pack] ${plugin.name} update available (${latest})`,
+                body,
+                labels: [issueLabel],
+              });
+            }
+
+            await ensureLabel();
+
+            for (const plugin of config.plugins) {
+              const latest = await getLatestRelease(plugin);
+
+              if (!latest) {
+                core.warning(`No release found for ${plugin.name}`);
+                continue;
+              }
+
+              if (cleanVersion(plugin.current) === cleanVersion(latest)) {
+                core.info(`${plugin.name} already up to date`);
+                continue;
+              }
+
+              if (await issueExists(plugin, latest)) {
+                core.info(`Issue already exists for ${plugin.name} ${latest}`);
+                continue;
+              }
+
+              await createIssue(plugin, latest);
+              core.info(`Created issue for ${plugin.name}`);
+            }
