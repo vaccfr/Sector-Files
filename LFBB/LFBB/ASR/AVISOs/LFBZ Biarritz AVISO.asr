@@ -43,8 +43,6 @@ Free Text:LFBZ Taxiways\S2:freetext
 Free Text:LFBZ Taxiways\V:freetext
 Geo:LFBZ Groundlayout AVISO:
 Regions:LFBZ AVISO:polygon
-Runways:LFBZ 09-27:centerline
-Runways:LFBZ 09-27:name
 SHOWC:1
 SHOWSB:0
 BELOW:0

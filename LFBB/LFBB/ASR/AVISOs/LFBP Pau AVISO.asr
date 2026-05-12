@@ -1,0 +1,104 @@
+DisplayTypeName:SMR radar display
+DisplayTypeNeedRadarContent:0
+DisplayTypeGeoReferenced:1
+SECTORFILE:
+SECTORTITLE:
+Free Text:LFBP Gates\1:freetext
+Free Text:LFBP Gates\100 LL:freetext
+Free Text:LFBP Gates\1B:freetext
+Free Text:LFBP Gates\2:freetext
+Free Text:LFBP Gates\3:freetext
+Free Text:LFBP Gates\3B:freetext
+Free Text:LFBP Gates\4:freetext
+Free Text:LFBP Gates\5:freetext
+Free Text:LFBP Gates\5B:freetext
+Free Text:LFBP Gates\6:freetext
+Free Text:LFBP Gates\6B:freetext
+Free Text:LFBP Gates\7:freetext
+Free Text:LFBP Gates\8A:freetext
+Free Text:LFBP Gates\8B:freetext
+Free Text:LFBP Gates\8C:freetext
+Free Text:LFBP Gates\ACB:freetext
+Free Text:LFBP Gates\Fret:freetext
+Free Text:LFBP Gates\Fuel:freetext
+Free Text:LFBP Gates\G1:freetext
+Free Text:LFBP Gates\G2:freetext
+Free Text:LFBP Gates\G3:freetext
+Free Text:LFBP Gates\G4:freetext
+Free Text:LFBP Gates\G5:freetext
+Free Text:LFBP Gates\G6:freetext
+Free Text:LFBP Gates\G7:freetext
+Free Text:LFBP Gates\G8:freetext
+Free Text:LFBP Gates\H2:freetext
+Free Text:LFBP Gates\H4:freetext
+Free Text:LFBP Gates\Hangars:freetext
+Free Text:LFBP Gates\HE:freetext
+Free Text:LFBP Gates\P-A Civil:freetext
+Free Text:LFBP Gates\P-D:freetext
+Free Text:LFBP Gates\P-G Gros Porteurs:freetext
+Free Text:LFBP Gates\P-HEL Mil:freetext
+Free Text:LFBP Gates\P-Mil:freetext
+Free Text:LFBP Gates\P-Mil:freetext
+Free Text:LFBP Gates\P-Postal:freetext
+Free Text:LFBP Gates\Postal:freetext
+Free Text:LFBP Gates\Securite Civile:freetext
+Free Text:LFBP Gates\Terminal:freetext
+Free Text:LFBP Gates\TWR:freetext
+Free Text:LFBP Gates\Zone Activites:freetext
+Free Text:LFBP Taxiways\C:freetext
+Free Text:LFBP Taxiways\E:freetext
+Free Text:LFBP Taxiways\G:freetext
+Free Text:LFBP Taxiways\M:freetext
+Free Text:LFBP Taxiways\N:freetext
+Free Text:LFBP Taxiways\N1:freetext
+Free Text:LFBP Taxiways\N3:freetext
+Free Text:LFBP Taxiways\N5:freetext
+Free Text:LFBP Taxiways\NE:freetext
+Free Text:LFBP Taxiways\NG:freetext
+Free Text:LFBP Taxiways\NW:freetext
+Free Text:LFBP Taxiways\S:freetext
+Free Text:LFBP Taxiways\S0:freetext
+Free Text:LFBP Taxiways\S1:freetext
+Free Text:LFBP Taxiways\S2:freetext
+Geo:LFBP Groundlayout Pau-Pyrenees:
+SHOWC:1
+SHOWSB:0
+BELOW:0
+ABOVE:0
+LEADER:5
+SHOWLEADER:0
+TURNLEADER:0
+HISTORY_DOTS:0
+SIMULATION_MODE:1
+DISABLEPANNING:0
+DISABLEZOOMING:0
+DisplayRotation:0.00000
+TAGFAMILY:CoFrance
+WINDOWAREA:43.365019:-0.460003:43.394981:-0.377219
+PLUGIN:vSMR:ActiveProfile:Default
+PLUGIN:vSMR:Afterglow:1
+PLUGIN:vSMR:Airport:LFBP
+PLUGIN:vSMR:AppTrailsDots:4
+PLUGIN:vSMR:FontSize:1
+PLUGIN:vSMR:GndTrailsDots:4
+PLUGIN:vSMR:PredictedLine:0
+PLUGIN:vSMR:SRW1BottomRightX:418
+PLUGIN:vSMR:SRW1BottomRightY:1135
+PLUGIN:vSMR:SRW1Display:1
+PLUGIN:vSMR:SRW1Filter:5500
+PLUGIN:vSMR:SRW1OffsetX:8
+PLUGIN:vSMR:SRW1OffsetY:-8
+PLUGIN:vSMR:SRW1Rotation:0
+PLUGIN:vSMR:SRW1Scale:15
+PLUGIN:vSMR:SRW1TopLeftX:11
+PLUGIN:vSMR:SRW1TopLeftY:793
+PLUGIN:vSMR:SRW2BottomRightX:600
+PLUGIN:vSMR:SRW2BottomRightY:500
+PLUGIN:vSMR:SRW2Display:0
+PLUGIN:vSMR:SRW2Filter:5500
+PLUGIN:vSMR:SRW2OffsetX:0
+PLUGIN:vSMR:SRW2OffsetY:0
+PLUGIN:vSMR:SRW2Rotation:0
+PLUGIN:vSMR:SRW2Scale:15
+PLUGIN:vSMR:SRW2TopLeftX:200
+PLUGIN:vSMR:SRW2TopLeftY:200

@@ -1,0 +1,71 @@
+DisplayTypeName:SMR radar display
+DisplayTypeNeedRadarContent:0
+DisplayTypeGeoReferenced:1
+SECTORFILE:
+SECTORTITLE:
+Free Text:LFBU Gates\A0:freetext
+Free Text:LFBU Gates\A1:freetext
+Free Text:LFBU Gates\A2:freetext
+Free Text:LFBU Gates\A3:freetext
+Free Text:LFBU Gates\ACB:freetext
+Free Text:LFBU Gates\Aire de travail Helico base:freetext
+Free Text:LFBU Gates\B1:freetext
+Free Text:LFBU Gates\B2:freetext
+Free Text:LFBU Gates\B3:freetext
+Free Text:LFBU Gates\Bloc Technique:freetext
+Free Text:LFBU Gates\C1:freetext
+Free Text:LFBU Gates\C2:freetext
+Free Text:LFBU Gates\C3:freetext
+Free Text:LFBU Gates\CATS:freetext
+Free Text:LFBU Gates\Ecole Heli Union:freetext
+Free Text:LFBU Gates\H1:freetext
+Free Text:LFBU Gates\H2:freetext
+Free Text:LFBU Gates\H3:freetext
+Free Text:LFBU Gates\H4:freetext
+Free Text:LFBU Gates\H5:freetext
+Free Text:LFBU Gates\Hangar:freetext
+Free Text:LFBU Gates\Hangars ACB:freetext
+Free Text:LFBU Gates\Planeurs:freetext
+Free Text:LFBU Gates\Terminal:freetext
+Geo:LFBU Groundlayout Angouleme:
+SHOWC:1
+SHOWSB:0
+BELOW:0
+ABOVE:0
+LEADER:5
+SHOWLEADER:0
+TURNLEADER:0
+HISTORY_DOTS:0
+SIMULATION_MODE:1
+DISABLEPANNING:0
+DISABLEZOOMING:0
+DisplayRotation:0.00000
+TAGFAMILY:CoFrance
+WINDOWAREA:45.721853:0.197059:45.737193:0.239445
+PLUGIN:vSMR:ActiveProfile:Default
+PLUGIN:vSMR:Afterglow:1
+PLUGIN:vSMR:Airport:LFBU
+PLUGIN:vSMR:AppTrailsDots:4
+PLUGIN:vSMR:FontSize:1
+PLUGIN:vSMR:GndTrailsDots:4
+PLUGIN:vSMR:PredictedLine:0
+PLUGIN:vSMR:SRW1BottomRightX:418
+PLUGIN:vSMR:SRW1BottomRightY:1135
+PLUGIN:vSMR:SRW1Display:1
+PLUGIN:vSMR:SRW1Filter:5500
+PLUGIN:vSMR:SRW1OffsetX:8
+PLUGIN:vSMR:SRW1OffsetY:-8
+PLUGIN:vSMR:SRW1Rotation:0
+PLUGIN:vSMR:SRW1Scale:15
+PLUGIN:vSMR:SRW1TopLeftX:11
+PLUGIN:vSMR:SRW1TopLeftY:793
+PLUGIN:vSMR:SRW2BottomRightX:600
+PLUGIN:vSMR:SRW2BottomRightY:500
+PLUGIN:vSMR:SRW2Display:0
+PLUGIN:vSMR:SRW2Filter:5500
+PLUGIN:vSMR:SRW2OffsetX:0
+PLUGIN:vSMR:SRW2OffsetY:0
+PLUGIN:vSMR:SRW2Rotation:0
+PLUGIN:vSMR:SRW2Scale:15
+PLUGIN:vSMR:SRW2TopLeftX:200
+PLUGIN:vSMR:SRW2TopLeftY:200

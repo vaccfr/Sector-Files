@@ -32,8 +32,6 @@ Free Text:LFMK Taxiways\T5:freetext
 Free Text:LFMK Taxiways\T6:freetext
 Free Text:LFMK Taxiways\Z:freetext
 Regions:LFMK AVISO:polygon
-Runways:LFMK 09-27:centerline
-Runways:LFMK 09-27:name
 SHOWC:1
 SHOWSB:0
 BELOW:0

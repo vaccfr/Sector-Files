@@ -1,0 +1,64 @@
+DisplayTypeName:SMR radar display
+DisplayTypeNeedRadarContent:0
+DisplayTypeGeoReferenced:1
+SECTORFILE:
+SECTORTITLE:
+Free Text:LFCK Gates\A1:freetext
+Free Text:LFCK Gates\A2:freetext
+Free Text:LFCK Gates\A3:freetext
+Free Text:LFCK Gates\A4:freetext
+Free Text:LFCK Gates\A5:freetext
+Free Text:LFCK Gates\ATS:freetext
+Free Text:LFCK Gates\Hangar:freetext
+Free Text:LFCK Gates\P Mil:freetext
+Free Text:LFCK Gates\P1:freetext
+Free Text:LFCK Gates\P2:freetext
+Free Text:LFCK Gates\P3:freetext
+Free Text:LFCK Gates\P4:freetext
+Free Text:LFCK Gates\P5:freetext
+Free Text:LFCK Gates\P6:freetext
+Free Text:LFCK Gates\Parking:freetext
+Free Text:LFCK Gates\Terminal:freetext
+Free Text:LFCK Gates\TWR:freetext
+Geo:LFCK Groundlayout Castres:
+SHOWC:1
+SHOWSB:0
+BELOW:0
+ABOVE:0
+LEADER:5
+SHOWLEADER:0
+TURNLEADER:0
+HISTORY_DOTS:0
+SIMULATION_MODE:1
+DISABLEPANNING:0
+DISABLEZOOMING:0
+DisplayRotation:0.00000
+TAGFAMILY:CoFrance
+WINDOWAREA:43.545412:2.264065:43.564588:2.317047
+PLUGIN:vSMR:ActiveProfile:Default
+PLUGIN:vSMR:Afterglow:1
+PLUGIN:vSMR:Airport:LFCK
+PLUGIN:vSMR:AppTrailsDots:4
+PLUGIN:vSMR:FontSize:1
+PLUGIN:vSMR:GndTrailsDots:4
+PLUGIN:vSMR:PredictedLine:0
+PLUGIN:vSMR:SRW1BottomRightX:418
+PLUGIN:vSMR:SRW1BottomRightY:1135
+PLUGIN:vSMR:SRW1Display:1
+PLUGIN:vSMR:SRW1Filter:5500
+PLUGIN:vSMR:SRW1OffsetX:8
+PLUGIN:vSMR:SRW1OffsetY:-8
+PLUGIN:vSMR:SRW1Rotation:0
+PLUGIN:vSMR:SRW1Scale:15
+PLUGIN:vSMR:SRW1TopLeftX:11
+PLUGIN:vSMR:SRW1TopLeftY:793
+PLUGIN:vSMR:SRW2BottomRightX:600
+PLUGIN:vSMR:SRW2BottomRightY:500
+PLUGIN:vSMR:SRW2Display:0
+PLUGIN:vSMR:SRW2Filter:5500
+PLUGIN:vSMR:SRW2OffsetX:0
+PLUGIN:vSMR:SRW2OffsetY:0
+PLUGIN:vSMR:SRW2Rotation:0
+PLUGIN:vSMR:SRW2Scale:15
+PLUGIN:vSMR:SRW2TopLeftX:200
+PLUGIN:vSMR:SRW2TopLeftY:200
