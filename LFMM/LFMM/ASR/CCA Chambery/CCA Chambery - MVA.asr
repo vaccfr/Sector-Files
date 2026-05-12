@@ -16,11 +16,11 @@ DISABLEPANNING:0
 DISABLEZOOMING:0
 DisplayRotation:0.00000
 TAGFAMILY:CoFrance
-WINDOWAREA:42.567209:4.934897:44.369916:9.571005
-PLUGIN:CoFrance:EnabledMaps:LFMN/0_CCA_Nice
+WINDOWAREA:45.346598:4.976885:46.087549:6.882426
+PLUGIN:CoFrance:EnabledMaps:LFLB/0_CCA_Chambery,LFLB/2_CCA_Chambery_MVA
 PLUGIN:CoFrance:LowerAlt:0
 PLUGIN:CoFrance:LowerAltEnabled:1
 PLUGIN:CoFrance:SettingProfile:default
-PLUGIN:CoFrance:TagFormat:Nice
+PLUGIN:CoFrance:TagFormat:Chambery
 PLUGIN:CoFrance:UpperAlt:195
 PLUGIN:CoFrance:UpperAltEnabled:1

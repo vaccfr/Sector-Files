@@ -283,15 +283,15 @@ PROFILE:LFTW_GND:10:3
 ATIS2:Garons Ground - EN/FR
 ATIS3:Check your charts! chartfox.org/LFTW
 ATIS4:Leave us some feedback! vatsim.fr/fb/VOTRE_CID_ICI
-PROFILE:LFLL_DEL:10:3
+PROFILE:LFLL_DEL:10:2
 ATIS2:Saint-Exupery Delivery - EN/FR
 ATIS3:TOBT @ cdm.vatsim.fr | Charts chartfox.org/LFLL
 ATIS4:Leave us some feedback! vatsim.fr/fb/VOTRE_CID_ICI
-PROFILE:LFML_DEL:10:3
+PROFILE:LFML_DEL:10:2
 ATIS2:Provence Delivery - EN/FR
 ATIS3:TOBT @ cdm.vatsim.fr | Charts chartfox.org/LFML
 ATIS4:Leave us some feedback! vatsim.fr/fb/VOTRE_CID_ICI
-PROFILE:LFMN_DEL:10:3
+PROFILE:LFMN_DEL:10:2
 ATIS2:Nice Delivery - EN/FR
 ATIS3:TOBT @ cdm.vatsim.fr | Charts chartfox.org/LFMN
 ATIS4:Leave us some feedback! vatsim.fr/fb/VOTRE_CID_ICI

@@ -16,11 +16,11 @@ DISABLEPANNING:0
 DISABLEZOOMING:0
 DisplayRotation:0.00000
 TAGFAMILY:CoFrance
-WINDOWAREA:42.567209:4.934897:44.369916:9.571005
-PLUGIN:CoFrance:EnabledMaps:LFMN/0_CCA_Nice
+WINDOWAREA:43.730101:-1.111736:47.263235:7.974591
+PLUGIN:CoFrance:EnabledMaps:LFLC/0_CCA_Clermont,LFLC/1_CCA_Clermont_VFR
 PLUGIN:CoFrance:LowerAlt:0
 PLUGIN:CoFrance:LowerAltEnabled:1
 PLUGIN:CoFrance:SettingProfile:default
-PLUGIN:CoFrance:TagFormat:Nice
+PLUGIN:CoFrance:TagFormat:Clermont-Ferrand
 PLUGIN:CoFrance:UpperAlt:195
 PLUGIN:CoFrance:UpperAltEnabled:1

@@ -1,0 +1,193 @@
+DisplayTypeName:SMR radar display
+DisplayTypeNeedRadarContent:0
+DisplayTypeGeoReferenced:1
+SECTORFILE:
+SECTORTITLE:
+Free Text:LFML Gates\10A:freetext
+Free Text:LFML Gates\10B:freetext
+Free Text:LFML Gates\10C:freetext
+Free Text:LFML Gates\10D:freetext
+Free Text:LFML Gates\1A:freetext
+Free Text:LFML Gates\1Z:freetext
+Free Text:LFML Gates\20A:freetext
+Free Text:LFML Gates\20B:freetext
+Free Text:LFML Gates\20C:freetext
+Free Text:LFML Gates\2A:freetext
+Free Text:LFML Gates\2C:freetext
+Free Text:LFML Gates\3A:freetext
+Free Text:LFML Gates\3B:freetext
+Free Text:LFML Gates\3C:freetext
+Free Text:LFML Gates\47A:freetext
+Free Text:LFML Gates\47C:freetext
+Free Text:LFML Gates\47E:freetext
+Free Text:LFML Gates\47G:freetext
+Free Text:LFML Gates\48A:freetext
+Free Text:LFML Gates\48C:freetext
+Free Text:LFML Gates\48E:freetext
+Free Text:LFML Gates\48G:freetext
+Free Text:LFML Gates\4B:freetext
+Free Text:LFML Gates\4Z:freetext
+Free Text:LFML Gates\50:freetext
+Free Text:LFML Gates\50A:freetext
+Free Text:LFML Gates\50C:freetext
+Free Text:LFML Gates\51:freetext
+Free Text:LFML Gates\51A:freetext
+Free Text:LFML Gates\51C:freetext
+Free Text:LFML Gates\52:freetext
+Free Text:LFML Gates\53:freetext
+Free Text:LFML Gates\54:freetext
+Free Text:LFML Gates\55:freetext
+Free Text:LFML Gates\56:freetext
+Free Text:LFML Gates\57:freetext
+Free Text:LFML Gates\5A:freetext
+Free Text:LFML Gates\5B:freetext
+Free Text:LFML Gates\5C:freetext
+Free Text:LFML Gates\60N:freetext
+Free Text:LFML Gates\61N:freetext
+Free Text:LFML Gates\62N:freetext
+Free Text:LFML Gates\63A:freetext
+Free Text:LFML Gates\63B:freetext
+Free Text:LFML Gates\63C:freetext
+Free Text:LFML Gates\63D:freetext
+Free Text:LFML Gates\63E:freetext
+Free Text:LFML Gates\64:freetext
+Free Text:LFML Gates\64B:freetext
+Free Text:LFML Gates\65:freetext
+Free Text:LFML Gates\66E:freetext
+Free Text:LFML Gates\66W:freetext
+Free Text:LFML Gates\67N:freetext
+Free Text:LFML Gates\68N:freetext
+Free Text:LFML Gates\69N:freetext
+Free Text:LFML Gates\6A:freetext
+Free Text:LFML Gates\6A1:freetext
+Free Text:LFML Gates\6B:freetext
+Free Text:LFML Gates\6C:freetext
+Free Text:LFML Gates\70:freetext
+Free Text:LFML Gates\71:freetext
+Free Text:LFML Gates\72:freetext
+Free Text:LFML Gates\72B:freetext
+Free Text:LFML Gates\73:freetext
+Free Text:LFML Gates\73B:freetext
+Free Text:LFML Gates\74:freetext
+Free Text:LFML Gates\75:freetext
+Free Text:LFML Gates\76:freetext
+Free Text:LFML Gates\77:freetext
+Free Text:LFML Gates\78:freetext
+Free Text:LFML Gates\7A:freetext
+Free Text:LFML Gates\7B:freetext
+Free Text:LFML Gates\7C:freetext
+Free Text:LFML Gates\80:freetext
+Free Text:LFML Gates\81:freetext
+Free Text:LFML Gates\82:freetext
+Free Text:LFML Gates\83A:freetext
+Free Text:LFML Gates\83B:freetext
+Free Text:LFML Gates\83C:freetext
+Free Text:LFML Gates\83D:freetext
+Free Text:LFML Gates\83E:freetext
+Free Text:LFML Gates\8B:freetext
+Free Text:LFML Gates\8C:freetext
+Free Text:LFML Gates\94:freetext
+Free Text:LFML Gates\95:freetext
+Free Text:LFML Gates\9A:freetext
+Free Text:LFML Gates\9B:freetext
+Free Text:LFML Gates\9C:freetext
+Free Text:LFML Gates\BLOCK 24-25:freetext
+Free Text:LFML Gates\BLOCK 30-35:freetext
+Free Text:LFML Gates\BLOCK 40-45:freetext
+Free Text:LFML Gates\Cargo:freetext
+Free Text:LFML Gates\Civil Safety:freetext
+Free Text:LFML Gates\Eurocopter AIRBUS:freetext
+Free Text:LFML Gates\General Aviation:freetext
+Free Text:LFML Gates\SC Securite Civile:freetext
+Free Text:LFML Gates\SN Securite Civile:freetext
+Free Text:LFML Gates\TWR:freetext
+Free Text:LFML Gates\Terminal 1A:freetext
+Free Text:LFML Gates\Terminal 1B:freetext
+Free Text:LFML Gates\Terminal 2:freetext
+Free Text:LFML Taxiways\13L:freetext
+Free Text:LFML Taxiways\13R:freetext
+Free Text:LFML Taxiways\31L:freetext
+Free Text:LFML Taxiways\31R:freetext
+Free Text:LFML Taxiways\B7:freetext
+Free Text:LFML Taxiways\C1:freetext
+Free Text:LFML Taxiways\C2:freetext
+Free Text:LFML Taxiways\C3:freetext
+Free Text:LFML Taxiways\C4:freetext
+Free Text:LFML Taxiways\C5:freetext
+Free Text:LFML Taxiways\C6:freetext
+Free Text:LFML Taxiways\C7:freetext
+Free Text:LFML Taxiways\C8:freetext
+Free Text:LFML Taxiways\D1:freetext
+Free Text:LFML Taxiways\D2:freetext
+Free Text:LFML Taxiways\D3:freetext
+Free Text:LFML Taxiways\D4:freetext
+Free Text:LFML Taxiways\D6:freetext
+Free Text:LFML Taxiways\D7:freetext
+Free Text:LFML Taxiways\D8:freetext
+Free Text:LFML Taxiways\D9:freetext
+Free Text:LFML Taxiways\E2:freetext
+Free Text:LFML Taxiways\E3:freetext
+Free Text:LFML Taxiways\E7:freetext
+Free Text:LFML Taxiways\E9:freetext
+Free Text:LFML Taxiways\F3:freetext
+Free Text:LFML Taxiways\F7:freetext
+Free Text:LFML Taxiways\G1:freetext
+Free Text:LFML Taxiways\G10:freetext
+Free Text:LFML Taxiways\G11:freetext
+Free Text:LFML Taxiways\G2:freetext
+Free Text:LFML Taxiways\G3:freetext
+Free Text:LFML Taxiways\G4:freetext
+Free Text:LFML Taxiways\G5:freetext
+Free Text:LFML Taxiways\G6:freetext
+Free Text:LFML Taxiways\G7:freetext
+Free Text:LFML Taxiways\G8:freetext
+Free Text:LFML Taxiways\G9:freetext
+Free Text:LFML Taxiways\H:freetext
+Free Text:LFML Taxiways\L1:freetext
+Free Text:LFML Taxiways\L2:freetext
+Free Text:LFML Taxiways\L3:freetext
+Free Text:LFML Taxiways\L4:freetext
+Free Text:LFML Taxiways\X:freetext
+Geo:LFML Groundlayout AVISO:
+Regions:LFML AVISO:polygon
+SHOWC:1
+SHOWSB:0
+BELOW:0
+ABOVE:0
+LEADER:5
+SHOWLEADER:0
+TURNLEADER:0
+HISTORY_DOTS:0
+SIMULATION_MODE:1
+DISABLEPANNING:0
+DISABLEZOOMING:0
+DisplayRotation:136.00000
+TAGFAMILY:CoFrance
+WINDOWAREA:43.425621:5.183765:43.451374:5.249994
+PLUGIN:vSMR:ActiveProfile:Default
+PLUGIN:vSMR:Afterglow:1
+PLUGIN:vSMR:Airport:LFML
+PLUGIN:vSMR:AppTrailsDots:4
+PLUGIN:vSMR:FontSize:1
+PLUGIN:vSMR:GndTrailsDots:4
+PLUGIN:vSMR:PredictedLine:0
+PLUGIN:vSMR:SRW1BottomRightX:552
+PLUGIN:vSMR:SRW1BottomRightY:911
+PLUGIN:vSMR:SRW1Display:1
+PLUGIN:vSMR:SRW1Filter:5500
+PLUGIN:vSMR:SRW1OffsetX:0
+PLUGIN:vSMR:SRW1OffsetY:0
+PLUGIN:vSMR:SRW1Rotation:0
+PLUGIN:vSMR:SRW1Scale:15
+PLUGIN:vSMR:SRW1TopLeftX:152
+PLUGIN:vSMR:SRW1TopLeftY:611
+PLUGIN:vSMR:SRW2BottomRightX:600
+PLUGIN:vSMR:SRW2BottomRightY:500
+PLUGIN:vSMR:SRW2Display:0
+PLUGIN:vSMR:SRW2Filter:5500
+PLUGIN:vSMR:SRW2OffsetX:0
+PLUGIN:vSMR:SRW2OffsetY:0
+PLUGIN:vSMR:SRW2Rotation:0
+PLUGIN:vSMR:SRW2Scale:15
+PLUGIN:vSMR:SRW2TopLeftX:200
+PLUGIN:vSMR:SRW2TopLeftY:200

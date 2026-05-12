@@ -1,0 +1,70 @@
+DisplayTypeName:SMR radar display
+DisplayTypeNeedRadarContent:0
+DisplayTypeGeoReferenced:1
+SECTORFILE:
+SECTORTITLE:
+Free Text:LFMV Gates\1:freetext
+Free Text:LFMV Gates\2:freetext
+Free Text:LFMV Gates\3:freetext
+Free Text:LFMV Gates\4:freetext
+Free Text:LFMV Gates\5:freetext
+Free Text:LFMV Gates\6:freetext
+Free Text:LFMV Gates\7:freetext
+Free Text:LFMV Gates\8:freetext
+Free Text:LFMV Gates\Apron B:freetext
+Free Text:LFMV Gates\Apron C:freetext
+Free Text:LFMV Gates\Apron F:freetext
+Free Text:LFMV Gates\G1:freetext
+Free Text:LFMV Gates\Grass apron A:freetext
+Free Text:LFMV Taxiways\A:freetext
+Free Text:LFMV Taxiways\A1:freetext
+Free Text:LFMV Taxiways\A2:freetext
+Free Text:LFMV Taxiways\B:freetext
+Free Text:LFMV Taxiways\C:freetext
+Free Text:LFMV Taxiways\C2:freetext
+Free Text:LFMV Taxiways\C3:freetext
+Free Text:LFMV Taxiways\D:freetext
+Free Text:LFMV Taxiways\E:freetext
+Free Text:LFMV Taxiways\P:freetext
+Geo:LFMV Groundlayout Avignon:
+SHOWC:1
+SHOWSB:0
+BELOW:0
+ABOVE:0
+LEADER:5
+SHOWLEADER:0
+TURNLEADER:0
+HISTORY_DOTS:0
+SIMULATION_MODE:1
+DISABLEPANNING:0
+DISABLEZOOMING:0
+DisplayRotation:0.00000
+TAGFAMILY:CoFrance
+WINDOWAREA:43.894071:4.867914:43.919823:4.934141
+PLUGIN:vSMR:ActiveProfile:Default
+PLUGIN:vSMR:Afterglow:1
+PLUGIN:vSMR:Airport:LFMV
+PLUGIN:vSMR:AppTrailsDots:4
+PLUGIN:vSMR:FontSize:1
+PLUGIN:vSMR:GndTrailsDots:4
+PLUGIN:vSMR:PredictedLine:0
+PLUGIN:vSMR:SRW1BottomRightX:552
+PLUGIN:vSMR:SRW1BottomRightY:911
+PLUGIN:vSMR:SRW1Display:1
+PLUGIN:vSMR:SRW1Filter:5500
+PLUGIN:vSMR:SRW1OffsetX:0
+PLUGIN:vSMR:SRW1OffsetY:0
+PLUGIN:vSMR:SRW1Rotation:0
+PLUGIN:vSMR:SRW1Scale:15
+PLUGIN:vSMR:SRW1TopLeftX:152
+PLUGIN:vSMR:SRW1TopLeftY:611
+PLUGIN:vSMR:SRW2BottomRightX:600
+PLUGIN:vSMR:SRW2BottomRightY:500
+PLUGIN:vSMR:SRW2Display:0
+PLUGIN:vSMR:SRW2Filter:5500
+PLUGIN:vSMR:SRW2OffsetX:0
+PLUGIN:vSMR:SRW2OffsetY:0
+PLUGIN:vSMR:SRW2Rotation:0
+PLUGIN:vSMR:SRW2Scale:15
+PLUGIN:vSMR:SRW2TopLeftX:200
+PLUGIN:vSMR:SRW2TopLeftY:200

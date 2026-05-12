@@ -16,11 +16,11 @@ DISABLEPANNING:0
 DISABLEZOOMING:0
 DisplayRotation:0.00000
 TAGFAMILY:CoFrance
-WINDOWAREA:42.567209:4.934897:44.369916:9.571005
-PLUGIN:CoFrance:EnabledMaps:LFMN/0_CCA_Nice
+WINDOWAREA:42.173724:-0.242907:45.000231:7.026158
+PLUGIN:CoFrance:EnabledMaps:LFMT/0_CCA_Montpellier
 PLUGIN:CoFrance:LowerAlt:0
 PLUGIN:CoFrance:LowerAltEnabled:1
 PLUGIN:CoFrance:SettingProfile:default
-PLUGIN:CoFrance:TagFormat:Nice
+PLUGIN:CoFrance:TagFormat:Montpellier
 PLUGIN:CoFrance:UpperAlt:195
 PLUGIN:CoFrance:UpperAltEnabled:1
