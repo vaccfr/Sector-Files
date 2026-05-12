@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - AIRAC-2605
+      - main
 
   workflow_dispatch:
 
