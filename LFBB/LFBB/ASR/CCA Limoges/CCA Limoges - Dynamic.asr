@@ -1,0 +1,26 @@
+DisplayTypeName:CoFrance radar display
+DisplayTypeNeedRadarContent:0
+DisplayTypeGeoReferenced:1
+SECTORFILE:
+SECTORTITLE:
+SHOWC:1
+SHOWSB:0
+BELOW:0
+ABOVE:0
+LEADER:5
+SHOWLEADER:0
+TURNLEADER:1
+HISTORY_DOTS:5
+SIMULATION_MODE:1
+DISABLEPANNING:0
+DISABLEZOOMING:0
+DisplayRotation:0.00000
+TAGFAMILY:CoFrance
+WINDOWAREA:44.621251:-1.349050:46.704585:4.405170
+PLUGIN:CoFrance:EnabledMaps:LFBL/0_CCA_Limoges
+PLUGIN:CoFrance:LowerAlt:0
+PLUGIN:CoFrance:LowerAltEnabled:1
+PLUGIN:CoFrance:SettingProfile:default
+PLUGIN:CoFrance:TagFormat:Limoges
+PLUGIN:CoFrance:UpperAlt:195
+PLUGIN:CoFrance:UpperAltEnabled:1
