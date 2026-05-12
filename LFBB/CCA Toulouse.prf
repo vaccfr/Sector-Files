@@ -21,24 +21,24 @@ Plugins	Plugin4Display0	SMR radar display
 Plugins	Plugin4Display1	Standard ES radar screen
 Plugins	Plugin5Display0	SMR radar display
 Plugins	Plugin5Display1	Standard ES radar screen
-ASRFastKeys	1	\ASR\Bordeaux UIR.asr
-ASRFastKeys	2	\ASR\Bordeaux - Legacy APP.asr
-ASRFastKeys	3	\ASR\AVISOs\LFBO Blagnac AVISO.asr
-ASRFastKeys	4	\ASR\AVISOs\LFBD Merignac AVISO.asr
-ASRFastKeys	5	\ASR\AVISOs\LFBZ Biarritz AVISO.asr
-ASRFastKeys	6	\ASR\AVISOs\LFMK Carcassonne AVISO.asr
-ASRFastKeys	7	\ASR\AVISOs\LFBH La Rochelle AVISO.asr
-ASRFastKeys	8	\ASR\AVISOs\LFBE Bergerac AVISO.asr
-ASRFastKeys	9	\ASR\AVISOs\LFBT Tarbes AVISO.asr
-RecentFiles	Recent1	\ASR\Bordeaux UIR.asr
-RecentFiles	Recent2	\ASR\Bordeaux - Legacy APP.asr
-RecentFiles	Recent3	\ASR\AVISOs\LFBO Blagnac AVISO.asr
-RecentFiles	Recent4	\ASR\AVISOs\LFBE Merignac AVISO.asr
-RecentFiles	Recent5	\ASR\AVISOs\LFBZ Biarritz AVISO.asr
-RecentFiles	Recent6	\ASR\AVISOs\LFMK Carcassonne AVISO.asr
-RecentFiles	Recent7	\ASR\AVISOs\LFBH La Rochelle AVISO.asr
-RecentFiles	Recent8	\ASR\AVISOs\LFBE Bergerac AVISO.asr
-RecentFiles	Recent9	\ASR\AVISOs\LFBT Tarbes AVISO.asr
+ASRFastKeys	1	\ASR\CCA Toulouse\CCA Toulouse - Dynamic.asr
+ASRFastKeys	2	\ASR\CCA Toulouse\CCA Toulouse - VFR.asr
+ASRFastKeys	3	\ASR\CCA Toulouse\CCA Toulouse - AMSR.asr
+ASRFastKeys	4	\ASR\AVISOs\LFBO Blagnac AVISO.asr
+ASRFastKeys	5	\ASR\AVISOs\LFMK Carcassonne AVISO.asr
+ASRFastKeys	6	\ASR\AVISOs\LFBA Agen AVISO.asr
+ASRFastKeys	7	\ASR\AVISOs\LFDJ Pamiers AVISO.asr
+ASRFastKeys	8	\ASR\AVISOs\LFCK Castres AVISO.asr
+ASRFastKeys	9	\ASR\AVISOs\LFCI Albi AVISO.asr
+RecentFiles	Recent1	\ASR\CCA Toulouse\CCA Toulouse - Dynamic.asr
+RecentFiles	Recent2	\ASR\CCA Toulouse\CCA Toulouse - VFR.asr
+RecentFiles	Recent3	\ASR\CCA Toulouse\CCA Toulouse - AMSR.asr
+RecentFiles	Recent4	\ASR\AVISOs\LFBO Blagnac AVISO.asr
+RecentFiles	Recent5	\ASR\AVISOs\LFMK Carcassonne AVISO.asr
+RecentFiles	Recent6	\ASR\AVISOs\LFBA Agen AVISO.asr
+RecentFiles	Recent7	\ASR\AVISOs\LFDJ Pamiers AVISO.asr
+RecentFiles	Recent8	\ASR\AVISOs\LFCK Castres AVISO.asr
+RecentFiles	Recent9	\ASR\AVISOs\LFCI Albi AVISO.asr
 Settings	AselKey	5111808
 Settings	FreqKey	3604480
 Settings	Settingsfile	\..\LFXX\Settings\General.txt
