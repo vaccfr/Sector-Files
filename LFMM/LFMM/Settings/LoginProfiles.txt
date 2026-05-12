@@ -77,7 +77,7 @@ ATIS3:Sector Coverage - map.vatsim.net
 ATIS4:Leave us some feedback! vatsim.fr/fb/VOTRE_CID_ICI
 PROFILE:LFLL_E_APP:120:5
 ATIS2:Lyon Approach - EN/FR
-ATIS3:Sector Coverage - map.vatsim.net
+ATIS3:TOBT @ cdm.vatsim.fr | Sector Coverage - map.vatsim.net
 ATIS4:Leave us some feedback! vatsim.fr/fb/VOTRE_CID_ICI
 PROFILE:LFLL_F_APP:120:5
 ATIS2:Lyon Director - EN/FR
@@ -89,23 +89,23 @@ ATIS3:Sector Coverage - map.vatsim.net
 ATIS4:Leave us some feedback! vatsim.fr/fb/VOTRE_CID_ICI
 PROFILE:LFLL_W_APP:120:5
 ATIS2:Lyon Approach - EN/FR
-ATIS3:Sector Coverage - map.vatsim.net
+ATIS3:TOBT @ cdm.vatsim.fr | Sector Coverage - map.vatsim.net
 ATIS4:Leave us some feedback! vatsim.fr/fb/VOTRE_CID_ICI
 PROFILE:LFML_APP:120:5
 ATIS2:Provence Approach - EN/FR
-ATIS3:Sector Coverage - map.vatsim.net
+ATIS3:TOBT @ cdm.vatsim.fr | Sector Coverage - map.vatsim.net
 ATIS4:Leave us some feedback! vatsim.fr/fb/VOTRE_CID_ICI
 PROFILE:LFML_S_APP:120:5
 ATIS2:Provence Approach - EN/FR
-ATIS3:Sector Coverage - map.vatsim.net
+ATIS3:TOBT @ cdm.vatsim.fr | Sector Coverage - map.vatsim.net
 ATIS4:Leave us some feedback! vatsim.fr/fb/VOTRE_CID_ICI
 PROFILE:LFMN_APP:120:5
 ATIS2:Nice Approach - EN/FR
-ATIS3:Sector Coverage - map.vatsim.net
+ATIS3:TOBT @ cdm.vatsim.fr | Sector Coverage - map.vatsim.net
 ATIS4:Leave us some feedback! vatsim.fr/fb/VOTRE_CID_ICI
 PROFILE:LFMN_E_APP:120:5
 ATIS2:Nice Approach - EN/FR
-ATIS3:Sector Coverage - map.vatsim.net
+ATIS3:TOBT @ cdm.vatsim.fr | Sector Coverage - map.vatsim.net
 ATIS4:Leave us some feedback! vatsim.fr/fb/VOTRE_CID_ICI
 PROFILE:LFMN_F_APP:120:5
 ATIS2:Nice Arrival - EN/FR
@@ -121,7 +121,7 @@ ATIS3:Sector Coverage - map.vatsim.net
 ATIS4:Leave us some feedback! vatsim.fr/fb/VOTRE_CID_ICI
 PROFILE:LFMN_DEP:120:5
 ATIS2:Nice Departure - EN/FR
-ATIS3:Sector Coverage - map.vatsim.net
+ATIS3:TOBT @ cdm.vatsim.fr | Sector Coverage - map.vatsim.net
 ATIS4:Leave us some feedback! vatsim.fr/fb/VOTRE_CID_ICI
 PROFILE:LFMT_APP:120:5
 ATIS2:Montpellier Approach - EN/FR
