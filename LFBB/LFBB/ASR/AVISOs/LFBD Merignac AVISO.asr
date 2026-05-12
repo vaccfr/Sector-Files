@@ -91,21 +91,16 @@ Free Text:LFBD Taxiways\L6:freetext
 Free Text:LFBD Taxiways\L7:freetext
 Free Text:LFBD Taxiways\M1:freetext
 Free Text:LFBD Taxiways\M2:freetext
-Free Text:LFBD Taxiways\M2:freetext
 Free Text:LFBD Taxiways\P1:freetext
 Free Text:LFBD Taxiways\P2:freetext
 Free Text:LFBD Taxiways\P3:freetext
 Free Text:LFBD Taxiways\P4:freetext
-Free Text:LFBD Taxiways\P4:freetext
-Free Text:LFBD Taxiways\P5:freetext
 Free Text:LFBD Taxiways\P5:freetext
 Free Text:LFBD Taxiways\P6:freetext
 Free Text:LFBD Taxiways\S1:freetext
 Free Text:LFBD Taxiways\S2:freetext
 Free Text:LFBD Taxiways\S3:freetext
 Free Text:LFBD Taxiways\S4:freetext
-Free Text:LFBD Taxiways\S4:freetext
-Free Text:LFBD Taxiways\U:freetext
 Free Text:LFBD Taxiways\U:freetext
 Free Text:LFBD Taxiways\U1:freetext
 Free Text:LFBD Taxiways\U2:freetext
@@ -115,17 +110,6 @@ Free Text:LFBD Taxiways\W2:freetext
 Free Text:LFBD Taxiways\W3:freetext
 Free Text:LFBD Taxiways\W4:freetext
 Free Text:LFBD Taxiways\WN:freetext
-Free Text:LFBD Taxiways\X:freetext
-Free Text:LFBD Taxiways\X:freetext
-Free Text:LFBD Taxiways\X:freetext
-Free Text:LFBD Taxiways\X:freetext
-Free Text:LFBD Taxiways\X:freetext
-Free Text:LFBD Taxiways\X:freetext
-Free Text:LFBD Taxiways\X:freetext
-Free Text:LFBD Taxiways\X:freetext
-Free Text:LFBD Taxiways\X:freetext
-Free Text:LFBD Taxiways\X:freetext
-Free Text:LFBD Taxiways\X:freetext
 Free Text:LFBD Taxiways\X:freetext
 Geo:LFBD Groundlayout AVISO:
 Regions:LFBD AVISO:polygon
@@ -142,7 +126,7 @@ DISABLEPANNING:0
 DISABLEZOOMING:0
 DisplayRotation:0.00000
 TAGFAMILY:CoFrance
-WINDOWAREA:44.799351:-0.796122:44.857871:-0.634434
+WINDOWAREA:44.812511:-0.760038:44.849976:-0.656557
 PLUGIN:vSMR:ActiveProfile:Default
 PLUGIN:vSMR:Afterglow:1
 PLUGIN:vSMR:Airport:LFBD

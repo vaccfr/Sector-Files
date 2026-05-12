@@ -23,8 +23,8 @@ Free Text:LFBE Gates\Hangars:freetext
 Free Text:LFBE Gates\P-Aviation Commerciale:freetext
 Free Text:LFBE Gates\P-Aviation Generale:freetext
 Free Text:LFBE Gates\RFFS:freetext
-Free Text:LFBE Gates\Terminal:freetext
 Free Text:LFBE Gates\TWR:freetext
+Free Text:LFBE Gates\Terminal:freetext
 Free Text:LFBE Taxiways\A:freetext
 Free Text:LFBE Taxiways\B:freetext
 Geo:LFBE Groundlayout AVISO:
@@ -42,7 +42,7 @@ DISABLEPANNING:0
 DISABLEZOOMING:0
 DisplayRotation:0.00000
 TAGFAMILY:CoFrance
-WINDOWAREA:44.812686:0.486950:44.836656:0.553178
+WINDOWAREA:44.816136:0.498033:44.831482:0.540419
 PLUGIN:vSMR:ActiveProfile:Default
 PLUGIN:vSMR:Afterglow:1
 PLUGIN:vSMR:Airport:LFBE

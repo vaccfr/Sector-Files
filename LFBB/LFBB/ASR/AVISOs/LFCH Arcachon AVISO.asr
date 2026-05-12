@@ -3,7 +3,7 @@ DisplayTypeNeedRadarContent:0
 DisplayTypeGeoReferenced:1
 SECTORFILE:
 SECTORTITLE:
-Geo:LFDH Groundlayout Arcachon:
+Geo:LFCH Groundlayout Arcachon:
 SHOWC:1
 SHOWSB:0
 BELOW:0
@@ -17,7 +17,7 @@ DISABLEPANNING:0
 DISABLEZOOMING:0
 DisplayRotation:0.00000
 TAGFAMILY:CoFrance
-WINDOWAREA:45.601851:-1.056400:45.660371:-0.894712
+WINDOWAREA:44.567674:-1.194733:44.626214:-1.033045
 PLUGIN:vSMR:ActiveProfile:Default
 PLUGIN:vSMR:Afterglow:1
 PLUGIN:vSMR:Airport:LFCY
