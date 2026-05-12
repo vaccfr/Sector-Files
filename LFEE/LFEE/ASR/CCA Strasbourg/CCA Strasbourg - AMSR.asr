@@ -1,0 +1,26 @@
+DisplayTypeName:CoFrance radar display
+DisplayTypeNeedRadarContent:0
+DisplayTypeGeoReferenced:1
+SECTORFILE:
+SECTORTITLE:
+SHOWC:1
+SHOWSB:0
+BELOW:0
+ABOVE:0
+LEADER:5
+SHOWLEADER:0
+TURNLEADER:1
+HISTORY_DOTS:5
+SIMULATION_MODE:1
+DISABLEPANNING:0
+DISABLEZOOMING:0
+DisplayRotation:0.00000
+TAGFAMILY:CoFrance
+WINDOWAREA:47.885122:4.419964:49.551789:9.023340
+PLUGIN:CoFrance:EnabledMaps:LFST/0_CCA_Strasbourg,LFST/2_CCA_Strasbourg_AMSR
+PLUGIN:CoFrance:LowerAlt:0
+PLUGIN:CoFrance:LowerAltEnabled:1
+PLUGIN:CoFrance:SettingProfile:default
+PLUGIN:CoFrance:TagFormat:Strasbourg
+PLUGIN:CoFrance:UpperAlt:195
+PLUGIN:CoFrance:UpperAltEnabled:1

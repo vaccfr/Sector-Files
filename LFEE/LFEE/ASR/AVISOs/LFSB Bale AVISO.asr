@@ -1,0 +1,165 @@
+DisplayTypeName:SMR radar display
+DisplayTypeNeedRadarContent:0
+DisplayTypeGeoReferenced:1
+SECTORFILE:
+SECTORTITLE:
+Free Text:LFSB Gates\1:freetext
+Free Text:LFSB Gates\11A:freetext
+Free Text:LFSB Gates\12A:freetext
+Free Text:LFSB Gates\14A:freetext
+Free Text:LFSB Gates\16A:freetext
+Free Text:LFSB Gates\17:freetext
+Free Text:LFSB Gates\18:freetext
+Free Text:LFSB Gates\2:freetext
+Free Text:LFSB Gates\20:freetext
+Free Text:LFSB Gates\22:freetext
+Free Text:LFSB Gates\23:freetext
+Free Text:LFSB Gates\24:freetext
+Free Text:LFSB Gates\26:freetext
+Free Text:LFSB Gates\26A:freetext
+Free Text:LFSB Gates\28A:freetext
+Free Text:LFSB Gates\29:freetext
+Free Text:LFSB Gates\29A:freetext
+Free Text:LFSB Gates\3:freetext
+Free Text:LFSB Gates\30A:freetext
+Free Text:LFSB Gates\32A:freetext
+Free Text:LFSB Gates\34:freetext
+Free Text:LFSB Gates\35:freetext
+Free Text:LFSB Gates\36:freetext
+Free Text:LFSB Gates\37:freetext
+Free Text:LFSB Gates\37A:freetext
+Free Text:LFSB Gates\38:freetext
+Free Text:LFSB Gates\38A:freetext
+Free Text:LFSB Gates\39:freetext
+Free Text:LFSB Gates\39A:freetext
+Free Text:LFSB Gates\4:freetext
+Free Text:LFSB Gates\40:freetext
+Free Text:LFSB Gates\41:freetext
+Free Text:LFSB Gates\42:freetext
+Free Text:LFSB Gates\43:freetext
+Free Text:LFSB Gates\43A:freetext
+Free Text:LFSB Gates\44:freetext
+Free Text:LFSB Gates\45:freetext
+Free Text:LFSB Gates\46:freetext
+Free Text:LFSB Gates\47:freetext
+Free Text:LFSB Gates\48:freetext
+Free Text:LFSB Gates\5:freetext
+Free Text:LFSB Gates\6A:freetext
+Free Text:LFSB Gates\9A:freetext
+Free Text:LFSB Gates\A1:freetext
+Free Text:LFSB Gates\AMAC:freetext
+Free Text:LFSB Gates\ASB:freetext
+Free Text:LFSB Gates\CARGO:freetext
+Free Text:LFSB Gates\F1:freetext
+Free Text:LFSB Gates\F10:freetext
+Free Text:LFSB Gates\F11:freetext
+Free Text:LFSB Gates\F2:freetext
+Free Text:LFSB Gates\F21:freetext
+Free Text:LFSB Gates\F22:freetext
+Free Text:LFSB Gates\F3:freetext
+Free Text:LFSB Gates\F4:freetext
+Free Text:LFSB Gates\F4A:freetext
+Free Text:LFSB Gates\F5:freetext
+Free Text:LFSB Gates\F5A:freetext
+Free Text:LFSB Gates\F6:freetext
+Free Text:LFSB Gates\F7:freetext
+Free Text:LFSB Gates\F8:freetext
+Free Text:LFSB Gates\F9:freetext
+Free Text:LFSB Gates\G10:freetext
+Free Text:LFSB Gates\G11:freetext
+Free Text:LFSB Gates\G12:freetext
+Free Text:LFSB Gates\G14:freetext
+Free Text:LFSB Gates\G15:freetext
+Free Text:LFSB Gates\G16:freetext
+Free Text:LFSB Gates\G17:freetext
+Free Text:LFSB Gates\G18:freetext
+Free Text:LFSB Gates\G19:freetext
+Free Text:LFSB Gates\G20:freetext
+Free Text:LFSB Gates\G30:freetext
+Free Text:LFSB Gates\G31:freetext
+Free Text:LFSB Gates\G7:freetext
+Free Text:LFSB Gates\G8:freetext
+Free Text:LFSB Gates\G9:freetext
+Free Text:LFSB Gates\GAGBA:freetext
+Free Text:LFSB Gates\J1:freetext
+Free Text:LFSB Gates\J2:freetext
+Free Text:LFSB Gates\J3:freetext
+Free Text:LFSB Gates\J4:freetext
+Free Text:LFSB Gates\JAPAT:freetext
+Free Text:LFSB Gates\JET 1:freetext
+Free Text:LFSB Gates\JET 2:freetext
+Free Text:LFSB Gates\NOMAD:freetext
+Free Text:LFSB Gates\REGA:freetext
+Free Text:LFSB Taxiways\A:freetext
+Free Text:LFSB Taxiways\B:freetext
+Free Text:LFSB Taxiways\C:freetext
+Free Text:LFSB Taxiways\C1:freetext
+Free Text:LFSB Taxiways\D:freetext
+Free Text:LFSB Taxiways\E:freetext
+Free Text:LFSB Taxiways\F:freetext
+Free Text:LFSB Taxiways\G:freetext
+Free Text:LFSB Taxiways\H:freetext
+Free Text:LFSB Taxiways\J:freetext
+Free Text:LFSB Taxiways\K:freetext
+Free Text:LFSB Taxiways\L:freetext
+Free Text:LFSB Taxiways\M1:freetext
+Free Text:LFSB Taxiways\M2:freetext
+Free Text:LFSB Taxiways\N:freetext
+Free Text:LFSB Taxiways\N1:freetext
+Free Text:LFSB Taxiways\N2:freetext
+Free Text:LFSB Taxiways\N3:freetext
+Free Text:LFSB Taxiways\P:freetext
+Free Text:LFSB Taxiways\Q:freetext
+Free Text:LFSB Taxiways\Q1:freetext
+Free Text:LFSB Taxiways\Q2:freetext
+Free Text:LFSB Taxiways\Q3:freetext
+Free Text:LFSB Taxiways\Q4:freetext
+Free Text:LFSB Taxiways\Q5:freetext
+Free Text:LFSB Taxiways\S:freetext
+Free Text:LFSB Taxiways\S1:freetext
+Free Text:LFSB Taxiways\S2:freetext
+Free Text:LFSB Taxiways\S3:freetext
+Free Text:LFSB Taxiways\V:freetext
+Geo:LFSB Groundlayout AVISO:
+Regions:LFSB AVISO:polygon
+SHOWC:1
+SHOWSB:0
+BELOW:0
+ABOVE:0
+LEADER:5
+SHOWLEADER:0
+TURNLEADER:0
+HISTORY_DOTS:0
+SIMULATION_MODE:1
+DISABLEPANNING:0
+DISABLEZOOMING:0
+DisplayRotation:0.00000
+TAGFAMILY:CoFrance
+WINDOWAREA:47.578273:7.460947:47.625187:7.590524
+PLUGIN:vSMR:ActiveProfile:Default
+PLUGIN:vSMR:Afterglow:1
+PLUGIN:vSMR:Airport:LFSB
+PLUGIN:vSMR:AppTrailsDots:4
+PLUGIN:vSMR:FontSize:1
+PLUGIN:vSMR:GndTrailsDots:4
+PLUGIN:vSMR:PredictedLine:0
+PLUGIN:vSMR:SRW1BottomRightX:552
+PLUGIN:vSMR:SRW1BottomRightY:911
+PLUGIN:vSMR:SRW1Display:1
+PLUGIN:vSMR:SRW1Filter:5500
+PLUGIN:vSMR:SRW1OffsetX:0
+PLUGIN:vSMR:SRW1OffsetY:0
+PLUGIN:vSMR:SRW1Rotation:0
+PLUGIN:vSMR:SRW1Scale:15
+PLUGIN:vSMR:SRW1TopLeftX:152
+PLUGIN:vSMR:SRW1TopLeftY:611
+PLUGIN:vSMR:SRW2BottomRightX:600
+PLUGIN:vSMR:SRW2BottomRightY:500
+PLUGIN:vSMR:SRW2Display:0
+PLUGIN:vSMR:SRW2Filter:5500
+PLUGIN:vSMR:SRW2OffsetX:0
+PLUGIN:vSMR:SRW2OffsetY:0
+PLUGIN:vSMR:SRW2Rotation:0
+PLUGIN:vSMR:SRW2Scale:15
+PLUGIN:vSMR:SRW2TopLeftX:200
+PLUGIN:vSMR:SRW2TopLeftY:200

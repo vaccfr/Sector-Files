@@ -1,0 +1,70 @@
+DisplayTypeName:SMR radar display
+DisplayTypeNeedRadarContent:0
+DisplayTypeGeoReferenced:1
+SECTORFILE:
+SECTORTITLE:
+Free Text:LFGA Gates\1:freetext
+Free Text:LFGA Gates\2:freetext
+Free Text:LFGA Gates\3:freetext
+Free Text:LFGA Gates\4:freetext
+Free Text:LFGA Gates\A:freetext
+Free Text:LFGA Gates\ACB:freetext
+Free Text:LFGA Gates\B:freetext
+Free Text:LFGA Gates\C:freetext
+Free Text:LFGA Gates\D:freetext
+Free Text:LFGA Gates\E:freetext
+Free Text:LFGA Gates\Hangars:freetext
+Free Text:LFGA Gates\P-Aviation Generale:freetext
+Free Text:LFGA Gates\P-Commercial:freetext
+Free Text:LFGA Gates\P-Sierra:freetext
+Free Text:LFGA Gates\TWR:freetext
+Free Text:LFGA Taxiways\E1:freetext
+Free Text:LFGA Taxiways\E2:freetext
+Free Text:LFGA Taxiways\E3:freetext
+Free Text:LFGA Taxiways\E4:freetext
+Free Text:LFGA Taxiways\E5:freetext
+Free Text:LFGA Taxiways\EC:freetext
+Free Text:LFGA Taxiways\EN:freetext
+Free Text:LFGA Taxiways\ES:freetext
+Geo:LFGA Groundlayout Colmar Houssen:
+SHOWC:1
+SHOWSB:0
+BELOW:0
+ABOVE:0
+LEADER:5
+SHOWLEADER:0
+TURNLEADER:0
+HISTORY_DOTS:0
+SIMULATION_MODE:1
+DISABLEPANNING:0
+DISABLEZOOMING:0
+DisplayRotation:0.00000
+TAGFAMILY:CoFrance
+WINDOWAREA:48.098110:7.327965:48.122130:7.394308
+PLUGIN:vSMR:ActiveProfile:Default
+PLUGIN:vSMR:Afterglow:1
+PLUGIN:vSMR:Airport:LFGA
+PLUGIN:vSMR:AppTrailsDots:4
+PLUGIN:vSMR:FontSize:1
+PLUGIN:vSMR:GndTrailsDots:4
+PLUGIN:vSMR:PredictedLine:0
+PLUGIN:vSMR:SRW1BottomRightX:552
+PLUGIN:vSMR:SRW1BottomRightY:911
+PLUGIN:vSMR:SRW1Display:1
+PLUGIN:vSMR:SRW1Filter:5500
+PLUGIN:vSMR:SRW1OffsetX:0
+PLUGIN:vSMR:SRW1OffsetY:0
+PLUGIN:vSMR:SRW1Rotation:0
+PLUGIN:vSMR:SRW1Scale:15
+PLUGIN:vSMR:SRW1TopLeftX:152
+PLUGIN:vSMR:SRW1TopLeftY:611
+PLUGIN:vSMR:SRW2BottomRightX:600
+PLUGIN:vSMR:SRW2BottomRightY:500
+PLUGIN:vSMR:SRW2Display:0
+PLUGIN:vSMR:SRW2Filter:5500
+PLUGIN:vSMR:SRW2OffsetX:0
+PLUGIN:vSMR:SRW2OffsetY:0
+PLUGIN:vSMR:SRW2Rotation:0
+PLUGIN:vSMR:SRW2Scale:15
+PLUGIN:vSMR:SRW2TopLeftX:200
+PLUGIN:vSMR:SRW2TopLeftY:200
