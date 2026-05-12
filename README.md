@@ -27,12 +27,13 @@ These components are maintained here to streamline updates and allow community c
 
 To download the full, ready-to-use controller packs, visit **files.aero-nav.com** and sign in with your VATSIM account:
 
+- CoFrance Base Package: https://files.aero-nav.com/LFXX
 - Bordeaux (LFBB): https://files.aero-nav.com/LFBB  
 - Reims (LFEE): https://files.aero-nav.com/LFEE  
 - Paris (LFFF): https://files.aero-nav.com/LFFF  
 - Marseille (LFMM): https://files.aero-nav.com/LFMM  
 - Brest (LFRR): https://files.aero-nav.com/LFRR  
-- France Military (LFFM): https://files.aero-nav.com/LFFM  
+- France Military (LFFM): https://files.aero-nav.com/LFXX 
 
 ---
 
