@@ -21,24 +21,14 @@ Plugins	Plugin4Display0	SMR radar display
 Plugins	Plugin4Display1	Standard ES radar screen
 Plugins	Plugin5Display0	SMR radar display
 Plugins	Plugin5Display1	Standard ES radar screen
-ASRFastKeys	1	\ASR\Paris UIR.asr
-ASRFastKeys	2	\ASR\Paris FIR.asr
-ASRFastKeys	3	\ASR\Paris - Legacy APP.asr
-ASRFastKeys	4	\ASR\AVISOs\LFPG Paris Charles de Gaulle AVISO.asr
-ASRFastKeys	5	\ASR\AVISOs\LFPO Paris-Orly AVISO.asr
-ASRFastKeys	6	\ASR\AVISOs\LFOB Paris-Beauvais AVISO.asr
-ASRFastKeys	7	\ASR\AVISOs\LFPB Paris-Le Bourget AVISO.asr
-ASRFastKeys	8	\ASR\AVISOs\LFQQ Lille AVISO.asr
-ASRFastKeys	9	\ASR\AVISOs\LFOT Tours AVISO.asr
-RecentFiles	Recent1	\ASR\Paris UIR.asr
-RecentFiles	Recent2	\ASR\Paris FIR.asr
-RecentFiles	Recent3	\ASR\Paris - Legacy APP.asr
-RecentFiles	Recent4	\ASR\AVISOs\LFPG Paris Charles de Gaulle AVISO.asr
-RecentFiles	Recent5	\ASR\AVISOs\LFPO Paris-Orly AVISO.asr
-RecentFiles	Recent6	\ASR\AVISOs\LFOB Paris-Beauvais AVISO.asr
-RecentFiles	Recent7	\ASR\AVISOs\LFPB Paris-Le Bourget AVISO.asr
-RecentFiles	Recent8	\ASR\AVISOs\LFQQ Lille AVISO.asr
-RecentFiles	Recent9	\ASR\AVISOs\LFOT Tours AVISO.asr
+ASRFastKeys	1	\ASR\EGA Paris-Orly\EGA Paris-Orly - EL.asr
+ASRFastKeys	2	\ASR\EGA Paris-Orly\EGA Paris-Orly - WL.asr
+ASRFastKeys	3	\ASR\AVISOs\LFPO Paris-Orly AVISO.asr
+ASRFastKeys	4	\ASR\AVISOs\LFPN Paris-Saclay-Versailles AVISO.asr
+RecentFiles	Recent1	\ASR\EGA Paris-Orly\EGA Paris-Orly - EL.asr
+RecentFiles	Recent2	\ASR\EGA Paris-Orly\EGA Paris-Orly - WL.asr
+RecentFiles	Recent3	\ASR\AVISOs\LFPO Paris-Orly AVISO.asr
+RecentFiles	Recent4	\ASR\AVISOs\LFPN Paris-Saclay-Versailles AVISO.asr
 Settings	AselKey	5111808
 Settings	FreqKey	3604480
 Settings	Settingsfile	\..\LFXX\Settings\General.txt

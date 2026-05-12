@@ -1,0 +1,86 @@
+DisplayTypeName:SMR radar display
+DisplayTypeNeedRadarContent:0
+DisplayTypeGeoReferenced:1
+SECTORFILE:
+SECTORTITLE:
+Free Text:LFOB Gates\1:freetext
+Free Text:LFOB Gates\10:freetext
+Free Text:LFOB Gates\11:freetext
+Free Text:LFOB Gates\12:freetext
+Free Text:LFOB Gates\2:freetext
+Free Text:LFOB Gates\3:freetext
+Free Text:LFOB Gates\4:freetext
+Free Text:LFOB Gates\5:freetext
+Free Text:LFOB Gates\6:freetext
+Free Text:LFOB Gates\7:freetext
+Free Text:LFOB Gates\8:freetext
+Free Text:LFOB Gates\9:freetext
+Free Text:LFOB Gates\G1:freetext
+Free Text:LFOB Gates\G2:freetext
+Free Text:LFOB Gates\G3:freetext
+Free Text:LFOB Gates\Hangars ACB:freetext
+Free Text:LFOB Gates\IGN:freetext
+Free Text:LFOB Gates\L1:freetext
+Free Text:LFOB Gates\L2:freetext
+Free Text:LFOB Gates\L3:freetext
+Free Text:LFOB Gates\L4:freetext
+Free Text:LFOB Gates\L5:freetext
+Free Text:LFOB Gates\Park. Nord:freetext
+Free Text:LFOB Gates\T1:freetext
+Free Text:LFOB Gates\T2:freetext
+Free Text:LFOB Taxiways\A:freetext
+Free Text:LFOB Taxiways\H:freetext
+Free Text:LFOB Taxiways\H04:freetext
+Free Text:LFOB Taxiways\N1:freetext
+Free Text:LFOB Taxiways\N2:freetext
+Free Text:LFOB Taxiways\P:freetext
+Free Text:LFOB Taxiways\R:freetext
+Free Text:LFOB Taxiways\R1:freetext
+Free Text:LFOB Taxiways\R2:freetext
+Free Text:LFOB Taxiways\R30:freetext
+Free Text:LFOB Taxiways\T:freetext
+Free Text:LFOB Taxiways\W:freetext
+Free Text:LFOB Taxiways\X:freetext
+Geo:LFOB Groundlayout AVISO:
+Regions:LFOB AVISO:polygon
+SHOWC:1
+SHOWSB:0
+BELOW:0
+ABOVE:0
+LEADER:5
+SHOWLEADER:0
+TURNLEADER:0
+HISTORY_DOTS:0
+SIMULATION_MODE:1
+DISABLEPANNING:0
+DISABLEZOOMING:0
+DisplayRotation:0.00000
+TAGFAMILY:CoFrance
+WINDOWAREA:49.443768:2.083902:49.467789:2.150952
+PLUGIN:vSMR:ActiveProfile:Default
+PLUGIN:vSMR:Afterglow:1
+PLUGIN:vSMR:Airport:LFOB
+PLUGIN:vSMR:AppTrailsDots:4
+PLUGIN:vSMR:FontSize:1
+PLUGIN:vSMR:GndTrailsDots:4
+PLUGIN:vSMR:PredictedLine:0
+PLUGIN:vSMR:SRW1BottomRightX:518
+PLUGIN:vSMR:SRW1BottomRightY:966
+PLUGIN:vSMR:SRW1Display:1
+PLUGIN:vSMR:SRW1Filter:5500
+PLUGIN:vSMR:SRW1OffsetX:0
+PLUGIN:vSMR:SRW1OffsetY:0
+PLUGIN:vSMR:SRW1Rotation:0
+PLUGIN:vSMR:SRW1Scale:15
+PLUGIN:vSMR:SRW1TopLeftX:118
+PLUGIN:vSMR:SRW1TopLeftY:666
+PLUGIN:vSMR:SRW2BottomRightX:600
+PLUGIN:vSMR:SRW2BottomRightY:500
+PLUGIN:vSMR:SRW2Display:0
+PLUGIN:vSMR:SRW2Filter:5500
+PLUGIN:vSMR:SRW2OffsetX:0
+PLUGIN:vSMR:SRW2OffsetY:0
+PLUGIN:vSMR:SRW2Rotation:0
+PLUGIN:vSMR:SRW2Scale:15
+PLUGIN:vSMR:SRW2TopLeftX:200
+PLUGIN:vSMR:SRW2TopLeftY:200

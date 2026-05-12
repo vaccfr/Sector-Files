@@ -379,7 +379,7 @@ PROFILE:LFQT_GND:10:3
 ATIS2:Merville Ground - EN/FR
 ATIS3:Check your charts! chartfox.org/LFQT
 ATIS4:Leave us some feedback! vatsim.fr/fb/VOTRE_CID_ICI
-PROFILE:LFPB_DEL:10:3
+PROFILE:LFPB_DEL:10:2
 ATIS2:Le Bourget Delivery - EN/FR
 ATIS3:Check your charts! chartfox.org/LFPB
 ATIS4:Leave us some feedback! vatsim.fr/fb/VOTRE_CID_ICI
@@ -391,7 +391,7 @@ PROFILE:LFPG_BD_RMP:10:3
 ATIS2:De Gaulle Apron - EN/FR
 ATIS3:TOBT @ cdm.vatsim.fr | Charts chartfox.org/LFPG
 ATIS4:Leave us some feedback! vatsim.fr/fb/VOTRE_CID_ICI
-PROFILE:LFPG_DEL:10:3
+PROFILE:LFPG_DEL:10:2
 ATIS2:De Gaulle Delivery - EN/FR
 ATIS3:TOBT @ cdm.vatsim.fr | Charts chartfox.org/LFPG
 ATIS4:Leave us some feedback! vatsim.fr/fb/VOTRE_CID_ICI
@@ -419,7 +419,7 @@ PROFILE:LFPG_NP_GND:10:3
 ATIS2:De Gaulle Ground - EN/FR
 ATIS3:TOBT @ cdm.vatsim.fr | Charts chartfox.org/LFPG
 ATIS4:Leave us some feedback! vatsim.fr/fb/VOTRE_CID_ICI
-PROFILE:LFPO_DEL:10:3
+PROFILE:LFPO_DEL:10:2
 ATIS2:Orly Delivery - EN/FR
 ATIS3:TOBT @ cdm.vatsim.fr | Charts chartfox.org/LFPO
 ATIS4:Leave us some feedback! vatsim.fr/fb/VOTRE_CID_ICI

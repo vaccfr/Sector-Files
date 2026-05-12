@@ -1,0 +1,66 @@
+DisplayTypeName:SMR radar display
+DisplayTypeNeedRadarContent:0
+DisplayTypeGeoReferenced:1
+SECTORFILE:
+SECTORTITLE:
+Free Text:LFPT Gates\1:freetext
+Free Text:LFPT Gates\2:freetext
+Free Text:LFPT Gates\3:freetext
+Free Text:LFPT Gates\4:freetext
+Free Text:LFPT Gates\5:freetext
+Free Text:LFPT Gates\6:freetext
+Free Text:LFPT Gates\7:freetext
+Free Text:LFPT Gates\8:freetext
+Free Text:LFPT Gates\9:freetext
+Free Text:LFPT Taxiways\A:freetext
+Free Text:LFPT Taxiways\B:freetext
+Free Text:LFPT Taxiways\C:freetext
+Free Text:LFPT Taxiways\D:freetext
+Free Text:LFPT Taxiways\E:freetext
+Free Text:LFPT Taxiways\F:freetext
+Free Text:LFPT Taxiways\G:freetext
+Free Text:LFPT Taxiways\H:freetext
+Free Text:LFPT Taxiways\J1:freetext
+Free Text:LFPT Taxiways\J2:freetext
+Geo:LFPT Groundlayout Pontoise Cormeille-en-vexin:
+SHOWC:1
+SHOWSB:0
+BELOW:0
+ABOVE:0
+LEADER:5
+SHOWLEADER:0
+TURNLEADER:0
+HISTORY_DOTS:0
+SIMULATION_MODE:1
+DISABLEPANNING:0
+DISABLEZOOMING:0
+DisplayRotation:0.00000
+TAGFAMILY:CoFrance
+WINDOWAREA:49.081807:1.997944:49.111833:2.081757
+PLUGIN:vSMR:ActiveProfile:Default
+PLUGIN:vSMR:Afterglow:1
+PLUGIN:vSMR:Airport:LFPT
+PLUGIN:vSMR:AppTrailsDots:4
+PLUGIN:vSMR:FontSize:1
+PLUGIN:vSMR:GndTrailsDots:4
+PLUGIN:vSMR:PredictedLine:0
+PLUGIN:vSMR:SRW1BottomRightX:518
+PLUGIN:vSMR:SRW1BottomRightY:966
+PLUGIN:vSMR:SRW1Display:1
+PLUGIN:vSMR:SRW1Filter:5500
+PLUGIN:vSMR:SRW1OffsetX:0
+PLUGIN:vSMR:SRW1OffsetY:0
+PLUGIN:vSMR:SRW1Rotation:0
+PLUGIN:vSMR:SRW1Scale:15
+PLUGIN:vSMR:SRW1TopLeftX:118
+PLUGIN:vSMR:SRW1TopLeftY:666
+PLUGIN:vSMR:SRW2BottomRightX:600
+PLUGIN:vSMR:SRW2BottomRightY:500
+PLUGIN:vSMR:SRW2Display:0
+PLUGIN:vSMR:SRW2Filter:5500
+PLUGIN:vSMR:SRW2OffsetX:0
+PLUGIN:vSMR:SRW2OffsetY:0
+PLUGIN:vSMR:SRW2Rotation:0
+PLUGIN:vSMR:SRW2Scale:15
+PLUGIN:vSMR:SRW2TopLeftX:200
+PLUGIN:vSMR:SRW2TopLeftY:200
