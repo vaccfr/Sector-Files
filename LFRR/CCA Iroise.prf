@@ -21,24 +21,20 @@ Plugins	Plugin4Display0	SMR radar display
 Plugins	Plugin4Display1	Standard ES radar screen
 Plugins	Plugin5Display0	SMR radar display
 Plugins	Plugin5Display1	Standard ES radar screen
-ASRFastKeys	1	\ASR\Brest UIR.asr
-ASRFastKeys	2	\ASR\Brest - Legacy APP.asr
-ASRFastKeys	3	\ASR\AVISOs\LFRS Nantes AVISO.asr
-ASRFastKeys	4	\ASR\AVISOs\LFRN Rennes AVISO.asr
-ASRFastKeys	5	\ASR\AVISOs\LFRB Bretagne AVISO.asr
-ASRFastKeys	6	\ASR\AVISOs\LFRZ Saint Nazaire AVISO.asr
-ASRFastKeys	7	\ASR\AVISOs\LFRD Dinard AVISO.asr
-ASRFastKeys	8	\ASR\AVISOs\LFRG Deauville AVISO.asr
-ASRFastKeys	9	\ASR\AVISOs\LFRK Caen AVISO.asr
-RecentFiles	Recent1	\ASR\Brest UIR.asr
-RecentFiles	Recent2	\ASR\Brest - Legacy APP.asr
-RecentFiles	Recent3	\ASR\AVISOs\LFRS Nantes AVISO.asr
-RecentFiles	Recent4	\ASR\AVISOs\LFRN Rennes AVISO.asr
+ASRFastKeys	1	\ASR\CCA Iroise\CCA Iroise - Dynamic.asr
+ASRFastKeys	2	\ASR\CCA Iroise\CCA Iroise - VFR.asr
+ASRFastKeys	3	\ASR\CCA Iroise\CCA Iroise - MVA.asr
+ASRFastKeys	4	\ASR\AVISOs\LFRB Bretagne AVISO.asr
+ASRFastKeys	5	\ASR\AVISOs\LFRQ Quimper AVISO.asr
+ASRFastKeys	6	\ASR\AVISOs\LFRU Morlaix AVISO.asr
+ASRFastKeys	7	\ASR\AVISOs\LFRO Lannion AVISO.asr
+RecentFiles	Recent1	\ASR\CCA Iroise\CCA Iroise - Dynamic.asr
+RecentFiles	Recent2	\ASR\AVISOs\LFST Lannion AVISO.asr
+RecentFiles	Recent3	\ASR\AVISOs\LFRU Morlaix AVISO.asr
+RecentFiles	Recent4	\ASR\AVISOs\LFRQ Quimper AVISO.asr
 RecentFiles	Recent5	\ASR\AVISOs\LFRB Bretagne AVISO.asr
-RecentFiles	Recent6	\ASR\AVISOs\LFRZ Saint Nazaire AVISO.asr
-RecentFiles	Recent7	\ASR\AVISOs\LFRD Dinard AVISO.asr
-RecentFiles	Recent8	\ASR\AVISOs\LFRG Deauville AVISO.asr
-RecentFiles	Recent9	\ASR\AVISOs\LFRK Caen AVISO.asr
+RecentFiles	Recent6	\ASR\CCA Iroise\CCA Iroise - MVA.asr
+RecentFiles	Recent7	\ASR\CCA Iroise\CCA Iroise - VFR.asr
 Settings	AselKey	5111808
 Settings	FreqKey	3604480
 Settings	Settingsfile	\..\LFXX\Settings\General.txt
@@ -99,3 +95,4 @@ LastSession	range	275
 LastSession	proxyserver	localhost
 LastSession	simdatapublish	0
 LastSession	atis_freq4	118000
+RecentFiles	Recent8	\ASR\CCA Iroise\CCA Iroise - MVA MVA.asr
