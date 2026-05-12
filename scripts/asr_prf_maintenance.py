@@ -1,194 +1,200 @@
 from pathlib import Path
 import re
-import shutil
 
 ROOT_DIR = Path.cwd()
-CREATE_BACKUPS = False
 DRY_RUN = False
 
-TARGET_PREFIXES = ("Free Text", "Geo", "Regions")
+
+# =========================================================
+# Helpers
+# =========================================================
+
+def read_lines(path: Path) -> list[str]:
+    return path.read_text(encoding="utf-8", errors="ignore").splitlines()
+
+
+def write_lines(path: Path, lines: list[str]) -> None:
+    if not DRY_RUN:
+        path.write_text("\n".join(lines) + "\n", encoding="utf-8")
+
+
+def normalize_asr_path(value: str) -> str:
+    value = value.strip().replace("/", "\\")
+
+    idx = value.upper().find("\\ASR\\")
+    if idx >= 0:
+        value = value[idx:]
+
+    return value
 
 
 # =========================================================
-# ASR CLEANUP
+# 1. ASR cleanup
 # =========================================================
 
-def cleanup_asr_file(asr_file: Path):
-    try:
-        content = asr_file.read_text(encoding="utf-8", errors="ignore")
-        lines = content.splitlines()
+def cleanup_sector_lines(asr_file: Path) -> None:
+    lines = read_lines(asr_file)
 
-        updated_lines = []
-        changed = False
+    changed = False
+    output = []
 
-        for line in lines:
-            if line.startswith("SECTORFILE:"):
-                updated_lines.append("SECTORFILE:")
+    for line in lines:
+        if line.startswith("SECTORFILE:"):
+            output.append("SECTORFILE:")
+            if line != "SECTORFILE:":
                 changed = True
-            elif line.startswith("SECTORTITLE:"):
-                updated_lines.append("SECTORTITLE:")
+
+        elif line.startswith("SECTORTITLE:"):
+            output.append("SECTORTITLE:")
+            if line != "SECTORTITLE:":
                 changed = True
-            else:
-                updated_lines.append(line)
 
-        if changed and not DRY_RUN:
-            asr_file.write_text("\n".join(updated_lines) + "\n", encoding="utf-8")
-            print(f"[ASR CLEANUP] Updated: {asr_file}")
+        else:
+            output.append(line)
 
-    except Exception as e:
-        print(f"[ASR CLEANUP] Failed {asr_file}: {e}")
+    if changed:
+        print(f"[ASR] Cleaned sector lines: {asr_file}")
+        write_lines(asr_file, output)
 
 
 # =========================================================
-# AVISO FILTER
+# 2. AVISO filtering
 # =========================================================
 
 def get_icao_from_filename(path: Path) -> str | None:
-    match = re.search(r"\b(LF[A-Z0-9]{2})\b", path.stem.upper())
+    match = re.match(r"^([A-Z]{4})\\b", path.stem.upper())
     return match.group(1) if match else None
 
 
 def get_tree_icao(line: str) -> str | None:
     match = re.match(
-        r"^\s*(Free Text|Geo|Regions)\s*:\s*([A-Z]{4})\b",
+        r"^\\s*(Free Text|Geo|Regions)\\s*:\\s*([A-Z]{4})\\b",
         line,
         re.IGNORECASE,
     )
+
     return match.group(2).upper() if match else None
 
 
-def filter_aviso(asr_file: Path):
+def filter_aviso(asr_file: Path) -> None:
+    if asr_file.parent.name.upper() != "AVISOS":
+        return
+
     if "AVISO" not in asr_file.stem.upper():
         return
 
-    file_icao = get_icao_from_filename(asr_file)
+    target_icao = get_icao_from_filename(asr_file)
 
-    if not file_icao:
-        print(f"[AVISO] SKIPPED no ICAO: {asr_file.name}")
+    if not target_icao:
         return
 
-    try:
-        original = asr_file.read_text(encoding="utf-8", errors="ignore")
-        lines = original.splitlines()
+    lines = read_lines(asr_file)
 
-        new_lines = []
-        removed = 0
+    output = []
+    removed = 0
 
-        for line in lines:
-            tree_icao = get_tree_icao(line)
+    for line in lines:
+        tree_icao = get_tree_icao(line)
 
-            if tree_icao:
-                if tree_icao == file_icao:
-                    new_lines.append(line)
-                else:
-                    removed += 1
-            else:
-                new_lines.append(line)
+        if tree_icao and tree_icao != target_icao:
+            removed += 1
+            continue
 
-        if removed:
-            print(f"[AVISO] Updated {asr_file.name} removed={removed}")
+        output.append(line)
 
-            if not DRY_RUN:
-                if CREATE_BACKUPS:
-                    shutil.copy2(asr_file, asr_file.with_suffix(asr_file.suffix + ".bak"))
-
-                asr_file.write_text(
-                    "\n".join(new_lines) + "\n",
-                    encoding="utf-8",
-                )
-
-    except Exception as e:
-        print(f"[AVISO] FAILED {asr_file}: {e}")
+    if removed:
+        print(f"[AVISO] {asr_file}: removed {removed} invalid entries")
+        write_lines(asr_file, output)
 
 
 # =========================================================
-# PRF RECENTFILES CHECK
+# 3. PRF sync
 # =========================================================
 
-FASTKEY_REGEX = re.compile(
-    r"^(ASRFastKeys\s*\d+)\s*=\s*(.+)$",
-    re.IGNORECASE,
-)
+def sync_prf(prf_file: Path) -> None:
+    lines = read_lines(prf_file)
 
-RECENT_REGEX = re.compile(
-    r"^(Recent(?:Files)?\s*Recent?\s*(\d+)|Recent\s*(\d+))\s*=\s*(.+)$",
-    re.IGNORECASE,
-)
+    fastkeys = {}
+    recent_indexes = {}
 
+    for index, line in enumerate(lines):
+        parts = line.split("\\t")
 
-def normalize_asr_path(path_str: str) -> str:
-    path_str = path_str.replace("/", "\\")
+        if len(parts) < 3:
+            continue
 
-    idx = path_str.upper().find("\\ASR\\")
-    if idx >= 0:
-        path_str = path_str[idx:]
+        section = parts[0].strip()
+        key = parts[1].strip()
+        value = normalize_asr_path(parts[2].strip())
 
-    return path_str.strip()
+        if section == "ASRFastKeys" and key.isdigit():
+            number = int(key)
 
+            if 1 <= number <= 9:
+                fastkeys[number] = value
 
+        elif section == "RecentFiles":
+            match = re.match(r"^Recent(\\d+)$", key, re.IGNORECASE)
 
-def update_prf(prf_file: Path):
-    try:
-        lines = prf_file.read_text(encoding="utf-8", errors="ignore").splitlines()
+            if match:
+                number = int(match.group(1))
 
-        fastkeys = {}
-        recent_indexes = {}
+                if 1 <= number <= 9:
+                    recent_indexes[number] = index
 
-        for i, line in enumerate(lines):
-            fk_match = FASTKEY_REGEX.match(line)
-            if fk_match:
-                key_name = fk_match.group(1)
-                number_match = re.search(r"(\d+)", key_name)
+    changed = False
 
-                if number_match:
-                    idx = number_match.group(1)
-                    fastkeys[idx] = normalize_asr_path(fk_match.group(2))
+    for number, expected_path in fastkeys.items():
+        if number not in recent_indexes:
+            continue
 
-            recent_match = RECENT_REGEX.match(line)
-            if recent_match:
-                idx = recent_match.group(2) or recent_match.group(3)
-                recent_indexes[idx] = i
+        line_index = recent_indexes[number]
 
-        changed = False
+        new_line = f"RecentFiles\\tRecent{number}\\t{expected_path}"
 
-        for idx, asr_path in fastkeys.items():
-            if idx in recent_indexes:
-                line_index = recent_indexes[idx]
-                current_line = lines[line_index]
+        if lines[line_index] != new_line:
+            print(f"[PRF] Updating {prf_file} Recent{number}")
+            lines[line_index] = new_line
+            changed = True
 
-                left_side = current_line.split("=", 1)[0]
-                new_line = f"{left_side}={asr_path}"
-
-                if current_line != new_line:
-                    print(f"[PRF] Updating {prf_file.name} Recent{idx}")
-                    lines[line_index] = new_line
-                    changed = True
-
-        if changed and not DRY_RUN:
-            if CREATE_BACKUPS:
-                shutil.copy2(prf_file, prf_file.with_suffix(prf_file.suffix + ".bak"))
-
-            prf_file.write_text("\n".join(lines) + "\n", encoding="utf-8")
-
-    except Exception as e:
-        print(f"[PRF] FAILED {prf_file}: {e}")
+    if changed:
+        write_lines(prf_file, lines)
 
 
 # =========================================================
-# MAIN
+# Main
 # =========================================================
 
-for fir_dir in ROOT_DIR.iterdir():
-    if not fir_dir.is_dir():
-        continue
+def find_package_roots():
+    package_roots = []
 
-    print(f"\n===== Processing FIR: {fir_dir.name} =====")
+    for asr_dir in ROOT_DIR.rglob("ASR"):
+        if asr_dir.is_dir():
+            package_roots.append(asr_dir.parent)
 
-    for asr_file in fir_dir.rglob("*.asr"):
-        cleanup_asr_file(asr_file)
-        filter_aviso(asr_file)
+    return sorted(set(package_roots))
 
-    for prf_file in fir_dir.rglob("*.prf"):
-        update_prf(prf_file)
 
-print("\nDone.")
+def main():
+    package_roots = find_package_roots()
+
+    for package_root in package_roots:
+        print(f"===== Processing {package_root} =====")
+
+        asr_dir = package_root / "ASR"
+        settings_dir = package_root / "Settings"
+
+        if asr_dir.exists():
+            for asr_file in asr_dir.rglob("*.asr"):
+                cleanup_sector_lines(asr_file)
+                filter_aviso(asr_file)
+
+        if settings_dir.exists():
+            for prf_file in settings_dir.rglob("*.prf"):
+                sync_prf(prf_file)
+
+    print("Done.")
+
+
+if __name__ == "__main__":
+    main()

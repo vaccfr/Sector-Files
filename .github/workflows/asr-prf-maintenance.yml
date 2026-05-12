@@ -17,15 +17,16 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          ref: AIRAC-2605
 
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.11'
+          python-version: "3.11"
 
       - name: Run maintenance script
-        run: |
-          python scripts/asr_prf_maintenance.py
+        run: python scripts/asr_prf_maintenance.py
 
       - name: Commit changes
         run: |
@@ -34,6 +35,9 @@ jobs:
 
           git add .
 
-          git diff --cached --quiet || git commit -m "Auto-update ASR and PRF files"
-
-          git push
+          if git diff --cached --quiet; then
+            echo "No changes."
+          else
+            git commit -m "Auto-maintain ASR and PRF files"
+            git push origin AIRAC-2605
+          fi
