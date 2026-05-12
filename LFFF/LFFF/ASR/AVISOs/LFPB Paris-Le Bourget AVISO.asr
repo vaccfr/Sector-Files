@@ -108,7 +108,6 @@ Free Text:LFPB Taxiways\WZ2:freetext
 Free Text:LFPB Taxiways\X:freetext
 Geo:LFPB Groundlayout AVISO:
 Regions:LFPB AVISO:polygon
-Regions:LFPO AVISO:polygon
 SHOWC:1
 SHOWSB:0
 BELOW:0
