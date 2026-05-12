@@ -3,7 +3,7 @@ name: ASR and PRF maintenance
 on:
   push:
     branches:
-      - dev
+      - AIRAC-2605
 
   workflow_dispatch:
 
