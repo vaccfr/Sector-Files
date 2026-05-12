@@ -1,0 +1,77 @@
+DisplayTypeName:SMR radar display
+DisplayTypeNeedRadarContent:0
+DisplayTypeGeoReferenced:1
+SECTORFILE:
+SECTORTITLE:
+Free Text:LFJR Gates\A:freetext
+Free Text:LFJR Gates\A1:freetext
+Free Text:LFJR Gates\A2:freetext
+Free Text:LFJR Gates\A3:freetext
+Free Text:LFJR Gates\ACB:freetext
+Free Text:LFJR Gates\B:freetext
+Free Text:LFJR Gates\B1:freetext
+Free Text:LFJR Gates\B2:freetext
+Free Text:LFJR Gates\B3:freetext
+Free Text:LFJR Gates\C:freetext
+Free Text:LFJR Gates\C1:freetext
+Free Text:LFJR Gates\C2:freetext
+Free Text:LFJR Gates\C3:freetext
+Free Text:LFJR Gates\D:freetext
+Free Text:LFJR Gates\D1:freetext
+Free Text:LFJR Gates\D2:freetext
+Free Text:LFJR Gates\D3:freetext
+Free Text:LFJR Gates\E:freetext
+Free Text:LFJR Gates\J:freetext
+Free Text:LFJR Gates\K:freetext
+Free Text:LFJR Gates\L:freetext
+Free Text:LFJR Gates\M:freetext
+Free Text:LFJR Gates\N:freetext
+Free Text:LFJR Gates\P:freetext
+Free Text:LFJR Gates\TWR:freetext
+Free Text:LFJR Gates\Terminal:freetext
+Free Text:LFJR Taxiways\A:freetext
+Free Text:LFJR Taxiways\B:freetext
+Free Text:LFJR Taxiways\C:freetext
+Free Text:LFJR Taxiways\S:freetext
+Geo:LFJR Groundlayout Angers marce:
+SHOWC:1
+SHOWSB:0
+BELOW:0
+ABOVE:0
+LEADER:5
+SHOWLEADER:0
+TURNLEADER:0
+HISTORY_DOTS:0
+SIMULATION_MODE:1
+DISABLEPANNING:0
+DISABLEZOOMING:0
+DisplayRotation:0.00000
+TAGFAMILY:CoFrance
+WINDOWAREA:47.550670:-0.338713:47.569886:-0.285731
+PLUGIN:vSMR:ActiveProfile:Default
+PLUGIN:vSMR:Afterglow:1
+PLUGIN:vSMR:Airport:LFJR
+PLUGIN:vSMR:AppTrailsDots:4
+PLUGIN:vSMR:FontSize:1
+PLUGIN:vSMR:GndTrailsDots:4
+PLUGIN:vSMR:PredictedLine:0
+PLUGIN:vSMR:SRW1BottomRightX:552
+PLUGIN:vSMR:SRW1BottomRightY:911
+PLUGIN:vSMR:SRW1Display:1
+PLUGIN:vSMR:SRW1Filter:5500
+PLUGIN:vSMR:SRW1OffsetX:0
+PLUGIN:vSMR:SRW1OffsetY:0
+PLUGIN:vSMR:SRW1Rotation:0
+PLUGIN:vSMR:SRW1Scale:15
+PLUGIN:vSMR:SRW1TopLeftX:152
+PLUGIN:vSMR:SRW1TopLeftY:611
+PLUGIN:vSMR:SRW2BottomRightX:600
+PLUGIN:vSMR:SRW2BottomRightY:500
+PLUGIN:vSMR:SRW2Display:0
+PLUGIN:vSMR:SRW2Filter:5500
+PLUGIN:vSMR:SRW2OffsetX:0
+PLUGIN:vSMR:SRW2OffsetY:0
+PLUGIN:vSMR:SRW2Rotation:0
+PLUGIN:vSMR:SRW2Scale:15
+PLUGIN:vSMR:SRW2TopLeftX:200
+PLUGIN:vSMR:SRW2TopLeftY:200

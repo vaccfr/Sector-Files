@@ -1,0 +1,79 @@
+DisplayTypeName:SMR radar display
+DisplayTypeNeedRadarContent:0
+DisplayTypeGeoReferenced:1
+SECTORFILE:
+SECTORTITLE:
+Free Text:LFRN Gates\1:freetext
+Free Text:LFRN Gates\2:freetext
+Free Text:LFRN Gates\3:freetext
+Free Text:LFRN Gates\4:freetext
+Free Text:LFRN Gates\A1:freetext
+Free Text:LFRN Gates\A2:freetext
+Free Text:LFRN Gates\A3:freetext
+Free Text:LFRN Gates\A4:freetext
+Free Text:LFRN Gates\B1:freetext
+Free Text:LFRN Gates\B2:freetext
+Free Text:LFRN Gates\B3:freetext
+Free Text:LFRN Gates\B4:freetext
+Free Text:LFRN Gates\C1:freetext
+Free Text:LFRN Gates\C2:freetext
+Free Text:LFRN Gates\C3:freetext
+Free Text:LFRN Gates\C4:freetext
+Free Text:LFRN Gates\C5:freetext
+Free Text:LFRN Gates\C6:freetext
+Free Text:LFRN Gates\H:freetext
+Free Text:LFRN Gates\P. Aviation G?n?rale:freetext
+Free Text:LFRN Gates\P. MIL:freetext
+Free Text:LFRN Gates\P. Sud:freetext
+Free Text:LFRN Taxiways\A:freetext
+Free Text:LFRN Taxiways\B:freetext
+Free Text:LFRN Taxiways\C:freetext
+Free Text:LFRN Taxiways\D:freetext
+Free Text:LFRN Taxiways\F:freetext
+Free Text:LFRN Taxiways\G:freetext
+Free Text:LFRN Taxiways\H:freetext
+Free Text:LFRN Taxiways\J:freetext
+Free Text:LFRN Taxiways\X:freetext
+Geo:LFRN Groundlayout AVISO:
+Regions:LFRN AVISO:polygon
+SHOWC:1
+SHOWSB:0
+BELOW:0
+ABOVE:0
+LEADER:5
+SHOWLEADER:0
+TURNLEADER:0
+HISTORY_DOTS:0
+SIMULATION_MODE:1
+DISABLEPANNING:0
+DISABLEZOOMING:0
+DisplayRotation:0.00000
+TAGFAMILY:CoFrance
+WINDOWAREA:48.058392:-1.765336:48.082412:-1.699108
+PLUGIN:vSMR:ActiveProfile:Default
+PLUGIN:vSMR:Afterglow:1
+PLUGIN:vSMR:Airport:LFRN
+PLUGIN:vSMR:AppTrailsDots:4
+PLUGIN:vSMR:FontSize:1
+PLUGIN:vSMR:GndTrailsDots:4
+PLUGIN:vSMR:PredictedLine:0
+PLUGIN:vSMR:SRW1BottomRightX:552
+PLUGIN:vSMR:SRW1BottomRightY:911
+PLUGIN:vSMR:SRW1Display:1
+PLUGIN:vSMR:SRW1Filter:5500
+PLUGIN:vSMR:SRW1OffsetX:0
+PLUGIN:vSMR:SRW1OffsetY:0
+PLUGIN:vSMR:SRW1Rotation:0
+PLUGIN:vSMR:SRW1Scale:15
+PLUGIN:vSMR:SRW1TopLeftX:152
+PLUGIN:vSMR:SRW1TopLeftY:611
+PLUGIN:vSMR:SRW2BottomRightX:600
+PLUGIN:vSMR:SRW2BottomRightY:500
+PLUGIN:vSMR:SRW2Display:0
+PLUGIN:vSMR:SRW2Filter:5500
+PLUGIN:vSMR:SRW2OffsetX:0
+PLUGIN:vSMR:SRW2OffsetY:0
+PLUGIN:vSMR:SRW2Rotation:0
+PLUGIN:vSMR:SRW2Scale:15
+PLUGIN:vSMR:SRW2TopLeftX:200
+PLUGIN:vSMR:SRW2TopLeftY:200

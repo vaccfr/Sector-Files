@@ -1,0 +1,72 @@
+DisplayTypeName:SMR radar display
+DisplayTypeNeedRadarContent:0
+DisplayTypeGeoReferenced:1
+SECTORFILE:
+SECTORTITLE:
+Free Text:LFRH Gates\ACB:freetext
+Free Text:LFRH Gates\Douanes:freetext
+Free Text:LFRH Gates\H P-Securite Civile:freetext
+Free Text:LFRH Gates\Hangar:freetext
+Free Text:LFRH Gates\P-Civ:freetext
+Free Text:LFRH Gates\P-H1:freetext
+Free Text:LFRH Gates\P-Mil:freetext
+Free Text:LFRH Gates\S1 P-Helico:freetext
+Free Text:LFRH Gates\S2 P-Helico:freetext
+Free Text:LFRH Gates\S3 P-Helico:freetext
+Free Text:LFRH Gates\TWR:freetext
+Free Text:LFRH Gates\Terminal:freetext
+Free Text:LFRH Taxiways\A:freetext
+Free Text:LFRH Taxiways\A1:freetext
+Free Text:LFRH Taxiways\A2:freetext
+Free Text:LFRH Taxiways\A3:freetext
+Free Text:LFRH Taxiways\A4:freetext
+Free Text:LFRH Taxiways\B:freetext
+Free Text:LFRH Taxiways\B1:freetext
+Free Text:LFRH Taxiways\B2:freetext
+Free Text:LFRH Taxiways\C:freetext
+Free Text:LFRH Taxiways\C1:freetext
+Free Text:LFRH Taxiways\D:freetext
+Free Text:LFRH Taxiways\E:freetext
+Free Text:LFRH Taxiways\E1:freetext
+Geo:LFRH Groundlayout Lorient Lan-Bihoue:
+SHOWC:1
+SHOWSB:0
+BELOW:0
+ABOVE:0
+LEADER:5
+SHOWLEADER:0
+TURNLEADER:0
+HISTORY_DOTS:0
+SIMULATION_MODE:1
+DISABLEPANNING:0
+DISABLEZOOMING:0
+DisplayRotation:0.00000
+TAGFAMILY:CoFrance
+WINDOWAREA:47.741790:-3.491740:47.779321:-3.388260
+PLUGIN:vSMR:ActiveProfile:Default
+PLUGIN:vSMR:Afterglow:1
+PLUGIN:vSMR:Airport:LFRH
+PLUGIN:vSMR:AppTrailsDots:4
+PLUGIN:vSMR:FontSize:1
+PLUGIN:vSMR:GndTrailsDots:4
+PLUGIN:vSMR:PredictedLine:0
+PLUGIN:vSMR:SRW1BottomRightX:552
+PLUGIN:vSMR:SRW1BottomRightY:911
+PLUGIN:vSMR:SRW1Display:1
+PLUGIN:vSMR:SRW1Filter:5500
+PLUGIN:vSMR:SRW1OffsetX:0
+PLUGIN:vSMR:SRW1OffsetY:0
+PLUGIN:vSMR:SRW1Rotation:0
+PLUGIN:vSMR:SRW1Scale:15
+PLUGIN:vSMR:SRW1TopLeftX:152
+PLUGIN:vSMR:SRW1TopLeftY:611
+PLUGIN:vSMR:SRW2BottomRightX:600
+PLUGIN:vSMR:SRW2BottomRightY:500
+PLUGIN:vSMR:SRW2Display:0
+PLUGIN:vSMR:SRW2Filter:5500
+PLUGIN:vSMR:SRW2OffsetX:0
+PLUGIN:vSMR:SRW2OffsetY:0
+PLUGIN:vSMR:SRW2Rotation:0
+PLUGIN:vSMR:SRW2Scale:15
+PLUGIN:vSMR:SRW2TopLeftX:200
+PLUGIN:vSMR:SRW2TopLeftY:200
