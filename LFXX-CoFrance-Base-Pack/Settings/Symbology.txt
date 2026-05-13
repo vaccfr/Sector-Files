@@ -56,10 +56,10 @@ Datablock:SCTA CFL used warning rectangle:65535:3.5:0:0:7
 Datablock:SCTA warning leader:3289855:3.5:0:3:7
 Datablock:SCTA CFL used warning leader:65535:3.5:0:3:7
 Controller:normal:16777215:3.5:0:0:7
-Controller:breaking:11902082:3.5:0:0:7
+Controller:breaking:6776683:3.5:0:0:7
 Controller:timeout:255:3.5:0:0:7
 Metar:normal:16777215:5.5:0:0:7
-Metar:modified:11902082:5.5:0:0:7
+Metar:modified:6776683:5.5:0:0:7
 Metar:timeout:255:5.5:0:0:7
 Other:wait:16777215:3.5:0:0:7
 Other:distance line:12378805:3.5:2:0:7
@@ -92,7 +92,7 @@ Transitions:transition grid:5263440:3.0:0:0:7
 Chat:text:16777215:3.5:0:0:7
 Chat:background:3289650:3.5:0:0:7
 Chat:name normal:16777215:3.5:0:0:7
-Chat:name unread:11902082:3.5:0:0:7
+Chat:name unread:6776683:3.5:0:0:7
 Ground Network:exit:16711680:3.5:0:3:7
 Ground Network:taxiway:65280:3.5:0:3:7
 Ground Network:terminal taxiway:255:3.5:0:3:7
