@@ -17,7 +17,7 @@ DISABLEZOOMING:0
 DisplayRotation:0.00000
 TAGFAMILY:CoFrance
 WINDOWAREA:43.824749:-2.662873:45.908083:3.091345
-PLUGIN:CoFrance:EnabledMaps:LFBD/0_CCA_Aquitaine,LFBD/2_CCA_Aquitaine_VFR
+PLUGIN:CoFrance:EnabledMaps:LFBB/LFBD/0_CCA_Aquitaine,LFBB/LFBD/2_CCA_Aquitaine_VFR
 PLUGIN:CoFrance:LowerAlt:0
 PLUGIN:CoFrance:LowerAltEnabled:1
 PLUGIN:CoFrance:SettingProfile:default

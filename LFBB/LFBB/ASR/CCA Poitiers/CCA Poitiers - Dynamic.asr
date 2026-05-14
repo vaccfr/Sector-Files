@@ -17,7 +17,7 @@ DISABLEZOOMING:0
 DisplayRotation:0.00000
 TAGFAMILY:CoFrance
 WINDOWAREA:45.598640:-1.550897:47.265307:3.052479
-PLUGIN:CoFrance:EnabledMaps:LFBI/0_CCA_Poitiers
+PLUGIN:CoFrance:EnabledMaps:LFBB/LFBI/0_CCA_Poitiers
 PLUGIN:CoFrance:LowerAlt:0
 PLUGIN:CoFrance:LowerAltEnabled:1
 PLUGIN:CoFrance:SettingProfile:default

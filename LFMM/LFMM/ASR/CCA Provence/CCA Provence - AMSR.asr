@@ -17,7 +17,7 @@ DISABLEZOOMING:0
 DisplayRotation:0.00000
 TAGFAMILY:CoFrance
 WINDOWAREA:42.179909:1.344361:45.006416:8.613426
-PLUGIN:CoFrance:EnabledMaps:LFML/0_CCA_Provence,LFML/2_CCA_Provence_AMSR
+PLUGIN:CoFrance:EnabledMaps:LFMM/LFML/0_CCA_Provence,LFMM/LFML/2_CCA_Provence_AMSR
 PLUGIN:CoFrance:LowerAlt:0
 PLUGIN:CoFrance:LowerAltEnabled:1
 PLUGIN:CoFrance:SettingProfile:default

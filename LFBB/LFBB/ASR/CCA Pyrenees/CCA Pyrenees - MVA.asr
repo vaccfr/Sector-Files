@@ -17,7 +17,7 @@ DISABLEZOOMING:0
 DisplayRotation:0.00000
 TAGFAMILY:CoFrance
 WINDOWAREA:42.585407:-2.258069:44.252074:2.345307
-PLUGIN:CoFrance:EnabledMaps:LFBP/0_CCA_Pyrenees,LFBP/2_CCA_Pyrenees_MVA
+PLUGIN:CoFrance:EnabledMaps:LFBB/LFBP/0_CCA_Pyrenees,LFBB/LFBP/2_CCA_Pyrenees_MVA
 PLUGIN:CoFrance:LowerAlt:0
 PLUGIN:CoFrance:LowerAltEnabled:1
 PLUGIN:CoFrance:SettingProfile:default

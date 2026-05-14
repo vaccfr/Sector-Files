@@ -17,7 +17,7 @@ DISABLEZOOMING:0
 DisplayRotation:0.00000
 TAGFAMILY:CoFrance
 WINDOWAREA:40.762712:6.047882:43.023917:11.863129
-PLUGIN:CoFrance:EnabledMaps:LFKJ/0_CCA_Ajaccio,LFKJ/1_CCA_Ajaccio_VFR
+PLUGIN:CoFrance:EnabledMaps:LFMM/LFKJ/0_CCA_Ajaccio,LFMM/LFKJ/1_CCA_Ajaccio_VFR
 PLUGIN:CoFrance:LowerAlt:0
 PLUGIN:CoFrance:LowerAltEnabled:1
 PLUGIN:CoFrance:SettingProfile:default

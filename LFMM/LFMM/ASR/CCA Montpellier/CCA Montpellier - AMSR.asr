@@ -17,7 +17,7 @@ DISABLEZOOMING:0
 DisplayRotation:0.00000
 TAGFAMILY:CoFrance
 WINDOWAREA:42.173724:-0.242907:45.000231:7.026158
-PLUGIN:CoFrance:EnabledMaps:LFMT/0_CCA_Montpellier,LFMT/2_CCA_Montpellier_AMSR
+PLUGIN:CoFrance:EnabledMaps:LFMM/LFMT/0_CCA_Montpellier,LFMM/LFMT/2_CCA_Montpellier_AMSR
 PLUGIN:CoFrance:LowerAlt:0
 PLUGIN:CoFrance:LowerAltEnabled:1
 PLUGIN:CoFrance:SettingProfile:default

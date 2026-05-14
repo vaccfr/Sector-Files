@@ -17,7 +17,7 @@ DISABLEZOOMING:0
 DisplayRotation:0.00000
 TAGFAMILY:CoFrance
 WINDOWAREA:46.799492:-0.817328:49.403659:6.451731
-PLUGIN:CoFrance:EnabledMaps:LFPM/0_CCA_Seine,LFPM/1_CCA_Seine_VFR
+PLUGIN:CoFrance:EnabledMaps:LFFF/LFPM/0_CCA_Seine,LFFF/LFPM/1_CCA_Seine_VFR
 PLUGIN:CoFrance:LowerAlt:0
 PLUGIN:CoFrance:LowerAltEnabled:1
 PLUGIN:CoFrance:SettingProfile:default

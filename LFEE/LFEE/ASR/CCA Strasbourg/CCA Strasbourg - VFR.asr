@@ -17,7 +17,7 @@ DISABLEZOOMING:0
 DisplayRotation:0.00000
 TAGFAMILY:CoFrance
 WINDOWAREA:47.885122:4.419964:49.551789:9.023340
-PLUGIN:CoFrance:EnabledMaps:LFST/0_CCA_Strasbourg,LFST/1_CCA_Strasbourg_VFR
+PLUGIN:CoFrance:EnabledMaps:LFEE/LFST/0_CCA_Strasbourg,LFEE/LFST/1_CCA_Strasbourg_VFR
 PLUGIN:CoFrance:LowerAlt:0
 PLUGIN:CoFrance:LowerAltEnabled:1
 PLUGIN:CoFrance:SettingProfile:default

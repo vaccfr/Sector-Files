@@ -17,7 +17,7 @@ DISABLEZOOMING:0
 DisplayRotation:0.00000
 TAGFAMILY:CoFrance
 WINDOWAREA:44.621251:-1.349050:46.704585:4.405170
-PLUGIN:CoFrance:EnabledMaps:LFBL/0_CCA_Limoges,LFBL/1_CCA_Limoges_VFR
+PLUGIN:CoFrance:EnabledMaps:LFBB/LFBL/0_CCA_Limoges,LFBB/LFBL/1_CCA_Limoges_VFR
 PLUGIN:CoFrance:LowerAlt:0
 PLUGIN:CoFrance:LowerAltEnabled:1
 PLUGIN:CoFrance:SettingProfile:default

@@ -17,7 +17,7 @@ DISABLEZOOMING:0
 DisplayRotation:0.00000
 TAGFAMILY:CoFrance
 WINDOWAREA:43.197433:-2.601834:44.264100:0.344326
-PLUGIN:CoFrance:EnabledMaps:LFBZ/0_CCA_Biarritz,LFBZ/1_CCA_Biarritz_VFR
+PLUGIN:CoFrance:EnabledMaps:LFBB/LFBZ/0_CCA_Biarritz,LFBB/LFBZ/1_CCA_Biarritz_VFR
 PLUGIN:CoFrance:LowerAlt:0
 PLUGIN:CoFrance:LowerAltEnabled:1
 PLUGIN:CoFrance:SettingProfile:default

@@ -17,7 +17,7 @@ DISABLEZOOMING:0
 DisplayRotation:0.00000
 TAGFAMILY:CoFrance
 WINDOWAREA:45.346598:4.976885:46.087549:6.882426
-PLUGIN:CoFrance:EnabledMaps:LFLB/0_CCA_Chambery,LFLB/2_CCA_Chambery_MVA
+PLUGIN:CoFrance:EnabledMaps:LFMM/LFLB/0_CCA_Chambery,LFMM/LFLB/2_CCA_Chambery_MVA
 PLUGIN:CoFrance:LowerAlt:0
 PLUGIN:CoFrance:LowerAltEnabled:1
 PLUGIN:CoFrance:SettingProfile:default

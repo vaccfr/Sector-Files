@@ -17,7 +17,7 @@ DISABLEZOOMING:0
 DisplayRotation:0.00000
 TAGFAMILY:CoFrance
 WINDOWAREA:47.947044:1.035029:49.013711:4.012435
-PLUGIN:CoFrance:EnabledMaps:LFPO/0_EGA_Paris_Orly,LFPO/1_EGA_Paris_Orly_IPGW
+PLUGIN:CoFrance:EnabledMaps:LFFF/LFPO/0_EGA_Paris_Orly,LFFF/LFPO/1_EGA_Paris_Orly_IPGW
 PLUGIN:CoFrance:LowerAlt:0
 PLUGIN:CoFrance:LowerAltEnabled:1
 PLUGIN:CoFrance:SettingProfile:default

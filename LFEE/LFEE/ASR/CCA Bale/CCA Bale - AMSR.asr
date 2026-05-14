@@ -17,7 +17,7 @@ DISABLEZOOMING:0
 DisplayRotation:0.00000
 TAGFAMILY:CoFrance
 WINDOWAREA:46.344959:3.308793:48.428293:9.063013
-PLUGIN:CoFrance:EnabledMaps:LFSB/0_CCA_Bale,LFSB/2_CCA_Bale_AMSR
+PLUGIN:CoFrance:EnabledMaps:LFEE/LFSB/0_CCA_Bale,LFEE/LFSB/2_CCA_Bale_AMSR
 PLUGIN:CoFrance:LowerAlt:0
 PLUGIN:CoFrance:LowerAltEnabled:1
 PLUGIN:CoFrance:SettingProfile:default

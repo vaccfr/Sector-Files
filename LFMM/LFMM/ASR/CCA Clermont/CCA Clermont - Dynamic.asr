@@ -17,7 +17,7 @@ DISABLEZOOMING:0
 DisplayRotation:0.00000
 TAGFAMILY:CoFrance
 WINDOWAREA:43.730101:-1.111736:47.263235:7.974591
-PLUGIN:CoFrance:EnabledMaps:LFLC/0_CCA_Clermont
+PLUGIN:CoFrance:EnabledMaps:LFMM/LFLC/0_CCA_Clermont
 PLUGIN:CoFrance:LowerAlt:0
 PLUGIN:CoFrance:LowerAltEnabled:1
 PLUGIN:CoFrance:SettingProfile:default
