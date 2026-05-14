@@ -3,14 +3,8 @@ DisplayTypeNeedRadarContent:0
 DisplayTypeGeoReferenced:1
 SECTORFILE:
 SECTORTITLE:
-Free Text:LFBE Gates\A1:freetext
-Free Text:LFBE Gates\A2:freetext
-Free Text:LFBE Gates\A3:freetext
-Free Text:LFBE Gates\A4:freetext
 Free Text:LFBE Gates\ACB:freetext
-Free Text:LFBE Gates\Air CD:freetext
-Free Text:LFBE Gates\B1:freetext
-Free Text:LFBE Gates\B2:freetext
+Free Text:LFBE Gates\ACD:freetext
 Free Text:LFBE Gates\C1:freetext
 Free Text:LFBE Gates\C2:freetext
 Free Text:LFBE Gates\C3:freetext
@@ -19,9 +13,21 @@ Free Text:LFBE Gates\D2:freetext
 Free Text:LFBE Gates\D3:freetext
 Free Text:LFBE Gates\D31:freetext
 Free Text:LFBE Gates\D4:freetext
+Free Text:LFBE Gates\E1:freetext
+Free Text:LFBE Gates\E2:freetext
+Free Text:LFBE Gates\E3:freetext
+Free Text:LFBE Gates\E4:freetext
+Free Text:LFBE Gates\E5:freetext
+Free Text:LFBE Gates\E6:freetext
+Free Text:LFBE Gates\G1:freetext
+Free Text:LFBE Gates\G2:freetext
+Free Text:LFBE Gates\G3:freetext
+Free Text:LFBE Gates\G4:freetext
+Free Text:LFBE Gates\G5:freetext
+Free Text:LFBE Gates\G6:freetext
+Free Text:LFBE Gates\G7:freetext
+Free Text:LFBE Gates\G8:freetext
 Free Text:LFBE Gates\Hangars:freetext
-Free Text:LFBE Gates\P-Aviation Commerciale:freetext
-Free Text:LFBE Gates\P-Aviation Generale:freetext
 Free Text:LFBE Gates\RFFS:freetext
 Free Text:LFBE Gates\TWR:freetext
 Free Text:LFBE Gates\Terminal:freetext

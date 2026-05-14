@@ -31,6 +31,7 @@ Free Text:LFMK Taxiways\T4:freetext
 Free Text:LFMK Taxiways\T5:freetext
 Free Text:LFMK Taxiways\T6:freetext
 Free Text:LFMK Taxiways\Z:freetext
+Geo:LFMK Groundlayout AVISO:
 Regions:LFMK AVISO:polygon
 SHOWC:1
 SHOWSB:0
