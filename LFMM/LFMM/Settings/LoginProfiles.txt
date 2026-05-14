@@ -67,11 +67,19 @@ PROFILE:LFLB_I_APP:120:5
 ATIS2:Chambery Information - EN/FR
 ATIS3:Sector Coverage - map.vatsim.net
 ATIS4:Leave us some feedback! vatsim.fr/fb/VOTRE_CID_ICI
-PROFILE:LFLC_APP:120:5
+PROFILE:LFLC_CF_APP:120:5
 ATIS2:Clermont Approach - EN/FR
 ATIS3:Sector Coverage - map.vatsim.net
 ATIS4:Leave us some feedback! vatsim.fr/fb/VOTRE_CID_ICI
-PROFILE:LFLC_S_APP:120:5
+PROFILE:LFLC_CY_APP:120:5
+ATIS2:Clermont Approach - EN/FR
+ATIS3:Sector Coverage - map.vatsim.net
+ATIS4:Leave us some feedback! vatsim.fr/fb/VOTRE_CID_ICI
+PROFILE:LFLC_CN_APP:120:5
+ATIS2:Clermont Approach - EN/FR
+ATIS3:Sector Coverage - map.vatsim.net
+ATIS4:Leave us some feedback! vatsim.fr/fb/VOTRE_CID_ICI
+PROFILE:LFLC_CK_APP:120:5
 ATIS2:Clermont Approach - EN/FR
 ATIS3:Sector Coverage - map.vatsim.net
 ATIS4:Leave us some feedback! vatsim.fr/fb/VOTRE_CID_ICI
@@ -188,7 +196,7 @@ ATIS2:Aix Tower - EN/FR
 ATIS3:Check your charts! chartfox.org/LFMA
 ATIS4:Leave us some feedback! vatsim.fr/fb/VOTRE_CID_ICI
 PROFILE:LFMD_TWR:30:4
-ATIS2:Mandelieu Tower - EN/FR
+ATIS2:Cannes Tower - EN/FR
 ATIS3:Check your charts! chartfox.org/LFMD
 ATIS4:Leave us some feedback! vatsim.fr/fb/VOTRE_CID_ICI
 PROFILE:LFMH_TWR:30:4
@@ -264,7 +272,7 @@ ATIS2:Bron Ground - EN/FR
 ATIS3:Check your charts! chartfox.org/LFLY
 ATIS4:Leave us some feedback! vatsim.fr/fb/VOTRE_CID_ICI
 PROFILE:LFMD_GND:10:3
-ATIS2:Mandelieu Ground - EN/FR
+ATIS2:Cannes Ground - EN/FR
 ATIS3:Check your charts! chartfox.org/LFMD
 ATIS4:Leave us some feedback! vatsim.fr/fb/VOTRE_CID_ICI
 PROFILE:LFML_GND:10:3
