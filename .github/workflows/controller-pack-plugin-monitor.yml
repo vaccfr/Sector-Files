@@ -129,7 +129,7 @@ jobs:
                 "",
                 `Repository: https://github.com/${plugin.github}`,
                 `Release: https://github.com/${plugin.github}/releases/tag/${latest}`,
-              ].join("\\n");
+              ].join("\n");
 
               await github.rest.issues.create({
                 owner: context.repo.owner,
