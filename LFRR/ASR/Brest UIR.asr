@@ -18,6 +18,8 @@ DisplayRotation:0.00000
 TAGFAMILY:CoFrance
 WINDOWAREA:42.982065:-13.566600:50.905929:8.335458
 PLUGIN:CoFrance:EnabledMaps:LFRR/Carte_Trajectoires_UIR,LFXX/Coastlines_blue
+PLUGIN:CoFrance:HistoryTrailEnabled:1
+PLUGIN:CoFrance:HistoryTrailNumber:10
 PLUGIN:CoFrance:LowerAlt:0
 PLUGIN:CoFrance:LowerAltEnabled:1
 PLUGIN:CoFrance:TagFormat:default

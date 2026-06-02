@@ -783,6 +783,8 @@ DISABLEZOOMING:0
 DisplayRotation:0.00000
 TAGFAMILY:CoFrance
 WINDOWAREA:41.237223:-12.875343:52.291085:18.591935
+PLUGIN:CoFrance:HistoryTrailEnabled:1
+PLUGIN:CoFrance:HistoryTrailNumber:10
 PLUGIN:CoFrance:LowerAlt:0
 PLUGIN:CoFrance:LowerAltEnabled:1
 PLUGIN:CoFrance:TagFormat:default

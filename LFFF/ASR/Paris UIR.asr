@@ -18,6 +18,8 @@ DisplayRotation:0.00000
 TAGFAMILY:CoFrance
 WINDOWAREA:45.488521:-5.701022:51.540287:11.820622
 PLUGIN:CoFrance:EnabledMaps:LFFF/0_Fake_Background,LFFF/0_Fond_Secteur,LFFF/Cartes_Dynamiques,LFFF/Limites_EGA,LFFF/Trajectoires_UIR,LFXX/Coastlines_black
+PLUGIN:CoFrance:HistoryTrailEnabled:1
+PLUGIN:CoFrance:HistoryTrailNumber:10
 PLUGIN:CoFrance:LowerAlt:0
 PLUGIN:CoFrance:LowerAltEnabled:1
 PLUGIN:CoFrance:TagFormat:default

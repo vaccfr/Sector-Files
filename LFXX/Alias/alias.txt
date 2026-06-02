@@ -1,0 +1,414 @@
+;*** 01 Before initial contact ***
+.cw .msg $aircraft Bonjour! You will enter my airspace shortly. Please contact me on $freq when $1.
+.cp .msg $aircraft Bonjour! You will enter my airspace shortly. Please contact me on $freq when passing $uc($1).
+.cwr .msg $aircraft Bonjour! $radioname is providing top-down service for $dep. Please contact me on $freq when you are ready.
+.ci .msg $aircraft NO MOVEMENT without permission, please! $radioname is providing top-down service for $dep. HOLD POSITION and contact me IMMEDIATELY on $freq!
+
+
+;*** 02 Initial contact ***
+.h $radioname, hello. 
+.bjr $radioname, Bonjour.
+.bsr $radioname, Bonsoir.
+.gd $radioname, good day. 
+.gm $radioname, good morning. 
+.ga $radioname, good afternoon. 
+.ge $radioname, good evening. 
+.id Identified.
+.ids Standby for identification.
+.v? Are you able to receive voice?
+.vf? Pouvez-vous entendre la fréquence ?
+.pym Pass your message.
+.pymf Je vous écoute.
+
+
+;*** 03 Handoff ***
+.co Contact $radioname($1) $freq($1), au revoir!
+.autocontact Contact $1 $2, au revoir!
+.rst Radar service terminated. 
+.noatc You are leaving my airspace, no further ATC service available, radar service terminated. Monitor UNICOM on 122.800 and have a good flight, bye!
+.noatcf Vous quittez mon espace, pas d'autres contrôleurs disponibles, fin du service radar. Veillez UNICOM 122.8, bon vol !
+.noatcb $radioname is closing, no further ATC service available, radar service terminated. Monitor UNICOM on 122.800 and have a good flight, bye!
+.noatcbf $radioname est en train de fermer, vous quittez mon espace, pas d'autres contrôleurs disponibles, fin du service radar. Veillez UNICOM 122.8, bon vol !
+.noatcc $radioname is closing, for further ATC service contact $radioname($1) $freq($1), bye!
+.noatco You are outside of my airspace, resume own navigation and monitor Advisory frequency 122.800, bye!
+.noatcof Vous êtes en dehors de mes espaces, poursuivez votre vol selon le FPL déposé, veillez UNICOM 112.8, au revoir !
+.blt Please use Advisory frequency 122.800 for blind transmissions. Thank you.
+
+
+;*** 04 Transponder ***
+.sq Set squawk $squawk.
+.sqf Transpondeur $squawk.
+.sqs Set squawk STANDBY.
+.sqsf Transpondeur STANDBY.
+.sqc Set squawk ON. 
+.sqcf Allumez votre transpondeur.
+.sqi Squawk IDENT.
+.sqif Transpondeur IDENT.
+
+
+;*** 05 Clearance ***
+.cdm .msg $aircraft ***AUTOMATIC MESSAGE*** Hello! A-CDM procedures are in use! Enter and confirm your TOBT (time you expect to be ready for pushback) at: cdm.vatsim.fr This is MANDATORY for clearance but DOES NOT CONSTITUTE A CLEARANCE, you must still request it. Pushback may be requested from -5 min of your TSAT. If your TOBT is early or expired, please update and resubmit it. More info: vats.im/cdm-brief
+.cdmf .msg $aircraft ***MESSAGE AUTOMATIQUE*** Bonjour ! Les procédures A-CDM sont en vigueur : saisissez et confirmez votre TOBT (heure prévue de disponibilité au repoussage) sur cdm.vatsim.fr ; cette saisie est OBLIGATOIRE pour la clairance mais NE VAUT PAS CLAIRANCE (vous devez toujours la demander) ; le repoussage peut être demandé à partir de TSAT - 5 min ; si votre TOBT est anticipé ou expiré, veuillez le mettre à jour et le soumettre à nouveau ; infos : vats.im/cdm-brief.
+.exp .msg $aircraft Your TOBT has expired, please confirm your new TOBT at cdm.vatsim.fr as requested in the ATIS (mandatory for departure).
+.expf .msg $aircraft Votre TOBT a expiré, mettez à jour votre nouvelle TOBT sur cdm.vatsim.fr svp, comme indiqué dans l'ATIS (obligatoire pour les départs).
+.rrc Clearance, ready to copy?
+.rrcf Clairance, prêt à copier ?
+.ico Information $atiscode correct.
+.icof Information $atiscode correcte.
+.icu Information $atiscode current. 
+.icuf Information $atiscode en vigeur. 
+.cl Start up approved, expect $sid, runway $deprwy, climb $temp, squawk $squawk.
+.clf Mise en route approuvée, depart $sid, piste $deprwy, niveau $temp, transpondeur $squawk.
+.clv Start up approved, omnidirectionnal departure runway $deprwy. After departure climb to $temp and maintain runway heading, squawk $squawk.
+.clvf Mise en route approuvée, depart omnidirectionnel piste $deprwy. Après l'envol, montez $temp dans l'axe, transpondeur $squawk.
+.sid? Are you able to fly the $sid departure?
+.sidf? Pouvez-vous suivre le départ $sid ?
+
+
+;*** 06 Startup / Pushback ***
+.rb Readback correct.
+.rbf Relecture correcte.
+.rrs Report ready for startup / pushback.
+.rrsf Rappelez prêt à mettre en route/repousser.
+.rrp Report ready for pushback. 
+.rrpf Rappelez prêt au repoussage
+.sa Startup approved. 
+.saf Mise en route approuvee.
+.spa Startup and pushback approved. 
+.spaf Mise en route et repoussage approuve. 
+.pa Pushback approved. 
+.paf Repoussage approuve. 
+.pf Pushback approved, facing $1.
+.pff Repoussage approuvé, face $1. 
+.pn Pushback approved, facing north.
+.pnf Repoussage approuvé, face nord.  
+.pne Pushback approved, facing north-east. 
+.pnef Repoussage approuvé, face nord-est.  
+.pe Pushback approved, facing east.
+.pef Repoussage approuvé, face est. 
+.pse Pushback approved, facing south-east.
+.psef Repoussage approuvé, face sud-est. 
+.ps Pushback approved, facing south. 
+.psf Repoussage approuvé, face sud.
+.psw Pushback approved, facing south-west. 
+.pswf Repoussage approuvé, face sud-ouest.
+.pw Pushback approved, facing west. 
+.pwf Repoussage approuvé, face ouest.
+.pnw Pushback approved, facing north-west.
+.pnwf Repoussage approuvé, face nord-ouest.
+
+
+;*** 07 Taxi ***
+.rrt Report ready for taxi. 
+.rrtf Rappelez prêt à rouler.
+.rft Are you ready for taxi?
+.rftf Etes-vous prêt à rouler?
+.tv Taxi via $1.
+.tvf Roulez via $1.
+.thp Taxi holding point runway $deprwy via $1.
+.thpf Roulez point d'attente piste $deprwy via $1.  
+.tts Taxi to stand $1 via $2. 
+.ttg Taxi to stand $1 via $2.
+.ttsf Roulez poste $1 via $2. 
+.ttgf Roulez poste $1 via $2. 
+.ttc Taxi stand of your choice. 
+.ttcf Roulez poste à discretion.
+.hst Hold short of taxiway $1. 
+.hstf Maintenez avant le taxiway $1. 
+.ths Taxi via $1, hold short of runway $2. 
+.ths Roulez via $1, point d'attete piste $2. 
+.hs Hold short of runway $1. 
+.hsf Maintenez avant la piste $1.
+.xr Cross runway $1.
+.xrf Traversez piste $1.
+.hp HOLD POSITION. 
+.hpf MAINTENEZ POSITION.
+.gw Give way to a $1. 
+.gwf Laissez passer un $1. 
+.wcc When clear of $1 continue taxi.
+.wccf Une fois clear du $1, pousuivez le roulage.
+
+
+;*** 08 Line up and departure ***
+.lu Line up and wait $deprwy.
+.luf Alignez vous et attendez piste $deprwy.
+.lubl Behind the $1 on final, line up and wait runway $deprwy behind.
+.lublf Derrière le $1 en final, alignez-vous et attendez piste $deprwy derrière. 
+.lubd Behind departing $1, line up and wait runway $deprwy.
+.lubdf Derrière le depart du $1, alignez-vous et attendez piste $deprwy.
+.bt backtrack runway $deprwy, line up and wait, report ready.
+.btf Remontez piste $deprwy, alignez-vous et attendez, rappelez prêt.
+.rrd Report ready for departure.
+.rrdf Rappelez prêt au depart.
+.rfd Are you ready for departure?
+.rfdf Etes-vous prêt au depart?
+.rfid Are you ready for immediate departure?
+.rfidf Etes-vous prêt pour un depart immédiat ?
+.afid Are you able to depart from runway $deprwy, intersection S 3? TORA xxxx meters.
+.afidf Pouvez-vous partir de la piste $deprwy intersection $1? TORA xxxx mètres.
+.cto runway $deprwy, cleared for take-off, wind $winds($dep).
+.ctof piste $deprwy, autorisé decollage, vent $winds($dep).
+.ctoi line up $deprwy, intersection xx, cleared for take-off, wind $winds($dep).
+.ctoif alignez-vous piste $deprwy, intersection xx, autorisé décollage, vent $winds($dep).
+.cito line up $deprwy, cleared for IMMEDIATE take-off, wind $winds($dep).
+.citof alignez-vous piste $deprwy, autorisé décollage IMMEDIAT, vent $winds($dep).
+.toc Hold position, CANCEL take-off, I say again, cancel take-off.
+.tocf Maintenez position, ANNULEZ le décollage, je répète, annulez le décollage.
+.stop STOP immediately, $aircraft, STOP immediately.
+.stopf STOPPEZ immédiatement, $aircraft, STOPPEZ immédiatement.
+
+
+;*** 10 Lateral Navigation ***
+.tl Turn left heading $1.
+.tlf Tournez a gauche cap $1.
+.tr Turn right heading $1.
+.trf Tournez a droite cap $1.
+.tld Turn left direct $1.
+.trd Turn Right direct $2.
+.tldf Tournez a gauche direct $1.
+.trdf Tournez a droite direct $1.
+.fh Fly heading $1.
+.fhf Volez cap $1.
+.lh Leave $1 heading $2.
+.lhf Quittez $1 cap $2.
+.rh Report heading.
+.rhf Reportez votre cap.
+.tlb Turn left by $1 degrees. 
+.tlbf Tournez à gauche de $1 degrees. 
+.trb Turn right by $1 degrees. 
+.trbf Tournez à droite de $1 degrees. 
+.rnh Report new heading.
+.rnhf Reportez votre nouveau cap.
+.pd Proceed direct $1.
+.pdf Procédez direct $1.
+.cot Clear of traffic, resume navigation to $1.
+.cotf Trafic croisé, reprenez votre navigation direct $1.
+.rcw Report clear of weather.
+.rcwf Rapplez clear météo.
+.ron Resume own navigation direct $uc($1), magnetic track $bear($1) distance $dist($1) miles.
+.cph Continue present heading.
+.cphf Continuez au cap actuel.
+.cphr Continue present heading and report.
+.cphrf Continuez au cap actuel et reportez-le.
+
+
+;*** 11 Vertical Navigation ***
+.c Climb FL $1.
+.cf Montez niveau $1.
+.autoclimblevel Climb FL $1.
+.ca Climb $1 ft.
+.caf Montez $1 ft.
+.caq Climb $1 ft, QNH $altim($dep).
+.caqf Montez $1 ft, QNH $altim($dep).
+.caqq Climb $1 ft, QNH $2.
+.caqqf Montez $1 ft, QNH $2.
+.autoclimbaltitude Climb to $1 ft, QNH $altim($dep).
+.d Descend FL $1.
+.df Descendez FL $1.
+.autodescendlevel Descend FL $1.
+.da Descend $1 ft.
+.daf Descendez $1 ft.
+.daq Descend $1 ft, QNH $altim($arr).
+.daqf Descendez $1 ft, QNH $altim($arr).
+.daqq Descend $1 ft, QNH $2.
+.daqqf Descendez $1 ft, QNH $2.
+.autodescendaltitude Descend $1 ft, QNH $altim($arr).
+.mf Maintain $1 feet.
+.mff Maintenez $1 feet.
+.ml Maintain FL $1.
+.mlf Maintenez FL $1.
+.rpa Report passing altitude.
+.rpaf Reportez votre altitude.
+.rrl Which level would you like for cruise today?
+.rrlf Vous souhaitez quel niveau aujourd'hui ?
+.rd Report ready for descend.
+.rdf Rappelez prêt à descendre
+.tod Report top of descent.
+.todf Rappelez top of descent.
+.rl Report level.
+.rlf Reportez votre niveau de vol.
+.wrd When ready, descend  FL $1.
+.wrdf Quand prêt, descendez FL $1.
+.wrdr When ready, descend to FL $1, be leveled by $2.
+.wrdrf Quand prêt, descendez FL $1, stable $2.
+.cas Check altimeter setting and confirm level. You are indicating $calt.
+.casf Verifiez votre altimètre et confirmez votre niveau. Vous indiquez $calt.
+.sas Set altimeter to standard pressure (1013 hPa or 2992 inHg).
+.sasf Mettez votre altimètre à la pression standard (1013 hPa ou 2992 inHg).
+.le Due to parity, only EVEN levels available. Do you prefer FL $1 or FL $2?
+.lef Cause parité, seulement les niveaux pairs sont disponible. Vous préfèrez le FL $1 or FL $2 ?
+.lo Currently only ODD levels available. Do you prefer FL $1 or FL $2?
+.lof Cause parité, seulement les niveaux impairs sont disponible. Vous préfèrez le FL $1 or FL $2 ?
+.roc Climb at $1 ft per minute 
+.rocf Montez à $1 ft par minute.
+.rod Descend at $1 ft per minute 
+.rodf Descendez à $1 ft par minute.
+.rroc Report rate of climb.
+.rrocf Reportez votre taux de montée.
+.rrod Report rate of descent.
+.rrodf Reportez votre taux de descente.
+
+
+;*** 12 Approach ***
+.arr? Confirm able $star arrival?
+.arrf? Pouvez-vous suivre l'arrivée $star?
+.tra? Confirm able $star transition?
+.traf? Pouvez-vous suivre la transition $star?
+.arr Cleared $star arrival. 
+.arrf Autorisé arrivée $star
+.tra Cleared $star transition.
+.traf Autorisé transition $star.
+.ev Expect vectoring for $1 approach runway $arrrwy.
+.evf Prévoyez guidage approche $1 runway $arrrwy.
+.et Expect RNAV transition for $1 approach runway $arrrwy.
+.etf Prévoyez la transition RNAV pour l'approche $1 runway $arrrwy.
+.v Vectoring $1 approach runway $arrrwy.
+.vf Guidage approche $1 runway $arrrwy.
+.ils Cleared ILS approach runway $arrrwy. Report established.
+.ilsf Autorisé approche ILS piste $arrrwy. Rappelez établi.
+.autoclearedils Cleared ILS approach runway $1. Report established.
+.rnp Cleared RNP approach runway $arrrwy. Report established.
+.rnpf Autorisé approche RNP piste $arrrwy. Rappelez établi.
+.vor Cleared VOR/DME approach runway $arrrwy. Report established.
+.vorf Autorisé approche VOR piste $arrrwy. Rappelez établi.
+.ndb Cleared NDB approach runway $arrrwy. Report established.
+.ndbf Autorisé approche NDB piste $arrrwy. Rappelez établi.
+.autoclearedvisual Cleared Visual approach runway $1. Report runway in sight.
+.coa Continue approach runway $arrrwy, wind $winds($arr).
+.coaf Continuez approche piste $arrrwy, vent $winds($arr).
+.llc Continue approach, expect late landing clearance, wind $winds($arr).
+.llcf Continuez approche, prévoyez clairance tardive, vent $winds($arr).
+.tm $1 track miles to touchdown.
+.tmf Prévoyez $1 nautiques jusqu'au seuil.
+.ris Report runway in sight.
+.risf Rappelez la piste en vue.
+.wc wind $winds($arr)
+
+
+;*** 13 Speed Control ***
+.rs Report speed.
+.rsf Reportez votre vitesse.
+.s Maintain speed $1 knots 
+.autospeed Maintain speed $1 knots 
+.sr Reduce speed $1 knots.
+.sr Réduisez vitesse $1 knots.
+.si Increase speed $1 knots.
+.sif Accélerez vitesse $1 noeuds.
+.rm Report mach number.
+.rmf Reportez votre point de mach.
+.m Maintain mach number $1.
+.mf Maintenez mach $1.
+.automach Maintain mach number $1. 
+.mc Reduce to minimum clean speed.
+.mcf Reduisez vitesse minimum en lisse.
+.mcr Reduce to minimum clean speed and report.
+.mcrf Reduisez vitesse minimum en lisse et reportez-la.
+.ma Reduce to minimum approach speed.
+.maf Reduisez vitesse minimale d'approche.
+.nsr No speed restrictions.
+.nsrf Pas de limitations de vitesse.
+.autonospeed No speed restrictions.
+.rns Resume normal speed.
+
+
+;*** 14 Holdings ***
+.pho Proceed $1. Hold as published.
+.phof Procédez $1. Attendez comme publié.
+.ho Hold at $1, as published.
+.hof Attendez à $1 comme publié.
+.hor Hold at $1, inbound track $2�, right hand pattern.
+.hol Hold at $1, inbound track $2�, left hand pattern.
+
+
+;*** 15 Landing ***
+.ctl Runway $arrrwy, cleared to land, wind $winds($arr).
+.ctlf Piste  $arrrwy, autorisez atterrissage, vent $winds($arr).
+.ctg Runway $arrrwy, cleared to touch and go, wind $winds($arr).
+.ctff Piste  $arrrwy, autorisez touché, vent $winds($arr).
+.csg Runway $arrrwy, cleared to stand and go, wind $winds($arr). Report report ready for departure.
+.csgf Piste  $arrrwy, autorisez atterrisage, vent $winds($arr). Rappelez prêt au départ.
+.clp Runway $arrrwy, cleared low pass, wind $winds($arr).
+.clpf Piste  $arrrwy, autorisez passage bas, vent $winds($arr).
+.avr After landing vacate to the RIGHT. 
+.avrf Après l'atterrissage dégagez à DROITE.
+.avl After landing vacate to the LEFT. 
+.avlf Après l'atterrissage dégagez à GAUCHE.
+.rt Runway $1 is available for taxi.
+.vapp Cleared visual approach runway XX.
+
+
+;*** 16 After landing ***
+.vr Vacate runway to the RIGHT.
+.vrf Degagez la piste sur la DROITE.
+.vl Vacate runway to the LEFT.
+.vlf Degagez la piste sur la GAUCHE.
+.vv Vacate via $1. 
+.vvf Degagez via $1.
+.wel Welcome to $arr. 
+.welf Bienvenue à $arr. 
+.bye Thanks for coming to $arr, good bye and see you next time!
+.byef Merci du passage à $arr, au revoir et à la prochaine !
+
+
+;*** 17 VFR ***
+.wtb Number 2, caution wake turbulence, preceding traffic category $1 ,report final $arrrwy.
+.wtbf Numéro 2, attention à la turbulence de sillage, traffic précédent catégorie $1, rappelez finale $arrrwy.
+.in Cleared to $1 via $2, $3. Clearance limit.
+.inf Autorisé jusqu'à $1 via $2, $3. Limite de clairance.
+.lr Expect runway $arrrwy. 
+.lrf Prévoyez piste $arrrwy.
+.out Proceed Route $1, report leaving.
+.outf Suivez l'itinéraire $1, rappelez en sortie.
+.mlt Make left turns. 
+.mltf Faites des virages gauches.
+.mrt Make right turns. 
+.mlrf Faites des virages droites.
+.lta Right turn approved.
+.jld Join left downind runway $arrrwy.
+.jldf Entrez la vent arrière main gauche piste $arrrwy.
+.jrd Join RIGHT downwind runway $arrrwy.
+.jrdf Entrez vent arrière main droite piste $arrrwy.
+.jlb Join left base runway $arrrwy.
+.jrbf Entrez base gauche piste $arrrwy.
+.jrb Join RIGHT base runway $arrrwy.
+.jlbf Entrez vent arrière main droite piste $arrrwy.
+.ed Extend downwind, I call tou back.
+.edf Etendez la vent arrière, je vous rappelle.
+.tb Turn now for base.
+.tbf Tournez maintenant en base.
+.msa Make straight-in approach runway $arrrwy. 
+.msaf Procédez à une approche directe piste $arrrwy. 
+.mfs Make full stop landing. 
+.mfsf Faites un complet.
+.orl Orbit left.
+.orl Faites une orbite sur la gauche.
+.orr Orbit right.
+.orr Faites une orbite sur la droite.
+.ra Routing approved.
+.raf itinéraire approuvée.
+.hov Hold visually overhead $1.
+.hovf Attendez à vue verticale $1.
+
+
+;*** 18 Others ***
+.dis Disregard. 
+.rac Report aircraft type (and version).
+.racf Reportez votre typed (appareil et la version).
+.ri Report intentions.
+.rif Quelles sont vos intentions ?
+.wx Metreport $metar($1).
+.wxa Metreport $metar($arr).
+.q QNH $1.
+.qd QNH $altim($dep).
+.qa QNH $altim($arr).
+.sb Standby, I'll call you back.
+.sbf Standby, JE vous rappelle.
+.r Roger.
+.rf Recu
+
+
+;*** 19 AIRAC ***
+.csr .msg $aircraft At the moment, your call sign is not listed in our database. Please register your airline on gng.aero-nav.com/AERONAV/icao_request_airlines. If you continue to fly in our region, your call sign may be included in our controller files.
+.csrf .msg $aircraft Pour le moment, votre indicatif n'est pas listé dans notre base. S'il vous plait, pouvez vous enregritrer votre compagnie sur gng.aero-nav.com/AERONAV/icao_request_airlines. Si vous continuez à voler dans notre region, votre indicatif d'appel sera alors peut être inclus dans notre liste.
+.csv .msg $aircraft At the moment, your call sign is not listed in our database. Please register your VA on gng.aero-nav.com/AERONAV/icao_request_vairlines. If you continue to fly in our region, your call sign may be included in our controller files.
+.csrf .msg $aircraft Pour le moment, votre indicatif n'est pas listé dans notre base. S'il vous plait, pouvez vous enregritrer votre VA sur gng.aero-nav.com/AERONAV/icao_request_vairlines. Si vous continuez à voler dans notre region, votre indicatif d'appel sera alors peut être inclus dans notre liste.

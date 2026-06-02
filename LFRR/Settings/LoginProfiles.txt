@@ -203,6 +203,10 @@ PROFILE:LFRK_TWR:30:4
 ATIS2:Caen Tower - EN/FR
 ATIS3:Check your charts! chartfox.org/LFRK
 ATIS4:Leave us some feedback! vatsim.fr/fb/VOTRE_CID_ICI
+PROFILE:LFRM_TWR:30:4
+ATIS2:Le Mans Tower - EN/FR
+ATIS3:Check your charts! chartfox.org/LFRM
+ATIS4:Leave us some feedback! vatsim.fr/fb/VOTRE_CID_ICI
 PROFILE:LFRM_I_TWR:30:4
 ATIS2:Le Mans Information - EN/FR
 ATIS3:Check your charts! chartfox.org/LFRM

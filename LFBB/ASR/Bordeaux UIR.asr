@@ -18,6 +18,8 @@ DisplayRotation:0.00000
 TAGFAMILY:CoFrance
 WINDOWAREA:41.318578:-9.401559:49.242442:12.500500
 PLUGIN:CoFrance:EnabledMaps:LFBB/Carte_Trajectoires_UIR
+PLUGIN:CoFrance:HistoryTrailEnabled:1
+PLUGIN:CoFrance:HistoryTrailNumber:10
 PLUGIN:CoFrance:LowerAlt:0
 PLUGIN:CoFrance:LowerAltEnabled:1
 PLUGIN:CoFrance:TagFormat:default

@@ -7,147 +7,35 @@ PROFILE:LFBB_CTR:300:6
 ATIS2:Bordeaux Control - EN/FR
 ATIS3:Sector Coverage - map.vatsim.net | CPDLC [LFXX]
 ATIS4:Leave us some feedback! vatsim.fr/fb/VOTRE_CID_ICI
-PROFILE:LFBB_H_CTR:300:6
+PROFILE:LFBB_H1_CTR:300:6
 ATIS2:Bordeaux Control - EN/FR
 ATIS3:Sector Coverage - map.vatsim.net | CPDLC [LFXX]
 ATIS4:Leave us some feedback! vatsim.fr/fb/VOTRE_CID_ICI
-PROFILE:LFBB_H2_CTR:300:6
+PROFILE:LFBB_L1_CTR:300:6
 ATIS2:Bordeaux Control - EN/FR
 ATIS3:Sector Coverage - map.vatsim.net | CPDLC [LFXX]
 ATIS4:Leave us some feedback! vatsim.fr/fb/VOTRE_CID_ICI
-PROFILE:LFBB_H3_CTR:300:6
+PROFILE:LFBB_N1_CTR:300:6
 ATIS2:Bordeaux Control - EN/FR
 ATIS3:Sector Coverage - map.vatsim.net | CPDLC [LFXX]
 ATIS4:Leave us some feedback! vatsim.fr/fb/VOTRE_CID_ICI
-PROFILE:LFBB_H4_CTR:300:6
+PROFILE:LFBB_P1_CTR:300:6
 ATIS2:Bordeaux Control - EN/FR
 ATIS3:Sector Coverage - map.vatsim.net | CPDLC [LFXX]
 ATIS4:Leave us some feedback! vatsim.fr/fb/VOTRE_CID_ICI
-PROFILE:LFBB_H5_CTR:300:6
+PROFILE:LFBB_R1_CTR:300:6
 ATIS2:Bordeaux Control - EN/FR
 ATIS3:Sector Coverage - map.vatsim.net | CPDLC [LFXX]
 ATIS4:Leave us some feedback! vatsim.fr/fb/VOTRE_CID_ICI
-PROFILE:LFBB_L_CTR:300:6
+PROFILE:LFBB_T1_CTR:300:6
 ATIS2:Bordeaux Control - EN/FR
 ATIS3:Sector Coverage - map.vatsim.net | CPDLC [LFXX]
 ATIS4:Leave us some feedback! vatsim.fr/fb/VOTRE_CID_ICI
-PROFILE:LFBB_L2_CTR:300:6
+PROFILE:LFBB_X1_CTR:300:6
 ATIS2:Bordeaux Control - EN/FR
 ATIS3:Sector Coverage - map.vatsim.net | CPDLC [LFXX]
 ATIS4:Leave us some feedback! vatsim.fr/fb/VOTRE_CID_ICI
-PROFILE:LFBB_L4_CTR:300:6
-ATIS2:Bordeaux Control - EN/FR
-ATIS3:Sector Coverage - map.vatsim.net | CPDLC [LFXX]
-ATIS4:Leave us some feedback! vatsim.fr/fb/VOTRE_CID_ICI
-PROFILE:LFBB_L5_CTR:300:6
-ATIS2:Bordeaux Control - EN/FR
-ATIS3:Sector Coverage - map.vatsim.net | CPDLC [LFXX]
-ATIS4:Leave us some feedback! vatsim.fr/fb/VOTRE_CID_ICI
-PROFILE:LFBB_N_CTR:300:6
-ATIS2:Bordeaux Control - EN/FR
-ATIS3:Sector Coverage - map.vatsim.net | CPDLC [LFXX]
-ATIS4:Leave us some feedback! vatsim.fr/fb/VOTRE_CID_ICI
-PROFILE:LFBB_N2_CTR:300:6
-ATIS2:Bordeaux Control - EN/FR
-ATIS3:Sector Coverage - map.vatsim.net | CPDLC [LFXX]
-ATIS4:Leave us some feedback! vatsim.fr/fb/VOTRE_CID_ICI
-PROFILE:LFBB_N3_CTR:300:6
-ATIS2:Bordeaux Control - EN/FR
-ATIS3:Sector Coverage - map.vatsim.net | CPDLC [LFXX]
-ATIS4:Leave us some feedback! vatsim.fr/fb/VOTRE_CID_ICI
-PROFILE:LFBB_N4_CTR:300:6
-ATIS2:Bordeaux Control - EN/FR
-ATIS3:Sector Coverage - map.vatsim.net | CPDLC [LFXX]
-ATIS4:Leave us some feedback! vatsim.fr/fb/VOTRE_CID_ICI
-PROFILE:LFBB_N5_CTR:300:6
-ATIS2:Bordeaux Control - EN/FR
-ATIS3:Sector Coverage - map.vatsim.net | CPDLC [LFXX]
-ATIS4:Leave us some feedback! vatsim.fr/fb/VOTRE_CID_ICI
-PROFILE:LFBB_P_CTR:300:6
-ATIS2:Bordeaux Control - EN/FR
-ATIS3:Sector Coverage - map.vatsim.net | CPDLC [LFXX]
-ATIS4:Leave us some feedback! vatsim.fr/fb/VOTRE_CID_ICI
-PROFILE:LFBB_P3_CTR:300:6
-ATIS2:Bordeaux Control - EN/FR
-ATIS3:Sector Coverage - map.vatsim.net | CPDLC [LFXX]
-ATIS4:Leave us some feedback! vatsim.fr/fb/VOTRE_CID_ICI
-PROFILE:LFBB_P4_CTR:300:6
-ATIS2:Bordeaux Control - EN/FR
-ATIS3:Sector Coverage - map.vatsim.net | CPDLC [LFXX]
-ATIS4:Leave us some feedback! vatsim.fr/fb/VOTRE_CID_ICI
-PROFILE:LFBB_R_CTR:300:6
-ATIS2:Bordeaux Control - EN/FR
-ATIS3:Sector Coverage - map.vatsim.net | CPDLC [LFXX]
-ATIS4:Leave us some feedback! vatsim.fr/fb/VOTRE_CID_ICI
-PROFILE:LFBB_R2_CTR:300:6
-ATIS2:Bordeaux Control - EN/FR
-ATIS3:Sector Coverage - map.vatsim.net | CPDLC [LFXX]
-ATIS4:Leave us some feedback! vatsim.fr/fb/VOTRE_CID_ICI
-PROFILE:LFBB_R3_CTR:300:6
-ATIS2:Bordeaux Control - EN/FR
-ATIS3:Sector Coverage - map.vatsim.net | CPDLC [LFXX]
-ATIS4:Leave us some feedback! vatsim.fr/fb/VOTRE_CID_ICI
-PROFILE:LFBB_R4_CTR:300:6
-ATIS2:Bordeaux Control - EN/FR
-ATIS3:Sector Coverage - map.vatsim.net | CPDLC [LFXX]
-ATIS4:Leave us some feedback! vatsim.fr/fb/VOTRE_CID_ICI
-PROFILE:LFBB_R5_CTR:300:6
-ATIS2:Bordeaux Control - EN/FR
-ATIS3:Sector Coverage - map.vatsim.net | CPDLC [LFXX]
-ATIS4:Leave us some feedback! vatsim.fr/fb/VOTRE_CID_ICI
-PROFILE:LFBB_T_CTR:300:6
-ATIS2:Bordeaux Control - EN/FR
-ATIS3:Sector Coverage - map.vatsim.net | CPDLC [LFXX]
-ATIS4:Leave us some feedback! vatsim.fr/fb/VOTRE_CID_ICI
-PROFILE:LFBB_T2_CTR:300:6
-ATIS2:Bordeaux Control - EN/FR
-ATIS3:Sector Coverage - map.vatsim.net | CPDLC [LFXX]
-ATIS4:Leave us some feedback! vatsim.fr/fb/VOTRE_CID_ICI
-PROFILE:LFBB_T3_CTR:300:6
-ATIS2:Bordeaux Control - EN/FR
-ATIS3:Sector Coverage - map.vatsim.net | CPDLC [LFXX]
-ATIS4:Leave us some feedback! vatsim.fr/fb/VOTRE_CID_ICI
-PROFILE:LFBB_T4_CTR:300:6
-ATIS2:Bordeaux Control - EN/FR
-ATIS3:Sector Coverage - map.vatsim.net | CPDLC [LFXX]
-ATIS4:Leave us some feedback! vatsim.fr/fb/VOTRE_CID_ICI
-PROFILE:LFBB_X_CTR:300:6
-ATIS2:Bordeaux Control - EN/FR
-ATIS3:Sector Coverage - map.vatsim.net | CPDLC [LFXX]
-ATIS4:Leave us some feedback! vatsim.fr/fb/VOTRE_CID_ICI
-PROFILE:LFBB_X2_CTR:300:6
-ATIS2:Bordeaux Control - EN/FR
-ATIS3:Sector Coverage - map.vatsim.net | CPDLC [LFXX]
-ATIS4:Leave us some feedback! vatsim.fr/fb/VOTRE_CID_ICI
-PROFILE:LFBB_X3_CTR:300:6
-ATIS2:Bordeaux Control - EN/FR
-ATIS3:Sector Coverage - map.vatsim.net | CPDLC [LFXX]
-ATIS4:Leave us some feedback! vatsim.fr/fb/VOTRE_CID_ICI
-PROFILE:LFBB_X4_CTR:300:6
-ATIS2:Bordeaux Control - EN/FR
-ATIS3:Sector Coverage - map.vatsim.net | CPDLC [LFXX]
-ATIS4:Leave us some feedback! vatsim.fr/fb/VOTRE_CID_ICI
-PROFILE:LFBB_X5_CTR:300:6
-ATIS2:Bordeaux Control - EN/FR
-ATIS3:Sector Coverage - map.vatsim.net | CPDLC [LFXX]
-ATIS4:Leave us some feedback! vatsim.fr/fb/VOTRE_CID_ICI
-PROFILE:LFBB_Z_CTR:300:6
-ATIS2:Bordeaux Control - EN/FR
-ATIS3:Sector Coverage - map.vatsim.net | CPDLC [LFXX]
-ATIS4:Leave us some feedback! vatsim.fr/fb/VOTRE_CID_ICI
-PROFILE:LFBB_Z2_CTR:300:6
-ATIS2:Bordeaux Control - EN/FR
-ATIS3:Sector Coverage - map.vatsim.net | CPDLC [LFXX]
-ATIS4:Leave us some feedback! vatsim.fr/fb/VOTRE_CID_ICI
-PROFILE:LFBB_Z3_CTR:300:6
-ATIS2:Bordeaux Control - EN/FR
-ATIS3:Sector Coverage - map.vatsim.net | CPDLC [LFXX]
-ATIS4:Leave us some feedback! vatsim.fr/fb/VOTRE_CID_ICI
-PROFILE:LFBB_Z4_CTR:300:6
-ATIS2:Bordeaux Control - EN/FR
-ATIS3:Sector Coverage - map.vatsim.net | CPDLC [LFXX]
-ATIS4:Leave us some feedback! vatsim.fr/fb/VOTRE_CID_ICI
-PROFILE:LFBB_Z5_CTR:300:6
+PROFILE:LFBB_Z1_CTR:300:6
 ATIS2:Bordeaux Control - EN/FR
 ATIS3:Sector Coverage - map.vatsim.net | CPDLC [LFXX]
 ATIS4:Leave us some feedback! vatsim.fr/fb/VOTRE_CID_ICI

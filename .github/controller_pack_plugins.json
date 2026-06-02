@@ -14,7 +14,7 @@
     },
     {
       "name": "EuroscopeRPC",
-      "current": "1.0.0",
+      "current": "1.0.2",
       "github": "AlexisBalzano/EuroscopeRPC",
       "include_prereleases": false
     },

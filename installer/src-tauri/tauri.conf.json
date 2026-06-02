@@ -1,0 +1,47 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "French vACC Controller Pack Installer",
+  "version": "0.1.0",
+  "identifier": "fr.vacc.controller-pack-installer",
+  "build": {
+    "beforeDevCommand": "bun run dev",
+    "devUrl": "http://localhost:3000",
+    "beforeBuildCommand": "bun run build",
+    "frontendDist": "../dist"
+  },
+  "app": {
+    "windows": [
+      {
+        "title": "French vACC Controller Pack Installer",
+        "width": 960,
+        "height": 720,
+        "minWidth": 800,
+        "minHeight": 600,
+        "resizable": true
+      }
+    ],
+    "security": {
+      "csp": null
+    }
+  },
+  "bundle": {
+    "active": true,
+    "targets": ["nsis"],
+    "createUpdaterArtifacts": true,
+    "icon": [
+      "icons/icon.ico"
+    ]
+  },
+  "plugins": {
+    "updater": {
+      "active": true,
+      "endpoints": [
+        "https://github.com/vaccfr/Sector-Files/releases/latest/download/latest.json"
+      ],
+      "pubkey": "dW50cnVzdGVkIGNvbW1lbnQ6IG1pbmlzaWduIHB1YmxpYyBrZXk6IEQ1NDI5RDRCQkQ3MkIwOEMKUldTTXNISzlTNTFDMVpZa1JwaGpIRUVia1d5RHhReGlFQnlSZ2hOV2ZXVVc4UTJKMTBpMVhMYk8K",
+      "windows": {
+        "installMode": "passive"
+      }
+    }
+  }
+}

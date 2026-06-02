@@ -14,3 +14,15 @@ venv/
 
 Thumbs.db
 Desktop.ini
+
+# Tauri / Rust build artifacts
+target/
+*.pdb
+
+# Node / Bun
+node_modules/
+
+# Tauri-generated files
+installer/src-tauri/gen/schemas/
+installer/src-tauri/.cargo/
+installer/dist/

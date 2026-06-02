@@ -1,0 +1,109 @@
+name: Build Installer (Tauri)
+
+# Builds the Windows x64 controller-pack installer and publishes the Tauri
+# auto-update artifacts (signed NSIS installer + latest.json).
+#
+# Auto-updates require these repository secrets:
+#   TAURI_SIGNING_PRIVATE_KEY           the Tauri updater private key
+#   TAURI_SIGNING_PRIVATE_KEY_PASSWORD  its password (empty string if none)
+# and the matching public key in installer/src-tauri/tauri.conf.json
+# (plugins.updater.pubkey). Generate the keypair with `bun tauri signer generate`.
+#
+# Release flow: the installer is built ONLY when a GitHub Release is published.
+# A single combined release goes out roughly once a month and may carry AIRAC
+# (sector) changes, installer changes, or both — so every published release
+# rebuilds, signs and attaches the installer + latest.json to that release. The
+# app's updater endpoint then reads .../releases/latest/. (Bump the version in
+# tauri.conf.json when the installer itself changes so clients see an update.)
+
+on:
+  push:
+    branches-ignore: [main]
+    paths:
+      - "installer/**"
+      - ".github/workflows/build-installer-tauri.yml"
+  pull_request:
+    paths:
+      - "installer/**"
+      - ".github/workflows/build-installer-tauri.yml"
+  release:
+    types: [published]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  core-tests:
+    name: Core unit + integration tests
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: dtolnay/rust-toolchain@stable
+      - uses: Swatinem/rust-cache@v2
+        with:
+          workspaces: installer
+      - name: Run core tests
+        working-directory: installer
+        run: cargo test -p controller-pack-core --verbose
+
+  smoke-build:
+    name: Linux smoke build
+    if: github.event_name != 'release'
+    runs-on: ubuntu-latest
+    needs: core-tests
+    steps:
+      - uses: actions/checkout@v6
+      - uses: dtolnay/rust-toolchain@stable
+      - uses: Swatinem/rust-cache@v2
+        with:
+          workspaces: installer
+      - uses: oven-sh/setup-bun@v2
+      - name: Install Linux system deps
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y \
+            libwebkit2gtk-4.1-dev \
+            libappindicator3-dev \
+            librsvg2-dev \
+            patchelf \
+            libsoup-3.0-dev
+      - name: Frontend install
+        working-directory: installer
+        run: bun install
+      - name: Type-check + build frontend
+        working-directory: installer
+        run: bun run build
+      - name: Rust check (Tauri crate)
+        working-directory: installer/src-tauri
+        run: cargo check --all-targets
+
+  release-build:
+    name: Windows x64 installer
+    if: github.event_name == 'release'
+    needs: core-tests
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: dtolnay/rust-toolchain@stable
+        with:
+          targets: x86_64-pc-windows-msvc
+      - uses: Swatinem/rust-cache@v2
+        with:
+          workspaces: installer
+      - uses: oven-sh/setup-bun@v2
+      - name: Frontend install
+        working-directory: installer
+        run: bun install
+      - name: Build, sign and publish (Windows x64 + updater)
+        uses: tauri-apps/tauri-action@v0
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          TAURI_SIGNING_PRIVATE_KEY: ${{ secrets.TAURI_SIGNING_PRIVATE_KEY }}
+          TAURI_SIGNING_PRIVATE_KEY_PASSWORD: ${{ secrets.TAURI_SIGNING_PRIVATE_KEY_PASSWORD }}
+        with:
+          projectPath: installer
+          tagName: ${{ github.event.release.tag_name }}
+          releaseId: ${{ github.event.release.id }}
+          args: --target x86_64-pc-windows-msvc
+          includeUpdaterJson: true

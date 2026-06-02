@@ -23,16 +23,29 @@ These components are maintained here to streamline updates and allow community c
 
 ---
 
-## ⬇️ Download Official Controller Packs
+## ⬇️ Install or Update the Controller Pack
 
-To download the full, ready-to-use controller packs, visit **files.aero-nav.com** and sign in with your VATSIM account:
+Use the **Controller Pack Installer** — a single signed desktop app that:
+
+- Downloads and applies the latest configuration from this GitHub repository.
+- Authenticates against `files.aero-nav.com` (VATSIM OAuth) and pulls the latest AIRAC files in the background.
+- Stores your CID, password, rating, and EuroScopeRPC preference once and applies them to every profile.
+- Auto-updates itself via Tauri's signed updater channel.
+
+Download the latest `installer-v*` release here: **https://github.com/vaccfr/Sector-Files/releases?q=installer**
+
+For maintainers cutting installer releases, see [installer/RELEASE.md](installer/RELEASE.md).
+
+### Raw GNG package mirrors
+
+If you need the raw AeroNav archives without the installer (e.g. for debugging), they live at:
 
 - CoFrance Base Package: https://files.aero-nav.com/LFFM
-- Bordeaux (LFBB): https://files.aero-nav.com/LFBB  
-- Reims (LFEE): https://files.aero-nav.com/LFEE  
-- Paris (LFFF): https://files.aero-nav.com/LFFF  
-- Marseille (LFMM): https://files.aero-nav.com/LFMM  
-- Brest (LFRR): https://files.aero-nav.com/LFRR  
+- Bordeaux (LFBB): https://files.aero-nav.com/LFBB
+- Reims (LFEE): https://files.aero-nav.com/LFEE
+- Paris (LFFF): https://files.aero-nav.com/LFFF
+- Marseille (LFMM): https://files.aero-nav.com/LFMM
+- Brest (LFRR): https://files.aero-nav.com/LFRR
 
 ---
 
