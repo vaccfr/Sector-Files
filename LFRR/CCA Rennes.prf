@@ -37,8 +37,8 @@ RecentFiles	Recent4	\ASR\AVISOs\LFRN Rennes AVISO.asr
 RecentFiles	Recent5	\ASR\AVISOs\LFRD Dinard AVISO.asr
 RecentFiles	Recent6	\ASR\AVISOs\LFRK Caen AVISO.asr
 RecentFiles	Recent7	\ASR\AVISOs\LFRG Deauville AVISO.asr
-RecentFiles	Recent7	\ASR\AVISOs\LFOH Le Havre AVISO.asr
-RecentFiles	Recent7	\ASR\AVISOs\LFRG Deauville AVISO.asr
+RecentFiles	Recent8	\ASR\AVISOs\LFOH Le Havre AVISO.asr
+RecentFiles	Recent9	\ASR\AVISOs\LFRC Cherbourg AVISO.asr
 Settings	AselKey	5111808
 Settings	FreqKey	3604480
 Settings	Settingsfile	\..\LFXX\Settings\General.txt
@@ -99,5 +99,4 @@ LastSession	range	275
 LastSession	proxyserver	localhost
 LastSession	simdatapublish	0
 LastSession	atis_freq4	118000
-RecentFiles	Recent8	\ASR\AVISOs\LFOH Le Havre AVISO.asr
-RecentFiles	Recent9	\ASR\AVISOs\LFRC Cherbourg AVISO.asr
+LastSession	server	AUTOMATIC
