@@ -1,20 +1,14 @@
 name: Build Installer (Tauri)
 
 # Builds the Windows x64 controller-pack installer and publishes the Tauri
-# auto-update artifacts (signed NSIS installer + latest.json).
+# auto-update artifacts (signed NSIS installer + latest.json) on release,
+# or uploads them as workflow artifacts on manual dispatch.
 #
 # Auto-updates require these repository secrets:
 #   TAURI_SIGNING_PRIVATE_KEY           the Tauri updater private key
 #   TAURI_SIGNING_PRIVATE_KEY_PASSWORD  its password (empty string if none)
 # and the matching public key in installer/src-tauri/tauri.conf.json
 # (plugins.updater.pubkey). Generate the keypair with `bun tauri signer generate`.
-#
-# Release flow: the installer is built ONLY when a GitHub Release is published.
-# A single combined release goes out roughly once a month and may carry AIRAC
-# (sector) changes, installer changes, or both — so every published release
-# rebuilds, signs and attaches the installer + latest.json to that release. The
-# app's updater endpoint then reads .../releases/latest/. (Bump the version in
-# tauri.conf.json when the installer itself changes so clients see an update.)
 
 on:
   push:
@@ -49,7 +43,8 @@ jobs:
 
   smoke-build:
     name: Linux smoke build
-    if: github.event_name != 'release'
+    # Only run smoke build on PRs and pushes (saves time/cost on manual triggers & releases)
+    if: github.event_name == 'push' || github.event_name == 'pull_request'
     runs-on: ubuntu-latest
     needs: core-tests
     steps:
@@ -80,7 +75,8 @@ jobs:
 
   release-build:
     name: Windows x64 installer
-    if: github.event_name == 'release'
+    # Run on formal releases OR manual workflow dispatches
+    if: github.event_name == 'release' || github.event_name == 'workflow_dispatch'
     needs: core-tests
     runs-on: windows-latest
     steps:
@@ -95,7 +91,9 @@ jobs:
       - name: Frontend install
         working-directory: installer
         run: bun install
-      - name: Build, sign and publish (Windows x64 + updater)
+        
+      # Build, sign and conditionally publish to the release (if it's a release event)
+      - name: Build and compile (Tauri Action)
         uses: tauri-apps/tauri-action@v0
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -107,3 +105,14 @@ jobs:
           releaseId: ${{ github.event.release.id }}
           args: --target x86_64-pc-windows-msvc
           includeUpdaterJson: true
+
+      # This step only runs if you manually triggered the workflow via 'workflow_dispatch'
+      - name: Upload Windows Build Artifacts
+        if: github.event_name == 'workflow_dispatch'
+        uses: actions/upload-artifact@v4
+        with:
+          name: windows-installer-x64
+          path: |
+            installer/target/**/release/bundle/nsis/*.exe
+            installer/target/**/release/bundle/nsis/*.nsis.zip*
+          retention-days: 7

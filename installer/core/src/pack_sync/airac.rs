@@ -17,16 +17,60 @@ use std::sync::OnceLock;
 pub fn parse_gng_sector_filename(name: &str) -> Option<(FirCode, Option<String>)> {
     // Look for a leading FIR code followed by a delimiter we recognise.
     let fir = leading_fir_code(name)?;
+    Some((fir, parse_airac_cycle(name)))
+}
 
-    // FIR found. Try to extract an AIRAC cycle. The cycle is the first
-    // 6-digit numeric group found between dashes.
-    let cycle = SIX_DIGIT_GROUP
+/// The GNG "combined" sector code for the northern France pack. Its single
+/// sector file serves both the Paris (LFFF) and Reims (LFEE) FIRs.
+pub const LFXXN_CODE: &str = "LFXXN";
+
+/// Parse a GNG sector/profile filename into the *set* of FIRs it covers plus the
+/// AIRAC cycle. Unlike [`parse_gng_sector_filename`], a combined code such as
+/// `LFXXN` resolves to several FIRs (e.g. `LFXXN-Paris-Reims_…` → LFFF + LFEE).
+/// A regular `<FIR>-…` filename resolves to that single FIR.
+///
+/// Examples:
+///   "LFXXN-Paris-Reims_20260605153747-260501-0001.sct" → ([LFFF, LFEE], "2605")
+///   "LFBB-Bordeaux-260301-0003.sct"                    → ([LFBB], "2603")
+pub fn parse_gng_sector_target(name: &str) -> Option<(Vec<FirCode>, Option<String>)> {
+    // A combined code (e.g. LFXXN) takes precedence; no FIR code is a prefix of
+    // it, so the order relative to the single-FIR check is not load-bearing.
+    let firs = if let Some(combined) = leading_combined_code(name) {
+        combined.to_vec()
+    } else {
+        vec![leading_fir_code(name)?]
+    };
+    Some((firs, parse_airac_cycle(name)))
+}
+
+/// Extract the AIRAC cycle: the first 6-digit numeric group found between
+/// dashes, of which the first 4 digits (YYMM) are the cycle. Returns `None` when
+/// no such group is present (e.g. a bare `LFBB.sct`). The `_`-prefixed 14-digit
+/// creation timestamp in newer GNG names is not delimited by dashes, so it is
+/// never mistaken for the cycle.
+fn parse_airac_cycle(name: &str) -> Option<String> {
+    SIX_DIGIT_GROUP
         .get_or_init(|| Regex::new(r"-(\d{6})-").expect("regex"))
         .captures(name)
         .and_then(|c| c.get(1))
-        .map(|m| cycle_from_six_digits(m.as_str()));
+        .map(|m| cycle_from_six_digits(m.as_str()))
+}
 
-    Some((fir, cycle))
+/// If `name` starts with a known combined code followed by a separator, the FIRs
+/// it covers. Mirrors [`leading_fir_code`]'s prefix+separator matching so that
+/// e.g. `LFXXNX` does not match.
+fn leading_combined_code(name: &str) -> Option<&'static [FirCode]> {
+    const COMBINED: &[(&str, &[FirCode])] =
+        &[(LFXXN_CODE, &[FirCode::LFFF, FirCode::LFEE])];
+    let upper = name.to_ascii_uppercase();
+    for (code, firs) in COMBINED {
+        if let Some(rest) = upper.strip_prefix(code) {
+            if rest.is_empty() || matches!(rest.chars().next(), Some('-' | '_' | ' ' | '.')) {
+                return Some(firs);
+            }
+        }
+    }
+    None
 }
 
 static SIX_DIGIT_GROUP: OnceLock<Regex> = OnceLock::new();
@@ -105,5 +149,45 @@ mod tests {
         assert!(parse_gng_sector_filename("LFXX-Base-260301-0003.sct").is_none());
         // LFXY is gibberish — not a known FIR.
         assert!(parse_gng_sector_filename("LFXY-Random.sct").is_none());
+    }
+
+    #[test]
+    fn combined_lfxxn_resolves_to_lfff_and_lfee() {
+        // The real GNG combined name embeds an `_`-prefixed 14-digit creation
+        // timestamp before the AIRAC group; the cycle must be the `-260501-`
+        // group (→ 2605), not any 6 digits of the timestamp.
+        let (firs, cycle) =
+            parse_gng_sector_target("LFXXN-Paris-Reims_20260605153747-260501-0001.sct").unwrap();
+        assert_eq!(firs, vec![FirCode::LFFF, FirCode::LFEE]);
+        assert_eq!(cycle.as_deref(), Some("2605"));
+    }
+
+    #[test]
+    fn combined_lfxxn_ese_variant() {
+        let (firs, cycle) =
+            parse_gng_sector_target("LFXXN-Paris-Reims_20260605153747-260501-0001.ese").unwrap();
+        assert_eq!(firs, vec![FirCode::LFFF, FirCode::LFEE]);
+        assert_eq!(cycle.as_deref(), Some("2605"));
+    }
+
+    #[test]
+    fn combined_lfxxn_is_not_a_single_fir() {
+        // The legacy single-FIR parser must not claim LFXXN as a FIR.
+        assert!(parse_gng_sector_filename("LFXXN-Paris-Reims_20260605153747-260501-0001.sct")
+            .is_none());
+    }
+
+    #[test]
+    fn sector_target_falls_back_to_single_fir() {
+        let (firs, cycle) =
+            parse_gng_sector_target("LFBB-Bordeaux-260301-0003.sct").unwrap();
+        assert_eq!(firs, vec![FirCode::LFBB]);
+        assert_eq!(cycle.as_deref(), Some("2603"));
+    }
+
+    #[test]
+    fn combined_code_requires_separator() {
+        // A longer code that merely starts with LFXXN must not match.
+        assert!(parse_gng_sector_target("LFXXNX-Random.sct").is_none());
     }
 }

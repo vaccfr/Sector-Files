@@ -37,8 +37,8 @@ RecentFiles	Recent4	\ASR\AVISOs\LFRS Nantes AVISO.asr
 RecentFiles	Recent5	\ASR\AVISOs\LFRZ Saint Nazaire AVISO.asr
 RecentFiles	Recent6	\ASR\AVISOs\LFRM Le Mans AVISO.asr
 RecentFiles	Recent7	\ASR\AVISOs\LFRI La Roche Sur Yon AVISO.asr
-RecentFiles	Recent8	\ASR\AVISOs\LFJR Angers AVISO.asr
-RecentFiles	Recent9	\ASR\AVISOs\LFEY Ile dYeu AVISO.asr
+RecentFiles	Recent7	\ASR\AVISOs\LFJR Angers AVISO.asr
+RecentFiles	Recent7	\ASR\AVISOs\LFRI La Roche Sur Yon AVISO.asr
 Settings	AselKey	5111808
 Settings	FreqKey	3604480
 Settings	Settingsfile	\..\LFXX\Settings\General.txt
@@ -100,3 +100,5 @@ LastSession	proxyserver	localhost
 LastSession	simdatapublish	0
 LastSession	atis_freq4	118000
 LastSession	server	AUTOMATIC
+RecentFiles	Recent8	\ASR\AVISOs\LFJR Angers AVISO.asr
+RecentFiles	Recent9	\ASR\AVISOs\LFEY Ile dYeu AVISO.asr

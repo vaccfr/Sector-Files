@@ -1,4 +1,4 @@
-use super::airac::parse_gng_sector_filename;
+use super::airac::{parse_gng_sector_target, LFXXN_CODE};
 use super::ownership::{gng_owned_set, is_gng_owned};
 use super::{COPYRIGHT_FILE, CURRENT_AIRAC_FILE, SECTORS_SUBPATH, SECTOR_BACKUP_DIRNAME};
 use crate::fir::FirCode;
@@ -126,6 +126,13 @@ fn detect_installed_codes(gng_roots: &[PathBuf]) -> (BTreeSet<FirCode>, bool) {
                 if matches_code(&upper, fir.as_str()) {
                     firs.insert(fir);
                 }
+            }
+            // The combined LFXXN package covers both LFFF and LFEE. LFXXN is not
+            // a FIR (and no FIR code is a prefix of it), so it is matched
+            // explicitly and expands to both covered FIRs.
+            if matches_code(&upper, LFXXN_CODE) {
+                firs.insert(FirCode::LFFF);
+                firs.insert(FirCode::LFEE);
             }
             if matches_code(&upper, LFFM_CODE) {
                 lffm = true;
@@ -395,20 +402,24 @@ fn plan_gng_overlay(
             .extension()
             .map(|e| e.to_string_lossy().to_ascii_lowercase());
 
-        // Sector files: rename to <FIR>.<ext>, place in LFXX/Sectors/.
+        // Sector files: rename to <FIR>.<ext>, place in LFXX/Sectors/. A combined
+        // code (e.g. LFXXN) fans the single source file out to one renamed sector
+        // per covered FIR.
         if let Some(ext) = ext.as_deref().and_then(SectorExt::from_str) {
-            if let Some((fir, cycle)) = parse_gng_sector_filename(&name) {
+            if let Some((firs, cycle)) = parse_gng_sector_target(&name) {
                 if let Some(c) = cycle.clone() {
                     plan.detected_airac = Some(c);
                 }
-                let dst = sectors_dir.join(format!("{}.{}", fir.as_str(), ext.as_str()));
-                sector_writes.push(FileOp::WriteSector {
-                    src: path.to_path_buf(),
-                    dst,
-                    fir,
-                    ext,
-                });
-                sector_targets.insert((fir, ext));
+                for fir in firs {
+                    let dst = sectors_dir.join(format!("{}.{}", fir.as_str(), ext.as_str()));
+                    sector_writes.push(FileOp::WriteSector {
+                        src: path.to_path_buf(),
+                        dst,
+                        fir,
+                        ext,
+                    });
+                    sector_targets.insert((fir, ext));
+                }
                 continue;
             }
             // Not a FIR sector filename — skip (e.g. sub-sector includes). This
@@ -418,14 +429,17 @@ fn plan_gng_overlay(
             continue;
         }
 
-        // `.rwy` files: keep, paired with the sector dir as <FIR>.rwy.
+        // `.rwy` files: keep, paired with the sector dir as <FIR>.rwy. A combined
+        // code fans the single source out to one <FIR>.rwy per covered FIR.
         if ext.as_deref() == Some("rwy") {
-            if let Some((fir, _)) = parse_gng_sector_filename(&name) {
-                let dst = sectors_dir.join(format!("{}.rwy", fir.as_str()));
-                plan.ops.push(FileOp::Copy {
-                    src: path.to_path_buf(),
-                    dst,
-                });
+            if let Some((firs, _)) = parse_gng_sector_target(&name) {
+                for fir in firs {
+                    let dst = sectors_dir.join(format!("{}.rwy", fir.as_str()));
+                    plan.ops.push(FileOp::Copy {
+                        src: path.to_path_buf(),
+                        dst,
+                    });
+                }
             }
             continue;
         }

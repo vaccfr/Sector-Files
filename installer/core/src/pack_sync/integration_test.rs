@@ -79,6 +79,21 @@ fn build_fake_gng_package() -> (TempDir, PathBuf) {
     (tmp, root)
 }
 
+/// The GNG combined "North" package: a single sector file (plus `.ese`/`.rwy`)
+/// named with the `LFXXN` combined code that must fan out to BOTH LFFF and LFEE.
+/// Uses the real GNG filename shape, with an `_`-prefixed creation timestamp
+/// before the `-260501-` AIRAC group.
+fn build_fake_lfxxn_package() -> (TempDir, PathBuf) {
+    let tmp = TempDir::new().unwrap();
+    let root = tmp.path().to_path_buf();
+
+    write_file(&root, "LFXXN-Paris-Reims_20260605153747-260501-0001.sct", "north sct\n");
+    write_file(&root, "LFXXN-Paris-Reims_20260605153747-260501-0001.ese", "north ese\n");
+    write_file(&root, "LFXXN-Paris-Reims_20260605153747-260501-0001.rwy", "north rwy\n");
+
+    (tmp, root)
+}
+
 fn build_existing_install() -> TempDir {
     let tmp = TempDir::new().unwrap();
     let install_root = tmp.path();
@@ -326,4 +341,118 @@ fn github_only_refresh_updates_installed_areas_without_packages() {
     // Areas that were NOT installed stay absent (LFEE has no folder; LFFM secret).
     assert!(!files.iter().any(|f| f.starts_with("LFEE/")), "got: {files:#?}");
     assert!(!files.iter().any(|f| f.starts_with("LFFM/")), "got: {files:#?}");
+}
+
+#[test]
+fn lfxxn_package_fans_out_to_lfff_and_lfee() {
+    let (_gh_tmp, github_root) = build_fake_github_repo();
+    let (_pkg_tmp, pkg_root) = build_fake_lfxxn_package();
+    let install_tmp = TempDir::new().unwrap();
+    let install_root = install_tmp.path();
+
+    let gng_roots = vec![pkg_root.clone()];
+    let plan = plan(PlanInputs {
+        github_root: Some(&github_root),
+        gng_roots: &gng_roots,
+        install_root,
+        github_short_sha: Some("abcdef1".into()),
+        area_source: AreaSource::Packages,
+    })
+    .unwrap();
+    let summary = apply(install_root, &plan).unwrap();
+    let files = list_files(install_root);
+
+    // The single combined source is written as BOTH LFFF and LFEE sectors.
+    for (fir, ext, content) in [
+        ("LFFF", "sct", "north sct"),
+        ("LFEE", "sct", "north sct"),
+        ("LFFF", "ese", "north ese"),
+        ("LFEE", "ese", "north ese"),
+        ("LFFF", "rwy", "north rwy"),
+        ("LFEE", "rwy", "north rwy"),
+    ] {
+        let body =
+            fs::read_to_string(install_root.join(format!("LFXX/Sectors/{fir}.{ext}"))).unwrap();
+        assert_eq!(body.trim(), content, "LFXX/Sectors/{fir}.{ext}");
+    }
+
+    // AIRAC parsed past the `_`-prefixed timestamp → 2605.
+    let marker = fs::read_to_string(install_root.join("LFXX/Sectors/current_airac.txt")).unwrap();
+    assert_eq!(marker.trim(), "2605");
+    assert_eq!(summary.airac_cycle.as_deref(), Some("2605"));
+
+    // GitHub overlay folders for BOTH covered FIRs are installed...
+    assert!(files.contains(&"LFFF/ASR/Paris.asr".to_string()));
+    assert!(files.contains(&"LFEE/ASR/Reims.asr".to_string()));
+    // ...and no unrelated FIR overlay is (LFBB has no package here; LFFM secret).
+    assert!(!files.iter().any(|f| f.starts_with("LFBB/")), "got: {files:#?}");
+    assert!(!files.iter().any(|f| f.starts_with("LFFM/")), "got: {files:#?}");
+}
+
+#[test]
+fn lfxxn_backs_up_existing_lfff_and_lfee_sectors() {
+    let (_gh_tmp, github_root) = build_fake_github_repo();
+    let (_pkg_tmp, pkg_root) = build_fake_lfxxn_package();
+    let install_tmp = TempDir::new().unwrap();
+    let install_root = install_tmp.path();
+
+    // Pre-existing LFFF/LFEE sectors at the previous AIRAC cycle.
+    write_file(install_root, "LFXX/Sectors/LFFF.sct", "old paris\n");
+    write_file(install_root, "LFXX/Sectors/LFEE.sct", "old reims\n");
+    write_file(install_root, "LFXX/Sectors/current_airac.txt", "2602\n");
+
+    let gng_roots = vec![pkg_root.clone()];
+    apply(
+        install_root,
+        &plan(PlanInputs {
+            github_root: Some(&github_root),
+            gng_roots: &gng_roots,
+            install_root,
+            github_short_sha: Some("abcdef1".into()),
+            area_source: AreaSource::Packages,
+        })
+        .unwrap(),
+    )
+    .unwrap();
+
+    // Both prior sectors were backed up under the previous AIRAC before overwrite.
+    let lfff_bak =
+        fs::read_to_string(install_root.join("LFXX/Sectors/Backup/LFFF-2602.sct")).unwrap();
+    assert_eq!(lfff_bak.trim(), "old paris");
+    let lfee_bak =
+        fs::read_to_string(install_root.join("LFXX/Sectors/Backup/LFEE-2602.sct")).unwrap();
+    assert_eq!(lfee_bak.trim(), "old reims");
+    // ...and the new combined content is in place.
+    let lfff = fs::read_to_string(install_root.join("LFXX/Sectors/LFFF.sct")).unwrap();
+    assert_eq!(lfff.trim(), "north sct");
+}
+
+#[test]
+fn lfxxn_second_run_is_a_no_op() {
+    let (_gh_tmp, github_root) = build_fake_github_repo();
+    let (_pkg_tmp, pkg_root) = build_fake_lfxxn_package();
+    let install_tmp = TempDir::new().unwrap();
+    let install_root = install_tmp.path();
+    // Settings already match GitHub so the settings-backup step stabilises after
+    // the first apply (mirrors `second_run_is_a_no_op`).
+    write_file(install_root, "LFXX/Settings/Symbology.txt", "sym\n");
+    let gng_roots = vec![pkg_root.clone()];
+
+    let inputs = || PlanInputs {
+        github_root: Some(&github_root),
+        gng_roots: &gng_roots,
+        install_root,
+        github_short_sha: Some("abcdef1".into()),
+        area_source: AreaSource::Packages,
+    };
+
+    apply(install_root, &plan(inputs()).unwrap()).unwrap();
+    let summary = apply(install_root, &plan(inputs()).unwrap()).unwrap();
+    assert_eq!(summary.files_written, 0, "second LFXXN run should be a no-op");
+    // No spurious backups were created for the unchanged combined targets.
+    let files = list_files(install_root);
+    assert!(
+        !files.iter().any(|f| f.starts_with("LFXX/Sectors/Backup/")),
+        "no backups expected on a no-op run; got: {files:#?}"
+    );
 }
