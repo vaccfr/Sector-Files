@@ -26,8 +26,8 @@
     },
     {
       "name": "RDF Plugin",
-      "current": "1.4.3",
-      "github": "KingfuChan/RDF",
+      "current": "1.4.4",
+      "github": "AlexisBalzano/RDF",
       "include_prereleases": false
     },
     {
