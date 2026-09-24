@@ -8,7 +8,7 @@
     },
     {
       "name": "PluginBridge",
-      "current": "2.0.0",
+      "current": "2.0.1",
       "github": "AlexisBalzano/Euroscope-Plugin-Bridge",
       "include_prereleases": false
     },
@@ -20,7 +20,7 @@
     },
     {
       "name": "EuroscopeRPC",
-      "current": "1.0.2",
+      "current": "1.0.4",
       "github": "AlexisBalzano/EuroscopeRPC",
       "include_prereleases": false
     },
@@ -32,7 +32,7 @@
     },
     {
       "name": "RampAgent",
-      "current": "2.0.3",
+      "current": "2.0.4",
       "github": "AlexisBalzano/EuroscopeRampAgent",
       "include_prereleases": false
     },
