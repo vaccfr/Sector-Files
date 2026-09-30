@@ -72,7 +72,7 @@ export interface ProfileEntry {
 export interface VatisStatus {
   client_installed: boolean;
   client_path: string | null;
-  platform: "windows" | "macos";
+  platform: "windows" | "macos" | "linux";
   profiles_dir: string | null;
   backup_dir: string | null;
   entries: ProfileEntry[];

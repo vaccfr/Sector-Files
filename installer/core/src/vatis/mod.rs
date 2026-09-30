@@ -22,7 +22,8 @@ pub mod profile;
 
 pub use apply::{apply, VatisSummary};
 pub use paths::{
-    app_data_dir, backup_dir, detect_client, profile_path, profiles_dir, Platform, APP_ID,
+    app_data_dir, backup_dir, detect_client, linux_client_install_path, profile_path,
+    profiles_dir, Platform, APP_ID,
 };
 pub use plan::{plan, read_store, CanonicalProfile, ProfileOp, StoredProfile, VatisPlan};
 pub use profile::{parse_header, ProfileHeader, ID_REISSUE_SERIAL};

@@ -16,6 +16,7 @@ pub const PROFILES_REPO: &str = "vatis-profiles";
 
 const CLIENT_WINDOWS_URL: &str = "https://hub.vatis.app/download/windows";
 const CLIENT_MACOS_URL: &str = "https://hub.vatis.app/download/macos";
+const CLIENT_LINUX_URL: &str = "https://hub.vatis.app/download/linux";
 
 fn user_agent() -> String {
     format!("vaccfr-controller-pack-installer/{}", env!("CARGO_PKG_VERSION"))
@@ -148,7 +149,32 @@ fn client_source() -> (&'static str, &'static str) {
     match Platform::host() {
         Platform::Windows => (CLIENT_WINDOWS_URL, "vATIS-Setup.exe"),
         Platform::MacOs => (CLIENT_MACOS_URL, "vATIS.dmg"),
+        Platform::Linux => (CLIENT_LINUX_URL, "vATIS.AppImage"),
     }
+}
+
+/// Where the download is written. Windows and macOS get an installer, which is
+/// transient. The Linux AppImage *is* the client, so it goes straight to where
+/// it will live and where detection looks first.
+fn client_destination(file_name: &str) -> anyhow::Result<PathBuf> {
+    match Platform::host() {
+        Platform::Linux => {
+            let home = home_dir().context("could not determine the home directory")?;
+            Ok(vatis::linux_client_install_path(&home))
+        }
+        Platform::Windows | Platform::MacOs => Ok(client_download_dir().join(file_name)),
+    }
+}
+
+#[cfg(unix)]
+fn make_executable(path: &Path) -> std::io::Result<()> {
+    use std::os::unix::fs::PermissionsExt;
+    std::fs::set_permissions(path, std::fs::Permissions::from_mode(0o755))
+}
+
+#[cfg(not(unix))]
+fn make_executable(_path: &Path) -> std::io::Result<()> {
+    Ok(())
 }
 
 /// Download the official vATIS installer for this platform.
@@ -163,8 +189,21 @@ pub async fn download_client() -> anyhow::Result<PathBuf> {
         .bytes()
         .await?;
 
-    let dst = client_download_dir().join(file_name);
-    std::fs::write(&dst, &bytes).with_context(|| format!("writing {}", dst.display()))?;
+    let dst = client_destination(file_name)?;
+    if let Some(parent) = dst.parent() {
+        std::fs::create_dir_all(parent)
+            .with_context(|| format!("creating {}", parent.display()))?;
+    }
+    // Written beside the destination and renamed into place, so an interrupted
+    // download never leaves a truncated client where detection would take it
+    // for a real one.
+    let partial = dst.with_file_name(format!("{file_name}.part"));
+    std::fs::write(&partial, &bytes).with_context(|| format!("writing {}", partial.display()))?;
+    if Platform::host() == Platform::Linux {
+        make_executable(&partial)
+            .with_context(|| format!("marking {} executable", partial.display()))?;
+    }
+    std::fs::rename(&partial, &dst).with_context(|| format!("writing {}", dst.display()))?;
     Ok(dst)
 }
 
@@ -173,7 +212,8 @@ pub async fn download_client() -> anyhow::Result<PathBuf> {
 /// Windows gets a Velopack setup executable, which is run directly (a per-user
 /// install, so no elevation). macOS gets a disk image, which is opened so the
 /// user can drag the bundle out — vATIS refuses to launch from `/Volumes`, so
-/// the drag is not optional and cannot be done for them.
+/// the drag is not optional and cannot be done for them. Linux gets the
+/// AppImage itself, already in place, which is simply started.
 pub fn launch_client(path: &Path) -> anyhow::Result<()> {
     let mut command = match Platform::host() {
         Platform::Windows => std::process::Command::new(path),
@@ -182,11 +222,58 @@ pub fn launch_client(path: &Path) -> anyhow::Result<()> {
             c.arg(path);
             c
         }
+        Platform::Linux => {
+            let mut c = std::process::Command::new(path);
+            if let Some(appdir) = std::env::var_os("APPDIR") {
+                let vars: Vec<(String, String)> = std::env::vars_os()
+                    .filter_map(|(k, v)| Some((k.into_string().ok()?, v.into_string().ok()?)))
+                    .collect();
+                for (key, value) in appimage_env_overrides(&appdir.to_string_lossy(), &vars) {
+                    match value {
+                        Some(value) => c.env(key, value),
+                        None => c.env_remove(key),
+                    };
+                }
+            }
+            c
+        }
     };
     command
         .spawn()
         .with_context(|| format!("launching {}", path.display()))?;
     Ok(())
+}
+
+/// Environment changes that stop a child process inheriting our AppImage.
+///
+/// When this installer runs as an AppImage, its runtime exports `APPDIR` and
+/// friends, and the bundled GTK hooks point module search paths into the
+/// mount. vATIS is an AppImage too: inheriting those would have it load *our*
+/// bundled libraries, from a mount that vanishes when the installer quits. So
+/// the runtime's own variables are dropped, and every variable mentioning the
+/// mount keeps only its entries outside it — or is dropped if none remain.
+fn appimage_env_overrides(appdir: &str, vars: &[(String, String)]) -> Vec<(String, Option<String>)> {
+    const RUNTIME: [&str; 4] = ["APPDIR", "APPIMAGE", "ARGV0", "OWD"];
+    let appdir = appdir.trim_end_matches('/');
+    if appdir.is_empty() {
+        return Vec::new();
+    }
+    let inside = |entry: &str| entry == appdir || entry.starts_with(&format!("{appdir}/"));
+
+    let mut out: Vec<(String, Option<String>)> =
+        RUNTIME.iter().map(|k| (k.to_string(), None)).collect();
+    for (key, value) in vars {
+        if RUNTIME.contains(&key.as_str()) || !value.contains(appdir) {
+            continue;
+        }
+        let entries: Vec<&str> = value.split(':').collect();
+        if !entries.iter().any(|e| inside(e)) {
+            continue;
+        }
+        let kept: Vec<&str> = entries.into_iter().filter(|e| !e.is_empty() && !inside(e)).collect();
+        out.push((key.clone(), (!kept.is_empty()).then(|| kept.join(":"))));
+    }
+    out
 }
 
 // ---------------------------------------------------------------------------
@@ -215,7 +302,8 @@ pub struct ProfileEntry {
 pub struct VatisStatus {
     pub client_installed: bool,
     pub client_path: Option<String>,
-    /// `"windows"` or `"macos"`, so the modal can word its guidance correctly.
+    /// `"windows"`, `"macos"` or `"linux"`, so the modal can word its guidance
+    /// correctly.
     pub platform: &'static str,
     pub profiles_dir: Option<String>,
     pub backup_dir: Option<String>,
@@ -229,6 +317,7 @@ fn platform_name() -> &'static str {
     match Platform::host() {
         Platform::Windows => "windows",
         Platform::MacOs => "macos",
+        Platform::Linux => "linux",
     }
 }
 
@@ -343,7 +432,54 @@ mod tests {
                 assert!(url.ends_with("/macos"));
                 assert_eq!(name, "vATIS.dmg");
             }
+            Platform::Linux => {
+                assert!(url.ends_with("/linux"));
+                assert_eq!(name, "vATIS.AppImage");
+            }
         }
+    }
+
+    fn vars(pairs: &[(&str, &str)]) -> Vec<(String, String)> {
+        pairs.iter().map(|(k, v)| (k.to_string(), v.to_string())).collect()
+    }
+
+    fn override_of<'a>(out: &'a [(String, Option<String>)], key: &str) -> Option<&'a Option<String>> {
+        out.iter().find(|(k, _)| k == key).map(|(_, v)| v)
+    }
+
+    #[test]
+    fn appimage_runtime_variables_are_dropped() {
+        let out = appimage_env_overrides("/tmp/.mount_abc", &vars(&[("APPDIR", "/tmp/.mount_abc")]));
+        for key in ["APPDIR", "APPIMAGE", "ARGV0", "OWD"] {
+            assert_eq!(override_of(&out, key), Some(&None), "{key}");
+        }
+    }
+
+    #[test]
+    fn search_paths_keep_only_their_entries_outside_the_mount() {
+        let out = appimage_env_overrides(
+            "/tmp/.mount_abc/",
+            &vars(&[
+                ("XDG_DATA_DIRS", "/tmp/.mount_abc/usr/share:/usr/local/share:/usr/share"),
+                ("GDK_PIXBUF_MODULE_FILE", "/tmp/.mount_abc/usr/lib/loaders.cache"),
+                ("HOME", "/home/me"),
+                // Merely sharing a prefix with the mount is not being inside it.
+                ("OTHER", "/tmp/.mount_abcdef/x"),
+            ]),
+        );
+
+        assert_eq!(
+            override_of(&out, "XDG_DATA_DIRS"),
+            Some(&Some("/usr/local/share:/usr/share".to_string()))
+        );
+        assert_eq!(override_of(&out, "GDK_PIXBUF_MODULE_FILE"), Some(&None));
+        assert_eq!(override_of(&out, "HOME"), None, "unrelated variables are left alone");
+        assert_eq!(override_of(&out, "OTHER"), None);
+    }
+
+    #[test]
+    fn no_mount_means_no_overrides() {
+        assert!(appimage_env_overrides("", &vars(&[("PATH", "/usr/bin")])).is_empty());
     }
 
     #[test]

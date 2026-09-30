@@ -428,7 +428,6 @@ function VatisModal({
     run("install", async () => setResult(await api.vatisInstallProfiles(firs)));
 
   const pending = status.entries.filter((e) => e.state !== "current");
-  const isMac = status.platform === "macos";
   // A re-check can resolve everything (the client turned up and its profiles
   // were already current). Say so rather than showing an empty list.
   const allSet = !result && status.client_installed && pending.length === 0;
@@ -453,7 +452,7 @@ function VatisModal({
           {result ? (
             <ResultView result={result} backupDir={status.backup_dir} />
           ) : !status.client_installed ? (
-            <ClientMissingView isMac={isMac} downloadedTo={downloadedTo} />
+            <ClientMissingView platform={status.platform} downloadedTo={downloadedTo} />
           ) : allSet ? (
             <p className="flex items-start gap-2">
               <CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-emerald-400" />
@@ -520,10 +519,10 @@ function VatisModal({
 }
 
 function ClientMissingView({
-  isMac,
+  platform,
   downloadedTo,
 }: {
-  isMac: boolean;
+  platform: VatisStatus["platform"];
   downloadedTo: string | null;
 }) {
   return (
@@ -533,13 +532,18 @@ function ClientMissingView({
         VATSIM, and it is required for controlling with the French vACC.
       </p>
       {downloadedTo ? (
-        <ModalSection title={isMac ? "Finish in Finder" : "Finish the install"}>
+        <ModalSection title={platform === "macos" ? "Finish in Finder" : "Finish the install"}>
           <p className="text-neutral-400">
-            {isMac ? (
+            {platform === "macos" ? (
               <>
                 The disk image is open. <strong>Drag vATIS to your Applications folder</strong> —
                 it refuses to run from the mounted image — then come back and choose{" "}
                 <strong>Check again</strong>.
+              </>
+            ) : platform === "linux" ? (
+              <>
+                vATIS has been saved below and started — the AppImage needs no installing. Choose{" "}
+                <strong>Check again</strong> to continue.
               </>
             ) : (
               <>
@@ -553,10 +557,11 @@ function ClientMissingView({
       ) : (
         <ModalSection title="What happens">
           <p className="text-neutral-400">
-            The official installer is downloaded from vatis.app and {isMac ? "opened" : "launched"}.
-            {isMac
-              ? " You'll drag vATIS to your Applications folder yourself, then choose Check again."
-              : " Once it finishes, choose Check again."}
+            {platform === "macos"
+              ? "The official installer is downloaded from vatis.app and opened. You'll drag vATIS to your Applications folder yourself, then choose Check again."
+              : platform === "linux"
+                ? "The official AppImage is downloaded from vatis.app into ~/Applications and started. Then choose Check again."
+                : "The official installer is downloaded from vatis.app and launched. Once it finishes, choose Check again."}
           </p>
         </ModalSection>
       )}
