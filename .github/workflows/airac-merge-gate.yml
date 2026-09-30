@@ -1,0 +1,83 @@
+name: AIRAC merge gate
+
+on:
+  pull_request_target:
+    types: [opened, reopened, synchronize, edited, labeled, unlabeled]
+  schedule:
+    # Re-evaluate blocked pull requests four times per hour.
+    - cron: "7,22,37,52 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pull-requests: read
+  statuses: write
+
+jobs:
+  evaluate:
+    name: AIRAC merge gate
+    runs-on: ubuntu-latest
+    steps:
+      - name: Evaluate AIRAC effective date
+        uses: actions/github-script@v8
+        with:
+          script: |
+            const { owner, repo } = context.repo;
+
+            const pulls = context.payload.pull_request
+              ? [context.payload.pull_request]
+              : await github.paginate(github.rest.pulls.list, {
+                  owner,
+                  repo,
+                  state: "open",
+                  per_page: 100,
+                });
+
+            for (const pull of pulls) {
+              const labels = pull.labels.map((label) =>
+                typeof label === "string" ? label : label.name
+              );
+              const isAiracDependent = labels.includes("airac-dependent");
+
+              let state = "success";
+              let description = "This pull request is not AIRAC-dependent";
+
+              if (isAiracDependent) {
+                const body = pull.body ?? "";
+                const match = body.match(
+                  /AIRAC effective date[^\n]*:\s*`?(\d{4}-\d{2}-\d{2})`?/i
+                );
+
+                if (!match) {
+                  state = "failure";
+                  description = "Add a valid AIRAC effective date (YYYY-MM-DD)";
+                } else {
+                  const date = match[1];
+                  const effectiveAt = new Date(`${date}T00:00:00Z`);
+                  const isValidDate =
+                    !Number.isNaN(effectiveAt.getTime()) &&
+                    effectiveAt.toISOString().slice(0, 10) === date;
+
+                  if (!isValidDate) {
+                    state = "failure";
+                    description = "The AIRAC effective date is invalid";
+                  } else if (Date.now() < effectiveAt.getTime()) {
+                    state = "pending";
+                    description = `Blocked until ${date} at 00:00 UTC`;
+                  } else {
+                    description = `AIRAC effective date ${date} has been reached`;
+                  }
+                }
+              }
+
+              await github.rest.repos.createCommitStatus({
+                owner,
+                repo,
+                sha: pull.head.sha,
+                state,
+                context: "AIRAC merge gate",
+                description,
+              });
+
+              core.info(`#${pull.number}: ${state} - ${description}`);
+            }
