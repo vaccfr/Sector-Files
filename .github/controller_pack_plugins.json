@@ -14,8 +14,8 @@
     },
     {
       "name": "AMAN",
-      "current": "3.2.0",
-      "github": "EvenAR/euroscope-aman",
+      "current": "1.0.2",
+      "github": "vaccfr/AMAN-Plugin",
       "include_prereleases": false
     },
     {
