@@ -19,7 +19,10 @@ This repository includes core elements used in controller packs, such as:
 These components are maintained here to streamline updates and allow community contributions.
 
 > ⚠️ **Important:**  
-> This repository does **not** contain the full controller packs. Its purpose is strictly for **collaboration, improvements, bug tracking, and updates**.
+> This repository does **not** contain the complete AIRAC sector packages.
+> The Controller Pack Installer downloads those files from AeroNav GNG and
+> combines them with the profiles, settings, displays, plugins and supporting
+> resources maintained here.
 
 ---
 
@@ -65,12 +68,18 @@ Clear and detailed reports help us fix things faster.
 
 ## 🤝 Contributing
 
-We welcome contributions from the community. To collaborate:
+We welcome contributions from the community.
 
-1. Fork this repository  
-2. Make your changes or improvements  
-3. Commit and push your updates  
-4. Open a Pull Request to the `main` branch for review  
+Before making a change, read [CONTRIBUTING.md](CONTRIBUTING.md) for the
+repository structure, EuroScope file conventions, testing requirements,
+automated maintenance and AIRAC process.
+
+The usual workflow is:
+
+1. Fork this repository.
+2. Make and test a focused change.
+3. Commit and push the change.
+4. Open a pull request to `main` for review.
 
 ---
 
