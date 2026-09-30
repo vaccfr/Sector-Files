@@ -26,7 +26,7 @@
   },
   "bundle": {
     "active": true,
-    "targets": ["nsis", "app", "dmg"],
+    "targets": ["nsis", "app", "dmg", "appimage"],
     "createUpdaterArtifacts": true,
     "category": "Utility",
     "shortDescription": "Installs and updates the French vACC controller pack",
