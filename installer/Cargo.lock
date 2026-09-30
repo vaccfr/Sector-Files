@@ -413,7 +413,7 @@ checksum = "cc14f565cf027a105f7a44ccf9e5b424348421a1d8952a8fc9d499d313107789"
 
 [[package]]
 name = "controller-pack-core"
-version = "0.1.4"
+version = "0.2.0"
 dependencies = [
  "anyhow",
  "chrono",
@@ -430,7 +430,7 @@ dependencies = [
 
 [[package]]
 name = "controller-pack-installer"
-version = "0.1.4"
+version = "0.2.0"
 dependencies = [
  "anyhow",
  "controller-pack-core",
