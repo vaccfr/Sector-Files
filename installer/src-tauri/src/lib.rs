@@ -42,6 +42,7 @@ pub fn run() {
             commands::get_profile,
             commands::update_profile,
             commands::detect_pack_dir,
+            commands::wine_prefixes,
             commands::looks_like_controller_pack,
             commands::run_sync,
             commands::update_from_github,
