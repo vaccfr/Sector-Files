@@ -28,14 +28,23 @@ These components are maintained here to streamline updates and allow community c
 
 ## ⬇️ Install or Update the Controller Pack
 
-Use the **Controller Pack Installer** — a single signed desktop app that:
+Use the **Controller Pack Installer** — a signed desktop app for Windows, macOS and Linux that:
 
 - Downloads and applies the latest configuration from this GitHub repository.
-- Authenticates against `files.aero-nav.com` (VATSIM OAuth) and pulls the latest AIRAC files in the background.
+- Merges it with the AeroNav (GNG) AIRAC packages you download for your FIRs (see the [mirrors below](#raw-gng-package-mirrors)).
 - Stores your CID, password, rating, and EuroScopeRPC preference once and applies them to every profile.
+- Sets up the French vACC vATIS profiles after an install.
 - Auto-updates itself via Tauri's signed updater channel.
 
-Download the latest `installer-v*` release here: **https://github.com/vaccfr/Sector-Files/releases?q=installer**
+Download it from the assets of the **[latest release](https://github.com/vaccfr/Sector-Files/releases/latest)**:
+
+| Platform | File |
+| --- | --- |
+| Windows (x64) | `…_x64-setup.exe` |
+| macOS (Apple Silicon & Intel) | `…_universal.dmg` |
+| Linux (x64) | `…_amd64.AppImage` |
+
+EuroScope is Windows-only, so on macOS and Linux it runs under Wine (CrossOver, Whisky, Bottles, Lutris, plain Wine…). The installer finds your Wine prefixes and puts the pack next to EuroScope. First-launch steps for the [macOS](installer/RELEASE.md#installing-the-macos-build) and [Linux](installer/RELEASE.md#installing-the-linux-build) builds are in the installer's release guide.
 
 For maintainers cutting installer releases, see [installer/RELEASE.md](installer/RELEASE.md).
 
