@@ -17,7 +17,7 @@ DISABLEZOOMING:0
 DisplayRotation:0.00000
 TAGFAMILY:CoFrance
 WINDOWAREA:48.626336:0.384499:49.959670:4.106258
-PLUGIN:CoFrance:EnabledMaps:LFFF/LFOB/0_CCA_Beauvais,LFFF/LFOB/1_CCA_Beauvais_ARP_Names,LFFF/LFOB/1_CCA_Beauvais_FIX_Names,LFFF/LFOB/1_CCA_Beauvais_VOR_Names,LFFF/LFOB/2_CCA_Beauvais_MVA,LFFF/LFOB/2_CCA_Beauvais_Procedures,LFFF/LFOB/3_CCA_Beauvais_VFR
+PLUGIN:CoFrance:EnabledMaps:LFFF/LFOB/0_CCA_Paris-Beauvais
 PLUGIN:CoFrance:LowerAlt:0
 PLUGIN:CoFrance:LowerAltEnabled:1
 PLUGIN:CoFrance:SettingProfile:default
