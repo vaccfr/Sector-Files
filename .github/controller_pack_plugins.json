@@ -2,7 +2,7 @@
   "plugins": [
     {
       "name": "Central Squawk",
-      "current": "1.0.1",
+      "current": "1.0.3",
       "github": "AlexisBalzano/CentralSquawk",
       "include_prereleases": false
     },
