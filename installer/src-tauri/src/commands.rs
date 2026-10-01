@@ -42,6 +42,13 @@ pub fn detect_pack_dir() -> Option<PathBuf> {
     profile_store::detect_pack_dir()
 }
 
+/// Wine prefixes on this machine, EuroScope-bearing ones first. Empty on
+/// Windows.
+#[tauri::command]
+pub fn wine_prefixes() -> Vec<controller_pack_core::wine::WinePrefix> {
+    controller_pack_core::wine::detect_prefixes()
+}
+
 #[tauri::command]
 pub fn looks_like_controller_pack(path: PathBuf) -> bool {
     profile_store::looks_like_controller_pack(&path)

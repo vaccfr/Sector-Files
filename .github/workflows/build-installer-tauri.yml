@@ -1,9 +1,10 @@
 name: Build Installer (Tauri)
 
-# Builds the controller-pack installer for Windows x64 and macOS (universal)
-# and publishes the Tauri auto-update artifacts (signed NSIS installer, signed
-# .app.tar.gz + .dmg, and a single latest.json covering both platforms) on
-# release, or uploads them as workflow artifacts on manual dispatch.
+# Builds the controller-pack installer for Windows x64, macOS (universal) and
+# Linux x64 (AppImage), and publishes the Tauri auto-update artifacts (signed
+# NSIS installer, signed .app.tar.gz + .dmg, signed .AppImage, and a single
+# latest.json covering all three) on release, or uploads them as workflow
+# artifacts on manual dispatch.
 #
 # Auto-updates require these repository secrets:
 #   TAURI_SIGNING_PRIVATE_KEY           the Tauri updater private key
@@ -212,4 +213,58 @@ jobs:
           path: |
             installer/target/**/release/bundle/dmg/*.dmg
             installer/target/**/release/bundle/macos/*.app.tar.gz*
+          retention-days: 7
+
+  release-build-linux:
+    name: Linux x64 AppImage
+    # After the macOS job, for the same reason that one follows Windows: each
+    # tauri-action run merges its platform into the release's single latest.json.
+    if: github.event_name == 'release' || github.event_name == 'workflow_dispatch'
+    needs: [core-tests, release-build-macos]
+    # The oldest supported Ubuntu, not the latest: an AppImage only runs on
+    # distros whose glibc is at least as new as the one it was built against.
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v6
+      - uses: dtolnay/rust-toolchain@stable
+      - uses: Swatinem/rust-cache@v2
+        with:
+          workspaces: installer
+          key: linux-release
+      - uses: oven-sh/setup-bun@v2
+      - name: Install Linux system deps
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y \
+            libwebkit2gtk-4.1-dev \
+            libappindicator3-dev \
+            librsvg2-dev \
+            patchelf \
+            libsoup-3.0-dev
+      - name: Frontend install
+        working-directory: installer
+        run: bun install
+
+      # Builds and signs the AppImage (the updater swaps that same file in
+      # place) and merges the linux-x86_64 entry into the release's latest.json.
+      - name: Build and compile (Tauri Action)
+        uses: tauri-apps/tauri-action@v0
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          TAURI_SIGNING_PRIVATE_KEY: ${{ secrets.TAURI_SIGNING_PRIVATE_KEY }}
+          TAURI_SIGNING_PRIVATE_KEY_PASSWORD: ${{ secrets.TAURI_SIGNING_PRIVATE_KEY_PASSWORD }}
+        with:
+          projectPath: installer
+          tagName: ${{ github.event.release.tag_name }}
+          releaseId: ${{ github.event.release.id }}
+          args: --bundles appimage
+          includeUpdaterJson: true
+
+      - name: Upload Linux Build Artifacts
+        if: github.event_name == 'workflow_dispatch'
+        uses: actions/upload-artifact@v4
+        with:
+          name: linux-installer-x64
+          path: |
+            installer/target/**/release/bundle/appimage/*.AppImage*
           retention-days: 7

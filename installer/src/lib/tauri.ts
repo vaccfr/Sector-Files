@@ -72,13 +72,26 @@ export interface ProfileEntry {
 export interface VatisStatus {
   client_installed: boolean;
   client_path: string | null;
-  platform: "windows" | "macos";
+  platform: "windows" | "macos" | "linux";
   profiles_dir: string | null;
   backup_dir: string | null;
   entries: ProfileEntry[];
   /** Whether there is anything for the user to act on. Drives suppression. */
   needs_attention: boolean;
   warnings: string[];
+}
+
+/** A Wine prefix EuroScope may run in (macOS and Linux only). */
+export interface WinePrefix {
+  /** The directory holding `drive_c`. */
+  path: string;
+  /** The front-end managing it: "CrossOver", "Bottles", "Wine"… */
+  manager: string;
+  name: string;
+  has_euroscope: boolean;
+  documents_dir: string | null;
+  /** Where a fresh pack would go in this prefix. */
+  suggested_pack_dir: string | null;
 }
 
 export interface VatisSummary {
@@ -91,6 +104,7 @@ export const api = {
   getProfile: () => invoke<Profile>("get_profile"),
   updateProfile: (patch: ProfilePatch) => invoke<Profile>("update_profile", { patch }),
   detectPackDir: () => invoke<string | null>("detect_pack_dir"),
+  winePrefixes: () => invoke<WinePrefix[]>("wine_prefixes"),
   looksLikeControllerPack: (path: string) =>
     invoke<boolean>("looks_like_controller_pack", { path }),
   runSync: (packagePaths: string[], alsoApplyProfile?: boolean) =>

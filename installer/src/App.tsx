@@ -12,6 +12,7 @@ import {
   RadioTower,
   RefreshCw,
   Save,
+  Wine,
   X,
 } from "lucide-react";
 import {
@@ -24,6 +25,7 @@ import {
   type SyncSummary,
   type VatisStatus,
   type VatisSummary,
+  type WinePrefix,
 } from "@/lib/tauri";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -55,6 +57,9 @@ export default function App() {
   // installed the status carries no per-FIR entries, so a re-check would
   // otherwise have nothing to ask about.
   const [vatis, setVatis] = useState<{ status: VatisStatus; firs: FirCode[] } | null>(null);
+  // EuroScope runs under Wine off Windows, so the pack belongs in a prefix.
+  // Always empty on Windows.
+  const [winePrefixes, setWinePrefixes] = useState<WinePrefix[]>([]);
 
   useEffect(() => {
     api.getProfile().then(async (p) => {
@@ -64,6 +69,7 @@ export default function App() {
       }
       setProfile(p);
     });
+    api.winePrefixes().then(setWinePrefixes).catch(() => {});
     api.checkUpdates().then(setUpdateStatus).catch(() => {});
 
     let unlistenUpdates: (() => void) | undefined;
@@ -79,10 +85,23 @@ export default function App() {
   }, []);
 
   const pickPackDir = useCallback(async () => {
-    const dir = await open({ directory: true, multiple: false, title: "Select controller pack directory" });
+    const dir = await open({
+      directory: true,
+      multiple: false,
+      title: "Select controller pack directory",
+      // Prefixes hide in dot-folders the picker won't show, so start inside
+      // the most likely one when there is no pack yet.
+      defaultPath: profile?.controller_pack_dir
+        ? undefined
+        : (winePrefixes[0]?.documents_dir ?? undefined),
+    });
     if (typeof dir === "string") {
       setProfile(await api.updateProfile({ controller_pack_dir: dir }));
     }
+  }, [profile, winePrefixes]);
+
+  const installInPrefix = useCallback(async (dir: string) => {
+    setProfile(await api.updateProfile({ controller_pack_dir: dir }));
   }, []);
 
   const addPackages = useCallback(async () => {
@@ -211,7 +230,9 @@ export default function App() {
               profile={profile}
               packages={packages}
               busy={busy}
+              winePrefixes={winePrefixes}
               onPickDir={pickPackDir}
+              onInstallInPrefix={installInPrefix}
               onAddPackages={addPackages}
               onRemovePackage={removePackage}
               onRun={requestInstall}
@@ -407,7 +428,6 @@ function VatisModal({
     run("install", async () => setResult(await api.vatisInstallProfiles(firs)));
 
   const pending = status.entries.filter((e) => e.state !== "current");
-  const isMac = status.platform === "macos";
   // A re-check can resolve everything (the client turned up and its profiles
   // were already current). Say so rather than showing an empty list.
   const allSet = !result && status.client_installed && pending.length === 0;
@@ -432,7 +452,7 @@ function VatisModal({
           {result ? (
             <ResultView result={result} backupDir={status.backup_dir} />
           ) : !status.client_installed ? (
-            <ClientMissingView isMac={isMac} downloadedTo={downloadedTo} />
+            <ClientMissingView platform={status.platform} downloadedTo={downloadedTo} />
           ) : allSet ? (
             <p className="flex items-start gap-2">
               <CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-emerald-400" />
@@ -499,10 +519,10 @@ function VatisModal({
 }
 
 function ClientMissingView({
-  isMac,
+  platform,
   downloadedTo,
 }: {
-  isMac: boolean;
+  platform: VatisStatus["platform"];
   downloadedTo: string | null;
 }) {
   return (
@@ -512,13 +532,18 @@ function ClientMissingView({
         VATSIM, and it is required for controlling with the French vACC.
       </p>
       {downloadedTo ? (
-        <ModalSection title={isMac ? "Finish in Finder" : "Finish the install"}>
+        <ModalSection title={platform === "macos" ? "Finish in Finder" : "Finish the install"}>
           <p className="text-neutral-400">
-            {isMac ? (
+            {platform === "macos" ? (
               <>
                 The disk image is open. <strong>Drag vATIS to your Applications folder</strong> —
                 it refuses to run from the mounted image — then come back and choose{" "}
                 <strong>Check again</strong>.
+              </>
+            ) : platform === "linux" ? (
+              <>
+                vATIS has been saved below and started — the AppImage needs no installing. Choose{" "}
+                <strong>Check again</strong> to continue.
               </>
             ) : (
               <>
@@ -532,10 +557,11 @@ function ClientMissingView({
       ) : (
         <ModalSection title="What happens">
           <p className="text-neutral-400">
-            The official installer is downloaded from vatis.app and {isMac ? "opened" : "launched"}.
-            {isMac
-              ? " You'll drag vATIS to your Applications folder yourself, then choose Check again."
-              : " Once it finishes, choose Check again."}
+            {platform === "macos"
+              ? "The official installer is downloaded from vatis.app and opened. You'll drag vATIS to your Applications folder yourself, then choose Check again."
+              : platform === "linux"
+                ? "The official AppImage is downloaded from vatis.app into ~/Applications and started. Then choose Check again."
+                : "The official installer is downloaded from vatis.app and launched. Once it finishes, choose Check again."}
           </p>
         </ModalSection>
       )}
@@ -656,7 +682,9 @@ function SyncPanel({
   profile,
   packages,
   busy,
+  winePrefixes,
   onPickDir,
+  onInstallInPrefix,
   onAddPackages,
   onRemovePackage,
   onRun,
@@ -665,12 +693,19 @@ function SyncPanel({
   profile: Profile;
   packages: string[];
   busy: boolean;
+  winePrefixes: WinePrefix[];
   onPickDir: () => void;
+  onInstallInPrefix: (dir: string) => void;
   onAddPackages: () => void;
   onRemovePackage: (p: string) => void;
   onRun: () => void;
   onRefreshGithub: () => void;
 }) {
+  // Only offered before a pack is chosen: afterwards they'd just be noise.
+  const suggestions = profile.controller_pack_dir
+    ? []
+    : winePrefixes.filter((p) => p.suggested_pack_dir);
+
   return (
     <div className="space-y-6">
       <Card>
@@ -678,13 +713,16 @@ function SyncPanel({
           <CardTitle>Controller pack directory</CardTitle>
           <CardDescription>Where EuroScope's controller pack is installed.</CardDescription>
         </CardHeader>
-        <CardContent>
+        <CardContent className="space-y-4">
           <div className="flex gap-2">
             <Input value={profile.controller_pack_dir ?? ""} readOnly placeholder="Not set" />
             <Button variant="outline" onClick={onPickDir} className="shrink-0">
               <FolderOpen className="h-4 w-4" /> Choose…
             </Button>
           </div>
+          {suggestions.length > 0 && (
+            <WinePrefixSuggestions prefixes={suggestions} onInstallHere={onInstallInPrefix} />
+          )}
         </CardContent>
       </Card>
 
@@ -755,6 +793,55 @@ function SyncPanel({
           </span>
         </p>
       </div>
+    </div>
+  );
+}
+
+function WinePrefixSuggestions({
+  prefixes,
+  onInstallHere,
+}: {
+  prefixes: WinePrefix[];
+  onInstallHere: (dir: string) => void;
+}) {
+  return (
+    <div className="space-y-2">
+      <p className="text-xs text-neutral-500">
+        EuroScope runs under Wine here, so the pack belongs in the same Wine prefix as EuroScope.
+        Prefixes found on this machine:
+      </p>
+      <ul className="space-y-1.5">
+        {prefixes.map((p) => (
+          <li
+            key={p.path}
+            className="flex items-center gap-3 rounded-md border border-neutral-800 bg-neutral-950 px-3 py-2 text-sm"
+          >
+            <Wine className="h-4 w-4 shrink-0 text-neutral-400" />
+            <div className="min-w-0 flex-1">
+              <div className="flex items-center gap-2">
+                <span className="truncate font-medium">
+                  {p.manager} · {p.name}
+                </span>
+                {p.has_euroscope && <Badge variant="success">EuroScope</Badge>}
+              </div>
+              <div
+                className="truncate font-mono text-xs text-neutral-500"
+                title={p.suggested_pack_dir ?? undefined}
+              >
+                {p.suggested_pack_dir}
+              </div>
+            </div>
+            <Button
+              variant="outline"
+              size="sm"
+              className="shrink-0"
+              onClick={() => p.suggested_pack_dir && onInstallHere(p.suggested_pack_dir)}
+            >
+              Install here
+            </Button>
+          </li>
+        ))}
+      </ul>
     </div>
   );
 }

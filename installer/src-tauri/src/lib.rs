@@ -8,6 +8,14 @@ pub mod vatis;
 
 #[cfg_attr(mobile, tauri::mobile_entry_point)]
 pub fn run() {
+    // WebKitGTK's DMA-BUF renderer shows a blank window on a range of Linux GPU
+    // drivers (NVIDIA in particular) — a common first-launch failure for
+    // AppImages. Nothing here needs it; a value the user set is left alone.
+    #[cfg(target_os = "linux")]
+    if std::env::var_os("WEBKIT_DISABLE_DMABUF_RENDERER").is_none() {
+        std::env::set_var("WEBKIT_DISABLE_DMABUF_RENDERER", "1");
+    }
+
     tracing_subscriber::fmt()
         .with_env_filter(
             tracing_subscriber::EnvFilter::try_from_default_env()
@@ -42,6 +50,7 @@ pub fn run() {
             commands::get_profile,
             commands::update_profile,
             commands::detect_pack_dir,
+            commands::wine_prefixes,
             commands::looks_like_controller_pack,
             commands::run_sync,
             commands::update_from_github,
