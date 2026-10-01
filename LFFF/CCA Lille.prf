@@ -23,7 +23,7 @@ Plugins	Plugin4Display0	SMR radar display
 Plugins	Plugin4Display1	Standard ES radar screen
 Plugins	Plugin5Display0	SMR radar display
 Plugins	Plugin5Display1	Standard ES radar screen
-ASRFastKeys	1	\ASR\CCA Lille\CCA Lille - Dynamic.asr
+ASRFastKeys	1	\ASR\CCA Lille\CCA Lille.asr
 ASRFastKeys	2	\ASR\CCA Lille\CCA Lille - VFR.asr
 ASRFastKeys	3	\ASR\CCA Lille\CCA Lille - MVA.asr
 ASRFastKeys	4	\ASR\AVISOs\LFQQ Lille AVISO.asr
@@ -31,7 +31,7 @@ ASRFastKeys	5	\ASR\AVISOs\LFAC Calais AVISO.asr
 ASRFastKeys	6	\ASR\AVISOs\LFAT Le Touquet AVISO.asr
 ASRFastKeys	7	\ASR\AVISOs\LFOP Rouen AVISO.asr
 ASRFastKeys	8	\ASR\AVISOs\LFQT Merville AVISO.asr
-RecentFiles	Recent1	\ASR\CCA Lille\CCA Lille - Dynamic.asr
+RecentFiles	Recent1	\ASR\CCA Lille\CCA Lille.asr
 RecentFiles	Recent2	\ASR\CCA Lille\CCA Lille - VFR.asr
 RecentFiles	Recent3	\ASR\CCA Lille\CCA Lille - MVA.asr
 RecentFiles	Recent4	\ASR\AVISOs\LFQQ Lille AVISO.asr

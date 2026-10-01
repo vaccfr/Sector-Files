@@ -16,11 +16,11 @@ DISABLEPANNING:0
 DISABLEZOOMING:0
 DisplayRotation:0.00000
 TAGFAMILY:CoFrance
-WINDOWAREA:47.947044:1.035029:49.013711:4.012435
-PLUGIN:CoFrance:EnabledMaps:LFFF/LFPO/0_EGA_Paris_Orly,LFFF/LFPO/1_EGA_Paris_Orly_IPGW
+WINDOWAREA:48.626336:0.384499:49.959670:4.106258
+PLUGIN:CoFrance:EnabledMaps:LFFF/LFOB/0_CCA_Paris-Beauvais
 PLUGIN:CoFrance:LowerAlt:0
 PLUGIN:CoFrance:LowerAltEnabled:1
 PLUGIN:CoFrance:SettingProfile:default
-PLUGIN:CoFrance:TagFormat:Paris-Orly
+PLUGIN:CoFrance:TagFormat:Paris-Beauvais
 PLUGIN:CoFrance:UpperAlt:195
 PLUGIN:CoFrance:UpperAltEnabled:1
