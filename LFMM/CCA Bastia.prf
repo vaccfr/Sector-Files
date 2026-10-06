@@ -21,6 +21,7 @@ Plugins	Plugin3Display1	Standard ES radar screen
 Plugins	Plugin4Display0	SMR radar display
 Plugins	Plugin4Display1	Standard ES radar screen
 Plugins	Plugin4Display2	CoFrance radar display
+Plugins	Plugin5Display0	SMR radar display
 ASRFastKeys	1	\ASR\CCA Bastia\CCA Bastia - Dynamic.asr
 ASRFastKeys	2	\ASR\CCA Bastia\CCA Bastia - VFR.asr
 ASRFastKeys	3	\ASR\CCA Bastia\CCA Bastia - AMSR.asr

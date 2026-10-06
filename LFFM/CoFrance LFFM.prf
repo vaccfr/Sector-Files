@@ -20,6 +20,7 @@ Plugins	Plugin3Display1	Standard ES radar screen
 Plugins	Plugin4Display0	SMR radar display
 Plugins	Plugin4Display1	Standard ES radar screen
 Plugins	Plugin4Display2	CoFrance radar display
+Plugins	Plugin5Display0	SMR radar display
 ASRFastKeys	1	\ASR\Military - Legacy CTR.asr
 ASRFastKeys	2	\ASR\AVISOs\LFBM Mont de Marsan AVISO.asr
 ASRFastKeys	3	\ASR\AVISOs\LFMI Istres AVISO.asr
