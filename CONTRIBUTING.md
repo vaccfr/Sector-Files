@@ -87,7 +87,7 @@ After a pull request is merged, the `ASR and PRF maintenance` workflow runs
 `scripts/asr_prf_maintenance.py`. It automatically:
 
 - clears values from `SECTORFILE:` and `SECTORTITLE:` lines in `.asr` files;
-- removes entries for other aerodromes from an AVISO display tree;
+- removes all `Free Text`, `Geo` and `Regions` entries from AVISO display trees;
 - synchronises PRF `RecentFiles` entries 1–9 with `ASRFastKeys` entries 1–9.
 
 You can run the same maintenance locally before submitting:
@@ -103,12 +103,9 @@ file entries by hand.
 ## AVISO Display Files
 
 AVISO `.asr` files are stored in the relevant FIR's `ASR/AVISOs/` directory.
-The filename must begin with the four-letter aerodrome ICAO code used by the
-display tree entries.
-
-An AVISO display should contain only `Free Text`, `Geo` and `Regions` tree
-entries belonging to that aerodrome. The maintenance workflow removes entries
-whose ICAO code does not match the filename.
+They must not contain any `Free Text`, `Geo` or `Regions` tree entries. The
+maintenance workflow removes all such entries from every `.asr` file within
+an `AVISOs` directory.
 
 Source AVISO geometry is maintained in the separate QGIS-AVISO project. When
 an AVISO change originates there, keep the corresponding source change and the

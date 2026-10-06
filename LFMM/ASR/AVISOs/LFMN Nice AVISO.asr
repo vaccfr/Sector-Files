@@ -3,43 +3,6 @@ DisplayTypeNeedRadarContent:0
 DisplayTypeGeoReferenced:1
 SECTORFILE:
 SECTORTITLE:
-Free Text:LFMN Taxiways\A:freetext
-Free Text:LFMN Taxiways\A1:freetext
-Free Text:LFMN Taxiways\A2:freetext
-Free Text:LFMN Taxiways\A3:freetext
-Free Text:LFMN Taxiways\B:freetext
-Free Text:LFMN Taxiways\B1:freetext
-Free Text:LFMN Taxiways\B2:freetext
-Free Text:LFMN Taxiways\B3:freetext
-Free Text:LFMN Taxiways\C:freetext
-Free Text:LFMN Taxiways\C1:freetext
-Free Text:LFMN Taxiways\C2:freetext
-Free Text:LFMN Taxiways\D:freetext
-Free Text:LFMN Taxiways\EB:freetext
-Free Text:LFMN Taxiways\EF:freetext
-Free Text:LFMN Taxiways\EG:freetext
-Free Text:LFMN Taxiways\EY:freetext
-Free Text:LFMN Taxiways\F:freetext
-Free Text:LFMN Taxiways\F1:freetext
-Free Text:LFMN Taxiways\G:freetext
-Free Text:LFMN Taxiways\G1:freetext
-Free Text:LFMN Taxiways\G2:freetext
-Free Text:LFMN Taxiways\H1:freetext
-Free Text:LFMN Taxiways\H2:freetext
-Free Text:LFMN Taxiways\H3:freetext
-Free Text:LFMN Taxiways\J1:freetext
-Free Text:LFMN Taxiways\ME:freetext
-Free Text:LFMN Taxiways\MS:freetext
-Free Text:LFMN Taxiways\Q3:freetext
-Free Text:LFMN Taxiways\S:freetext
-Free Text:LFMN Taxiways\T:freetext
-Free Text:LFMN Taxiways\U:freetext
-Free Text:LFMN Taxiways\V:freetext
-Free Text:LFMN Taxiways\W:freetext
-Free Text:LFMN Taxiways\W3:freetext
-Free Text:LFMN Taxiways\Y:freetext
-Geo:LFMN Groundlayout AVISO:
-Regions:LFMN AVISO:polygon
 SHOWC:1
 SHOWSB:0
 BELOW:0

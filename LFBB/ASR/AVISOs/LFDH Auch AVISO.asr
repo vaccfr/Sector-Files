@@ -3,13 +3,6 @@ DisplayTypeNeedRadarContent:0
 DisplayTypeGeoReferenced:1
 SECTORFILE:
 SECTORTITLE:
-Free Text:LFDH Gates\Hangars:freetext
-Free Text:LFDH Gates\Hangars:freetext
-Free Text:LFDH Gates\Hangars:freetext
-Free Text:LFDH Gates\Terminal:freetext
-Free Text:LFDH Taxiways\A:freetext
-Free Text:LFDH Taxiways\B:freetext
-Geo:LFDH Groundlayout Auch Lamothe:
 SHOWC:1
 SHOWSB:0
 BELOW:0

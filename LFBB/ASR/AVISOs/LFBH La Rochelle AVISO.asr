@@ -3,29 +3,6 @@ DisplayTypeNeedRadarContent:0
 DisplayTypeGeoReferenced:1
 SECTORFILE:
 SECTORTITLE:
-Free Text:LFBH Gates\1:freetext
-Free Text:LFBH Gates\2:freetext
-Free Text:LFBH Gates\3:freetext
-Free Text:LFBH Gates\4:freetext
-Free Text:LFBH Gates\Civile:freetext
-Free Text:LFBH Gates\ECHO:freetext
-Free Text:LFBH Gates\GOLF:freetext
-Free Text:LFBH Gates\Securite:freetext
-Free Text:LFBH Gates\Terminal:freetext
-Free Text:LFBH Gates\TWR:freetext
-Free Text:LFBH Taxiways\09:freetext
-Free Text:LFBH Taxiways\27:freetext
-Free Text:LFBH Taxiways\A:freetext
-Free Text:LFBH Taxiways\B:freetext
-Free Text:LFBH Taxiways\C:freetext
-Free Text:LFBH Taxiways\D:freetext
-Free Text:LFBH Taxiways\G:freetext
-Free Text:LFBH Taxiways\G1:freetext
-Free Text:LFBH Taxiways\X:freetext
-Free Text:LFBH Taxiways\X:freetext
-Free Text:LFBH Taxiways\X:freetext
-Geo:LFBH Groundlayout AVISO:
-Regions:LFBH AVISO:polygon
 SHOWC:1
 SHOWSB:0
 BELOW:0

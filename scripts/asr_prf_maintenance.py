@@ -52,28 +52,14 @@ def cleanup_sector_lines(asr_file: Path) -> None:
 # AVISO cleanup
 # =========================================================
 
-def get_icao_from_filename(path: Path) -> str | None:
-    match = re.match(r"^([A-Z]{4})\b", path.stem.upper())
-    return match.group(1) if match else None
-
-
-def get_tree_icao(line: str) -> str | None:
-    match = re.match(
-        r"^\s*(Free Text|Geo|Regions)\s*:\s*([A-Z]{4})\b",
-        line,
-        re.IGNORECASE,
-    )
-    return match.group(2).upper() if match else None
+AVISO_TREE_ENTRY_RE = re.compile(
+    r"^\s*(Free Text|Geo|Regions)\s*:",
+    re.IGNORECASE,
+)
 
 
 def filter_aviso(asr_file: Path) -> None:
-    if asr_file.parent.name.upper() != "AVISOS":
-        return
-    if "AVISO" not in asr_file.stem.upper():
-        return
-
-    target_icao = get_icao_from_filename(asr_file)
-    if not target_icao:
+    if not any(parent.name.upper() == "AVISOS" for parent in asr_file.parents):
         return
 
     lines = read_lines(asr_file)
@@ -81,14 +67,13 @@ def filter_aviso(asr_file: Path) -> None:
     removed = 0
 
     for line in lines:
-        tree_icao = get_tree_icao(line)
-        if tree_icao and tree_icao != target_icao:
+        if AVISO_TREE_ENTRY_RE.match(line):
             removed += 1
             continue
         output.append(line)
 
     if removed:
-        print(f"[AVISO] {asr_file}: removed {removed} invalid entries")
+        print(f"[AVISO] {asr_file}: removed {removed} tree entries")
         write_lines(asr_file, output)
 
 

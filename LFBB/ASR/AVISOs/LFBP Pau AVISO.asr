@@ -3,64 +3,6 @@ DisplayTypeNeedRadarContent:0
 DisplayTypeGeoReferenced:1
 SECTORFILE:
 SECTORTITLE:
-Free Text:LFBP Gates\1:freetext
-Free Text:LFBP Gates\1B:freetext
-Free Text:LFBP Gates\2:freetext
-Free Text:LFBP Gates\3:freetext
-Free Text:LFBP Gates\3B:freetext
-Free Text:LFBP Gates\4:freetext
-Free Text:LFBP Gates\5:freetext
-Free Text:LFBP Gates\5B:freetext
-Free Text:LFBP Gates\6:freetext
-Free Text:LFBP Gates\6B:freetext
-Free Text:LFBP Gates\7:freetext
-Free Text:LFBP Gates\8A:freetext
-Free Text:LFBP Gates\8B:freetext
-Free Text:LFBP Gates\8C:freetext
-Free Text:LFBP Gates\A1:freetext
-Free Text:LFBP Gates\A2:freetext
-Free Text:LFBP Gates\A3:freetext
-Free Text:LFBP Gates\G1:freetext
-Free Text:LFBP Gates\G2:freetext
-Free Text:LFBP Gates\G3:freetext
-Free Text:LFBP Gates\G4:freetext
-Free Text:LFBP Gates\G5:freetext
-Free Text:LFBP Gates\G6:freetext
-Free Text:LFBP Gates\G7:freetext
-Free Text:LFBP Gates\G8:freetext
-Free Text:LFBP Gates\PRKG HEL MIL:freetext
-Free Text:LFBP Gates\PRKG HEL MIL:freetext
-Free Text:LFBP Gates\PRKG MIL:freetext
-Free Text:LFBP Gates\PRKG MIL:freetext
-Free Text:LFBP Gates\SEC CIV:freetext
-Free Text:LFBP Taxiways\13:freetext
-Free Text:LFBP Taxiways\31:freetext
-Free Text:LFBP Taxiways\C:freetext
-Free Text:LFBP Taxiways\D:freetext
-Free Text:LFBP Taxiways\E:freetext
-Free Text:LFBP Taxiways\G:freetext
-Free Text:LFBP Taxiways\H:freetext
-Free Text:LFBP Taxiways\H:freetext
-Free Text:LFBP Taxiways\H:freetext
-Free Text:LFBP Taxiways\H:freetext
-Free Text:LFBP Taxiways\H13:freetext
-Free Text:LFBP Taxiways\H31:freetext
-Free Text:LFBP Taxiways\H4:freetext
-Free Text:LFBP Taxiways\HE:freetext
-Free Text:LFBP Taxiways\M:freetext
-Free Text:LFBP Taxiways\N:freetext
-Free Text:LFBP Taxiways\N1:freetext
-Free Text:LFBP Taxiways\N3:freetext
-Free Text:LFBP Taxiways\N5:freetext
-Free Text:LFBP Taxiways\NE:freetext
-Free Text:LFBP Taxiways\NG:freetext
-Free Text:LFBP Taxiways\NW:freetext
-Free Text:LFBP Taxiways\S:freetext
-Free Text:LFBP Taxiways\S0:freetext
-Free Text:LFBP Taxiways\S1:freetext
-Free Text:LFBP Taxiways\S2:freetext
-Geo:LFBP Groundlayout AVISO:
-Regions:LFBP AVISO:polygon
 SHOWC:1
 SHOWSB:0
 BELOW:0

@@ -3,9 +3,6 @@ DisplayTypeNeedRadarContent:0
 DisplayTypeGeoReferenced:1
 SECTORFILE:
 SECTORTITLE:
-Free Text:LFEQ Gates\LFEQ Gates:freetext
-Free Text:LFEQ Taxiways\LFEQ Taxiways:freetext
-Geo:LFEQ Groundlayout Quiberon:
 SHOWC:1
 SHOWSB:0
 BELOW:0

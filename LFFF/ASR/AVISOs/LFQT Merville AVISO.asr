@@ -3,16 +3,6 @@ DisplayTypeNeedRadarContent:0
 DisplayTypeGeoReferenced:1
 SECTORFILE:
 SECTORTITLE:
-Free Text:LFQT Gates\1:freetext
-Free Text:LFQT Gates\2:freetext
-Free Text:LFQT Gates\3:freetext
-Free Text:LFQT Gates\4:freetext
-Free Text:LFQT Taxiways\B1:freetext
-Free Text:LFQT Taxiways\B2:freetext
-Free Text:LFQT Taxiways\B3:freetext
-Free Text:LFQT Taxiways\B4:freetext
-Free Text:LFQT Taxiways\B5:freetext
-Geo:LFQT Groundlayout Merville Calone:
 SHOWC:1
 SHOWSB:0
 BELOW:0

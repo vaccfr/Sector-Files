@@ -3,42 +3,6 @@ DisplayTypeNeedRadarContent:0
 DisplayTypeGeoReferenced:1
 SECTORFILE:
 SECTORTITLE:
-Free Text:LFTH Gates\A1:freetext
-Free Text:LFTH Gates\A2:freetext
-Free Text:LFTH Gates\A3:freetext
-Free Text:LFTH Gates\A4:freetext
-Free Text:LFTH Gates\Aire transbordement Cargo:freetext
-Free Text:LFTH Gates\Escale Militaire:freetext
-Free Text:LFTH Gates\H1:freetext
-Free Text:LFTH Gates\H2:freetext
-Free Text:LFTH Gates\H3:freetext
-Free Text:LFTH Gates\H4:freetext
-Free Text:LFTH Gates\H5:freetext
-Free Text:LFTH Gates\H6:freetext
-Free Text:LFTH Gates\H7:freetext
-Free Text:LFTH Gates\HN:freetext
-Free Text:LFTH Gates\HS:freetext
-Free Text:LFTH Gates\P-Civ:freetext
-Free Text:LFTH Gates\P-Douanes-Gendarmerie:freetext
-Free Text:LFTH Gates\P-Mil:freetext
-Free Text:LFTH Gates\TWR:freetext
-Free Text:LFTH Gates\Terminal:freetext
-Free Text:LFTH Gates\VIP:freetext
-Free Text:LFTH Gates\X:freetext
-Free Text:LFTH Taxiways\A2:freetext
-Free Text:LFTH Taxiways\B2:freetext
-Free Text:LFTH Taxiways\C3:freetext
-Free Text:LFTH Taxiways\D3:freetext
-Free Text:LFTH Taxiways\E3:freetext
-Free Text:LFTH Taxiways\T1:freetext
-Free Text:LFTH Taxiways\T10:freetext
-Free Text:LFTH Taxiways\T2:freetext
-Free Text:LFTH Taxiways\T3:freetext
-Free Text:LFTH Taxiways\T4:freetext
-Free Text:LFTH Taxiways\T6:freetext
-Free Text:LFTH Taxiways\T8:freetext
-Geo:LFTH Groundlayout AVISO:
-Regions:LFTH AVISO:polygon
 SHOWC:1
 SHOWSB:0
 BELOW:0

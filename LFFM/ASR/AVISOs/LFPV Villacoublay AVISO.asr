@@ -3,32 +3,6 @@ DisplayTypeNeedRadarContent:0
 DisplayTypeGeoReferenced:1
 SECTORFILE:
 SECTORTITLE:
-Free Text:LFPV Gates\PRKG A:freetext
-Free Text:LFPV Gates\PRKG B:freetext
-Free Text:LFPV Gates\PRKG C:freetext
-Free Text:LFPV Gates\PRKG D:freetext
-Free Text:LFPV Gates\PRKG E:freetext
-Free Text:LFPV Gates\HEL:freetext
-Free Text:LFPV Gates\HEL:freetext
-Free Text:LFPV Taxiways\09:freetext
-Free Text:LFPV Taxiways\27:freetext
-Free Text:LFPV Taxiways\A:freetext
-Free Text:LFPV Taxiways\A:freetext
-Free Text:LFPV Taxiways\B:freetext
-Free Text:LFPV Taxiways\C:freetext
-Free Text:LFPV Taxiways\D:freetext
-Free Text:LFPV Taxiways\E:freetext
-Free Text:LFPV Taxiways\E:freetext
-Free Text:LFPV Taxiways\F:freetext
-Free Text:LFPV Taxiways\G:freetext
-Free Text:LFPV Taxiways\H1:freetext
-Free Text:LFPV Taxiways\X:freetext
-Free Text:LFPV Taxiways\X:freetext
-Free Text:LFPV Taxiways\X:freetext
-Free Text:LFPV Taxiways\X:freetext
-Free Text:LFPV Taxiways\X:freetext
-Geo:LFPV Groundlayout AVISO:
-Regions:LFPV AVISO:polygon
 SHOWC:1
 SHOWSB:0
 BELOW:0

@@ -3,65 +3,6 @@ DisplayTypeNeedRadarContent:0
 DisplayTypeGeoReferenced:1
 SECTORFILE:
 SECTORTITLE:
-Free Text:LFLS Gates\C1:freetext
-Free Text:LFLS Gates\C11:freetext
-Free Text:LFLS Gates\C2:freetext
-Free Text:LFLS Gates\C3:freetext
-Free Text:LFLS Gates\C4:freetext
-Free Text:LFLS Gates\C5:freetext
-Free Text:LFLS Gates\C6:freetext
-Free Text:LFLS Gates\C7:freetext
-Free Text:LFLS Gates\C21:freetext
-Free Text:LFLS Gates\C22:freetext
-Free Text:LFLS Gates\A2:freetext
-Free Text:LFLS Gates\A21:freetext
-Free Text:LFLS Gates\A3:freetext
-Free Text:LFLS Gates\A4:freetext
-Free Text:LFLS Gates\A5:freetext
-Free Text:LFLS Gates\A6:freetext
-Free Text:LFLS Gates\A7:freetext
-Free Text:LFLS Gates\A8:freetext
-Free Text:LFLS Gates\A9:freetext
-Free Text:LFLS Gates\A10:freetext
-Free Text:LFLS Gates\A11:freetext
-Free Text:LFLS Gates\A12:freetext
-Free Text:LFLS Gates\B1:freetext
-Free Text:LFLS Gates\B2:freetext
-Free Text:LFLS Gates\B3:freetext
-Free Text:LFLS Gates\D1:freetext
-Free Text:LFLS Gates\D2:freetext
-Free Text:LFLS Gates\D3:freetext
-Free Text:LFLS Gates\D4:freetext
-Free Text:LFLS Gates\D5:freetext
-Free Text:LFLS Gates\PRKG J:freetext
-Free Text:LFLS Gates\PRKG R:freetext
-Free Text:LFLS Gates\PRKG E:freetext
-Free Text:LFLS Gates\Terminal:freetext
-Free Text:LFLS Gates\GA Terminal:freetext
-Free Text:LFLS Taxiways\09:freetext
-Free Text:LFLS Taxiways\27:freetext
-Free Text:LFLS Taxiways\S1:freetext
-Free Text:LFLS Taxiways\S2:freetext
-Free Text:LFLS Taxiways\S3:freetext
-Free Text:LFLS Taxiways\S4:freetext
-Free Text:LFLS Taxiways\S5:freetext
-Free Text:LFLS Taxiways\N7:freetext
-Free Text:LFLS Taxiways\N7:freetext
-Free Text:LFLS Taxiways\N6:freetext
-Free Text:LFLS Taxiways\N6:freetext
-Free Text:LFLS Taxiways\T1:freetext
-Free Text:LFLS Taxiways\T2:freetext
-Free Text:LFLS Taxiways\T3:freetext
-Free Text:LFLS Taxiways\T4:freetext
-Free Text:LFLS Taxiways\T5:freetext
-Free Text:LFLS Taxiways\TH1:freetext
-Free Text:LFLS Taxiways\TH2:freetext
-Free Text:LFLS Taxiways\TL:freetext
-Free Text:LFLS Taxiways\K1:freetext
-Free Text:LFLS Taxiways\K2:freetext
-Free Text:LFLS Taxiways\K3:freetext
-Geo:LFLS Groundlayout AVISO:
-Regions:LFLS AVISO:polygon
 SHOWC:1
 SHOWSB:0
 BELOW:0

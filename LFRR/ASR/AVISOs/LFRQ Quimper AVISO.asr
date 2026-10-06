@@ -3,19 +3,6 @@ DisplayTypeNeedRadarContent:0
 DisplayTypeGeoReferenced:1
 SECTORFILE:
 SECTORTITLE:
-Free Text:LFRQ Gates\ACB:freetext
-Free Text:LFRQ Gates\Fret:freetext
-Free Text:LFRQ Gates\Fuel:freetext
-Free Text:LFRQ Gates\H:freetext
-Free Text:LFRQ Gates\Hangars:freetext
-Free Text:LFRQ Gates\Securite Civile:freetext
-Free Text:LFRQ Gates\TWR:freetext
-Free Text:LFRQ Gates\Terminal:freetext
-Free Text:LFRQ Taxiways\B:freetext
-Free Text:LFRQ Taxiways\C:freetext
-Free Text:LFRQ Taxiways\E:freetext
-Free Text:LFRQ Taxiways\X:freetext
-Regions:LFRQ AVISO:polygon
 SHOWC:1
 SHOWSB:0
 BELOW:0

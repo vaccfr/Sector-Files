@@ -3,51 +3,6 @@ DisplayTypeNeedRadarContent:0
 DisplayTypeGeoReferenced:1
 SECTORFILE:
 SECTORTITLE:
-Free Text:LFLB Gates\1:freetext
-Free Text:LFLB Gates\10:freetext
-Free Text:LFLB Gates\11:freetext
-Free Text:LFLB Gates\12:freetext
-Free Text:LFLB Gates\13:freetext
-Free Text:LFLB Gates\14:freetext
-Free Text:LFLB Gates\15:freetext
-Free Text:LFLB Gates\16:freetext
-Free Text:LFLB Gates\17:freetext
-Free Text:LFLB Gates\18:freetext
-Free Text:LFLB Gates\19:freetext
-Free Text:LFLB Gates\2:freetext
-Free Text:LFLB Gates\20:freetext
-Free Text:LFLB Gates\21:freetext
-Free Text:LFLB Gates\22:freetext
-Free Text:LFLB Gates\23:freetext
-Free Text:LFLB Gates\24:freetext
-Free Text:LFLB Gates\25:freetext
-Free Text:LFLB Gates\26:freetext
-Free Text:LFLB Gates\27:freetext
-Free Text:LFLB Gates\28:freetext
-Free Text:LFLB Gates\29:freetext
-Free Text:LFLB Gates\3:freetext
-Free Text:LFLB Gates\30:freetext
-Free Text:LFLB Gates\4:freetext
-Free Text:LFLB Gates\5:freetext
-Free Text:LFLB Gates\6:freetext
-Free Text:LFLB Gates\7:freetext
-Free Text:LFLB Gates\8:freetext
-Free Text:LFLB Gates\9:freetext
-Free Text:LFLB Gates\ACB:freetext
-Free Text:LFLB Gates\L:freetext
-Free Text:LFLB Gates\P:freetext
-Free Text:LFLB Taxiways\18:freetext
-Free Text:LFLB Taxiways\18L:freetext
-Free Text:LFLB Taxiways\36:freetext
-Free Text:LFLB Taxiways\36R:freetext
-Free Text:LFLB Taxiways\C:freetext
-Free Text:LFLB Taxiways\N:freetext
-Free Text:LFLB Taxiways\N1:freetext
-Free Text:LFLB Taxiways\N2:freetext
-Free Text:LFLB Taxiways\S:freetext
-Free Text:LFLB Taxiways\X:freetext
-Geo:LFLB Groundlayout AVISO:
-Regions:LFLB AVISO:polygon
 SHOWC:1
 SHOWSB:0
 BELOW:0

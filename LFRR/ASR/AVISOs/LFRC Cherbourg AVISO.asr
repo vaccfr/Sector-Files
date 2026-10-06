@@ -3,36 +3,6 @@ DisplayTypeNeedRadarContent:0
 DisplayTypeGeoReferenced:1
 SECTORFILE:
 SECTORTITLE:
-Free Text:LFRC Gates\71:freetext
-Free Text:LFRC Gates\AVGAS:freetext
-Free Text:LFRC Gates\Commercial Aviation:freetext
-Free Text:LFRC Gates\General Aviation < 12 m:freetext
-Free Text:LFRC Gates\Gros Porteur:freetext
-Free Text:LFRC Gates\H:freetext
-Free Text:LFRC Gates\Hangar ACB:freetext
-Free Text:LFRC Gates\N1:freetext
-Free Text:LFRC Gates\N2:freetext
-Free Text:LFRC Gates\N3:freetext
-Free Text:LFRC Gates\N4:freetext
-Free Text:LFRC Gates\N5:freetext
-Free Text:LFRC Gates\N6:freetext
-Free Text:LFRC Gates\N7:freetext
-Free Text:LFRC Gates\Parking Militaire:freetext
-Free Text:LFRC Gates\RFFS:freetext
-Free Text:LFRC Gates\Reserve Aeroclub:freetext
-Free Text:LFRC Gates\S1:freetext
-Free Text:LFRC Gates\S2:freetext
-Free Text:LFRC Gates\S3:freetext
-Free Text:LFRC Gates\S4:freetext
-Free Text:LFRC Gates\S5:freetext
-Free Text:LFRC Gates\S6:freetext
-Free Text:LFRC Gates\S7:freetext
-Free Text:LFRC Gates\TWR:freetext
-Free Text:LFRC Gates\Terminal:freetext
-Free Text:LFRC Taxiways\A:freetext
-Free Text:LFRC Taxiways\B:freetext
-Free Text:LFRC Taxiways\C:freetext
-Geo:LFRC Groundlayout Cherbourg:
 SHOWC:1
 SHOWSB:0
 BELOW:0

@@ -3,37 +3,6 @@ DisplayTypeNeedRadarContent:0
 DisplayTypeGeoReferenced:1
 SECTORFILE:
 SECTORTITLE:
-Free Text:LFRJ Gates\A:freetext
-Free Text:LFRJ Gates\A1:freetext
-Free Text:LFRJ Gates\A2:freetext
-Free Text:LFRJ Gates\A3:freetext
-Free Text:LFRJ Gates\ACB:freetext
-Free Text:LFRJ Gates\B:freetext
-Free Text:LFRJ Gates\B1:freetext
-Free Text:LFRJ Gates\B2:freetext
-Free Text:LFRJ Gates\B3:freetext
-Free Text:LFRJ Gates\C:freetext
-Free Text:LFRJ Gates\C1:freetext
-Free Text:LFRJ Gates\C2:freetext
-Free Text:LFRJ Gates\C3:freetext
-Free Text:LFRJ Gates\D:freetext
-Free Text:LFRJ Gates\D1:freetext
-Free Text:LFRJ Gates\D2:freetext
-Free Text:LFRJ Gates\D3:freetext
-Free Text:LFRJ Gates\E:freetext
-Free Text:LFRJ Gates\J:freetext
-Free Text:LFRJ Gates\K:freetext
-Free Text:LFRJ Gates\L:freetext
-Free Text:LFRJ Gates\M:freetext
-Free Text:LFRJ Gates\N:freetext
-Free Text:LFRJ Gates\P:freetext
-Free Text:LFRJ Gates\TWR:freetext
-Free Text:LFRJ Gates\Terminal:freetext
-Free Text:LFRJ Taxiways\A:freetext
-Free Text:LFRJ Taxiways\B:freetext
-Free Text:LFRJ Taxiways\C:freetext
-Free Text:LFRJ Taxiways\S:freetext
-Geo:LFRJ Groundlayout Landivisiau:
 SHOWC:1
 SHOWSB:0
 BELOW:0

@@ -3,31 +3,6 @@ DisplayTypeNeedRadarContent:0
 DisplayTypeGeoReferenced:1
 SECTORFILE:
 SECTORTITLE:
-Free Text:LFBU Gates\A0:freetext
-Free Text:LFBU Gates\A1:freetext
-Free Text:LFBU Gates\A2:freetext
-Free Text:LFBU Gates\A3:freetext
-Free Text:LFBU Gates\ACB:freetext
-Free Text:LFBU Gates\Aire de travail Helico base:freetext
-Free Text:LFBU Gates\B1:freetext
-Free Text:LFBU Gates\B2:freetext
-Free Text:LFBU Gates\B3:freetext
-Free Text:LFBU Gates\Bloc Technique:freetext
-Free Text:LFBU Gates\C1:freetext
-Free Text:LFBU Gates\C2:freetext
-Free Text:LFBU Gates\C3:freetext
-Free Text:LFBU Gates\CATS:freetext
-Free Text:LFBU Gates\Ecole Heli Union:freetext
-Free Text:LFBU Gates\H1:freetext
-Free Text:LFBU Gates\H2:freetext
-Free Text:LFBU Gates\H3:freetext
-Free Text:LFBU Gates\H4:freetext
-Free Text:LFBU Gates\H5:freetext
-Free Text:LFBU Gates\Hangar:freetext
-Free Text:LFBU Gates\Hangars ACB:freetext
-Free Text:LFBU Gates\Planeurs:freetext
-Free Text:LFBU Gates\Terminal:freetext
-Geo:LFBU Groundlayout Angouleme:
 SHOWC:1
 SHOWSB:0
 BELOW:0

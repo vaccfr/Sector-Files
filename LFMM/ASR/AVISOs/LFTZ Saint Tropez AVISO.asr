@@ -3,15 +3,6 @@ DisplayTypeNeedRadarContent:0
 DisplayTypeGeoReferenced:1
 SECTORFILE:
 SECTORTITLE:
-Free Text:LFTZ Gates\PRKG AVION:freetext
-Free Text:LFTZ Gates\PRKG HEL HERBE:freetext
-Free Text:LFTZ Gates\PRKG HERBE:freetext
-Free Text:LFTZ Taxiways\06:freetext
-Free Text:LFTZ Taxiways\24:freetext
-Free Text:LFTZ Taxiways\A:freetext
-Free Text:LFTZ Taxiways\B:freetext
-Geo:LFTZ Groundlayout AVISO:
-Regions:LFTZ AVISO:polygon
 SHOWC:1
 SHOWSB:0
 BELOW:0

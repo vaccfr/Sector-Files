@@ -3,46 +3,6 @@ DisplayTypeNeedRadarContent:0
 DisplayTypeGeoReferenced:1
 SECTORFILE:
 SECTORTITLE:
-Free Text:LFOB Gates\1:freetext
-Free Text:LFOB Gates\10:freetext
-Free Text:LFOB Gates\11:freetext
-Free Text:LFOB Gates\12:freetext
-Free Text:LFOB Gates\2:freetext
-Free Text:LFOB Gates\3:freetext
-Free Text:LFOB Gates\4:freetext
-Free Text:LFOB Gates\5:freetext
-Free Text:LFOB Gates\6:freetext
-Free Text:LFOB Gates\7:freetext
-Free Text:LFOB Gates\8:freetext
-Free Text:LFOB Gates\9:freetext
-Free Text:LFOB Gates\G1:freetext
-Free Text:LFOB Gates\G2:freetext
-Free Text:LFOB Gates\G3:freetext
-Free Text:LFOB Gates\Hangars ACB:freetext
-Free Text:LFOB Gates\IGN:freetext
-Free Text:LFOB Gates\L1:freetext
-Free Text:LFOB Gates\L2:freetext
-Free Text:LFOB Gates\L3:freetext
-Free Text:LFOB Gates\L4:freetext
-Free Text:LFOB Gates\L5:freetext
-Free Text:LFOB Gates\Park. Nord:freetext
-Free Text:LFOB Gates\T1:freetext
-Free Text:LFOB Gates\T2:freetext
-Free Text:LFOB Taxiways\A:freetext
-Free Text:LFOB Taxiways\H:freetext
-Free Text:LFOB Taxiways\H04:freetext
-Free Text:LFOB Taxiways\N1:freetext
-Free Text:LFOB Taxiways\N2:freetext
-Free Text:LFOB Taxiways\P:freetext
-Free Text:LFOB Taxiways\R:freetext
-Free Text:LFOB Taxiways\R1:freetext
-Free Text:LFOB Taxiways\R2:freetext
-Free Text:LFOB Taxiways\R30:freetext
-Free Text:LFOB Taxiways\T:freetext
-Free Text:LFOB Taxiways\W:freetext
-Free Text:LFOB Taxiways\X:freetext
-Geo:LFOB Groundlayout AVISO:
-Regions:LFOB AVISO:polygon
 SHOWC:1
 SHOWSB:0
 BELOW:0

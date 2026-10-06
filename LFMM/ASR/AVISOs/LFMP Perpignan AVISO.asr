@@ -3,53 +3,6 @@ DisplayTypeNeedRadarContent:0
 DisplayTypeGeoReferenced:1
 SECTORFILE:
 SECTORTITLE:
-Free Text:LFMP Gates\ACB:freetext
-Free Text:LFMP Gates\P1-A:freetext
-Free Text:LFMP Gates\P1-B:freetext
-Free Text:LFMP Gates\P2-A:freetext
-Free Text:LFMP Gates\P3-A:freetext
-Free Text:LFMP Gates\P3-B:freetext
-Free Text:LFMP Gates\P4-A:freetext
-Free Text:LFMP Gates\P4-B:freetext
-Free Text:LFMP Gates\P5-A:freetext
-Free Text:LFMP Gates\P5-B:freetext
-Free Text:LFMP Gates\P6-A:freetext
-Free Text:LFMP Gates\P6-B:freetext
-Free Text:LFMP Gates\P7-A:freetext
-Free Text:LFMP Gates\P8-A:freetext
-Free Text:LFMP Gates\P8-B:freetext
-Free Text:LFMP Gates\PRKG NORD:freetext
-Free Text:LFMP Gates\Sabena:freetext
-Free Text:LFMP Gates\SAMU:freetext
-Free Text:LFMP Taxiways\13:freetext
-Free Text:LFMP Taxiways\15:freetext
-Free Text:LFMP Taxiways\31:freetext
-Free Text:LFMP Taxiways\33:freetext
-Free Text:LFMP Taxiways\A:freetext
-Free Text:LFMP Taxiways\B:freetext
-Free Text:LFMP Taxiways\C:freetext
-Free Text:LFMP Taxiways\D:freetext
-Free Text:LFMP Taxiways\G:freetext
-Free Text:LFMP Taxiways\H:freetext
-Free Text:LFMP Taxiways\K:freetext
-Free Text:LFMP Taxiways\K:freetext
-Free Text:LFMP Taxiways\K:freetext
-Free Text:LFMP Taxiways\L:freetext
-Free Text:LFMP Taxiways\L:freetext
-Free Text:LFMP Taxiways\Q:freetext
-Free Text:LFMP Taxiways\R:freetext
-Free Text:LFMP Taxiways\T:freetext
-Free Text:LFMP Taxiways\U:freetext
-Free Text:LFMP Taxiways\V:freetext
-Free Text:LFMP Taxiways\V:freetext
-Free Text:LFMP Taxiways\V:freetext
-Free Text:LFMP Taxiways\X:freetext
-Free Text:LFMP Taxiways\X:freetext
-Free Text:LFMP Taxiways\X:freetext
-Free Text:LFMP Taxiways\X:freetext
-Free Text:LFMP Taxiways\X:freetext
-Geo:LFMP Groundlayout AVISO:
-Regions:LFMP AVISO:polygon
 SHOWC:1
 SHOWSB:0
 BELOW:0

@@ -3,50 +3,6 @@ DisplayTypeNeedRadarContent:0
 DisplayTypeGeoReferenced:1
 SECTORFILE:
 SECTORTITLE:
-Free Text:LFGJ Gates\1A:freetext
-Free Text:LFGJ Gates\2B:freetext
-Free Text:LFGJ Gates\2E:freetext
-Free Text:LFGJ Gates\2W:freetext
-Free Text:LFGJ Gates\3E:freetext
-Free Text:LFGJ Gates\3W:freetext
-Free Text:LFGJ Gates\41E:freetext
-Free Text:LFGJ Gates\41W:freetext
-Free Text:LFGJ Gates\42E:freetext
-Free Text:LFGJ Gates\42W:freetext
-Free Text:LFGJ Gates\43E:freetext
-Free Text:LFGJ Gates\43W:freetext
-Free Text:LFGJ Gates\44E:freetext
-Free Text:LFGJ Gates\44W:freetext
-Free Text:LFGJ Gates\45E:freetext
-Free Text:LFGJ Gates\45W:freetext
-Free Text:LFGJ Gates\51E:freetext
-Free Text:LFGJ Gates\51W:freetext
-Free Text:LFGJ Gates\52E:freetext
-Free Text:LFGJ Gates\52W:freetext
-Free Text:LFGJ Gates\53E:freetext
-Free Text:LFGJ Gates\53W:freetext
-Free Text:LFGJ Gates\61E:freetext
-Free Text:LFGJ Gates\61W:freetext
-Free Text:LFGJ Gates\62E:freetext
-Free Text:LFGJ Gates\62W:freetext
-Free Text:LFGJ Gates\63E:freetext
-Free Text:LFGJ Gates\63W:freetext
-Free Text:LFGJ Gates\AVT:freetext
-Free Text:LFGJ Gates\C:freetext
-Free Text:LFGJ Gates\Hangar:freetext
-Free Text:LFGJ Gates\Hangars:freetext
-Free Text:LFGJ Gates\Hangars ACB:freetext
-Free Text:LFGJ Gates\OPS:freetext
-Free Text:LFGJ Gates\P-Aviation Commerciale:freetext
-Free Text:LFGJ Gates\P-Aviation Generale code A:freetext
-Free Text:LFGJ Gates\P-Aviation Generale code A, B:freetext
-Free Text:LFGJ Gates\TWR:freetext
-Free Text:LFGJ Gates\Terminal:freetext
-Free Text:LFGJ Taxiways\A:freetext
-Free Text:LFGJ Taxiways\B:freetext
-Free Text:LFGJ Taxiways\C:freetext
-Free Text:LFGJ Taxiways\J:freetext
-Geo:LFGJ Groundlayout Dole Tavaux:
 SHOWC:1
 SHOWSB:0
 BELOW:0

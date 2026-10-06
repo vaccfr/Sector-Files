@@ -3,22 +3,6 @@ DisplayTypeNeedRadarContent:0
 DisplayTypeGeoReferenced:1
 SECTORFILE:
 SECTORTITLE:
-Free Text:LFRK Gates\ACB:freetext
-Free Text:LFRK Gates\Hangars:freetext
-Free Text:LFRK Gates\Para Club:freetext
-Free Text:LFRK Gates\Parking Herbe:freetext
-Free Text:LFRK Gates\TWR:freetext
-Free Text:LFRK Gates\Terminal:freetext
-Free Text:LFRK Gates\Zone Ouest:freetext
-Free Text:LFRK Taxiways\A:freetext
-Free Text:LFRK Taxiways\A1:freetext
-Free Text:LFRK Taxiways\B1:freetext
-Free Text:LFRK Taxiways\H:freetext
-Free Text:LFRK Taxiways\H1:freetext
-Free Text:LFRK Taxiways\H2:freetext
-Free Text:LFRK Taxiways\H3:freetext
-Free Text:LFRK Taxiways\X:freetext
-Geo:LFRK Groundlayout Caen:
 SHOWC:1
 SHOWSB:0
 BELOW:0

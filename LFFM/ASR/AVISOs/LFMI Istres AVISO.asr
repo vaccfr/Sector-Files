@@ -3,54 +3,6 @@ DisplayTypeNeedRadarContent:0
 DisplayTypeGeoReferenced:1
 SECTORFILE:
 SECTORTITLE:
-Free Text:LFMI Gates\Aire Principale:freetext
-Free Text:LFMI Gates\Aire de Degivrage:freetext
-Free Text:LFMI Gates\Aire de point fixe:freetext
-Free Text:LFMI Gates\Aire secondaire:freetext
-Free Text:LFMI Gates\Bloc de commande:freetext
-Free Text:LFMI Gates\Mercure:freetext
-Free Text:LFMI Gates\P-A Interdit:freetext
-Free Text:LFMI Gates\P-Airbus:freetext
-Free Text:LFMI Gates\P-B Interdit:freetext
-Free Text:LFMI Gates\P-DGA/EV:freetext
-Free Text:LFMI Gates\P-F Escale:freetext
-Free Text:LFMI Gates\P-I:freetext
-Free Text:LFMI Gates\P-J Dassault:freetext
-Free Text:LFMI Gates\P-K:freetext
-Free Text:LFMI Gates\P-Phenix:freetext
-Free Text:LFMI Gates\P-V:freetext
-Free Text:LFMI Gates\P-VT:freetext
-Free Text:LFMI Gates\Portail Gate:freetext
-Free Text:LFMI Gates\Raquette Nord / North Loop:freetext
-Free Text:LFMI Gates\TWR:freetext
-Free Text:LFMI Gates\Zone largage charges exterieures:freetext
-Free Text:LFMI Taxiways\A:freetext
-Free Text:LFMI Taxiways\A1:freetext
-Free Text:LFMI Taxiways\A2:freetext
-Free Text:LFMI Taxiways\B:freetext
-Free Text:LFMI Taxiways\B1:freetext
-Free Text:LFMI Taxiways\C:freetext
-Free Text:LFMI Taxiways\C1:freetext
-Free Text:LFMI Taxiways\C2:freetext
-Free Text:LFMI Taxiways\C3:freetext
-Free Text:LFMI Taxiways\C4:freetext
-Free Text:LFMI Taxiways\D:freetext
-Free Text:LFMI Taxiways\E:freetext
-Free Text:LFMI Taxiways\E1:freetext
-Free Text:LFMI Taxiways\F:freetext
-Free Text:LFMI Taxiways\G:freetext
-Free Text:LFMI Taxiways\H:freetext
-Free Text:LFMI Taxiways\J:freetext
-Free Text:LFMI Taxiways\K:freetext
-Free Text:LFMI Taxiways\L:freetext
-Free Text:LFMI Taxiways\M:freetext
-Free Text:LFMI Taxiways\N:freetext
-Free Text:LFMI Taxiways\S:freetext
-Free Text:LFMI Taxiways\T:freetext
-Free Text:LFMI Taxiways\W:freetext
-Free Text:LFMI Taxiways\X:freetext
-Free Text:LFMI Taxiways\Y:freetext
-Geo:LFMI Groundlayout Istres le tube:
 SHOWC:1
 SHOWSB:0
 BELOW:0

@@ -3,15 +3,6 @@ DisplayTypeNeedRadarContent:0
 DisplayTypeGeoReferenced:1
 SECTORFILE:
 SECTORTITLE:
-Free Text:LFTW Gates\1:freetext
-Free Text:LFTW Gates\2:freetext
-Free Text:LFTW Gates\3:freetext
-Free Text:LFTW Gates\4:freetext
-Free Text:LFTW Gates\5:freetext
-Free Text:LFTW Gates\6:freetext
-Free Text:LFTW Gates\7:freetext
-Free Text:LFTW Gates\8:freetext
-Geo:LFTW Groundlayout Nimes Garons:
 SHOWC:1
 SHOWSB:0
 BELOW:0

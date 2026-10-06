@@ -3,29 +3,6 @@ DisplayTypeNeedRadarContent:0
 DisplayTypeGeoReferenced:1
 SECTORFILE:
 SECTORTITLE:
-Free Text:LFOP Gates\B1:freetext
-Free Text:LFOP Gates\B2:freetext
-Free Text:LFOP Gates\B3:freetext
-Free Text:LFOP Gates\B4:freetext
-Free Text:LFOP Gates\P A:freetext
-Free Text:LFOP Gates\P C:freetext
-Free Text:LFOP Gates\P M:freetext
-Free Text:LFOP Gates\P U:freetext
-Free Text:LFOP Gates\P V:freetext
-Free Text:LFOP Taxiways\P:freetext
-Free Text:LFOP Taxiways\R1:freetext
-Free Text:LFOP Taxiways\R2:freetext
-Free Text:LFOP Taxiways\S1:freetext
-Free Text:LFOP Taxiways\S2:freetext
-Free Text:LFOP Taxiways\S3:freetext
-Free Text:LFOP Taxiways\T1:freetext
-Free Text:LFOP Taxiways\T2:freetext
-Free Text:LFOP Taxiways\T3:freetext
-Free Text:LFOP Taxiways\Y:freetext
-Free Text:LFOP Taxiways\Z2:freetext
-Free Text:LFOP Taxiways\Z3:freetext
-Geo:LFOP Groundlayout AVISO:
-Regions:LFOP AVISO:polygon
 SHOWC:1
 SHOWSB:0
 BELOW:0

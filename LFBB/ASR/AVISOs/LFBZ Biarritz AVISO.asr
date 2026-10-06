@@ -3,46 +3,6 @@ DisplayTypeNeedRadarContent:0
 DisplayTypeGeoReferenced:1
 SECTORFILE:
 SECTORTITLE:
-Free Text:LFBZ Gates\1:freetext
-Free Text:LFBZ Gates\2:freetext
-Free Text:LFBZ Gates\3:freetext
-Free Text:LFBZ Gates\34:freetext
-Free Text:LFBZ Gates\4:freetext
-Free Text:LFBZ Gates\5:freetext
-Free Text:LFBZ Gates\56:freetext
-Free Text:LFBZ Gates\6:freetext
-Free Text:LFBZ Gates\67:freetext
-Free Text:LFBZ Gates\7:freetext
-Free Text:LFBZ Gates\78:freetext
-Free Text:LFBZ Gates\AVT:freetext
-Free Text:LFBZ Gates\H:freetext
-Free Text:LFBZ Gates\H1:freetext
-Free Text:LFBZ Gates\H2:freetext
-Free Text:LFBZ Gates\H3:freetext
-Free Text:LFBZ Gates\Hangars:freetext
-Free Text:LFBZ Gates\Hotel:freetext
-Free Text:LFBZ Gates\Parking Alpha:freetext
-Free Text:LFBZ Gates\Parking Bravo:freetext
-Free Text:LFBZ Gates\Parking Charlie:freetext
-Free Text:LFBZ Gates\Parking Kilo:freetext
-Free Text:LFBZ Gates\Parking Sud:freetext
-Free Text:LFBZ Gates\RFFS:freetext
-Free Text:LFBZ Gates\TWR:freetext
-Free Text:LFBZ Gates\Terminal:freetext
-Free Text:LFBZ Taxiways\D:freetext
-Free Text:LFBZ Taxiways\D1:freetext
-Free Text:LFBZ Taxiways\N:freetext
-Free Text:LFBZ Taxiways\N1:freetext
-Free Text:LFBZ Taxiways\N11:freetext
-Free Text:LFBZ Taxiways\N2:freetext
-Free Text:LFBZ Taxiways\N3:freetext
-Free Text:LFBZ Taxiways\P:freetext
-Free Text:LFBZ Taxiways\S:freetext
-Free Text:LFBZ Taxiways\S1:freetext
-Free Text:LFBZ Taxiways\S2:freetext
-Free Text:LFBZ Taxiways\V:freetext
-Geo:LFBZ Groundlayout AVISO:
-Regions:LFBZ AVISO:polygon
 SHOWC:1
 SHOWSB:0
 BELOW:0

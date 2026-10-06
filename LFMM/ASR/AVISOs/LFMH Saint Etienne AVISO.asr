@@ -3,18 +3,6 @@ DisplayTypeNeedRadarContent:0
 DisplayTypeGeoReferenced:1
 SECTORFILE:
 SECTORTITLE:
-Free Text:LFMH Gates\1:freetext
-Free Text:LFMH Gates\2:freetext
-Free Text:LFMH Gates\3:freetext
-Free Text:LFMH Gates\4:freetext
-Free Text:LFMH Gates\5:freetext
-Free Text:LFMH Gates\6:freetext
-Free Text:LFMH Gates\7:freetext
-Free Text:LFMH Gates\8:freetext
-Free Text:LFMH Taxiways\A:freetext
-Free Text:LFMH Taxiways\B:freetext
-Free Text:LFMH Taxiways\C:freetext
-Geo:LFMH Groundlayout Saint-Etienne Boutheon:
 SHOWC:1
 SHOWSB:0
 BELOW:0

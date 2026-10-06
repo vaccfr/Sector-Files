@@ -3,34 +3,6 @@ DisplayTypeNeedRadarContent:0
 DisplayTypeGeoReferenced:1
 SECTORFILE:
 SECTORTITLE:
-Free Text:LFPX Taxiways\05:freetext
-Free Text:LFPX Taxiways\10:freetext
-Free Text:LFPX Taxiways\23:freetext
-Free Text:LFPX Taxiways\28:freetext
-Free Text:LFPX Taxiways\A:freetext
-Free Text:LFPX Taxiways\A:freetext
-Free Text:LFPX Taxiways\A:freetext
-Free Text:LFPX Taxiways\A1:freetext
-Free Text:LFPX Taxiways\A2:freetext
-Free Text:LFPX Taxiways\A3:freetext
-Free Text:LFPX Taxiways\A4:freetext
-Free Text:LFPX Taxiways\A5:freetext
-Free Text:LFPX Taxiways\AVT:freetext
-Free Text:LFPX Taxiways\B:freetext
-Free Text:LFPX Taxiways\B:freetext
-Free Text:LFPX Taxiways\B:freetext
-Free Text:LFPX Taxiways\B1:freetext
-Free Text:LFPX Taxiways\B2:freetext
-Free Text:LFPX Taxiways\B3:freetext
-Free Text:LFPX Taxiways\B4:freetext
-Free Text:LFPX Taxiways\B5:freetext
-Free Text:LFPX Taxiways\N1:freetext
-Free Text:LFPX Taxiways\N2:freetext
-Free Text:LFPX Taxiways\S1:freetext
-Free Text:LFPX Taxiways\S2:freetext
-Free Text:LFPX Taxiways\T:freetext
-Geo:LFPX Groundlayout AVISO:
-Regions:LFPX AVISO:polygon
 SHOWC:1
 SHOWSB:0
 BELOW:0

@@ -3,47 +3,6 @@ DisplayTypeNeedRadarContent:0
 DisplayTypeGeoReferenced:1
 SECTORFILE:
 SECTORTITLE:
-Free Text:LFLP Gates\101:freetext
-Free Text:LFLP Gates\11:freetext
-Free Text:LFLP Gates\111:freetext
-Free Text:LFLP Gates\12:freetext
-Free Text:LFLP Gates\21:freetext
-Free Text:LFLP Gates\22:freetext
-Free Text:LFLP Gates\23:freetext
-Free Text:LFLP Gates\31:freetext
-Free Text:LFLP Gates\32:freetext
-Free Text:LFLP Gates\33:freetext
-Free Text:LFLP Gates\34:freetext
-Free Text:LFLP Gates\35:freetext
-Free Text:LFLP Gates\41:freetext
-Free Text:LFLP Gates\42:freetext
-Free Text:LFLP Gates\43:freetext
-Free Text:LFLP Gates\44:freetext
-Free Text:LFLP Gates\45:freetext
-Free Text:LFLP Gates\61:freetext
-Free Text:LFLP Gates\62:freetext
-Free Text:LFLP Gates\71:freetext
-Free Text:LFLP Gates\72:freetext
-Free Text:LFLP Gates\73:freetext
-Free Text:LFLP Gates\74:freetext
-Free Text:LFLP Gates\75:freetext
-Free Text:LFLP Gates\91:freetext
-Free Text:LFLP Gates\ACB:freetext
-Free Text:LFLP Gates\Hangar:freetext
-Free Text:LFLP Gates\Parking:freetext
-Free Text:LFLP Gates\TWR:freetext
-Free Text:LFLP Gates\Terminal:freetext
-Free Text:LFLP Gates\X:freetext
-Free Text:LFLP Taxiways\A:freetext
-Free Text:LFLP Taxiways\B:freetext
-Free Text:LFLP Taxiways\C:freetext
-Free Text:LFLP Taxiways\D:freetext
-Free Text:LFLP Taxiways\G1:freetext
-Free Text:LFLP Taxiways\G2:freetext
-Free Text:LFLP Taxiways\G3:freetext
-Free Text:LFLP Taxiways\G4:freetext
-Free Text:LFLP Taxiways\T:freetext
-Geo:LFLP Groundlayout Annecy Methet:
 SHOWC:1
 SHOWSB:0
 BELOW:0

@@ -3,15 +3,6 @@ DisplayTypeNeedRadarContent:0
 DisplayTypeGeoReferenced:1
 SECTORFILE:
 SECTORTITLE:
-Free Text:LFAQ Gates\ACB:freetext
-Free Text:LFAQ Gates\Hangars ACB:freetext
-Free Text:LFAQ Gates\Hangars Airbus:freetext
-Free Text:LFAQ Gates\TWR:freetext
-Free Text:LFAQ Taxiways\B:freetext
-Free Text:LFAQ Taxiways\E:freetext
-Free Text:LFAQ Taxiways\S:freetext
-Free Text:LFAQ Taxiways\X:freetext
-Geo:LFAQ Groundlayout Albert Bray:
 SHOWC:1
 SHOWSB:0
 BELOW:0

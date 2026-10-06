@@ -3,23 +3,6 @@ DisplayTypeNeedRadarContent:0
 DisplayTypeGeoReferenced:1
 SECTORFILE:
 SECTORTITLE:
-Free Text:LFRO Gates\1:freetext
-Free Text:LFRO Gates\2A:freetext
-Free Text:LFRO Gates\2B:freetext
-Free Text:LFRO Gates\2C:freetext
-Free Text:LFRO Gates\ACB:freetext
-Free Text:LFRO Gates\Hangars:freetext
-Free Text:LFRO Gates\L1:freetext
-Free Text:LFRO Gates\L2:freetext
-Free Text:LFRO Gates\L3:freetext
-Free Text:LFRO Gates\L4:freetext
-Free Text:LFRO Gates\L5:freetext
-Free Text:LFRO Gates\L6:freetext
-Free Text:LFRO Gates\TWR:freetext
-Free Text:LFRO Gates\Terminal:freetext
-Free Text:LFRO Taxiways\N:freetext
-Free Text:LFRO Taxiways\S:freetext
-Geo:LFRO Groundlayout Lannion:
 SHOWC:1
 SHOWSB:0
 BELOW:0

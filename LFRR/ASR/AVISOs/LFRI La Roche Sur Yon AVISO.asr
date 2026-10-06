@@ -3,23 +3,6 @@ DisplayTypeNeedRadarContent:0
 DisplayTypeGeoReferenced:1
 SECTORFILE:
 SECTORTITLE:
-Free Text:LFRI Gates\A:freetext
-Free Text:LFRI Gates\B:freetext
-Free Text:LFRI Gates\B2:freetext
-Free Text:LFRI Gates\C:freetext
-Free Text:LFRI Gates\C2:freetext
-Free Text:LFRI Gates\D:freetext
-Free Text:LFRI Gates\E:freetext
-Free Text:LFRI Gates\E2:freetext
-Free Text:LFRI Gates\TWR:freetext
-Free Text:LFRI Taxiways\A:freetext
-Free Text:LFRI Taxiways\AE:freetext
-Free Text:LFRI Taxiways\AW:freetext
-Free Text:LFRI Taxiways\B:freetext
-Free Text:LFRI Taxiways\C:freetext
-Free Text:LFRI Taxiways\D:freetext
-Free Text:LFRI Taxiways\F:freetext
-Geo:LFRI Groundlayout La Roche sur Yon:
 SHOWC:1
 SHOWSB:0
 BELOW:0

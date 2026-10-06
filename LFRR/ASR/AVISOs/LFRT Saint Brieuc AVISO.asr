@@ -3,20 +3,6 @@ DisplayTypeNeedRadarContent:0
 DisplayTypeGeoReferenced:1
 SECTORFILE:
 SECTORTITLE:
-Free Text:LFRT Gates\1:freetext
-Free Text:LFRT Gates\2:freetext
-Free Text:LFRT Gates\3:freetext
-Free Text:LFRT Gates\A:freetext
-Free Text:LFRT Gates\ACB:freetext
-Free Text:LFRT Gates\B:freetext
-Free Text:LFRT Gates\C:freetext
-Free Text:LFRT Gates\Hangar:freetext
-Free Text:LFRT Gates\P:freetext
-Free Text:LFRT Gates\TWR:freetext
-Free Text:LFRT Gates\Terminal:freetext
-Free Text:LFRT Taxiways\A:freetext
-Free Text:LFRT Taxiways\B:freetext
-Free Text:LFRT Taxiways\C:freetext
 SHOWC:1
 SHOWSB:0
 BELOW:0
