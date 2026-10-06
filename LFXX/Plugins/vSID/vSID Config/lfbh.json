@@ -1,0 +1,63 @@
+{
+  "LFBH": {
+    "elevation": 74,
+    "runways": "09,27",
+    "transAlt": 5000,
+    "maxInitialClimb": 14000,
+    "appSI": "BB,BH",
+    "intersections": {
+    "09": "A",
+    "27": "A"
+    },
+    "sids": {
+      "LUSON": {
+        "E": {
+          "1": {
+            "rwy": "09",
+            "initial": 2500,
+            "wtc":"LM",
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "W": {
+          "1": {
+            "rwy": "27",
+            "initial": 5000,
+            "wtc":"LM",
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        }
+      },
+      "MAREN": {
+        "E": {
+          "1": {
+            "rwy": "09",
+            "initial": 2500,
+            "wtc":"LM",
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "W": {
+          "1": {
+            "rwy": "27",
+            "initial": 5000,
+            "wtc":"LM",
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        }
+      }
+    }
+  }
+}

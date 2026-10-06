@@ -1,0 +1,76 @@
+{
+  "LFRH": {
+    "elevation": 161,
+    "runways": "07,25,02,20",
+    "transAlt": 5000,
+    "maxInitialClimb": 0,
+    "appSI": "RR,RHA",
+    "intersections": {
+    "07": "E1,A1",
+    "25": "C,B,B1,B2",
+    "02": "A3,A4",
+    "20": "C1,D"
+    },
+    "sids": {
+      "OMNI": {
+        "1": {
+          "D": {
+            "rwy": "07,25,02,20",
+            "initial": 0,
+            "prio": 1
+          }
+        }
+      },
+      "ADSET": {
+        "W": {
+          "1": {
+            "rwy": "25",
+            "initial": 0,
+            "prio": 1
+          }
+        }
+      },
+      "BAGAD": {
+        "B": {
+          "1": {
+            "rwy": "25",
+            "initial": 0,
+            "prio": 1
+          }
+        },
+        "W": {
+          "1": {
+            "rwy": "25",
+            "initial": 0,
+            "prio": 2
+          }
+        }
+      },
+      "LENSU": {
+        "E": {
+          "1": {
+            "rwy": "07",
+            "initial": 0,
+            "prio": 1
+          }
+        }
+      },
+      "ROSPO": {
+        "E": {
+          "1": {
+            "rwy": "07",
+            "initial": 0,
+            "prio": 1
+          }
+        },
+        "W": {
+          "1": {
+            "rwy": "25",
+            "initial": 0,
+            "prio": 1
+          }
+        }
+      }
+    }
+  }
+}

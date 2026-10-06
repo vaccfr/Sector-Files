@@ -1,21 +1,21 @@
 {
   "plugins": [
     {
-      "name": "Central Squawk",
-      "current": "1.0.3",
-      "github": "AlexisBalzano/CentralSquawk",
-      "include_prereleases": false
-    },
-    {
-      "name": "PluginBridge",
-      "current": "2.0.1",
-      "github": "AlexisBalzano/Euroscope-Plugin-Bridge",
-      "include_prereleases": false
-    },
-    {
       "name": "AMAN",
       "current": "1.0.2",
       "github": "vaccfr/AMAN-Plugin",
+      "include_prereleases": false
+    },
+    {
+      "name": "CDM",
+      "current": "2.29.1",
+      "github": "IWantPizzaa/CDM",
+      "include_prereleases": false
+    },
+    {
+      "name": "Central Squawk",
+      "current": "1.0.3",
+      "github": "AlexisBalzano/CentralSquawk",
       "include_prereleases": false
     },
     {
@@ -25,15 +25,21 @@
       "include_prereleases": false
     },
     {
-      "name": "RDF Plugin",
-      "current": "1.4.4",
-      "github": "AlexisBalzano/RDF",
+      "name": "PluginBridge",
+      "current": "2.0.1",
+      "github": "AlexisBalzano/Euroscope-Plugin-Bridge",
       "include_prereleases": false
     },
     {
       "name": "RampAgent",
       "current": "2.0.4",
       "github": "AlexisBalzano/EuroscopeRampAgent",
+      "include_prereleases": false
+    },
+    {
+      "name": "RDF Plugin",
+      "current": "1.4.4",
+      "github": "AlexisBalzano/RDF",
       "include_prereleases": false
     },
     {
@@ -49,15 +55,15 @@
       "include_prereleases": false
     },
     {
-      "name": "vACDM",
-      "current": "1.4.1",
-      "github": "herver/vacdm-plugin",
+      "name": "vSID",
+      "current": "0.10.0.2",
+      "github": "AlexisBalzano/vSID",
       "include_prereleases": false
     },
     {
       "name": "vSMR",
-      "current": "1.1.1",
-      "github": "AlexisBalzano/vSMR",
+      "current": "2.0.0-beta.6",
+      "github": "IWantPizzaa/vSMR",
       "include_prereleases": false
     }
   ]

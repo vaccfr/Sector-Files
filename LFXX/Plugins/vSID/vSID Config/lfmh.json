@@ -1,0 +1,37 @@
+{
+  "LFMH": {
+    "elevation": 1325,
+    "runways": "17,35",
+    "transAlt": 6000,
+    "maxInitialClimb": 0,
+    "appSI": "MM,LCA",
+    "intersections": {
+    "17": "A,B",
+    "35": "D"
+    },
+    "sids": {
+      "LERGA": {
+        "N": {
+          "1": {
+            "rwy": "35",
+            "initial": 0,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "S": {
+          "1": {
+            "rwy": "17",
+            "initial": 0,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        }
+      }
+    }
+  }
+}

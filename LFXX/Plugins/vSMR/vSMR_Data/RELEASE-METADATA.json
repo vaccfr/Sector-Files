@@ -1,0 +1,59 @@
+{
+    "schema_version":  1,
+    "product":  "vSMR",
+    "version":  "2.0.0",
+    "channel":  "stable",
+    "git_commit":  "88da008fcc42a190d0e10d92a71c043fc8e91a9b",
+    "source_dirty":  false,
+    "publishable":  false,
+    "built_utc":  "2026-10-04T11:06:40Z",
+    "configuration":  "Release",
+    "platform":  "Win32",
+    "toolset":  "v145",
+    "runtime":  {
+                    "version":  "2.0.0",
+                    "abi":  1,
+                    "relative_path":  "vSMR_Data/Runtime/vSMR.Runtime.dll",
+                    "size":  2176512,
+                    "sha256":  "22408c9889e79255332ae66119559e447888dcbe6f771e7de900515e9c973a5d"
+                },
+    "loader":  {
+                   "version":  "1.3.0",
+                   "runtime_abi":  1,
+                   "relative_path":  "vSMR.dll",
+                   "size":  732672,
+                   "sha256":  "2a614460ec51aadef4137010131fae885320490914e084700f62f6dbe7c9e92f"
+               },
+    "automatic_update":  {
+                             "manifest_schema_version":  1,
+                             "minimum_loader_version":  "1.3.0",
+                             "signer_cert_der_sha256":  "",
+                             "signature_required":  false,
+                             "publishable":  false
+                         },
+    "authenticode":  {
+                         "status":  "NotSigned",
+                         "subject":  "",
+                         "thumbprint":  "",
+                         "runtime":  {
+                                         "status":  "NotSigned",
+                                         "subject":  "",
+                                         "thumbprint":  ""
+                                     },
+                         "crash_handler":  {
+                                               "status":  "NotSigned",
+                                               "subject":  "",
+                                               "thumbprint":  ""
+                                           }
+                     },
+    "ci":  {
+               "provider":  "local",
+               "build_id":  "",
+               "build_number":  "",
+               "job_id":  "",
+               "pull_request":  "",
+               "event_name":  "",
+               "ref":  "",
+               "run_id":  ""
+           }
+}

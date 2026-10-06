@@ -1,0 +1,121 @@
+{
+  "LFRG": {
+    "elevation": 479,
+    "runways": "12,30",
+    "transAlt": 5000,
+    "maxInitialClimb": 0,
+    "appSI": "RR,RNA,FF",
+    "intersections": {
+    "12": "B",
+    "30": "B"
+    },
+    "sids": {
+      "LGL": {
+        "U": {
+          "1": {
+            "rwy": "12",
+            "initial": 0,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "V": {
+          "1": {
+            "rwy": "30",
+            "initial": 0,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "E": {
+          "1": {
+            "rwy": "12",
+            "initial": 0,
+            "prio": 1,
+            "equip": {
+              "NON-RNAV": true
+            }
+          }
+        },
+        "W": {
+          "1": {
+            "rwy": "30",
+            "initial": 0,
+            "prio": 1,
+            "equip": {
+              "NON-RNAV": true
+            }
+          }
+        }
+      },
+      "CAN": {
+        "E": {
+          "1": {
+            "rwy": "12",
+            "initial": 0,
+            "prio": 1
+          }
+        },
+        "W": {
+          "1": {
+            "rwy": "30",
+            "initial": 0,
+            "prio": 1
+          }
+        }
+      },
+      "ELBOX": {
+        "E": {
+          "1": {
+            "rwy": "12",
+            "initial": 0,
+            "prio": 1
+          }
+        },
+        "W": {
+          "1": {
+            "rwy": "30",
+            "initial": 0,
+            "prio": 1
+          }
+        }
+      },
+      "ETRAT": {
+        "E": {
+          "1": {
+            "rwy": "12",
+            "initial": 0,
+            "prio": 1
+          }
+        },
+        "W": {
+          "1": {
+            "rwy": "30",
+            "initial": 0,
+            "prio": 1
+          }
+        }
+      },
+      "NEVIL": {
+        "E": {
+          "1": {
+            "rwy": "12",
+            "initial": 0,
+            "prio": 1
+          }
+        },
+        "W": {
+          "1": {
+            "rwy": "30",
+            "initial": 0,
+            "prio": 1
+          }
+        }
+      }
+    }
+  }
+}

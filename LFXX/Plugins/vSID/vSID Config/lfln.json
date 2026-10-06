@@ -1,0 +1,74 @@
+{
+  "LFLN": {
+    "elevation": 796,
+    "runways": "15L,33R,15R,33L,15,33",
+    "transAlt": 5000,
+    "maxInitialClimb": 0,
+    "appSI": "MM,LCA",
+    "intersections": {
+    "15L": "E4",
+    "15R": "W3",
+    "33L": "W1",
+    "33R": "E1,E2"
+    },
+    "sids": {
+      "BUSIL": {
+        "S": {
+          "1": {
+            "rwy": "15L",
+            "initial": 0,
+            "prio": 1
+          }
+        },
+        "N": {
+          "1": {
+            "rwy": "33R",
+            "initial": 0,
+            "prio": 1
+          }
+        }
+      },
+      "LESPI": {
+        "S": {
+          "1": {
+            "rwy": "15L",
+            "initial": 0,
+            "prio": 1
+          }
+        },
+        "N": {
+          "1": {
+            "rwy": "33R",
+            "initial": 0,
+            "prio": 1
+          }
+        }
+      },
+      "MOU": {
+        "S": {
+          "1": {
+            "rwy": "15L",
+            "initial": 0,
+            "prio": 1
+          }
+        },
+        "N": {
+          "1": {
+            "rwy": "33R",
+            "initial": 0,
+            "prio": 1
+          }
+        }
+      },
+      "SINPO": {
+        "S": {
+          "1": {
+            "rwy": "15L",
+            "initial": 0,
+            "prio": 1
+          }
+        }
+      }
+    }
+  }
+}

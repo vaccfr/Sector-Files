@@ -1,0 +1,246 @@
+{
+  "LFTZ": {
+    "elevation": 14,
+    "runways": "06,24",
+    "transAlt": 5000,
+    "maxInitialClimb": 4000,
+    "intersections": {
+      "06": "A,B",
+      "24": "A,B"
+    },
+    "appSI": "MM,MNA",
+    "sids": {
+      "BADOD": {
+        "R": {
+          "1": {
+            "rwy": "06",
+            "initial": 4000,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        }
+      },
+      "BODRU": {
+        "R": {
+          "1": {
+            "rwy": "06",
+            "initial": 4000,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        }
+      },
+      "IRMAR": {
+        "R": {
+          "1": {
+            "rwy": "06",
+            "initial": 4000,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        }
+      },
+      "OKTET": {
+        "R": {
+          "1": {
+            "rwy": "06",
+            "initial": 4000,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "G": {
+          "1": {
+            "rwy": "06",
+            "initial": 4000,
+            "prio": 1,
+            "equip": {
+              "NON-RNAV": true
+            }
+          }
+        }
+      },
+      "PERUS": {
+        "R": {
+          "1": {
+            "rwy": "06",
+            "initial": 4000,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "G": {
+          "1": {
+            "rwy": "06",
+            "initial": 4000,
+            "prio": 1,
+            "equip": {
+              "NON-RNAV": true
+            }
+          }
+        }
+      },
+      "LANKO": {
+        "R": {
+          "1": {
+            "rwy": "06",
+            "initial": 4000,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "G": {
+          "1": {
+            "rwy": "06",
+            "initial": 4000,
+            "prio": 1,
+            "equip": {
+              "NON-RNAV": true
+            }
+          }
+        }
+      },
+      "LONSU": {
+        "R": {
+          "1": {
+            "rwy": "06",
+            "initial": 4000,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "G": {
+          "1": {
+            "rwy": "06",
+            "initial": 4000,
+            "prio": 1,
+            "equip": {
+              "NON-RNAV": true
+            }
+          }
+        }
+      },
+      "NOSTA": {
+        "R": {
+          "1": {
+            "rwy": "06",
+            "initial": 4000,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "G": {
+          "1": {
+            "rwy": "06",
+            "initial": 4000,
+            "prio": 1,
+            "equip": {
+              "NON-RNAV": true
+            }
+          }
+        }
+      },
+      "SODRI": {
+        "R": {
+          "1": {
+            "rwy": "06",
+            "initial": 4000,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "G": {
+          "1": {
+            "rwy": "06",
+            "initial": 4000,
+            "prio": 1
+          }
+        }
+      },
+      "TURIL": {
+        "R": {
+          "1": {
+            "rwy": "06",
+            "initial": 4000,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "G": {
+          "1": {
+            "rwy": "06",
+            "initial": 4000,
+            "prio": 1,
+            "equip": {
+              "NON-RNAV": true
+            }
+          }
+        }
+      },
+      "VAREK": {
+        "R": {
+          "1": {
+            "rwy": "06",
+            "initial": 4000,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "G": {
+          "1": {
+            "rwy": "06",
+            "initial": 4000,
+            "prio": 1,
+            "equip": {
+              "NON-RNAV": true
+            }
+          }
+        }
+      },
+      "USANO": {
+        "R": {
+          "1": {
+            "rwy": "06",
+            "initial": 4000,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "G": {
+          "1": {
+            "rwy": "06",
+            "initial": 4000,
+            "prio": 1,
+            "equip": {
+              "NON-RNAV": true
+            }
+          }
+        }
+      }
+    }
+  }
+}

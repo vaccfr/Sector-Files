@@ -1,0 +1,95 @@
+{
+  "LFRK": {
+    "elevation": 243,
+    "runways": "12,30,12L,30R",
+    "transAlt": 5000,
+    "maxInitialClimb": 0,
+    "appSI": "RR,RNA",
+    "intersections": {
+    "12": "A1",
+    "30": "A2"
+    },
+    "sids": {
+      "LGL": {
+        "N": {
+          "1": {
+            "rwy": "30",
+            "initial": 0,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "S": {
+          "1": {
+            "rwy": "12",
+            "initial": 0,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "Y": {
+          "1": {
+            "rwy": "30",
+            "initial": 0,
+            "prio": 1,
+            "equip": {
+              "NON-RNAV": true
+            }
+          }
+        }
+      },
+      "LISEU": {
+        "X": {
+          "1": {
+            "rwy": "12",
+            "initial": 0,
+            "prio": 1
+          }
+        },
+        "Y": {
+          "1": {
+            "rwy": "30",
+            "initial": 0,
+            "prio": 1
+          }
+        }
+      },
+      "NEVIL": {
+        "X": {
+          "1": {
+            "rwy": "12",
+            "initial": 0,
+            "prio": 1
+          }
+        },
+        "Y": {
+          "1": {
+            "rwy": "30",
+            "initial": 0,
+            "prio": 1
+          }
+        }
+      },
+      "LUSIT": {
+        "X": {
+          "1": {
+            "rwy": "12",
+            "initial": 0,
+            "prio": 1
+          }
+        },
+        "Y": {
+          "1": {
+            "rwy": "30",
+            "initial": 0,
+            "prio": 1
+          }
+        }
+      }
+    }
+  }
+}

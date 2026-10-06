@@ -1,0 +1,119 @@
+{
+  "LFBP": {
+    "elevation": 616,
+    "runways": "13,31",
+    "transAlt": 5000,
+    "maxInitialClimb": 0,
+    "appSI": "BB,BPA",
+    "intersections": {
+    "13": "N5,S2",
+    "31": "N1,N3,S0,S1"
+    },
+    "sids": {
+      "SOVOS": {
+        "D": {
+          "1": {
+            "rwy": "13",
+            "initial": 0,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "V": {
+          "1": {
+            "rwy": "31",
+            "initial": 0,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "E": {
+          "1": {
+            "rwy": "13",
+            "initial": 0,
+            "prio": 2,
+            "equip": {
+              "NON-RNAV": true
+            }
+          }
+        },
+        "W": {
+          "1": {
+            "rwy": "31",
+            "initial": 0,
+            "prio": 2,
+            "equip": {
+              "NON-RNAV": true
+            }
+          }
+        }
+      },
+      "USAKU": {
+        "D": {
+          "1": {
+            "rwy": "13",
+            "initial": 0,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "Y": {
+          "1": {
+            "rwy": "31",
+            "initial": 0,
+            "prio": 2,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "V": {
+          "1": {
+            "rwy": "31",
+            "initial": 0,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "E": {
+          "1": {
+            "rwy": "13",
+            "initial": 0,
+            "prio": 2,
+            "equip": {
+              "NON-RNAV": true
+            }
+          }
+        },
+        "W": {
+          "1": {
+            "rwy": "31",
+            "initial": 0,
+            "prio": 1,
+            "equip": {
+              "NON-RNAV": true
+            }
+          }
+        },
+        "Z": {
+          "1": {
+            "rwy": "31",
+            "initial": 0,
+            "prio": 3,
+            "equip": {
+              "NON-RNAV": true
+            }
+          }
+        }
+      }
+    }
+  }
+}

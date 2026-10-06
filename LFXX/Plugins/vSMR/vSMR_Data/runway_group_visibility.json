@@ -1,0 +1,24 @@
+{
+  "LFPG": {
+    "ground-layout-east": {
+      "enabled": true,
+      "airport": "LFPG",
+      "operation": "either",
+      "runways": ["08", "09"],
+      "exclude_runways": ["26", "27"],
+      "match": "any",
+      "visible_when_matched": true,
+      "visible_when_unmatched": false
+    },
+    "ground-layout-west": {
+      "enabled": true,
+      "airport": "LFPG",
+      "operation": "either",
+      "runways": ["26", "27"],
+      "exclude_runways": ["08", "09"],
+      "match": "any",
+      "visible_when_matched": true,
+      "visible_when_unmatched": false
+    }
+  }
+}

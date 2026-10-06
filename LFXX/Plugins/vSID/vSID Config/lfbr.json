@@ -1,0 +1,16 @@
+{
+  "LFBR": {
+    "elevation": 623,
+    "runways": "12,30",
+    "transAlt": 5000,
+    "maxInitialClimb": 14000,
+    "appSI": "BB,BOA",
+    "intersections": {
+    "12": "D,E",
+    "30": "A,B"
+    },
+    "sids": {
+
+    }
+  }
+}

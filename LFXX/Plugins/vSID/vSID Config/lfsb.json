@@ -1,0 +1,136 @@
+{
+  "LFSB": {
+    "elevation": 885,
+    "runways": "15,33,25",
+    "transAlt": 7000,
+    "maxInitialClimb": 8000,
+    "appSI": "EE,SBC",
+    "intersections": {
+    "15": "B,H,G",
+    "33": "F,E,D,B,L",
+    "25": "C,C1,V"
+    },
+    "sids": {
+      "ELBEG": {
+        "B": {
+          "1": {
+            "rwy": "15",
+            "initial": 7000,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "M": {
+          "1": {
+            "rwy": "33",
+            "initial": 7000,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        }
+      },
+      "OLBEN": {
+        "S": {
+          "1": {
+            "rwy": "15",
+            "initial": 7000,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "Y": {
+          "1": {
+            "rwy": "15",
+            "initial": 7000,
+            "prio": 2,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "N": {
+          "1": {
+            "rwy": "33",
+            "initial": 7000,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        }
+      },
+      "LUMEL": {
+        "S": {
+          "1": {
+            "rwy": "15",
+            "initial": 7000,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "N": {
+          "1": {
+            "rwy": "33",
+            "initial": 7000,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        }
+      },
+      "MOROK": {
+        "T": {
+          "1": {
+            "rwy": "15",
+            "initial": 7000,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "N": {
+          "1": {
+            "rwy": "33",
+            "initial": 7000,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        }
+      },
+      "TORPA": {
+        "T": {
+          "1": {
+            "rwy": "15",
+            "initial": 7000,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "N": {
+          "1": {
+            "rwy": "33",
+            "initial": 7000,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        }
+      }
+    }
+  }
+}

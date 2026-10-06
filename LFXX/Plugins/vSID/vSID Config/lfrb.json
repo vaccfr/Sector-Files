@@ -1,0 +1,103 @@
+{
+  "LFRB": {
+    "elevation": 325,
+    "runways": "07R,25L,07L,25R",
+    "transAlt": 5000,
+    "maxInitialClimb": 0,
+    "appSI": "RR,RBA",
+    "intersections": {
+    "07R": "C2,D2,E2,C1,D1,C1",
+    "25L": "D2,E2,C2,D1,E1,C1"
+    },
+    "sids": {
+      "NORBU": {
+        "F": {
+          "1": {
+            "rwy": "07R",
+            "initial": 0,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "W": {
+          "1": {
+            "rwy": "25L",
+            "initial": 0,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        }
+      },
+      "SOMEN": {
+        "F": {
+          "1": {
+            "rwy": "07R",
+            "initial": 0,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "W": {
+          "1": {
+            "rwy": "25L",
+            "initial": 0,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        }
+      },
+      "QPR": {
+        "F": {
+          "1": {
+            "rwy": "07R",
+            "initial": 0,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "W": {
+          "1": {
+            "rwy": "25L",
+            "initial": 0,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        }
+      },
+      "ROSPO": {
+        "F": {
+          "1": {
+            "rwy": "07R",
+            "initial": 0,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "W": {
+          "1": {
+            "rwy": "25L",
+            "initial": 0,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        }
+      }
+    }
+  }
+}

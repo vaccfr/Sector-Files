@@ -1,0 +1,143 @@
+{
+  "LFMV": {
+    "elevation": 124,
+    "runways": "17,35,17R,35L",
+    "transAlt": 5000,
+    "maxInitialClimb": 0,
+    "appSI": "MM,MLA",
+    "intersections": {
+    "17": "D,C3",
+    "35": "A,B"
+    },
+    "sids": {
+      "LACAZ": {
+        "S": {
+          "1": {
+            "rwy": "17",
+            "initial": 0,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "M": {
+          "1": {
+            "rwy": "17",
+            "initial": 0,
+            "prio": 2,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "N": {
+          "1": {
+            "rwy": "35",
+            "initial": 0,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        }
+      },
+      "TRETS": {
+        "S": {
+          "1": {
+            "rwy": "17",
+            "initial": 0,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "M": {
+          "1": {
+            "rwy": "17",
+            "initial": 0,
+            "prio": 2,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "N": {
+          "1": {
+            "rwy": "35",
+            "initial": 0,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        }
+      },
+      "MTL": {
+        "S": {
+          "1": {
+            "rwy": "17",
+            "initial": 0,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "M": {
+          "1": {
+            "rwy": "17",
+            "initial": 0,
+            "prio": 2,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "P": {
+          "1": {
+            "rwy": "35",
+            "initial": 0,
+            "prio": 2,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "N": {
+          "1": {
+            "rwy": "35",
+            "initial": 0,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        }
+      },
+      "NG": {
+        "S": {
+          "1": {
+            "rwy": "17",
+            "initial": 0,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "N": {
+          "1": {
+            "rwy": "35",
+            "initial": 0,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        }
+      }
+    }
+  }
+}

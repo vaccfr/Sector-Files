@@ -1,0 +1,390 @@
+{
+  "LFQQ": {
+    "elevation": 61,
+    "runways": "08,26,01,19",
+    "transAlt": 5000,
+    "maxInitialClimb": 7000,
+    "appSI": "FF,QQA",
+    "intersections": {
+    "08": "T5,T4",
+    "26": "T2,T3"
+    },
+    "sids": {
+      "CIV": {
+        "R": {
+          "1": {
+            "rwy": "08",
+            "initial": 7000,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "K": {
+          "1": {
+            "rwy": "26",
+            "initial": 7000,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            },
+            "WTC": "LM"
+          }
+        },
+        "L": {
+          "1": {
+            "rwy": "26",
+            "initial": 7000,
+            "prio": 2,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "E": {
+          "1": {
+            "rwy": "08",
+            "initial": 7000,
+            "prio": 1,
+            "equip": {
+              "NON-RNAV": true
+            }
+          }
+        },
+        "S": {
+          "1": {
+            "rwy": "26",
+            "initial": 7000,
+            "prio": 2,
+            "equip": {
+              "NON-RNAV": true
+            }
+          }
+        },
+        "T": {
+          "1": {
+            "rwy": "26",
+            "initial": 7000,
+            "prio": 1,
+            "equip": {
+              "NON-RNAV": true
+            }
+          }
+        }
+      },
+      "MATIX": {
+        "R": {
+          "1": {
+            "rwy": "08",
+            "initial": 7000,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            },
+            "dest": {
+              "LFPG": true,
+              "LFPO": true,
+              "LFPB": true,
+              "LFPN": true,
+              "LFPV": true,
+              "LFPT": true,
+              "LFPM": true,
+              "LFOB": true
+            }
+          }
+        },
+        "K": {
+          "1": {
+            "rwy": "26",
+            "initial": 7000,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            },
+            "dest": {
+              "LFPG": true,
+              "LFPO": true,
+              "LFPB": true,
+              "LFPN": true,
+              "LFPV": true,
+              "LFPT": true,
+              "LFPM": true,
+              "LFOB": true
+            }
+          }
+        },
+        "L": {
+          "1": {
+            "rwy": "26",
+            "initial": 7000,
+            "prio": 2,
+            "equip": {
+              "RNAV": true
+            },
+            "dest": {
+              "LFPG": true,
+              "LFPO": true,
+              "LFPB": true,
+              "LFPN": true,
+              "LFPV": true,
+              "LFPT": true,
+              "LFPM": true,
+              "LFOB": true
+            }
+          }
+        },
+        "E": {
+          "1": {
+            "rwy": "08",
+            "initial": 7000,
+            "prio": 1,
+            "equip": {
+              "NON-RNAV": true
+            },
+            "dest": {
+              "LFPG": true,
+              "LFPO": true,
+              "LFPB": true,
+              "LFPN": true,
+              "LFPV": true,
+              "LFPT": true,
+              "LFPM": true,
+              "LFOB": true
+            }
+          }
+        },
+        "S": {
+          "1": {
+            "rwy": "26",
+            "initial": 7000,
+            "prio": 1,
+            "WTC": "LM",
+          "equip": {
+              "NON-RNAV": true
+            }
+          },
+          "dest": {
+              "LFPG": true,
+              "LFPO": true,
+              "LFPB": true,
+              "LFPN": true,
+              "LFPV": true,
+              "LFPT": true,
+              "LFPM": true,
+              "LFOB": true
+            }
+        },
+        "T": {
+          "1": {
+            "rwy": "26",
+            "initial": 7000,
+            "prio": 2,
+            "equip": {
+              "NON-RNAV": true
+            },
+            "dest": {
+              "LFPG": true,
+              "LFPO": true,
+              "LFPB": true,
+              "LFPN": true,
+              "LFPV": true,
+              "LFPT": true,
+              "LFPM": true,
+              "LFOB": true
+            }
+          }
+        }
+      },
+      "VERMA": {
+        "R": {
+          "1": {
+            "rwy": "08",
+            "initial": 7000,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "K": {
+          "1": {
+            "rwy": "26",
+            "initial": 7000,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "L": {
+          "1": {
+            "rwy": "26",
+            "initial": 7000,
+            "prio": 2,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        }
+      },
+      "BNE": {
+        "R": {
+          "1": {
+            "rwy": "08",
+            "initial": 7000,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "L": {
+          "1": {
+            "rwy": "26",
+            "initial": 7000,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "E": {
+          "1": {
+            "rwy": "08",
+            "initial": 7000,
+            "prio": 1,
+            "equip": {
+              "NON-RNAV": true
+            }
+          }
+        },
+        "W": {
+          "1": {
+            "rwy": "26",
+            "initial": 7000,
+            "prio": 1,
+            "equip": {
+              "NON-RNAV": true
+            }
+          }
+        }
+      },
+      "TRACA": {
+        "R": {
+          "1": {
+            "rwy": "08",
+            "initial": 7000,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "L": {
+          "1": {
+            "rwy": "26",
+            "initial": 7000,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "E": {
+          "1": {
+            "rwy": "08",
+            "initial": 7000,
+            "prio": 1,
+            "equip": {
+              "NON-RNAV": true
+            }
+          }
+        },
+        "W": {
+          "1": {
+            "rwy": "26",
+            "initial": 7000,
+            "prio": 1,
+            "equip": {
+              "NON-RNAV": true
+            }
+          }
+        }
+      },
+      "ABB": {
+        "R": {
+          "1": {
+            "rwy": "08",
+            "initial": 7000,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "L": {
+          "1": {
+            "rwy": "26",
+            "initial": 7000,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        }
+      },
+      "E": {
+          "1": {
+            "rwy": "08",
+            "initial": 7000,
+            "prio": 1,
+            "equip": {
+              "NON-RNAV": true
+            }
+          }
+        },
+        "W": {
+          "1": {
+            "rwy": "26",
+            "initial": 7000,
+            "prio": 1,
+            "equip": {
+              "NON-RNAV": true
+            }
+          }
+        }
+      },
+      "CMB": {
+        "E": {
+          "1": {
+            "rwy": "08",
+            "initial": 7000,
+            "prio": 1
+          }
+        },
+        "X": {
+          "1": {
+            "rwy": "26",
+            "initial": 7000,
+            "prio": 3
+            }
+          }
+        },
+        "Y": {
+          "1": {
+            "rwy": "26",
+            "initial": 7000,
+            "prio": 2
+          }
+        },
+        "Z": {
+          "1": {
+            "rwy": "26",
+            "initial": 7000,
+            "prio": 1,
+            "WTC": "LM"
+       }
+    }
+  }
+}

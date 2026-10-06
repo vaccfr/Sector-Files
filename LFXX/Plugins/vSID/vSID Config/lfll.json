@@ -1,0 +1,237 @@
+{
+  "LFLL": {
+    "elevation": 821,
+    "runways": "17L,17R,35L,35R",
+    "transAlt": 5000,
+    "maxInitialClimb": 7000,
+    "appSI": "MM,LLA",
+    "intersections": {
+    "17R": "A1,A2,A3,A4",
+    "17L": "B3,B4",
+    "35R": "B9,V8",
+    "35L": "A9,A8,A6,B9,B8"
+    },
+    "sids": {
+      "ALURA": {
+        "S": {
+          "1": {
+            "rwy": "17L,17R",
+            "initial": 7000,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "N": {
+          "1": {
+            "rwy": "35L,35R",
+            "initial": 7000,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        }
+      },
+      "BELEP": {
+        "S": {
+          "1": {
+            "rwy": "17L,17R",
+            "initial": 7000,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "N": {
+          "1": {
+            "rwy": "35L,35R",
+            "initial": 7000,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        }
+      },
+      "BELUS": {
+        "S": {
+          "1": {
+            "rwy": "17L,17R",
+            "initial": 7000,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "N": {
+          "1": {
+            "rwy": "35L,35R",
+            "initial": 7000,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        }
+      },
+      "BUSIL": {
+        "S": {
+          "1": {
+            "rwy": "17L,17R",
+            "initial": 7000,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "N": {
+          "1": {
+            "rwy": "35L,35R",
+            "initial": 7000,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        }
+      },
+      "MABES": {
+        "S": {
+          "1": {
+            "rwy": "17L,17R",
+            "initial": 7000,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "N": {
+          "1": {
+            "rwy": "35L,35R",
+            "initial": 7000,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        }
+      },
+      "MURRO": {
+        "S": {
+          "1": {
+            "rwy": "17L,17R",
+            "initial": 7000,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "N": {
+          "1": {
+            "rwy": "35L,35R",
+            "initial": 7000,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        }
+      },
+      "MOKIP": {
+        "S": {
+          "1": {
+            "rwy": "17L,17R",
+            "initial": 7000,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "N": {
+          "1": {
+            "rwy": "35L,35R",
+            "initial": 7000,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        }
+      },
+      "REPSI": {
+        "S": {
+          "1": {
+            "rwy": "17L,17R",
+            "initial": 7000,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "N": {
+          "1": {
+            "rwy": "35L,35R",
+            "initial": 7000,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        }
+      },
+      "RISOR": {
+        "S": {
+          "1": {
+            "rwy": "17L,17R",
+            "initial": 7000,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "N": {
+          "1": {
+            "rwy": "35L,35R",
+            "initial": 7000,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        }
+      },
+      "ROMAM": {
+        "S": {
+          "1": {
+            "rwy": "17L,17R",
+            "initial": 7000,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "N": {
+          "1": {
+            "rwy": "35L,35R",
+            "initial": 7000,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        }
+      }
+    }
+  }
+}

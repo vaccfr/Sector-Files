@@ -1,0 +1,2037 @@
+{
+    "schema_version": 1,
+    "_migration": {
+        "legacy_profiles": true,
+        "legacy_aviso": true
+    },
+    "aviso": {
+        "LFSB": {
+            "patch": {
+                "document": {
+                    "styles": {
+                        "label.gates": {
+                            "paint": {
+                                "palette-overrides": {
+                                    "light": {
+                                        "text-color": "#CCCCCC",
+                                        "text-halo-color": "#000000"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "features": {
+                    "LFSB-08d7d02405cab32c24cc": {
+                        "properties": {
+                            "text-color": "#CCCCCC",
+                            "text-halo-color": "#000000",
+                            "palette-overrides": {
+                                "light": {
+                                    "text-color": "#CCCCCC",
+                                    "text-halo-color": "#000000"
+                                },
+                                "real": {
+                                    "text-color": "#B7AE6A",
+                                    "text-halo-color": "#252B37"
+                                }
+                            },
+                            "text-font": "Arial",
+                            "text-size": 12,
+                            "text-anchor": "center",
+                            "text-halo-width": 1,
+                            "zoomLevel": 9
+                        }
+                    },
+                    "LFSB-eae878866cf7cd39c157": {
+                        "properties": {
+                            "text-color": "#CCCCCC",
+                            "text-halo-color": "#000000",
+                            "palette-overrides": {
+                                "light": {
+                                    "text-color": "#CCCCCC",
+                                    "text-halo-color": "#000000"
+                                },
+                                "real": {
+                                    "text-color": "#B7AE6A",
+                                    "text-halo-color": "#252B37"
+                                }
+                            },
+                            "text-font": "Arial",
+                            "text-size": 12,
+                            "text-anchor": "center",
+                            "text-halo-width": 1,
+                            "zoomLevel": 9
+                        }
+                    },
+                    "LFSB-ee4bfb60daf5edd2523c": {
+                        "properties": {
+                            "text-color": "#CCCCCC",
+                            "text-halo-color": "#000000",
+                            "palette-overrides": {
+                                "light": {
+                                    "text-color": "#CCCCCC",
+                                    "text-halo-color": "#000000"
+                                },
+                                "real": {
+                                    "text-color": "#B7AE6A",
+                                    "text-halo-color": "#252B37"
+                                }
+                            },
+                            "text-font": "Arial",
+                            "text-size": 12,
+                            "text-anchor": "center",
+                            "text-halo-width": 1,
+                            "zoomLevel": 9
+                        }
+                    },
+                    "LFSB-95fc05a9a062ace823a6": {
+                        "properties": {
+                            "text-color": "#CCCCCC",
+                            "text-halo-color": "#000000",
+                            "palette-overrides": {
+                                "light": {
+                                    "text-color": "#CCCCCC",
+                                    "text-halo-color": "#000000"
+                                },
+                                "real": {
+                                    "text-color": "#B7AE6A",
+                                    "text-halo-color": "#252B37"
+                                }
+                            },
+                            "text-font": "Arial",
+                            "text-size": 12,
+                            "text-anchor": "center",
+                            "text-halo-width": 1,
+                            "zoomLevel": 9
+                        }
+                    },
+                    "LFSB-0ba17e3aa1266d21a7ff": {
+                        "properties": {
+                            "text-color": "#CCCCCC",
+                            "text-halo-color": "#000000",
+                            "palette-overrides": {
+                                "light": {
+                                    "text-color": "#CCCCCC",
+                                    "text-halo-color": "#000000"
+                                },
+                                "real": {
+                                    "text-color": "#B7AE6A",
+                                    "text-halo-color": "#252B37"
+                                }
+                            },
+                            "text-font": "Arial",
+                            "text-size": 12,
+                            "text-anchor": "center",
+                            "text-halo-width": 1,
+                            "zoomLevel": 9
+                        }
+                    },
+                    "LFSB-4a1606d769a6d7f77cb2": {
+                        "properties": {
+                            "text-color": "#CCCCCC",
+                            "text-halo-color": "#000000",
+                            "palette-overrides": {
+                                "light": {
+                                    "text-color": "#CCCCCC",
+                                    "text-halo-color": "#000000"
+                                },
+                                "real": {
+                                    "text-color": "#B7AE6A",
+                                    "text-halo-color": "#252B37"
+                                }
+                            },
+                            "text-font": "Arial",
+                            "text-size": 12,
+                            "text-anchor": "center",
+                            "text-halo-width": 1,
+                            "zoomLevel": 9
+                        }
+                    },
+                    "LFSB-a9159f3d160f2fe81148": {
+                        "properties": {
+                            "text-color": "#CCCCCC",
+                            "text-halo-color": "#000000",
+                            "palette-overrides": {
+                                "light": {
+                                    "text-color": "#CCCCCC",
+                                    "text-halo-color": "#000000"
+                                },
+                                "real": {
+                                    "text-color": "#B7AE6A",
+                                    "text-halo-color": "#252B37"
+                                }
+                            },
+                            "text-font": "Arial",
+                            "text-size": 12,
+                            "text-anchor": "center",
+                            "text-halo-width": 1,
+                            "zoomLevel": 9
+                        }
+                    },
+                    "LFSB-e9cee7985b89b44569f0": {
+                        "properties": {
+                            "text-color": "#CCCCCC",
+                            "text-halo-color": "#000000",
+                            "palette-overrides": {
+                                "light": {
+                                    "text-color": "#CCCCCC",
+                                    "text-halo-color": "#000000"
+                                },
+                                "real": {
+                                    "text-color": "#B7AE6A",
+                                    "text-halo-color": "#252B37"
+                                }
+                            },
+                            "text-font": "Arial",
+                            "text-size": 12,
+                            "text-anchor": "center",
+                            "text-halo-width": 1,
+                            "zoomLevel": 9
+                        }
+                    },
+                    "LFSB-cc7e6bc9cc7676c599a0": {
+                        "properties": {
+                            "text-color": "#CCCCCC",
+                            "text-halo-color": "#000000",
+                            "palette-overrides": {
+                                "light": {
+                                    "text-color": "#CCCCCC",
+                                    "text-halo-color": "#000000"
+                                },
+                                "real": {
+                                    "text-color": "#B7AE6A",
+                                    "text-halo-color": "#252B37"
+                                }
+                            },
+                            "text-font": "Arial",
+                            "text-size": 12,
+                            "text-anchor": "center",
+                            "text-halo-width": 1,
+                            "zoomLevel": 9
+                        }
+                    },
+                    "LFSB-f84e21d93e895f80cc90": {
+                        "properties": {
+                            "text-color": "#CCCCCC",
+                            "text-halo-color": "#000000",
+                            "palette-overrides": {
+                                "light": {
+                                    "text-color": "#CCCCCC",
+                                    "text-halo-color": "#000000"
+                                },
+                                "real": {
+                                    "text-color": "#B7AE6A",
+                                    "text-halo-color": "#252B37"
+                                }
+                            },
+                            "text-font": "Arial",
+                            "text-size": 12,
+                            "text-anchor": "center",
+                            "text-halo-width": 1,
+                            "zoomLevel": 9
+                        }
+                    },
+                    "LFSB-26fa61b401762fe7360e": {
+                        "properties": {
+                            "text-color": "#CCCCCC",
+                            "text-halo-color": "#000000",
+                            "palette-overrides": {
+                                "light": {
+                                    "text-color": "#CCCCCC",
+                                    "text-halo-color": "#000000"
+                                },
+                                "real": {
+                                    "text-color": "#B7AE6A",
+                                    "text-halo-color": "#252B37"
+                                }
+                            },
+                            "text-font": "Arial",
+                            "text-size": 12,
+                            "text-anchor": "center",
+                            "text-halo-width": 1,
+                            "zoomLevel": 9
+                        }
+                    },
+                    "LFSB-987720cfa69c3992c5f3": {
+                        "properties": {
+                            "text-color": "#CCCCCC",
+                            "text-halo-color": "#000000",
+                            "palette-overrides": {
+                                "light": {
+                                    "text-color": "#CCCCCC",
+                                    "text-halo-color": "#000000"
+                                },
+                                "real": {
+                                    "text-color": "#B7AE6A",
+                                    "text-halo-color": "#252B37"
+                                }
+                            },
+                            "text-font": "Arial",
+                            "text-size": 12,
+                            "text-anchor": "center",
+                            "text-halo-width": 1,
+                            "zoomLevel": 9
+                        }
+                    },
+                    "LFSB-74cf623203053e83f17b": {
+                        "properties": {
+                            "text-color": "#CCCCCC",
+                            "text-halo-color": "#000000",
+                            "palette-overrides": {
+                                "light": {
+                                    "text-color": "#CCCCCC",
+                                    "text-halo-color": "#000000"
+                                },
+                                "real": {
+                                    "text-color": "#B7AE6A",
+                                    "text-halo-color": "#252B37"
+                                }
+                            },
+                            "text-font": "Arial",
+                            "text-size": 12,
+                            "text-anchor": "center",
+                            "text-halo-width": 1,
+                            "zoomLevel": 9
+                        }
+                    },
+                    "LFSB-22048af9939899ceb58a": {
+                        "properties": {
+                            "text-color": "#CCCCCC",
+                            "text-halo-color": "#000000",
+                            "palette-overrides": {
+                                "light": {
+                                    "text-color": "#CCCCCC",
+                                    "text-halo-color": "#000000"
+                                },
+                                "real": {
+                                    "text-color": "#B7AE6A",
+                                    "text-halo-color": "#252B37"
+                                }
+                            },
+                            "text-font": "Arial",
+                            "text-size": 12,
+                            "text-anchor": "center",
+                            "text-halo-width": 1,
+                            "zoomLevel": 9
+                        }
+                    },
+                    "LFSB-4a32ec62be0b3fccb1d0": {
+                        "properties": {
+                            "text-color": "#CCCCCC",
+                            "text-halo-color": "#000000",
+                            "palette-overrides": {
+                                "light": {
+                                    "text-color": "#CCCCCC",
+                                    "text-halo-color": "#000000"
+                                },
+                                "real": {
+                                    "text-color": "#B7AE6A",
+                                    "text-halo-color": "#252B37"
+                                }
+                            },
+                            "text-font": "Arial",
+                            "text-size": 12,
+                            "text-anchor": "center",
+                            "text-halo-width": 1,
+                            "zoomLevel": 9
+                        }
+                    },
+                    "LFSB-9dfa3f8aed200ddd8dd0": {
+                        "properties": {
+                            "text-color": "#CCCCCC",
+                            "text-halo-color": "#000000",
+                            "palette-overrides": {
+                                "light": {
+                                    "text-color": "#CCCCCC",
+                                    "text-halo-color": "#000000"
+                                },
+                                "real": {
+                                    "text-color": "#B7AE6A",
+                                    "text-halo-color": "#252B37"
+                                }
+                            },
+                            "text-font": "Arial",
+                            "text-size": 12,
+                            "text-anchor": "center",
+                            "text-halo-width": 1,
+                            "zoomLevel": 9
+                        }
+                    },
+                    "LFSB-af0e03ec852d3ffb2a95": {
+                        "properties": {
+                            "text-color": "#CCCCCC",
+                            "text-halo-color": "#000000",
+                            "palette-overrides": {
+                                "light": {
+                                    "text-color": "#CCCCCC",
+                                    "text-halo-color": "#000000"
+                                },
+                                "real": {
+                                    "text-color": "#B7AE6A",
+                                    "text-halo-color": "#252B37"
+                                }
+                            },
+                            "text-font": "Arial",
+                            "text-size": 12,
+                            "text-anchor": "center",
+                            "text-halo-width": 1,
+                            "zoomLevel": 9
+                        }
+                    },
+                    "LFSB-24fc1c4e89a9bac1e559": {
+                        "properties": {
+                            "text-color": "#CCCCCC",
+                            "text-halo-color": "#000000",
+                            "palette-overrides": {
+                                "light": {
+                                    "text-color": "#CCCCCC",
+                                    "text-halo-color": "#000000"
+                                },
+                                "real": {
+                                    "text-color": "#B7AE6A",
+                                    "text-halo-color": "#252B37"
+                                }
+                            },
+                            "text-font": "Arial",
+                            "text-size": 12,
+                            "text-anchor": "center",
+                            "text-halo-width": 1,
+                            "zoomLevel": 9
+                        }
+                    },
+                    "LFSB-970ce262f66b627a422a": {
+                        "properties": {
+                            "text-color": "#CCCCCC",
+                            "text-halo-color": "#000000",
+                            "palette-overrides": {
+                                "light": {
+                                    "text-color": "#CCCCCC",
+                                    "text-halo-color": "#000000"
+                                },
+                                "real": {
+                                    "text-color": "#B7AE6A",
+                                    "text-halo-color": "#252B37"
+                                }
+                            },
+                            "text-font": "Arial",
+                            "text-size": 12,
+                            "text-anchor": "center",
+                            "text-halo-width": 1,
+                            "zoomLevel": 9
+                        }
+                    },
+                    "LFSB-9cf2a6dd3cd9c9f8c506": {
+                        "properties": {
+                            "text-color": "#CCCCCC",
+                            "text-halo-color": "#000000",
+                            "palette-overrides": {
+                                "light": {
+                                    "text-color": "#CCCCCC",
+                                    "text-halo-color": "#000000"
+                                },
+                                "real": {
+                                    "text-color": "#B7AE6A",
+                                    "text-halo-color": "#252B37"
+                                }
+                            },
+                            "text-font": "Arial",
+                            "text-size": 12,
+                            "text-anchor": "center",
+                            "text-halo-width": 1,
+                            "zoomLevel": 9
+                        }
+                    },
+                    "LFSB-695be59c4928c1b8d4bc": {
+                        "properties": {
+                            "text-color": "#CCCCCC",
+                            "text-halo-color": "#000000",
+                            "palette-overrides": {
+                                "light": {
+                                    "text-color": "#CCCCCC",
+                                    "text-halo-color": "#000000"
+                                },
+                                "real": {
+                                    "text-color": "#B7AE6A",
+                                    "text-halo-color": "#252B37"
+                                }
+                            },
+                            "text-font": "Arial",
+                            "text-size": 12,
+                            "text-anchor": "center",
+                            "text-halo-width": 1,
+                            "zoomLevel": 9
+                        }
+                    },
+                    "LFSB-27adedd87552c1624320": {
+                        "properties": {
+                            "text-color": "#CCCCCC",
+                            "text-halo-color": "#000000",
+                            "palette-overrides": {
+                                "light": {
+                                    "text-color": "#CCCCCC",
+                                    "text-halo-color": "#000000"
+                                },
+                                "real": {
+                                    "text-color": "#B7AE6A",
+                                    "text-halo-color": "#252B37"
+                                }
+                            },
+                            "text-font": "Arial",
+                            "text-size": 12,
+                            "text-anchor": "center",
+                            "text-halo-width": 1,
+                            "zoomLevel": 9
+                        }
+                    },
+                    "LFSB-e76ac60e6ec51c033f4c": {
+                        "properties": {
+                            "text-color": "#CCCCCC",
+                            "text-halo-color": "#000000",
+                            "palette-overrides": {
+                                "light": {
+                                    "text-color": "#CCCCCC",
+                                    "text-halo-color": "#000000"
+                                },
+                                "real": {
+                                    "text-color": "#B7AE6A",
+                                    "text-halo-color": "#252B37"
+                                }
+                            },
+                            "text-font": "Arial",
+                            "text-size": 12,
+                            "text-anchor": "center",
+                            "text-halo-width": 1,
+                            "zoomLevel": 9
+                        }
+                    },
+                    "LFSB-77ca2a90f9813e0e587b": {
+                        "properties": {
+                            "text-color": "#CCCCCC",
+                            "text-halo-color": "#000000",
+                            "palette-overrides": {
+                                "light": {
+                                    "text-color": "#CCCCCC",
+                                    "text-halo-color": "#000000"
+                                },
+                                "real": {
+                                    "text-color": "#B7AE6A",
+                                    "text-halo-color": "#252B37"
+                                }
+                            },
+                            "text-font": "Arial",
+                            "text-size": 12,
+                            "text-anchor": "center",
+                            "text-halo-width": 1,
+                            "zoomLevel": 9
+                        }
+                    },
+                    "LFSB-db7e2978b82d3e93f2ff": {
+                        "properties": {
+                            "text-color": "#CCCCCC",
+                            "text-halo-color": "#000000",
+                            "palette-overrides": {
+                                "light": {
+                                    "text-color": "#CCCCCC",
+                                    "text-halo-color": "#000000"
+                                },
+                                "real": {
+                                    "text-color": "#B7AE6A",
+                                    "text-halo-color": "#252B37"
+                                }
+                            },
+                            "text-font": "Arial",
+                            "text-size": 12,
+                            "text-anchor": "center",
+                            "text-halo-width": 1,
+                            "zoomLevel": 9
+                        }
+                    },
+                    "LFSB-4cc61272727861cf16c7": {
+                        "properties": {
+                            "text-color": "#CCCCCC",
+                            "text-halo-color": "#000000",
+                            "palette-overrides": {
+                                "light": {
+                                    "text-color": "#CCCCCC",
+                                    "text-halo-color": "#000000"
+                                },
+                                "real": {
+                                    "text-color": "#B7AE6A",
+                                    "text-halo-color": "#252B37"
+                                }
+                            },
+                            "text-font": "Arial",
+                            "text-size": 12,
+                            "text-anchor": "center",
+                            "text-halo-width": 1,
+                            "zoomLevel": 9
+                        }
+                    },
+                    "LFSB-f384930a35e059cdc5ff": {
+                        "properties": {
+                            "text-color": "#CCCCCC",
+                            "text-halo-color": "#000000",
+                            "palette-overrides": {
+                                "light": {
+                                    "text-color": "#CCCCCC",
+                                    "text-halo-color": "#000000"
+                                },
+                                "real": {
+                                    "text-color": "#B7AE6A",
+                                    "text-halo-color": "#252B37"
+                                }
+                            },
+                            "text-font": "Arial",
+                            "text-size": 12,
+                            "text-anchor": "center",
+                            "text-halo-width": 1,
+                            "zoomLevel": 9
+                        }
+                    },
+                    "LFSB-2f1177933ae9d083d981": {
+                        "properties": {
+                            "text-color": "#CCCCCC",
+                            "text-halo-color": "#000000",
+                            "palette-overrides": {
+                                "light": {
+                                    "text-color": "#CCCCCC",
+                                    "text-halo-color": "#000000"
+                                },
+                                "real": {
+                                    "text-color": "#B7AE6A",
+                                    "text-halo-color": "#252B37"
+                                }
+                            },
+                            "text-font": "Arial",
+                            "text-size": 12,
+                            "text-anchor": "center",
+                            "text-halo-width": 1,
+                            "zoomLevel": 9
+                        }
+                    },
+                    "LFSB-b242f7711ef3cdc92975": {
+                        "properties": {
+                            "text-color": "#CCCCCC",
+                            "text-halo-color": "#000000",
+                            "palette-overrides": {
+                                "light": {
+                                    "text-color": "#CCCCCC",
+                                    "text-halo-color": "#000000"
+                                },
+                                "real": {
+                                    "text-color": "#B7AE6A",
+                                    "text-halo-color": "#252B37"
+                                }
+                            },
+                            "text-font": "Arial",
+                            "text-size": 12,
+                            "text-anchor": "center",
+                            "text-halo-width": 1,
+                            "zoomLevel": 9
+                        }
+                    },
+                    "LFSB-ecff05f3c0273c70600d": {
+                        "properties": {
+                            "text-color": "#CCCCCC",
+                            "text-halo-color": "#000000",
+                            "palette-overrides": {
+                                "light": {
+                                    "text-color": "#CCCCCC",
+                                    "text-halo-color": "#000000"
+                                },
+                                "real": {
+                                    "text-color": "#B7AE6A",
+                                    "text-halo-color": "#252B37"
+                                }
+                            },
+                            "text-font": "Arial",
+                            "text-size": 12,
+                            "text-anchor": "center",
+                            "text-halo-width": 1,
+                            "zoomLevel": 9
+                        }
+                    },
+                    "LFSB-a69e9a58e240dd7394fb": {
+                        "properties": {
+                            "text-color": "#CCCCCC",
+                            "text-halo-color": "#000000",
+                            "palette-overrides": {
+                                "light": {
+                                    "text-color": "#CCCCCC",
+                                    "text-halo-color": "#000000"
+                                },
+                                "real": {
+                                    "text-color": "#B7AE6A",
+                                    "text-halo-color": "#252B37"
+                                }
+                            },
+                            "text-font": "Arial",
+                            "text-size": 12,
+                            "text-anchor": "center",
+                            "text-halo-width": 1,
+                            "zoomLevel": 9
+                        }
+                    },
+                    "LFSB-01076bafc3ff12790c86": {
+                        "properties": {
+                            "text-color": "#CCCCCC",
+                            "text-halo-color": "#000000",
+                            "palette-overrides": {
+                                "light": {
+                                    "text-color": "#CCCCCC",
+                                    "text-halo-color": "#000000"
+                                },
+                                "real": {
+                                    "text-color": "#B7AE6A",
+                                    "text-halo-color": "#252B37"
+                                }
+                            },
+                            "text-font": "Arial",
+                            "text-size": 12,
+                            "text-anchor": "center",
+                            "text-halo-width": 1,
+                            "zoomLevel": 9
+                        }
+                    },
+                    "LFSB-aaddd4131f25de115702": {
+                        "properties": {
+                            "text-color": "#CCCCCC",
+                            "text-halo-color": "#000000",
+                            "palette-overrides": {
+                                "light": {
+                                    "text-color": "#CCCCCC",
+                                    "text-halo-color": "#000000"
+                                },
+                                "real": {
+                                    "text-color": "#B7AE6A",
+                                    "text-halo-color": "#252B37"
+                                }
+                            },
+                            "text-font": "Arial",
+                            "text-size": 12,
+                            "text-anchor": "center",
+                            "text-halo-width": 1,
+                            "zoomLevel": 9
+                        }
+                    },
+                    "LFSB-6531008242c9700d035d": {
+                        "properties": {
+                            "text-color": "#CCCCCC",
+                            "text-halo-color": "#000000",
+                            "palette-overrides": {
+                                "light": {
+                                    "text-color": "#CCCCCC",
+                                    "text-halo-color": "#000000"
+                                },
+                                "real": {
+                                    "text-color": "#B7AE6A",
+                                    "text-halo-color": "#252B37"
+                                }
+                            },
+                            "text-font": "Arial",
+                            "text-size": 12,
+                            "text-anchor": "center",
+                            "text-halo-width": 1,
+                            "zoomLevel": 9
+                        }
+                    },
+                    "LFSB-1ce8c42e32ba1e23b16b": {
+                        "properties": {
+                            "text-color": "#CCCCCC",
+                            "text-halo-color": "#000000",
+                            "palette-overrides": {
+                                "light": {
+                                    "text-color": "#CCCCCC",
+                                    "text-halo-color": "#000000"
+                                },
+                                "real": {
+                                    "text-color": "#B7AE6A",
+                                    "text-halo-color": "#252B37"
+                                }
+                            },
+                            "text-font": "Arial",
+                            "text-size": 12,
+                            "text-anchor": "center",
+                            "text-halo-width": 1,
+                            "zoomLevel": 9
+                        }
+                    },
+                    "LFSB-442f25317c105ea282cd": {
+                        "properties": {
+                            "text-color": "#CCCCCC",
+                            "text-halo-color": "#000000",
+                            "palette-overrides": {
+                                "light": {
+                                    "text-color": "#CCCCCC",
+                                    "text-halo-color": "#000000"
+                                },
+                                "real": {
+                                    "text-color": "#B7AE6A",
+                                    "text-halo-color": "#252B37"
+                                }
+                            },
+                            "text-font": "Arial",
+                            "text-size": 12,
+                            "text-anchor": "center",
+                            "text-halo-width": 1,
+                            "zoomLevel": 9
+                        }
+                    },
+                    "LFSB-2133c530cd2333bb3f38": {
+                        "properties": {
+                            "text-color": "#CCCCCC",
+                            "text-halo-color": "#000000",
+                            "palette-overrides": {
+                                "light": {
+                                    "text-color": "#CCCCCC",
+                                    "text-halo-color": "#000000"
+                                },
+                                "real": {
+                                    "text-color": "#B7AE6A",
+                                    "text-halo-color": "#252B37"
+                                }
+                            },
+                            "text-font": "Arial",
+                            "text-size": 12,
+                            "text-anchor": "center",
+                            "text-halo-width": 1,
+                            "zoomLevel": 9
+                        }
+                    },
+                    "LFSB-0b283ec28422bb703cc9": {
+                        "properties": {
+                            "text-color": "#CCCCCC",
+                            "text-halo-color": "#000000",
+                            "palette-overrides": {
+                                "light": {
+                                    "text-color": "#CCCCCC",
+                                    "text-halo-color": "#000000"
+                                },
+                                "real": {
+                                    "text-color": "#B7AE6A",
+                                    "text-halo-color": "#252B37"
+                                }
+                            },
+                            "text-font": "Arial",
+                            "text-size": 12,
+                            "text-anchor": "center",
+                            "text-halo-width": 1,
+                            "zoomLevel": 9
+                        }
+                    },
+                    "LFSB-be738a33f9c3070c0053": {
+                        "properties": {
+                            "text-color": "#CCCCCC",
+                            "text-halo-color": "#000000",
+                            "palette-overrides": {
+                                "light": {
+                                    "text-color": "#CCCCCC",
+                                    "text-halo-color": "#000000"
+                                },
+                                "real": {
+                                    "text-color": "#B7AE6A",
+                                    "text-halo-color": "#252B37"
+                                }
+                            },
+                            "text-font": "Arial",
+                            "text-size": 12,
+                            "text-anchor": "center",
+                            "text-halo-width": 1,
+                            "zoomLevel": 9
+                        }
+                    },
+                    "LFSB-5868491c6eb7bb4796bc": {
+                        "properties": {
+                            "text-color": "#CCCCCC",
+                            "text-halo-color": "#000000",
+                            "palette-overrides": {
+                                "light": {
+                                    "text-color": "#CCCCCC",
+                                    "text-halo-color": "#000000"
+                                },
+                                "real": {
+                                    "text-color": "#B7AE6A",
+                                    "text-halo-color": "#252B37"
+                                }
+                            },
+                            "text-font": "Arial",
+                            "text-size": 12,
+                            "text-anchor": "center",
+                            "text-halo-width": 1,
+                            "zoomLevel": 9
+                        }
+                    },
+                    "LFSB-ebef81656ef09fcac5b9": {
+                        "properties": {
+                            "text-color": "#CCCCCC",
+                            "text-halo-color": "#000000",
+                            "palette-overrides": {
+                                "light": {
+                                    "text-color": "#CCCCCC",
+                                    "text-halo-color": "#000000"
+                                },
+                                "real": {
+                                    "text-color": "#B7AE6A",
+                                    "text-halo-color": "#252B37"
+                                }
+                            },
+                            "text-font": "Arial",
+                            "text-size": 12,
+                            "text-anchor": "center",
+                            "text-halo-width": 1,
+                            "zoomLevel": 9
+                        }
+                    },
+                    "LFSB-4281dceb04287fe4586b": {
+                        "properties": {
+                            "text-color": "#CCCCCC",
+                            "text-halo-color": "#000000",
+                            "palette-overrides": {
+                                "light": {
+                                    "text-color": "#CCCCCC",
+                                    "text-halo-color": "#000000"
+                                },
+                                "real": {
+                                    "text-color": "#B7AE6A",
+                                    "text-halo-color": "#252B37"
+                                }
+                            },
+                            "text-font": "Arial",
+                            "text-size": 12,
+                            "text-anchor": "center",
+                            "text-halo-width": 1,
+                            "zoomLevel": 9
+                        }
+                    },
+                    "LFSB-34365e1756b9723bf89d": {
+                        "properties": {
+                            "text-color": "#CCCCCC",
+                            "text-halo-color": "#000000",
+                            "palette-overrides": {
+                                "light": {
+                                    "text-color": "#CCCCCC",
+                                    "text-halo-color": "#000000"
+                                },
+                                "real": {
+                                    "text-color": "#B7AE6A",
+                                    "text-halo-color": "#252B37"
+                                }
+                            },
+                            "text-font": "Arial",
+                            "text-size": 12,
+                            "text-anchor": "center",
+                            "text-halo-width": 1,
+                            "zoomLevel": 9
+                        }
+                    },
+                    "LFSB-a1d34d44ccf8b683f1f2": {
+                        "properties": {
+                            "text-color": "#CCCCCC",
+                            "text-halo-color": "#000000",
+                            "palette-overrides": {
+                                "light": {
+                                    "text-color": "#CCCCCC",
+                                    "text-halo-color": "#000000"
+                                },
+                                "real": {
+                                    "text-color": "#B7AE6A",
+                                    "text-halo-color": "#252B37"
+                                }
+                            },
+                            "text-font": "Arial",
+                            "text-size": 12,
+                            "text-anchor": "center",
+                            "text-halo-width": 1,
+                            "zoomLevel": 9
+                        }
+                    },
+                    "LFSB-b6adbac3d242cc5b33c6": {
+                        "properties": {
+                            "text-color": "#CCCCCC",
+                            "text-halo-color": "#000000",
+                            "palette-overrides": {
+                                "light": {
+                                    "text-color": "#CCCCCC",
+                                    "text-halo-color": "#000000"
+                                },
+                                "real": {
+                                    "text-color": "#B7AE6A",
+                                    "text-halo-color": "#252B37"
+                                }
+                            },
+                            "text-font": "Arial",
+                            "text-size": 12,
+                            "text-anchor": "center",
+                            "text-halo-width": 1,
+                            "zoomLevel": 9
+                        }
+                    },
+                    "LFSB-930c74a2a13399c7c9dc": {
+                        "properties": {
+                            "text-color": "#CCCCCC",
+                            "text-halo-color": "#000000",
+                            "palette-overrides": {
+                                "light": {
+                                    "text-color": "#CCCCCC",
+                                    "text-halo-color": "#000000"
+                                },
+                                "real": {
+                                    "text-color": "#B7AE6A",
+                                    "text-halo-color": "#252B37"
+                                }
+                            },
+                            "text-font": "Arial",
+                            "text-size": 12,
+                            "text-anchor": "center",
+                            "text-halo-width": 1,
+                            "zoomLevel": 9
+                        }
+                    },
+                    "LFSB-89e7bddf262bfbcd14fc": {
+                        "properties": {
+                            "text-color": "#CCCCCC",
+                            "text-halo-color": "#000000",
+                            "palette-overrides": {
+                                "light": {
+                                    "text-color": "#CCCCCC",
+                                    "text-halo-color": "#000000"
+                                },
+                                "real": {
+                                    "text-color": "#B7AE6A",
+                                    "text-halo-color": "#252B37"
+                                }
+                            },
+                            "text-font": "Arial",
+                            "text-size": 12,
+                            "text-anchor": "center",
+                            "text-halo-width": 1,
+                            "zoomLevel": 9
+                        }
+                    },
+                    "LFSB-e0df3d1ae83bedc8c11a": {
+                        "properties": {
+                            "text-color": "#CCCCCC",
+                            "text-halo-color": "#000000",
+                            "palette-overrides": {
+                                "light": {
+                                    "text-color": "#CCCCCC",
+                                    "text-halo-color": "#000000"
+                                },
+                                "real": {
+                                    "text-color": "#B7AE6A",
+                                    "text-halo-color": "#252B37"
+                                }
+                            },
+                            "text-font": "Arial",
+                            "text-size": 12,
+                            "text-anchor": "center",
+                            "text-halo-width": 1,
+                            "zoomLevel": 9
+                        }
+                    },
+                    "LFSB-f0b085d3d9ae921053cf": {
+                        "properties": {
+                            "text-color": "#CCCCCC",
+                            "text-halo-color": "#000000",
+                            "palette-overrides": {
+                                "light": {
+                                    "text-color": "#CCCCCC",
+                                    "text-halo-color": "#000000"
+                                },
+                                "real": {
+                                    "text-color": "#B7AE6A",
+                                    "text-halo-color": "#252B37"
+                                }
+                            },
+                            "text-font": "Arial",
+                            "text-size": 12,
+                            "text-anchor": "center",
+                            "text-halo-width": 1,
+                            "zoomLevel": 9
+                        }
+                    },
+                    "LFSB-e70a739d9c133f06acb6": {
+                        "properties": {
+                            "text-color": "#CCCCCC",
+                            "text-halo-color": "#000000",
+                            "palette-overrides": {
+                                "light": {
+                                    "text-color": "#CCCCCC",
+                                    "text-halo-color": "#000000"
+                                },
+                                "real": {
+                                    "text-color": "#B7AE6A",
+                                    "text-halo-color": "#252B37"
+                                }
+                            },
+                            "text-font": "Arial",
+                            "text-size": 12,
+                            "text-anchor": "center",
+                            "text-halo-width": 1,
+                            "zoomLevel": 9
+                        }
+                    },
+                    "LFSB-9f9405aa368bed11ae9e": {
+                        "properties": {
+                            "text-color": "#CCCCCC",
+                            "text-halo-color": "#000000",
+                            "palette-overrides": {
+                                "light": {
+                                    "text-color": "#CCCCCC",
+                                    "text-halo-color": "#000000"
+                                },
+                                "real": {
+                                    "text-color": "#B7AE6A",
+                                    "text-halo-color": "#252B37"
+                                }
+                            },
+                            "text-font": "Arial",
+                            "text-size": 12,
+                            "text-anchor": "center",
+                            "text-halo-width": 1,
+                            "zoomLevel": 9
+                        }
+                    },
+                    "LFSB-3026c7d9b02d600bdbb1": {
+                        "properties": {
+                            "text-color": "#CCCCCC",
+                            "text-halo-color": "#000000",
+                            "palette-overrides": {
+                                "light": {
+                                    "text-color": "#CCCCCC",
+                                    "text-halo-color": "#000000"
+                                },
+                                "real": {
+                                    "text-color": "#B7AE6A",
+                                    "text-halo-color": "#252B37"
+                                }
+                            },
+                            "text-font": "Arial",
+                            "text-size": 12,
+                            "text-anchor": "center",
+                            "text-halo-width": 1,
+                            "zoomLevel": 9
+                        }
+                    },
+                    "LFSB-0d93bb7d0ebec8f7a4a5": {
+                        "properties": {
+                            "text-color": "#CCCCCC",
+                            "text-halo-color": "#000000",
+                            "palette-overrides": {
+                                "light": {
+                                    "text-color": "#CCCCCC",
+                                    "text-halo-color": "#000000"
+                                },
+                                "real": {
+                                    "text-color": "#B7AE6A",
+                                    "text-halo-color": "#252B37"
+                                }
+                            },
+                            "text-font": "Arial",
+                            "text-size": 12,
+                            "text-anchor": "center",
+                            "text-halo-width": 1,
+                            "zoomLevel": 9
+                        }
+                    },
+                    "LFSB-2158111e14efed2a81cc": {
+                        "properties": {
+                            "text-color": "#CCCCCC",
+                            "text-halo-color": "#000000",
+                            "palette-overrides": {
+                                "light": {
+                                    "text-color": "#CCCCCC",
+                                    "text-halo-color": "#000000"
+                                },
+                                "real": {
+                                    "text-color": "#B7AE6A",
+                                    "text-halo-color": "#252B37"
+                                }
+                            },
+                            "text-font": "Arial",
+                            "text-size": 12,
+                            "text-anchor": "center",
+                            "text-halo-width": 1,
+                            "zoomLevel": 9
+                        }
+                    },
+                    "LFSB-65296e15b716a1af3e6f": {
+                        "properties": {
+                            "text-color": "#CCCCCC",
+                            "text-halo-color": "#000000",
+                            "palette-overrides": {
+                                "light": {
+                                    "text-color": "#CCCCCC",
+                                    "text-halo-color": "#000000"
+                                },
+                                "real": {
+                                    "text-color": "#B7AE6A",
+                                    "text-halo-color": "#252B37"
+                                }
+                            },
+                            "text-font": "Arial",
+                            "text-size": 12,
+                            "text-anchor": "center",
+                            "text-halo-width": 1,
+                            "zoomLevel": 9
+                        }
+                    },
+                    "LFSB-ef18b0215d5bcb813018": {
+                        "properties": {
+                            "text-color": "#CCCCCC",
+                            "text-halo-color": "#000000",
+                            "palette-overrides": {
+                                "light": {
+                                    "text-color": "#CCCCCC",
+                                    "text-halo-color": "#000000"
+                                },
+                                "real": {
+                                    "text-color": "#B7AE6A",
+                                    "text-halo-color": "#252B37"
+                                }
+                            },
+                            "text-font": "Arial",
+                            "text-size": 12,
+                            "text-anchor": "center",
+                            "text-halo-width": 1,
+                            "zoomLevel": 9
+                        }
+                    },
+                    "LFSB-bb50ba023c2bb72db84f": {
+                        "properties": {
+                            "text-color": "#CCCCCC",
+                            "text-halo-color": "#000000",
+                            "palette-overrides": {
+                                "light": {
+                                    "text-color": "#CCCCCC",
+                                    "text-halo-color": "#000000"
+                                },
+                                "real": {
+                                    "text-color": "#B7AE6A",
+                                    "text-halo-color": "#252B37"
+                                }
+                            },
+                            "text-font": "Arial",
+                            "text-size": 12,
+                            "text-anchor": "center",
+                            "text-halo-width": 1,
+                            "zoomLevel": 9
+                        }
+                    },
+                    "LFSB-cc721bb99ed342a62a37": {
+                        "properties": {
+                            "text-color": "#CCCCCC",
+                            "text-halo-color": "#000000",
+                            "palette-overrides": {
+                                "light": {
+                                    "text-color": "#CCCCCC",
+                                    "text-halo-color": "#000000"
+                                },
+                                "real": {
+                                    "text-color": "#B7AE6A",
+                                    "text-halo-color": "#252B37"
+                                }
+                            },
+                            "text-font": "Arial",
+                            "text-size": 12,
+                            "text-anchor": "center",
+                            "text-halo-width": 1,
+                            "zoomLevel": 9
+                        }
+                    },
+                    "LFSB-508a654e7359ede4c1ea": {
+                        "properties": {
+                            "text-color": "#CCCCCC",
+                            "text-halo-color": "#000000",
+                            "palette-overrides": {
+                                "light": {
+                                    "text-color": "#CCCCCC",
+                                    "text-halo-color": "#000000"
+                                },
+                                "real": {
+                                    "text-color": "#B7AE6A",
+                                    "text-halo-color": "#252B37"
+                                }
+                            },
+                            "text-font": "Arial",
+                            "text-size": 12,
+                            "text-anchor": "center",
+                            "text-halo-width": 1,
+                            "zoomLevel": 9
+                        }
+                    },
+                    "LFSB-75e3ba4c1a4990bd9100": {
+                        "properties": {
+                            "text-color": "#CCCCCC",
+                            "text-halo-color": "#000000",
+                            "palette-overrides": {
+                                "light": {
+                                    "text-color": "#CCCCCC",
+                                    "text-halo-color": "#000000"
+                                },
+                                "real": {
+                                    "text-color": "#B7AE6A",
+                                    "text-halo-color": "#252B37"
+                                }
+                            },
+                            "text-font": "Arial",
+                            "text-size": 12,
+                            "text-anchor": "center",
+                            "text-halo-width": 1,
+                            "zoomLevel": 9
+                        }
+                    },
+                    "LFSB-db70568f5ae760818a5a": {
+                        "properties": {
+                            "text-color": "#CCCCCC",
+                            "text-halo-color": "#000000",
+                            "palette-overrides": {
+                                "light": {
+                                    "text-color": "#CCCCCC",
+                                    "text-halo-color": "#000000"
+                                },
+                                "real": {
+                                    "text-color": "#B7AE6A",
+                                    "text-halo-color": "#252B37"
+                                }
+                            },
+                            "text-font": "Arial",
+                            "text-size": 12,
+                            "text-anchor": "center",
+                            "text-halo-width": 1,
+                            "zoomLevel": 9
+                        }
+                    },
+                    "LFSB-123620d7c93a26028b05": {
+                        "properties": {
+                            "text-color": "#CCCCCC",
+                            "text-halo-color": "#000000",
+                            "palette-overrides": {
+                                "light": {
+                                    "text-color": "#CCCCCC",
+                                    "text-halo-color": "#000000"
+                                },
+                                "real": {
+                                    "text-color": "#B7AE6A",
+                                    "text-halo-color": "#252B37"
+                                }
+                            },
+                            "text-font": "Arial",
+                            "text-size": 12,
+                            "text-anchor": "center",
+                            "text-halo-width": 1,
+                            "zoomLevel": 9
+                        }
+                    },
+                    "LFSB-518020c612f05dae4cb3": {
+                        "properties": {
+                            "text-color": "#CCCCCC",
+                            "text-halo-color": "#000000",
+                            "palette-overrides": {
+                                "light": {
+                                    "text-color": "#CCCCCC",
+                                    "text-halo-color": "#000000"
+                                },
+                                "real": {
+                                    "text-color": "#B7AE6A",
+                                    "text-halo-color": "#252B37"
+                                }
+                            },
+                            "text-font": "Arial",
+                            "text-size": 12,
+                            "text-anchor": "center",
+                            "text-halo-width": 1,
+                            "zoomLevel": 9
+                        }
+                    },
+                    "LFSB-9cfe793826b7774285cf": {
+                        "properties": {
+                            "text-color": "#CCCCCC",
+                            "text-halo-color": "#000000",
+                            "palette-overrides": {
+                                "light": {
+                                    "text-color": "#CCCCCC",
+                                    "text-halo-color": "#000000"
+                                },
+                                "real": {
+                                    "text-color": "#B7AE6A",
+                                    "text-halo-color": "#252B37"
+                                }
+                            },
+                            "text-font": "Arial",
+                            "text-size": 12,
+                            "text-anchor": "center",
+                            "text-halo-width": 1,
+                            "zoomLevel": 9
+                        }
+                    },
+                    "LFSB-084654154a20d08c7880": {
+                        "properties": {
+                            "text-color": "#CCCCCC",
+                            "text-halo-color": "#000000",
+                            "palette-overrides": {
+                                "light": {
+                                    "text-color": "#CCCCCC",
+                                    "text-halo-color": "#000000"
+                                },
+                                "real": {
+                                    "text-color": "#B7AE6A",
+                                    "text-halo-color": "#252B37"
+                                }
+                            },
+                            "text-font": "Arial",
+                            "text-size": 12,
+                            "text-anchor": "center",
+                            "text-halo-width": 1,
+                            "zoomLevel": 9
+                        }
+                    },
+                    "LFSB-31b8df7d7691d44159f5": {
+                        "properties": {
+                            "text-color": "#CCCCCC",
+                            "text-halo-color": "#000000",
+                            "palette-overrides": {
+                                "light": {
+                                    "text-color": "#CCCCCC",
+                                    "text-halo-color": "#000000"
+                                },
+                                "real": {
+                                    "text-color": "#B7AE6A",
+                                    "text-halo-color": "#252B37"
+                                }
+                            },
+                            "text-font": "Arial",
+                            "text-size": 12,
+                            "text-anchor": "center",
+                            "text-halo-width": 1,
+                            "zoomLevel": 9
+                        }
+                    },
+                    "LFSB-d0c3ee2aec55ab83ab4c": {
+                        "properties": {
+                            "text-color": "#CCCCCC",
+                            "text-halo-color": "#000000",
+                            "palette-overrides": {
+                                "light": {
+                                    "text-color": "#CCCCCC",
+                                    "text-halo-color": "#000000"
+                                },
+                                "real": {
+                                    "text-color": "#B7AE6A",
+                                    "text-halo-color": "#252B37"
+                                }
+                            },
+                            "text-font": "Arial",
+                            "text-size": 12,
+                            "text-anchor": "center",
+                            "text-halo-width": 1,
+                            "zoomLevel": 9
+                        }
+                    },
+                    "LFSB-24371e8198d30a417762": {
+                        "properties": {
+                            "text-color": "#CCCCCC",
+                            "text-halo-color": "#000000",
+                            "palette-overrides": {
+                                "light": {
+                                    "text-color": "#CCCCCC",
+                                    "text-halo-color": "#000000"
+                                },
+                                "real": {
+                                    "text-color": "#B7AE6A",
+                                    "text-halo-color": "#252B37"
+                                }
+                            },
+                            "text-font": "Arial",
+                            "text-size": 12,
+                            "text-anchor": "center",
+                            "text-halo-width": 1,
+                            "zoomLevel": 9
+                        }
+                    },
+                    "LFSB-fc280e504324fbf4560f": {
+                        "properties": {
+                            "text-color": "#CCCCCC",
+                            "text-halo-color": "#000000",
+                            "palette-overrides": {
+                                "light": {
+                                    "text-color": "#CCCCCC",
+                                    "text-halo-color": "#000000"
+                                },
+                                "real": {
+                                    "text-color": "#B7AE6A",
+                                    "text-halo-color": "#252B37"
+                                }
+                            },
+                            "text-font": "Arial",
+                            "text-size": 12,
+                            "text-anchor": "center",
+                            "text-halo-width": 1,
+                            "zoomLevel": 9
+                        }
+                    },
+                    "LFSB-720fac33d27652d9e694": {
+                        "properties": {
+                            "text-color": "#CCCCCC",
+                            "text-halo-color": "#000000",
+                            "palette-overrides": {
+                                "light": {
+                                    "text-color": "#CCCCCC",
+                                    "text-halo-color": "#000000"
+                                },
+                                "real": {
+                                    "text-color": "#B7AE6A",
+                                    "text-halo-color": "#252B37"
+                                }
+                            },
+                            "text-font": "Arial",
+                            "text-size": 12,
+                            "text-anchor": "center",
+                            "text-halo-width": 1,
+                            "zoomLevel": 9
+                        }
+                    },
+                    "LFSB-d04bdb6b97772898835d": {
+                        "properties": {
+                            "text-color": "#CCCCCC",
+                            "text-halo-color": "#000000",
+                            "palette-overrides": {
+                                "light": {
+                                    "text-color": "#CCCCCC",
+                                    "text-halo-color": "#000000"
+                                },
+                                "real": {
+                                    "text-color": "#B7AE6A",
+                                    "text-halo-color": "#252B37"
+                                }
+                            },
+                            "text-font": "Arial",
+                            "text-size": 12,
+                            "text-anchor": "center",
+                            "text-halo-width": 1,
+                            "zoomLevel": 9
+                        }
+                    },
+                    "LFSB-3297919e01a9dd3aa435": {
+                        "properties": {
+                            "text-color": "#CCCCCC",
+                            "text-halo-color": "#000000",
+                            "palette-overrides": {
+                                "light": {
+                                    "text-color": "#CCCCCC",
+                                    "text-halo-color": "#000000"
+                                },
+                                "real": {
+                                    "text-color": "#B7AE6A",
+                                    "text-halo-color": "#252B37"
+                                }
+                            },
+                            "text-font": "Arial",
+                            "text-size": 12,
+                            "text-anchor": "center",
+                            "text-halo-width": 1,
+                            "zoomLevel": 9
+                        }
+                    },
+                    "LFSB-aeaa5531398c6a21308b": {
+                        "properties": {
+                            "text-color": "#CCCCCC",
+                            "text-halo-color": "#000000",
+                            "palette-overrides": {
+                                "light": {
+                                    "text-color": "#CCCCCC",
+                                    "text-halo-color": "#000000"
+                                },
+                                "real": {
+                                    "text-color": "#B7AE6A",
+                                    "text-halo-color": "#252B37"
+                                }
+                            },
+                            "text-font": "Arial",
+                            "text-size": 12,
+                            "text-anchor": "center",
+                            "text-halo-width": 1,
+                            "zoomLevel": 9
+                        }
+                    },
+                    "LFSB-2388ea77078003b8e1c7": {
+                        "properties": {
+                            "text-color": "#CCCCCC",
+                            "text-halo-color": "#000000",
+                            "palette-overrides": {
+                                "light": {
+                                    "text-color": "#CCCCCC",
+                                    "text-halo-color": "#000000"
+                                },
+                                "real": {
+                                    "text-color": "#B7AE6A",
+                                    "text-halo-color": "#252B37"
+                                }
+                            },
+                            "text-font": "Arial",
+                            "text-size": 12,
+                            "text-anchor": "center",
+                            "text-halo-width": 1,
+                            "zoomLevel": 9
+                        }
+                    },
+                    "LFSB-1c35715fe2d0887a0637": {
+                        "properties": {
+                            "text-color": "#CCCCCC",
+                            "text-halo-color": "#000000",
+                            "palette-overrides": {
+                                "light": {
+                                    "text-color": "#CCCCCC",
+                                    "text-halo-color": "#000000"
+                                },
+                                "real": {
+                                    "text-color": "#B7AE6A",
+                                    "text-halo-color": "#252B37"
+                                }
+                            },
+                            "text-font": "Arial",
+                            "text-size": 12,
+                            "text-anchor": "center",
+                            "text-halo-width": 1,
+                            "zoomLevel": 9
+                        }
+                    },
+                    "LFSB-511e78fab9f9d9fa0d37": {
+                        "properties": {
+                            "text-color": "#CCCCCC",
+                            "text-halo-color": "#000000",
+                            "palette-overrides": {
+                                "light": {
+                                    "text-color": "#CCCCCC",
+                                    "text-halo-color": "#000000"
+                                },
+                                "real": {
+                                    "text-color": "#B7AE6A",
+                                    "text-halo-color": "#252B37"
+                                }
+                            },
+                            "text-font": "Arial",
+                            "text-size": 12,
+                            "text-anchor": "center",
+                            "text-halo-width": 1,
+                            "zoomLevel": 9
+                        }
+                    },
+                    "LFSB-14d22e4a0a5e60df430e": {
+                        "properties": {
+                            "text-color": "#CCCCCC",
+                            "text-halo-color": "#000000",
+                            "palette-overrides": {
+                                "light": {
+                                    "text-color": "#CCCCCC",
+                                    "text-halo-color": "#000000"
+                                },
+                                "real": {
+                                    "text-color": "#B7AE6A",
+                                    "text-halo-color": "#252B37"
+                                }
+                            },
+                            "text-font": "Arial",
+                            "text-size": 12,
+                            "text-anchor": "center",
+                            "text-halo-width": 1,
+                            "zoomLevel": 9
+                        }
+                    },
+                    "LFSB-30d58f64fc8719271268": {
+                        "properties": {
+                            "text-color": "#CCCCCC",
+                            "text-halo-color": "#000000",
+                            "palette-overrides": {
+                                "light": {
+                                    "text-color": "#CCCCCC",
+                                    "text-halo-color": "#000000"
+                                },
+                                "real": {
+                                    "text-color": "#B7AE6A",
+                                    "text-halo-color": "#252B37"
+                                }
+                            },
+                            "text-font": "Arial",
+                            "text-size": 12,
+                            "text-anchor": "center",
+                            "text-halo-width": 1,
+                            "zoomLevel": 9
+                        }
+                    },
+                    "LFSB-328836d992028c693a87": {
+                        "properties": {
+                            "text-color": "#CCCCCC",
+                            "text-halo-color": "#000000",
+                            "palette-overrides": {
+                                "light": {
+                                    "text-color": "#CCCCCC",
+                                    "text-halo-color": "#000000"
+                                },
+                                "real": {
+                                    "text-color": "#B7AE6A",
+                                    "text-halo-color": "#252B37"
+                                }
+                            },
+                            "text-font": "Arial",
+                            "text-size": 12,
+                            "text-anchor": "center",
+                            "text-halo-width": 1,
+                            "zoomLevel": 9
+                        }
+                    },
+                    "LFSB-6fc01027ae01b7ac51a7": {
+                        "properties": {
+                            "text-color": "#CCCCCC",
+                            "text-halo-color": "#000000",
+                            "palette-overrides": {
+                                "light": {
+                                    "text-color": "#CCCCCC",
+                                    "text-halo-color": "#000000"
+                                },
+                                "real": {
+                                    "text-color": "#B7AE6A",
+                                    "text-halo-color": "#252B37"
+                                }
+                            },
+                            "text-font": "Arial",
+                            "text-size": 12,
+                            "text-anchor": "center",
+                            "text-halo-width": 1,
+                            "zoomLevel": 9
+                        }
+                    },
+                    "LFSB-c3a0ce6dbe3ce4caf664": {
+                        "properties": {
+                            "text-color": "#CCCCCC",
+                            "text-halo-color": "#000000",
+                            "palette-overrides": {
+                                "light": {
+                                    "text-color": "#CCCCCC",
+                                    "text-halo-color": "#000000"
+                                },
+                                "real": {
+                                    "text-color": "#B7AE6A",
+                                    "text-halo-color": "#252B37"
+                                }
+                            },
+                            "text-font": "Arial",
+                            "text-size": 12,
+                            "text-anchor": "center",
+                            "text-halo-width": 1,
+                            "zoomLevel": 9
+                        }
+                    },
+                    "LFSB-e34e36a53348466409e3": {
+                        "properties": {
+                            "text-color": "#CCCCCC",
+                            "text-halo-color": "#000000",
+                            "palette-overrides": {
+                                "light": {
+                                    "text-color": "#CCCCCC",
+                                    "text-halo-color": "#000000"
+                                },
+                                "real": {
+                                    "text-color": "#B7AE6A",
+                                    "text-halo-color": "#252B37"
+                                }
+                            },
+                            "text-font": "Arial",
+                            "text-size": 12,
+                            "text-anchor": "center",
+                            "text-halo-width": 1,
+                            "zoomLevel": 9
+                        }
+                    },
+                    "LFSB-5c26ddfbf669687c88cd": {
+                        "properties": {
+                            "text-color": "#CCCCCC",
+                            "text-halo-color": "#000000",
+                            "palette-overrides": {
+                                "light": {
+                                    "text-color": "#CCCCCC",
+                                    "text-halo-color": "#000000"
+                                },
+                                "real": {
+                                    "text-color": "#B7AE6A",
+                                    "text-halo-color": "#252B37"
+                                }
+                            },
+                            "text-font": "Arial",
+                            "text-size": 12,
+                            "text-anchor": "center",
+                            "text-halo-width": 1,
+                            "zoomLevel": 9
+                        }
+                    },
+                    "LFSB-f3d45b68d3572e60325f": {
+                        "properties": {
+                            "text-color": "#CCCCCC",
+                            "text-halo-color": "#000000",
+                            "palette-overrides": {
+                                "light": {
+                                    "text-color": "#CCCCCC",
+                                    "text-halo-color": "#000000"
+                                },
+                                "real": {
+                                    "text-color": "#B7AE6A",
+                                    "text-halo-color": "#252B37"
+                                }
+                            },
+                            "text-font": "Arial",
+                            "text-size": 12,
+                            "text-anchor": "center",
+                            "text-halo-width": 1,
+                            "zoomLevel": 9
+                        }
+                    },
+                    "LFSB-7cb46c16d7a50091df95": {
+                        "properties": {
+                            "text-color": "#CCCCCC",
+                            "text-halo-color": "#000000",
+                            "palette-overrides": {
+                                "light": {
+                                    "text-color": "#CCCCCC",
+                                    "text-halo-color": "#000000"
+                                },
+                                "real": {
+                                    "text-color": "#B7AE6A",
+                                    "text-halo-color": "#252B37"
+                                }
+                            },
+                            "text-font": "Arial",
+                            "text-size": 12,
+                            "text-anchor": "center",
+                            "text-halo-width": 1,
+                            "zoomLevel": 9
+                        }
+                    },
+                    "LFSB-d443e6f1776800742f65": {
+                        "properties": {
+                            "text-color": "#CCCCCC",
+                            "text-halo-color": "#000000",
+                            "palette-overrides": {
+                                "light": {
+                                    "text-color": "#CCCCCC",
+                                    "text-halo-color": "#000000"
+                                },
+                                "real": {
+                                    "text-color": "#B7AE6A",
+                                    "text-halo-color": "#252B37"
+                                }
+                            },
+                            "text-font": "Arial",
+                            "text-size": 12,
+                            "text-anchor": "center",
+                            "text-halo-width": 1,
+                            "zoomLevel": 9
+                        }
+                    },
+                    "LFSB-33d5b77b03e9ee8631fa": {
+                        "properties": {
+                            "text-color": "#CCCCCC",
+                            "text-halo-color": "#000000",
+                            "palette-overrides": {
+                                "light": {
+                                    "text-color": "#CCCCCC",
+                                    "text-halo-color": "#000000"
+                                },
+                                "real": {
+                                    "text-color": "#B7AE6A",
+                                    "text-halo-color": "#252B37"
+                                }
+                            },
+                            "text-font": "Arial",
+                            "text-size": 12,
+                            "text-anchor": "center",
+                            "text-halo-width": 1,
+                            "zoomLevel": 9
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "profiles": {
+        "builtin-custom-2": {
+            "targets": {
+                "small_icon_boost_resolution_preset": "1080p",
+                "symbol_scale": 1,
+                "trail_airborne_points": 8,
+                "trail_enabled": true,
+                "trail_ground_points": 4
+            },
+            "filters": {
+                "display_modes": {
+                    "items": [
+                        {
+                            "max_airborne_altitude_ft": 5500,
+                            "max_airborne_speed_kt": 250,
+                            "name": "Normal",
+                            "require_active_tobt": false,
+                            "require_assigned_squawk": false,
+                            "require_clearance": false,
+                            "require_ready": false,
+                            "require_valid_tsat": false,
+                            "statuses": {
+                                "airborne": true,
+                                "arrivals": true,
+                                "departure": true,
+                                "lineup": true,
+                                "no_fpl": true,
+                                "no_status": true,
+                                "on_runway": true,
+                                "push": true,
+                                "startup": true,
+                                "taxi": true,
+                                "uncorrelated": true
+                            }
+                        },
+                        {
+                            "max_airborne_altitude_ft": 5500,
+                            "max_airborne_speed_kt": 250,
+                            "name": "Pro",
+                            "require_active_tobt": false,
+                            "require_assigned_squawk": true,
+                            "require_clearance": false,
+                            "require_ready": false,
+                            "require_valid_tsat": false,
+                            "statuses": {
+                                "airborne": true,
+                                "arrivals": true,
+                                "departure": true,
+                                "lineup": true,
+                                "no_fpl": true,
+                                "no_status": true,
+                                "on_runway": true,
+                                "push": true,
+                                "startup": true,
+                                "taxi": true,
+                                "uncorrelated": true
+                            }
+                        },
+                        {
+                            "max_airborne_altitude_ft": 5500,
+                            "max_airborne_speed_kt": 250,
+                            "name": "Tower",
+                            "require_active_tobt": false,
+                            "require_assigned_squawk": false,
+                            "require_clearance": false,
+                            "require_ready": false,
+                            "require_valid_tsat": false,
+                            "statuses": {
+                                "airborne": true,
+                                "arrivals": true,
+                                "departure": true,
+                                "lineup": true,
+                                "no_fpl": true,
+                                "no_status": true,
+                                "on_runway": true,
+                                "push": true,
+                                "startup": true,
+                                "taxi": true,
+                                "uncorrelated": true
+                            }
+                        },
+                        {
+                            "max_airborne_altitude_ft": 5500,
+                            "max_airborne_speed_kt": 250,
+                            "name": "Pro + Tower",
+                            "require_active_tobt": false,
+                            "require_assigned_squawk": true,
+                            "require_clearance": false,
+                            "require_ready": false,
+                            "require_valid_tsat": false,
+                            "statuses": {
+                                "airborne": true,
+                                "arrivals": true,
+                                "departure": true,
+                                "lineup": true,
+                                "no_fpl": true,
+                                "no_status": true,
+                                "on_runway": true,
+                                "push": true,
+                                "startup": true,
+                                "taxi": true,
+                                "uncorrelated": true
+                            }
+                        }
+                    ]
+                }
+            },
+            "labels": {
+                "fit_background_to_text": false
+            }
+        },
+        "builtin-default": {
+            "labels": {
+                "departure": {
+                    "status_definitions": {
+                        "taxi": {
+                            "definition": [
+                                [
+                                    "b:callsign",
+                                    "sctype"
+                                ],
+                                [
+                                    "asid",
+                                    "deprwy"
+                                ],
+                                [
+                                    "holdingpoint"
+                                ]
+                            ],
+                            "definition_detailed_inherits_normal": false,
+                            "definition_detailed": [
+                                [
+                                    "b:callsign",
+                                    "sctype"
+                                ],
+                                [
+                                    "asid",
+                                    "deprwy"
+                                ],
+                                [
+                                    "holdingpoint",
+                                    "ctot",
+                                    "scratchpad"
+                                ]
+                            ]
+                        },
+                        "push": {
+                            "definition": [
+                                [
+                                    "b:callsign",
+                                    "sctype"
+                                ],
+                                [
+                                    "asid",
+                                    "deprwy"
+                                ],
+                                [
+                                    "holdingpoint"
+                                ]
+                            ],
+                            "definition_detailed_inherits_normal": false,
+                            "definition_detailed": [
+                                [
+                                    "b:callsign",
+                                    "sctype"
+                                ],
+                                [
+                                    "asid",
+                                    "deprwy"
+                                ],
+                                [
+                                    "holdingpoint",
+                                    "scratchpad"
+                                ]
+                            ]
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,130 @@
+{
+  "LFBT": {
+    "elevation": 1260,
+    "runways": "02,20",
+    "transAlt": 5000,
+    "maxInitialClimb": 0,
+    "appSI": "BB,BPA",
+    "intersections": {
+    "20": "A,T7",
+    "02": "D,C,T6"
+    },
+    "sids": {
+      "TOU": {
+        "R": {
+          "1": {
+            "rwy": "20",
+            "initial": 0,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "S": {
+          "1": {
+            "rwy": "20",
+            "initial": 0,
+            "prio": 1,
+            "equip": {
+              "NON-RNAV": true
+            }
+          }
+        }
+      },
+      "USAKU": {
+        "R": {
+          "1": {
+            "rwy": "20",
+            "initial": 0,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "M": {
+          "1": {
+            "rwy": "02",
+            "initial": 0,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "N": {
+          "1": {
+            "rwy": "02",
+            "initial": 0,
+            "prio": 1,
+            "equip": {
+              "NON-RNAV": true
+            }
+          }
+        },
+        "S": {
+          "1": {
+            "rwy": "20",
+            "initial": 0,
+            "prio": 1,
+            "equip": {
+              "NON-RNAV": true
+            }
+          }
+        }
+      },
+      "LMB": {
+        "M": {
+          "1": {
+            "rwy": "02",
+            "initial": 0,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "N": {
+          "1": {
+            "rwy": "02",
+            "initial": 0,
+            "prio": 1,
+            "equip": {
+              "NON-RNAV": true
+            }
+          }
+        },
+        "S": {
+          "1": {
+            "rwy": "20",
+            "initial": 0,
+            "prio": 1
+          }
+        }
+      },
+      "PU": {
+        "R": {
+          "1": {
+            "rwy": "20",
+            "initial": 0,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "S": {
+          "1": {
+            "rwy": "20",
+            "initial": 0,
+            "prio": 1,
+            "equip": {
+              "NON-RNAV": true
+            }
+          }
+        }
+      }
+    }
+  }
+}

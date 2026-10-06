@@ -1,0 +1,339 @@
+{
+  "LFML": {
+    "elevation": 70,
+    "runways": "13L,13R,31L,31R",
+    "transAlt": 5000,
+    "maxInitialClimb": 7000,
+    "appSI": "MM,MLA",
+    "intersections": {
+    "13L": "C1,D1,D2,E2",
+    "13R": "E2,F3",
+    "31L": "E7,E9,F7",
+    "31R": "D9,D8,D7,D6,E9,E7"
+    },
+    "sids": {
+      "ETREK": {
+        "S": {
+          "1": {
+            "rwy": "13L,13R",
+            "initial": 7000,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "B": {
+          "1": {
+            "rwy": "13L,13R",
+            "initial": 7000,
+            "prio": 2,
+            "equip": {
+              "NON-RNAV": true
+            }
+          }
+        },
+        "N": {
+          "1": {
+            "rwy": "31L,31R",
+            "initial": 5000,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        }
+      },
+      "FJR": {
+        "S": {
+          "1": {
+            "rwy": "13L,13R",
+            "initial": 4000,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "N": {
+          "1": {
+            "rwy": "31L,31R",
+            "initial": 4000,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        }
+      },
+      "LERGA": {
+        "S": {
+          "1": {
+            "rwy": "13L,13R",
+            "initial": 7000,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "B": {
+          "1": {
+            "rwy": "13L,13R",
+            "initial": 7000,
+            "prio": 2,
+            "equip": {
+              "NON-RNAV": true
+            }
+          }
+        },
+        "N": {
+          "1": {
+            "rwy": "31L,31R",
+            "initial": 5000,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        }
+      },
+      "LUC": {
+        "N": {
+          "1": {
+            "rwy": "31L,31R",
+            "initial": 5000,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            },
+            "WTC": "LM"
+          }
+        },
+        "C": {
+          "1": {
+            "rwy": "31L,31R",
+            "initial": 5000,
+            "prio": 2,
+            "equip": {
+              "NON-RNAV": true
+            },
+            "WTC": "LM"
+          }
+        },
+        "U": {
+          "1": {
+            "rwy": "31L,31R",
+            "initial": 5000,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        }
+      },
+      "MAMES": {
+        "S": {
+          "1": {
+            "rwy": "13L,13R",
+            "initial": 4000,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "N": {
+          "1": {
+            "rwy": "31L,31R",
+            "initial": 4000,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        }
+      },
+      "MTL": {
+        "S": {
+          "1": {
+            "rwy": "13L,13R",
+            "initial": 7000,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "U": {
+          "1": {
+            "rwy": "13L,13R",
+            "initial": 7000,
+            "prio": 2,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "B": {
+          "1": {
+            "rwy": "13L,13R",
+            "initial": 7000,
+            "prio": 2,
+            "equip": {
+              "NON-RNAV": true
+            }
+          }
+        },
+        "T": {
+          "1": {
+            "rwy": "13L,13R",
+            "initial": 7000,
+            "prio": 3,
+            "equip": {
+              "NON-RNAV": true
+            }
+          }
+        },
+        "N": {
+          "1": {
+            "rwy": "31L,31R",
+            "initial": 5000,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        }
+      },
+      "NASIK": {
+        "S": {
+          "1": {
+            "rwy": "13L,13R",
+            "initial": 5000,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "C": {
+          "1": {
+            "rwy": "31L,31R",
+            "initial": 5000,
+            "prio": 2,
+            "equip": {
+              "NON-RNAV": true
+            },
+            "WTC": "LM"
+          }
+        },
+        "N": {
+          "1": {
+            "rwy": "31L,31R",
+            "initial": 5000,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            },
+            "WTC": "LM"
+          }
+        },
+        "U": {
+          "1": {
+            "rwy": "31L,31R",
+            "initial": 5000,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        }
+      },
+      "SOSUR": {
+        "S": {
+          "1": {
+            "rwy": "13L,13R",
+            "initial": 4000,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "N": {
+          "1": {
+            "rwy": "31L,31R",
+            "initial": 4000,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        }
+      },
+      "TINOT": {
+        "S": {
+          "1": {
+            "rwy": "13L,13R",
+            "initial": 4000,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "N": {
+          "1": {
+            "rwy": "31L,31R",
+            "initial": 4000,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        }
+      },
+      "VATIR": {
+        "S": {
+          "1": {
+            "rwy": "13L,13R",
+            "initial": 4000,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "N": {
+          "1": {
+            "rwy": "31L,31R",
+            "initial": 4000,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        }
+      },
+      "MADRA": {
+        "B": {
+          "1": {
+            "rwy": "13L,13R",
+            "initial": 4000,
+            "prio": 1
+          }
+        }
+      },
+      "MTG": {
+        "C": {
+          "1": {
+            "rwy": "31L,31R",
+            "initial": 4000,
+            "prio": 1
+          }
+        }
+      }
+    }
+  }
+}

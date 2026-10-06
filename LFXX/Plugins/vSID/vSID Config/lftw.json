@@ -1,0 +1,101 @@
+{
+  "LFTW": {
+    "elevation": 309,
+    "runways": "18,36",
+    "transAlt": 5000,
+    "maxInitialClimb": 0,
+    "appSI": "MM,MTA",
+    "intersections": {
+    "18": "E,E1,J,D,G",
+    "36": "A,A1,B,F,G"
+    },
+    "sids": {
+      "MEN": {
+        "A": {
+          "1": {
+            "rwy": "18",
+            "initial": 0,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "B": {
+          "1": {
+            "rwy": "36",
+            "initial": 0,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        }
+      },
+      "CM": {
+        "N": {
+          "1": {
+            "rwy": "36",
+            "initial": 0,
+            "prio": 1
+          }
+        },
+        "S": {
+          "1": {
+            "rwy": "18",
+            "initial": 0,
+            "prio": 1
+          }
+        }
+      },
+      "MARRI": {
+        "N": {
+          "1": {
+            "rwy": "36",
+            "initial": 0,
+            "prio": 1
+          }
+        },
+        "S": {
+          "1": {
+            "rwy": "18",
+            "initial": 0,
+            "prio": 1
+          }
+        }
+      },
+      "MTL": {
+        "N": {
+          "1": {
+            "rwy": "36",
+            "initial": 0,
+            "prio": 1
+          }
+        },
+        "S": {
+          "1": {
+            "rwy": "18",
+            "initial": 0,
+            "prio": 1
+          }
+        }
+      },
+      "FJR": {
+        "N": {
+          "1": {
+            "rwy": "36",
+            "initial": 0,
+            "prio": 1
+          }
+        },
+        "S": {
+          "1": {
+            "rwy": "18",
+            "initial": 0,
+            "prio": 1
+          }
+        }
+      }
+    }
+  }
+}

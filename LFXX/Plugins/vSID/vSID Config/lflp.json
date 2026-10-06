@@ -1,0 +1,135 @@
+{
+  "LFLP": {
+    "elevation": 1521,
+    "runways": "04,22,04R,22L",
+    "transAlt": 6500,
+    "maxInitialClimb": 6500,
+    "appSI": "MM,LBA",
+    "intersections": {
+    "04": "A,B",
+    "22": "D,C"
+    },
+    "sids": {
+      "ESAPI": {
+        "A": {
+          "1": {
+            "rwy": "22",
+            "initial": 6500,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        }
+      },
+      "ODIKI": {
+        "A": {
+          "1": {
+            "rwy": "22",
+            "initial": 6500,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        }
+      },
+      "PAS": {
+        "A": {
+          "1": {
+            "rwy": "22",
+            "initial": 6500,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        }
+      },
+      "VENAT": {
+        "A": {
+          "1": {
+            "rwy": "22",
+            "initial": 6500,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        }
+      },
+      "LSE": {
+        "A": {
+          "1": {
+            "rwy": "22",
+            "initial": 6500,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        }
+      },
+      "LTP": {
+        "A": {
+          "1": {
+            "rwy": "22",
+            "initial": 6500,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        }
+      },
+      "ROMAM": {
+        "A": {
+          "1": {
+            "rwy": "22",
+            "initial": 6500,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        }
+      },
+      "BULOL": {
+        "A": {
+          "1": {
+            "rwy": "22",
+            "initial": 6500,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        }
+      },
+      "BUSIL": {
+        "A": {
+          "1": {
+            "rwy": "22",
+            "initial": 6500,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        }
+      },
+      "PIRUV": {
+        "A": {
+          "1": {
+            "rwy": "22",
+            "initial": 6500,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        }
+      }
+    }
+  }
+}

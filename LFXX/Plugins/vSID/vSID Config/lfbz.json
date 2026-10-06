@@ -1,0 +1,175 @@
+{
+  "LFBZ": {
+    "elevation": 245,
+    "runways": "09,27",
+    "transAlt": 5000,
+    "maxInitialClimb": 8000,
+    "appSI": "BB,BPA,BZA",
+    "intersections": {
+    "09": "P,D",
+    "27": "N,S"
+    },
+    "sids": {
+      "SOST": {
+        "D": {
+          "1": {
+            "rwy": "09",
+            "initial": 7000,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        }
+      },
+      "SOVOS": {
+        "D": {
+          "1": {
+            "rwy": "09",
+            "initial": 7000,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "F": {
+          "1": {
+            "rwy": "27",
+            "initial": 7000,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        }
+      },
+      "VAVIX": {
+        "D": {
+          "1": {
+            "rwy": "09",
+            "initial": 7000,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "F": {
+          "1": {
+            "rwy": "27",
+            "initial": 7000,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "E": {
+          "1": {
+            "rwy": "09",
+            "initial": 7000,
+            "prio": 2,
+            "equip": {
+              "NON-RNAV": true
+            }
+          }
+        },
+        "W": {
+          "1": {
+            "rwy": "27",
+            "initial": 7000,
+            "prio": 2,
+            "equip": {
+              "NON-RNAV": true
+            }
+          }
+        }
+      },
+      "DONOS": {
+        "D": {
+          "1": {
+            "rwy": "09",
+            "initial": 8000,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "F": {
+          "1": {
+            "rwy": "27",
+            "initial": 8000,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "E": {
+          "1": {
+            "rwy": "09",
+            "initial": 8000,
+            "prio": 2,
+            "equip": {
+              "NON-RNAV": true
+            }
+          }
+        },
+        "W": {
+          "1": {
+            "rwy": "27",
+            "initial": 8000,
+            "prio": 2,
+            "equip": {
+              "NON-RNAV": true
+            }
+          }
+        }
+      },
+      "SSN": {
+        "D": {
+          "1": {
+            "rwy": "09",
+            "initial": 8000,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "F": {
+          "1": {
+            "rwy": "27",
+            "initial": 8000,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "E": {
+          "1": {
+            "rwy": "09",
+            "initial": 8000,
+            "prio": 2,
+            "equip": {
+              "NON-RNAV": true
+            }
+          }
+        },
+        "W": {
+          "1": {
+            "rwy": "27",
+            "initial": 8000,
+            "prio": 2,
+            "equip": {
+              "NON-RNAV": true
+            }
+          }
+        }
+      }
+    }
+  }
+}

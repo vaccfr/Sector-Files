@@ -1,0 +1,27 @@
+{
+  "LFCK": {
+    "elevation": 785,
+    "runways": "14,32",
+    "transAlt": 5000,
+    "maxInitialClimb": 0,
+    "appSI": "BB,BOA",
+    "intersections": {
+    "14": "C,M",
+    "32": "C,M"
+    },
+    "sids": {
+      "AFRIC": {
+        "M": {
+          "1": {
+            "rwy": "14",
+            "initial": 0,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "version": 2,
+  "enabledByDefault": true,
+  "references": {
+    "LFPG": { "groups": { "east": ["08L", "08R", "09L", "09R"], "west": ["26L", "26R", "27L", "27R"] } },
+    "LFPO": { "groups": { "east": ["06", "07"], "west": ["24", "25"] }, "ignore": ["02", "20"] }
+  },
+  "airportGroups": {
+    "PARIS_MAIN": ["LFPG", "LFPO", "LFPB"],
+    "PARIS_REGIONAL": ["LFPN", "LFPT", "LFPV"]
+  },
+  "profiles": [
+    { "name": "West Linked",   "when": {"LFPG": "west", "LFPO": "west"}, "enable": {"PARIS_MAIN": [],           "PARIS_REGIONAL": ["wlpg"]} },
+    { "name": "West Unlinked", "when": {"LFPG": "west", "LFPO": "east"}, "enable": {"PARIS_MAIN": ["opposing"], "PARIS_REGIONAL": ["wipg"]} },
+    { "name": "East Linked",   "when": {"LFPG": "east", "LFPO": "east"}, "enable": {"PARIS_MAIN": [],           "PARIS_REGIONAL": ["elpg"]} },
+    { "name": "East Unlinked", "when": {"LFPG": "east", "LFPO": "west"}, "enable": {"PARIS_MAIN": ["opposing"], "PARIS_REGIONAL": ["eipg"]} },
+    { "name": "CDG West", "when": {"LFPG": "west"}, "enable": {"LFOB": []} },
+    { "name": "CDG East", "when": {"LFPG": "east"}, "enable": {"LFOB": ["pgeast"]} }
+  ]
+}
