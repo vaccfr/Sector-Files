@@ -23,12 +23,12 @@ NDBs:frequency:6579300:3.5:0:0:0
 Runways:centerline:0:3.5:0:0:7
 Runways:extended centerline:5135955:3.5:0:0:7
 Runways:name:16777215:4.0:0:0:7
-Datablock:non concerned:5723728:4.0:2:0:7
-Datablock:notified:7123796:4.0:2:0:7
+Datablock:non concerned:16777215:4.0:2:0:7
+Datablock:notified:16777215:4.0:2:0:7
 Datablock:assumed:13750737:4.0:2:0:7
 Datablock:transfer to me initiated:7850665:4.0:2:0:7
-Datablock:redundant:11902082:4.0:2:0:7
-Datablock:information:65535:4.0:2:0:7
+Datablock:redundant:16777215:4.0:2:0:7
+Datablock:information:65280:4.0:2:0:7
 Datablock:even flight level:16777215:3.5:0:0:7
 Datablock:odd flight level:16777215:3.5:0:0:7
 Datablock:arrivals:11579647:4.0:0:0:7
@@ -56,10 +56,10 @@ Datablock:SCTA CFL used warning rectangle:65535:3.5:0:0:7
 Datablock:SCTA warning leader:3289855:3.5:0:3:7
 Datablock:SCTA CFL used warning leader:65535:3.5:0:3:7
 Controller:normal:16777215:3.5:0:0:7
-Controller:breaking:6776683:3.5:0:0:7
+Controller:breaking:11330988:3.5:0:0:7
 Controller:timeout:255:3.5:0:0:7
 Metar:normal:16777215:5.5:0:0:7
-Metar:modified:14276864:5.5:0:0:7
+Metar:modified:11330988:5.5:0:0:7
 Metar:timeout:255:5.5:0:0:7
 Other:wait:16777215:3.5:0:0:7
 Other:distance line:12378805:3.5:2:0:7
@@ -90,9 +90,9 @@ Other:normal menu item:16777215:3.5:0:0:7
 Other:disabled menu item:8421504:3.5:0:0:7
 Transitions:transition grid:5263440:3.0:0:0:7
 Chat:text:16777215:3.5:0:0:7
-Chat:background:3289650:3.5:0:0:7
+Chat:background:7105644:3.5:0:0:7
 Chat:name normal:16777215:3.5:0:0:7
-Chat:name unread:14276864:3.5:0:0:7
+Chat:name unread:11330988:3.5:0:0:7
 Ground Network:exit:16711680:3.5:0:3:7
 Ground Network:taxiway:65280:3.5:0:3:7
 Ground Network:terminal taxiway:255:3.5:0:3:7
