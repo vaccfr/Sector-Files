@@ -173,266 +173,266 @@ ATIS3:Sector Coverage - map.vatsim.net | CPDLC [LFXX]
 ATIS4:Leave us some feedback! vatsim.fr/fb/VOTRE_CID_ICI
 PROFILE:LFOB_APP:120:5
 ATIS2:Beauvais Approach - EN/FR
-ATIS3:Sector Coverage - map.vatsim.net
+ATIS3:Check your slot @ vats.im/vdgs | Sector Coverage - map.vatsim.net
 ATIS4:Leave us some feedback! vatsim.fr/fb/VOTRE_CID_ICI
 PROFILE:LFOB_I_APP:120:5
 ATIS2:Beauvais Information - EN/FR
-ATIS3:Sector Coverage - map.vatsim.net
+ATIS3:Check your slot @ vats.im/vdgs | Sector Coverage - map.vatsim.net
 ATIS4:Leave us some feedback! vatsim.fr/fb/VOTRE_CID_ICI
 PROFILE:LFPG_FN_APP:120:5
 ATIS2:De Gaulle Arrival - EN/FR
-ATIS3:CALLSIGN ONLY ON FIRST CONTACT! TURN THEN RESPOND!
+ATIS3:Callsign only on first contact! Turn then respond!
 ATIS4:Leave us some feedback! vatsim.fr/fb/VOTRE_CID_ICI
 PROFILE:LFPG_FS_APP:120:5
 ATIS2:De Gaulle Arrival - EN/FR
-ATIS3:CALLSIGN ONLY ON FIRST CONTACT! TURN THEN RESPOND!
+ATIS3:Callsign only on first contact! Turn then respond!
 ATIS4:Leave us some feedback! vatsim.fr/fb/VOTRE_CID_ICI
 PROFILE:LFPG_N_APP:120:5
 ATIS2:De Gaulle Approach - EN/FR
-ATIS3:TOBT @ cdm.vatsim.fr | Sector Coverage - map.vatsim.net
+ATIS3:TOBT @ vats.im/vdgs | Sector Coverage - map.vatsim.net
 ATIS4:Leave us some feedback! vatsim.fr/fb/VOTRE_CID_ICI
 PROFILE:LFPG_S_APP:120:5
 ATIS2:De Gaulle Approach - EN/FR
-ATIS3:TOBT @ cdm.vatsim.fr | Sector Coverage - map.vatsim.net
+ATIS3:TOBT @ vats.im/vdgs | Sector Coverage - map.vatsim.net
 ATIS4:Leave us some feedback! vatsim.fr/fb/VOTRE_CID_ICI
 PROFILE:LFPG_N_DEP:120:5
 ATIS2:De Gaulle Departure - EN/FR
-ATIS3:TOBT @ cdm.vatsim.fr | Sector Coverage - map.vatsim.net
+ATIS3:TOBT @ vats.im/vdgs | Sector Coverage - map.vatsim.net
 ATIS4:Leave us some feedback! vatsim.fr/fb/VOTRE_CID_ICI
 PROFILE:LFPG_S_DEP:120:5
 ATIS2:De Gaulle Departure - EN/FR
-ATIS3:TOBT @ cdm.vatsim.fr | Sector Coverage - map.vatsim.net
+ATIS3:TOBT @ vats.im/vdgs | Sector Coverage - map.vatsim.net
 ATIS4:Leave us some feedback! vatsim.fr/fb/VOTRE_CID_ICI
 PROFILE:LFPM_ISJ_APP:120:5
 ATIS2:Seine Information - EN/FR
-ATIS3:Sector Coverage - map.vatsim.net
+ATIS3:Check your slot @ vats.im/vdgs | Sector Coverage - map.vatsim.net
 ATIS4:Leave us some feedback! vatsim.fr/fb/VOTRE_CID_ICI
 PROFILE:LFPM_ISK_APP:120:5
 ATIS2:Seine Information - EN/FR
-ATIS3:Sector Coverage - map.vatsim.net
+ATIS3:Check your slot @ vats.im/vdgs | Sector Coverage - map.vatsim.net
 ATIS4:Leave us some feedback! vatsim.fr/fb/VOTRE_CID_ICI
 PROFILE:LFPM_ISL_APP:120:5
 ATIS2:Seine Information - EN/FR
-ATIS3:Sector Coverage - map.vatsim.net
+ATIS3:Check your slot @ vats.im/vdgs | Sector Coverage - map.vatsim.net
 ATIS4:Leave us some feedback! vatsim.fr/fb/VOTRE_CID_ICI
 PROFILE:LFPM_SI_APP:120:5
 ATIS2:Seine Approach - EN/FR
-ATIS3:Sector Coverage - map.vatsim.net
+ATIS3:Check your slot @ vats.im/vdgs | Sector Coverage - map.vatsim.net
 ATIS4:Leave us some feedback! vatsim.fr/fb/VOTRE_CID_ICI
 PROFILE:LFPM_SJ_APP:120:5
 ATIS2:Seine Approach - EN/FR
-ATIS3:Sector Coverage - map.vatsim.net
+ATIS3:Check your slot @ vats.im/vdgs | Sector Coverage - map.vatsim.net
 ATIS4:Leave us some feedback! vatsim.fr/fb/VOTRE_CID_ICI
 PROFILE:LFPM_SK_APP:120:5
 ATIS2:Seine Approach - EN/FR
-ATIS3:Sector Coverage - map.vatsim.net
+ATIS3:Check your slot @ vats.im/vdgs | Sector Coverage - map.vatsim.net
 ATIS4:Leave us some feedback! vatsim.fr/fb/VOTRE_CID_ICI
 PROFILE:LFPO_APP:120:5
 ATIS2:Orly Approach - EN/FR
-ATIS3:TOBT @ cdm.vatsim.fr | Sector Coverage - map.vatsim.net
+ATIS3:TOBT @ vats.im/vdgs | Sector Coverage - map.vatsim.net
 ATIS4:Leave us some feedback! vatsim.fr/fb/VOTRE_CID_ICI
 PROFILE:LFPO_DEP:120:5
 ATIS2:Orly Departure - EN/FR
-ATIS3:TOBT @ cdm.vatsim.fr | Sector Coverage - map.vatsim.net
+ATIS3:TOBT @ vats.im/vdgs | Sector Coverage - map.vatsim.net
 ATIS4:Leave us some feedback! vatsim.fr/fb/VOTRE_CID_ICI
 PROFILE:LFPO_F_APP:120:5
 ATIS2:Orly Arrival - EN/FR
-ATIS3:CALLSIGN ONLY ON FIRST CONTACT! TURN THEN RESPOND!
+ATIS3:Callsign only on first contact! Turn then respond!
 ATIS4:Leave us some feedback! vatsim.fr/fb/VOTRE_CID_ICI
 PROFILE:LFPT_APP:120:5
 ATIS2:Le Bourget Approach - EN/FR
-ATIS3:Sector Coverage - map.vatsim.net
+ATIS3:Check your slot @ vats.im/vdgs | Sector Coverage - map.vatsim.net
 ATIS4:Leave us some feedback! vatsim.fr/fb/VOTRE_CID_ICI
 PROFILE:LFPT_I_APP:120:5
 ATIS2:Le Bourget Information - EN/FR
-ATIS3:Sector Coverage - map.vatsim.net
+ATIS3:Check your slot @ vats.im/vdgs | Sector Coverage - map.vatsim.net
 ATIS4:Leave us some feedback! vatsim.fr/fb/VOTRE_CID_ICI
 PROFILE:LFQQ_QA_APP:120:5
 ATIS2:Lille Approach - EN/FR
-ATIS3:Sector Coverage - map.vatsim.net
+ATIS3:Check your slot @ vats.im/vdgs | Sector Coverage - map.vatsim.net
 ATIS4:Leave us some feedback! vatsim.fr/fb/VOTRE_CID_ICI
 PROFILE:LFQQ_QD_APP:120:5
 ATIS2:Lille Approach - EN/FR
-ATIS3:Sector Coverage - map.vatsim.net
+ATIS3:Check your slot @ vats.im/vdgs | Sector Coverage - map.vatsim.net
 ATIS4:Leave us some feedback! vatsim.fr/fb/VOTRE_CID_ICI
 PROFILE:LFQQ_QE_APP:120:5
 ATIS2:Lille Approach - EN/FR
-ATIS3:Sector Coverage - map.vatsim.net
+ATIS3:Check your slot @ vats.im/vdgs | Sector Coverage - map.vatsim.net
 ATIS4:Leave us some feedback! vatsim.fr/fb/VOTRE_CID_ICI
 PROFILE:LFQQ_QR_APP:120:5
 ATIS2:Lille Approach - EN/FR
-ATIS3:Sector Coverage - map.vatsim.net
+ATIS3:Check your slot @ vats.im/vdgs | Sector Coverage - map.vatsim.net
 ATIS4:Leave us some feedback! vatsim.fr/fb/VOTRE_CID_ICI
 PROFILE:LFQQ_QW_APP:120:5
 ATIS2:Lille Approach - EN/FR
-ATIS3:Sector Coverage - map.vatsim.net
+ATIS3:Check your slot @ vats.im/vdgs | Sector Coverage - map.vatsim.net
 ATIS4:Leave us some feedback! vatsim.fr/fb/VOTRE_CID_ICI
 PROFILE:LFAC_I_TWR:30:4
 ATIS2:Calais Information - EN/FR
-ATIS3:Check your charts! chartfox.org/LFAC
+ATIS3:Check your slot @ vats.im/vdgs | Check your charts! chartfox.org/LFAC
 ATIS4:Leave us some feedback! vatsim.fr/fb/VOTRE_CID_ICI
 PROFILE:LFAQ_TWR:30:4
 ATIS2:Albert Tower - EN/FR
-ATIS3:Check your charts! chartfox.org/LFAQ
+ATIS3:Check your slot @ vats.im/vdgs | Check your charts! chartfox.org/LFAQ
 ATIS4:Leave us some feedback! vatsim.fr/fb/VOTRE_CID_ICI
 PROFILE:LFAT_TWR:30:4
 ATIS2:Le Touquet Tower - EN/FR
-ATIS3:Check your charts! chartfox.org/LFAT
+ATIS3:Check your slot @ vats.im/vdgs | Check your charts! chartfox.org/LFAT
 ATIS4:Leave us some feedback! vatsim.fr/fb/VOTRE_CID_ICI
 PROFILE:LFAV_I_TWR:30:4
 ATIS2:Valenciennes Information - EN/FR
-ATIS3:Check your charts! chartfox.org/LFAV
+ATIS3:Check your slot @ vats.im/vdgs | Check your charts! chartfox.org/LFAV
 ATIS4:Leave us some feedback! vatsim.fr/fb/VOTRE_CID_ICI
 PROFILE:LFLA_I_TWR:30:4
 ATIS2:Auxerre Information - EN/FR
-ATIS3:Check your charts! chartfox.org/LFLA
+ATIS3:Check your slot @ vats.im/vdgs | Check your charts! chartfox.org/LFLA
 ATIS4:Leave us some feedback! vatsim.fr/fb/VOTRE_CID_ICI
 PROFILE:LFOB_TWR:30:4
 ATIS2:Beauvais Tower - EN/FR
-ATIS3:Check your charts! chartfox.org/LFOB
+ATIS3:Check your slot @ vats.im/vdgs | Check your charts! chartfox.org/LFOB
 ATIS4:Leave us some feedback! vatsim.fr/fb/VOTRE_CID_ICI
 PROFILE:LFOK_TWR:30:4
 ATIS2:Vatry Tower - EN/FR
-ATIS3:Check your charts! chartfox.org/LFOK
+ATIS3:Check your slot @ vats.im/vdgs | Check your charts! chartfox.org/LFOK
 ATIS4:Leave us some feedback! vatsim.fr/fb/VOTRE_CID_ICI
 PROFILE:LFOP_TWR:30:4
 ATIS2:Rouen Tower - EN/FR
-ATIS3:Check your charts! chartfox.org/LFOP
+ATIS3:Check your slot @ vats.im/vdgs | Check your charts! chartfox.org/LFOP
 ATIS4:Leave us some feedback! vatsim.fr/fb/VOTRE_CID_ICI
 PROFILE:LFOT_TWR:30:4
 ATIS2:Tours Tower - EN/FR
-ATIS3:Check your charts! chartfox.org/LFOT
+ATIS3:Check your slot @ vats.im/vdgs | Check your charts! chartfox.org/LFOT
 ATIS4:Leave us some feedback! vatsim.fr/fb/VOTRE_CID_ICI
 PROFILE:LFOZ_I_TWR:30:4
 ATIS2:St Denis Information - EN/FR
-ATIS3:Check your charts! chartfox.org/LFOZ
+ATIS3:Check your slot @ vats.im/vdgs | Check your charts! chartfox.org/LFOZ
 ATIS4:Leave us some feedback! vatsim.fr/fb/VOTRE_CID_ICI
 PROFILE:LFPB_TWR:30:4
 ATIS2:Le Bourget Tower - EN/FR
-ATIS3:Check your charts! chartfox.org/LFPB
+ATIS3:Check your slot @ vats.im/vdgs | Check your charts! chartfox.org/LFPB
 ATIS4:Leave us some feedback! vatsim.fr/fb/VOTRE_CID_ICI
 PROFILE:LFPG_N_TWR:30:4
 ATIS2:De Gaulle Tower - EN/FR
-ATIS3:TOBT @ cdm.vatsim.fr | Charts chartfox.org/LFPG
+ATIS3:TOBT @ vats.im/vdgs | Charts chartfox.org/LFPG
 ATIS4:Leave us some feedback! vatsim.fr/fb/VOTRE_CID_ICI
 PROFILE:LFPG_S_TWR:30:4
 ATIS2:De Gaulle Tower - EN/FR
-ATIS3:TOBT @ cdm.vatsim.fr | Charts chartfox.org/LFPG
+ATIS3:TOBT @ vats.im/vdgs | Charts chartfox.org/LFPG
 ATIS4:Leave us some feedback! vatsim.fr/fb/VOTRE_CID_ICI
 PROFILE:LFPL_TWR:30:4
 ATIS2:Lognes Tower - EN/FR
-ATIS3:Check your charts! chartfox.org/LFPM
+ATIS3:Check your slot @ vats.im/vdgs | Check your charts! chartfox.org/LFPM
 ATIS4:Leave us some feedback! vatsim.fr/fb/VOTRE_CID_ICI
 PROFILE:LFPM_TWR:30:4
 ATIS2:Melun Tower - EN/FR
-ATIS3:Check your charts! chartfox.org/LFPM
+ATIS3:Check your slot @ vats.im/vdgs | Check your charts! chartfox.org/LFPM
 ATIS4:Leave us some feedback! vatsim.fr/fb/VOTRE_CID_ICI
 PROFILE:LFPN_I_TWR:30:4
 ATIS2:Chevreuse Information - EN/FR
-ATIS3:Check your charts! chartfox.org/LFPN
+ATIS3:Check your slot @ vats.im/vdgs | Check your charts! chartfox.org/LFPN
 ATIS4:Leave us some feedback! vatsim.fr/fb/VOTRE_CID_ICI
 PROFILE:LFPN_TWR:30:4
 ATIS2:Toussus Ground - EN/FR
-ATIS3:Check your charts! chartfox.org/LFPN
+ATIS3:Check your slot @ vats.im/vdgs | Check your charts! chartfox.org/LFPN
 ATIS4:Leave us some feedback! vatsim.fr/fb/VOTRE_CID_ICI
 PROFILE:LFPO_TWR:30:4
 ATIS2:Orly Tower - EN/FR
-ATIS3:TOBT @ cdm.vatsim.fr | Charts chartfox.org/LFPO
+ATIS3:TOBT @ vats.im/vdgs | Charts chartfox.org/LFPO
 ATIS4:Leave us some feedback! vatsim.fr/fb/VOTRE_CID_ICI
 PROFILE:LFPT_TWR:30:4
 ATIS2:Pontoise Tower - EN/FR
-ATIS3:Check your charts! chartfox.org/LFPT
+ATIS3:Check your slot @ vats.im/vdgs | Check your charts! chartfox.org/LFPT
 ATIS4:Leave us some feedback! vatsim.fr/fb/VOTRE_CID_ICI
 PROFILE:LFQQ_TWR:30:4
 ATIS2:Lille Tower - EN/FR
-ATIS3:Check your charts! chartfox.org/LFQQ
+ATIS3:Check your slot @ vats.im/vdgs | Check your charts! chartfox.org/LFQQ
 ATIS4:Leave us some feedback! vatsim.fr/fb/VOTRE_CID_ICI
 PROFILE:LFQT_TWR:30:4
 ATIS2:Merville Tower - EN/FR
-ATIS3:Check your charts! chartfox.org/LFQT
+ATIS3:Check your slot @ vats.im/vdgs | Check your charts! chartfox.org/LFQT
 ATIS4:Leave us some feedback! vatsim.fr/fb/VOTRE_CID_ICI
 PROFILE:LFAT_GND:10:3
 ATIS2:Le Touquet Ground - EN/FR
-ATIS3:Check your charts! chartfox.org/LFAT
+ATIS3:Check your slot @ vats.im/vdgs | Check your charts! chartfox.org/LFAT
 ATIS4:Leave us some feedback! vatsim.fr/fb/VOTRE_CID_ICI
 PROFILE:LFPB_GND:10:3
 ATIS2:Le Bourget Ground - EN/FR
-ATIS3:Check your charts! chartfox.org/LFPB
+ATIS3:Check your slot @ vats.im/vdgs | Check your charts! chartfox.org/LFPB
 ATIS4:Leave us some feedback! vatsim.fr/fb/VOTRE_CID_ICI
 PROFILE:LFPG_N_GND:10:3
 ATIS2:De Gaulle Ground - EN/FR
-ATIS3:TOBT @ cdm.vatsim.fr | Charts chartfox.org/LFPG
+ATIS3:TOBT @ vats.im/vdgs | Charts chartfox.org/LFPG
 ATIS4:Leave us some feedback! vatsim.fr/fb/VOTRE_CID_ICI
 PROFILE:LFPG_SE_GND:10:3
 ATIS2:De Gaulle Ground - EN/FR
-ATIS3:TOBT @ cdm.vatsim.fr | Charts chartfox.org/LFPG
+ATIS3:TOBT @ vats.im/vdgs | Charts chartfox.org/LFPG
 ATIS4:Leave us some feedback! vatsim.fr/fb/VOTRE_CID_ICI
 PROFILE:LFPG_SW_GND:10:3
 ATIS2:De Gaulle Ground - EN/FR
-ATIS3:TOBT @ cdm.vatsim.fr | Charts chartfox.org/LFPG
+ATIS3:TOBT @ vats.im/vdgs | Charts chartfox.org/LFPG
 ATIS4:Leave us some feedback! vatsim.fr/fb/VOTRE_CID_ICI
 PROFILE:LFPL_GND:10:3
 ATIS2:Lognes Ground - EN/FR
-ATIS3:Check your charts! chartfox.org/LFPL
+ATIS3:Check your slot @ vats.im/vdgs | Check your charts! chartfox.org/LFPL
 ATIS4:Leave us some feedback! vatsim.fr/fb/VOTRE_CID_ICI
 PROFILE:LFPN_GND:10:3
 ATIS2:Toussus Ground - EN/FR
-ATIS3:Check your charts! chartfox.org/LFPN
+ATIS3:Check your slot @ vats.im/vdgs | Check your charts! chartfox.org/LFPN
 ATIS4:Leave us some feedback! vatsim.fr/fb/VOTRE_CID_ICI
 PROFILE:LFPO_GND:10:3
 ATIS2:Orly Ground - EN/FR
-ATIS3:TOBT @ cdm.vatsim.fr | Charts chartfox.org/LFPO
+ATIS3:TOBT @ vats.im/vdgs | Charts chartfox.org/LFPO
 ATIS4:Leave us some feedback! vatsim.fr/fb/VOTRE_CID_ICI
 PROFILE:LFQQ_GND:10:3
 ATIS2:Lille Ground - EN/FR
-ATIS3:Check your charts! chartfox.org/LFQQ
+ATIS3:Check your slot @ vats.im/vdgs | Check your charts! chartfox.org/LFQQ
 ATIS4:Leave us some feedback! vatsim.fr/fb/VOTRE_CID_ICI
 PROFILE:LFQT_GND:10:3
 ATIS2:Merville Ground - EN/FR
-ATIS3:Check your charts! chartfox.org/LFQT
+ATIS3:Check your slot @ vats.im/vdgs | Check your charts! chartfox.org/LFQT
 ATIS4:Leave us some feedback! vatsim.fr/fb/VOTRE_CID_ICI
 PROFILE:LFPB_DEL:10:2
 ATIS2:Le Bourget Delivery - EN/FR
-ATIS3:Check your charts! chartfox.org/LFPB
+ATIS3:Check your slot @ vats.im/vdgs | Check your charts! chartfox.org/LFPB
 ATIS4:Leave us some feedback! vatsim.fr/fb/VOTRE_CID_ICI
 PROFILE:LFPG_ACE_RMP:10:3
 ATIS2:De Gaulle Apron - EN/FR
-ATIS3:TOBT @ cdm.vatsim.fr | Charts chartfox.org/LFPG
+ATIS3:TOBT @ vats.im/vdgs | Charts chartfox.org/LFPG
 ATIS4:Leave us some feedback! vatsim.fr/fb/VOTRE_CID_ICI
 PROFILE:LFPG_BD_RMP:10:3
 ATIS2:De Gaulle Apron - EN/FR
-ATIS3:TOBT @ cdm.vatsim.fr | Charts chartfox.org/LFPG
+ATIS3:TOBT @ vats.im/vdgs | Charts chartfox.org/LFPG
 ATIS4:Leave us some feedback! vatsim.fr/fb/VOTRE_CID_ICI
 PROFILE:LFPG_DEL:10:2
 ATIS2:De Gaulle Delivery - EN/FR
-ATIS3:TOBT @ cdm.vatsim.fr | Charts chartfox.org/LFPG
+ATIS3:TOBT @ vats.im/vdgs | Charts chartfox.org/LFPG
 ATIS4:Leave us some feedback! vatsim.fr/fb/VOTRE_CID_ICI
 PROFILE:LFPG_FDX_RMP:10:3
 ATIS2:De Gaulle Apron - EN/FR
-ATIS3:TOBT @ cdm.vatsim.fr | Charts chartfox.org/LFPG
+ATIS3:TOBT @ vats.im/vdgs | Charts chartfox.org/LFPG
 ATIS4:Leave us some feedback! vatsim.fr/fb/VOTRE_CID_ICI
 PROFILE:LFPG_F_RMP:10:3
 ATIS2:De Gaulle Apron - EN/FR
-ATIS3:TOBT @ cdm.vatsim.fr | Charts chartfox.org/LFPG
+ATIS3:TOBT @ vats.im/vdgs | Charts chartfox.org/LFPG
 ATIS4:Leave us some feedback! vatsim.fr/fb/VOTRE_CID_ICI
 PROFILE:LFPG_J_RMP:10:3
 ATIS2:De Gaulle Apron - EN/FR
-ATIS3:TOBT @ cdm.vatsim.fr | Charts chartfox.org/LFPG
+ATIS3:TOBT @ vats.im/vdgs | Charts chartfox.org/LFPG
 ATIS4:Leave us some feedback! vatsim.fr/fb/VOTRE_CID_ICI
 PROFILE:LFPG_KL_RMP:10:3
 ATIS2:De Gaulle Apron - EN/FR
-ATIS3:TOBT @ cdm.vatsim.fr | Charts chartfox.org/LFPG
+ATIS3:TOBT @ vats.im/vdgs | Charts chartfox.org/LFPG
 ATIS4:Leave us some feedback! vatsim.fr/fb/VOTRE_CID_ICI
 PROFILE:LFPG_RMP:10:3
 ATIS2:De Gaulle Apron - EN/FR
-ATIS3:TOBT @ cdm.vatsim.fr | Charts chartfox.org/LFPG
+ATIS3:TOBT @ vats.im/vdgs | Charts chartfox.org/LFPG
 ATIS4:Leave us some feedback! vatsim.fr/fb/VOTRE_CID_ICI
 PROFILE:LFPG_NP_GND:10:3
 ATIS2:De Gaulle Ground - EN/FR
-ATIS3:TOBT @ cdm.vatsim.fr | Charts chartfox.org/LFPG
+ATIS3:TOBT @ vats.im/vdgs | Charts chartfox.org/LFPG
 ATIS4:Leave us some feedback! vatsim.fr/fb/VOTRE_CID_ICI
 PROFILE:LFPO_DEL:10:2
 ATIS2:Orly Delivery - EN/FR
-ATIS3:TOBT @ cdm.vatsim.fr | Charts chartfox.org/LFPO
+ATIS3:TOBT @ vats.im/vdgs | Charts chartfox.org/LFPO
 ATIS4:Leave us some feedback! vatsim.fr/fb/VOTRE_CID_ICI
 END
