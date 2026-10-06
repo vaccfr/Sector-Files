@@ -3,25 +3,23 @@ Plugins	Plugin1	\Plugins\RDF Plugin\RDFPlugin.dll
 Plugins	Plugin2	\Plugins\Central Squawk\CEntralSquawk.dll
 Plugins	Plugin3	\Plugins\VCH\VCH.dll
 Plugins	Plugin4	\Plugins\vSMR\vSMR.dll
-Plugins	Plugin5	\Plugins\ESTimers\ESTimers.dll
-Plugins	Plugin6	\Plugins\vACDM\vACDM.dll
-Plugins	Plugin7	\Plugins\RampAgent\RampAgent.dll
-Plugins	Plugin8	\Plugins\EuroscopeRPC\EuroscopeRPC.dll
-Plugins	Plugin9	\Plugins\Plugin Bridge\EuroScopeBridge.dll
+Plugins	Plugin5	\Plugins\CDM\CDM.dll
+Plugins	Plugin6	\Plugins\RampAgent\RampAgent.dll
+Plugins	Plugin7	\Plugins\Plugin Bridge\EuroScopeBridge.dll
+Plugins	Plugin8	\Plugins\vSID\vSID.dll
+Plugins	Plugin9	\Plugins\EuroscopeRPC\EuroscopeRPC.dll
 Plugins	Plugin0Display0	CoFrance radar display
 Plugins	Plugin0Display1	Standard ES radar screen
 Plugins	Plugin0Display2	SMR radar display
 Plugins	Plugin1Display0	Standard ES radar screen
-Plugins	Plugin1Display1	SMR radar display
-Plugins	Plugin1Display2	CoFrance radar display
+Plugins	Plugin1Display1	CoFrance radar display
 Plugins	Plugin2Display0	SMR radar display
 Plugins	Plugin2Display1	Standard ES radar screen
 Plugins	Plugin3Display0	SMR radar display
 Plugins	Plugin3Display1	Standard ES radar screen
 Plugins	Plugin4Display0	SMR radar display
 Plugins	Plugin4Display1	Standard ES radar screen
-Plugins	Plugin5Display0	SMR radar display
-Plugins	Plugin5Display1	Standard ES radar screen
+Plugins	Plugin4Display2	CoFrance radar display
 ASRFastKeys	1	\ASR\Military - Legacy CTR.asr
 ASRFastKeys	2	\ASR\AVISOs\LFBM Mont de Marsan AVISO.asr
 ASRFastKeys	3	\ASR\AVISOs\LFMI Istres AVISO.asr
