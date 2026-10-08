@@ -12,12 +12,12 @@ release can be reviewed without inspecting the Visual Studio project.
 | EuroScope Plugin Bridge client header | `esbridge.h` ABI v1, upstream commit `be6e0de6d3358e63c7cea0308ffcc16c87a61f8c` | Optional vSID, Ramp Agent and CDM data from a separately installed `EuroScopeBridge.dll` | Header code included in `vSMR_Data\Runtime\vSMR.Runtime.dll`; the bridge DLL is not bundled | None published upstream (the repository has no license file) |
 | Microsoft Visual C++ and MFC runtimes | MSVC v145 by default; v143 in compatibility CI | Native runtime | Not bundled; matching x86 redistributable required | Microsoft redistributable terms |
 | EuroScope Plug-in SDK | repository-provided header/import library | Plug-in ABI | Not separately bundled | Consult the EuroScope SDK distribution terms |
-| France-Ground-Layouts | Historical import `da539a889b213e66eb254f893fa087c263f65332`; current 160-map inventory refreshed by vSMR commit `4819ea1` | Geometry and ground labels converted to GeoJSON with vSMR palettes; subsequent local additions tracked in the provenance register | `vSMR_Data/AVISO/*.geojson` | `France-Ground-Layouts.txt` (GPL-3.0); source: https://github.com/vaccfr/France-Ground-Layouts; not a blanket license for unidentified local additions |
+| France-Ground-Layouts | Historical import `da539a889b213e66eb254f893fa087c263f65332`; current 161-file AVISO inventory includes the LFPO_Work variant | Geometry and ground labels converted to GeoJSON with vSMR palettes; subsequent local additions tracked in Git history | `vSMR_Data/AVISO/*.geojson` | `France-Ground-Layouts.txt` (GPL-3.0); source: https://github.com/vaccfr/France-Ground-Layouts; not a blanket license for unidentified local additions |
 | Windows system libraries | Windows 10 SDK | GDI/GDI+, WinHTTP, multimedia, COM and windowing | Provided by Windows | Microsoft Windows terms |
 
 The Microsoft WebView2 Evergreen Runtime itself is not included. Users install
 the x86 runtime separately. The package also contains data and media assets;
-their provenance review is tracked in `ASSET_PROVENANCE.txt`.
+their attributions and license notices are listed in `ASSET_NOTICES.txt`.
 
 RapidJSON headers are an unmodified full copy of `include/rapidjson` from
 https://github.com/Tencent/rapidjson/tree/24b5e7a8b27f42fa16b96fc70aade9106cf7102f.

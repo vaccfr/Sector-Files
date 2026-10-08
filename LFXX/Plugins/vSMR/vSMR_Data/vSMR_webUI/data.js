@@ -26,7 +26,7 @@ window.VSMR_DATA = {
               max_airborne_altitude_ft: 5500,
               max_airborne_speed_kt: 250,
               statuses: {
-                no_status: true, push: true, startup: true, taxi: true, lineup: true,
+                no_status: true, parked: true, push: true, startup: true, taxi: true, lineup: true,
                 departure: true, on_runway: true, airborne: true,
                 arrivals: true, no_fpl: true, uncorrelated: true
               }
@@ -40,7 +40,7 @@ window.VSMR_DATA = {
               max_airborne_altitude_ft: 5500,
               max_airborne_speed_kt: 250,
               statuses: {
-                no_status: false, push: false, startup: false, taxi: true, lineup: true,
+                no_status: false, parked: false, push: false, startup: false, taxi: true, lineup: true,
                 departure: true, on_runway: true, airborne: true,
                 arrivals: false, no_fpl: false, uncorrelated: false
               }

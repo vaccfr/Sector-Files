@@ -32,7 +32,7 @@
     "14 km or closer", "12 km or closer", "9.5 km or closer", "8 km or closer", "6 km or closer",
     "5 km or closer", "4 km or closer", "3 km or closer", "2.5 km or closer", "2 km or closer"
   ];
-  const MODE_STATUSES = ["no_status", "push", "startup", "taxi", "lineup", "departure", "on_runway", "airborne", "arrivals", "no_fpl", "uncorrelated"];
+  const MODE_STATUSES = ["no_status", "parked", "push", "startup", "taxi", "lineup", "departure", "on_runway", "airborne", "arrivals", "no_fpl", "uncorrelated"];
   const RULE_STATUSES = ["default", "nofpl", "push", "stup", "taxi", "lnup", "depa", "airdep", "airdep_onrunway", "airarr", "airarr_onrunway"];
   const RULE_STATUS_LABELS = {
     default: "Default", nofpl: "No FPL", push: "Push", stup: "Startup", taxi: "Taxi", lnup: "Line Up",
@@ -3277,6 +3277,7 @@
     $("#modePropertiesCaption").textContent = data.name || "Mode properties";
     $("#modeName").value = data.name || "";
     data.statuses ||= {};
+    if (typeof data.statuses.parked !== "boolean") data.statuses.parked = true;
     if (typeof data.statuses.lineup !== "boolean")
       data.statuses.lineup = typeof data.statuses.lnup === "boolean" ? data.statuses.lnup : (typeof data.statuses.taxi === "boolean" ? data.statuses.taxi : true);
     delete data.statuses.lnup;

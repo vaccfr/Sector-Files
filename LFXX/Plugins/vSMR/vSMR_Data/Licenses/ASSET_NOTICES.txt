@@ -1,0 +1,37 @@
+Bundled asset notices
+
+Aircraft silhouettes (aircraft_icons/*.png)
+Source identified by the maintainer: VATSIM Radar contributors.
+https://github.com/VATSIM-Radar/vatsim-radar/tree/next/app/assets/icons/aircraft
+Distributed here as PNG conversions of the upstream SVG silhouettes.
+Upstream repository license: Creative Commons Attribution-NonCommercial 4.0
+International (CC BY-NC 4.0). These assets are not covered by vSMR's GPL license.
+License and warranty disclaimer:
+https://github.com/VATSIM-Radar/vatsim-radar/blob/9df6e5dc23621fd5f21881d64f533f74838fa09c/LICENSE
+https://creativecommons.org/licenses/by-nc/4.0/
+No endorsement by VATSIM Radar is implied.
+
+Timer alarm (Audio/Alarm.wav)
+GNU General Public License v3, as declared by the vSMR maintainer on 2026-10-08.
+The original source and creator have not been independently established.
+GPL v3 text: Licenses/vSMR.txt.
+
+CPDLC notification (Audio/Ding.wav)
+Pierre Ferran and original vSMR contributors, GPL v3.
+https://github.com/pierr3/vSMR/blob/e696e0932af07cfa16068ffbb843ad13c7882266/Ding.wav
+GPL v3 text: Licenses/vSMR.txt.
+
+AVISO geometry
+France-Ground-Layouts contributors, with local geometry/style additions.
+https://github.com/vaccfr/France-Ground-Layouts
+Upstream GPL v3 text: Licenses/France-Ground-Layouts.txt.
+Upstream licensing does not establish the terms of unidentified additions.
+
+Aircraft dimensions (ICAO_Aircraft.json)
+Historical vSMR database; original upstream attribution is not recorded.
+
+EuroScope Plugin Bridge client shim (compiled into Runtime/vSMR.Runtime.dll)
+Alexis Balzano, EuroScope Plugin Bridge.
+https://github.com/AlexisBalzano/Euroscope-Plugin-Bridge
+Header imported from commit be6e0de6d3358e63c7cea0308ffcc16c87a61f8c.
+No upstream license was recorded in the prior dependency review.
