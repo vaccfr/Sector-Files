@@ -1,0 +1,91 @@
+Plugins	Plugin0	\..\LFXX\Plugins\CoFrance\CoFranceLoader.dll
+Plugins	Plugin1	\..\LFXX\Plugins\RDF Plugin\RDFPlugin.dll
+Plugins	Plugin2	\..\LFXX\Plugins\Central Squawk\CentralSquawk.dll
+Plugins	Plugin3	\..\LFXX\Plugins\VCH\VCH.dll
+Plugins	Plugin4	\..\LFXX\Plugins\vSMR\vSMR.dll
+Plugins	Plugin5	\..\LFXX\Plugins\CDM\CDM.dll
+Plugins	Plugin6	\..\LFXX\Plugins\RampAgent\RampAgent.dll
+Plugins	Plugin7	\..\LFXX\Plugins\Plugin Bridge\EuroScopeBridge.dll
+Plugins	Plugin8	\..\LFXX\Plugins\AMAN\AMAN.dll
+Plugins	Plugin9	\..\LFXX\Plugins\vSID\vSID.dll
+Plugins	Plugin10	\..\LFXX\Plugins\EuroscopeRPC\EuroscopeRPC.dll
+Plugins	Plugin0Display0	CoFrance radar display
+Plugins	Plugin0Display1	Standard ES radar screen
+Plugins	Plugin0Display2	SMR radar display
+Plugins	Plugin1Display0	Standard ES radar screen
+Plugins	Plugin1Display1	CoFrance radar display
+Plugins	Plugin2Display0	SMR radar display
+Plugins	Plugin2Display1	Standard ES radar screen
+Plugins	Plugin3Display0	SMR radar display
+Plugins	Plugin3Display1	Standard ES radar screen
+Plugins	Plugin4Display0	SMR radar display
+Plugins	Plugin4Display1	Standard ES radar screen
+Plugins	Plugin4Display2	CoFrance radar display
+Plugins	Plugin5Display0	SMR radar display
+ASRFastKeys	1	\ASR\CCA Lyon\CCA Lyon - Dynamic.asr
+ASRFastKeys	2	\ASR\CCA Lyon\CCA Lyon - VFR.asr
+ASRFastKeys	3	\ASR\AVISOs\LFLL Saint Exupery AVISO.asr
+RecentFiles	Recent1	\ASR\CCA Lyon\CCA Lyon - Dynamic.asr
+RecentFiles	Recent2	\ASR\CCA Lyon\CCA Lyon - VFR.asr
+RecentFiles	Recent3	\ASR\AVISOs\LFLL Saint Exupery AVISO.asr
+Settings	AselKey	5111808
+Settings	FreqKey	3604480
+Settings	Settingsfile	\..\LFXX\Settings\General.txt
+Settings	SettingsfileADCS	\..\LFXX\Settings\Lists_CDM.txt
+Settings	SettingsfileARR	\..\LFXX\Settings\Lists_CDM.txt
+Settings	SettingsfileCONFLICT	\..\LFXX\Settings\Lists_CDM.txt
+Settings	SettingsfileDEP	\..\LFXX\Settings\Lists_CDM.txt
+Settings	SettingsfileFP	\..\LFXX\Settings\Lists_CDM.txt
+Settings	SettingsfileORIGPLANE	\..\LFXX\Settings\Lists_CDM.txt
+Settings	SettingsfilePILOTING	\..\LFXX\Settings\Lists_CDM.txt
+Settings	SettingsfilePLUGINS	\..\LFXX\Settings\Plugins.txt
+Settings	SettingsfilePROFILE	\Settings\LoginProfiles.txt
+Settings	SettingsfileSCREEN	\..\LFXX\Settings\Screen.txt
+Settings	SettingsfileSEL	\..\LFXX\Settings\Lists_CDM.txt
+Settings	SettingsfileSIL	\..\LFXX\Settings\Lists_CDM.txt
+Settings	SettingsfileSTUP	\..\LFXX\Settings\Lists_CDM.txt
+Settings	SettingsfileSYMBOLOGY	\..\LFXX\Settings\Symbology.txt
+Settings	SettingsfileTAGS	\..\LFXX\Settings\Tags.txt
+Settings	SettingsfileTAKEOFF	\..\LFXX\Settings\Lists_CDM.txt
+Settings	SettingsfileTAXIIN	\..\LFXX\Settings\Lists_CDM.txt
+Settings	SettingsfileTAXIOUT	\..\LFXX\Settings\Lists_CDM.txt
+Settings	SettingsfileVCCS	\..\LFXX\Settings\VCCS.txt
+Settings	SettingsfileVOICE	\Settings\VoiceChannels.txt
+Settings	aircraft	\ICAO\ICAO_Aircraft.txt
+Settings	airlines	\ICAO\ICAO_Airlines.txt
+Settings	airportcoords	\NavData\icao.txt
+Settings	airports	\ICAO\ICAO_Airports.txt
+Settings	airways	\NavData\airway.txt
+Settings	alias	\..\LFXX\Alias\alias.txt
+Settings	sector	\..\LFXX\Sectors\LFMM.sct
+Sounds	Sound0	\..\LFXX\Sounds\handoff_request.wav
+Sounds	Sound1	\..\LFXX\Sounds\handoff_accept.wav
+Sounds	Sound10	\..\LFXX\Sounds\disconnected.wav
+Sounds	Sound11	\..\LFXX\Sounds\ongoing_request.wav
+Sounds	Sound12	\..\LFXX\Sounds\ongoing_accepted.wav
+Sounds	Sound13	\..\LFXX\Sounds\ongoing_refused.wav
+Sounds	Sound14	\..\LFXX\Sounds\ongoing_manual.wav
+Sounds	Sound15	\..\LFXX\Sounds\new_atis.wav
+Sounds	Sound16	\..\LFXX\Sounds\handoff_refused.wav
+Sounds	Sound17	\..\LFXX\Sounds\pointout.wav
+Sounds	Sound18	\..\LFXX\Sounds\startup.wav
+Sounds	Sound2	\..\LFXX\Sounds\conflict_alert.wav
+Sounds	Sound3	\..\LFXX\Sounds\radio_message.wav
+Sounds	Sound4	\..\LFXX\Sounds\private_message.wav
+Sounds	Sound5	\..\LFXX\Sounds\atc_message.wav
+Sounds	Sound6	\..\LFXX\Sounds\broadcast_message.wav
+Sounds	Sound7	\..\LFXX\Sounds\landline_request.wav
+Sounds	Sound8	\..\LFXX\Sounds\supervisor_message.wav
+Sounds	Sound9	\..\LFXX\Sounds\connected.wav
+LastSession	connecttype	0
+LastSession	callsign	<INITIALS>_OBS
+LastSession	facility	0
+LastSession	rating	0
+LastSession	tovatsim	1
+LastSession	atis2	French vACC Observer
+LastSession	atis3	Welcome to France! -> vatsim.fr
+LastSession	range	275
+LastSession	proxyserver	localhost
+LastSession	simdatapublish	0
+LastSession	atis_freq4	118000
+LastSession	server	AUTOMATIC
