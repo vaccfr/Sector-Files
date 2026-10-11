@@ -214,7 +214,7 @@
 .daqqf Descendez $1 ft, QNH $2.
 .autodescendaltitude Descend $1 ft, QNH $altim($arr).
 .mf Maintain $1 feet.
-.mff Maintenez $1 feet.
+.mff Maintenez $1 pieds.
 .ml Maintain FL $1.
 .mlf Maintenez FL $1.
 .rpa Report passing altitude.
@@ -296,8 +296,8 @@
 .sif Accélerez vitesse $1 noeuds.
 .rm Report mach number.
 .rmf Reportez votre point de mach.
-.m Maintain mach number $1.
-.mf Maintenez mach $1.
+.mm Maintain mach number $1.
+.mmf Maintenez mach $1.
 .automach Maintain mach number $1. 
 .mc Reduce to minimum clean speed.
 .mcf Reduisez vitesse minimum en lisse.
@@ -324,7 +324,7 @@
 .ctl Runway $arrrwy, cleared to land, wind $winds($arr).
 .ctlf Piste  $arrrwy, autorisez atterrissage, vent $winds($arr).
 .ctg Runway $arrrwy, cleared to touch and go, wind $winds($arr).
-.ctff Piste  $arrrwy, autorisez touché, vent $winds($arr).
+.ctgf Piste  $arrrwy, autorisez touché, vent $winds($arr).
 .csg Runway $arrrwy, cleared to stand and go, wind $winds($arr). Report report ready for departure.
 .csgf Piste  $arrrwy, autorisez atterrisage, vent $winds($arr). Rappelez prêt au départ.
 .clp Runway $arrrwy, cleared low pass, wind $winds($arr).
@@ -362,16 +362,16 @@
 .mlt Make left turns. 
 .mltf Faites des virages gauches.
 .mrt Make right turns. 
-.mlrf Faites des virages droites.
+.mrtf Faites des virages droites.
 .lta Right turn approved.
 .jld Join left downind runway $arrrwy.
 .jldf Entrez la vent arrière main gauche piste $arrrwy.
 .jrd Join RIGHT downwind runway $arrrwy.
 .jrdf Entrez vent arrière main droite piste $arrrwy.
 .jlb Join left base runway $arrrwy.
-.jrbf Entrez base gauche piste $arrrwy.
+.jlbf Entrez base main gauche piste $arrrwy.
 .jrb Join RIGHT base runway $arrrwy.
-.jlbf Entrez vent arrière main droite piste $arrrwy.
+.jrbf Entrez base main droite piste $arrrwy.
 .ed Extend downwind, I call tou back.
 .edf Etendez la vent arrière, je vous rappelle.
 .tb Turn now for base.
@@ -411,4 +411,4 @@
 .csr .msg $aircraft At the moment, your call sign is not listed in our database. Please register your airline on gng.aero-nav.com/AERONAV/icao_request_airlines. If you continue to fly in our region, your call sign may be included in our controller files.
 .csrf .msg $aircraft Pour le moment, votre indicatif n'est pas listé dans notre base. S'il vous plait, pouvez vous enregritrer votre compagnie sur gng.aero-nav.com/AERONAV/icao_request_airlines. Si vous continuez à voler dans notre region, votre indicatif d'appel sera alors peut être inclus dans notre liste.
 .csv .msg $aircraft At the moment, your call sign is not listed in our database. Please register your VA on gng.aero-nav.com/AERONAV/icao_request_vairlines. If you continue to fly in our region, your call sign may be included in our controller files.
-.csrf .msg $aircraft Pour le moment, votre indicatif n'est pas listé dans notre base. S'il vous plait, pouvez vous enregritrer votre VA sur gng.aero-nav.com/AERONAV/icao_request_vairlines. Si vous continuez à voler dans notre region, votre indicatif d'appel sera alors peut être inclus dans notre liste.
+.csvf .msg $aircraft Pour le moment, votre indicatif n'est pas listé dans notre base. S'il vous plait, pouvez vous enregritrer votre VA sur gng.aero-nav.com/AERONAV/icao_request_vairlines. Si vous continuez à voler dans notre region, votre indicatif d'appel sera alors peut être inclus dans notre liste.
