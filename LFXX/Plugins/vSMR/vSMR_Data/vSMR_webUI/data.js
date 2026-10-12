@@ -169,7 +169,7 @@ window.VSMR_DATA = {
   aviso: {
     type: "FeatureCollection",
     name: "LFPG AVISO preview",
-    metadata: { airport: "LFPG", bundled_preview: true, default_color_palette: "dark", color_palettes: ["dark", "light", "real"], background_colors: { dark: "#434A4F", light: "#434A4F", real: "#434A4F" } },
+    metadata: { airport: "LFPG", bundled_preview: true, default_color_palette: "light", color_palettes: ["dark", "light", "real"], background_colors: { dark: "#434A4F", light: "#434A4F", real: "#434A4F" } },
     styles: {
       "surface.taxiway": {
         name: "Taxiways",

@@ -33,9 +33,9 @@
     "5 km or closer", "4 km or closer", "3 km or closer", "2.5 km or closer", "2 km or closer"
   ];
   const MODE_STATUSES = ["no_status", "parked", "push", "startup", "taxi", "lineup", "departure", "on_runway", "airborne", "arrivals", "no_fpl", "uncorrelated"];
-  const RULE_STATUSES = ["default", "nofpl", "push", "stup", "taxi", "lnup", "depa", "airdep", "airdep_onrunway", "airarr", "airarr_onrunway"];
+  const RULE_STATUSES = ["default", "nsts", "nofpl", "push", "stup", "taxi", "lnup", "depa", "airdep", "airdep_onrunway", "airarr", "airarr_onrunway"];
   const RULE_STATUS_LABELS = {
-    default: "Default", nofpl: "No FPL", push: "Push", stup: "Startup", taxi: "Taxi", lnup: "Line Up",
+    default: "Default", nsts: "No status", nofpl: "No FPL", push: "Push", stup: "Startup", taxi: "Taxi", lnup: "Line Up",
     depa: "Departure", airdep: "Airborne departure", airdep_onrunway: "Departure on runway",
     airarr: "Airborne arrival", airarr_onrunway: "Arrival on runway"
   };
@@ -64,14 +64,43 @@
     uncorrelated: { default: "background_on_ground_color" }
   };
   const TAG_TOKENS = ["callsign", "actype", "sctype", "wake", "deprwy", "gs", "flightlevel", "tendency", "scratchpad", "holdingpoint", "remark", "asid", "vsid_sid", "vsid_rwy", "vsid_cfl", "ready_startup", "tobt", "tsat", "ttot", "ctot", "tsac", "asrt", "asat", "uk_stand", "sqerror", "groundstatus", "systemid"];
-  const RULE_SOURCES = ["cdm", "runway", "custom", "vsid"];
-  const RULE_SOURCE_LABELS = { cdm: "CDM", runway: "Runway", custom: "SID / custom", vsid: "vSID" };
-  const RULE_SOURCE_TOKENS = {
-    cdm: ["tobt", "tsat", "ttot", "ctot", "tsac", "asrt", "asat"],
-    runway: ["deprwy", "seprwy", "arvrwy", "srvrwy"],
-    custom: ["asid", "ssid"],
-    vsid: ["vsid_sid", "vsid_rwy", "vsid_cfl"]
-  };
+  const RULE_LIMITS = { depth: 8, nodes: 128, effects: 32, values: 128, rules: 256 };
+  const RULE_FIELDS = [
+    ...["tobt", "tsat", "ttot", "ctot", "tsac", "asrt", "asat"].map(token => ({
+      id: `cdm.${token}`, label: `CDM · ${token.toUpperCase()} offset (min)`, numeric: true, time: true
+    })),
+    ...["tobt", "tsat", "ttot", "ctot", "tsac", "asrt", "asat"].map(token => ({
+      id: `cdm.${token}_state`, label: `CDM · ${token.toUpperCase()} state`
+    })),
+    ...Object.entries({ sid: "SID", deprwy: "Departure runway", arvrwy: "Arrival runway", scratchpad: "Scratchpad",
+      holdingpoint: "Holding point", origin: "Origin", destination: "Destination", actype: "Aircraft type", wake: "Wake category",
+      groundstatus: "Ground status", callsign: "Callsign", clearance: "Clearance (true / false)" })
+      .map(([token, label]) => ({ id: `flight.${token}`, label: `Flight · ${label}` })),
+    { id: "flight.gs", label: "Flight · Ground speed (kt)", numeric: true },
+    { id: "flight.flightlevel", label: "Flight · Flight level (hundreds of ft)", numeric: true },
+    { id: "vsid.sid", label: "vSID · SID" }, { id: "vsid.rwy", label: "vSID · Runway" }, { id: "vsid.cfl", label: "vSID · Cleared level" }
+  ];
+  // These native fields remain editable when imported, without offering
+  // currently unpopulated CDM times as new condition suggestions.
+  const RULE_COMPAT_FIELDS = [
+    ...["aobt", "atot", "aort"].flatMap(token => [
+      { id: `cdm.${token}`, label: `CDM · ${token.toUpperCase()} offset (min)`, numeric: true, time: true },
+      { id: `cdm.${token}_state`, label: `CDM · ${token.toUpperCase()} state` }
+    ]),
+    ...["deice", "tobt_set_by", "flow_restriction", "ecfmp_restriction", "manual_ctot"]
+      .map(token => ({ id: `cdm.${token}`, label: `CDM · ${humanize(token)}` }))
+  ];
+  const RULE_EFFECT_FIELDS = ["event_booking", "ready_startup", "groundstatus", "holdingpoint", "flightlevel", "scratchpad",
+    "clearance", "callsign", "systemid", "tendency", "uk_stand", "vsid_cfl", "vsid_rwy", "vsid_sid", "sqerror", "actype",
+    "arvrwy", "deprwy", "origin", "remark", "sctype", "seprwy", "srvrwy", "aobt", "aort", "asat", "asid", "asrt", "atot",
+    "ctot", "dest", "gate", "sate", "ssid", "tobt", "tsac", "tsat", "ttot", "wake", "ssr", "gs"];
+  const RULE_COMPAT_STATUSES = ["gate", "arr"];
+  const RULE_ALL_STATUSES = ["any", ...RULE_STATUSES, ...RULE_COMPAT_STATUSES];
+  const RULE_OPERATOR_LABELS = { equals: "is", not_equals: "is not", in: "is in list", not_in: "is not in list",
+    contains: "contains", starts_with: "starts with", ends_with: "ends with", set: "is set", missing: "is missing",
+    lt: "<", lte: "≤", gt: ">", gte: "≥", between: "between (inclusive)" };
+  const RULE_EFFECT_LABELS = { target_color: "Aircraft icon color", tag_color: "Tag background color", text_color: "All tag text color",
+    field_color: "Field text color", field_background: "Field background color", field_bold: "Field bold", field_blink: "Field blink" };
   const AVISO_BACKGROUND_STYLE_ID = "__aviso_background__";
   const ALERT_TYPES = ["NO PUSH", "NO TAXI", "NO TKOF", "STAT RPA", "RWY INC", "RWY TYPE", "RWY CLSD", "HIGH SPD", "EMERG"];
   const DEFAULT_ALERT_RUNWAYS = [
@@ -509,7 +538,8 @@
     const palette = String(value || "").trim().toLowerCase();
     if (palette === "day") return "light";
     if (palette === "light" || palette === "real") return palette;
-    return "dark";
+    if (palette === "dark" || palette === "night") return "dark";
+    return "light";
   }
 
   function avisoColorPalettes(aviso = state?.aviso, configured = null) {
@@ -541,6 +571,11 @@
       real: normalizeHex(sourceBackgroundColors?.real, lightBackground).toUpperCase()
     };
     aviso.metadata.default_color_palette = normalizeAvisoColorPalette(aviso.metadata.default_color_palette);
+    const opacities = aviso.metadata.background_opacities || {};
+    aviso.metadata.background_opacities = Object.fromEntries(["dark", "light", "real"].map(palette => {
+      const value = Number(opacities[palette] ?? (palette === "dark" ? opacities.night : palette === "light" ? opacities.day : undefined) ?? 1);
+      return [palette, Number.isFinite(value) ? clamp(value, 0, 1) : 1];
+    }));
     aviso.metadata.color_palettes = avisoColorPalettes(aviso);
     if (!Array.isArray(aviso.vsmr_groups)) aviso.vsmr_groups = [];
 
@@ -734,7 +769,7 @@
         uiColorTheme: "night",
         weatherAllAirports: true,
         showNorthIndicator: true,
-        avisoColorPalette: "dark",
+        avisoColorPalette: "light",
         avisoColorPalettes: ["dark", "light", "real"],
         dataHealth: {
           profilesHealthy: true,
@@ -2911,85 +2946,174 @@
   }
 
   function rules() {
-    activeProfile().rules ||= { version: 1, items: [] };
+    activeProfile().rules ||= { version: 2, items: [] };
     activeProfile().rules.items ||= [];
     return activeProfile().rules.items;
   }
-
-  function ruleLabel(rule, index) {
-    return String(rule?.name || "").trim() || `Rule ${index + 1}`;
-  }
-  function normalizeRuleSourceUi(source) {
-    const normalized = String(source || "").trim().toLowerCase();
-    // Keep older profiles editable while saving new rules under the CDM source.
-    if (normalized === "cdm" || normalized === "vacdm") return "cdm";
-    if (normalized === "vsid" || normalized === "v_sid") return "vsid";
-    if (normalized === "runway" || normalized === "rwy") return "runway";
-    if (["custom", "sid", "list", "sidlist"].includes(normalized)) return "custom";
-    return "cdm";
-  }
-  function ruleTokensForSource(source) {
-    return RULE_SOURCE_TOKENS[normalizeRuleSourceUi(source)] || RULE_SOURCE_TOKENS.cdm;
-  }
-  function ruleConditionsFor(source, token, selected = "") {
-    const normalizedSource = normalizeRuleSourceUi(source);
-    const normalizedToken = String(token || "").trim().toLowerCase();
-    let values;
-    const cdmTime = normalizedSource === "cdm" && ["tobt", "tsat", "ttot", "ctot", "tsac", "asrt", "asat"].includes(normalizedToken);
-    if (normalizedSource === "cdm" && cdmTime)
-      values = ["any", "set", "missing", "future", "past"];
-    else if (["runway", "custom", "vsid", "cdm"].includes(normalizedSource))
-      values = ["any", "set", "missing", "in", "not_in"];
-    else
-      values = ["any", "set", "missing", "future", "past"];
-
-    if (String(selected || "").trim()) values.push(String(selected).trim());
-    return uniqueValues(values);
-  }
-  function parseRuleCondition(source, condition) {
-    const normalizedSource = normalizeRuleSourceUi(source);
-    const raw = String(condition || "").trim();
-    const simple = raw.toLowerCase();
-    if (["any", "set", "missing", "future", "past"].includes(simple)) return { operator: simple, values: "" };
-    const list = raw.match(/^(not_in|notin|not|in|list|sid)\s*:\s*(.*)$/i);
-    if (list) {
-      const operator = ["not_in", "notin", "not"].includes(list[1].toLowerCase()) ? "not_in" : "in";
-      return { operator, values: list[2].trim() };
-    }
-    return { operator: "in", values: raw };
-  }
-  function composeRuleCondition(source, operator, values) {
-    const normalizedOperator = String(operator || "any").trim().toLowerCase();
-    if (!["in", "not_in"].includes(normalizedOperator)) return normalizedOperator || "any";
-    const list = String(values || "").trim();
-    return list ? `${normalizedOperator}: ${list}` : normalizedOperator;
-  }
-  function updateRuleConditionValueControl(row) {
-    const source = $("[data-field='source']", row)?.value || "cdm";
-    const operator = $("[data-field='condition']", row)?.value || "any";
-    const input = $("[data-field='condition-values']", row);
-    if (!input) return;
-    const acceptsValues = ["in", "not_in"].includes(operator);
-    input.disabled = !acceptsValues;
-    const normalizedSource = normalizeRuleSourceUi(source);
-    const token = $("[data-field='token']", row)?.value || "";
-    let placeholder = "SID1X, SID2A";
-    if (normalizedSource === "runway" || token === "vsid_rwy") placeholder = "09L, 27R";
-    else if (token === "vsid_cfl") placeholder = "A50, 100";
-    input.placeholder = acceptsValues ? placeholder : "";
+  function ruleLabel(rule, index) { return String(rule?.name || "").trim() || `Rule ${index + 1}`; }
+  function ruleCanonicalName(value) { return typeof value === "string" ? value.trim().toLowerCase() : ""; }
+  function ruleFieldDefinition(field) { return [...RULE_FIELDS, ...RULE_COMPAT_FIELDS].find(item => item.id === ruleCanonicalName(field)); }
+  function ruleOperators(field) {
+    return ruleFieldDefinition(field)?.numeric
+      ? ["set", "missing", "equals", "not_equals", "lt", "lte", "gt", "gte", "between"]
+      : ["set", "missing", "equals", "not_equals", "in", "not_in", "contains", "starts_with", "ends_with"];
   }
   function ruleSelectOptions(values, selected, labels = null) {
-    const desired = String(selected || "").toLowerCase();
-    return values.map(value => `<option value="${escapeHtml(value)}" ${String(value).toLowerCase() === desired ? "selected" : ""}>${escapeHtml(labels?.[value] || value)}</option>`).join("");
+    return values.map(value => `<option value="${escapeHtml(value)}" ${String(value) === String(selected ?? "") ? "selected" : ""}>${escapeHtml(labels?.[value] || value)}</option>`).join("");
+  }
+  function defaultRuleCondition() { return { field: "cdm.tobt", op: "set" }; }
+  function defaultRuleEffect() { return { type: "text_color", color: hexToColor("#ffffff") }; }
+  function migrateLegacyRuleCondition(item) {
+    const rawSource = ruleCanonicalName(item?.source ?? item?.kind ?? "cdm");
+    let source = "cdm";
+    if (["vsid", "v_sid"].includes(rawSource)) source = "vsid";
+    else if (rawSource.includes("custom") || ["list", "sidlist", "sid"].includes(rawSource)) source = "custom";
+    else if (rawSource.includes("runway") || rawSource === "rwy") source = "runway";
+    let token = ruleCanonicalName(item?.token);
+    if (source === "custom" && token === "sid") token = "asid";
+    if (source === "vsid") token = ({ sid: "vsid_sid", rwy: "vsid_rwy", runway: "vsid_rwy", cfl: "vsid_cfl" })[token] || token;
+    if (source === "cdm" && token.startsWith("cdm_")) token = token.slice(4);
+    return { field: "legacy", source, token, condition: String(item?.condition ?? item?.runway ?? item?.state ?? "").trim() || "any" };
+  }
+  function canonicalizeRuleTree(node, depth = 1) {
+    if (!node || typeof node !== "object" || depth > RULE_LIMITS.depth) return;
+    if (Array.isArray(node.all || node.any)) (node.all || node.any).forEach(child => canonicalizeRuleTree(child, depth + 1));
+    else if (node.not) canonicalizeRuleTree(node.not, depth + 1);
+    else {
+      node.field = ruleCanonicalName(node.field);
+      if (node.field === "legacy") { node.source = ruleCanonicalName(node.source); node.token = ruleCanonicalName(node.token); }
+      else node.op = ruleCanonicalName(node.op);
+    }
+  }
+  function migrateRuleForEditor(source) {
+    if (!source || typeof source !== "object" || Array.isArray(source)) return null;
+    const rule = clone(source);
+    if (!Object.hasOwn(rule, "when")) {
+      const criteria = Array.isArray(rule.criteria) && rule.criteria.length
+        ? rule.criteria : [{ source: rule.source ?? rule.kind ?? "cdm", token: rule.token, condition: rule.condition ?? rule.runway ?? rule.state }];
+      rule.when = { all: criteria.map(migrateLegacyRuleCondition) };
+    }
+    canonicalizeRuleTree(rule.when);
+    if (!Object.hasOwn(rule, "effects")) rule.effects = ["target_color", "tag_color", "text_color"]
+      .filter(type => isColorObject(rule[type])).map(type => ({ type, color: { ...clone(rule[type]), a: rule[type].a ?? 255 } }));
+    rule.enabled = rule.enabled !== false;
+    rule.stop_processing = rule.stop_processing === true;
+    rule.tag_type = ruleCanonicalName(rule.tag_type || "any");
+    rule.detail = ruleCanonicalName(rule.detail || "any");
+    const statuses = selectedRuleStatuses(source);
+    rule.statuses = statuses.length === RULE_STATUSES.length && RULE_STATUSES.every(status => statuses.includes(status))
+      ? ["any"] : statuses;
+    // The migrated list now carries the complete scope. Keeping an old scalar
+    // such as "taxi | any" would make otherwise valid v2 data fail validation.
+    delete rule.status;
+    (Array.isArray(rule.effects) ? rule.effects : []).forEach(effect => {
+      effect.type = ruleCanonicalName(effect.type);
+      if (effect.field) effect.field = ruleCanonicalName(effect.field);
+      if (effect.color) effect.color.a ??= 255;
+      if (["field_bold", "field_blink"].includes(effect.type)) effect.value ??= true;
+    });
+    const keys = ["name", "enabled", "stop_processing", "tag_type", "status", "statuses", "detail", "when", "effects"];
+    Object.keys(rule).filter(key => !keys.includes(key)).forEach(key => delete rule[key]);
+    return rule;
+  }
+  function validateRuleEditorData(rule, { allowDefaults = false } = {}) {
+    let count = 0;
+    const known = (value, names) => value && typeof value === "object" && !Array.isArray(value) && Object.keys(value).every(key => names.includes(key));
+    const validText = (value, allowEmpty = false) => typeof value === "string" && new TextEncoder().encode(value).length <= 512 &&
+      !/[\x00-\x1f\x7f]/.test(value) && (allowEmpty || value.trim().length > 0);
+    const finiteNumber = value => typeof value === "number" && Number.isFinite(value);
+    const legacyTokens = {
+      runway: ["deprwy", "seprwy", "arvrwy", "srvrwy"],
+      custom: ["sid", "asid", "ssid", "deprwy", "seprwy", "arvrwy", "srvrwy"],
+      vsid: ["vsid_sid", "vsid_rwy", "vsid_cfl"],
+      cdm: ["tobt", "tsat", "ttot", "ctot", "tsac", "asrt", "asat", "aobt", "atot", "aort", "deice",
+        "tobt_set_by", "flow_restriction", "ecfmp_restriction", "manual_ctot"]
+    };
+    const checkNode = (node, depth) => {
+      if (++count > RULE_LIMITS.nodes || depth > RULE_LIMITS.depth) return "Use at most 128 condition nodes and 8 nesting levels.";
+      if (!node || typeof node !== "object" || Array.isArray(node)) return "Each condition must be an object.";
+      const groups = ["all", "any", "not"].filter(key => Object.hasOwn(node, key));
+      if (groups.length) {
+        if (groups.length !== 1 || Object.keys(node).length !== 1) return "A condition group has exactly one operator.";
+        const key = groups[0], children = key === "not" ? [node.not] : node[key];
+        if (!Array.isArray(children) || !children.length || children.length > RULE_LIMITS.nodes) return "All / Any groups need at least one condition.";
+        for (const child of children) { const error = checkNode(child, depth + 1); if (error) return error; }
+        return "";
+      }
+      if (!validText(node.field)) return "Choose a supported condition field.";
+      const fieldName = ruleCanonicalName(node.field), op = ruleCanonicalName(node.op);
+      if (fieldName === "legacy") {
+        if (!known(node, ["field", "source", "token", "condition"]) ||
+          !validText(node.source) || !validText(node.token) || !validText(node.condition) ||
+          !legacyTokens[ruleCanonicalName(node.source)]?.includes(ruleCanonicalName(node.token)))
+          return "Unknown or invalid legacy source, field or condition; replace it to use the new editor.";
+        return "";
+      }
+      const field = ruleFieldDefinition(fieldName);
+      if (!field || !validText(node.op) || !ruleOperators(fieldName).includes(op)) return "Choose a supported field and comparison.";
+      if (!known(node, ["field", "op", "value", "values", "min", "max"])) return "Unknown condition property.";
+      const members = Object.keys(node).length;
+      if (["set", "missing"].includes(op)) return members === 2 ? "" : "Set / missing comparisons do not take a value.";
+      if (op === "between") return members === 4 && finiteNumber(node.min) && finiteNumber(node.max) && node.min <= node.max
+        ? "" : "Enter a finite minimum and maximum; minimum must not exceed maximum.";
+      if (["in", "not_in"].includes(op)) return members === 3 && Array.isArray(node.values) && node.values.length > 0 &&
+        node.values.length <= RULE_LIMITS.values && node.values.every(value => validText(value))
+        ? "" : "Enter between 1 and 128 non-empty list values, separated by commas.";
+      if (members !== 3 || !Object.hasOwn(node, "value")) return "This comparison needs exactly one value.";
+      return field.numeric ? (finiteNumber(node.value) ? "" : "Enter a finite numeric comparison value.")
+        : (validText(node.value) ? "" : "Enter a non-empty value of at most 512 UTF-8 bytes, without control characters.");
+    };
+    if (!known(rule, ["name", "enabled", "stop_processing", "tag_type", "status", "statuses", "detail", "when", "effects"])) return "Invalid or unknown rule property.";
+    if (Object.hasOwn(rule, "name") && !validText(rule.name, true)) return "Use a rule name of at most 512 UTF-8 bytes, without control characters.";
+    for (const flag of ["enabled", "stop_processing"]) {
+      if ((!allowDefaults || Object.hasOwn(rule, flag)) && typeof rule[flag] !== "boolean") return "Rule options must be booleans.";
+    }
+    for (const [key, values] of [["tag_type", ["any", "departure", "arrival", "airborne", "uncorrelated"]], ["detail", ["any", "normal", "detailed"]]]) {
+      if ((!allowDefaults || Object.hasOwn(rule, key)) && (!validText(rule[key]) || !values.includes(ruleCanonicalName(rule[key])))) return "Choose a supported tag scope and detail.";
+    }
+    if (Object.hasOwn(rule, "status") && (!validText(rule.status) || !RULE_ALL_STATUSES.includes(ruleCanonicalName(rule.status)))) return "Unknown status scope.";
+    if ((!allowDefaults || Object.hasOwn(rule, "statuses")) && (!Array.isArray(rule.statuses) || !rule.statuses.length ||
+      rule.statuses.length > 32 || rule.statuses.some(status => !validText(status) || !RULE_ALL_STATUSES.includes(ruleCanonicalName(status))))) return "Choose at least one supported status.";
+    const conditionError = checkNode(rule.when, 1);
+    if (conditionError) return conditionError;
+    if (!Array.isArray(rule.effects) || !rule.effects.length || rule.effects.length > RULE_LIMITS.effects) return "Choose between 1 and 32 effects.";
+    for (const effect of rule.effects) {
+      if (!known(effect, ["type", "field", "color", "value"]) || !validText(effect.type) ||
+        !Object.hasOwn(RULE_EFFECT_LABELS, ruleCanonicalName(effect.type))) return "Choose a supported effect.";
+      const type = ruleCanonicalName(effect.type), fieldEffect = type.startsWith("field_"), colorEffect = type.endsWith("_color") || type === "field_background";
+      if (fieldEffect) {
+        if (!validText(effect.field) || !RULE_EFFECT_FIELDS.includes(ruleCanonicalName(effect.field))) return "Choose a supported tag field for this effect.";
+      } else if (Object.hasOwn(effect, "field")) return "Whole-tag / target effects do not take a field.";
+      if (colorEffect) {
+        if (Object.hasOwn(effect, "value") || !known(effect.color, ["r", "g", "b", "a"]) ||
+          ["r", "g", "b"].some(channel => !Number.isInteger(effect.color[channel]) || effect.color[channel] < 0 || effect.color[channel] > 255) ||
+          (Object.hasOwn(effect.color, "a") && (!Number.isInteger(effect.color.a) || effect.color.a < 0 || effect.color.a > 255)))
+          return "Colors need integer RGB(A) channels between 0 and 255 and no other operands.";
+      } else if (Object.hasOwn(effect, "color") || (Object.hasOwn(effect, "value") && typeof effect.value !== "boolean")) return "Bold / blink effects need a boolean value and no color.";
+    }
+    return "";
+  }
+  function ruleNodeAtPath(root, path) { return String(path || "").split("/").filter(Boolean).reduce((node, part) => node?.[part], root); }
+  function replaceRuleNode(path, replacement) {
+    if (!path) { drafts.rule.data.when = replacement; return; }
+    const parts = path.split("/").filter(Boolean), key = parts.pop();
+    const parent = ruleNodeAtPath(drafts.rule.data.when, parts.join("/"));
+    if (parent) parent[key] = replacement;
+  }
+  function ruleConditionCount(node, depth = 1) {
+    if (!node || typeof node !== "object" || depth > RULE_LIMITS.depth) return 0;
+    if (Array.isArray(node.all)) return node.all.reduce((sum, child) => sum + ruleConditionCount(child, depth + 1), 0);
+    if (Array.isArray(node.any)) return node.any.reduce((sum, child) => sum + ruleConditionCount(child, depth + 1), 0);
+    if (node.not) return ruleConditionCount(node.not, depth + 1);
+    return 1;
   }
   function selectedRuleStatuses(rule) {
-    const valid = new Set(RULE_STATUSES);
+    const valid = new Set([...RULE_STATUSES, ...RULE_COMPAT_STATUSES]);
     const normalizeStatus = status => {
-      const raw = String(status || "").trim().toLowerCase();
-      const compact = raw.replace(/[\s_-]+/g, "");
-      const tagType = String(rule?.tag_type || "").trim().toLowerCase();
+      const raw = String(status || "").trim().toLowerCase(), compact = raw.replace(/[\s_-]+/g, ""), tagType = String(rule?.tag_type || "").trim().toLowerCase();
       if (!compact || compact === "any" || compact === "all" || compact === "*") return "any";
-      if (["default", "def", "nostatus", "nsts", "onground"].includes(compact)) return "default";
+      if (["default", "def", "onground"].includes(compact)) return "default";
+      if (["nostatus", "nsts"].includes(compact)) return rule?.when ? "nsts" : "default";
       if (["nofpl", "noflightplan"].includes(compact)) return "nofpl";
       if (compact === "push") return "push";
       if (compact === "stup" || compact === "startup") return "stup";
@@ -3002,74 +3126,99 @@
       if (["airarronrunway", "airbornearronrunway", "airbornearrivalonrunway"].includes(compact)) return "airarr_onrunway";
       if (compact === "airborne") return tagType === "arrival" ? "airarr" : "airdep";
       if (compact === "onrunway") return tagType === "arrival" ? "airarr_onrunway" : "airdep_onrunway";
+      if (compact === "arr") return rule?.when ? "arr" : "default";
+      if (compact === "gate") return rule?.when ? "gate" : "default";
       if (compact === "arrival" || compact === "arrivals") return tagType === "arrival" ? "default" : "airarr";
       if (compact === "uncorrelated") return "default";
       return raw;
     };
-    let statuses = Array.isArray(rule?.statuses) ? rule.statuses.map(normalizeStatus).filter(status => status !== "any" && valid.has(status)) : [];
+    const explicitStatuses = Array.isArray(rule?.statuses) ? rule.statuses.map(normalizeStatus) : [];
+    if (explicitStatuses.includes("any")) return RULE_STATUSES.slice();
+    let statuses = explicitStatuses.filter(status => valid.has(status));
     if (!statuses.length) {
       const legacy = String(rule?.status || "any").trim().toLowerCase();
       if (!legacy || legacy === "any") statuses = RULE_STATUSES.slice();
-      else statuses = legacy.replace(/\bline[\s_-]*up\b/g, "lnup").split(/[\s,;|]+/).map(normalizeStatus).filter(status => status !== "any" && valid.has(status));
+      else {
+        const legacyStatuses = legacy.replace(/\bline[\s_-]*up\b/g, "lnup").split(/[\s,;|]+/).map(normalizeStatus);
+        if (legacyStatuses.includes("any")) return RULE_STATUSES.slice();
+        statuses = legacyStatuses.filter(status => valid.has(status));
+      }
     }
     return statuses.length ? uniqueValues(statuses) : RULE_STATUSES.slice();
   }
-
   function checkedRuleStatuses() {
-    const checked = $$("#ruleStatusOptions input[data-rule-status]:checked").map(input => input.dataset.ruleStatus);
-    return checked.length ? checked : RULE_STATUSES.slice();
-  }
-
-  function updateRuleStatusDropdownLabel() {
-    const button = $("#ruleStatusButton");
-    const all = $("#ruleStatusAll");
     const options = $$("#ruleStatusOptions input[data-rule-status]");
     const selected = options.filter(input => input.checked);
+    return options.length > 0 && selected.length === options.length ? ["any"] : selected.map(input => input.dataset.ruleStatus);
+  }
+  function updateRuleStatusDropdownLabel() {
+    const button = $("#ruleStatusButton"), all = $("#ruleStatusAll"), options = $$("#ruleStatusOptions input[data-rule-status]"), selected = options.filter(input => input.checked);
     all.checked = selected.length === options.length && options.length > 0;
     all.indeterminate = selected.length > 0 && selected.length < options.length;
-    if (!selected.length || selected.length === options.length) button.textContent = "All statuses";
+    if (!selected.length) button.textContent = "No statuses";
+    else if (selected.length === options.length) button.textContent = "All statuses";
     else if (selected.length === 1) button.textContent = RULE_STATUS_LABELS[selected[0].dataset.ruleStatus] || humanize(selected[0].dataset.ruleStatus);
     else button.textContent = `${selected.length} statuses`;
     button.title = selected.length === options.length ? "All statuses selected" : selected.map(input => RULE_STATUS_LABELS[input.dataset.ruleStatus] || humanize(input.dataset.ruleStatus)).join(", ");
   }
-
   function renderRuleStatusSelector(rule, disabled = false) {
     const selected = new Set(selectedRuleStatuses(rule));
-    $("#ruleStatusOptions").innerHTML = RULE_STATUSES.map(status => `<label role="option" aria-selected="${selected.has(status)}"><input type="checkbox" data-rule-status="${status}" ${selected.has(status) ? "checked" : ""}><span>${escapeHtml(RULE_STATUS_LABELS[status] || humanize(status))}</span></label>`).join("");
+    const statuses = [...RULE_STATUSES, ...RULE_COMPAT_STATUSES.filter(status => selected.has(status))];
+    $("#ruleStatusOptions").innerHTML = statuses.map(status => `<label role="option" aria-selected="${selected.has(status)}"><input type="checkbox" data-rule-status="${status}" ${selected.has(status) ? "checked" : ""}><span>${escapeHtml(RULE_STATUS_LABELS[status] || humanize(status))}</span></label>`).join("");
     $("#ruleStatusButton").disabled = disabled;
     $("#ruleStatusAll").disabled = disabled;
     $$("#ruleStatusOptions input").forEach(input => { input.disabled = disabled; });
     updateRuleStatusDropdownLabel();
   }
-
   function setRuleStatusMenuOpen(open) {
-    const menu = $("#ruleStatusMenu");
-    const button = $("#ruleStatusButton");
+    const menu = $("#ruleStatusMenu"), button = $("#ruleStatusButton");
     if (!menu || !button) return;
     menu.hidden = !open;
     button.setAttribute("aria-expanded", String(open));
     $("#ruleStatusDropdown")?.classList.toggle("open", open);
   }
-
   function renderRules() {
     const items = rules();
     state.ui.selectedRuleIndex = items.length ? Math.min(items.length - 1, Math.max(0, state.ui.selectedRuleIndex)) : 0;
     const rows = items.map((rule, index) => {
-      const selected = index === state.ui.selectedRuleIndex;
-      const criteriaCount = Array.isArray(rule.criteria) && rule.criteria.length ? rule.criteria.length : 1;
-      return `<button type="button" role="option" aria-selected="${selected}" class="${uiListRowClass("status", selected)}" data-rule-index="${index}" title="${escapeHtml(ruleLabel(rule, index))}"><span class="ui-list__label">${escapeHtml(ruleLabel(rule, index))}</span><span class="ui-list__trailing rule-criteria-count" aria-label="${criteriaCount} ${criteriaCount === 1 ? "condition" : "conditions"}">${criteriaCount}</span></button>`;
+      const selected = index === state.ui.selectedRuleIndex, count = rule?.when ? ruleConditionCount(rule.when) : (rule?.criteria?.length || 1);
+      return `<button type="button" role="option" aria-selected="${selected}" class="${uiListRowClass("status", selected)} ${rule?.enabled === false ? "rule-disabled" : ""}" data-rule-index="${index}" title="${escapeHtml(ruleLabel(rule, index))}"><span class="ui-list__label">${escapeHtml(ruleLabel(rule, index))}</span><span class="ui-list__trailing rule-criteria-count" aria-label="${count} conditions">${count}</span></button>`;
     }).join("");
-    $("#ruleList").innerHTML = rows ? `<div class="ui-list__items" role="presentation">${rows}</div>` : `<div class="ui-list__empty">No rules</div>`;
+    $("#ruleList").innerHTML = rows ? `<div class="ui-list__items" role="presentation">${rows}</div>` : '<div class="ui-list__empty">No rules</div>';
     const hasSelection = items.length > 0;
-    $('[data-action="duplicate-rule"]').disabled = !hasSelection;
-    $('[data-action="delete-rule"]').disabled = !hasSelection;
-	$('[data-action="copy-rule"]').disabled = !hasSelection;
+    ["duplicate-rule", "delete-rule", "copy-rule"].forEach(action => { $(`[data-action="${action}"]`).disabled = !hasSelection; });
+    $('[data-action="duplicate-rule"]').disabled ||= items.length >= RULE_LIMITS.rules;
+    $('[data-action="new-rule"]').disabled = items.length >= RULE_LIMITS.rules;
+    $('[data-action="move-rule-up"]').disabled = !hasSelection || state.ui.selectedRuleIndex === 0;
+    $('[data-action="move-rule-down"]').disabled = !hasSelection || state.ui.selectedRuleIndex === items.length - 1;
     syncUiListFocus($("#ruleList"));
     renderRuleEditor();
   }
+  function ruleConditionValueHtml(node) {
+    const field = ruleFieldDefinition(node.field);
+    if (["set", "missing"].includes(node.op)) return '<span class="rule-no-value">No value needed</span>';
+    if (node.op === "between") return `<div class="rule-range-values"><input aria-label="Minimum value" data-field="min" type="number" step="any" value="${escapeHtml(node.min ?? "")}" placeholder="−5"/><span>to</span><input aria-label="Maximum value" data-field="max" type="number" step="any" value="${escapeHtml(node.max ?? "")}" placeholder="+5"/></div>`;
+    if (["in", "not_in"].includes(node.op)) return `<input aria-label="Rule match values" data-field="values" type="text" spellcheck="false" maxlength="16384" value="${escapeHtml((node.values || []).join(", "))}" placeholder="Value 1, Value 2"/>`;
+    return `<input aria-label="Rule comparison value" data-field="value" type="${field?.numeric ? "number" : "text"}" ${field?.numeric ? 'step="any"' : 'maxlength="4096"'} value="${escapeHtml(node.value ?? "")}" placeholder="${field?.time ? "Offset in minutes" : "Exact value"}"/>`;
+  }
+  function renderRuleNode(node, path = "", depth = 1) {
+    if (!node || typeof node !== "object" || depth > RULE_LIMITS.depth) return '<p class="rule-help">Invalid condition; replace it with a template.</p>';
+    const group = ["all", "any", "not"].find(key => Object.hasOwn(node, key));
+    if (group) {
+      const children = group === "not" ? [node.not] : (Array.isArray(node[group]) ? node[group] : []);
+      return `<div class="rule-condition-group" data-node-path="${path}"><div class="rule-group-tools"><select aria-label="Condition group operator" data-field="group">${ruleSelectOptions(["all", "any", "not"], group, { all: "All of these (AND)", any: "Any of these (OR)", not: "Not (NOT)" })}</select>${group !== "not" ? `<button class="ui-button ui-button--compact" data-action="add-condition" data-node-path="${path}" type="button">+ Condition</button><button class="ui-button ui-button--compact" data-action="add-condition-group" data-node-path="${path}" type="button">+ Group</button>` : ""}${path ? `<button class="ui-button ui-button--compact ui-button--destructive" data-action="delete-condition" data-node-path="${path}" type="button" aria-label="Delete group">×</button>` : ""}</div><div class="rule-group-children">${children.map((child, index) => renderRuleNode(child, path + "/" + group + (group === "not" ? "" : "/" + index), depth + 1)).join("") || '<span class="rule-help">Add a condition to complete this group.</span>'}</div></div>`;
+    }
+    if (node.field === "legacy") return `<div class="criterion-row rule-legacy-condition" data-node-path="${path}"><div><strong>Legacy condition</strong><span>${escapeHtml(node.source)} · ${escapeHtml(node.token)} · ${escapeHtml(node.condition)}</span><small>Kept unchanged to preserve its original matching behavior.</small></div><button class="ui-button ui-button--compact" data-action="replace-legacy-condition" data-node-path="${path}" type="button">Replace</button><button class="ui-button ui-button--compact ui-button--destructive" data-action="delete-condition" data-node-path="${path}" type="button" aria-label="Delete condition">×</button></div>`;
+    const fields = [...RULE_FIELDS, ...RULE_COMPAT_FIELDS.filter(field => field.id === node.field)];
+    const labels = Object.fromEntries(fields.map(field => [field.id, field.label]));
+    return `<div class="criterion-row" data-node-path="${path}"><select aria-label="Rule field" data-field="field">${ruleSelectOptions(fields.map(field => field.id), node.field, labels)}</select><select aria-label="Rule comparison" data-field="op">${ruleSelectOptions(ruleOperators(node.field), node.op, RULE_OPERATOR_LABELS)}</select><div class="rule-condition-value">${ruleConditionValueHtml(node)}</div><button type="button" aria-label="Delete condition" class="ui-button ui-button--compact ui-button--destructive criterion-delete" data-action="delete-condition" data-node-path="${path}">×</button></div>`;
+  }
+  function renderRuleEffect(effect, index) {
+    const colorEffect = effect.type?.endsWith("_color") || effect.type === "field_background", color = colorToHex(effect.color, "#ffffff");
+    return `<div class="rule-effect-row" data-effect-index="${index}"><select aria-label="Effect type" data-field="effect-type">${ruleSelectOptions(Object.keys(RULE_EFFECT_LABELS), effect.type, RULE_EFFECT_LABELS)}</select>${effect.type?.startsWith("field_") ? `<select aria-label="Effect tag field" data-field="effect-field">${ruleSelectOptions(RULE_EFFECT_FIELDS, effect.field)}</select>` : '<span class="rule-effect-scope">Whole target / tag</span>'}${colorEffect ? `<div class="rule-effect-color"><input aria-label="Effect color" class="rule-color-value" data-field="effect-color" type="text" value="${color.toUpperCase()}" maxlength="7"/><label class="mini-color-swatch" style="--swatch-color:${color}"><input aria-label="Pick effect color" data-field="effect-picker" type="color" value="${color}"/></label><input aria-label="Effect opacity (0 to 255)" data-field="effect-alpha" type="number" min="0" max="255" step="1" value="${effect.color?.a ?? 255}" title="Opacity: 0 transparent, 255 opaque"/></div>` : `<label class="check-field"><input aria-label="Effect enabled value" data-field="effect-value" type="checkbox" ${effect.value !== false ? "checked" : ""}/><span>On</span></label>`}<button class="ui-button ui-button--compact ui-button--destructive" data-action="delete-rule-effect" data-index="${index}" type="button" aria-label="Delete effect">×</button></div>`;
+  }
   function renderRuleEditor() {
-    const item = rules()[state.ui.selectedRuleIndex];
-    const disabled = !item;
+    const item = rules()[state.ui.selectedRuleIndex], disabled = !item;
     $("#ruleFormCaption").textContent = item ? ruleLabel(item, state.ui.selectedRuleIndex) : "Rule";
     $("#ruleEditorEmpty").hidden = !disabled;
     $("#ruleEditorForm").hidden = disabled;
@@ -3077,171 +3226,131 @@
       drafts.rule = null;
       $("#ruleName").value = "";
       $("#criteriaList").innerHTML = "";
+      $("#ruleEffectsList").innerHTML = "";
+      $("#ruleValidationMessage").hidden = true;
       renderRuleStatusSelector({ status: "any" }, true);
       $$("#ruleEditorForm input, #ruleEditorForm select, #ruleEditorForm button").forEach(control => { control.disabled = true; });
       clearUnappliedEditorSection($("#ruleName"));
       return;
     }
+    const importedError = Object.hasOwn(item, "when") ? validateRuleEditorData(item, { allowDefaults: true }) : "";
+    if (importedError) {
+      // Existing malformed v2 data must not be silently repaired by focus,
+      // naming, select fallbacks or autosave. Delete or paste replaces it
+      // explicitly; the original profile item remains byte-for-byte intact.
+      drafts.rule = { index: state.ui.selectedRuleIndex, data: clone(item), invalidSource: true };
+      $("#ruleName").value = typeof item.name === "string" ? item.name : "";
+      $("#criteriaList").innerHTML = '<p class="rule-help">This saved rule is invalid and cannot be edited safely. Delete it or paste a valid replacement. It has not been changed.</p>';
+      $("#ruleEffectsList").innerHTML = "";
+      renderRuleStatusSelector({ status: "any" }, true);
+      $$("#ruleEditorForm input, #ruleEditorForm select, #ruleEditorForm button").forEach(control => { control.disabled = true; });
+      ["copy-rule", "duplicate-rule", "move-rule-up", "move-rule-down"].forEach(action => { $(`[data-action="${action}"]`).disabled = true; });
+      updateRuleValidationMessage(importedError);
+      clearUnappliedEditorSection($("#ruleName"));
+      return;
+    }
     $$("#ruleEditorForm input, #ruleEditorForm select, #ruleEditorForm button").forEach(control => { control.disabled = false; });
-    if (!drafts.rule || drafts.rule.index !== state.ui.selectedRuleIndex) drafts.rule = { index: state.ui.selectedRuleIndex, data: clone(item) };
+    if (!drafts.rule || drafts.rule.index !== state.ui.selectedRuleIndex) drafts.rule = { index: state.ui.selectedRuleIndex, data: migrateRuleForEditor(item) };
     const rule = drafts.rule.data;
     $("#ruleName").value = rule.name || "";
-    const criteria = Array.isArray(rule.criteria) && rule.criteria.length ? rule.criteria : [{ source: rule.source || "cdm", token: rule.token || "", condition: rule.condition || "" }];
-    $("#criteriaList").innerHTML = criteria.map((criterion, index) => {
-      const parsedCondition = parseRuleCondition(criterion.source, criterion.condition);
-      return `
-      <div class="criterion-row" data-criterion-index="${index}">
-        <select aria-label="Rule source" data-field="source">${ruleSelectOptions(RULE_SOURCES, normalizeRuleSourceUi(criterion.source), RULE_SOURCE_LABELS)}</select>
-        <select aria-label="Rule token" data-field="token">${ruleSelectOptions(ruleTokensForSource(criterion.source), criterion.token)}</select>
-        <select aria-label="Rule condition" data-field="condition">${ruleSelectOptions(ruleConditionsFor(criterion.source, criterion.token, parsedCondition.operator), parsedCondition.operator, { not_in: "not in" })}</select>
-        <input aria-label="Rule match values" data-field="condition-values" spellcheck="false" type="text" value="${escapeHtml(parsedCondition.values)}"/>
-        <button type="button" aria-label="Delete condition" class="ui-button ui-button--compact ui-button--icon ui-button--destructive criterion-delete" data-action="delete-condition" data-index="${index}" title="Delete condition"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M5 5l14 14M19 5L5 19"/></svg></button>
-      </div>`;
-    }).join("");
-    $$("#criteriaList .criterion-row").forEach(updateRuleConditionValueControl);
+    $("#ruleEnabled").checked = rule.enabled;
+    $("#ruleStopProcessing").checked = rule.stop_processing;
+    $("#criteriaList").innerHTML = renderRuleNode(rule.when);
+    if (rule.when && !["all", "any", "not"].some(key => Object.hasOwn(rule.when, key))) {
+      $("#criteriaList").insertAdjacentHTML("beforeend", '<div class="rule-group-tools"><button class="ui-button ui-button--compact" data-action="add-condition" data-node-path="" type="button">+ Condition</button><button class="ui-button ui-button--compact" data-action="add-condition-group" data-node-path="" type="button">+ Group</button></div>');
+    }
+    $("#ruleEffectsList").innerHTML = (rule.effects || []).map(renderRuleEffect).join("");
+    $('[data-action="add-rule-effect"]').disabled = (rule.effects || []).length >= RULE_LIMITS.effects;
     ensureSelectValue($("#ruleTagType"), rule.tag_type || "any");
-    renderRuleStatusSelector(rule, disabled);
+    renderRuleStatusSelector(rule);
     ensureSelectValue($("#ruleDetail"), rule.detail || "any");
-    setRuleColorControls("Target", rule.target_color);
-    setRuleColorControls("Tag", rule.tag_color);
-    setRuleColorControls("Text", rule.text_color);
-    ["ruleName", "ruleTagType", "ruleDetail"].forEach(id => $("#" + id).disabled = disabled);
+    updateRuleValidationMessage(validateRuleEditorData(rule));
   }
-  function setRuleColorControls(kind, color) {
-    const checkbox = $(`#ruleUse${kind}Color`);
-    const text = $(`#rule${kind}Color`);
-    const picker = $(`#rule${kind}Picker`);
-    const swatch = picker.closest("label");
-    checkbox.checked = isColorObject(color);
-    const hex = colorToHex(color, "#ffffff");
-    text.value = hex.toUpperCase();
-    text.disabled = !checkbox.checked;
-    picker.value = hex;
-    picker.disabled = !checkbox.checked;
-    swatch.style.setProperty("--swatch-color", hex);
+  function updateRuleValidationMessage(message) {
+    const control = $("#ruleValidationMessage");
+    control.textContent = message ? `Not saved: ${message}` : "";
+    control.hidden = !message;
   }
-
   function captureRuleDraft() {
-    if (!drafts.rule) return null;
+    if (!drafts.rule || drafts.rule.invalidSource) return null;
     const rule = drafts.rule.data;
-    const criteria = $$("#criteriaList .criterion-row").map(row => {
-      const source = $("[data-field='source']", row).value;
-      return {
-        source,
-        token: $("[data-field='token']", row).value.trim(),
-        condition: composeRuleCondition(
-          source,
-          $("[data-field='condition']", row).value,
-          $("[data-field='condition-values']", row).value
-        )
-      };
-    }).filter(criterion => criterion.source || criterion.token || criterion.condition);
-    rule.criteria = criteria.length ? criteria : [{ source: "cdm", token: "", condition: "" }];
-    const first = rule.criteria[0];
-    rule.source = first.source;
-    rule.token = first.token;
-    rule.condition = first.condition;
+    $$("#criteriaList .criterion-row:not(.rule-legacy-condition)").forEach(row => {
+      if (!ruleNodeAtPath(rule.when, row.dataset.nodePath)) return;
+      const field = $("[data-field='field']", row)?.value, op = $("[data-field='op']", row)?.value, node = { field, op }, numeric = ruleFieldDefinition(field)?.numeric;
+      const numericValue = input => input && input.value.trim() !== "" ? Number(input.value) : null;
+      if (op === "between") { node.min = numericValue($("[data-field='min']", row)); node.max = numericValue($("[data-field='max']", row)); }
+      else if (["in", "not_in"].includes(op)) node.values = String($("[data-field='values']", row)?.value || "").split(/[,;\n]+/).map(value => value.trim()).filter(Boolean);
+      else if (!["set", "missing"].includes(op)) node.value = numeric ? numericValue($("[data-field='value']", row)) : String($("[data-field='value']", row)?.value || "").trim();
+      replaceRuleNode(row.dataset.nodePath, node);
+    });
+    rule.effects = $$("#ruleEffectsList .rule-effect-row").map(row => {
+      const type = $("[data-field='effect-type']", row).value, effect = { type };
+      if (type.startsWith("field_")) effect.field = $("[data-field='effect-field']", row)?.value || "callsign";
+      if (type.endsWith("_color") || type === "field_background") {
+        const raw = $("[data-field='effect-color']", row)?.value || "", alpha = $("[data-field='effect-alpha']", row)?.value || "";
+        effect.color = /^#?[0-9a-f]{6}$/i.test(raw.trim()) && /^\d{1,3}$/.test(alpha) ? { ...hexToColor(raw), a: Number(alpha) } : null;
+      } else effect.value = Boolean($("[data-field='effect-value']", row)?.checked);
+      return effect;
+    });
     const name = $("#ruleName").value.trim();
     if (name) rule.name = name; else delete rule.name;
+    rule.enabled = $("#ruleEnabled").checked;
+    rule.stop_processing = $("#ruleStopProcessing").checked;
     rule.tag_type = $("#ruleTagType").value;
-    const statuses = checkedRuleStatuses();
-    rule.statuses = statuses;
-    rule.status = statuses.length === 1 ? statuses[0] : "any";
+    rule.statuses = checkedRuleStatuses();
+    delete rule.status;
     rule.detail = $("#ruleDetail").value;
-    ["Target", "Tag", "Text"].forEach(kind => {
-      const key = `${kind.toLowerCase()}_color`;
-      if ($(`#ruleUse${kind}Color`).checked) rule[key] = hexToColor($(`#rule${kind}Color`).value, rule[key]?.a ?? 255);
-      else delete rule[key];
-    });
     return rule;
   }
   function applyRule({ render = true } = {}) {
     const item = rules()[state.ui.selectedRuleIndex];
-    if (!item || !drafts.rule) {
-      clearUnappliedEditorSection($("#ruleName"));
-      return true;
-    }
-    const rule = captureRuleDraft();
+    if (!item || !drafts.rule) { clearUnappliedEditorSection($("#ruleName")); return true; }
+    if (drafts.rule.invalidSource) { clearUnappliedEditorSection($("#ruleName")); return true; }
+    const rule = captureRuleDraft(), error = validateRuleEditorData(rule);
+    updateRuleValidationMessage(error);
+    if (error) return false;
+    activeProfile().rules.version = 2;
     rules()[state.ui.selectedRuleIndex] = clone(rule);
+    const row = $(`[data-rule-index="${state.ui.selectedRuleIndex}"]`);
+    row?.classList.toggle("rule-disabled", rule.enabled === false);
+    const countControl = row && $(".rule-criteria-count", row);
+    if (countControl) {
+      const count = ruleConditionCount(rule.when);
+      countControl.textContent = String(count);
+      countControl.setAttribute("aria-label", `${count} conditions`);
+    }
     clearUnappliedEditorSection($("#ruleName"));
     markDirty("Rule updated", ["profiles"]);
     if (render) renderRules();
     return true;
   }
-
   function normalizeClipboardRule(value) {
-    const sourceRule = value?.rule ?? value;
-    if (!sourceRule || typeof sourceRule !== "object" || Array.isArray(sourceRule)) return null;
-    const rawCriteria = Array.isArray(sourceRule.criteria) && sourceRule.criteria.length
-      ? sourceRule.criteria
-      : [{ source: sourceRule.source, token: sourceRule.token, condition: sourceRule.condition }];
-    const criteria = rawCriteria.filter(item => item && typeof item === "object").map(item => {
-      const source = normalizeRuleSourceUi(item.source);
-      const tokens = ruleTokensForSource(source);
-      const requestedToken = String(item.token || "").trim().toLowerCase();
-      const token = tokens.includes(requestedToken) ? requestedToken : tokens[0];
-      const parsed = parseRuleCondition(source, item.condition);
-      const operators = ruleConditionsFor(source, token);
-      const operator = operators.includes(parsed.operator) ? parsed.operator : "any";
-      return { source, token, condition: composeRuleCondition(source, operator, parsed.values) };
-    });
-    if (!criteria.length) return null;
-
-    const tagTypes = ["any", "departure", "arrival", "airborne", "uncorrelated"];
-    const details = ["any", "normal", "detailed"];
-    const normalized = {
-      criteria,
-      source: criteria[0].source,
-      token: criteria[0].token,
-      condition: criteria[0].condition,
-      tag_type: tagTypes.includes(sourceRule.tag_type) ? sourceRule.tag_type : "any",
-      detail: details.includes(sourceRule.detail) ? sourceRule.detail : "any"
-    };
-    const name = String(sourceRule.name || "").trim();
-    if (name) normalized.name = name;
-    normalized.statuses = selectedRuleStatuses(sourceRule);
-    normalized.status = normalized.statuses.length === 1 ? normalized.statuses[0] : "any";
-    ["target_color", "tag_color", "text_color"].forEach(key => {
-      if (!isColorObject(sourceRule[key])) return;
-      normalized[key] = {
-        r: Math.round(clamp(sourceRule[key].r, 0, 255)),
-        g: Math.round(clamp(sourceRule[key].g, 0, 255)),
-        b: Math.round(clamp(sourceRule[key].b, 0, 255)),
-        a: Math.round(clamp(sourceRule[key].a ?? 255, 0, 255))
-      };
-    });
-    return normalized;
+    const source = value?.rule ?? value;
+    // Validate supplied v2 data before applying native-compatible optional defaults.
+    if (source && Object.hasOwn(source, "when") && validateRuleEditorData(source, { allowDefaults: true })) return null;
+    const rule = migrateRuleForEditor(source);
+    return rule && !validateRuleEditorData(rule) ? rule : null;
   }
-
   async function copyRule() {
     const item = rules()[state.ui.selectedRuleIndex];
-    if (!item) return;
-    captureRuleDraft();
-    const rule = drafts.rule?.data || item;
-    await writeEditorClipboard(JSON.stringify({ vsmr: "rule", version: 1, rule }, null, 2), "rule");
+    if (!item || drafts.rule?.invalidSource) return;
+    const rule = captureRuleDraft() || migrateRuleForEditor(item), error = validateRuleEditorData(rule);
+    if (error) { showToast(error, "error"); return; }
+    await writeEditorClipboard(JSON.stringify({ vsmr: "rule", version: 2, rule }, null, 2), "rule");
     showToast("Rule copied", "success");
   }
-
   async function pasteRule() {
     const raw = String(await readEditorClipboard("rule", "Paste a vSMR rule") || "").trim();
     if (!raw) return;
     let parsed;
-    try { parsed = JSON.parse(raw); }
-    catch (error) {
-      showToast("Clipboard does not contain a vSMR rule", "error");
-      return;
-    }
+    try { if (raw.length > 256 * 1024) throw new Error("Rule is too large"); parsed = JSON.parse(raw); }
+    catch (error) { showToast("Clipboard does not contain a vSMR rule", "error"); return; }
     const rule = normalizeClipboardRule(parsed);
-    if (!rule) {
-      showToast("Clipboard does not contain a valid vSMR rule", "error");
-      return;
-    }
+    if (!rule) { showToast("Clipboard does not contain a valid vSMR rule", "error"); return; }
     const items = rules();
     if (items.length) items[state.ui.selectedRuleIndex] = rule;
-    else {
-      items.push(rule);
-      state.ui.selectedRuleIndex = 0;
-    }
+    else { items.push(rule); state.ui.selectedRuleIndex = 0; }
+    activeProfile().rules.version = 2;
     drafts.rule = null;
     clearUnappliedEditorSection($("#ruleName"));
     markDirty("Rule pasted", ["profiles"]);
@@ -3440,6 +3549,37 @@
     return normalizeAvisoColorPalette(state.settings.avisoColorPalette);
   }
 
+  function applyAvisoToAllTerrains() {
+    if (!stageFocusedEditorValue()) return;
+    if (state.dirty || pending.save || pending.resource || state.externalEditConflict || !hostAuthoritativeReady) {
+      showToast("Wait until the current changes are saved before applying them to all terrains.", "error");
+      return;
+    }
+    if (!window.confirm("Apply geometry, text and palette settings changed from this airport's defaults to all terrains? Only this button updates the shared settings. Real preserves each airport's own colors, or falls back to Light. Coordinates and groups are unchanged.")) return;
+    const palette = activeAvisoColorPalette();
+    const styles = {};
+    const colorKeys = AVISO_PALETTE_COLOR_KEYS;
+    for (const [id, style] of Object.entries(state.aviso.styles || {})) {
+      const paint = {}, colors = {};
+      for (const key of [...AVISO_GEOMETRY_PAINT_KEYS, ...AVISO_TEXT_PAINT_KEYS]) {
+        if (palette === "real" && colorKeys.has(key)) continue;
+        const value = effectiveAvisoPaintValue(style.paint, null, key, undefined, palette);
+        if (value == null) continue;
+        if (colorKeys.has(key) && palette !== "dark") colors[key] = value;
+        else paint[key] = value;
+      }
+      if (Object.keys(colors).length) paint["palette-overrides"] = { [palette]: colors };
+      if (Object.keys(paint).length) styles[id] = { paint };
+    }
+    postRuntimeCommand("settings.update", {
+      airport: state.airport, configRevision: state.configRevision,
+      applyAvisoToAll: { palette, styles, metadata: {
+        ...(palette === "real" ? {} : { background_colors: { [palette]: state.aviso.metadata.background_colors[palette] } }),
+        background_opacities: { [palette]: state.aviso.metadata.background_opacities[palette] }
+      } }, replaceLocalAppearance: true
+    }, null);
+  }
+
   function avisoPaletteOverride(paint, palette = activeAvisoColorPalette()) {
     if (palette === "dark" || !paint || typeof paint !== "object") return null;
     const overrides = paint["palette-overrides"];
@@ -3548,7 +3688,7 @@
       name: "Background",
       layer: "AVISO",
       objectType: "Background",
-      paint: { fill: color },
+      paint: { fill: color, "fill-opacity": state.aviso?.metadata?.background_opacities?.[palette] ?? 1 },
       indices: [],
       isText: false,
       isBackground: true
@@ -4113,7 +4253,7 @@
     const paletteLabel = `${activeAvisoColorPalette()[0].toUpperCase()}${activeAvisoColorPalette().slice(1)}`;
     const colorKind = backgroundOnly ? "Background" : types.length > 1 ? "Primary" : types[0] === "Line" ? "Line" : "Fill";
     $("#avisoGeometryColorLabel").textContent = `${colorKind} color · ${paletteLabel}`;
-    $("#avisoGeometryColorOpacity")?.closest(".opacity-channel")?.toggleAttribute("hidden", backgroundOnly);
+    $("#avisoGeometryColorOpacity")?.closest(".opacity-channel")?.removeAttribute("hidden");
 
     const colorResult = commonValue(
       entries.map(entry => entry.objectType === "Line" ? (entry.paint.stroke || entry.paint.fill || "#000000") : (entry.paint.fill || entry.paint.stroke || "#000000")),
@@ -4169,6 +4309,10 @@
       if (entry.isBackground) {
         if (colorTouched && changes.fill) {
           state.aviso.metadata.background_colors[activeAvisoColorPalette()] = changes.fill;
+          updatedCount += 1;
+        }
+        if (opacityTouched && changes["fill-opacity"] != null) {
+          state.aviso.metadata.background_opacities[activeAvisoColorPalette()] = changes["fill-opacity"];
           updatedCount += 1;
         }
         return;
@@ -5156,7 +5300,7 @@
   const RESET_SECTION_LABELS = {
     colors: "selected profile colors", icons: "icon appearance and trails",
     tags: "selected tag definitions", "tag-options": "tag font and layout options",
-    rules: "this profile's color rules", alerts: "alert options (keeping runway states)",
+    rules: "this profile's rules", alerts: "alert options (keeping runway states)",
     geometry: "selected AVISO geometry styles in this palette",
     text: "selected AVISO text styles in this palette"
   };
@@ -5264,6 +5408,7 @@
         const color = colors?.[request.palette];
         if (!color) return;
         state.aviso.metadata.background_colors[request.palette] = color;
+        state.aviso.metadata.background_opacities[request.palette] = baseline.metadata?.background_opacities?.[request.palette] ?? 1;
         ++count;
         return;
       }
@@ -5273,7 +5418,7 @@
       const previous = clone(paint);
       const changesFor = properties => Object.fromEntries(keys.map(key => [key,
         effectiveAvisoPaintValue(defaultPaint, properties || {}, key, undefined, request.palette)
-          ?? (request.section === "text" ? AVISO_TEXT_DEFAULTS[key] : undefined)
+          ?? (request.section === "text" ? AVISO_TEXT_DEFAULTS[key] : key.endsWith("-opacity") ? 1 : undefined)
       ]).filter(([key, value]) => value !== undefined || !AVISO_PALETTE_COLOR_KEYS.has(key)));
       applyAvisoPaintChanges(paint, changesFor({}));
       entry.indices.forEach(index => {
@@ -5285,6 +5430,8 @@
     });
     if (!count) throw new Error("No bundled defaults match the selected styles; custom styles are unchanged");
     drafts.avisoGeometry = drafts.avisoTextStyle = null;
+    clearUnappliedEditorSection($("#avisoGeometryColorHex"));
+    clearUnappliedEditorSection($("#avisoTextFont"));
     markDirty("Selected AVISO styles restored to bundled defaults", ["aviso"]);
   }
 
@@ -5468,7 +5615,7 @@
         control instanceof HTMLTextAreaElement)) return "";
     if (control.matches(
       '[type="search"], [type="file"], ' +
-      '#tagTokenSelect'
+      '#tagTokenSelect, #ruleTemplate'
     ) || control.closest(".updater-general-group, #runtimeMenu, .page-rail, dialog")) return "";
 
     const profilePanel = control.closest("[data-profile-panel]")?.dataset.profilePanel;
@@ -5488,10 +5635,16 @@
     if (!scope) return true;
     const sectionKey = editorSectionKey(control);
     if (sectionKey && !unappliedEditorSections.has(sectionKey)) return true;
-    if (control.matches("#colorHex, #ruleTargetColor, #ruleTagColor, #ruleTextColor") &&
-        !/^#?[0-9a-f]{6}$/i.test(control.value.trim())) return false;
+    if (control.matches("#colorHex, .rule-color-value") &&
+        !/^#?[0-9a-f]{6}$/i.test(control.value.trim())) {
+      if (scope === "rules") updateRuleValidationMessage("Enter a six-digit hexadecimal color, for example #FFFFFF.");
+      return false;
+    }
     if (control.matches(".color-channel-value") && !/^\d{1,3}$/.test(control.value.trim())) return false;
-    if (control.checkValidity && !control.checkValidity()) return false;
+    if (control.checkValidity && !control.checkValidity()) {
+      if (scope === "rules") updateRuleValidationMessage(control.validationMessage || "Finish the current value before saving.");
+      return false;
+    }
     const result = (() => {
       if (scope === "colors") return applyColorDraft({ render: false });
       if (scope === "icons") return applyIcons({ render: false });
@@ -5742,7 +5895,10 @@
         "#controlWindow [data-managed-profile-id], #controlWindow [data-aviso-group-id], " +
         "#controlWindow [data-aviso-geometry-style], #controlWindow [data-aviso-text-style]"
       );
-      if (guardedEditorAction && hasUnappliedEditorInputs() && !stageFocusedEditorValue()) {
+      const ruleRepairAction = guardedEditorAction?.closest('[data-profile-panel="rules"]') &&
+        ["add-condition", "add-condition-group", "delete-condition", "replace-legacy-condition", "apply-rule-template",
+          "add-rule-effect", "delete-rule-effect", "delete-rule", "paste-rule"].includes(guardedEditorAction.dataset.action);
+      if (guardedEditorAction && !ruleRepairAction && hasUnappliedEditorInputs() && !stageFocusedEditorValue()) {
         event.preventDefault();
         return;
       }
@@ -5936,38 +6092,46 @@
 
     $("#criteriaList").addEventListener("change", event => {
       const field = event.target.dataset.field;
-      if (!field || !["source", "token", "condition"].includes(field)) return;
-      const row = event.target.closest(".criterion-row");
-      const source = $("[data-field='source']", row);
-      const token = $("[data-field='token']", row);
-      const condition = $("[data-field='condition']", row);
-      if (field === "source") {
-        const tokens = ruleTokensForSource(source.value);
-        token.innerHTML = ruleSelectOptions(tokens, tokens[0]);
+      if (field === "group") {
+        changeRuleGroup(event.target.closest(".rule-condition-group").dataset.nodePath, event.target.value);
+        return;
       }
-      if (field === "source" || field === "token") {
-        condition.innerHTML = ruleSelectOptions(ruleConditionsFor(source.value, token.value), "any", { not_in: "not in" });
-        $("[data-field='condition-values']", row).value = "";
-      }
-      updateRuleConditionValueControl(row);
+      if (!["field", "op"].includes(field)) return;
+      const row = event.target.closest(".criterion-row"), path = row?.dataset.nodePath || "";
+      const selectedField = $("[data-field='field']", row).value;
+      const operator = field === "field" ? "set" : $("[data-field='op']", row).value;
+      editRuleStructure(() => {
+        const node = { field: selectedField, op: operator };
+        if (operator === "between") { node.min = -5; node.max = 5; }
+        else if (["in", "not_in"].includes(operator)) node.values = [];
+        else if (!["set", "missing"].includes(operator)) node.value = ruleFieldDefinition(selectedField)?.numeric ? 0 : "";
+        replaceRuleNode(path, node);
+      });
     });
 
-    ["Target", "Tag", "Text"].forEach(kind => {
-      $(`#ruleUse${kind}Color`).addEventListener("change", () => {
-        const enabled = $(`#ruleUse${kind}Color`).checked;
-        $(`#rule${kind}Color`).disabled = !enabled;
-        $(`#rule${kind}Picker`).disabled = !enabled;
+    $("#ruleEffectsList").addEventListener("change", event => {
+      if (event.target.dataset.field !== "effect-type") return;
+      const row = event.target.closest(".rule-effect-row"), index = Number(row.dataset.effectIndex), type = event.target.value;
+      const colorText = $("[data-field='effect-color']", row)?.value || "#ffffff";
+      const alpha = Number($("[data-field='effect-alpha']", row)?.value ?? 255);
+      const token = $("[data-field='effect-field']", row)?.value || "callsign";
+      editRuleStructure(rule => {
+        const effect = { type };
+        if (type.startsWith("field_")) effect.field = token;
+        if (type.endsWith("_color") || type === "field_background") effect.color = hexToColor(colorText, alpha);
+        else effect.value = true;
+        rule.effects[index] = effect;
       });
-      $(`#rule${kind}Color`).addEventListener("input", event => {
-        if (!/^#?[0-9a-f]{6}$/i.test(event.target.value.trim())) return;
-        const hex = normalizeHex(event.target.value, "#ffffff");
-        $(`#rule${kind}Picker`).value = hex;
-        $(`#rule${kind}Picker`).closest("label").style.setProperty("--swatch-color", hex);
-      });
-      $(`#rule${kind}Picker`).addEventListener("input", event => {
-        $(`#rule${kind}Color`).value = event.target.value.toUpperCase();
-        event.target.closest("label").style.setProperty("--swatch-color", event.target.value);
-      });
+    });
+    $("#ruleEffectsList").addEventListener("input", event => {
+      const row = event.target.closest(".rule-effect-row");
+      if (!row) return;
+      const field = event.target.dataset.field;
+      if (field === "effect-picker") $("[data-field='effect-color']", row).value = event.target.value.toUpperCase();
+      if (field === "effect-color" && /^#?[0-9a-f]{6}$/i.test(event.target.value.trim()))
+        $("[data-field='effect-picker']", row).value = normalizeHex(event.target.value, "#ffffff");
+      const picker = $("[data-field='effect-picker']", row);
+      if (picker) picker.closest("label").style.setProperty("--swatch-color", picker.value);
     });
 
     $("#ruleStatusButton").addEventListener("click", event => {
@@ -6213,6 +6377,7 @@
 		markDirty(`AVISO ${palette} palette selected`, ["settings"]);
       }
     }
+    else if (action === "apply-aviso-all") applyAvisoToAllTerrains();
     else if (action === "dismiss-persistent-status") {
       if (persistentStatusState)
         dismissedPersistentStatusKey = `${persistentStatusState.type}|${persistentStatusState.message}`;
@@ -6261,14 +6426,15 @@
     else if (action === "new-rule") createRule();
     else if (action === "duplicate-rule") duplicateRule();
     else if (action === "delete-rule") deleteRule();
-    else if (action === "add-condition") {
-      const draft = captureRuleDraft();
-      if (!drafts.rule || !draft) return;
-      drafts.rule.data.criteria.push({ source: "cdm", token: "", condition: "" });
-      renderRuleEditor();
-      applyRule({ render: false });
-    }
-    else if (action === "delete-condition") deleteRuleCondition(Number(button.dataset.index));
+    else if (action === "move-rule-up") moveRule(-1);
+    else if (action === "move-rule-down") moveRule(1);
+    else if (action === "add-condition") addRuleCondition(button.dataset.nodePath || "");
+    else if (action === "add-condition-group") addRuleCondition(button.dataset.nodePath || "", true);
+    else if (action === "delete-condition") deleteRuleCondition(button.dataset.nodePath || "");
+    else if (action === "replace-legacy-condition") editRuleStructure(() => replaceRuleNode(button.dataset.nodePath || "", defaultRuleCondition()));
+    else if (action === "apply-rule-template") applyRuleTemplate($("#ruleTemplate").value);
+    else if (action === "add-rule-effect") addRuleEffect();
+    else if (action === "delete-rule-effect") deleteRuleEffect(Number(button.dataset.index));
     else if (action === "new-mode") createMode();
     else if (action === "duplicate-mode") duplicateMode();
     else if (action === "delete-mode") deleteMode();
@@ -6336,7 +6502,10 @@
   }
 
   function createRule() {
-    rules().push({ source: "cdm", token: "tsat", condition: "set", criteria: [{ source: "cdm", token: "tsat", condition: "set" }], tag_type: "departure", status: "any", statuses: RULE_STATUSES.slice(), detail: "normal", text_color: hexToColor("#ffffff") });
+    if (rules().length >= RULE_LIMITS.rules) { showToast("Use at most 256 rules per profile", "error"); return; }
+    activeProfile().rules.version = 2;
+    rules().push({ enabled: true, stop_processing: false, when: { all: [defaultRuleCondition()] },
+      effects: [defaultRuleEffect()], tag_type: "departure", statuses: RULE_STATUSES.slice(), detail: "any" });
     state.ui.selectedRuleIndex = rules().length - 1;
     drafts.rule = null;
     clearUnappliedEditorSection($("#ruleName"));
@@ -6345,7 +6514,7 @@
   }
   function duplicateRule() {
     const item = rules()[state.ui.selectedRuleIndex];
-    if (!item) return;
+    if (!item || rules().length >= RULE_LIMITS.rules) return;
     const copy = clone(item);
     copy.name = `${ruleLabel(item, state.ui.selectedRuleIndex)} copy`;
     rules().splice(state.ui.selectedRuleIndex + 1, 0, copy);
@@ -6364,13 +6533,77 @@
     markDirty("Rule deleted", ["profiles"]);
     renderRules();
   }
-  function deleteRuleCondition(index) {
-    captureRuleDraft();
-    if (!drafts.rule) return;
-    drafts.rule.data.criteria.splice(index, 1);
-    if (!drafts.rule.data.criteria.length) drafts.rule.data.criteria.push({ source: "cdm", token: "", condition: "" });
+  function moveRule(direction) {
+    const items = rules(), index = state.ui.selectedRuleIndex, next = index + direction;
+    if (next < 0 || next >= items.length || !applyRule({ render: false })) return;
+    [items[index], items[next]] = [items[next], items[index]];
+    state.ui.selectedRuleIndex = next;
+    drafts.rule = null;
+    clearUnappliedEditorSection($("#ruleName"));
+    markDirty("Rule order updated", ["profiles"]);
+    renderRules();
+  }
+  function editRuleStructure(edit) {
+    if (!captureRuleDraft()) return;
+    edit(drafts.rule.data);
     renderRuleEditor();
+    markEditorSectionUnapplied($("#ruleName"));
     applyRule({ render: false });
+  }
+  function ruleNodeCount(node) {
+    if (!node || typeof node !== "object") return 0;
+    if (node.not) return 1 + ruleNodeCount(node.not);
+    return 1 + (node.all || node.any || []).reduce((count, child) => count + ruleNodeCount(child), 0);
+  }
+  function addRuleCondition(path, group = false) {
+    if (!captureRuleDraft()) return;
+    const node = ruleNodeAtPath(drafts.rule.data.when, path), key = node?.all ? "all" : node?.any ? "any" : "";
+    const depth = String(path || "").split("/").filter(part => ["all", "any", "not"].includes(part)).length + 1;
+    if (!path && node && !["all", "any", "not"].some(member => Object.hasOwn(node, member))) {
+      // A root leaf remains unchanged until the user explicitly asks to add
+      // another condition. Count the new ALL wrapper toward both limits.
+      const newNode = group ? { any: [defaultRuleCondition()] } : defaultRuleCondition();
+      if (ruleNodeCount(node) + 1 + ruleNodeCount(newNode) > RULE_LIMITS.nodes || (group ? 3 : 2) > RULE_LIMITS.depth) return;
+      editRuleStructure(rule => { rule.when = { all: [node, newNode] }; });
+      return;
+    }
+    if (!key) return;
+    if (ruleNodeCount(drafts.rule.data.when) + (group ? 2 : 1) > RULE_LIMITS.nodes ||
+        depth + (group ? 2 : 1) > RULE_LIMITS.depth) { showToast("Condition nesting or node limit reached", "error"); return; }
+    editRuleStructure(() => node[key].push(group ? { any: [defaultRuleCondition()] } : defaultRuleCondition()));
+  }
+  function deleteRuleCondition(path) {
+    editRuleStructure(() => {
+      if (!path) { drafts.rule.data.when = defaultRuleCondition(); return; }
+      const parts = path.split("/").filter(Boolean), key = parts.pop();
+      const parent = ruleNodeAtPath(drafts.rule.data.when, parts.join("/"));
+      if (Array.isArray(parent)) parent.splice(Number(key), 1);
+      else if (parent && key === "not") parent.not = defaultRuleCondition();
+    });
+  }
+  function changeRuleGroup(path, operator) {
+    editRuleStructure(() => {
+      const node = ruleNodeAtPath(drafts.rule.data.when, path);
+      const children = node?.all || node?.any || (node?.not ? [node.not] : [defaultRuleCondition()]);
+      replaceRuleNode(path, operator === "not" ? { not: children.length === 1 ? children[0] : { all: children } } : { [operator]: children });
+    });
+  }
+  function applyRuleTemplate(name) {
+    const templates = {
+      tobt: { all: [{ field: "cdm.tobt", op: "between", min: -5, max: 5 }] },
+      "sid-runway": { all: [{ field: "flight.sid", op: "in", values: ["SID1A", "SID2B"] }, { field: "flight.deprwy", op: "in", values: ["26R", "27L"] }] },
+      "holding-runway": { all: [{ field: "flight.holdingpoint", op: "equals", value: "N4" }, { field: "flight.deprwy", op: "equals", value: "26R" }] },
+      scratchpad: { all: [{ field: "flight.scratchpad", op: "equals", value: "READY" }] }
+    };
+    if (!Object.hasOwn(templates, name)) return;
+    editRuleStructure(rule => { rule.when = clone(templates[name]); });
+  }
+  function addRuleEffect() {
+    if ((drafts.rule?.data?.effects || []).length >= RULE_LIMITS.effects) return;
+    editRuleStructure(rule => rule.effects.push(defaultRuleEffect()));
+  }
+  function deleteRuleEffect(index) {
+    editRuleStructure(rule => { rule.effects.splice(index, 1); });
   }
 
   function createMode() {

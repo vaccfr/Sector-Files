@@ -201,7 +201,10 @@
 <button class="ui-button ui-button--icon" aria-label="New rule" data-action="new-rule" title="New rule" type="button"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></button>
 <button class="ui-button ui-button--icon" aria-label="Duplicate rule" data-action="duplicate-rule" title="Duplicate rule" type="button"><svg aria-hidden="true" viewBox="0 0 24 24"><rect height="12" rx="1" width="12" x="8" y="4"/><path d="M16 16v3a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1h3"/></svg></button>
 <button class="ui-button ui-button--icon ui-button--destructive" aria-label="Delete rule" data-action="delete-rule" title="Delete rule" type="button"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M4 7h16M9 7V4h6v3M7 7l1 13h8l1-13M10 10v7M14 10v7"/></svg></button>
+<button class="ui-button ui-button--icon" aria-label="Move rule up" data-action="move-rule-up" title="Move rule up" type="button">↑</button>
+<button class="ui-button ui-button--icon" aria-label="Move rule down" data-action="move-rule-down" title="Move rule down" type="button">↓</button>
 </div>
+<p class="rule-help rule-order-help">Later matching rules override earlier effects. Stop processing ends the evaluation at this rule.</p>
 </aside>
 <section class="panel detail-panel">
 <div class="panel-title"><span id="ruleFormCaption">Rule</span><span class="mini-tools editor-copy-tools"><button class="ui-button ui-button--compact ui-button--wide" data-action="copy-rule" type="button">Copy</button><button class="ui-button ui-button--compact ui-button--wide" data-action="paste-rule" type="button">Paste</button></span></div>
@@ -209,7 +212,7 @@
 <div class="rule-editor-empty" id="ruleEditorEmpty">
 <div class="rule-editor-empty-content">
 <strong>No rule selected</strong>
-<span>Create a rule before editing its match conditions and colors.</span>
+<span>Create a rule to combine conditions and choose its effects.</span>
 <button class="ui-button ui-button--primary" data-action="new-rule" type="button">Create rule</button>
 </div>
 </div>
@@ -218,6 +221,8 @@
 <fieldset class="compact-group editor-section-card rule-identity-group">
 <legend>Identity</legend>
 <label class="field"><span>Name</span><input id="ruleName" placeholder="Optional" type="text"/></label>
+<label class="check-field"><input id="ruleEnabled" type="checkbox"/><span>Enabled</span></label>
+<label class="check-field"><input id="ruleStopProcessing" type="checkbox"/><span>Stop processing after match</span></label>
 </fieldset>
 <fieldset class="compact-group rule-scope-group">
 <legend>Applies to</legend>
@@ -235,19 +240,18 @@
 </fieldset>
 </div>
 <fieldset class="compact-group conditions-group">
-<legend>Match all conditions</legend>
-<div aria-hidden="true" class="criteria-header"><span>Source</span><span>Field</span><span>Match</span><span>Values</span><span></span></div>
+<legend>Conditions</legend>
+<div class="rule-template-tools"><select aria-label="Condition template" id="ruleTemplate"><option value="tobt">TOBT −5 to +5 min</option><option value="sid-runway">SID + runway lists</option><option value="holding-runway">Holding point + runway</option><option value="scratchpad">Exact scratchpad</option></select><button class="ui-button ui-button--compact" data-action="apply-rule-template" type="button">Use template</button></div>
+<p class="rule-help">Templates replace conditions only. Time offsets are now minus the UTC event time: −5 is 5 minutes before, +5 is 5 minutes after.</p>
 <div class="criteria-list" id="criteriaList"></div>
-<button class="ui-button inline-add" data-action="add-condition" type="button">Add condition</button>
 </fieldset>
 <fieldset class="compact-group output-group">
-<legend>Color overrides</legend>
-<div class="rule-color-grid">
-<div class="rule-color-row"><label class="check-field"><input id="ruleUseTargetColor" type="checkbox"/><span>Target</span></label><input id="ruleTargetColor" type="text"/><label class="mini-color-swatch"><input id="ruleTargetPicker" type="color"/></label></div>
-<div class="rule-color-row"><label class="check-field"><input id="ruleUseTagColor" type="checkbox"/><span>Tag</span></label><input id="ruleTagColor" type="text"/><label class="mini-color-swatch"><input id="ruleTagPicker" type="color"/></label></div>
-<div class="rule-color-row"><label class="check-field"><input id="ruleUseTextColor" type="checkbox"/><span>Text</span></label><input id="ruleTextColor" type="text"/><label class="mini-color-swatch"><input id="ruleTextPicker" type="color"/></label></div>
-</div>
+<legend>Effects</legend>
+<p class="rule-help">Effects change appearance only. Tag detail applies to tag effects; aircraft icon color is shared across views. Field blink gently dims its text, never hides the aircraft.</p>
+<div class="rule-effects-list" id="ruleEffectsList"></div>
+<button class="ui-button inline-add" data-action="add-rule-effect" type="button">Add effect</button>
 </fieldset>
+<p class="rule-validation-message" hidden id="ruleValidationMessage" role="status" aria-live="polite"></p>
 </div>
 </div>
 </section>
@@ -332,6 +336,7 @@
 <button aria-controls="avisoPanelText" class="ui-button ui-button--tab active" data-aviso-view="text" role="tab" type="button">Text</button>
 </nav>
 <div aria-label="AVISO color palette" class="ui-toggle-group aviso-palette-control aviso-toolbar-palette" role="group"><button class="ui-button ui-button--toggle" data-action="set-aviso-palette" data-aviso-color-palette="dark" type="button">Dark</button><button class="ui-button ui-button--toggle" data-action="set-aviso-palette" data-aviso-color-palette="light" type="button">Light</button><button class="ui-button ui-button--toggle" data-action="set-aviso-palette" data-aviso-color-palette="real" type="button">Real</button></div>
+<button class="ui-button ui-button--compact" data-action="apply-aviso-all" type="button" title="Apply changed geometry, text and palette settings to all terrains">Apply to all terrains</button>
 </div>
 <div class="aviso-view-stack">
 <section class="aviso-view" data-aviso-view-panel="geometry" id="avisoPanelGeometry" role="tabpanel">
