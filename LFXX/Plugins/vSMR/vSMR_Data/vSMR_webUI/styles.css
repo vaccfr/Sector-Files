@@ -1995,10 +1995,6 @@ input[type="range"]:disabled {
 
 .mode-detail > .dense-form { overflow: visible; }
 
-.conditions-group {
-  margin-block: var(--ui-gap);
-}
-
 .rule-editor-form {
   display: grid;
   align-content: start;
@@ -2008,12 +2004,16 @@ input[type="range"]:disabled {
   display: grid;
   grid-template-columns: minmax(150px, .55fr) minmax(280px, 1.45fr);
   gap: var(--ui-gap);
-  margin: var(--ui-gap) var(--ui-gap) 0;
+  margin: var(--ui-gap) var(--ui-space-4) 0;
 }
 
 .rule-editor-summary-grid .compact-group { margin: 0; }
 
 .rule-editor-summary-grid .dense-form { padding: 0; }
+
+.rule-status-field > span { display: flex; align-items: center; gap: var(--ui-space-2); }
+
+.rule-legacy-tag-scope { color: var(--ui-muted-text); font-size: var(--ui-font-size-compact); white-space: nowrap; }
 
 .rule-editor-empty {
   height: 100%;
@@ -2048,8 +2048,11 @@ input[type="range"]:disabled {
 .criterion-row {
   display: grid;
   grid-template-columns: minmax(0, 1.4fr) minmax(0, .9fr) minmax(0, 1fr) 22px;
-  gap: 3px;
-  border-color: var(--ui-inner-border);
+  gap: var(--ui-space-2);
+  align-items: center;
+  padding: var(--ui-space-2);
+  border: 1px solid var(--ui-inner-border);
+  border-radius: var(--ui-control-radius);
   background: var(--ui-card-bg);
 }
 
@@ -2074,12 +2077,14 @@ input[type="range"]:disabled {
 
 .rule-group-tools > select { min-width: 0; flex: 1 1 145px; }
 
+.rule-group-tools > .ui-button { --ui-button-height: var(--ui-control-height); }
+
 .rule-group-children {
   min-width: 0;
   display: grid;
   gap: var(--ui-space-2);
   border-left: 1px solid var(--ui-inner-border);
-  padding-left: var(--ui-space-2);
+  padding-left: var(--ui-space-3);
 }
 
 .rule-condition-value { min-width: 0; }
@@ -2095,7 +2100,7 @@ input[type="range"]:disabled {
 
 .rule-range-values > input { width: 100%; min-width: 0; }
 
-.rule-no-value { display: block; color: var(--ui-muted-text); padding-block: 4px; }
+.rule-no-value { display: block; color: var(--ui-muted-text); text-align: center; }
 
 .rule-legacy-condition {
   grid-template-columns: minmax(0, 1fr) auto 22px;
@@ -2106,21 +2111,35 @@ input[type="range"]:disabled {
 
 .rule-legacy-condition small { color: var(--ui-muted-text); }
 
-.rule-template-tools { display: flex; gap: var(--ui-space-2); }
+.rule-template-tools { display: flex; gap: var(--ui-space-2); align-items: center; }
 
 .rule-template-tools > select { min-width: 0; flex: 1; }
 
-.rule-help { color: var(--ui-muted-text); font-size: var(--ui-font-size-compact); line-height: 1.4; margin: 5px 0; }
+.rule-template-tools > .ui-button { --ui-button-height: var(--ui-control-height); min-width: 90px; }
 
-.rule-order-help { padding: 0 var(--ui-space-3) var(--ui-space-3); }
+.rule-section-count {
+  min-width: 16px;
+  padding: 0 var(--ui-space-1);
+  border: 1px solid var(--ui-divider);
+  border-radius: 8px;
+  color: var(--ui-muted-text);
+  font: 9px/13px var(--mono);
+  text-align: center;
+}
+
+.rule-help { color: var(--ui-muted-text); font-size: var(--ui-font-size-compact); line-height: 1.4; margin: 5px 0; }
 
 .rule-effects-list { display: grid; gap: var(--ui-space-2); }
 
 .rule-effect-row {
   display: grid;
   grid-template-columns: minmax(0, 1.1fr) minmax(0, .8fr) minmax(0, 1.3fr) 22px;
-  gap: 3px;
+  gap: var(--ui-space-2);
   align-items: center;
+  padding: var(--ui-space-2);
+  border: 1px solid var(--ui-inner-border);
+  border-radius: var(--ui-control-radius);
+  background: var(--ui-card-bg);
 }
 
 .rule-effect-row > select { min-width: 0; }
@@ -2134,7 +2153,7 @@ input[type="range"]:disabled {
 
 .rule-effect-color > input { min-width: 0; width: 100%; }
 
-.rule-effect-scope { color: var(--ui-muted-text); overflow-wrap: anywhere; }
+.rule-effect-scope { color: var(--ui-muted-text); text-align: center; }
 
 .rule-validation-message { color: var(--danger, #d78779); margin: var(--ui-space-3); line-height: 1.4; }
 
@@ -2200,7 +2219,7 @@ input[type="range"]:disabled {
 .rules-layout { grid-template-columns: var(--ui-master-width) minmax(0, 1fr); }
 
 .rules-layout > .master-panel.manager-list-panel {
-  grid-template-rows: var(--ui-panel-title-height) minmax(0, 1fr) 34px auto;
+  grid-template-rows: var(--ui-panel-title-height) minmax(0, 1fr) 34px;
 }
 
 .rules-layout .master-list-actions { grid-template-columns: repeat(5, minmax(0, 1fr)); }
@@ -2215,7 +2234,9 @@ input[type="range"]:disabled {
 
 .profile-detail-scroll { padding: 0; }
 
-.output-group { margin-top: var(--ui-gap); }
+.rule-editor-form > .compact-group { margin: var(--ui-space-3) var(--ui-space-4) 0; }
+
+.rule-editor-form > .output-group { margin-bottom: var(--ui-space-4); }
 
 html.host-mode body { background: var(--bg); }
 
@@ -2247,10 +2268,7 @@ html.host-mode .control-window.hidden {
   box-shadow: none;
 }
 
-.rule-detail-scroll .compact-group {
-  margin-block: var(--ui-gap);
-  padding-bottom: 5px;
-}
+.rule-detail-scroll .compact-group { padding-bottom: var(--ui-space-3); }
 
 .rule-detail-scroll .rule-editor-summary-grid .compact-group { margin: 0; }
 
@@ -2763,6 +2781,19 @@ html.host-mode .control-window.hidden {
   flex: 0 0 var(--aviso-tab-width, 112px);
 }
 
+.aviso-toolbar .aviso-subtabs { gap: 0; }
+
+.aviso-toolbar .aviso-subtabs .ui-button--tab:first-child {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.aviso-toolbar .aviso-subtabs .ui-button--tab + .ui-button--tab {
+  margin-left: -1px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
 .aviso-color-editor-body {
   min-width: 0;
   margin-top: 7px;
@@ -2882,7 +2913,29 @@ html.host-mode .control-window.hidden {
 }
 
 .aviso-toolbar {
-  grid-template-columns: minmax(0, 1fr) auto auto;
+  grid-template-columns: minmax(0, 1fr) auto;
+}
+
+.aviso-toolbar .ui-button {
+  font-size: var(--ui-font-size);
+}
+
+.aviso-apply-all {
+  height: var(--ui-control-height);
+  padding-inline: 8px;
+}
+
+.aviso-toolbar-palette-actions {
+  display: flex;
+  align-items: center;
+  justify-self: end;
+  gap: 8px;
+}
+
+.aviso-toolbar-separator {
+  color: var(--ui-divider);
+  font-size: 14px;
+  line-height: 1;
 }
 
 .aviso-toolbar-palette {
@@ -3911,7 +3964,7 @@ html.host-mode .runtime-menu { display: none !important; }
 /* source: responsive-polish.css */
 /* Responsive adaptations only; base component rules live with their owners. */
 
-@container rules (max-width: 480px) {
+@container rules (max-width: 440px) {
   .rule-editor-summary-grid { grid-template-columns: minmax(0, 1fr); }
 }
 

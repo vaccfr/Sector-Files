@@ -764,7 +764,6 @@
         avisoFile: "vSMR_DATA\\AVISO\\LFPG.geojson",
         aliasFile: "C:\\EuroScope\\Alias\\alias.txt",
         resolutionPreset: preferred?.data?.targets?.small_icon_boost_resolution_preset || "1080p",
-        showFps: true,
         rdfEnabled: true,
         uiColorTheme: "night",
         weatherAllAirports: true,
@@ -3164,6 +3163,10 @@
   function renderRuleStatusSelector(rule, disabled = false) {
     const selected = new Set(selectedRuleStatuses(rule));
     const statuses = [...RULE_STATUSES, ...RULE_COMPAT_STATUSES.filter(status => selected.has(status))];
+    const tagScope = ruleCanonicalName(rule?.tag_type || "any");
+    const legacyScope = $("#ruleLegacyTagScope");
+    legacyScope.textContent = tagScope === "any" ? "" : `${humanize(tagScope)} tag`;
+    legacyScope.hidden = tagScope === "any";
     $("#ruleStatusOptions").innerHTML = statuses.map(status => `<label role="option" aria-selected="${selected.has(status)}"><input type="checkbox" data-rule-status="${status}" ${selected.has(status) ? "checked" : ""}><span>${escapeHtml(RULE_STATUS_LABELS[status] || humanize(status))}</span></label>`).join("");
     $("#ruleStatusButton").disabled = disabled;
     $("#ruleStatusAll").disabled = disabled;
@@ -3196,7 +3199,7 @@
   }
   function ruleConditionValueHtml(node) {
     const field = ruleFieldDefinition(node.field);
-    if (["set", "missing"].includes(node.op)) return '<span class="rule-no-value">No value needed</span>';
+    if (["set", "missing"].includes(node.op)) return '<span class="rule-no-value" aria-label="No value required">—</span>';
     if (node.op === "between") return `<div class="rule-range-values"><input aria-label="Minimum value" data-field="min" type="number" step="any" value="${escapeHtml(node.min ?? "")}" placeholder="−5"/><span>to</span><input aria-label="Maximum value" data-field="max" type="number" step="any" value="${escapeHtml(node.max ?? "")}" placeholder="+5"/></div>`;
     if (["in", "not_in"].includes(node.op)) return `<input aria-label="Rule match values" data-field="values" type="text" spellcheck="false" maxlength="16384" value="${escapeHtml((node.values || []).join(", "))}" placeholder="Value 1, Value 2"/>`;
     return `<input aria-label="Rule comparison value" data-field="value" type="${field?.numeric ? "number" : "text"}" ${field?.numeric ? 'step="any"' : 'maxlength="4096"'} value="${escapeHtml(node.value ?? "")}" placeholder="${field?.time ? "Offset in minutes" : "Exact value"}"/>`;
@@ -3215,11 +3218,13 @@
   }
   function renderRuleEffect(effect, index) {
     const colorEffect = effect.type?.endsWith("_color") || effect.type === "field_background", color = colorToHex(effect.color, "#ffffff");
-    return `<div class="rule-effect-row" data-effect-index="${index}"><select aria-label="Effect type" data-field="effect-type">${ruleSelectOptions(Object.keys(RULE_EFFECT_LABELS), effect.type, RULE_EFFECT_LABELS)}</select>${effect.type?.startsWith("field_") ? `<select aria-label="Effect tag field" data-field="effect-field">${ruleSelectOptions(RULE_EFFECT_FIELDS, effect.field)}</select>` : '<span class="rule-effect-scope">Whole target / tag</span>'}${colorEffect ? `<div class="rule-effect-color"><input aria-label="Effect color" class="rule-color-value" data-field="effect-color" type="text" value="${color.toUpperCase()}" maxlength="7"/><label class="mini-color-swatch" style="--swatch-color:${color}"><input aria-label="Pick effect color" data-field="effect-picker" type="color" value="${color}"/></label><input aria-label="Effect opacity (0 to 255)" data-field="effect-alpha" type="number" min="0" max="255" step="1" value="${effect.color?.a ?? 255}" title="Opacity: 0 transparent, 255 opaque"/></div>` : `<label class="check-field"><input aria-label="Effect enabled value" data-field="effect-value" type="checkbox" ${effect.value !== false ? "checked" : ""}/><span>On</span></label>`}<button class="ui-button ui-button--compact ui-button--destructive" data-action="delete-rule-effect" data-index="${index}" type="button" aria-label="Delete effect">×</button></div>`;
+    return `<div class="rule-effect-row" data-effect-index="${index}"><select aria-label="Effect type" data-field="effect-type">${ruleSelectOptions(Object.keys(RULE_EFFECT_LABELS), effect.type, RULE_EFFECT_LABELS)}</select>${effect.type?.startsWith("field_") ? `<select aria-label="Effect tag field" data-field="effect-field">${ruleSelectOptions(RULE_EFFECT_FIELDS, effect.field)}</select>` : '<span class="rule-effect-scope" aria-label="Whole target">—</span>'}${colorEffect ? `<div class="rule-effect-color"><input aria-label="Effect color" class="rule-color-value" data-field="effect-color" type="text" value="${color.toUpperCase()}" maxlength="7"/><label class="mini-color-swatch" style="--swatch-color:${color}"><input aria-label="Pick effect color" data-field="effect-picker" type="color" value="${color}"/></label><input aria-label="Effect opacity (0 to 255)" data-field="effect-alpha" type="number" min="0" max="255" step="1" value="${effect.color?.a ?? 255}" title="Opacity: 0 transparent, 255 opaque"/></div>` : `<label class="check-field"><input aria-label="Effect enabled value" data-field="effect-value" type="checkbox" ${effect.value !== false ? "checked" : ""}/><span>On</span></label>`}<button class="ui-button ui-button--compact ui-button--destructive" data-action="delete-rule-effect" data-index="${index}" type="button" aria-label="Delete effect">×</button></div>`;
   }
   function renderRuleEditor() {
     const item = rules()[state.ui.selectedRuleIndex], disabled = !item;
     $("#ruleFormCaption").textContent = item ? ruleLabel(item, state.ui.selectedRuleIndex) : "Rule";
+    $("#ruleConditionCount").textContent = "0";
+    $("#ruleEffectCount").textContent = "0";
     $("#ruleEditorEmpty").hidden = !disabled;
     $("#ruleEditorForm").hidden = disabled;
     if (!item) {
@@ -3260,8 +3265,9 @@
       $("#criteriaList").insertAdjacentHTML("beforeend", '<div class="rule-group-tools"><button class="ui-button ui-button--compact" data-action="add-condition" data-node-path="" type="button">+ Condition</button><button class="ui-button ui-button--compact" data-action="add-condition-group" data-node-path="" type="button">+ Group</button></div>');
     }
     $("#ruleEffectsList").innerHTML = (rule.effects || []).map(renderRuleEffect).join("");
+    $("#ruleConditionCount").textContent = String(ruleConditionCount(rule.when));
+    $("#ruleEffectCount").textContent = String((rule.effects || []).length);
     $('[data-action="add-rule-effect"]').disabled = (rule.effects || []).length >= RULE_LIMITS.effects;
-    ensureSelectValue($("#ruleTagType"), rule.tag_type || "any");
     renderRuleStatusSelector(rule);
     ensureSelectValue($("#ruleDetail"), rule.detail || "any");
     updateRuleValidationMessage(validateRuleEditorData(rule));
@@ -3296,7 +3302,6 @@
     if (name) rule.name = name; else delete rule.name;
     rule.enabled = $("#ruleEnabled").checked;
     rule.stop_processing = $("#ruleStopProcessing").checked;
-    rule.tag_type = $("#ruleTagType").value;
     rule.statuses = checkedRuleStatuses();
     delete rule.status;
     rule.detail = $("#ruleDetail").value;
@@ -4984,7 +4989,6 @@
     $("#settingsAvisoFile").title = settings.avisoFile;
     $("#settingsAliasFile").title = aliasFile || "No alias file found";
     ensureSelectValue($("#settingsResolutionPreset"), settings.resolutionPreset || "1080p");
-    $("#settingsShowFps").checked = settings.showFps !== false;
     $("#settingsShowNorthIndicator").checked = settings.showNorthIndicator !== false;
     $("#settingsWeatherAirports").value = settings.weatherAllAirports !== false ? "all" : "single";
     $("#settingsRdfEnabled").checked = settings.rdfEnabled !== false;
@@ -5006,7 +5010,6 @@
       profileFile: $("#settingsProfileFile").value,
       avisoFile: $("#settingsAvisoFile").value,
       resolutionPreset: $("#settingsResolutionPreset").value || "1080p",
-      showFps: $("#settingsShowFps").checked,
       showNorthIndicator: $("#settingsShowNorthIndicator").checked,
       weatherAllAirports: $("#settingsWeatherAirports").value === "all",
       rdfEnabled: $("#settingsRdfEnabled").checked
@@ -6505,7 +6508,7 @@
     if (rules().length >= RULE_LIMITS.rules) { showToast("Use at most 256 rules per profile", "error"); return; }
     activeProfile().rules.version = 2;
     rules().push({ enabled: true, stop_processing: false, when: { all: [defaultRuleCondition()] },
-      effects: [defaultRuleEffect()], tag_type: "departure", statuses: RULE_STATUSES.slice(), detail: "any" });
+      effects: [defaultRuleEffect()], tag_type: "any", statuses: RULE_STATUSES.slice(), detail: "any" });
     state.ui.selectedRuleIndex = rules().length - 1;
     drafts.rule = null;
     clearUnappliedEditorSection($("#ruleName"));

@@ -201,10 +201,9 @@
 <button class="ui-button ui-button--icon" aria-label="New rule" data-action="new-rule" title="New rule" type="button"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></button>
 <button class="ui-button ui-button--icon" aria-label="Duplicate rule" data-action="duplicate-rule" title="Duplicate rule" type="button"><svg aria-hidden="true" viewBox="0 0 24 24"><rect height="12" rx="1" width="12" x="8" y="4"/><path d="M16 16v3a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1h3"/></svg></button>
 <button class="ui-button ui-button--icon ui-button--destructive" aria-label="Delete rule" data-action="delete-rule" title="Delete rule" type="button"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M4 7h16M9 7V4h6v3M7 7l1 13h8l1-13M10 10v7M14 10v7"/></svg></button>
-<button class="ui-button ui-button--icon" aria-label="Move rule up" data-action="move-rule-up" title="Move rule up" type="button">↑</button>
-<button class="ui-button ui-button--icon" aria-label="Move rule down" data-action="move-rule-down" title="Move rule down" type="button">↓</button>
+<button class="ui-button ui-button--icon" aria-label="Move rule up" data-action="move-rule-up" title="Move rule up (evaluated earlier)" type="button">↑</button>
+<button class="ui-button ui-button--icon" aria-label="Move rule down" data-action="move-rule-down" title="Move rule down (evaluated later)" type="button">↓</button>
 </div>
-<p class="rule-help rule-order-help">Later matching rules override earlier effects. Stop processing ends the evaluation at this rule.</p>
 </aside>
 <section class="panel detail-panel">
 <div class="panel-title"><span id="ruleFormCaption">Rule</span><span class="mini-tools editor-copy-tools"><button class="ui-button ui-button--compact ui-button--wide" data-action="copy-rule" type="button">Copy</button><button class="ui-button ui-button--compact ui-button--wide" data-action="paste-rule" type="button">Paste</button></span></div>
@@ -222,13 +221,12 @@
 <legend>Identity</legend>
 <label class="field"><span>Name</span><input id="ruleName" placeholder="Optional" type="text"/></label>
 <label class="check-field"><input id="ruleEnabled" type="checkbox"/><span>Enabled</span></label>
-<label class="check-field"><input id="ruleStopProcessing" type="checkbox"/><span>Stop processing after match</span></label>
+<label class="check-field" title="Skip later rules when this rule matches"><input id="ruleStopProcessing" type="checkbox"/><span>Stop after match</span></label>
 </fieldset>
 <fieldset class="compact-group rule-scope-group">
 <legend>Applies to</legend>
-<div class="dense-form three-cols compact-rule-scope">
-<label class="field"><span>Tag</span><select id="ruleTagType"><option>any</option><option>departure</option><option>arrival</option><option>airborne</option><option>uncorrelated</option></select></label>
-<div class="field rule-status-field"><span>Status</span><div class="checkbox-dropdown" id="ruleStatusDropdown">
+<div class="dense-form two-cols compact-rule-scope">
+<div class="field rule-status-field"><span>Status<small class="rule-legacy-tag-scope" hidden id="ruleLegacyTagScope" title="Existing tag scope retained for this rule"></small></span><div class="checkbox-dropdown" id="ruleStatusDropdown">
 <button aria-expanded="false" aria-haspopup="listbox" class="ui-field-control checkbox-dropdown-button" id="ruleStatusButton" type="button">All statuses</button>
 <div aria-multiselectable="true" class="checkbox-dropdown-menu" hidden="" id="ruleStatusMenu" role="listbox">
 <label class="checkbox-dropdown-all"><input id="ruleStatusAll" type="checkbox"/><span>All statuses</span></label>
@@ -239,17 +237,17 @@
 </div>
 </fieldset>
 </div>
+<fieldset class="compact-group rule-templates-group">
+<legend>Templates</legend>
+<div class="rule-template-tools"><select aria-label="Condition template" id="ruleTemplate" title="Time offsets use now minus the UTC event time: negative before, positive after"><option value="tobt">TOBT −5 to +5 min</option><option value="sid-runway">SID + runway lists</option><option value="holding-runway">Holding point + runway</option><option value="scratchpad">Exact scratchpad</option></select><button class="ui-button ui-button--compact" data-action="apply-rule-template" title="Replace the current conditions with this template" type="button">Apply template</button></div>
+</fieldset>
 <fieldset class="compact-group conditions-group">
-<legend>Conditions</legend>
-<div class="rule-template-tools"><select aria-label="Condition template" id="ruleTemplate"><option value="tobt">TOBT −5 to +5 min</option><option value="sid-runway">SID + runway lists</option><option value="holding-runway">Holding point + runway</option><option value="scratchpad">Exact scratchpad</option></select><button class="ui-button ui-button--compact" data-action="apply-rule-template" type="button">Use template</button></div>
-<p class="rule-help">Templates replace conditions only. Time offsets are now minus the UTC event time: −5 is 5 minutes before, +5 is 5 minutes after.</p>
+<legend><span>Conditions</span><span class="rule-section-count" id="ruleConditionCount">0</span></legend>
 <div class="criteria-list" id="criteriaList"></div>
 </fieldset>
 <fieldset class="compact-group output-group">
-<legend>Effects</legend>
-<p class="rule-help">Effects change appearance only. Tag detail applies to tag effects; aircraft icon color is shared across views. Field blink gently dims its text, never hides the aircraft.</p>
+<legend><span>Effects</span><span class="rule-section-count" id="ruleEffectCount">0</span><span class="legend-tools"><button class="ui-button ui-button--compact" data-action="add-rule-effect" type="button">+ Add effect</button></span></legend>
 <div class="rule-effects-list" id="ruleEffectsList"></div>
-<button class="ui-button inline-add" data-action="add-rule-effect" type="button">Add effect</button>
 </fieldset>
 <p class="rule-validation-message" hidden id="ruleValidationMessage" role="status" aria-live="polite"></p>
 </div>
@@ -335,8 +333,7 @@
 <button aria-controls="avisoPanelGeometry" class="ui-button ui-button--tab" data-aviso-view="geometry" role="tab" type="button">Geometry</button>
 <button aria-controls="avisoPanelText" class="ui-button ui-button--tab active" data-aviso-view="text" role="tab" type="button">Text</button>
 </nav>
-<div aria-label="AVISO color palette" class="ui-toggle-group aviso-palette-control aviso-toolbar-palette" role="group"><button class="ui-button ui-button--toggle" data-action="set-aviso-palette" data-aviso-color-palette="dark" type="button">Dark</button><button class="ui-button ui-button--toggle" data-action="set-aviso-palette" data-aviso-color-palette="light" type="button">Light</button><button class="ui-button ui-button--toggle" data-action="set-aviso-palette" data-aviso-color-palette="real" type="button">Real</button></div>
-<button class="ui-button ui-button--compact" data-action="apply-aviso-all" type="button" title="Apply changed geometry, text and palette settings to all terrains">Apply to all terrains</button>
+<div class="aviso-toolbar-palette-actions"><button class="ui-button aviso-apply-all" data-action="apply-aviso-all" type="button" title="Apply changed geometry, text and palette settings to all terrains">Apply to all terrains</button><span aria-hidden="true" class="aviso-toolbar-separator">|</span><div aria-label="AVISO color palette" class="ui-toggle-group aviso-palette-control aviso-toolbar-palette" role="group"><button class="ui-button ui-button--toggle" data-action="set-aviso-palette" data-aviso-color-palette="dark" type="button">Dark</button><button class="ui-button ui-button--toggle" data-action="set-aviso-palette" data-aviso-color-palette="light" type="button">Light</button><button class="ui-button ui-button--toggle" data-action="set-aviso-palette" data-aviso-color-palette="real" type="button">Real</button></div></div>
 </div>
 <div class="aviso-view-stack">
 <section class="aviso-view" data-aviso-view-panel="geometry" id="avisoPanelGeometry" role="tabpanel">
@@ -486,7 +483,6 @@
 <div class="field settings-theme-field"><span>UI theme</span><div aria-label="UI theme" class="ui-toggle-group settings-theme-control" role="group"><button class="ui-button ui-button--toggle" data-action="set-ui-theme" data-ui-color-theme="night" type="button">Night</button><button class="ui-button ui-button--toggle" data-action="set-ui-theme" data-ui-color-theme="day" type="button">Day</button></div></div>
 <label class="field"><span>Resolution</span><select id="settingsResolutionPreset"><option>1080p</option><option>2k</option><option>4k</option></select></label>
 <label class="field" title="Uses the airports of all open AVISO views, including CoFrance insets. Arrows in the METAR title switch airport or page. Detail adapts to available space."><span>METAR airports</span><select id="settingsWeatherAirports"><option value="all">All open airports</option><option value="single">One airport at a time</option></select></label>
-<label class="check-field"><input id="settingsShowFps" type="checkbox"/><span>Show FPS</span></label>
 <label class="check-field" title="Show the compass when AVISO is rotated. Drag it to reposition it; the main compass stays below insets."><input id="settingsShowNorthIndicator" type="checkbox"/><span>North indicator (rotated AVISO)</span></label>
 <label class="check-field" title="Native vSMR RDF overlay driven by TrackAudio"><input id="settingsRdfEnabled" type="checkbox"/><span>Native RDF</span></label>
 </fieldset>
