@@ -3,10 +3,10 @@
     "product":  "vSMR",
     "version":  "2.0.1",
     "channel":  "stable",
-    "git_commit":  "cc4467ebeb0ed0008bdbb39274074955fb29b86d",
+    "git_commit":  "5eb46590f283293194a769ec859eb9612b24e127",
     "source_dirty":  false,
     "publishable":  true,
-    "built_utc":  "2026-10-14T19:09:52Z",
+    "built_utc":  "2026-10-15T19:09:09Z",
     "configuration":  "Release",
     "platform":  "Win32",
     "toolset":  "v145",
@@ -14,15 +14,15 @@
                     "version":  "2.0.1",
                     "abi":  1,
                     "relative_path":  "vSMR_Data/Runtime/vSMR.Runtime.dll",
-                    "size":  2421248,
-                    "sha256":  "1e6a8f064925bb8ab3dbdd6ea7e767faf214c4091372e0b1de31e0fd60b7f38d"
+                    "size":  2421760,
+                    "sha256":  "7b4cdd210d27a0376ed2677fbeb1c509a6f17d66a23b63ba257b580a95aad76e"
                 },
     "loader":  {
                    "version":  "1.3.0",
                    "runtime_abi":  1,
                    "relative_path":  "vSMR.dll",
                    "size":  760832,
-                   "sha256":  "79d12b0c38d3067f68b2fbcdfa9f223b70be38e9c3a613de8916152fe372e6a5"
+                   "sha256":  "8dd6446fb97e6268aeabf9374dcfb1c21410fdd5848de073798abce500c0599a"
                },
     "automatic_update":  {
                              "manifest_schema_version":  1,
