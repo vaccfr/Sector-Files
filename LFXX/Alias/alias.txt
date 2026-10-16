@@ -47,8 +47,6 @@
 
 
 ;*** 05 Clearance ***
-.cdm .msg $aircraft ***AUTOMATIC MESSAGE*** Hello! A-CDM procedures are in use! Enter and confirm your TOBT (time you expect to be ready for pushback) at: cdm.vatsim.fr This is MANDATORY for clearance but DOES NOT CONSTITUTE A CLEARANCE, you must still request it. Pushback may be requested from -5 min of your TSAT. If your TOBT is early or expired, please update and resubmit it. More info: vats.im/cdm-brief
-.cdmf .msg $aircraft ***MESSAGE AUTOMATIQUE*** Bonjour ! Les procédures A-CDM sont en vigueur : saisissez et confirmez votre TOBT (heure prévue de disponibilité au repoussage) sur cdm.vatsim.fr ; cette saisie est OBLIGATOIRE pour la clairance mais NE VAUT PAS CLAIRANCE (vous devez toujours la demander) ; le repoussage peut être demandé à partir de TSAT - 5 min ; si votre TOBT est anticipé ou expiré, veuillez le mettre à jour et le soumettre à nouveau ; infos : vats.im/cdm-brief.
 .exp .msg $aircraft Your TOBT has expired, please confirm your new TOBT at cdm.vatsim.fr as requested in the ATIS (mandatory for departure).
 .expf .msg $aircraft Votre TOBT a expiré, mettez à jour votre nouvelle TOBT sur cdm.vatsim.fr svp, comme indiqué dans l'ATIS (obligatoire pour les départs).
 .rrc Clearance, ready to copy?
