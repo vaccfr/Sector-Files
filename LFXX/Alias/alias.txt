@@ -47,8 +47,8 @@
 
 
 ;*** 05 Clearance ***
-.exp .msg $aircraft Your TOBT has expired, please confirm your new TOBT at cdm.vatsim.fr as requested in the ATIS (mandatory for departure).
-.expf .msg $aircraft Votre TOBT a expiré, mettez à jour votre nouvelle TOBT sur cdm.vatsim.fr svp, comme indiqué dans l'ATIS (obligatoire pour les départs).
+.exp .msg $aircraft Your TOBT has expired, please confirm your new TOBT at vats.im/vdgs as requested in the ATIS (mandatory for departure).
+.expf .msg $aircraft Votre TOBT a expiré, mettez à jour votre nouvelle TOBT sur vats.im/vdgs svp, comme indiqué dans l'ATIS (obligatoire pour les départs).
 .rrc Clearance, ready to copy?
 .rrcf Clairance, prêt à copier ?
 .ico Information $atiscode correct.
