@@ -31,5 +31,16 @@
 	<autoSetTobtFromEvSlot mode="false" />
 	<remarksOptionCtot mode="false" />
 	<loading text="...." />
-	<PrivateMessage text="LFXX OPS INFO // BONJOUR, PLEASE CHECK YOUR VDGS PANEL AT VATS.IM/VDGS AND SUBMIT YOUR TOBT FOR CDM AND ATFCM UPDATES. MERCI ! // END OF MSG" />
+	<PrivateMessage text="[LFXX ATFCM MSG] BONJOUR - PLEASE CHECK YOUR VDGS PANEL AT VATS.IM/VDGS AND SUBMIT YOUR TOBT FOR CDM AND ATFCM UPDATES. MERCI! - END OF MSG" />
+	<customRestricted url="" />
+	<ftpHost host="" />
+	<ftpUser user="" />
+	<ftpPassword password="" />
+	<sftpConnection mode="false" />
+	<disableTobtReqAfterAsrt mode="true" />
+	<nonCdmEarlyClearenceColor minutes="0" />
+	<AtfcmPrivateMessage
+		fls="[LFXX ATFCM MSG] BONJOUR - OFF-BLOCK TIME EXPIRED - {CALLSIGN} ({EOBT} - {TOBT}). PLEASE UPDATE YOUR OFF-BLOCK TIME. MERCI!"
+		slot="[LFXX ATFCM MSG] BONJOUR - SLOT ALLOCATION - {CALLSIGN} ({EOBT} - {TOBT}) CTOT:{CTOT} REGUL:{REGUL}. PLEASE MONITOR FOR UPDATES. MERCI!"
+	/>
 </CDM>
