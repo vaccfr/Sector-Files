@@ -49,7 +49,7 @@
     airarr_onrunway: "Arrival on runway"
   };
   const TAG_STATUS_ORDER = ["nofpl", "push", "stup", "taxi", "lnup", "depa", "airdep", "airdep_onrunway", "airarr", "airarr_onrunway"];
-  const COLOR_FAMILY_ORDER = ["Tags", "Targets", "RIMCAS", "SRW 1"];
+  const COLOR_FAMILY_ORDER = ["Tags", "Targets", "RIMCAS", "SRW"];
   const COLOR_SECTION_ORDER = ["Departure", "Arrival", "Uncorrelated", "Airborne", "General"];
   const TAG_STATUS_COLOR_KEYS = {
     departure: {
@@ -1767,7 +1767,7 @@
     groupsButton.setAttribute("aria-label", `Groups: ${visibleGroups} of ${groups.length || 0} visible`);
     profileButton.title = `Profile · ${profile?.name || "Profile"}`;
     profileButton.setAttribute("aria-label", `Profile: ${profile?.name || "Profile"}`);
-    insetButton.title = `Insets · AVISO ${insetState("aviso") ? "on" : "off"}, SRW1 ${insetState("srw1") ? "on" : "off"}, Weather ${insetState("weather") ? "on" : "off"}, Timer ${insetState("timer") ? "on" : "off"}${preset ? ` · ${preset.name}` : ""}`;
+    insetButton.title = `Insets · AVISO ${insetState("aviso") ? "on" : "off"}, SRW ${insetState("srw1") ? "on" : "off"}, Weather ${insetState("weather") ? "on" : "off"}, Timer ${insetState("timer") ? "on" : "off"}${preset ? ` · ${preset.name}` : ""}`;
     insetButton.setAttribute("aria-label", insetButton.title);
     insetButton.classList.toggle("active", anyInset);
     ["aviso", "srw1", "weather", "timer"].forEach(kind => {
@@ -1846,7 +1846,7 @@
       const store = airportAvisoPresetStore();
       const insetRows = [
         ["aviso", "AVISO inset"],
-        ["srw1", "SRW 1"],
+        ["srw1", "SRW"],
         ["weather", "Weather"],
         ["timer", "Timer"]
       ].map(([id, label]) => {
@@ -2158,7 +2158,7 @@
       return { family: "Targets", section, group: `Targets · ${section}` };
     }
     if (root === "rimcas") return { family: "RIMCAS", section: "", group: "RIMCAS" };
-    if (root === "approach_insets") return { family: "SRW 1", section: "", group: "SRW 1" };
+    if (root === "approach_insets") return { family: "SRW", section: "", group: "SRW" };
     const family = humanize(root);
     return { family, section: "", group: family };
   }

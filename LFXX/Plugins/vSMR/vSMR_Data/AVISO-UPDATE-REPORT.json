@@ -1,11 +1,11 @@
 {
     "schema_version":  1,
-    "release":  "2.0.0",
+    "release":  "2.0.2",
     "operation":  "release_update",
     "policy":  "all",
     "modified_file_policy":  "protect_setting",
     "protected_modified_files":  true,
-    "baseline_source":  "legacy_sha256sums",
+    "baseline_source":  "inventory",
     "updated":  [
                     "LFAC.geojson",
                     "LFAD.geojson",
@@ -118,6 +118,7 @@
                     "LFPM.geojson",
                     "LFPN.geojson",
                     "LFPO.geojson",
+                    "LFPO_Work.geojson",
                     "LFPT.geojson",
                     "LFPV.geojson",
                     "LFPX.geojson",
