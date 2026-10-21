@@ -22,7 +22,7 @@
 	<Debug mode="false" />
 	<FlowRestrictions url="" />
 	<vdgsFileType type="3"/>
-	<viffSystem url="https://api.viffsys.com" />
+	<viffSystem url="https://viffsys.up.railway.app" />
 	<Server mode="true" />
 	<Su_Wait mode="false" />
 	<flashingMode tobtLastMin="false" tsatFirstMin="true" tsatLastMin="true"/>
