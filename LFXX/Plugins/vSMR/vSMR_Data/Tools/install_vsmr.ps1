@@ -396,6 +396,12 @@ $stageDll = Join-Path $stageRoot "vSMR.dll"
 if (-not $preserveTopLevelLoader) { Copy-Item -LiteralPath $PackageDll -Destination $stageDll }
 
 if ($hadData -and -not $ReplaceUserData) {
+    # Let the layered loader import an existing legacy profile file on first
+    # launch when this installation has never had a user config.json.
+    if ((Test-Path -LiteralPath (Join-Path $destinationData 'vSMR_Profiles.json') -PathType Leaf) -and
+        -not (Test-Path -LiteralPath (Join-Path $destinationData 'config.json') -PathType Leaf)) {
+        Remove-Item -LiteralPath (Join-Path $stageData 'config.json') -Force
+    }
     $immutableNames = @(
         'vSMR_webUI', 'CrashReporter', 'Licenses', 'Runtime', 'Tools',
         'RELEASE-METADATA.json', 'SHA256SUMS.txt', 'INSTALLATION.json',
@@ -419,6 +425,17 @@ if ($hadData -and -not $ReplaceUserData) {
 Initialize-UserDataMerge $destinationData $stageData ([string]$releaseMetadata.version)
 $profilesName = 'vSMR_Profiles.json'
 $incomingProfiles = Join-Path $PackageData $profilesName
+if (-not (Test-Path -LiteralPath $incomingProfiles -PathType Leaf) -and $hadData -and -not $ReplaceUserData) {
+    $oldProfiles = Join-Path $destinationData $profilesName
+    $bundledLegacyDefaults = Join-Path $PackageData 'vSMR_webUI/defaults/vSMR_Profiles.json'
+    if ((Test-Path -LiteralPath (Join-Path $destinationData 'config.json') -PathType Leaf) -and
+        (Test-Path -LiteralPath $oldProfiles -PathType Leaf) -and
+        (Test-Path -LiteralPath $bundledLegacyDefaults -PathType Leaf) -and
+        (Get-FileSha256 $oldProfiles) -eq (Get-FileSha256 $bundledLegacyDefaults)) {
+        $stagedProfiles = Join-Path $stageData $profilesName
+        if (Test-Path -LiteralPath $stagedProfiles -PathType Leaf) { Remove-Item -LiteralPath $stagedProfiles -Force }
+    }
+}
 if (Test-Path -LiteralPath $incomingProfiles -PathType Leaf) {
     if ($hadData -and -not $ReplaceUserData) {
         $installedProfiles = Join-Path $destinationData $profilesName
@@ -618,10 +635,18 @@ else {
 
 Complete-UserDataMerge
 
-[System.IO.File]::WriteAllText(
-    (Join-Path $stageData 'AVISO-UPDATE-REPORT.json'),
-    ((ConvertTo-Json $avisoReport -Depth 8) + "`n"),
-    $Utf8NoBom)
+$avisoNeedsReview = @(
+    $avisoReport.preserved_modified, $avisoReport.merged,
+    $avisoReport.merge_conflicts, $avisoReport.preserved_user_deleted,
+    $avisoReport.deleted, $avisoReport.preserved_deleted_modified,
+    $avisoReport.custom_preserved
+    ) | Where-Object { @($_).Count -gt 0 }
+if ($avisoNeedsReview.Count -gt 0) {
+    [System.IO.File]::WriteAllText(
+        (Join-Path $stageData 'AVISO-UPDATE-REPORT.json'),
+        ((ConvertTo-Json $avisoReport -Depth 8) + "`n"),
+        $Utf8NoBom)
+}
 
 $installationMetadata = [ordered]@{
     schema_version = 1

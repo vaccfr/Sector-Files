@@ -91,12 +91,19 @@ function Merge-UserDataFile([string]$RelativePath, [string]$Incoming, [bool]$Pro
 
 function Complete-UserDataMerge {
     $baselineRoot = Join-Path $script:mergeStageData 'UpdateBaselines'
+    if (-not (Test-Path -LiteralPath (Join-Path $script:mergeStageData 'vSMR_Profiles.json') -PathType Leaf)) {
+        $legacyBaseline = Join-Path $baselineRoot 'vSMR_Profiles.json'
+        if (Test-Path -LiteralPath $legacyBaseline -PathType Leaf) { Remove-Item -LiteralPath $legacyBaseline -Force }
+        $null = $script:mergeNewHashes.Remove('vSMR_Profiles.json')
+    }
     [IO.Directory]::CreateDirectory($baselineRoot) | Out-Null
     $index = [ordered]@{ schema_version = 1; files = $script:mergeNewHashes }
     [IO.File]::WriteAllText((Join-Path $baselineRoot 'BASELINE-HASHES.json'),
         ($index | ConvertTo-Json -Depth 5), $Utf8NoBom)
-    [IO.File]::WriteAllText((Join-Path $script:mergeStageData 'DATA-UPDATE-REPORT.json'),
-        ($script:mergeReport | ConvertTo-Json -Depth 8), $Utf8NoBom)
+    if (@($script:mergeReport.files).Count -gt 0) {
+        [IO.File]::WriteAllText((Join-Path $script:mergeStageData 'DATA-UPDATE-REPORT.json'),
+            ($script:mergeReport | ConvertTo-Json -Depth 8), $Utf8NoBom)
+    }
     $review = @($script:mergeReport.files | Where-Object { $_.status -ne 'merged' })
     if ($review.Count) {
         Write-Warning "$($review.Count) user data file(s) need review; user edits were retained. See vSMR_Data/DATA-UPDATE-REPORT.json and Data_Updates."
