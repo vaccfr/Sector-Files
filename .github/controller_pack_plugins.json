@@ -2,7 +2,7 @@
   "plugins": [
     {
       "name": "AMAN",
-      "current": "1.0.2",
+      "current": "1.0.5",
       "github": "vaccfr/AMAN-Plugin",
       "include_prereleases": false
     },
