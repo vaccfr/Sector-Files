@@ -3146,14 +3146,6 @@ html.host-mode .control-window.hidden {
   border-top-color: var(--ui-outer-border);
 }
 
-.settings-column {
-  min-width: 0;
-  display: grid;
-  grid-auto-rows: max-content;
-  align-content: start;
-  gap: 4px;
-}
-
 .settings-file-heading {
   min-width: 0;
   display: flex;
@@ -3387,8 +3379,6 @@ html.host-mode .control-window.hidden {
   text-decoration: none;
 }
 
-.settings-page .settings-column { gap: 3px; }
-
 .settings-page .settings-file-list { gap: 0; }
 
 .settings-page .settings-file-row {
@@ -3403,31 +3393,26 @@ html.host-mode .control-window.hidden {
   gap: 3px;
 }
 
-.settings-page .updater-general-group > .check-field:nth-of-type(2) { grid-column: 1 / -1; }
-
 .settings-page .settings-layout {
   gap: 3px;
   padding: var(--ui-page-padding);
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: auto;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  grid-template-rows: minmax(0, 1fr);
-  align-items: start;
+  grid-template-rows: max-content minmax(max-content, 1fr);
+  align-items: stretch;
   align-content: stretch;
 }
 
-.settings-page .settings-primary-column,
-.settings-page .settings-data-column {
+.settings-page .settings-layout > fieldset {
   min-width: 0;
-  display: grid;
-  grid-auto-rows: max-content;
-  align-content: start;
-  gap: 3px;
+  align-self: stretch;
 }
 
 .settings-page .display-group {
   display: grid;
   grid-template-columns: minmax(0, 1fr);
-  align-items: end;
+  align-content: start;
   gap: 5px;
 }
 
@@ -3443,39 +3428,38 @@ html.host-mode .control-window.hidden {
 }
 
 .settings-page .updater-general-group {
+  grid-column: 1 / -1;
   align-self: stretch;
+  align-content: space-between;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 5px 8px;
+  gap: 8px 12px;
 }
 
 .settings-page .updater-general-group > .check-field {
   min-width: 0;
   margin: 0;
-  font-size: 8px;
-  line-height: 1.15;
-  grid-column: 1 / -1 !important;
+  grid-column: auto;
 }
 
 .settings-page .updater-general-group .update-channel-field {
   min-width: 0;
-  grid-template-columns: minmax(0, 1fr) 76px;
-  grid-column: 1 / -1 !important;
+  grid-template-columns: minmax(0, 1fr) 92px;
+  grid-column: 2;
 }
 
 .settings-page .update-notice {
-  max-height: 22px;
-  overflow: hidden;
+  font-size: var(--ui-font-size);
   grid-column: 1 / -1 !important;
 }
 
 .settings-page .updater-general-heading {
   min-width: 0;
-  grid-column: 1 / -1 !important;
-  min-height: 16px;
+  grid-column: 1;
+  min-height: var(--ui-control-height);
   padding: 0 2px;
 }
 
-.settings-page .updater-general-heading > span:last-child { font-size: 9px; }
+.settings-page .updater-general-heading > span:last-child { font-size: var(--ui-font-size); }
 
 .settings-page .updater-general-actions {
   grid-column: 1 / -1 !important;
@@ -4029,8 +4013,7 @@ html.host-mode .runtime-menu { display: none !important; }
   .aviso-toolbar-palette { width: 145px; }
   .settings-page .settings-layout {
     grid-template-columns: minmax(0, 1fr);
-    grid-template-rows: max-content max-content;
-    overflow-y: auto;
+    grid-template-rows: max-content max-content minmax(max-content, 1fr);
   }
 }
 

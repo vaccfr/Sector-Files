@@ -1,6 +1,6 @@
 {
     "schema_version":  1,
-    "release":  "2.0.3",
+    "release":  "2.0.4",
     "files":  {
                   "LFAC.geojson":  "9cc7a39256e68254c581bace8fa3a34a3f32eaf9d7c6ad5e15c698670095117f",
                   "LFAD.geojson":  "4181a32373b64f39fd44055b6901011ca5bd2cb0e603324762ca652eaa84b838",

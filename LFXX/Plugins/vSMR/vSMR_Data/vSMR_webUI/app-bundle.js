@@ -768,6 +768,7 @@
         uiColorTheme: "night",
         weatherAllAirports: true,
         showNorthIndicator: true,
+        keepAvisoWindowPlacement: true,
         avisoColorPalette: "light",
         avisoColorPalettes: ["dark", "light", "real"],
         dataHealth: {
@@ -4990,6 +4991,7 @@
     $("#settingsAliasFile").title = aliasFile || "No alias file found";
     ensureSelectValue($("#settingsResolutionPreset"), settings.resolutionPreset || "1080p");
     $("#settingsShowNorthIndicator").checked = settings.showNorthIndicator !== false;
+    $("#settingsKeepAvisoWindowPlacement").checked = settings.keepAvisoWindowPlacement !== false;
     $("#settingsWeatherAirports").value = settings.weatherAllAirports !== false ? "all" : "single";
     $("#settingsRdfEnabled").checked = settings.rdfEnabled !== false;
     const uiColorTheme = settings.uiColorTheme === "day" ? "day" : "night";
@@ -5011,6 +5013,7 @@
       avisoFile: $("#settingsAvisoFile").value,
       resolutionPreset: $("#settingsResolutionPreset").value || "1080p",
       showNorthIndicator: $("#settingsShowNorthIndicator").checked,
+      keepAvisoWindowPlacement: $("#settingsKeepAvisoWindowPlacement").checked,
       weatherAllAirports: $("#settingsWeatherAirports").value === "all",
       rdfEnabled: $("#settingsRdfEnabled").checked
     });

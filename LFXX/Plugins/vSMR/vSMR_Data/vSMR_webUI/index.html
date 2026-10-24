@@ -477,35 +477,15 @@
 <div class="settings-view-stack">
 <section class="settings-view active" id="settingsPanelGeneral">
 <div class="settings-layout">
-<div class="settings-column settings-primary-column">
 <fieldset class="compact-group settings-group display-group">
 <legend>Display</legend>
 <div class="field settings-theme-field"><span>UI theme</span><div aria-label="UI theme" class="ui-toggle-group settings-theme-control" role="group"><button class="ui-button ui-button--toggle" data-action="set-ui-theme" data-ui-color-theme="night" type="button">Night</button><button class="ui-button ui-button--toggle" data-action="set-ui-theme" data-ui-color-theme="day" type="button">Day</button></div></div>
 <label class="field"><span>Resolution</span><select id="settingsResolutionPreset"><option>1080p</option><option>2k</option><option>4k</option></select></label>
 <label class="field" title="Uses the airports of all open AVISO views, including CoFrance insets. Arrows in the METAR title switch airport or page. Detail adapts to available space."><span>METAR airports</span><select id="settingsWeatherAirports"><option value="all">All open airports</option><option value="single">One airport at a time</option></select></label>
 <label class="check-field" title="Show the compass when AVISO is rotated. Drag it to reposition it; the main compass stays below insets."><input id="settingsShowNorthIndicator" type="checkbox"/><span>North indicator (rotated AVISO)</span></label>
+<label class="check-field" title="Keep the AVISO window at the same screen position and size when changing or opening an airport. The map recenters on the new airport."><input id="settingsKeepAvisoWindowPlacement" type="checkbox"/><span>Keep AVISO window placement</span></label>
 <label class="check-field" title="Native vSMR RDF overlay driven by TrackAudio"><input id="settingsRdfEnabled" type="checkbox"/><span>Native RDF</span></label>
 </fieldset>
-<fieldset class="compact-group settings-group updater-general-group">
-<legend>Automatic updates</legend>
-<div class="updater-general-heading">
-<span id="updateVersionSummary">Installed --</span>
-</div>
-<label class="field update-channel-field"><span>Channel</span><select id="updateChannel"><option value="stable">Stable</option><option value="beta">Beta</option></select></label>
-<label class="check-field"><input id="updateAutoCheck" type="checkbox"/><span>Check GitHub when EuroScope starts</span></label>
-<label class="check-field"><input id="updateAutoDownload" type="checkbox"/><span>Download verified updates</span></label>
-<label class="check-field"><input id="updateAutoInstall" type="checkbox"/><span>Activate verified runtime before load</span></label>
-<label class="check-field update-aviso-protection" title="Official maps update independently of your overrides and custom maps. User configuration is never replaced by the updater."><input id="updateProtectModifiedAviso" type="checkbox" checked disabled/><span>User customizations are always preserved</span></label>
-<p aria-live="polite" class="update-notice" id="updateNotice" role="status">Waiting for updater state...</p>
-<div class="updater-general-actions">
-<button class="ui-button" data-action="update-retry" hidden id="updateRetryButton" type="button">Retry next startup</button>
-<button class="ui-button" data-action="update-reload-aviso" id="updateReloadAvisoButton" title="Check and repair application files against the channel manifest on the next startup. Your configuration and custom maps are unchanged." type="button">Check / repair files</button>
-<button class="ui-button" data-action="update-clear-skip" hidden id="updateClearSkipButton" type="button">Clear skipped release</button>
-<button class="ui-button update-release-link" data-action="update-release-open" hidden id="updateReleaseLink" type="button">Release notes</button>
-</div>
-</fieldset>
-</div>
-<div class="settings-column settings-data-column">
 <fieldset class="compact-group settings-group files-group">
 <legend>Data files</legend>
 <div class="settings-file-list">
@@ -534,7 +514,24 @@
 </div>
 </div>
 </fieldset>
+<fieldset class="compact-group settings-group updater-general-group">
+<legend>Automatic updates</legend>
+<div class="updater-general-heading">
+<span id="updateVersionSummary">Installed --</span>
 </div>
+<label class="field update-channel-field"><span>Channel</span><select id="updateChannel"><option value="stable">Stable</option><option value="beta">Beta</option></select></label>
+<label class="check-field"><input id="updateAutoCheck" type="checkbox"/><span>Check GitHub when EuroScope starts</span></label>
+<label class="check-field"><input id="updateAutoDownload" type="checkbox"/><span>Download verified updates</span></label>
+<label class="check-field"><input id="updateAutoInstall" type="checkbox"/><span>Activate verified runtime before load</span></label>
+<label class="check-field update-aviso-protection" title="Official maps update independently of your overrides and custom maps. User configuration is never replaced by the updater."><input id="updateProtectModifiedAviso" type="checkbox" checked disabled/><span>User customizations are always preserved</span></label>
+<p aria-live="polite" class="update-notice" id="updateNotice" role="status">Waiting for updater state...</p>
+<div class="updater-general-actions">
+<button class="ui-button" data-action="update-retry" hidden id="updateRetryButton" type="button">Retry next startup</button>
+<button class="ui-button" data-action="update-reload-aviso" id="updateReloadAvisoButton" title="Check and repair application files against the channel manifest on the next startup. Your configuration and custom maps are unchanged." type="button">Check / repair files</button>
+<button class="ui-button" data-action="update-clear-skip" hidden id="updateClearSkipButton" type="button">Clear skipped release</button>
+<button class="ui-button update-release-link" data-action="update-release-open" hidden id="updateReleaseLink" type="button">Release notes</button>
+</div>
+</fieldset>
 </div>
 </section>
 </div>
