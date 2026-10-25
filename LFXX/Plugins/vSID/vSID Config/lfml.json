@@ -4,7 +4,7 @@
     "runways": "13L,13R,31L,31R",
     "transAlt": 5000,
     "maxInitialClimb": 7000,
-    "appSI": "MM,MLA",
+    "appSI": "MM,RAW,ME",
     "intersections": {
     "13L": "C1,D1,D2,E2",
     "13R": "E2,F3",

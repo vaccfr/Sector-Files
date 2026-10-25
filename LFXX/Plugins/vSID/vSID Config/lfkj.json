@@ -4,7 +4,7 @@
     "runways": "02,20",
     "transAlt": 5000,
     "maxInitialClimb": 11000,
-    "appSI": "MM,KJA",
+    "appSI": "MM,KJ",
     "intersections": {
     "02": "A,E",
     "20": "D,C,H,B,F"

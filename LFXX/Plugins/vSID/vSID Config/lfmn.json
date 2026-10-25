@@ -4,7 +4,7 @@
     "runways": "04L,04R,22L,22R",
     "transAlt": 5000,
     "maxInitialClimb": 13000,
-    "appSI": "MM,MNA",
+    "appSI": "MM,RAE,NO",
     "intersections": {
     "04L": "A1,B1,C1",
     "04R": "W3,Q3,B3",

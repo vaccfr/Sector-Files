@@ -23,6 +23,7 @@
             "rwy": "20",
             "initial": 8000,
             "prio": 1,
+            "wtc":"LM",
             "equip": {
               "RNAV": true
             }
@@ -34,6 +35,7 @@
             "initial": 8000,
             "customRule": "opposing",
             "prio": 1,
+            "wtc":"LM",
             "equip": {
               "RNAV": true
             }
@@ -142,7 +144,7 @@
             "rwy": "25",
             "initial": 8000,
             "customRule": "opposing",
-            "prio": 1,
+            "prio": 2,
             "equip": {
               "RNAV": true
             }
@@ -154,6 +156,7 @@
             "initial": 8000,
             "customRule": "opposing",
             "prio": 2,
+            "wtc":"LM",
             "equip": {
               "RNAV": true
             }
@@ -173,8 +176,7 @@
           "1": {
             "rwy": "25",
             "initial": 8000,
-            "prio": 1,
-            "wtc": "HJ",
+            "prio": 2,
             "equip": {
               "RNAV": true
             }
@@ -185,6 +187,7 @@
             "rwy": "20",
             "initial": 8000,
             "prio": 2,
+            "wtc":"LM",
             "equip": {
               "RNAV": true
             }
@@ -197,6 +200,7 @@
             "rwy": "20",
             "initial": 8000,
             "prio": 1,
+            "wtc":"LM",
             "equip": {
               "RNAV": true
             }
@@ -208,6 +212,7 @@
             "initial": 8000,
             "customRule": "opposing",
             "prio": 1,
+            "wtc":"LM",
             "equip": {
               "RNAV": true
             }
@@ -316,7 +321,7 @@
             "rwy": "25",
             "initial": 8000,
             "customRule": "opposing",
-            "prio": 1,
+            "prio": 2,
             "equip": {
               "RNAV": true
             }
@@ -328,6 +333,7 @@
             "initial": 8000,
             "customRule": "opposing",
             "prio": 2,
+            "wtc":"LM",
             "equip": {
               "RNAV": true
             }
@@ -347,7 +353,7 @@
           "1": {
             "rwy": "25",
             "initial": 8000,
-            "prio": 1,
+            "prio": 2,
             "equip": {
               "RNAV": true
             }
@@ -358,6 +364,7 @@
             "rwy": "20",
             "initial": 8000,
             "prio": 2,
+            "wtc":"LM",
             "equip": {
               "RNAV": true
             }
@@ -370,6 +377,7 @@
             "rwy": "20",
             "initial": 8000,
             "prio": 1,
+            "wtc":"LM",
             "equip": {
               "RNAV": true
             }
@@ -381,6 +389,7 @@
             "initial": 8000,
             "customRule": "opposing",
             "prio": 1,
+            "wtc":"LM",
             "equip": {
               "RNAV": true
             }
@@ -490,7 +499,7 @@
             "rwy": "25",
             "initial": 8000,
             "customRule": "opposing",
-            "prio": 1,
+            "prio": 2,
             "equip": {
               "RNAV": true
             }
@@ -502,6 +511,7 @@
             "initial": 8000,
             "customRule": "opposing",
             "prio": 2,
+            "wtc":"LM",
             "equip": {
               "RNAV": true
             }
@@ -521,7 +531,7 @@
           "1": {
             "rwy": "25",
             "initial": 8000,
-            "prio": 1,
+            "prio": 2,
             "equip": {
               "RNAV": true
             }
@@ -532,6 +542,7 @@
             "rwy": "20",
             "initial": 8000,
             "prio": 2,
+            "wtc":"LM",
             "equip": {
               "RNAV": true
             }
@@ -544,6 +555,7 @@
             "rwy": "20",
             "initial": 8000,
             "prio": 1,
+            "wtc":"LM",
             "equip": {
               "RNAV": true
             }
@@ -555,6 +567,7 @@
             "initial": 8000,
             "customRule": "opposing",
             "prio": 1,
+            "wtc":"LM",
             "equip": {
               "RNAV": true
             }
@@ -664,7 +677,7 @@
             "rwy": "25",
             "initial": 8000,
             "customRule": "opposing",
-            "prio": 1,
+            "prio": 2,
             "equip": {
               "RNAV": true
             }
@@ -676,6 +689,7 @@
             "initial": 8000,
             "customRule": "opposing",
             "prio": 2,
+            "wtc":"LM",
             "equip": {
               "RNAV": true
             }
@@ -695,7 +709,7 @@
           "1": {
             "rwy": "25",
             "initial": 8000,
-            "prio": 1,
+            "prio": 2,
             "equip": {
               "RNAV": true
             }
@@ -706,6 +720,7 @@
             "rwy": "20",
             "initial": 8000,
             "prio": 2,
+            "wtc":"LM",
             "equip": {
               "RNAV": true
             }
@@ -718,6 +733,7 @@
             "rwy": "20",
             "initial": 8000,
             "prio": 1,
+            "wtc":"LM",
             "equip": {
               "RNAV": true
             }
@@ -729,6 +745,7 @@
             "initial": 8000,
             "customRule": "opposing",
             "prio": 1,
+            "wtc":"LM",
             "equip": {
               "RNAV": true
             }
@@ -838,7 +855,7 @@
             "rwy": "25",
             "initial": 8000,
             "customRule": "opposing",
-            "prio": 1,
+            "prio": 2,
             "equip": {
               "RNAV": true
             }
@@ -850,6 +867,7 @@
             "initial": 8000,
             "customRule": "opposing",
             "prio": 2,
+            "wtc":"LM",
             "equip": {
               "RNAV": true
             }
@@ -869,7 +887,7 @@
           "1": {
             "rwy": "25",
             "initial": 8000,
-            "prio": 1,
+            "prio": 2,
             "equip": {
               "RNAV": true
             }
@@ -880,6 +898,7 @@
             "rwy": "20",
             "initial": 8000,
             "prio": 2,
+            "wtc":"LM",
             "equip": {
               "RNAV": true
             }
@@ -892,6 +911,7 @@
             "rwy": "20",
             "initial": 8000,
             "prio": 1,
+            "wtc":"LM",
             "equip": {
               "RNAV": true
             }
@@ -903,6 +923,7 @@
             "initial": 8000,
             "customRule": "opposing",
             "prio": 1,
+            "wtc":"LM",
             "equip": {
               "RNAV": true
             }
@@ -1012,7 +1033,7 @@
             "rwy": "25",
             "initial": 8000,
             "customRule": "opposing",
-            "prio": 1,
+            "prio": 2,
             "equip": {
               "RNAV": true
             }
@@ -1024,6 +1045,7 @@
             "initial": 8000,
             "customRule": "opposing",
             "prio": 2,
+            "wtc":"LM",
             "equip": {
               "RNAV": true
             }
@@ -1043,7 +1065,7 @@
           "1": {
             "rwy": "25",
             "initial": 8000,
-            "prio": 1,
+            "prio": 2,
             "equip": {
               "RNAV": true
             }
@@ -1054,6 +1076,7 @@
             "rwy": "20",
             "initial": 8000,
             "prio": 2,
+            "wtc":"LM",
             "equip": {
               "RNAV": true
             }
@@ -1066,6 +1089,7 @@
             "rwy": "20",
             "initial": 8000,
             "prio": 1,
+            "wtc":"LM",
             "equip": {
               "RNAV": true
             }
@@ -1077,6 +1101,7 @@
             "initial": 8000,
             "customRule": "opposing",
             "prio": 1,
+            "wtc":"LM",
             "equip": {
               "RNAV": true
             }
@@ -1186,7 +1211,7 @@
             "rwy": "25",
             "initial": 8000,
             "customRule": "opposing",
-            "prio": 1,
+            "prio": 2,
             "equip": {
               "RNAV": true
             }
@@ -1198,6 +1223,7 @@
             "initial": 8000,
             "customRule": "opposing",
             "prio": 2,
+            "wtc":"LM",
             "equip": {
               "RNAV": true
             }
@@ -1217,7 +1243,7 @@
           "1": {
             "rwy": "25",
             "initial": 8000,
-            "prio": 1,
+            "prio": 2,
             "equip": {
               "RNAV": true
             }
@@ -1228,6 +1254,7 @@
             "rwy": "20",
             "initial": 8000,
             "prio": 2,
+            "wtc":"LM",
             "equip": {
               "RNAV": true
             }
@@ -1240,6 +1267,7 @@
             "rwy": "20",
             "initial": 8000,
             "prio": 1,
+            "wtc":"LM",
             "equip": {
               "RNAV": true
             }
@@ -1251,6 +1279,7 @@
             "initial": 8000,
             "customRule": "opposing",
             "prio": 1,
+            "wtc":"LM",
             "equip": {
               "RNAV": true
             }
@@ -1360,7 +1389,7 @@
             "rwy": "25",
             "initial": 8000,
             "customRule": "opposing",
-            "prio": 1,
+            "prio": 2,
             "equip": {
               "RNAV": true
             }
@@ -1372,6 +1401,7 @@
             "initial": 8000,
             "customRule": "opposing",
             "prio": 2,
+            "wtc":"LM",
             "equip": {
               "RNAV": true
             }
@@ -1391,7 +1421,7 @@
           "1": {
             "rwy": "25",
             "initial": 8000,
-            "prio": 1,
+            "prio": 2,
             "equip": {
               "RNAV": true
             }
@@ -1402,6 +1432,7 @@
             "rwy": "20",
             "initial": 8000,
             "prio": 2,
+            "wtc":"LM",
             "equip": {
               "RNAV": true
             }
@@ -1414,6 +1445,7 @@
             "rwy": "20",
             "initial": 8000,
             "prio": 1,
+            "wtc":"LM",
             "equip": {
               "RNAV": true
             }
@@ -1425,6 +1457,7 @@
             "initial": 8000,
             "customRule": "opposing",
             "prio": 1,
+            "wtc":"LM",
             "equip": {
               "RNAV": true
             }
@@ -1534,7 +1567,7 @@
             "rwy": "25",
             "initial": 8000,
             "customRule": "opposing",
-            "prio": 1,
+            "prio": 2,
             "equip": {
               "RNAV": true
             }
@@ -1546,6 +1579,7 @@
             "initial": 8000,
             "customRule": "opposing",
             "prio": 2,
+            "wtc":"LM",
             "equip": {
               "RNAV": true
             }
@@ -1565,7 +1599,7 @@
           "1": {
             "rwy": "25",
             "initial": 8000,
-            "prio": 1,
+            "prio": 2,
             "equip": {
               "RNAV": true
             }
@@ -1576,6 +1610,7 @@
             "rwy": "20",
             "initial": 8000,
             "prio": 2,
+            "wtc":"LM",
             "equip": {
               "RNAV": true
             }
@@ -1588,6 +1623,7 @@
             "rwy": "20",
             "initial": 8000,
             "prio": 1,
+            "wtc":"LM",
             "equip": {
               "RNAV": true
             }
@@ -1599,6 +1635,7 @@
             "initial": 8000,
             "customRule": "opposing",
             "prio": 1,
+            "wtc":"LM",
             "equip": {
               "RNAV": true
             }
@@ -1708,7 +1745,7 @@
             "rwy": "25",
             "initial": 8000,
             "customRule": "opposing",
-            "prio": 1,
+            "prio": 2,
             "equip": {
               "RNAV": true
             }
@@ -1720,6 +1757,7 @@
             "initial": 8000,
             "customRule": "opposing",
             "prio": 2,
+            "wtc":"LM",
             "equip": {
               "RNAV": true
             }
@@ -1739,7 +1777,7 @@
           "1": {
             "rwy": "25",
             "initial": 8000,
-            "prio": 1,
+            "prio": 2,
             "equip": {
               "RNAV": true
             }
@@ -1750,6 +1788,7 @@
             "rwy": "20",
             "initial": 8000,
             "prio": 2,
+            "wtc":"LM",
             "equip": {
               "RNAV": true
             }
@@ -1762,6 +1801,7 @@
             "rwy": "20",
             "initial": 8000,
             "prio": 1,
+            "wtc":"LM",
             "equip": {
               "RNAV": true
             }
@@ -1773,6 +1813,7 @@
             "initial": 8000,
             "customRule": "opposing",
             "prio": 1,
+            "wtc":"LM",
             "equip": {
               "RNAV": true
             }
@@ -1882,7 +1923,7 @@
             "rwy": "25",
             "initial": 8000,
             "customRule": "opposing",
-            "prio": 1,
+            "prio": 2,
             "equip": {
               "RNAV": true
             }
@@ -1894,6 +1935,7 @@
             "initial": 8000,
             "customRule": "opposing",
             "prio": 2,
+            "wtc":"LM",
             "equip": {
               "RNAV": true
             }
@@ -1913,7 +1955,7 @@
           "1": {
             "rwy": "25",
             "initial": 8000,
-            "prio": 1,
+            "prio": 2,
             "equip": {
               "RNAV": true
             }
@@ -1924,6 +1966,7 @@
             "rwy": "20",
             "initial": 8000,
             "prio": 2,
+            "wtc":"LM",
             "equip": {
               "RNAV": true
             }
@@ -1936,6 +1979,7 @@
             "rwy": "20",
             "initial": 8000,
             "prio": 1,
+            "wtc":"LM",
             "equip": {
               "RNAV": true
             }
@@ -1947,6 +1991,7 @@
             "initial": 8000,
             "customRule": "opposing",
             "prio": 1,
+            "wtc":"LM",
             "equip": {
               "RNAV": true
             }
@@ -2056,7 +2101,7 @@
             "rwy": "25",
             "initial": 8000,
             "customRule": "opposing",
-            "prio": 1,
+            "prio": 2,
             "equip": {
               "RNAV": true
             }
@@ -2068,6 +2113,7 @@
             "initial": 8000,
             "customRule": "opposing",
             "prio": 2,
+            "wtc":"LM",
             "equip": {
               "RNAV": true
             }
@@ -2087,7 +2133,7 @@
           "1": {
             "rwy": "25",
             "initial": 8000,
-            "prio": 1,
+            "prio": 2,
             "equip": {
               "RNAV": true
             }
@@ -2098,6 +2144,7 @@
             "rwy": "20",
             "initial": 8000,
             "prio": 2,
+            "wtc":"LM",
             "equip": {
               "RNAV": true
             }
@@ -2110,6 +2157,7 @@
             "rwy": "20",
             "initial": 8000,
             "prio": 1,
+            "wtc":"LM",
             "equip": {
               "RNAV": true
             }
@@ -2121,6 +2169,7 @@
             "initial": 8000,
             "customRule": "opposing",
             "prio": 1,
+            "wtc":"LM",
             "equip": {
               "RNAV": true
             }
@@ -2238,6 +2287,7 @@
             "rwy": "20",
             "initial": 8000,
             "prio": 1,
+            "wtc":"LM",
             "equip": {
               "RNAV": true
             }
@@ -2249,6 +2299,7 @@
             "initial": 8000,
             "customRule": "opposing",
             "prio": 1,
+            "wtc":"LM",
             "equip": {
               "RNAV": true
             }
@@ -2312,7 +2363,7 @@
             "rwy": "25",
             "initial": 8000,
             "customRule": "opposing",
-            "prio": 1,
+            "prio": 2,
             "equip": {
               "RNAV": true
             }
@@ -2324,6 +2375,7 @@
             "initial": 8000,
             "customRule": "opposing",
             "prio": 2,
+            "wtc":"LM",
             "equip": {
               "RNAV": true
             }
@@ -2343,7 +2395,7 @@
           "1": {
             "rwy": "25",
             "initial": 8000,
-            "prio": 1,
+            "prio": 2,
             "equip": {
               "RNAV": true
             }
@@ -2354,6 +2406,7 @@
             "rwy": "20",
             "initial": 8000,
             "prio": 2,
+            "wtc":"LM",
             "equip": {
               "RNAV": true
             }
@@ -2366,6 +2419,7 @@
             "rwy": "20",
             "initial": 8000,
             "prio": 1,
+            "wtc":"LM",
             "equip": {
               "RNAV": true
             }
@@ -2377,6 +2431,7 @@
             "initial": 8000,
             "customRule": "opposing",
             "prio": 1,
+            "wtc":"LM",
             "equip": {
               "RNAV": true
             }
@@ -2440,7 +2495,7 @@
             "rwy": "25",
             "initial": 8000,
             "customRule": "opposing",
-            "prio": 1,
+            "prio": 2,
             "equip": {
               "RNAV": true
             }
@@ -2452,6 +2507,7 @@
             "initial": 8000,
             "customRule": "opposing",
             "prio": 2,
+            "wtc":"LM",
             "equip": {
               "RNAV": true
             }
@@ -2471,7 +2527,7 @@
           "1": {
             "rwy": "25",
             "initial": 8000,
-            "prio": 1,
+            "prio": 2,
             "equip": {
               "RNAV": true
             }
@@ -2482,6 +2538,7 @@
             "rwy": "20",
             "initial": 8000,
             "prio": 2,
+            "wtc":"LM",
             "equip": {
               "RNAV": true
             }
@@ -2494,6 +2551,7 @@
             "rwy": "20",
             "initial": 8000,
             "prio": 1,
+            "wtc":"LM",
             "equip": {
               "RNAV": true
             }
@@ -2505,6 +2563,7 @@
             "initial": 8000,
             "customRule": "opposing",
             "prio": 1,
+            "wtc":"LM",
             "equip": {
               "RNAV": true
             }
@@ -2568,7 +2627,7 @@
             "rwy": "25",
             "initial": 8000,
             "customRule": "opposing",
-            "prio": 1,
+            "prio": 2,
             "equip": {
               "RNAV": true
             }
@@ -2580,6 +2639,7 @@
             "initial": 8000,
             "customRule": "opposing",
             "prio": 2,
+            "wtc":"LM",
             "equip": {
               "RNAV": true
             }
@@ -2599,7 +2659,7 @@
           "1": {
             "rwy": "25",
             "initial": 8000,
-            "prio": 1,
+            "prio": 2,
             "equip": {
               "RNAV": true
             }
@@ -2610,6 +2670,7 @@
             "rwy": "20",
             "initial": 8000,
             "prio": 2,
+            "wtc":"LM",
             "equip": {
               "RNAV": true
             }
@@ -2622,6 +2683,7 @@
             "rwy": "20",
             "initial": 8000,
             "prio": 1,
+            "wtc":"LM",
             "equip": {
               "RNAV": true
             }
@@ -2633,6 +2695,7 @@
             "initial": 8000,
             "customRule": "opposing",
             "prio": 1,
+            "wtc":"LM",
             "equip": {
               "RNAV": true
             }
@@ -2763,7 +2826,7 @@
           "1": {
             "rwy": "25",
             "initial": 8000,
-            "prio": 1,
+            "prio": 2,
             "equip": {
               "RNAV": true
             }
@@ -2774,6 +2837,7 @@
             "rwy": "20",
             "initial": 8000,
             "prio": 2,
+            "wtc":"LM",
             "equip": {
               "RNAV": true
             }

@@ -4,7 +4,7 @@
     "runways": "02,20",
     "transAlt": 5000,
     "maxInitialClimb": 19000,
-    "appSI": "EE,SOA",
+    "appSI": "RMS,SOA",
     "intersections": {
     "02": "B,C",
     "20": "G,F"

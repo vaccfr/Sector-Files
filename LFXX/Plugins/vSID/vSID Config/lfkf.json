@@ -1,115 +1,47 @@
 {
   "LFKF": {
     "elevation": 85,
-    "runways": "05,23",
+    "runways": "04,22",
     "transAlt": 5000,
     "maxInitialClimb": 14000,
-    "appSI": "MM,KJA",
+    "appSI": "MM,KJ",
     "intersections": {
-      "05": "C,K",
-      "23": "C,K"
+      "04": "C,K",
+      "22": "C,K"
     },
     "sids": {
       "AJO": {
         "G": {
           "1": {
-            "rwy": "05",
+            "rwy": "04",
             "initial": 7000,
-            "prio": 2
+            "prio": 1
           }
         },
         "M": {
           "1": {
-            "rwy": "23",
+            "rwy": "22",
             "initial": 6000,
             "prio": 2
+          }
+        },
+        "A": {
+          "1": {
+            "rwy": "22",
+            "initial": 0,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
           }
         }
       },
       "BTA": {
-        "G": {
-          "1": {
-            "rwy": "05",
-            "initial": 8000,
-            "prio": 2,
-            "equip": {
-              "NON-RNAV": true
-            }
-          }
-        },
         "L": {
           "1": {
-            "rwy": "05",
-            "initial": 0,
+            "rwy": "04",
+            "initial": 8000,
             "prio": 1,
-            "equip": {
-              "RNAV": true
-            }
-          }
-        },
-        "M": {
-          "1": {
-            "rwy": "23",
-            "initial": 11000,
-            "prio": 2
-          }
-        }
-      },
-      "CORSI": {
-        "G": {
-          "1": {
-            "rwy": "05",
-            "initial": 7000,
-            "prio": 1,
-            "equip": {
-              "NON-RNAV": true
-            }
-          }
-        },
-        "D": {
-          "1": {
-            "rwy": "05",
-            "initial": 0,
-            "prio": 2,
-            "equip": {
-              "RNAV": true
-            }
-          }
-        },
-        "M": {
-          "1": {
-            "rwy": "23",
-            "initial": 3000,
-            "prio": 2
-          }
-        }
-      },
-      "GIMSI": {
-          "": {
-            "rwy": "23",
-            "initial": 0,
-            "prio": 1,
-            "equip": {
-              "RNAV": true
-            }
-          }
-        },
-      "NEGAT": {
-        "G": {
-          "1": {
-            "rwy": "05",
-            "initial": 0,
-            "prio": 1,
-            "equip": {
-              "NON-RNAV": true
-            }
-          }
-        },
-        "D": {
-          "1": {
-            "rwy": "05",
-            "initial": 0,
-            "prio": 2,
             "equip": {
               "RNAV": true
             }
@@ -117,7 +49,51 @@
         },
         "A": {
           "1": {
-            "rwy": "23",
+            "rwy": "22",
+            "initial": 0,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        }
+      },
+      "CORSI": {
+        "D": {
+          "1": {
+            "rwy": "04",
+            "initial": 0,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "A": {
+          "1": {
+            "rwy": "22",
+            "initial": 0,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        }
+      },
+      "NEGAT": {
+        "D": {
+          "1": {
+            "rwy": "04",
+            "initial": 0,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "A": {
+          "1": {
+            "rwy": "22",
             "initial": 3000,
             "prio": 1,
             "equip": {
@@ -129,7 +105,7 @@
       "LONSU": {
         "D": {
           "1": {
-            "rwy": "05",
+            "rwy": "04",
             "initial": 0,
             "prio": 1,
             "equip": {
@@ -139,7 +115,7 @@
         },
         "L": {
           "1": {
-            "rwy": "05",
+            "rwy": "04",
             "initial": 9000,
             "prio": 2,
             "equip": {
@@ -149,7 +125,7 @@
         },
         "A": {
           "1": {
-            "rwy": "23",
+            "rwy": "22",
             "initial": 3000,
             "prio": 1,
             "equip": {
@@ -161,7 +137,7 @@
       "TINOT": {
         "D": {
           "1": {
-            "rwy": "05",
+            "rwy": "04",
             "initial": 0,
             "prio": 2,
             "equip": {
@@ -171,7 +147,7 @@
         },
         "L": {
           "1": {
-            "rwy": "05",
+            "rwy": "04",
             "initial": 8000,
             "prio": 1,
             "equip": {
@@ -181,7 +157,7 @@
         },
         "A": {
           "1": {
-            "rwy": "23",
+            "rwy": "22",
             "initial": 3000,
             "prio": 1,
             "equip": {
@@ -193,7 +169,7 @@
       "TORTU": {
         "D": {
           "1": {
-            "rwy": "05",
+            "rwy": "04",
             "initial": 12000,
             "prio": 1,
             "equip": {
@@ -205,7 +181,7 @@
       "VAREK": {
         "D": {
           "1": {
-            "rwy": "05",
+            "rwy": "04",
             "initial": 0,
             "prio": 2,
             "equip": {
@@ -215,7 +191,7 @@
         },
         "L": {
           "1": {
-            "rwy": "05",
+            "rwy": "04",
             "initial": 8000,
             "prio": 1,
             "equip": {
@@ -225,7 +201,7 @@
         },
         "A": {
           "1": {
-            "rwy": "23",
+            "rwy": "22",
             "initial": 3000,
             "prio": 1,
             "equip": {

@@ -4,7 +4,7 @@
     "runways": "18,36,18L,36R",
     "transAlt": 6500,
     "maxInitialClimb": 6500,
-    "appSI": "MM,LBA",
+    "appSI": "MM,VW,VE,LB",
     "intersections": {
     "18": "C,N",
     "36": "S,C"

@@ -4,7 +4,7 @@
     "runways": "15,33",
     "transAlt": 5000,
     "maxInitialClimb": 14000,
-    "appSI": "MM,MLA,FFM,MIA",
+    "appSI": "MM,RAW,MAC,ME,FFM,MI",
     "sids": {
       "AVN": {
         "D": {

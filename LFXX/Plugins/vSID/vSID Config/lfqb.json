@@ -3,7 +3,7 @@
     "elevation": 389,
     "runways": "17,35,17R,35L,05,23",
     "transAlt": 5000,
-    "maxInitialClimb": 0,
+    "maxInitialClimb": 6000,
     "appSI": "FF",
     "sids": {
       "ARSIL": {
