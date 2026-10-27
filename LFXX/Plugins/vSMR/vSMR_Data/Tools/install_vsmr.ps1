@@ -419,6 +419,29 @@ if ($hadData -and -not $ReplaceUserData) {
             Copy-Item -LiteralPath $item.FullName -Destination $target -Force
         }
     }
+
+    # The generic copy above preserves custom sounds. Restore incoming WAVs
+    # when the installed copy still matches the previous package checksum.
+    $oldAudioHashes = @{}
+    $oldChecksums = Join-Path $destinationData 'SHA256SUMS.txt'
+    if (Test-Path -LiteralPath $oldChecksums -PathType Leaf) {
+        foreach ($line in @(Get-Content -LiteralPath $oldChecksums)) {
+            if ($line -match '^([0-9a-fA-F]{64})  vSMR_Data[\\/]Audio[\\/]([A-Za-z0-9_.-]+\.wav)$') {
+                $oldAudioHashes[$Matches[2]] = $Matches[1]
+            }
+        }
+    }
+    $packageAudio = Join-Path $PackageData 'Audio'
+    if (Test-Path -LiteralPath $packageAudio -PathType Container) {
+        foreach ($sound in @(Get-ChildItem -LiteralPath $packageAudio -Filter '*.wav' -File)) {
+            $installedSound = Join-Path $destinationData (Join-Path 'Audio' $sound.Name)
+            if ($oldAudioHashes.ContainsKey($sound.Name) -and
+                (Test-Path -LiteralPath $installedSound -PathType Leaf) -and
+                (Get-FileSha256 $installedSound) -eq $oldAudioHashes[$sound.Name]) {
+                Copy-Item -LiteralPath $sound.FullName -Destination (Join-Path $stageData (Join-Path 'Audio' $sound.Name)) -Force
+            }
+        }
+    }
 }
 
 . (Join-Path $PSScriptRoot 'merge_user_data.ps1')
