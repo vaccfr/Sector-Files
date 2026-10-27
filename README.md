@@ -52,10 +52,7 @@ For maintainers cutting installer releases, see [installer/RELEASE.md](installer
 
 If you need the raw AeroNav archives without the installer (e.g. for debugging), they live at:
 
-- Bordeaux (LFBB): https://files.aero-nav.com/LFBB
-- Reims & Paris (LFEE & LFFF) : https://files.aero-nav.com/LFXXN
-- Marseille (LFMM): https://files.aero-nav.com/LFMM
-- Brest (LFRR): https://files.aero-nav.com/LFRR
+- French FIRs: https://files.aero-nav.com/LFXX
 
 ---
 
