@@ -85,7 +85,9 @@ The usual workflow is:
 1. Fork this repository.
 2. Make and test a focused change.
 3. Commit and push the change.
-4. Open a pull request to `main` for review.
+4. Open a pull request to `main` and allow maintainer edits for ASR/PRF autofixes.
+5. Add an `airac/XXXX` label if the change must wait for its effective date.
+6. Obtain CODEOWNER approval and merge once the required checks and AIRAC gate pass.
 
 ---
 

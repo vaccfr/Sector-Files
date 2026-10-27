@@ -1,39 +1,36 @@
-## Related Issue
-
-Fixes #[issue_number]
-
----
+<!-- Read CONTRIBUTING.md before submitting. Keep the PR focused on one change.
+     For forks, enable "Allow edits by maintainers" so autofix.ci can push ASR/PRF fixes.
+     CODEOWNERS requests reviews from the owners of the affected folders.
+     Maintainers merge once reviews, autofix, relevant installer checks and the AIRAC gate pass. -->
 
 ## Summary
 
-Please provide a clear and concise summary of the changes included in this pull request.
+<!-- What changed, why, and which FIRs, aerodromes, shared resources or installer components are affected? -->
 
-Include:
-- What was changed
-- Any important implementation details
-- Any potential impacts on existing functionality
+## Related issue and sources
 
----
+<!-- Link related issues and the AIP, chart, upstream release or other source for operational changes. -->
 
+## AIRAC dependency
 
-## AIRAC Dependency
+- [ ] This change is AIRAC-dependent and must wait for a cycle's effective date.
 
-Maintainers: apply the `airac-dependent` label when this pull request must not be
-merged before an AIRAC effective date.
+<!-- If checked, apply the corresponding airac/XXXX label (e.g. airac/2611).
+     The checkbox alone does not activate the gate. Ask @vaccfr/navigation to
+     apply the label if you cannot. Dates are defined in .github/airac-cycles.yml.
+     The gate opens at/after 00:00 UTC on that date, on its next scheduled run.
+     Auto-merge can be enabled while waiting; reviews and other checks still apply. -->
 
-AIRAC effective date: `YYYY-MM-DD` or `Not applicable`
+## Verification
 
----
-
-## Screenshots (if applicable)
-
-Please include screenshots or recordings for changes where relevant.
-
----
+<!-- Describe the EuroScope checks performed. Include screenshots for display changes.
+     For installer changes, describe the relevant build/test results. -->
 
 ## Checklist
 
-- [ ] Changes have been tested locally
-- [ ] Existing items have been verified
-- [ ] No unnecessary files are included
-- [ ] Appropriate teams have been notified
+- [ ] Files are in the correct FIR or shared folder.
+- [ ] Affected profiles, displays, plugins and paths have been checked in EuroScope, where applicable.
+- [ ] Operational data and any affected neighbouring FIR resources have been verified.
+- [ ] The appropriate AIRAC label has been applied, if required.
+- [ ] No temporary, backup, credential or unrelated files are included.
+- [ ] For forks: "Allow edits by maintainers" is enabled.
