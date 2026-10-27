@@ -17,7 +17,7 @@ DISABLEZOOMING:0
 DisplayRotation:0.00000
 TAGFAMILY:CoFrance
 WINDOWAREA:47.036943:-7.313034:49.863449:0.480121
-PLUGIN:CoFrance:EnabledMaps:LFRR/LFRB/0_CCA_Iroise,LFRR/LFRB/1_CCA_Iroise_VFR
+PLUGIN:CoFrance:EnabledMaps:LFRR/LFRB/0_CCA_Iroise,LFRR/LFRB/4_CCA_Iroise_VFR_Point_Names
 PLUGIN:CoFrance:LowerAlt:0
 PLUGIN:CoFrance:LowerAltEnabled:1
 PLUGIN:CoFrance:SettingProfile:default
