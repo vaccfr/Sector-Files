@@ -1,0 +1,45 @@
+name: Sync AIRAC labels
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - .github/airac-cycles.yml
+      - .github/scripts/airac.cjs
+      - .github/workflows/sync-airac-labels.yml
+  schedule:
+    - cron: "0 6 * * 1"
+  workflow_dispatch:
+    inputs:
+      max_upcoming:
+        description: Number of upcoming AIRAC cycles to create labels for
+        type: number
+        default: 4
+
+permissions:
+  contents: read
+  issues: write
+  pull-requests: read
+
+concurrency:
+  group: sync-airac-labels
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          persist-credentials: false
+          sparse-checkout: .github
+
+      - uses: actions/github-script@v8
+        env:
+          MAX_UPCOMING: ${{ inputs.max_upcoming }}
+        with:
+          script: |
+            const { syncLabels } = require('./.github/scripts/airac.cjs');
+            await syncLabels({ github, context, core, maxUpcoming: Number(process.env.MAX_UPCOMING || '4') });
