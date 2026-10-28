@@ -101,6 +101,7 @@ async function evaluate({ github, context, core, cycles, now = new Date() }) {
     ? [context.payload.pull_request]
     : await github.paginate(github.rest.pulls.list, { owner, repo, state: 'open', base: 'main', per_page: 100 });
   for (const candidate of pulls) {
+    let operation = 'reading the pull request';
     try {
       // Webhook/scheduled payloads may be stale after label edits or autofix pushes.
       const { data: pull } = await github.rest.pulls.get({ owner, repo, pull_number: candidate.number });
@@ -109,11 +110,13 @@ async function evaluate({ github, context, core, cycles, now = new Date() }) {
         ? { state: 'failure', description: 'Invalid AIRAC calendar; ask Navigation to correct it' }
         : gateResult(pull, cycles, now);
       // Repeated schedules must not exhaust GitHub's per-SHA/context status limit.
+      operation = 'reading commit statuses';
       const statuses = await github.paginate(github.rest.repos.listCommitStatusesForRef, {
         owner, repo, ref: pull.head.sha, per_page: 100,
       });
       const previous = statuses.find(status => status.context === STATUS);
       if (previous?.state !== result.state || previous?.description !== result.description) {
+        operation = 'publishing the AIRAC commit status';
         await github.rest.repos.createCommitStatus({
           owner, repo, sha: pull.head.sha, context: STATUS,
           state: result.state, description: result.description,
@@ -121,11 +124,15 @@ async function evaluate({ github, context, core, cycles, now = new Date() }) {
       }
       if (labelNames(pull).some(name => name.startsWith('airac/') || name === 'airac-dependent')
           || context.payload.action === 'unlabeled') {
+        operation = 'posting or updating the AIRAC PR comment';
         await updateComment({ github, context, pull, result });
       }
       core.info(`#${pull.number}: ${result.state} - ${result.description}`);
     } catch (error) {
-      core.setFailed(`#${candidate.number}: ${error.message}`);
+      const status = error.status ? ` (HTTP ${error.status})` : '';
+      const accepted = error.response?.headers?.['x-accepted-github-permissions'];
+      const permissions = accepted ? `; accepted permissions: ${accepted}` : '';
+      core.setFailed(`#${candidate.number}: ${operation}: ${error.message}${status}${permissions}`);
     }
   }
   if (calendarError) core.setFailed(calendarError.message);
