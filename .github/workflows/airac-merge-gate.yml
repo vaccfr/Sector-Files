@@ -16,7 +16,8 @@ on:
 
 permissions:
   contents: read
-  pull-requests: read
+  # AIRAC comments target pull requests through the issues API.
+  pull-requests: write
   issues: write
   statuses: write
 

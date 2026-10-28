@@ -184,3 +184,26 @@ test('VACS-style comments show the governing cycle, auto-merge guidance and rela
   assert.match(unlocked, /AIRAC cycle 2611 is now effective/);
   assert.match(unlocked, /If auto-merge is enabled/);
 });
+
+test('permission failures identify the operation and do not expose token headers', async () => {
+  const denied = () => Object.assign(new Error('Resource not accessible by integration'), {
+    status: 403,
+    request: { headers: { authorization: 'token must-never-be-logged' } },
+    response: { headers: { 'x-accepted-github-permissions': 'pull_requests=write' } },
+  });
+  const comment = fixture([pull(['airac/2611'])]);
+  comment.github.rest.issues.createComment = async () => { throw denied(); };
+  await evaluate({ ...comment, cycles, now: before });
+  const failure = comment.calls.find(([name]) => name === 'failure')[1];
+  assert.match(failure, /posting or updating the AIRAC PR comment/);
+  assert.match(failure, /HTTP 403/);
+  assert.match(failure, /accepted permissions: pull_requests=write/);
+  assert.ok(!failure.includes('must-never-be-logged'));
+  assert.equal(comment.calls.find(([name]) => name === 'status')[1].state, 'pending');
+
+  const status = fixture([pull(['airac/2611'])]);
+  status.github.rest.repos.createCommitStatus = async () => { throw denied(); };
+  await evaluate({ ...status, cycles, now: before });
+  assert.match(status.calls.find(([name]) => name === 'failure')[1], /publishing the AIRAC commit status/);
+  assert.equal(status.calls.filter(([name]) => name === 'createComment').length, 0);
+});
