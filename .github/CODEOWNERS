@@ -1,0 +1,27 @@
+# Default owners; the last matching rule takes precedence.
+* @vaccfr/navigation
+
+# Repository automation and documentation
+/.github/ @vaccfr/navigation
+/CONTRIBUTING.md @vaccfr/navigation
+/README.md @vaccfr/navigation
+
+# FIR and shared Controller Pack resources
+/LFBB/ @vaccfr/navigation
+/LFEE/ @vaccfr/navigation
+/LFFF/ @vaccfr/navigation
+/LFFM/ @vaccfr/navigation
+/LFMM/ @vaccfr/navigation
+/LFRR/ @vaccfr/navigation
+/LFXX/ @vaccfr/navigation
+
+# Controller Pack Installer
+/installer/ @vaccfr/navigation
+
+# Digital-maintained plugins (escape spaces in directory names).
+/LFXX/Plugins/CoFrance/ @vaccfr/digital
+/LFXX/Plugins/Central\ Squawk/ @vaccfr/digital
+/LFXX/Plugins/EuroscopeRPC/ @vaccfr/digital
+/LFXX/Plugins/Plugin\ Bridge/ @vaccfr/digital
+/LFXX/Plugins/RampAgent/ @vaccfr/digital
+/LFXX/Plugins/AMAN/ @vaccfr/digital

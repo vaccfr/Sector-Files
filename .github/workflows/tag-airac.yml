@@ -1,0 +1,30 @@
+name: AIRAC tag
+
+on:
+  schedule:
+    - cron: "0 0 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: tag-airac
+  cancel-in-progress: false
+
+jobs:
+  tag:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          persist-credentials: false
+          sparse-checkout: .github
+
+      - uses: actions/github-script@v8
+        with:
+          script: |
+            const { tagCycle } = require('./.github/scripts/airac.cjs');
+            await tagCycle({ github, context, core });
