@@ -21,6 +21,7 @@ PLUGIN:vSMR:ActiveProfile:LFBO / LFLL
 PLUGIN:vSMR:Afterglow:1
 PLUGIN:vSMR:Airport:LFLL
 PLUGIN:vSMR:AppTrailsDots:4
+PLUGIN:vSMR:AvisoColorPalette:real
 PLUGIN:vSMR:FontSize:1
 PLUGIN:vSMR:GndTrailsDots:4
 PLUGIN:vSMR:PredictedLine:0
