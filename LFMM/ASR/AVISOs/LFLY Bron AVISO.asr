@@ -3,24 +3,6 @@ DisplayTypeNeedRadarContent:0
 DisplayTypeGeoReferenced:1
 SECTORFILE:
 SECTORTITLE:
-Free Text:LFLY Gates\1:freetext
-Free Text:LFLY Gates\2:freetext
-Free Text:LFLY Gates\3:freetext
-Free Text:LFLY Gates\4:freetext
-Free Text:LFLY Gates\5:freetext
-Free Text:LFLY Taxiways\A1:freetext
-Free Text:LFLY Taxiways\A2:freetext
-Free Text:LFLY Taxiways\A3:freetext
-Free Text:LFLY Taxiways\A4:freetext
-Free Text:LFLY Taxiways\T1:freetext
-Free Text:LFLY Taxiways\T2:freetext
-Free Text:LFLY Taxiways\T3:freetext
-Free Text:LFLY Taxiways\TA:freetext
-Free Text:LFLY Taxiways\TB:freetext
-Free Text:LFLY Taxiways\TC:freetext
-Free Text:LFLY Taxiways\TN:freetext
-Free Text:LFLY Taxiways\TN2:freetext
-Geo:LFLY Groundlayout Lyon Bron:
 SHOWC:1
 SHOWSB:0
 BELOW:0

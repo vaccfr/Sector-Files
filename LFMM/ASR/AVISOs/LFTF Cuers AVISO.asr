@@ -3,19 +3,6 @@ DisplayTypeNeedRadarContent:0
 DisplayTypeGeoReferenced:1
 SECTORFILE:
 SECTORTITLE:
-Free Text:LFTF Gates\Aire de compensation:freetext
-Free Text:LFTF Gates\Hangars:freetext
-Free Text:LFTF Gates\Hangars-ACB:freetext
-Free Text:LFTF Gates\Hangars-CIV:freetext
-Free Text:LFTF Gates\P-ACB:freetext
-Free Text:LFTF Gates\P-CIV:freetext
-Free Text:LFTF Gates\Ravitaillement:freetext
-Free Text:LFTF Gates\TWR:freetext
-Free Text:LFTF Taxiways\C1:freetext
-Free Text:LFTF Taxiways\C2:freetext
-Free Text:LFTF Taxiways\M1:freetext
-Free Text:LFTF Taxiways\M2:freetext
-Geo:LFTF Groundlayout Cuers Pierrefeu:
 SHOWC:1
 SHOWSB:0
 BELOW:0

@@ -3,30 +3,6 @@ DisplayTypeNeedRadarContent:0
 DisplayTypeGeoReferenced:1
 SECTORFILE:
 SECTORTITLE:
-Free Text:LFLX Gates\1:freetext
-Free Text:LFLX Gates\2:freetext
-Free Text:LFLX Gates\3:freetext
-Free Text:LFLX Gates\4:freetext
-Free Text:LFLX Gates\5:freetext
-Free Text:LFLX Gates\6:freetext
-Free Text:LFLX Gates\7:freetext
-Free Text:LFLX Gates\8:freetext
-Free Text:LFLX Gates\X:freetext
-Free Text:LFLX Gates\X:freetext
-Free Text:LFLX Gates\X:freetext
-Free Text:LFLX Gates\X:freetext
-Free Text:LFLX Taxiways\03:freetext
-Free Text:LFLX Taxiways\21:freetext
-Free Text:LFLX Taxiways\B:freetext
-Free Text:LFLX Taxiways\C:freetext
-Free Text:LFLX Taxiways\D:freetext
-Free Text:LFLX Taxiways\E:freetext
-Free Text:LFLX Taxiways\F:freetext
-Free Text:LFLX Taxiways\G:freetext
-Free Text:LFLX Taxiways\T2:freetext
-Free Text:LFLX Taxiways\T3:freetext
-Free Text:LFLX Taxiways\T4:freetext
-Regions:LFLX AVISO:polygon
 SHOWC:1
 SHOWSB:0
 BELOW:0

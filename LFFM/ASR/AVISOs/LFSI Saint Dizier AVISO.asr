@@ -3,18 +3,6 @@ DisplayTypeNeedRadarContent:0
 DisplayTypeGeoReferenced:1
 SECTORFILE:
 SECTORTITLE:
-Free Text:LFSI Taxiways\11:freetext
-Free Text:LFSI Taxiways\29:freetext
-Free Text:LFSI Taxiways\A:freetext
-Free Text:LFSI Taxiways\B:freetext
-Free Text:LFSI Taxiways\C:freetext
-Free Text:LFSI Taxiways\D:freetext
-Free Text:LFSI Taxiways\E:freetext
-Free Text:LFSI Taxiways\F:freetext
-Free Text:LFSI Taxiways\G:freetext
-Free Text:LFSI Taxiways\P:freetext
-Free Text:LFSI Taxiways\X:freetext
-Regions:LFSI AVISO:polygon
 SHOWC:1
 SHOWSB:0
 BELOW:0

@@ -3,34 +3,6 @@ DisplayTypeNeedRadarContent:0
 DisplayTypeGeoReferenced:1
 SECTORFILE:
 SECTORTITLE:
-Free Text:LFSL Gates\ACB:freetext
-Free Text:LFSL Gates\Avions Classe A et B:freetext
-Free Text:LFSL Gates\Avions Classe B:freetext
-Free Text:LFSL Gates\AVT:freetext
-Free Text:LFSL Gates\B1:freetext
-Free Text:LFSL Gates\B2:freetext
-Free Text:LFSL Gates\Bloc Technique - TWR:freetext
-Free Text:LFSL Gates\C1:freetext
-Free Text:LFSL Gates\C2:freetext
-Free Text:LFSL Gates\C3:freetext
-Free Text:LFSL Gates\Hangars:freetext
-Free Text:LFSL Gates\Hangars:freetext
-Free Text:LFSL Gates\P - Aviation Commerciale:freetext
-Free Text:LFSL Gates\Parking Aviation Generale:freetext
-Free Text:LFSL Gates\Terminal:freetext
-Free Text:LFSL Gates\Voie Hangar Est:freetext
-Free Text:LFSL Gates\Voie Hangar Ouest:freetext
-Free Text:LFSL Gates\Voie Meeting:freetext
-Free Text:LFSL Gates\X:freetext
-Free Text:LFSL Gates\X:freetext
-Free Text:LFSL Gates\X:freetext
-Free Text:LFSL Gates\X:freetext
-Free Text:LFSL Taxiways\LFSL Taxiways:freetext
-Free Text:LFSL Taxiways\LFSL Taxiways:freetext
-Free Text:LFSL Taxiways\LFSL Taxiways:freetext
-Free Text:LFSL Taxiways\LFSL Taxiways:freetext
-Free Text:LFSL Taxiways\LFSL Taxiways:freetext
-Geo:LFSL Groundlayout Brive Souillac:
 SHOWC:1
 SHOWSB:0
 BELOW:0

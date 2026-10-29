@@ -3,24 +3,6 @@ DisplayTypeNeedRadarContent:0
 DisplayTypeGeoReferenced:1
 SECTORFILE:
 SECTORTITLE:
-Free Text:LFOA Gates\Parking 1:freetext
-Free Text:LFOA Gates\Parking 3:freetext
-Free Text:LFOA Gates\Parking 4:freetext
-Free Text:LFOA Gates\ZA1:freetext
-Free Text:LFOA Gates\ZA2:freetext
-Free Text:LFOA Gates\ZA3:freetext
-Free Text:LFOA Taxiways\A1:freetext
-Free Text:LFOA Taxiways\A2:freetext
-Free Text:LFOA Taxiways\B1:freetext
-Free Text:LFOA Taxiways\B2:freetext
-Free Text:LFOA Taxiways\B3:freetext
-Free Text:LFOA Taxiways\B4:freetext
-Free Text:LFOA Taxiways\B5:freetext
-Free Text:LFOA Taxiways\C:freetext
-Free Text:LFOA Taxiways\E:freetext
-Free Text:LFOA Taxiways\W:freetext
-Free Text:LFOA Taxiways\X:freetext
-Regions:LFOA AVISO:polygon
 SHOWC:1
 SHOWSB:0
 BELOW:0

@@ -3,17 +3,6 @@ DisplayTypeNeedRadarContent:0
 DisplayTypeGeoReferenced:1
 SECTORFILE:
 SECTORTITLE:
-Free Text:LFAC Gates\ACB:freetext
-Free Text:LFAC Gates\H:freetext
-Free Text:LFAC Gates\TWR:freetext
-Free Text:LFAC Gates\Terminal:freetext
-Free Text:LFAC Taxiways\A:freetext
-Free Text:LFAC Taxiways\B:freetext
-Free Text:LFAC Taxiways\C:freetext
-Free Text:LFAC Taxiways\D:freetext
-Free Text:LFAC Taxiways\P1:freetext
-Free Text:LFAC Taxiways\P2:freetext
-Geo:LFAC Groundlayout Calais Dunkerque:
 SHOWC:1
 SHOWSB:0
 BELOW:0

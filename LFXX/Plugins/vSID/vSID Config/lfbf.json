@@ -1,0 +1,97 @@
+{
+  "LFBF": {
+    "elevation": 535,
+    "runways": "11,29",
+    "transAlt": 5000,
+    "maxInitialClimb": 14000,
+    "appSI": "BB,AE,AW",
+    "intersections": {
+    "11": "C1,C2",
+    "29": "C3,C4"
+    },    
+    "sids": {
+      "TLF": {
+        "A": {
+          "1": {
+            "rwy": "11",
+            "initial": 3000,
+            "wtc": "LM",
+            "prio": 1
+          }
+        }
+      },
+      "AGN": {
+        "E": {
+          "1": {
+            "rwy": "11",
+            "initial": 3000,
+            "wtc": "LM",
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "W": {
+          "1": {
+            "rwy": "29",
+            "initial": 3000,
+            "wtc": "LM",
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        }
+      },
+      "AUCHE": {
+        "E": {
+          "1": {
+            "rwy": "11",
+            "initial": 3500,
+            "wtc": "LM",
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "W": {
+          "1": {
+            "rwy": "29",
+            "initial": 3500,
+            "wtc": "LM",
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        }
+      },
+      "SURAS": {
+        "E": {
+          "1": {
+            "rwy": "11",
+            "initial": 3000,
+            "wtc": "LM",
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "W": {
+          "1": {
+            "rwy": "29",
+            "initial": 3000,
+            "wtc": "LM",
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        }
+      }
+    }
+  }
+}

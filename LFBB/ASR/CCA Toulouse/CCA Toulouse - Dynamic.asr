@@ -17,7 +17,7 @@ DISABLEZOOMING:0
 DisplayRotation:0.00000
 TAGFAMILY:CoFrance
 WINDOWAREA:42.566564:-1.166565:44.649898:4.587655
-PLUGIN:CoFrance:EnabledMaps:LFBB/LFBO/0_CCA_Toulouse,LFBB/LFBO/1_CCA_Toulouse_Static,LFBB/LFBO/2_CCA_Toulouse_Procedures,LFBB/LFBO/3_CCA_Toulouse_AE_AW_Split,LFBB/LFBO/4_CCA_Toulouse_VFR_VRP
+PLUGIN:CoFrance:EnabledMaps:LFBB/LFBO/0_CCA_Toulouse,LFBB/LFBO/2_CCA_Toulouse_Procedures,LFBB/LFBO/2_CCA_Toulouse_Static,LFBB/LFBO/3_CCA_Toulouse_AE_AW_Split,LFBB/LFBO/4_CCA_Toulouse_VFR_VRP
 PLUGIN:CoFrance:LowerAlt:0
 PLUGIN:CoFrance:LowerAltEnabled:1
 PLUGIN:CoFrance:SettingProfile:default

@@ -3,15 +3,6 @@ DisplayTypeNeedRadarContent:0
 DisplayTypeGeoReferenced:1
 SECTORFILE:
 SECTORTITLE:
-Free Text:LFBG Gates\Espace Militaire:freetext
-Free Text:LFBG Gates\Hangar:freetext
-Free Text:LFBG Gates\Hangars:freetext
-Free Text:LFBG Gates\P-A 400M:freetext
-Free Text:LFBG Gates\P-CIV:freetext
-Free Text:LFBG Gates\P1:freetext
-Free Text:LFBG Gates\P2:freetext
-Free Text:LFBG Gates\P3:freetext
-Geo:LFBG Groundlayout Cognac:
 SHOWC:1
 SHOWSB:0
 BELOW:0

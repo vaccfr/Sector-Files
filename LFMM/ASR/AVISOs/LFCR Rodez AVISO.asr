@@ -3,30 +3,6 @@ DisplayTypeNeedRadarContent:0
 DisplayTypeGeoReferenced:1
 SECTORFILE:
 SECTORTITLE:
-Free Text:LFCR Gates\1:freetext
-Free Text:LFCR Gates\2:freetext
-Free Text:LFCR Gates\3:freetext
-Free Text:LFCR Gates\3A:freetext
-Free Text:LFCR Gates\3B:freetext
-Free Text:LFCR Gates\4:freetext
-Free Text:LFCR Gates\5:freetext
-Free Text:LFCR Gates\7:freetext
-Free Text:LFCR Gates\7A:freetext
-Free Text:LFCR Gates\7B:freetext
-Free Text:LFCR Gates\8:freetext
-Free Text:LFCR Gates\9:freetext
-Free Text:LFCR Gates\Hangar:freetext
-Free Text:LFCR Gates\T10:freetext
-Free Text:LFCR Gates\TWR:freetext
-Free Text:LFCR Gates\Terminal:freetext
-Free Text:LFCR Taxiways\13:freetext
-Free Text:LFCR Taxiways\31:freetext
-Free Text:LFCR Taxiways\A1:freetext
-Free Text:LFCR Taxiways\A2:freetext
-Free Text:LFCR Taxiways\A3:freetext
-Free Text:LFCR Taxiways\C:freetext
-Geo:LFCR Groundlayout AVISO:
-Regions:LFCR AVISO:polygon
 SHOWC:1
 SHOWSB:0
 BELOW:0

@@ -3,30 +3,6 @@ DisplayTypeNeedRadarContent:0
 DisplayTypeGeoReferenced:1
 SECTORFILE:
 SECTORTITLE:
-Free Text:LFMV Gates\1:freetext
-Free Text:LFMV Gates\2:freetext
-Free Text:LFMV Gates\3:freetext
-Free Text:LFMV Gates\4:freetext
-Free Text:LFMV Gates\5:freetext
-Free Text:LFMV Gates\6:freetext
-Free Text:LFMV Gates\7:freetext
-Free Text:LFMV Gates\8:freetext
-Free Text:LFMV Gates\Apron B:freetext
-Free Text:LFMV Gates\Apron C:freetext
-Free Text:LFMV Gates\Apron F:freetext
-Free Text:LFMV Gates\G1:freetext
-Free Text:LFMV Gates\Grass apron A:freetext
-Free Text:LFMV Taxiways\A:freetext
-Free Text:LFMV Taxiways\A1:freetext
-Free Text:LFMV Taxiways\A2:freetext
-Free Text:LFMV Taxiways\B:freetext
-Free Text:LFMV Taxiways\C:freetext
-Free Text:LFMV Taxiways\C2:freetext
-Free Text:LFMV Taxiways\C3:freetext
-Free Text:LFMV Taxiways\D:freetext
-Free Text:LFMV Taxiways\E:freetext
-Free Text:LFMV Taxiways\P:freetext
-Geo:LFMV Groundlayout Avignon:
 SHOWC:1
 SHOWSB:0
 BELOW:0

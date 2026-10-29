@@ -1,0 +1,31 @@
+{
+  "LFAT": {
+    "elevation": 21,
+    "runways": "13,31",
+    "transAlt": 5000,
+    "maxInitialClimb": 11000,
+    "appSI": "PAR,LOW,RPAW,QE,QW",
+    "intersections": {
+    "13": "P1,T1",
+    "31": "T3,T2"
+    },
+    "sids": {
+      "BNE": {
+        "Y": {
+          "1": {
+            "rwy": "13",
+            "initial": 0,
+            "prio": 1
+          }
+        },
+        "Z": {
+          "1": {
+            "rwy": "31",
+            "initial": 0,
+            "prio": 1
+          }
+        }
+      }
+    }
+  }
+}
