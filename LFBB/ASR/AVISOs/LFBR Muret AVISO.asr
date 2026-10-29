@@ -3,12 +3,6 @@ DisplayTypeNeedRadarContent:0
 DisplayTypeGeoReferenced:1
 SECTORFILE:
 SECTORTITLE:
-Free Text:LFBR Gates\1:freetext
-Free Text:LFBR Gates\2:freetext
-Free Text:LFBR Gates\3:freetext
-Free Text:LFBR Gates\4:freetext
-Free Text:LFBR Gates\5:freetext
-Geo:LFBR Groundlayout Muret:
 SHOWC:1
 SHOWSB:0
 BELOW:0

@@ -3,10 +3,6 @@ DisplayTypeNeedRadarContent:0
 DisplayTypeGeoReferenced:1
 SECTORFILE:
 SECTORTITLE:
-Free Text:LFOE Gates\1:freetext
-Free Text:LFOE Gates\10:freetext
-Free Text:LFOE Gates\2:freetext
-Geo:LFOE Groundlayout Evreux:
 SHOWC:1
 SHOWSB:0
 BELOW:0

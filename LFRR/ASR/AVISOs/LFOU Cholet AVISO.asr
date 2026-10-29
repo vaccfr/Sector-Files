@@ -3,11 +3,6 @@ DisplayTypeNeedRadarContent:0
 DisplayTypeGeoReferenced:1
 SECTORFILE:
 SECTORTITLE:
-Free Text:LFOU Gates\TWR:freetext
-Free Text:LFOU Taxiways\A:freetext
-Free Text:LFOU Taxiways\B:freetext
-Free Text:LFOU Taxiways\C:freetext
-Geo:LFOU Groundlayout Cholet Pointreau:
 SHOWC:1
 SHOWSB:0
 BELOW:0

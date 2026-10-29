@@ -17,7 +17,7 @@ DISABLEZOOMING:0
 DisplayRotation:0.00000
 TAGFAMILY:CoFrance
 WINDOWAREA:47.434839:-5.124253:50.261345:2.668902
-PLUGIN:CoFrance:EnabledMaps:LFRR/LFRN/0_CCA_Rennes,LFRR/LFRN/1_CCA_Rennes_VFR
+PLUGIN:CoFrance:EnabledMaps:LFRR/LFRN/0_CCA_Rennes,LFRR/LFRN/4_CCA_Rennes_VFR_Point_Names
 PLUGIN:CoFrance:LowerAlt:0
 PLUGIN:CoFrance:LowerAltEnabled:1
 PLUGIN:CoFrance:SettingProfile:default

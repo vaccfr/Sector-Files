@@ -1,0 +1,12 @@
+diff --git a/RDFPlugin/CRDFPlugin.cpp b/RDFPlugin/CRDFPlugin.cpp
+--- a/RDFPlugin/CRDFPlugin.cpp
++++ b/RDFPlugin/CRDFPlugin.cpp
+@@ -842,6 +842,8 @@ auto CRDFPlugin::OnRadarScreenCreated(const char* sDisplayName,
+ 	bool CanBeCreated)
+ 	-> EuroScopePlugIn::CRadarScreen*
+ {
++	if (sDisplayName != nullptr && std::string(sDisplayName) == "SMR radar display") return nullptr;
++
+ 	size_t i = vecScreen.size(); // should not be -1
+ 	auto logMsg = std::format("RDF plugin is activated on {}.", sDisplayName);
+ 	PLOGI << logMsg;

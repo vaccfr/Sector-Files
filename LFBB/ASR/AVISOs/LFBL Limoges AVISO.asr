@@ -3,34 +3,6 @@ DisplayTypeNeedRadarContent:0
 DisplayTypeGeoReferenced:1
 SECTORFILE:
 SECTORTITLE:
-Free Text:LFBL Gates\1A:freetext
-Free Text:LFBL Gates\1L:freetext
-Free Text:LFBL Gates\1P:freetext
-Free Text:LFBL Gates\1T:freetext
-Free Text:LFBL Gates\2A:freetext
-Free Text:LFBL Gates\2L:freetext
-Free Text:LFBL Gates\2P:freetext
-Free Text:LFBL Gates\3A:freetext
-Free Text:LFBL Gates\3L:freetext
-Free Text:LFBL Gates\3P:freetext
-Free Text:LFBL Gates\4P:freetext
-Free Text:LFBL Gates\5P:freetext
-Free Text:LFBL Gates\ACB:freetext
-Free Text:LFBL Gates\Pelicandrome:freetext
-Free Text:LFBL Taxiways\03:freetext
-Free Text:LFBL Taxiways\21:freetext
-Free Text:LFBL Taxiways\C:freetext
-Free Text:LFBL Taxiways\G:freetext
-Free Text:LFBL Taxiways\G1:freetext
-Free Text:LFBL Taxiways\G2:freetext
-Free Text:LFBL Taxiways\G3:freetext
-Free Text:LFBL Taxiways\H:freetext
-Free Text:LFBL Taxiways\N:freetext
-Free Text:LFBL Taxiways\N1:freetext
-Free Text:LFBL Taxiways\S:freetext
-Free Text:LFBL Taxiways\S1:freetext
-Geo:LFBL Groundlayout AVISO:
-Regions:LFBL AVISO:polygon
 SHOWC:1
 SHOWSB:0
 BELOW:0

@@ -3,12 +3,6 @@ DisplayTypeNeedRadarContent:0
 DisplayTypeGeoReferenced:1
 SECTORFILE:
 SECTORTITLE:
-Free Text:LFLU Gates\1:freetext
-Free Text:LFLU Gates\2:freetext
-Free Text:LFLU Gates\3:freetext
-Free Text:LFLU Gates\4:freetext
-Free Text:LFLU Gates\5:freetext
-Geo:LFLU Groundlayout Valence Chabeuil:
 SHOWC:1
 SHOWSB:0
 BELOW:0

@@ -3,26 +3,25 @@ Plugins	Plugin1	\..\LFXX\Plugins\RDF Plugin\RDFPlugin.dll
 Plugins	Plugin2	\..\LFXX\Plugins\Central Squawk\CentralSquawk.dll
 Plugins	Plugin3	\..\LFXX\Plugins\VCH\VCH.dll
 Plugins	Plugin4	\..\LFXX\Plugins\vSMR\vSMR.dll
-Plugins	Plugin5	\..\LFXX\Plugins\ESTimers\ESTimers.dll
-Plugins	Plugin6	\..\LFXX\Plugins\vACDM\vACDM.dll
-Plugins	Plugin7	\..\LFXX\Plugins\RampAgent\RampAgent.dll
-Plugins	Plugin8	\..\LFXX\Plugins\Plugin Bridge\EuroScopeBridge.dll
-Plugins	Plugin9	\..\LFXX\Plugins\AMAN\AMAN.dll
+Plugins	Plugin5	\..\LFXX\Plugins\CDM\CDM.dll
+Plugins	Plugin6	\..\LFXX\Plugins\RampAgent\RampAgent.dll
+Plugins	Plugin7	\..\LFXX\Plugins\Plugin Bridge\EuroScopeBridge.dll
+Plugins	Plugin8	\..\LFXX\Plugins\AMAN\AMAN.dll
+Plugins	Plugin9	\..\LFXX\Plugins\vSID\vSID.dll
 Plugins	Plugin10	\..\LFXX\Plugins\EuroscopeRPC\EuroscopeRPC.dll
 Plugins	Plugin0Display0	CoFrance radar display
 Plugins	Plugin0Display1	Standard ES radar screen
 Plugins	Plugin0Display2	SMR radar display
 Plugins	Plugin1Display0	Standard ES radar screen
-Plugins	Plugin1Display1	SMR radar display
-Plugins	Plugin1Display2	CoFrance radar display
+Plugins	Plugin1Display1	CoFrance radar display
 Plugins	Plugin2Display0	SMR radar display
 Plugins	Plugin2Display1	Standard ES radar screen
 Plugins	Plugin3Display0	SMR radar display
 Plugins	Plugin3Display1	Standard ES radar screen
 Plugins	Plugin4Display0	SMR radar display
 Plugins	Plugin4Display1	Standard ES radar screen
+Plugins	Plugin4Display2	CoFrance radar display
 Plugins	Plugin5Display0	SMR radar display
-Plugins	Plugin5Display1	Standard ES radar screen
 ASRFastKeys	1	\ASR\CCA Nantes\CCA Nantes - Dynamic.asr
 ASRFastKeys	2	\ASR\CCA Nantes\CCA Nantes - VFR.asr
 ASRFastKeys	3	\ASR\CCA Nantes\CCA Nantes - MVA.asr
@@ -39,8 +38,8 @@ RecentFiles	Recent4	\ASR\AVISOs\LFRS Nantes AVISO.asr
 RecentFiles	Recent5	\ASR\AVISOs\LFRZ Saint Nazaire AVISO.asr
 RecentFiles	Recent6	\ASR\AVISOs\LFRM Le Mans AVISO.asr
 RecentFiles	Recent7	\ASR\AVISOs\LFRI La Roche Sur Yon AVISO.asr
-RecentFiles	Recent7	\ASR\AVISOs\LFJR Angers AVISO.asr
-RecentFiles	Recent7	\ASR\AVISOs\LFRI La Roche Sur Yon AVISO.asr
+RecentFiles	Recent8	\ASR\AVISOs\LFJR Angers AVISO.asr
+RecentFiles	Recent9	\ASR\AVISOs\LFEY Ile dYeu AVISO.asr
 Settings	AselKey	5111808
 Settings	FreqKey	3604480
 Settings	Settingsfile	\..\LFXX\Settings\General.txt
@@ -102,5 +101,3 @@ LastSession	proxyserver	localhost
 LastSession	simdatapublish	0
 LastSession	atis_freq4	118000
 LastSession	server	AUTOMATIC
-RecentFiles	Recent8	\ASR\AVISOs\LFJR Angers AVISO.asr
-RecentFiles	Recent9	\ASR\AVISOs\LFEY Ile dYeu AVISO.asr

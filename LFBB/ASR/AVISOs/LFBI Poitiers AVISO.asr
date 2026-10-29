@@ -3,50 +3,6 @@ DisplayTypeNeedRadarContent:0
 DisplayTypeGeoReferenced:1
 SECTORFILE:
 SECTORTITLE:
-Free Text:LFBI Gates\ACB:freetext
-Free Text:LFBI Gates\G1:freetext
-Free Text:LFBI Gates\G2:freetext
-Free Text:LFBI Gates\G3:freetext
-Free Text:LFBI Gates\G4:freetext
-Free Text:LFBI Gates\G5:freetext
-Free Text:LFBI Gates\G6:freetext
-Free Text:LFBI Gates\G7:freetext
-Free Text:LFBI Gates\G8:freetext
-Free Text:LFBI Gates\H1:freetext
-Free Text:LFBI Gates\H2:freetext
-Free Text:LFBI Gates\H3:freetext
-Free Text:LFBI Gates\H4:freetext
-Free Text:LFBI Gates\H8:freetext
-Free Text:LFBI Gates\P1:freetext
-Free Text:LFBI Gates\P2:freetext
-Free Text:LFBI Gates\P3:freetext
-Free Text:LFBI Gates\P4:freetext
-Free Text:LFBI Gates\P5:freetext
-Free Text:LFBI Gates\S1:freetext
-Free Text:LFBI Gates\S2:freetext
-Free Text:LFBI Gates\S3:freetext
-Free Text:LFBI Gates\S4:freetext
-Free Text:LFBI Gates\S5:freetext
-Free Text:LFBI Gates\S6:freetext
-Free Text:LFBI Gates\S7:freetext
-Free Text:LFBI Gates\S8:freetext
-Free Text:LFBI Gates\S9:freetext
-Free Text:LFBI Gates\Usine:freetext
-Free Text:LFBI Taxiways\03:freetext
-Free Text:LFBI Taxiways\03L:freetext
-Free Text:LFBI Taxiways\03R:freetext
-Free Text:LFBI Taxiways\21:freetext
-Free Text:LFBI Taxiways\21L:freetext
-Free Text:LFBI Taxiways\21R:freetext
-Free Text:LFBI Taxiways\A:freetext
-Free Text:LFBI Taxiways\A1:freetext
-Free Text:LFBI Taxiways\A2:freetext
-Free Text:LFBI Taxiways\A3:freetext
-Free Text:LFBI Taxiways\B:freetext
-Free Text:LFBI Taxiways\C:freetext
-Free Text:LFBI Taxiways\D:freetext
-Geo:LFBI Groundlayout AVISO:
-Regions:LFBI AVISO:polygon
 SHOWC:1
 SHOWSB:0
 BELOW:0

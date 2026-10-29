@@ -47,7 +47,7 @@ Other important locations are:
 
 ```text
 installer/   Controller Pack Installer source
-.github/scripts/  Repository maintenance scripts
+scripts/     Repository maintenance scripts
 .github/     Issue templates, workflows and repository automation
 ```
 
@@ -81,41 +81,31 @@ changes should normally be submitted separately.
 Preserve the existing folder structure, filenames, text encoding and line
 format unless the change specifically requires a migration.
 
-## ASR and PRF Autofix
+## ASR and PRF Maintenance
 
-The `autofix.ci` workflow runs `.github/scripts/asr_prf_maintenance.py` on every
-pull request to `main`. The autofix.ci GitHub App commits any fixes to the
-PR branch, so they can be reviewed before merging. For contributions from
-forks, enable **Allow edits by maintainers**.
-
-The script automatically:
+After a pull request is merged, the `ASR and PRF maintenance` workflow runs
+`scripts/asr_prf_maintenance.py`. It automatically:
 
 - clears values from `SECTORFILE:` and `SECTORTITLE:` lines in `.asr` files;
-- removes entries for other aerodromes from an AVISO display tree;
-- synchronises PRF `RecentFiles` entries 1-9 with `ASRFastKeys` entries 1-9.
+- removes all `Free Text`, `Geo` and `Regions` entries from AVISO display trees;
+- synchronises PRF `RecentFiles` entries 1–9 with `ASRFastKeys` entries 1–9.
 
-There is no sector-data validation CLI. Contributors must still verify
-operational changes in EuroScope. The installer retains its own build and
-test workflow when installer files change.
-
-You can optionally run the same maintenance locally:
+You can run the same maintenance locally before submitting:
 
 ```bash
-python .github/scripts/asr_prf_maintenance.py
+python scripts/asr_prf_maintenance.py
 ```
 
-Review the resulting changes. Do not add values that the script intentionally
-removes or maintain duplicate PRF recent file entries by hand.
+Review all resulting changes before committing them. Do not add values that
+the maintenance script intentionally removes or maintain duplicate PRF recent
+file entries by hand.
 
 ## AVISO Display Files
 
 AVISO `.asr` files are stored in the relevant FIR's `ASR/AVISOs/` directory.
-The filename must begin with the four-letter aerodrome ICAO code used by the
-display tree entries.
-
-An AVISO display should contain only `Free Text`, `Geo` and `Regions` tree
-entries belonging to that aerodrome. The maintenance workflow removes entries
-whose ICAO code does not match the filename.
+They must not contain any `Free Text`, `Geo` or `Regions` tree entries. The
+maintenance workflow removes all such entries from every `.asr` file within
+an `AVISOs` directory.
 
 Source AVISO geometry is maintained in the separate QGIS-AVISO project. When
 an AVISO change originates there, keep the corresponding source change and the
@@ -178,92 +168,15 @@ issue or ask a maintainer before making a broad change.
 
 ## AIRAC Changes
 
-For a change that must wait for an AIRAC effective date:
+For an AIRAC-dependent pull request, enter the effective date in the pull
+request template using `YYYY-MM-DD`.
 
-1. Tick the AIRAC dependency checkbox in the PR template.
-2. Apply its `airac/XXXX` label, for example `airac/2611`. Ask
-   `@vaccfr/navigation` to apply it if you do not have permission.
-3. Obtain the relevant CODEOWNER reviews and let autofix and any installer
-   checks finish. You can enable auto-merge while waiting.
+Maintainers apply the `airac-dependent` label after verifying the date. The
+`AIRAC merge gate` status remains pending until 00:00 UTC on that date. Do not
+remove the label or merge the change early unless the effective date or scope
+has been reviewed and corrected by a maintainer.
 
-**The checkbox alone does not activate the gate.** Cycle dates are defined in
-[.github/airac-cycles.yml](.github/airac-cycles.yml). The `AIRAC merge gate`
-commit status remains pending until 00:00 UTC on the effective date and opens
-on the next scheduled evaluation (every 15 minutes, subject to GitHub delays).
-It also runs on PR updates and can be run manually from the Actions page.
-
-If several AIRAC labels are present, the latest effective date applies.
-Unknown cycle labels fail the gate. Effective labels stay on open PRs; the
-gate changes the status directly, so unlocking does not require another
-workflow to be triggered by a bot's label removal. A bot comment explains the
-current gate state.
-
-The label-sync workflow maintains the next four upcoming cycle labels each
-Monday, when the calendar changes, and on manual runs. It deletes out-of-window
-labels only when no open PR uses them. Extend the calendar before it expires.
-
-The daily `AIRAC tag` workflow creates an annotated `airac-XXXX` tag on
-effective dates. This records the current `main` snapshot at the time of the
-run; PRs merged afterwards are not included in that tag. It does not create an
-installer release, trigger a deployment, or replace the separate merge gate.
-
-Existing PRs with `airac-dependent` continue to use the effective date in
-their description during migration. Apply the correct cycle label before
-removing the old label. Missing or invalid legacy dates fail the gate.
-Non-AIRAC changes need no AIRAC label.
-
-Do not remove a dependency label to merge early unless Navigation has reviewed
-and corrected the effective date or scope.
-
-## Ownership and Reviews
-
-[CODEOWNERS](.github/CODEOWNERS) assigns reviewers by folder:
-
-| Area | Owner |
-| --- | --- |
-| Default, FIRs, shared LFXX resources, scripts, documentation and GitHub configuration | `@vaccfr/navigation` |
-| `installer/` | `@vaccfr/navigation` |
-| `LFXX/Plugins/CoFrance/`, `Central Squawk/`, `EuroscopeRPC/`, `Plugin Bridge/`, `RampAgent/` and `AMAN/` | `@vaccfr/digital` |
-
-For an existing folder, obtain approval from its CODEOWNER before merging.
-Authors cannot approve their own PRs. Changes spanning ownership areas need
-review from the affected owners. Maintainers merge their PRs once reviews,
-autofix, the AIRAC status and applicable installer checks pass.
-
-## GitHub Setup for Repository Administrators
-
-After merging this configuration into `main`:
-
-1. Give the named owners write access to the repository. Teams used by
-   CODEOWNERS must be visible and have explicit write access.
-2. Install or enable the [autofix.ci GitHub App](https://autofix.ci/setup) for
-   this repository. The workflow needs this service to apply fixes, including
-   to fork PRs. No personal access token or custom AIRAC bot secrets are needed.
-3. In the repository settings, enable **Allow auto-merge**.
-4. Protect `main` with a branch rule or ruleset requiring pull requests,
-   at least one approving review, **Require review from Code Owners**, and
-   dismissal of stale approvals when new commits are pushed.
-5. Require the **AIRAC merge gate** commit status and **ASR and PRF autofix**
-   check after their first runs make them available. Select the AIRAC commit
-   status, not the workflow job named `Evaluate AIRAC eligibility`: that job
-   can succeed while the date status is pending.
-6. Keep existing installer requirements for installer changes. Its checks are
-   path-filtered, so do not make them unconditional requirements for all FIR
-   PRs unless the installer workflow is adapted accordingly.
-7. Run **Sync AIRAC labels** and **AIRAC merge gate** once from Actions to
-   initialise labels and refresh existing PRs. Confirm a test PR requests the
-   expected owners and stays blocked with a future cycle label.
-
-These files define the automation; they do not change repository settings or
-team permissions themselves. Scheduled gate/tag/label jobs run from the default
-branch, which must remain `main`. Privileged AIRAC jobs execute only trusted
-code from `main`; ASR/PRF autofix runs PR code with read-only credentials.
-
-For changes to AIRAC automation, run its focused tests:
-
-```bash
-node --test .github/scripts/airac.test.cjs
-```
+Non-AIRAC changes should use `Not applicable` for the AIRAC effective date.
 
 ## Pull Requests
 

@@ -3,51 +3,6 @@ DisplayTypeNeedRadarContent:0
 DisplayTypeGeoReferenced:1
 SECTORFILE:
 SECTORTITLE:
-Free Text:LFBT Gates\ACB:freetext
-Free Text:LFBT Gates\G1:freetext
-Free Text:LFBT Gates\G2:freetext
-Free Text:LFBT Gates\G3:freetext
-Free Text:LFBT Gates\G4:freetext
-Free Text:LFBT Gates\P1:freetext
-Free Text:LFBT Gates\P10:freetext
-Free Text:LFBT Gates\P2:freetext
-Free Text:LFBT Gates\P3:freetext
-Free Text:LFBT Gates\P4:freetext
-Free Text:LFBT Gates\P5:freetext
-Free Text:LFBT Gates\P6:freetext
-Free Text:LFBT Gates\P6b:freetext
-Free Text:LFBT Gates\P7:freetext
-Free Text:LFBT Gates\P8:freetext
-Free Text:LFBT Gates\P9:freetext
-Free Text:LFBT Gates\S1:freetext
-Free Text:LFBT Gates\S2:freetext
-Free Text:LFBT Gates\S3:freetext
-Free Text:LFBT Gates\S4A:freetext
-Free Text:LFBT Gates\S4B:freetext
-Free Text:LFBT Gates\S5:freetext
-Free Text:LFBT Gates\S6:freetext
-Free Text:LFBT Gates\S7:freetext
-Free Text:LFBT Gates\TARMAC:freetext
-Free Text:LFBT Taxiways\02:freetext
-Free Text:LFBT Taxiways\20:freetext
-Free Text:LFBT Taxiways\A:freetext
-Free Text:LFBT Taxiways\B:freetext
-Free Text:LFBT Taxiways\C:freetext
-Free Text:LFBT Taxiways\C1:freetext
-Free Text:LFBT Taxiways\D:freetext
-Free Text:LFBT Taxiways\G1:freetext
-Free Text:LFBT Taxiways\G2:freetext
-Free Text:LFBT Taxiways\M:freetext
-Free Text:LFBT Taxiways\M:freetext
-Free Text:LFBT Taxiways\M:freetext
-Free Text:LFBT Taxiways\M1:freetext
-Free Text:LFBT Taxiways\M2:freetext
-Free Text:LFBT Taxiways\N7:freetext
-Free Text:LFBT Taxiways\N8:freetext
-Free Text:LFBT Taxiways\T6:freetext
-Free Text:LFBT Taxiways\T7:freetext
-Geo:LFBT Groundlayout AVISO:
-Regions:LFBT AVISO:polygon
 SHOWC:1
 SHOWSB:0
 BELOW:0

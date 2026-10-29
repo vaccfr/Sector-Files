@@ -3,32 +3,6 @@ DisplayTypeNeedRadarContent:0
 DisplayTypeGeoReferenced:1
 SECTORFILE:
 SECTORTITLE:
-Free Text:LFPL Gates\1:freetext
-Free Text:LFPL Gates\2:freetext
-Free Text:LFPL Gates\3:freetext
-Free Text:LFPL Gates\4:freetext
-Free Text:LFPL Gates\PRKG:freetext
-Free Text:LFPL Taxiways\08:freetext
-Free Text:LFPL Taxiways\08R:freetext
-Free Text:LFPL Taxiways\26:freetext
-Free Text:LFPL Taxiways\26L:freetext
-Free Text:LFPL Taxiways\N:freetext
-Free Text:LFPL Taxiways\N1:freetext
-Free Text:LFPL Taxiways\N2:freetext
-Free Text:LFPL Taxiways\N3:freetext
-Free Text:LFPL Taxiways\N4:freetext
-Free Text:LFPL Taxiways\S:freetext
-Free Text:LFPL Taxiways\S1:freetext
-Free Text:LFPL Taxiways\S2:freetext
-Free Text:LFPL Taxiways\S3:freetext
-Free Text:LFPL Taxiways\S4:freetext
-Free Text:LFPL Taxiways\S5:freetext
-Free Text:LFPL Taxiways\S6:freetext
-Free Text:LFPL Taxiways\T1:freetext
-Free Text:LFPL Taxiways\T2:freetext
-Free Text:LFPL Taxiways\V:freetext
-Free Text:LFPL Taxiways\W:freetext
-Regions:LFPL AVISO:polygon
 SHOWC:1
 SHOWSB:0
 BELOW:0
