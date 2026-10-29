@@ -17,7 +17,7 @@ DISABLEZOOMING:0
 DisplayRotation:0.00000
 TAGFAMILY:CoFrance
 WINDOWAREA:45.797898:-5.045104:48.624404:2.748051
-PLUGIN:CoFrance:EnabledMaps:LFRR/LFRS/0_CCA_Nantes,LFRR/LFRS/2_CCA_Nantes_VFR
+PLUGIN:CoFrance:EnabledMaps:LFRR/LFRS/0_CCA_Nantes,LFRR/LFRS/4_CCA_Nantes_VFR
 PLUGIN:CoFrance:LowerAlt:0
 PLUGIN:CoFrance:LowerAltEnabled:1
 PLUGIN:CoFrance:SettingProfile:default
