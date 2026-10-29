@@ -1792,7 +1792,7 @@
             "rwy": "09L,09R",
             "initial": 10000,
             "engineType": "J",
-            "prio": 6,
+            "prio": 4,
             "equip": {
               "RNAV": true
             }
@@ -1800,8 +1800,9 @@
           "2": {
             "rwy": "09L,09R",
             "initial": 5000,
+            "climbvia": true,
             "engineType": "PT",
-            "prio": 6,
+            "prio": 4,
             "equip": {
               "RNAV": true
             }
