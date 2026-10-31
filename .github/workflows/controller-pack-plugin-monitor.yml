@@ -18,11 +18,17 @@ jobs:
       - name: Checkout Controller Pack repository
         uses: actions/checkout@v4
 
+      - name: Test plugin version comparison
+        run: node --test .github/scripts/controller_pack_version.test.cjs
+
       - name: Check plugin versions
         uses: actions/github-script@v7
         with:
           script: |
             const fs = require("fs");
+            const { compareVersions } = require(
+              process.env.GITHUB_WORKSPACE + "/.github/scripts/controller_pack_version.cjs"
+            );
 
             const configPath = ".github/controller_pack_plugins.json";
             const issueLabel = "controller-pack-plugin-update";
@@ -33,13 +39,6 @@ jobs:
             }
 
             const config = JSON.parse(fs.readFileSync(configPath, "utf8"));
-
-            function cleanVersion(value) {
-              return String(value || "")
-                .trim()
-                .replace(/^v/i, "")
-                .replace(/^release[-_/]/i, "");
-            }
 
             async function ensureLabel() {
               try {
@@ -150,8 +149,13 @@ jobs:
                 continue;
               }
 
-              if (cleanVersion(plugin.current) === cleanVersion(latest)) {
-                core.info(`${plugin.name} already up to date`);
+              const comparison = compareVersions(latest, plugin.current);
+              if (comparison === null) {
+                core.warning(`Cannot compare ${plugin.name} versions: ${latest} and ${plugin.current}`);
+                continue;
+              }
+              if (comparison <= 0) {
+                core.info(`${plugin.name} has no newer upstream release (${latest} vs ${plugin.current})`);
                 continue;
               }
 
