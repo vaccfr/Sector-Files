@@ -104,10 +104,10 @@
             "rwy": "31L,31R",
             "initial": 5000,
             "prio": 1,
+            "wtc": "LM",
             "equip": {
               "RNAV": true
-            },
-            "WTC": "LM"
+            }            
           }
         },
         "C": {
@@ -115,10 +115,10 @@
             "rwy": "31L,31R",
             "initial": 5000,
             "prio": 2,
+            "wtc": "LM",
             "equip": {
               "NON-RNAV": true
-            },
-            "WTC": "LM"
+            }
           }
         },
         "U": {
@@ -222,10 +222,10 @@
             "rwy": "31L,31R",
             "initial": 5000,
             "prio": 2,
+            "wtc": "LM",
             "equip": {
               "NON-RNAV": true
-            },
-            "WTC": "LM"
+            }
           }
         },
         "N": {
@@ -233,17 +233,17 @@
             "rwy": "31L,31R",
             "initial": 5000,
             "prio": 1,
+            "wtc": "LM",
             "equip": {
               "RNAV": true
-            },
-            "WTC": "LM"
+            }
           }
         },
         "U": {
           "1": {
             "rwy": "31L,31R",
             "initial": 5000,
-            "prio": 1,
+            "prio": 2,
             "equip": {
               "RNAV": true
             }
