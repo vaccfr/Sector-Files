@@ -26,10 +26,10 @@
             "rwy": "26",
             "initial": 7000,
             "prio": 1,
+            "wtc": "LM",
             "equip": {
               "RNAV": true
-            },
-            "WTC": "LM"
+            }
           }
         },
         "L": {
@@ -159,7 +159,7 @@
             "rwy": "26",
             "initial": 7000,
             "prio": 1,
-            "WTC": "LM",
+            "wtc": "LM",
           "equip": {
               "NON-RNAV": true
             }
@@ -383,7 +383,7 @@
             "rwy": "26",
             "initial": 7000,
             "prio": 1,
-            "WTC": "LM"
+            "wtc": "LM"
        }
     }
   }
