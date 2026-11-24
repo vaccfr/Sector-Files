@@ -2,7 +2,7 @@ SIL
 m_Visible:0
 m_X:0
 m_Y:47
-m_LineNumber:20
+m_LineNumber:20d
 m_Resizable:1
 m_OrderingColumn:7
 m_HeaderOnly:1
@@ -26,7 +26,7 @@ SEL
 m_Visible:0
 m_X:0
 m_Y:60
-m_LineNumber:20
+m_LineNumber:20d
 m_Resizable:1
 m_OrderingColumn:1
 m_HeaderOnly:0
@@ -50,7 +50,7 @@ DEP
 m_Visible:0
 m_X:96
 m_Y:93
-m_LineNumber:0
+m_LineNumber:0d
 m_Resizable:1
 m_OrderingColumn:-11
 m_HeaderOnly:0
@@ -85,7 +85,7 @@ ARR
 m_Visible:0
 m_X:88
 m_Y:569
-m_LineNumber:0
+m_LineNumber:0d
 m_Resizable:1
 m_OrderingColumn:1
 m_HeaderOnly:0
@@ -102,7 +102,7 @@ FP
 m_Visible:0
 m_X:168
 m_Y:492
-m_LineNumber:6
+m_LineNumber:6d
 m_Resizable:0
 m_OrderingColumn:1
 m_HeaderOnly:0
@@ -115,7 +115,7 @@ CONFLICT
 m_Visible:0
 m_X:1787
 m_Y:24
-m_LineNumber:4
+m_LineNumber:4d
 m_Resizable:1
 m_OrderingColumn:1
 m_HeaderOnly:1
@@ -129,7 +129,7 @@ PILOTING
 m_Visible:0
 m_X:0
 m_Y:755
-m_LineNumber:20
+m_LineNumber:20d
 m_Resizable:1
 m_OrderingColumn:1
 m_HeaderOnly:0
@@ -149,7 +149,7 @@ ORIGPLANE
 m_Visible:0
 m_X:45
 m_Y:208
-m_LineNumber:6
+m_LineNumber:6d
 m_Resizable:0
 m_OrderingColumn:1
 m_HeaderOnly:0
@@ -162,7 +162,7 @@ STUP
 m_Visible:1
 m_X:375
 m_Y:61
-m_LineNumber:0
+m_LineNumber:0d
 m_Resizable:1
 m_OrderingColumn:4
 m_HeaderOnly:0
@@ -201,7 +201,7 @@ TAXIOUT
 m_Visible:0
 m_X:45
 m_Y:193
-m_LineNumber:0
+m_LineNumber:0d
 m_Resizable:1
 m_OrderingColumn:-11
 m_HeaderOnly:0
@@ -212,9 +212,9 @@ m_Column:C/S:8:0:9:0:8:1::::3:0.0
 m_Column::2:0:11:32:0:1::::3:0.0
 m_Column:STAND:6:1:0:0:0:1:RampAgent:::0:0.0
 m_Column:ATYP:7:1:78:0:0:1::::3:0.0
-m_Column:SID:8:1:641:741:17:1:vSID:vSID::1:0.0
-m_Column:RWY:5:1:642:743:0:1:vSID:vSID::1:0.0
-m_Column:CFL:4:1:640:740:0:1:vSID:vSID::1:0.0
+m_Column:SID:8:1:56:17:17:1::::1:0.0
+m_Column:RWY:5:1:47:19:0:1::::1:0.0
+m_Column:CFL:4:1:20:11:0:1::::1:0.0
 m_Column:ASSR:5:1:60:1:0:0::Central Squawk:Central Squawk:4:0.0
 m_Column:ADES:5:1:17:7:0:1::::3:0.0
 m_Column:RFL:4:1:22:30:0:0::::3:0.0
@@ -230,7 +230,7 @@ TAKEOFF
 m_Visible:0
 m_X:61
 m_Y:296
-m_LineNumber:0
+m_LineNumber:0d
 m_Resizable:1
 m_OrderingColumn:-11
 m_HeaderOnly:0
@@ -241,9 +241,9 @@ m_Column:C/S:8:0:9:0:8:1::::3:0.0
 m_Column::2:0:11:32:0:1::::3:0.0
 m_Column:STAND:6:1:0:0:0:1:RampAgent:::0:0.0
 m_Column:ATYP:7:1:78:0:0:1::::3:0.0
-m_Column:SID:8:1:641:741:17:1:vSID:vSID::1:0.0
-m_Column:RWY:5:1:642:743:0:1:vSID:vSID::1:0.0
-m_Column:CFL:4:1:640:740:0:1:vSID:vSID::1:0.0
+m_Column:SID:8:1:56:17:17:1::::1:0.0
+m_Column:RWY:5:1:47:19:0:1::::1:0.0
+m_Column:CFL:4:1:20:11:0:1::::1:0.0
 m_Column:ASSR:5:1:60:1:0:0::Central Squawk:Central Squawk:4:0.0
 m_Column:ADES:5:1:17:7:0:1::::3:0.0
 m_Column:RFL:4:1:22:30:0:0::::3:0.0
@@ -259,7 +259,7 @@ ADCS
 m_Visible:0
 m_X:110
 m_Y:100
-m_LineNumber:6
+m_LineNumber:6d
 m_Resizable:0
 m_OrderingColumn:1
 m_HeaderOnly:1
@@ -273,7 +273,7 @@ TAXIIN
 m_Visible:0
 m_X:82
 m_Y:844
-m_LineNumber:0
+m_LineNumber:0d
 m_Resizable:1
 m_OrderingColumn:-11
 m_HeaderOnly:0
