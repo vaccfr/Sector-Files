@@ -1,13 +1,13 @@
-Plugins	Plugin0	\Plugins\CoFrance\CoFranceLoader.dll
-Plugins	Plugin1	\Plugins\RDF Plugin\RDFPlugin.dll
-Plugins	Plugin2	\Plugins\Central Squawk\CEntralSquawk.dll
-Plugins	Plugin3	\Plugins\VCH\VCH.dll
-Plugins	Plugin4	\Plugins\vSMR\vSMR.dll
-Plugins	Plugin5	\Plugins\CDM\CDM.dll
-Plugins	Plugin6	\Plugins\RampAgent\RampAgent.dll
-Plugins	Plugin7	\Plugins\Plugin Bridge\EuroScopeBridge.dll
-Plugins	Plugin8	\Plugins\vSID\vSID.dll
-Plugins	Plugin9	\Plugins\EuroscopeRPC\EuroscopeRPC.dll
+Plugins	Plugin0	\..\LFXX\Plugins\CoFrance\CoFranceLoader.dll
+Plugins	Plugin1	\..\LFXX\Plugins\RDF Plugin\RDFPlugin.dll
+Plugins	Plugin2	\..\LFXX\Plugins\Central Squawk\CEntralSquawk.dll
+Plugins	Plugin3	\..\LFXX\Plugins\VCH\VCH.dll
+Plugins	Plugin4	\..\LFXX\Plugins\vSMR\vSMR.dll
+Plugins	Plugin5	\..\LFXX\Plugins\CDM\CDM.dll
+Plugins	Plugin6	\..\LFXX\Plugins\RampAgent\RampAgent.dll
+Plugins	Plugin7	\..\LFXX\Plugins\Plugin Bridge\EuroScopeBridge.dll
+Plugins	Plugin8	\..\LFXX\Plugins\vSID\vSID.dll
+Plugins	Plugin9	\..\LFXX\Plugins\EuroscopeRPC\EuroscopeRPC.dll
 Plugins	Plugin0Display0	CoFrance radar display
 Plugins	Plugin0Display1	Standard ES radar screen
 Plugins	Plugin0Display2	SMR radar display
