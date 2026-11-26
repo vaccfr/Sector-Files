@@ -26,3 +26,4 @@ node_modules/
 installer/src-tauri/gen/schemas/
 installer/src-tauri/.cargo/
 installer/dist/
+.DS_Store
