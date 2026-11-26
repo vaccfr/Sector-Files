@@ -32,7 +32,7 @@
     },
     {
       "name": "RampAgent",
-      "current": "2.0.4",
+      "current": "2.0.5",
       "github": "AlexisBalzano/EuroscopeRampAgent",
       "include_prereleases": false
     },
