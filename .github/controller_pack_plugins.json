@@ -62,7 +62,7 @@
     },
     {
       "name": "vSMR",
-      "current": "2.0.6",
+      "current": "2.0.7",
       "github": "IWantPizzaa/vSMR",
       "include_prereleases": false
     }
