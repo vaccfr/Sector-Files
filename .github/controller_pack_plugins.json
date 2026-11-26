@@ -2,7 +2,7 @@
   "plugins": [
     {
       "name": "AMAN",
-      "current": "1.0.5",
+      "current": "1.0.6",
       "github": "vaccfr/AMAN-Plugin",
       "include_prereleases": false
     },
@@ -14,7 +14,7 @@
     },
     {
       "name": "Central Squawk",
-      "current": "1.0.3",
+      "current": "1.0.4",
       "github": "AlexisBalzano/CentralSquawk",
       "include_prereleases": false
     },
@@ -32,7 +32,7 @@
     },
     {
       "name": "RampAgent",
-      "current": "2.0.4",
+      "current": "2.0.5",
       "github": "AlexisBalzano/EuroscopeRampAgent",
       "include_prereleases": false
     },
