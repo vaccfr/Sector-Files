@@ -23,11 +23,24 @@
             }
           }
         },
+        "R": {
+          "1": {
+            "rwy": "33",
+            "initial": 0,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
         "N": {
           "1": {
             "rwy": "33",
             "initial": 0,
-            "prio": 1
+            "prio": 2,
+            "equip": {
+              "NON-RNAV": true
+            }
           }
         },
         "S": {
@@ -52,11 +65,24 @@
             }
           }
         },
+        "R": {
+          "1": {
+            "rwy": "33",
+            "initial": 0,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
         "N": {
           "1": {
             "rwy": "33",
             "initial": 0,
-            "prio": 1
+            "prio": 2,
+            "equip": {
+              "NON-RNAV": true
+            }
           }
         },
         "S": {
@@ -103,18 +129,44 @@
         }
       },
       "FJR": {
+        "L": {
+          "1": {
+            "rwy": "15",
+            "initial": 0,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "R": {
+          "1": {
+            "rwy": "33",
+            "initial": 0,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
         "N": {
           "1": {
             "rwy": "33",
             "initial": 0,
-            "prio": 1
+            "prio": 2,
+            "equip": {
+              "NON-RNAV": true
+            }
           }
         },
         "S": {
           "1": {
             "rwy": "15",
             "initial": 0,
-            "prio": 1
+            "prio": 2,
+            "equip": {
+              "NON-RNAV": true
+            }
           }
         }
       },
@@ -134,23 +186,29 @@
           }
         }
       },
-      "BGR": {
-        "N": {
-          "1": {
-            "rwy": "33",
-            "initial": 0,
-            "prio": 2
-          }
-        },
-        "S": {
+      "BAMGO": {
+        "L": {
           "1": {
             "rwy": "15",
             "initial": 0,
-            "prio": 1
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
+          }
+        },
+        "R": {
+          "1": {
+            "rwy": "33",
+            "initial": 0,
+            "prio": 1,
+            "equip": {
+              "RNAV": true
+            }
           }
         }
       },
-      "BAMGO": {
+      "LACUN": {
         "L": {
           "1": {
             "rwy": "15",
