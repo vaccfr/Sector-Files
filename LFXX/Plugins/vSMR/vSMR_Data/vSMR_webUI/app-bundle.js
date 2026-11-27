@@ -63,7 +63,7 @@
     },
     uncorrelated: { default: "background_on_ground_color" }
   };
-  const TAG_TOKENS = ["callsign", "actype", "sctype", "wake", "deprwy", "gs", "flightlevel", "tendency", "scratchpad", "holdingpoint", "remark", "asid", "vsid_sid", "vsid_rwy", "vsid_cfl", "ready_startup", "tobt", "tsat", "ttot", "ctot", "tsac", "asrt", "asat", "uk_stand", "sqerror", "groundstatus", "systemid"];
+  const TAG_TOKENS = ["callsign", "actype", "sctype", "wake", "deprwy", "gs", "flightlevel", "tendency", "scratchpad", "holdingpoint", "language", "released", "remark", "asid", "vsid_sid", "vsid_rwy", "vsid_cfl", "ready_startup", "tobt", "tsat", "ttot", "ctot", "tsac", "asrt", "asat", "uk_stand", "sqerror", "groundstatus", "systemid"];
   const RULE_LIMITS = { depth: 8, nodes: 128, effects: 32, values: 128, rules: 256 };
   const RULE_FIELDS = [
     ...["tobt", "tsat", "ttot", "ctot", "tsac", "asrt", "asat"].map(token => ({
@@ -74,7 +74,7 @@
     })),
     ...Object.entries({ sid: "SID", deprwy: "Departure runway", arvrwy: "Arrival runway", scratchpad: "Scratchpad",
       holdingpoint: "Holding point", origin: "Origin", destination: "Destination", actype: "Aircraft type", wake: "Wake category",
-      groundstatus: "Ground status", callsign: "Callsign", clearance: "Clearance (true / false)" })
+      groundstatus: "Ground status", callsign: "Callsign", clearance: "Clearance (true / false)", released: "Released (true / false)" })
       .map(([token, label]) => ({ id: `flight.${token}`, label: `Flight · ${label}` })),
     { id: "flight.gs", label: "Flight · Ground speed (kt)", numeric: true },
     { id: "flight.flightlevel", label: "Flight · Flight level (hundreds of ft)", numeric: true },
@@ -90,7 +90,7 @@
     ...["deice", "tobt_set_by", "flow_restriction", "ecfmp_restriction", "manual_ctot"]
       .map(token => ({ id: `cdm.${token}`, label: `CDM · ${humanize(token)}` }))
   ];
-  const RULE_EFFECT_FIELDS = ["event_booking", "ready_startup", "groundstatus", "holdingpoint", "flightlevel", "scratchpad",
+  const RULE_EFFECT_FIELDS = ["event_booking", "ready_startup", "released", "groundstatus", "holdingpoint", "flightlevel", "scratchpad",
     "clearance", "callsign", "systemid", "tendency", "uk_stand", "vsid_cfl", "vsid_rwy", "vsid_sid", "sqerror", "actype",
     "arvrwy", "deprwy", "origin", "remark", "sctype", "seprwy", "srvrwy", "aobt", "aort", "asat", "asid", "asrt", "atot",
     "ctot", "dest", "gate", "sate", "ssid", "tobt", "tsac", "tsat", "ttot", "wake", "ssr", "gs"];
@@ -595,7 +595,7 @@
     aviso.vsmr_groups.forEach(group => {
       if (group && typeof group === "object") delete group.color_palettes;
     });
-    aviso.metadata.geometry_mode = "shared";
+    if (aviso.metadata.geometry_mode !== "palette_specific") aviso.metadata.geometry_mode = "shared";
 
     const seen = new Set();
     const groupIdAliases = new Map();
@@ -615,6 +615,7 @@
         ...sourceGroup,
         id,
         name: String(sourceGroup.name || `Group ${index + 1}`).trim() || `Group ${index + 1}`,
+        folder: String(sourceGroup.folder ?? sourceGroup.section ?? "").trim(),
         visible: sourceGroup.visible !== false,
         accent: normalizeHex(sourceGroup.accent || "#84b7d5", "#84b7d5")
       };
@@ -765,6 +766,8 @@
         aliasFile: "C:\\EuroScope\\Alias\\alias.txt",
         resolutionPreset: preferred?.data?.targets?.small_icon_boost_resolution_preset || "1080p",
         rdfEnabled: true,
+        highlightArrivalStand: true,
+        resetStatusAtStand: true,
         uiColorTheme: "night",
         weatherAllAirports: true,
         showNorthIndicator: true,
@@ -1593,6 +1596,12 @@
 
 
 
+  function runtimePaletteGroups() {
+    const palette = normalizeAvisoColorPalette(state.settings.avisoColorPalette);
+    return avisoGroups().filter(group => !Array.isArray(group.geometry_palettes) ||
+      group.geometry_palettes.includes(palette));
+  }
+
   function featureGroupIds(feature) {
     const properties = feature?.properties || {};
     let ids = [];
@@ -1751,7 +1760,7 @@
     applyUiTheme();
     const menu = $("#runtimeMenu");
     if (!menu || HOST_MODE) return;
-    const groups = avisoGroups();
+    const groups = runtimePaletteGroups();
     const visibleGroups = groups.filter(group => group.visible !== false).length;
     const profile = activeProfile();
     const mode = activeModeName();
@@ -1875,7 +1884,7 @@
     }
 
     title.textContent = "Groups";
-    const groupRows = avisoGroups().map(group => {
+    const groupRows = runtimePaletteGroups().map(group => {
       const visible = group.visible !== false;
       return `<button type="button" class="${uiListRowClass("runtime", false, false, `runtime-choice-row runtime-compact-row ${visible ? "" : "muted"}`)}" data-runtime-group="${escapeHtml(group.id)}">${runtimeVisibilityIcon(visible)}<strong class="ui-list__label runtime-row-label">${escapeHtml(group.name)}</strong></button>`;
     }).join("");
@@ -1921,6 +1930,14 @@
     if (!group) return;
 	const rollback = captureRuntimeCommandRollback();
     group.visible = group.visible === false;
+    if (group.visible && ["wb-a380", "wb-b748", "wb-b744"].includes(group.id)) {
+      for (const other of avisoGroups()) {
+        if (other.id !== group.id && ["wb-a380", "wb-b748", "wb-b744"].includes(other.id)) {
+          other.visible = false;
+          if (drafts.avisoGroup?.id === other.id) drafts.avisoGroup.data.visible = false;
+        }
+      }
+    }
     if (drafts.avisoGroup?.id === group.id) drafts.avisoGroup.data.visible = group.visible;
     markDirty(`Group ${group.visible ? "shown" : "hidden"}`, ["aviso"]);
 	postRuntimeCommand(
@@ -3951,6 +3968,7 @@
     }
     const name = $("#avisoGroupName");
     if (name) drafts.avisoGroup.data.name = name.value;
+    drafts.avisoGroup.data.folder = $("#avisoGroupFolder")?.value.trim() || "";
     return drafts.avisoGroup;
   }
 
@@ -3974,6 +3992,8 @@
     const group = selectedAvisoGroup();
     const editor = $(".aviso-group-editor");
     const nameControl = $("#avisoGroupName");
+    $("#avisoGroupFolder").disabled = !group;
+    $("#avisoGroupFolder").value = group ? (drafts.avisoGroup?.id === group.id ? drafts.avisoGroup.data.folder || "" : group.folder || "") : "";
     nameControl?.setCustomValidity("");
     if (!group) {
       $("#avisoGroupCaption").textContent = "No group selected";
@@ -4022,7 +4042,7 @@
   function duplicateAvisoGroup() {
     const source = selectedAvisoGroup();
     if (!source) return;
-    const copy = { id: uniqueAvisoGroupId(`${source.id}-copy`), name: `${source.name} copy`, visible: source.visible !== false, accent: normalizeHex(source.accent, "#84b7d5") };
+    const copy = { id: uniqueAvisoGroupId(`${source.id}-copy`), name: `${source.name} copy`, folder: source.folder || "", visible: source.visible !== false, accent: normalizeHex(source.accent, "#84b7d5") };
     avisoGroups().splice(avisoGroups().indexOf(source) + 1, 0, copy);
     avisoFeatures().forEach(feature => {
       if (featureGroupIds(feature).includes(source.id)) setFeatureGroupMembership(feature, copy.id, true);
@@ -4061,6 +4081,7 @@
     }
     $("#avisoGroupName")?.setCustomValidity("");
     group.name = name;
+    group.folder = String(draft.data.folder || "").trim();
     group.visible = draft.data.visible !== false;
     group.accent = normalizeHex(draft.data.accent, group.accent || "#84b7d5");
     clearUnappliedEditorSection($("#avisoGroupName"));
@@ -4994,6 +5015,8 @@
     $("#settingsKeepAvisoWindowPlacement").checked = settings.keepAvisoWindowPlacement !== false;
     $("#settingsWeatherAirports").value = settings.weatherAllAirports !== false ? "all" : "single";
     $("#settingsRdfEnabled").checked = settings.rdfEnabled !== false;
+    $("#settingsHighlightArrivalStand").checked = settings.highlightArrivalStand !== false;
+    $("#settingsResetStatusAtStand").checked = settings.resetStatusAtStand !== false;
     const uiColorTheme = settings.uiColorTheme === "day" ? "day" : "night";
     syncToggleButtons('[data-ui-color-theme]', uiColorTheme, "uiColorTheme");
     const avisoColorPalette = normalizeAvisoColorPalette(settings.avisoColorPalette);
@@ -5015,7 +5038,9 @@
       showNorthIndicator: $("#settingsShowNorthIndicator").checked,
       keepAvisoWindowPlacement: $("#settingsKeepAvisoWindowPlacement").checked,
       weatherAllAirports: $("#settingsWeatherAirports").value === "all",
-      rdfEnabled: $("#settingsRdfEnabled").checked
+      rdfEnabled: $("#settingsRdfEnabled").checked,
+      highlightArrivalStand: $("#settingsHighlightArrivalStand").checked,
+      resetStatusAtStand: $("#settingsResetStatusAtStand").checked
     });
     state.profiles.forEach(record => {
       record.data.targets ||= {};
@@ -6160,6 +6185,7 @@
       state.ui.avisoGroupMemberSearch = event.target.value;
       renderAvisoGroupEditor();
     });
+    $("#avisoGroupFolder").addEventListener("input", () => captureAvisoGroupDraft());
     $("#avisoGroupName").addEventListener("input", event => {
       event.target.setCustomValidity(event.target.value.trim() ? "" : "Enter a group name");
       const draft = captureAvisoGroupDraft();

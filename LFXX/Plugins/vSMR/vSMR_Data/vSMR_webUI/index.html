@@ -458,6 +458,7 @@
 <fieldset class="compact-group group-settings-card">
 <legend>Group</legend>
 <label class="field group-name-field"><span>Name</span><input autocomplete="off" id="avisoGroupName" placeholder="Group name" type="text"/></label>
+<label class="field"><span>Folder (optional)</span><input autocomplete="off" id="avisoGroupFolder" placeholder="For example: LVP" maxlength="80" type="text"/></label>
 <input id="avisoGroupId" type="hidden"/>
 </fieldset>
 <fieldset class="compact-group group-members-card">
@@ -485,6 +486,8 @@
 <label class="check-field" title="Show the compass when AVISO is rotated. Drag it to reposition it; the main compass stays below insets."><input id="settingsShowNorthIndicator" type="checkbox"/><span>North indicator (rotated AVISO)</span></label>
 <label class="check-field" title="Keep the AVISO window at the same screen position and size when changing or opening an airport. The map recenters on the new airport."><input id="settingsKeepAvisoWindowPlacement" type="checkbox"/><span>Keep AVISO window placement</span></label>
 <label class="check-field" title="Native vSMR RDF overlay driven by TrackAudio"><input id="settingsRdfEnabled" type="checkbox"/><span>Native RDF</span></label>
+<label class="check-field" title="Color the RampAgent stand label on AVISO for the selected arriving aircraft."><input id="settingsHighlightArrivalStand" type="checkbox"/><span>Highlight selected arrival stand</span></label>
+<label class="check-field" title="Set No Status after an arrival has stopped in its stand zone for at least 10 seconds, confirmed by three position reports."><input id="settingsResetStatusAtStand" type="checkbox"/><span>Reset arrival status at stand</span></label>
 </fieldset>
 <fieldset class="compact-group settings-group files-group">
 <legend>Data files</legend>
